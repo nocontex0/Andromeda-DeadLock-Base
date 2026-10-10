@@ -30,6 +30,7 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
+#include "valveextensions.pb.h"
 #include "networkbasetypes.pb.h"
 #include "usercmd.pb.h"
 // @@protoc_insertion_point(includes)
@@ -187,7 +188,7 @@ class CCitadelUserCmdPB final :
     kViewDeltaYFieldNumber = 12,
     kBaseFieldNumber = 1,
     kVecCameraPositionFieldNumber = 2,
-    kAngCameraAnglesFieldNumber = 3,
+    kAngCameraAnglesDeprecatedFieldNumber = 3,
     kExecuteAbilityIndicesFieldNumber = 4,
     kCameraRoamingSpeedFieldNumber = 6,
     kInShopFieldNumber = 5,
@@ -275,23 +276,23 @@ class CCitadelUserCmdPB final :
       ::CMsgVector* vec_camera_position);
   ::CMsgVector* unsafe_arena_release_vec_camera_position();
 
-  // optional .CMsgQAngle ang_camera_angles = 3;
-  bool has_ang_camera_angles() const;
+  // optional .CMsgQAngle ang_camera_angles_deprecated = 3;
+  bool has_ang_camera_angles_deprecated() const;
   private:
-  bool _internal_has_ang_camera_angles() const;
+  bool _internal_has_ang_camera_angles_deprecated() const;
   public:
-  void clear_ang_camera_angles();
-  const ::CMsgQAngle& ang_camera_angles() const;
-  PROTOBUF_NODISCARD ::CMsgQAngle* release_ang_camera_angles();
-  ::CMsgQAngle* mutable_ang_camera_angles();
-  void set_allocated_ang_camera_angles(::CMsgQAngle* ang_camera_angles);
+  void clear_ang_camera_angles_deprecated();
+  const ::CMsgQAngle& ang_camera_angles_deprecated() const;
+  PROTOBUF_NODISCARD ::CMsgQAngle* release_ang_camera_angles_deprecated();
+  ::CMsgQAngle* mutable_ang_camera_angles_deprecated();
+  void set_allocated_ang_camera_angles_deprecated(::CMsgQAngle* ang_camera_angles_deprecated);
   private:
-  const ::CMsgQAngle& _internal_ang_camera_angles() const;
-  ::CMsgQAngle* _internal_mutable_ang_camera_angles();
+  const ::CMsgQAngle& _internal_ang_camera_angles_deprecated() const;
+  ::CMsgQAngle* _internal_mutable_ang_camera_angles_deprecated();
   public:
-  void unsafe_arena_set_allocated_ang_camera_angles(
-      ::CMsgQAngle* ang_camera_angles);
-  ::CMsgQAngle* unsafe_arena_release_ang_camera_angles();
+  void unsafe_arena_set_allocated_ang_camera_angles_deprecated(
+      ::CMsgQAngle* ang_camera_angles_deprecated);
+  ::CMsgQAngle* unsafe_arena_release_ang_camera_angles_deprecated();
 
   // optional int32 execute_ability_indices = 4;
   bool has_execute_ability_indices() const;
@@ -385,7 +386,7 @@ class CCitadelUserCmdPB final :
     ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t > view_delta_y_;
     ::CBaseUserCmdPB* base_;
     ::CMsgVector* vec_camera_position_;
-    ::CMsgQAngle* ang_camera_angles_;
+    ::CMsgQAngle* ang_camera_angles_deprecated_;
     int32_t execute_ability_indices_;
     float camera_roaming_speed_;
     bool in_shop_;
@@ -581,41 +582,41 @@ inline void CCitadelUserCmdPB::set_allocated_vec_camera_position(::CMsgVector* v
   // @@protoc_insertion_point(field_set_allocated:CCitadelUserCmdPB.vec_camera_position)
 }
 
-// optional .CMsgQAngle ang_camera_angles = 3;
-inline bool CCitadelUserCmdPB::_internal_has_ang_camera_angles() const {
+// optional .CMsgQAngle ang_camera_angles_deprecated = 3;
+inline bool CCitadelUserCmdPB::_internal_has_ang_camera_angles_deprecated() const {
   bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
-  PROTOBUF_ASSUME(!value || _impl_.ang_camera_angles_ != nullptr);
+  PROTOBUF_ASSUME(!value || _impl_.ang_camera_angles_deprecated_ != nullptr);
   return value;
 }
-inline bool CCitadelUserCmdPB::has_ang_camera_angles() const {
-  return _internal_has_ang_camera_angles();
+inline bool CCitadelUserCmdPB::has_ang_camera_angles_deprecated() const {
+  return _internal_has_ang_camera_angles_deprecated();
 }
-inline const ::CMsgQAngle& CCitadelUserCmdPB::_internal_ang_camera_angles() const {
-  const ::CMsgQAngle* p = _impl_.ang_camera_angles_;
+inline const ::CMsgQAngle& CCitadelUserCmdPB::_internal_ang_camera_angles_deprecated() const {
+  const ::CMsgQAngle* p = _impl_.ang_camera_angles_deprecated_;
   return p != nullptr ? *p : reinterpret_cast<const ::CMsgQAngle&>(
       ::_CMsgQAngle_default_instance_);
 }
-inline const ::CMsgQAngle& CCitadelUserCmdPB::ang_camera_angles() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserCmdPB.ang_camera_angles)
-  return _internal_ang_camera_angles();
+inline const ::CMsgQAngle& CCitadelUserCmdPB::ang_camera_angles_deprecated() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserCmdPB.ang_camera_angles_deprecated)
+  return _internal_ang_camera_angles_deprecated();
 }
-inline void CCitadelUserCmdPB::unsafe_arena_set_allocated_ang_camera_angles(
-    ::CMsgQAngle* ang_camera_angles) {
+inline void CCitadelUserCmdPB::unsafe_arena_set_allocated_ang_camera_angles_deprecated(
+    ::CMsgQAngle* ang_camera_angles_deprecated) {
   if (GetArenaForAllocation() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.ang_camera_angles_);
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.ang_camera_angles_deprecated_);
   }
-  _impl_.ang_camera_angles_ = ang_camera_angles;
-  if (ang_camera_angles) {
+  _impl_.ang_camera_angles_deprecated_ = ang_camera_angles_deprecated;
+  if (ang_camera_angles_deprecated) {
     _impl_._has_bits_[0] |= 0x00000004u;
   } else {
     _impl_._has_bits_[0] &= ~0x00000004u;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CCitadelUserCmdPB.ang_camera_angles)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CCitadelUserCmdPB.ang_camera_angles_deprecated)
 }
-inline ::CMsgQAngle* CCitadelUserCmdPB::release_ang_camera_angles() {
+inline ::CMsgQAngle* CCitadelUserCmdPB::release_ang_camera_angles_deprecated() {
   _impl_._has_bits_[0] &= ~0x00000004u;
-  ::CMsgQAngle* temp = _impl_.ang_camera_angles_;
-  _impl_.ang_camera_angles_ = nullptr;
+  ::CMsgQAngle* temp = _impl_.ang_camera_angles_deprecated_;
+  _impl_.ang_camera_angles_deprecated_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
   temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
@@ -627,45 +628,45 @@ inline ::CMsgQAngle* CCitadelUserCmdPB::release_ang_camera_angles() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::CMsgQAngle* CCitadelUserCmdPB::unsafe_arena_release_ang_camera_angles() {
-  // @@protoc_insertion_point(field_release:CCitadelUserCmdPB.ang_camera_angles)
+inline ::CMsgQAngle* CCitadelUserCmdPB::unsafe_arena_release_ang_camera_angles_deprecated() {
+  // @@protoc_insertion_point(field_release:CCitadelUserCmdPB.ang_camera_angles_deprecated)
   _impl_._has_bits_[0] &= ~0x00000004u;
-  ::CMsgQAngle* temp = _impl_.ang_camera_angles_;
-  _impl_.ang_camera_angles_ = nullptr;
+  ::CMsgQAngle* temp = _impl_.ang_camera_angles_deprecated_;
+  _impl_.ang_camera_angles_deprecated_ = nullptr;
   return temp;
 }
-inline ::CMsgQAngle* CCitadelUserCmdPB::_internal_mutable_ang_camera_angles() {
+inline ::CMsgQAngle* CCitadelUserCmdPB::_internal_mutable_ang_camera_angles_deprecated() {
   _impl_._has_bits_[0] |= 0x00000004u;
-  if (_impl_.ang_camera_angles_ == nullptr) {
+  if (_impl_.ang_camera_angles_deprecated_ == nullptr) {
     auto* p = CreateMaybeMessage<::CMsgQAngle>(GetArenaForAllocation());
-    _impl_.ang_camera_angles_ = p;
+    _impl_.ang_camera_angles_deprecated_ = p;
   }
-  return _impl_.ang_camera_angles_;
+  return _impl_.ang_camera_angles_deprecated_;
 }
-inline ::CMsgQAngle* CCitadelUserCmdPB::mutable_ang_camera_angles() {
-  ::CMsgQAngle* _msg = _internal_mutable_ang_camera_angles();
-  // @@protoc_insertion_point(field_mutable:CCitadelUserCmdPB.ang_camera_angles)
+inline ::CMsgQAngle* CCitadelUserCmdPB::mutable_ang_camera_angles_deprecated() {
+  ::CMsgQAngle* _msg = _internal_mutable_ang_camera_angles_deprecated();
+  // @@protoc_insertion_point(field_mutable:CCitadelUserCmdPB.ang_camera_angles_deprecated)
   return _msg;
 }
-inline void CCitadelUserCmdPB::set_allocated_ang_camera_angles(::CMsgQAngle* ang_camera_angles) {
+inline void CCitadelUserCmdPB::set_allocated_ang_camera_angles_deprecated(::CMsgQAngle* ang_camera_angles_deprecated) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
-    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.ang_camera_angles_);
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.ang_camera_angles_deprecated_);
   }
-  if (ang_camera_angles) {
+  if (ang_camera_angles_deprecated) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
         ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(
-                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(ang_camera_angles));
+                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(ang_camera_angles_deprecated));
     if (message_arena != submessage_arena) {
-      ang_camera_angles = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, ang_camera_angles, submessage_arena);
+      ang_camera_angles_deprecated = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, ang_camera_angles_deprecated, submessage_arena);
     }
     _impl_._has_bits_[0] |= 0x00000004u;
   } else {
     _impl_._has_bits_[0] &= ~0x00000004u;
   }
-  _impl_.ang_camera_angles_ = ang_camera_angles;
-  // @@protoc_insertion_point(field_set_allocated:CCitadelUserCmdPB.ang_camera_angles)
+  _impl_.ang_camera_angles_deprecated_ = ang_camera_angles_deprecated;
+  // @@protoc_insertion_point(field_set_allocated:CCitadelUserCmdPB.ang_camera_angles_deprecated)
 }
 
 // optional int32 execute_ability_indices = 4;

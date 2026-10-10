@@ -53,18 +53,12 @@ extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table
 class CCitadelEntityMsg_BreakablePropSpawnDebris;
 struct CCitadelEntityMsg_BreakablePropSpawnDebrisDefaultTypeInternal;
 extern CCitadelEntityMsg_BreakablePropSpawnDebrisDefaultTypeInternal _CCitadelEntityMsg_BreakablePropSpawnDebris_default_instance_;
-class CCitadelUserMessage_AbilityNotify;
-struct CCitadelUserMessage_AbilityNotifyDefaultTypeInternal;
-extern CCitadelUserMessage_AbilityNotifyDefaultTypeInternal _CCitadelUserMessage_AbilityNotify_default_instance_;
 class CCitadelUserMessage_AuraModifierApplied;
 struct CCitadelUserMessage_AuraModifierAppliedDefaultTypeInternal;
 extern CCitadelUserMessage_AuraModifierAppliedDefaultTypeInternal _CCitadelUserMessage_AuraModifierApplied_default_instance_;
 class CCitadelUserMessage_BulletHit;
 struct CCitadelUserMessage_BulletHitDefaultTypeInternal;
 extern CCitadelUserMessage_BulletHitDefaultTypeInternal _CCitadelUserMessage_BulletHit_default_instance_;
-class CCitadelUserMessage_CurrencyChanged;
-struct CCitadelUserMessage_CurrencyChangedDefaultTypeInternal;
-extern CCitadelUserMessage_CurrencyChangedDefaultTypeInternal _CCitadelUserMessage_CurrencyChanged_default_instance_;
 class CCitadelUserMessage_Damage;
 struct CCitadelUserMessage_DamageDefaultTypeInternal;
 extern CCitadelUserMessage_DamageDefaultTypeInternal _CCitadelUserMessage_Damage_default_instance_;
@@ -86,9 +80,6 @@ extern CCitadelUserMessage_ModifierAppliedDefaultTypeInternal _CCitadelUserMessa
 class CCitadelUserMessage_ObjectiveMask;
 struct CCitadelUserMessage_ObjectiveMaskDefaultTypeInternal;
 extern CCitadelUserMessage_ObjectiveMaskDefaultTypeInternal _CCitadelUserMessage_ObjectiveMask_default_instance_;
-class CCitadelUserMsg_AG2ParamTrigger;
-struct CCitadelUserMsg_AG2ParamTriggerDefaultTypeInternal;
-extern CCitadelUserMsg_AG2ParamTriggerDefaultTypeInternal _CCitadelUserMsg_AG2ParamTrigger_default_instance_;
 class CCitadelUserMsg_AbilitiesChanged;
 struct CCitadelUserMsg_AbilitiesChangedDefaultTypeInternal;
 extern CCitadelUserMsg_AbilitiesChangedDefaultTypeInternal _CCitadelUserMsg_AbilitiesChanged_default_instance_;
@@ -98,6 +89,9 @@ extern CCitadelUserMsg_AbilityInterruptedDefaultTypeInternal _CCitadelUserMsg_Ab
 class CCitadelUserMsg_AbilityLateFailure;
 struct CCitadelUserMsg_AbilityLateFailureDefaultTypeInternal;
 extern CCitadelUserMsg_AbilityLateFailureDefaultTypeInternal _CCitadelUserMsg_AbilityLateFailure_default_instance_;
+class CCitadelUserMsg_AbilityNotify;
+struct CCitadelUserMsg_AbilityNotifyDefaultTypeInternal;
+extern CCitadelUserMsg_AbilityNotifyDefaultTypeInternal _CCitadelUserMsg_AbilityNotify_default_instance_;
 class CCitadelUserMsg_AbilityPing;
 struct CCitadelUserMsg_AbilityPingDefaultTypeInternal;
 extern CCitadelUserMsg_AbilityPingDefaultTypeInternal _CCitadelUserMsg_AbilityPing_default_instance_;
@@ -131,6 +125,9 @@ extern CCitadelUserMsg_CameraController_MaintainDefaultTypeInternal _CCitadelUse
 class CCitadelUserMsg_CameraController_Spring;
 struct CCitadelUserMsg_CameraController_SpringDefaultTypeInternal;
 extern CCitadelUserMsg_CameraController_SpringDefaultTypeInternal _CCitadelUserMsg_CameraController_Spring_default_instance_;
+class CCitadelUserMsg_ChangeHeroStatus;
+struct CCitadelUserMsg_ChangeHeroStatusDefaultTypeInternal;
+extern CCitadelUserMsg_ChangeHeroStatusDefaultTypeInternal _CCitadelUserMsg_ChangeHeroStatus_default_instance_;
 class CCitadelUserMsg_ChatEvent;
 struct CCitadelUserMsg_ChatEventDefaultTypeInternal;
 extern CCitadelUserMsg_ChatEventDefaultTypeInternal _CCitadelUserMsg_ChatEvent_default_instance_;
@@ -140,6 +137,12 @@ extern CCitadelUserMsg_ChatMsgDefaultTypeInternal _CCitadelUserMsg_ChatMsg_defau
 class CCitadelUserMsg_ChatWheel;
 struct CCitadelUserMsg_ChatWheelDefaultTypeInternal;
 extern CCitadelUserMsg_ChatWheelDefaultTypeInternal _CCitadelUserMsg_ChatWheel_default_instance_;
+class CCitadelUserMsg_CombatLogBulkData;
+struct CCitadelUserMsg_CombatLogBulkDataDefaultTypeInternal;
+extern CCitadelUserMsg_CombatLogBulkDataDefaultTypeInternal _CCitadelUserMsg_CombatLogBulkData_default_instance_;
+class CCitadelUserMsg_CurrencyChanged;
+struct CCitadelUserMsg_CurrencyChangedDefaultTypeInternal;
+extern CCitadelUserMsg_CurrencyChangedDefaultTypeInternal _CCitadelUserMsg_CurrencyChanged_default_instance_;
 class CCitadelUserMsg_DeathReplayData;
 struct CCitadelUserMsg_DeathReplayDataDefaultTypeInternal;
 extern CCitadelUserMsg_DeathReplayDataDefaultTypeInternal _CCitadelUserMsg_DeathReplayData_default_instance_;
@@ -170,6 +173,9 @@ extern CCitadelUserMsg_GoldHistory_MinuteRecordDefaultTypeInternal _CCitadelUser
 class CCitadelUserMsg_HeroKilled;
 struct CCitadelUserMsg_HeroKilledDefaultTypeInternal;
 extern CCitadelUserMsg_HeroKilledDefaultTypeInternal _CCitadelUserMsg_HeroKilled_default_instance_;
+class CCitadelUserMsg_HeroReleaseVote;
+struct CCitadelUserMsg_HeroReleaseVoteDefaultTypeInternal;
+extern CCitadelUserMsg_HeroReleaseVoteDefaultTypeInternal _CCitadelUserMsg_HeroReleaseVote_default_instance_;
 class CCitadelUserMsg_HudGameAnnouncement;
 struct CCitadelUserMsg_HudGameAnnouncementDefaultTypeInternal;
 extern CCitadelUserMsg_HudGameAnnouncementDefaultTypeInternal _CCitadelUserMsg_HudGameAnnouncement_default_instance_;
@@ -179,6 +185,9 @@ extern CCitadelUserMsg_ItemDraftReactionDefaultTypeInternal _CCitadelUserMsg_Ite
 class CCitadelUserMsg_KillStreak;
 struct CCitadelUserMsg_KillStreakDefaultTypeInternal;
 extern CCitadelUserMsg_KillStreakDefaultTypeInternal _CCitadelUserMsg_KillStreak_default_instance_;
+class CCitadelUserMsg_LocalLobby;
+struct CCitadelUserMsg_LocalLobbyDefaultTypeInternal;
+extern CCitadelUserMsg_LocalLobbyDefaultTypeInternal _CCitadelUserMsg_LocalLobby_default_instance_;
 class CCitadelUserMsg_MapLine;
 struct CCitadelUserMsg_MapLineDefaultTypeInternal;
 extern CCitadelUserMsg_MapLineDefaultTypeInternal _CCitadelUserMsg_MapLine_default_instance_;
@@ -188,6 +197,9 @@ extern CCitadelUserMsg_MapPingDefaultTypeInternal _CCitadelUserMsg_MapPing_defau
 class CCitadelUserMsg_MidBossSpawned;
 struct CCitadelUserMsg_MidBossSpawnedDefaultTypeInternal;
 extern CCitadelUserMsg_MidBossSpawnedDefaultTypeInternal _CCitadelUserMsg_MidBossSpawned_default_instance_;
+class CCitadelUserMsg_MusicQueue;
+struct CCitadelUserMsg_MusicQueueDefaultTypeInternal;
+extern CCitadelUserMsg_MusicQueueDefaultTypeInternal _CCitadelUserMsg_MusicQueue_default_instance_;
 class CCitadelUserMsg_ObstructedShotFired;
 struct CCitadelUserMsg_ObstructedShotFiredDefaultTypeInternal;
 extern CCitadelUserMsg_ObstructedShotFiredDefaultTypeInternal _CCitadelUserMsg_ObstructedShotFired_default_instance_;
@@ -218,6 +230,9 @@ extern CCitadelUserMsg_PlayerLifetimeStatInfo_StatDefaultTypeInternal _CCitadelU
 class CCitadelUserMsg_PlayerRespawned;
 struct CCitadelUserMsg_PlayerRespawnedDefaultTypeInternal;
 extern CCitadelUserMsg_PlayerRespawnedDefaultTypeInternal _CCitadelUserMsg_PlayerRespawned_default_instance_;
+class CCitadelUserMsg_PlayerTyping;
+struct CCitadelUserMsg_PlayerTypingDefaultTypeInternal;
+extern CCitadelUserMsg_PlayerTypingDefaultTypeInternal _CCitadelUserMsg_PlayerTyping_default_instance_;
 class CCitadelUserMsg_PostMatchDetails;
 struct CCitadelUserMsg_PostMatchDetailsDefaultTypeInternal;
 extern CCitadelUserMsg_PostMatchDetailsDefaultTypeInternal _CCitadelUserMsg_PostMatchDetails_default_instance_;
@@ -248,6 +263,9 @@ extern CCitadelUserMsg_SeasonalKillDefaultTypeInternal _CCitadelUserMsg_Seasonal
 class CCitadelUserMsg_SetClientCameraAngles;
 struct CCitadelUserMsg_SetClientCameraAnglesDefaultTypeInternal;
 extern CCitadelUserMsg_SetClientCameraAnglesDefaultTypeInternal _CCitadelUserMsg_SetClientCameraAngles_default_instance_;
+class CCitadelUserMsg_SoulBagPickup;
+struct CCitadelUserMsg_SoulBagPickupDefaultTypeInternal;
+extern CCitadelUserMsg_SoulBagPickupDefaultTypeInternal _CCitadelUserMsg_SoulBagPickup_default_instance_;
 class CCitadelUserMsg_SpectatorTeamChanged;
 struct CCitadelUserMsg_SpectatorTeamChangedDefaultTypeInternal;
 extern CCitadelUserMsg_SpectatorTeamChangedDefaultTypeInternal _CCitadelUserMsg_SpectatorTeamChanged_default_instance_;
@@ -274,10 +292,8 @@ struct PingCommonDataDefaultTypeInternal;
 extern PingCommonDataDefaultTypeInternal _PingCommonData_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::CCitadelEntityMsg_BreakablePropSpawnDebris* Arena::CreateMaybeMessage<::CCitadelEntityMsg_BreakablePropSpawnDebris>(Arena*);
-template<> ::CCitadelUserMessage_AbilityNotify* Arena::CreateMaybeMessage<::CCitadelUserMessage_AbilityNotify>(Arena*);
 template<> ::CCitadelUserMessage_AuraModifierApplied* Arena::CreateMaybeMessage<::CCitadelUserMessage_AuraModifierApplied>(Arena*);
 template<> ::CCitadelUserMessage_BulletHit* Arena::CreateMaybeMessage<::CCitadelUserMessage_BulletHit>(Arena*);
-template<> ::CCitadelUserMessage_CurrencyChanged* Arena::CreateMaybeMessage<::CCitadelUserMessage_CurrencyChanged>(Arena*);
 template<> ::CCitadelUserMessage_Damage* Arena::CreateMaybeMessage<::CCitadelUserMessage_Damage>(Arena*);
 template<> ::CCitadelUserMessage_GameOver* Arena::CreateMaybeMessage<::CCitadelUserMessage_GameOver>(Arena*);
 template<> ::CCitadelUserMessage_ImportantAbilityUsed* Arena::CreateMaybeMessage<::CCitadelUserMessage_ImportantAbilityUsed>(Arena*);
@@ -285,10 +301,10 @@ template<> ::CCitadelUserMessage_ItemPurchaseNotification* Arena::CreateMaybeMes
 template<> ::CCitadelUserMessage_MeleeHit* Arena::CreateMaybeMessage<::CCitadelUserMessage_MeleeHit>(Arena*);
 template<> ::CCitadelUserMessage_ModifierApplied* Arena::CreateMaybeMessage<::CCitadelUserMessage_ModifierApplied>(Arena*);
 template<> ::CCitadelUserMessage_ObjectiveMask* Arena::CreateMaybeMessage<::CCitadelUserMessage_ObjectiveMask>(Arena*);
-template<> ::CCitadelUserMsg_AG2ParamTrigger* Arena::CreateMaybeMessage<::CCitadelUserMsg_AG2ParamTrigger>(Arena*);
 template<> ::CCitadelUserMsg_AbilitiesChanged* Arena::CreateMaybeMessage<::CCitadelUserMsg_AbilitiesChanged>(Arena*);
 template<> ::CCitadelUserMsg_AbilityInterrupted* Arena::CreateMaybeMessage<::CCitadelUserMsg_AbilityInterrupted>(Arena*);
 template<> ::CCitadelUserMsg_AbilityLateFailure* Arena::CreateMaybeMessage<::CCitadelUserMsg_AbilityLateFailure>(Arena*);
+template<> ::CCitadelUserMsg_AbilityNotify* Arena::CreateMaybeMessage<::CCitadelUserMsg_AbilityNotify>(Arena*);
 template<> ::CCitadelUserMsg_AbilityPing* Arena::CreateMaybeMessage<::CCitadelUserMsg_AbilityPing>(Arena*);
 template<> ::CCitadelUserMsg_BannedHeroes* Arena::CreateMaybeMessage<::CCitadelUserMsg_BannedHeroes>(Arena*);
 template<> ::CCitadelUserMsg_BossDamaged* Arena::CreateMaybeMessage<::CCitadelUserMsg_BossDamaged>(Arena*);
@@ -300,9 +316,12 @@ template<> ::CCitadelUserMsg_CameraController_Lag* Arena::CreateMaybeMessage<::C
 template<> ::CCitadelUserMsg_CameraController_Lerp* Arena::CreateMaybeMessage<::CCitadelUserMsg_CameraController_Lerp>(Arena*);
 template<> ::CCitadelUserMsg_CameraController_Maintain* Arena::CreateMaybeMessage<::CCitadelUserMsg_CameraController_Maintain>(Arena*);
 template<> ::CCitadelUserMsg_CameraController_Spring* Arena::CreateMaybeMessage<::CCitadelUserMsg_CameraController_Spring>(Arena*);
+template<> ::CCitadelUserMsg_ChangeHeroStatus* Arena::CreateMaybeMessage<::CCitadelUserMsg_ChangeHeroStatus>(Arena*);
 template<> ::CCitadelUserMsg_ChatEvent* Arena::CreateMaybeMessage<::CCitadelUserMsg_ChatEvent>(Arena*);
 template<> ::CCitadelUserMsg_ChatMsg* Arena::CreateMaybeMessage<::CCitadelUserMsg_ChatMsg>(Arena*);
 template<> ::CCitadelUserMsg_ChatWheel* Arena::CreateMaybeMessage<::CCitadelUserMsg_ChatWheel>(Arena*);
+template<> ::CCitadelUserMsg_CombatLogBulkData* Arena::CreateMaybeMessage<::CCitadelUserMsg_CombatLogBulkData>(Arena*);
+template<> ::CCitadelUserMsg_CurrencyChanged* Arena::CreateMaybeMessage<::CCitadelUserMsg_CurrencyChanged>(Arena*);
 template<> ::CCitadelUserMsg_DeathReplayData* Arena::CreateMaybeMessage<::CCitadelUserMsg_DeathReplayData>(Arena*);
 template<> ::CCitadelUserMsg_EntityPortalled* Arena::CreateMaybeMessage<::CCitadelUserMsg_EntityPortalled>(Arena*);
 template<> ::CCitadelUserMsg_FlexSlotUnlocked* Arena::CreateMaybeMessage<::CCitadelUserMsg_FlexSlotUnlocked>(Arena*);
@@ -313,12 +332,15 @@ template<> ::CCitadelUserMsg_GoldHistory* Arena::CreateMaybeMessage<::CCitadelUs
 template<> ::CCitadelUserMsg_GoldHistory_GoldRecord* Arena::CreateMaybeMessage<::CCitadelUserMsg_GoldHistory_GoldRecord>(Arena*);
 template<> ::CCitadelUserMsg_GoldHistory_MinuteRecord* Arena::CreateMaybeMessage<::CCitadelUserMsg_GoldHistory_MinuteRecord>(Arena*);
 template<> ::CCitadelUserMsg_HeroKilled* Arena::CreateMaybeMessage<::CCitadelUserMsg_HeroKilled>(Arena*);
+template<> ::CCitadelUserMsg_HeroReleaseVote* Arena::CreateMaybeMessage<::CCitadelUserMsg_HeroReleaseVote>(Arena*);
 template<> ::CCitadelUserMsg_HudGameAnnouncement* Arena::CreateMaybeMessage<::CCitadelUserMsg_HudGameAnnouncement>(Arena*);
 template<> ::CCitadelUserMsg_ItemDraftReaction* Arena::CreateMaybeMessage<::CCitadelUserMsg_ItemDraftReaction>(Arena*);
 template<> ::CCitadelUserMsg_KillStreak* Arena::CreateMaybeMessage<::CCitadelUserMsg_KillStreak>(Arena*);
+template<> ::CCitadelUserMsg_LocalLobby* Arena::CreateMaybeMessage<::CCitadelUserMsg_LocalLobby>(Arena*);
 template<> ::CCitadelUserMsg_MapLine* Arena::CreateMaybeMessage<::CCitadelUserMsg_MapLine>(Arena*);
 template<> ::CCitadelUserMsg_MapPing* Arena::CreateMaybeMessage<::CCitadelUserMsg_MapPing>(Arena*);
 template<> ::CCitadelUserMsg_MidBossSpawned* Arena::CreateMaybeMessage<::CCitadelUserMsg_MidBossSpawned>(Arena*);
+template<> ::CCitadelUserMsg_MusicQueue* Arena::CreateMaybeMessage<::CCitadelUserMsg_MusicQueue>(Arena*);
 template<> ::CCitadelUserMsg_ObstructedShotFired* Arena::CreateMaybeMessage<::CCitadelUserMsg_ObstructedShotFired>(Arena*);
 template<> ::CCitadelUserMsg_ParticipantSetLibraryStackFields* Arena::CreateMaybeMessage<::CCitadelUserMsg_ParticipantSetLibraryStackFields>(Arena*);
 template<> ::CCitadelUserMsg_ParticipantSetSoundEventParams* Arena::CreateMaybeMessage<::CCitadelUserMsg_ParticipantSetSoundEventParams>(Arena*);
@@ -329,6 +351,7 @@ template<> ::CCitadelUserMsg_PingWheel* Arena::CreateMaybeMessage<::CCitadelUser
 template<> ::CCitadelUserMsg_PlayerLifetimeStatInfo* Arena::CreateMaybeMessage<::CCitadelUserMsg_PlayerLifetimeStatInfo>(Arena*);
 template<> ::CCitadelUserMsg_PlayerLifetimeStatInfo_Stat* Arena::CreateMaybeMessage<::CCitadelUserMsg_PlayerLifetimeStatInfo_Stat>(Arena*);
 template<> ::CCitadelUserMsg_PlayerRespawned* Arena::CreateMaybeMessage<::CCitadelUserMsg_PlayerRespawned>(Arena*);
+template<> ::CCitadelUserMsg_PlayerTyping* Arena::CreateMaybeMessage<::CCitadelUserMsg_PlayerTyping>(Arena*);
 template<> ::CCitadelUserMsg_PostMatchDetails* Arena::CreateMaybeMessage<::CCitadelUserMsg_PostMatchDetails>(Arena*);
 template<> ::CCitadelUserMsg_PostProcessingAnim* Arena::CreateMaybeMessage<::CCitadelUserMsg_PostProcessingAnim>(Arena*);
 template<> ::CCitadelUserMsg_QuickResponse* Arena::CreateMaybeMessage<::CCitadelUserMsg_QuickResponse>(Arena*);
@@ -339,6 +362,7 @@ template<> ::CCitadelUserMsg_RejuvStatus* Arena::CreateMaybeMessage<::CCitadelUs
 template<> ::CCitadelUserMsg_ReturnIdol* Arena::CreateMaybeMessage<::CCitadelUserMsg_ReturnIdol>(Arena*);
 template<> ::CCitadelUserMsg_SeasonalKill* Arena::CreateMaybeMessage<::CCitadelUserMsg_SeasonalKill>(Arena*);
 template<> ::CCitadelUserMsg_SetClientCameraAngles* Arena::CreateMaybeMessage<::CCitadelUserMsg_SetClientCameraAngles>(Arena*);
+template<> ::CCitadelUserMsg_SoulBagPickup* Arena::CreateMaybeMessage<::CCitadelUserMsg_SoulBagPickup>(Arena*);
 template<> ::CCitadelUserMsg_SpectatorTeamChanged* Arena::CreateMaybeMessage<::CCitadelUserMsg_SpectatorTeamChanged>(Arena*);
 template<> ::CCitadelUserMsg_StaminaConsumed* Arena::CreateMaybeMessage<::CCitadelUserMsg_StaminaConsumed>(Arena*);
 template<> ::CCitadelUserMsg_StreetBrawlScoring* Arena::CreateMaybeMessage<::CCitadelUserMsg_StreetBrawlScoring>(Arena*);
@@ -355,7 +379,8 @@ enum CCitadelUserMsg_AbilitiesChanged_Change : int {
   CCitadelUserMsg_AbilitiesChanged_Change_EUpgraded = 1,
   CCitadelUserMsg_AbilitiesChanged_Change_ESold = 2,
   CCitadelUserMsg_AbilitiesChanged_Change_ESwappedActivatedAbility = 3,
-  CCitadelUserMsg_AbilitiesChanged_Change_EFailure = 4
+  CCitadelUserMsg_AbilitiesChanged_Change_ELeveledUp = 4,
+  CCitadelUserMsg_AbilitiesChanged_Change_EFailure = 5
 };
 bool CCitadelUserMsg_AbilitiesChanged_Change_IsValid(int value);
 constexpr CCitadelUserMsg_AbilitiesChanged_Change CCitadelUserMsg_AbilitiesChanged_Change_Change_MIN = CCitadelUserMsg_AbilitiesChanged_Change_EInvalid;
@@ -429,18 +454,25 @@ enum CitadelUserMessageIds : int {
   k_EUserMsg_MeleeHit = 355,
   k_EUserMsg_FlexSlotUnlocked = 356,
   k_EUserMsg_SeasonalKill = 357,
-  k_EUserMsg_AG2ParamTrigger = 359,
+  k_EUserMsg_MusicQueue = 358,
   k_EUserMsg_ItemPurchaseNotification = 360,
   k_EUserMsg_EntityPortalled = 361,
   k_EUserMsg_StreetBrawlScoring = 362,
   k_EUserMsg_HudGameAnnouncement = 363,
   k_EUserMsg_ItemDraftReaction = 364,
   k_EUserMsg_ImportantAbilityUsed = 365,
-  k_EUserMsg_BannedHeroes = 366
+  k_EUserMsg_BannedHeroes = 366,
+  k_EUserMsg_CombatLogEntry = 367,
+  k_EUserMsg_CombatLogBulkData = 368,
+  k_EUserMsg_PlayerTyping = 369,
+  k_EUserMsg_ChangeHeroStatus = 370,
+  k_EUserMsg_LocalLobby = 371,
+  k_EUserMsg_SoulBagPickup = 372,
+  k_EUserMsg_HeroReleaseVote = 373
 };
 bool CitadelUserMessageIds_IsValid(int value);
 constexpr CitadelUserMessageIds CitadelUserMessageIds_MIN = k_EUserMsg_Damage;
-constexpr CitadelUserMessageIds CitadelUserMessageIds_MAX = k_EUserMsg_BannedHeroes;
+constexpr CitadelUserMessageIds CitadelUserMessageIds_MAX = k_EUserMsg_HeroReleaseVote;
 constexpr int CitadelUserMessageIds_ARRAYSIZE = CitadelUserMessageIds_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CitadelUserMessageIds_descriptor();
@@ -668,6 +700,32 @@ inline bool PostProcessingGameStates_Parse(
     ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, PostProcessingGameStates* value) {
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<PostProcessingGameStates>(
     PostProcessingGameStates_descriptor(), name, value);
+}
+enum CitadelMusicMsgType : int {
+  k_EMusicQueue_Invalid = 0,
+  k_EMusicQueue_IdolAnnounce = 1,
+  k_EMusicQueue_KothAnnounce = 2,
+  k_EMusicQueue_RejuvDrop = 3,
+  k_EMusicQueue_CorruptedItemShopAnnounce = 4
+};
+bool CitadelMusicMsgType_IsValid(int value);
+constexpr CitadelMusicMsgType CitadelMusicMsgType_MIN = k_EMusicQueue_Invalid;
+constexpr CitadelMusicMsgType CitadelMusicMsgType_MAX = k_EMusicQueue_CorruptedItemShopAnnounce;
+constexpr int CitadelMusicMsgType_ARRAYSIZE = CitadelMusicMsgType_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CitadelMusicMsgType_descriptor();
+template<typename T>
+inline const std::string& CitadelMusicMsgType_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CitadelMusicMsgType>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CitadelMusicMsgType_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CitadelMusicMsgType_descriptor(), enum_t_value);
+}
+inline bool CitadelMusicMsgType_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CitadelMusicMsgType* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CitadelMusicMsgType>(
+    CitadelMusicMsgType_descriptor(), name, value);
 }
 // ===================================================================
 
@@ -983,6 +1041,7 @@ class CCitadelUserMessage_Damage final :
     kPreDamageFieldNumber = 27,
     kDamageAbsorbedFieldNumber = 28,
     kServerTickFieldNumber = 29,
+    kAttackerSubclassFieldNumber = 31,
     kEntindexAttackingObjectFieldNumber = 22,
     kEntindexVictimFieldNumber = 6,
     kEntindexInflictorFieldNumber = 7,
@@ -1311,6 +1370,19 @@ class CCitadelUserMessage_Damage final :
   void _internal_set_server_tick(int32_t value);
   public:
 
+  // optional uint32 attacker_subclass = 31;
+  bool has_attacker_subclass() const;
+  private:
+  bool _internal_has_attacker_subclass() const;
+  public:
+  void clear_attacker_subclass();
+  uint32_t attacker_subclass() const;
+  void set_attacker_subclass(uint32_t value);
+  private:
+  uint32_t _internal_attacker_subclass() const;
+  void _internal_set_attacker_subclass(uint32_t value);
+  public:
+
   // optional int32 entindex_attacking_object = 22 [default = -1];
   bool has_entindex_attacking_object() const;
   private:
@@ -1410,6 +1482,7 @@ class CCitadelUserMessage_Damage final :
     float pre_damage_;
     float damage_absorbed_;
     int32_t server_tick_;
+    uint32_t attacker_subclass_;
     int32_t entindex_attacking_object_;
     int32_t entindex_victim_;
     int32_t entindex_inflictor_;
@@ -1554,6 +1627,10 @@ class PingCommonData final :
     kPingMessageIdFieldNumber = 1,
     kSpeechConceptFieldNumber = 5,
     kCooldownTimeFieldNumber = 7,
+    kLaneColorFieldNumber = 8,
+    kPingAnimTypeFieldNumber = 9,
+    kAbilityIdFieldNumber = 10,
+    kIsCorruptedItemFieldNumber = 11,
     kEntityIndexFieldNumber = 3,
     kSenderPlayerSlotFieldNumber = 4,
   };
@@ -1632,6 +1709,58 @@ class PingCommonData final :
   void _internal_set_cooldown_time(float value);
   public:
 
+  // optional .CMsgLaneColor lane_color = 8 [default = k_ELaneColor_Invalid];
+  bool has_lane_color() const;
+  private:
+  bool _internal_has_lane_color() const;
+  public:
+  void clear_lane_color();
+  ::CMsgLaneColor lane_color() const;
+  void set_lane_color(::CMsgLaneColor value);
+  private:
+  ::CMsgLaneColor _internal_lane_color() const;
+  void _internal_set_lane_color(::CMsgLaneColor value);
+  public:
+
+  // optional int32 ping_anim_type = 9;
+  bool has_ping_anim_type() const;
+  private:
+  bool _internal_has_ping_anim_type() const;
+  public:
+  void clear_ping_anim_type();
+  int32_t ping_anim_type() const;
+  void set_ping_anim_type(int32_t value);
+  private:
+  int32_t _internal_ping_anim_type() const;
+  void _internal_set_ping_anim_type(int32_t value);
+  public:
+
+  // optional uint32 ability_id = 10;
+  bool has_ability_id() const;
+  private:
+  bool _internal_has_ability_id() const;
+  public:
+  void clear_ability_id();
+  uint32_t ability_id() const;
+  void set_ability_id(uint32_t value);
+  private:
+  uint32_t _internal_ability_id() const;
+  void _internal_set_ability_id(uint32_t value);
+  public:
+
+  // optional bool is_corrupted_item = 11;
+  bool has_is_corrupted_item() const;
+  private:
+  bool _internal_has_is_corrupted_item() const;
+  public:
+  void clear_is_corrupted_item();
+  bool is_corrupted_item() const;
+  void set_is_corrupted_item(bool value);
+  private:
+  bool _internal_is_corrupted_item() const;
+  void _internal_set_is_corrupted_item(bool value);
+  public:
+
   // optional uint32 entity_index = 3 [default = 16777215];
   bool has_entity_index() const;
   private:
@@ -1673,6 +1802,10 @@ class PingCommonData final :
     uint32_t ping_message_id_;
     int32_t speech_concept_;
     float cooldown_time_;
+    int lane_color_;
+    int32_t ping_anim_type_;
+    uint32_t ability_id_;
+    bool is_corrupted_item_;
     uint32_t entity_index_;
     int32_t sender_player_slot_;
   };
@@ -2086,6 +2219,8 @@ class CCitadelUserMsg_PingWheel final :
   enum : int {
     kPingDataFieldNumber = 1,
     kPingWheelOptionIdFieldNumber = 2,
+    kPingedEnemyEntityFieldNumber = 3,
+    kIsBlindPingFieldNumber = 4,
   };
   // optional .PingCommonData ping_data = 1;
   bool has_ping_data() const;
@@ -2118,6 +2253,32 @@ class CCitadelUserMsg_PingWheel final :
   void _internal_set_ping_wheel_option_id(uint32_t value);
   public:
 
+  // optional bool pinged_enemy_entity = 3;
+  bool has_pinged_enemy_entity() const;
+  private:
+  bool _internal_has_pinged_enemy_entity() const;
+  public:
+  void clear_pinged_enemy_entity();
+  bool pinged_enemy_entity() const;
+  void set_pinged_enemy_entity(bool value);
+  private:
+  bool _internal_pinged_enemy_entity() const;
+  void _internal_set_pinged_enemy_entity(bool value);
+  public:
+
+  // optional bool is_blind_ping = 4;
+  bool has_is_blind_ping() const;
+  private:
+  bool _internal_has_is_blind_ping() const;
+  public:
+  void clear_is_blind_ping();
+  bool is_blind_ping() const;
+  void set_is_blind_ping(bool value);
+  private:
+  bool _internal_is_blind_ping() const;
+  void _internal_set_is_blind_ping(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CCitadelUserMsg_PingWheel)
  private:
   class _Internal;
@@ -2130,6 +2291,8 @@ class CCitadelUserMsg_PingWheel final :
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
     ::PingCommonData* ping_data_;
     uint32_t ping_wheel_option_id_;
+    bool pinged_enemy_entity_;
+    bool is_blind_ping_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fusermessages_2eproto;
@@ -2476,7 +2639,6 @@ class CCitadelUserMsg_QuickResponse final :
   enum : int {
     kPingDataFieldNumber = 1,
     kRespondingToPingMessageIdFieldNumber = 2,
-    kLaneColorFieldNumber = 4,
     kRespondingToPlayerSlotFieldNumber = 3,
   };
   // optional .PingCommonData ping_data = 1;
@@ -2510,19 +2672,6 @@ class CCitadelUserMsg_QuickResponse final :
   void _internal_set_responding_to_ping_message_id(uint32_t value);
   public:
 
-  // optional .CMsgLaneColor lane_color = 4 [default = k_ELaneColor_Invalid];
-  bool has_lane_color() const;
-  private:
-  bool _internal_has_lane_color() const;
-  public:
-  void clear_lane_color();
-  ::CMsgLaneColor lane_color() const;
-  void set_lane_color(::CMsgLaneColor value);
-  private:
-  ::CMsgLaneColor _internal_lane_color() const;
-  void _internal_set_lane_color(::CMsgLaneColor value);
-  public:
-
   // optional int32 responding_to_player_slot = 3 [default = -1];
   bool has_responding_to_player_slot() const;
   private:
@@ -2548,7 +2697,6 @@ class CCitadelUserMsg_QuickResponse final :
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
     ::PingCommonData* ping_data_;
     uint32_t responding_to_ping_message_id_;
-    int lane_color_;
     int32_t responding_to_player_slot_;
   };
   union { Impl_ _impl_; };
@@ -3512,6 +3660,8 @@ class CCitadelUserMsg_AbilitiesChanged final :
     CCitadelUserMsg_AbilitiesChanged_Change_ESold;
   static constexpr Change ESwappedActivatedAbility =
     CCitadelUserMsg_AbilitiesChanged_Change_ESwappedActivatedAbility;
+  static constexpr Change ELeveledUp =
+    CCitadelUserMsg_AbilitiesChanged_Change_ELeveledUp;
   static constexpr Change EFailure =
     CCitadelUserMsg_AbilitiesChanged_Change_EFailure;
   static inline bool Change_IsValid(int value) {
@@ -4154,6 +4304,7 @@ class CCitadelUserMsg_RecentDamageSummary_DamageRecord final :
     kIsSecondaryStatFieldNumber = 10,
     kPreDamageFieldNumber = 11,
     kCritDamageFieldNumber = 12,
+    kAttackerSubclassFieldNumber = 13,
   };
   // optional int32 damage = 1;
   bool has_damage() const;
@@ -4311,6 +4462,19 @@ class CCitadelUserMsg_RecentDamageSummary_DamageRecord final :
   void _internal_set_crit_damage(float value);
   public:
 
+  // optional uint32 attacker_subclass = 13;
+  bool has_attacker_subclass() const;
+  private:
+  bool _internal_has_attacker_subclass() const;
+  public:
+  void clear_attacker_subclass();
+  uint32_t attacker_subclass() const;
+  void set_attacker_subclass(uint32_t value);
+  private:
+  uint32_t _internal_attacker_subclass() const;
+  void _internal_set_attacker_subclass(uint32_t value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CCitadelUserMsg_RecentDamageSummary.DamageRecord)
  private:
   class _Internal;
@@ -4333,6 +4497,7 @@ class CCitadelUserMsg_RecentDamageSummary_DamageRecord final :
     bool is_secondary_stat_;
     float pre_damage_;
     float crit_damage_;
+    uint32_t attacker_subclass_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fusermessages_2eproto;
@@ -7280,6 +7445,7 @@ class CCitadelUserMsg_CameraController final :
     kContextSymbolIdFieldNumber = 5,
     kRelativeValuesFieldNumber = 11,
     kParamModeFieldNumber = 12,
+    kTargetPawnFieldNumber = 14,
     kOperationFieldNumber = 2,
     kPriorityFieldNumber = 13,
   };
@@ -7451,6 +7617,19 @@ class CCitadelUserMsg_CameraController final :
   void _internal_set_param_mode(::CameraParamMode value);
   public:
 
+  // optional uint32 target_pawn = 14 [default = 16777215];
+  bool has_target_pawn() const;
+  private:
+  bool _internal_has_target_pawn() const;
+  public:
+  void clear_target_pawn();
+  uint32_t target_pawn() const;
+  void set_target_pawn(uint32_t value);
+  private:
+  uint32_t _internal_target_pawn() const;
+  void _internal_set_target_pawn(uint32_t value);
+  public:
+
   // optional .CameraOperation operation = 2 [default = k_ECameraOp_Maintain];
   bool has_operation() const;
   private:
@@ -7498,6 +7677,7 @@ class CCitadelUserMsg_CameraController final :
     uint32_t context_symbol_id_;
     bool relative_values_;
     int param_mode_;
+    uint32_t target_pawn_;
     int operation_;
     uint32_t priority_;
   };
@@ -8010,6 +8190,9 @@ class CCitadelUserMsg_HeroKilled final :
     kEntindexAssistersFieldNumber = 4,
     kRespawnReasonFieldNumber = 6,
     kVictimTeamNumberFieldNumber = 7,
+    kKillfeedGoldFieldNumber = 8,
+    kKillerAbilityIdFieldNumber = 9,
+    kFirstBloodFieldNumber = 10,
     kEntindexVictimFieldNumber = 1,
     kEntindexInflictorFieldNumber = 2,
     kEntindexAttackerFieldNumber = 3,
@@ -8061,6 +8244,45 @@ class CCitadelUserMsg_HeroKilled final :
   private:
   int32_t _internal_victim_team_number() const;
   void _internal_set_victim_team_number(int32_t value);
+  public:
+
+  // optional int32 killfeed_gold = 8;
+  bool has_killfeed_gold() const;
+  private:
+  bool _internal_has_killfeed_gold() const;
+  public:
+  void clear_killfeed_gold();
+  int32_t killfeed_gold() const;
+  void set_killfeed_gold(int32_t value);
+  private:
+  int32_t _internal_killfeed_gold() const;
+  void _internal_set_killfeed_gold(int32_t value);
+  public:
+
+  // optional uint32 killer_ability_id = 9;
+  bool has_killer_ability_id() const;
+  private:
+  bool _internal_has_killer_ability_id() const;
+  public:
+  void clear_killer_ability_id();
+  uint32_t killer_ability_id() const;
+  void set_killer_ability_id(uint32_t value);
+  private:
+  uint32_t _internal_killer_ability_id() const;
+  void _internal_set_killer_ability_id(uint32_t value);
+  public:
+
+  // optional bool first_blood = 10;
+  bool has_first_blood() const;
+  private:
+  bool _internal_has_first_blood() const;
+  public:
+  void clear_first_blood();
+  bool first_blood() const;
+  void set_first_blood(bool value);
+  private:
+  bool _internal_first_blood() const;
+  void _internal_set_first_blood(bool value);
   public:
 
   // optional int32 entindex_victim = 1 [default = -1];
@@ -8128,6 +8350,9 @@ class CCitadelUserMsg_HeroKilled final :
     ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t > entindex_assisters_;
     int32_t respawn_reason_;
     int32_t victim_team_number_;
+    int32_t killfeed_gold_;
+    uint32_t killer_ability_id_;
+    bool first_blood_;
     int32_t entindex_victim_;
     int32_t entindex_inflictor_;
     int32_t entindex_attacker_;
@@ -8270,6 +8495,7 @@ class CCitadelEntityMsg_BreakablePropSpawnDebris final :
     kDamagePosFieldNumber = 2,
     kDamageForceFieldNumber = 4,
     kDamageFieldNumber = 3,
+    kRadialForceFieldNumber = 5,
   };
   // optional .CEntityMsg entity_msg = 1;
   bool has_entity_msg() const;
@@ -8338,6 +8564,19 @@ class CCitadelEntityMsg_BreakablePropSpawnDebris final :
   void _internal_set_damage(float value);
   public:
 
+  // optional float radial_force = 5;
+  bool has_radial_force() const;
+  private:
+  bool _internal_has_radial_force() const;
+  public:
+  void clear_radial_force();
+  float radial_force() const;
+  void set_radial_force(float value);
+  private:
+  float _internal_radial_force() const;
+  void _internal_set_radial_force(float value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CCitadelEntityMsg_BreakablePropSpawnDebris)
  private:
   class _Internal;
@@ -8352,6 +8591,7 @@ class CCitadelEntityMsg_BreakablePropSpawnDebris final :
     ::CMsgVector* damage_pos_;
     ::CMsgVector* damage_force_;
     float damage_;
+    float radial_force_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fusermessages_2eproto;
@@ -10860,10 +11100,12 @@ class CCitadelUserMsg_StaminaConsumed final :
   enum : int {
     kStaminaBeforeFieldNumber = 3,
     kStaminaAfterFieldNumber = 4,
-    kDrainedFieldNumber = 5,
     kStaminaMaxFieldNumber = 6,
     kGametimeFieldNumber = 7,
-    kEntindexTargetFieldNumber = 1,
+    kDrainedFieldNumber = 5,
+    kPlaySoundFieldNumber = 8,
+    kPeriodicUpdateFieldNumber = 9,
+    kTargetFieldNumber = 1,
   };
   // optional float stamina_before = 3;
   bool has_stamina_before() const;
@@ -10889,19 +11131,6 @@ class CCitadelUserMsg_StaminaConsumed final :
   private:
   float _internal_stamina_after() const;
   void _internal_set_stamina_after(float value);
-  public:
-
-  // optional bool drained = 5;
-  bool has_drained() const;
-  private:
-  bool _internal_has_drained() const;
-  public:
-  void clear_drained();
-  bool drained() const;
-  void set_drained(bool value);
-  private:
-  bool _internal_drained() const;
-  void _internal_set_drained(bool value);
   public:
 
   // optional float stamina_max = 6;
@@ -10930,17 +11159,56 @@ class CCitadelUserMsg_StaminaConsumed final :
   void _internal_set_gametime(float value);
   public:
 
-  // optional int32 entindex_target = 1 [default = -1];
-  bool has_entindex_target() const;
+  // optional bool drained = 5;
+  bool has_drained() const;
   private:
-  bool _internal_has_entindex_target() const;
+  bool _internal_has_drained() const;
   public:
-  void clear_entindex_target();
-  int32_t entindex_target() const;
-  void set_entindex_target(int32_t value);
+  void clear_drained();
+  bool drained() const;
+  void set_drained(bool value);
   private:
-  int32_t _internal_entindex_target() const;
-  void _internal_set_entindex_target(int32_t value);
+  bool _internal_drained() const;
+  void _internal_set_drained(bool value);
+  public:
+
+  // optional bool play_sound = 8;
+  bool has_play_sound() const;
+  private:
+  bool _internal_has_play_sound() const;
+  public:
+  void clear_play_sound();
+  bool play_sound() const;
+  void set_play_sound(bool value);
+  private:
+  bool _internal_play_sound() const;
+  void _internal_set_play_sound(bool value);
+  public:
+
+  // optional bool periodic_update = 9;
+  bool has_periodic_update() const;
+  private:
+  bool _internal_has_periodic_update() const;
+  public:
+  void clear_periodic_update();
+  bool periodic_update() const;
+  void set_periodic_update(bool value);
+  private:
+  bool _internal_periodic_update() const;
+  void _internal_set_periodic_update(bool value);
+  public:
+
+  // optional uint32 target = 1 [default = 16777215];
+  bool has_target() const;
+  private:
+  bool _internal_has_target() const;
+  public:
+  void clear_target();
+  uint32_t target() const;
+  void set_target(uint32_t value);
+  private:
+  uint32_t _internal_target() const;
+  void _internal_set_target(uint32_t value);
   public:
 
   // @@protoc_insertion_point(class_scope:CCitadelUserMsg_StaminaConsumed)
@@ -10955,34 +11223,36 @@ class CCitadelUserMsg_StaminaConsumed final :
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
     float stamina_before_;
     float stamina_after_;
-    bool drained_;
     float stamina_max_;
     float gametime_;
-    int32_t entindex_target_;
+    bool drained_;
+    bool play_sound_;
+    bool periodic_update_;
+    uint32_t target_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fusermessages_2eproto;
 };
 // -------------------------------------------------------------------
 
-class CCitadelUserMessage_AbilityNotify final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMessage_AbilityNotify) */ {
+class CCitadelUserMsg_AbilityNotify final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMsg_AbilityNotify) */ {
  public:
-  inline CCitadelUserMessage_AbilityNotify() : CCitadelUserMessage_AbilityNotify(nullptr) {}
-  ~CCitadelUserMessage_AbilityNotify() override;
-  explicit PROTOBUF_CONSTEXPR CCitadelUserMessage_AbilityNotify(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CCitadelUserMsg_AbilityNotify() : CCitadelUserMsg_AbilityNotify(nullptr) {}
+  ~CCitadelUserMsg_AbilityNotify() override;
+  explicit PROTOBUF_CONSTEXPR CCitadelUserMsg_AbilityNotify(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  CCitadelUserMessage_AbilityNotify(const CCitadelUserMessage_AbilityNotify& from);
-  CCitadelUserMessage_AbilityNotify(CCitadelUserMessage_AbilityNotify&& from) noexcept
-    : CCitadelUserMessage_AbilityNotify() {
+  CCitadelUserMsg_AbilityNotify(const CCitadelUserMsg_AbilityNotify& from);
+  CCitadelUserMsg_AbilityNotify(CCitadelUserMsg_AbilityNotify&& from) noexcept
+    : CCitadelUserMsg_AbilityNotify() {
     *this = ::std::move(from);
   }
 
-  inline CCitadelUserMessage_AbilityNotify& operator=(const CCitadelUserMessage_AbilityNotify& from) {
+  inline CCitadelUserMsg_AbilityNotify& operator=(const CCitadelUserMsg_AbilityNotify& from) {
     CopyFrom(from);
     return *this;
   }
-  inline CCitadelUserMessage_AbilityNotify& operator=(CCitadelUserMessage_AbilityNotify&& from) noexcept {
+  inline CCitadelUserMsg_AbilityNotify& operator=(CCitadelUserMsg_AbilityNotify&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -11012,20 +11282,20 @@ class CCitadelUserMessage_AbilityNotify final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const CCitadelUserMessage_AbilityNotify& default_instance() {
+  static const CCitadelUserMsg_AbilityNotify& default_instance() {
     return *internal_default_instance();
   }
-  static inline const CCitadelUserMessage_AbilityNotify* internal_default_instance() {
-    return reinterpret_cast<const CCitadelUserMessage_AbilityNotify*>(
-               &_CCitadelUserMessage_AbilityNotify_default_instance_);
+  static inline const CCitadelUserMsg_AbilityNotify* internal_default_instance() {
+    return reinterpret_cast<const CCitadelUserMsg_AbilityNotify*>(
+               &_CCitadelUserMsg_AbilityNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     46;
 
-  friend void swap(CCitadelUserMessage_AbilityNotify& a, CCitadelUserMessage_AbilityNotify& b) {
+  friend void swap(CCitadelUserMsg_AbilityNotify& a, CCitadelUserMsg_AbilityNotify& b) {
     a.Swap(&b);
   }
-  inline void Swap(CCitadelUserMessage_AbilityNotify* other) {
+  inline void Swap(CCitadelUserMsg_AbilityNotify* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -11038,7 +11308,7 @@ class CCitadelUserMessage_AbilityNotify final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(CCitadelUserMessage_AbilityNotify* other) {
+  void UnsafeArenaSwap(CCitadelUserMsg_AbilityNotify* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -11046,14 +11316,14 @@ class CCitadelUserMessage_AbilityNotify final :
 
   // implements Message ----------------------------------------------
 
-  CCitadelUserMessage_AbilityNotify* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<CCitadelUserMessage_AbilityNotify>(arena);
+  CCitadelUserMsg_AbilityNotify* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CCitadelUserMsg_AbilityNotify>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const CCitadelUserMessage_AbilityNotify& from);
+  void CopyFrom(const CCitadelUserMsg_AbilityNotify& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const CCitadelUserMessage_AbilityNotify& from) {
-    CCitadelUserMessage_AbilityNotify::MergeImpl(*this, from);
+  void MergeFrom( const CCitadelUserMsg_AbilityNotify& from) {
+    CCitadelUserMsg_AbilityNotify::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -11071,15 +11341,15 @@ class CCitadelUserMessage_AbilityNotify final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(CCitadelUserMessage_AbilityNotify* other);
+  void InternalSwap(CCitadelUserMsg_AbilityNotify* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CCitadelUserMessage_AbilityNotify";
+    return "CCitadelUserMsg_AbilityNotify";
   }
   protected:
-  explicit CCitadelUserMessage_AbilityNotify(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CCitadelUserMsg_AbilityNotify(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -11095,8 +11365,9 @@ class CCitadelUserMessage_AbilityNotify final :
   enum : int {
     kAbilityIdFieldNumber = 3,
     kStatusImpactFieldNumber = 4,
-    kEntindexVictimFieldNumber = 1,
-    kEntindexAttackerFieldNumber = 2,
+    kIsRefreshFieldNumber = 5,
+    kVictimFieldNumber = 1,
+    kAttackerFieldNumber = 2,
   };
   // optional uint32 ability_id = 3;
   bool has_ability_id() const;
@@ -11124,33 +11395,46 @@ class CCitadelUserMessage_AbilityNotify final :
   void _internal_set_status_impact(uint32_t value);
   public:
 
-  // optional int32 entindex_victim = 1 [default = -1];
-  bool has_entindex_victim() const;
+  // optional bool is_refresh = 5;
+  bool has_is_refresh() const;
   private:
-  bool _internal_has_entindex_victim() const;
+  bool _internal_has_is_refresh() const;
   public:
-  void clear_entindex_victim();
-  int32_t entindex_victim() const;
-  void set_entindex_victim(int32_t value);
+  void clear_is_refresh();
+  bool is_refresh() const;
+  void set_is_refresh(bool value);
   private:
-  int32_t _internal_entindex_victim() const;
-  void _internal_set_entindex_victim(int32_t value);
-  public:
-
-  // optional int32 entindex_attacker = 2 [default = -1];
-  bool has_entindex_attacker() const;
-  private:
-  bool _internal_has_entindex_attacker() const;
-  public:
-  void clear_entindex_attacker();
-  int32_t entindex_attacker() const;
-  void set_entindex_attacker(int32_t value);
-  private:
-  int32_t _internal_entindex_attacker() const;
-  void _internal_set_entindex_attacker(int32_t value);
+  bool _internal_is_refresh() const;
+  void _internal_set_is_refresh(bool value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CCitadelUserMessage_AbilityNotify)
+  // optional uint32 victim = 1 [default = 16777215];
+  bool has_victim() const;
+  private:
+  bool _internal_has_victim() const;
+  public:
+  void clear_victim();
+  uint32_t victim() const;
+  void set_victim(uint32_t value);
+  private:
+  uint32_t _internal_victim() const;
+  void _internal_set_victim(uint32_t value);
+  public:
+
+  // optional uint32 attacker = 2 [default = 16777215];
+  bool has_attacker() const;
+  private:
+  bool _internal_has_attacker() const;
+  public:
+  void clear_attacker();
+  uint32_t attacker() const;
+  void set_attacker(uint32_t value);
+  private:
+  uint32_t _internal_attacker() const;
+  void _internal_set_attacker(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CCitadelUserMsg_AbilityNotify)
  private:
   class _Internal;
 
@@ -11162,32 +11446,33 @@ class CCitadelUserMessage_AbilityNotify final :
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
     uint32_t ability_id_;
     uint32_t status_impact_;
-    int32_t entindex_victim_;
-    int32_t entindex_attacker_;
+    bool is_refresh_;
+    uint32_t victim_;
+    uint32_t attacker_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fusermessages_2eproto;
 };
 // -------------------------------------------------------------------
 
-class CCitadelUserMessage_CurrencyChanged final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMessage_CurrencyChanged) */ {
+class CCitadelUserMsg_CurrencyChanged final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMsg_CurrencyChanged) */ {
  public:
-  inline CCitadelUserMessage_CurrencyChanged() : CCitadelUserMessage_CurrencyChanged(nullptr) {}
-  ~CCitadelUserMessage_CurrencyChanged() override;
-  explicit PROTOBUF_CONSTEXPR CCitadelUserMessage_CurrencyChanged(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CCitadelUserMsg_CurrencyChanged() : CCitadelUserMsg_CurrencyChanged(nullptr) {}
+  ~CCitadelUserMsg_CurrencyChanged() override;
+  explicit PROTOBUF_CONSTEXPR CCitadelUserMsg_CurrencyChanged(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  CCitadelUserMessage_CurrencyChanged(const CCitadelUserMessage_CurrencyChanged& from);
-  CCitadelUserMessage_CurrencyChanged(CCitadelUserMessage_CurrencyChanged&& from) noexcept
-    : CCitadelUserMessage_CurrencyChanged() {
+  CCitadelUserMsg_CurrencyChanged(const CCitadelUserMsg_CurrencyChanged& from);
+  CCitadelUserMsg_CurrencyChanged(CCitadelUserMsg_CurrencyChanged&& from) noexcept
+    : CCitadelUserMsg_CurrencyChanged() {
     *this = ::std::move(from);
   }
 
-  inline CCitadelUserMessage_CurrencyChanged& operator=(const CCitadelUserMessage_CurrencyChanged& from) {
+  inline CCitadelUserMsg_CurrencyChanged& operator=(const CCitadelUserMsg_CurrencyChanged& from) {
     CopyFrom(from);
     return *this;
   }
-  inline CCitadelUserMessage_CurrencyChanged& operator=(CCitadelUserMessage_CurrencyChanged&& from) noexcept {
+  inline CCitadelUserMsg_CurrencyChanged& operator=(CCitadelUserMsg_CurrencyChanged&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -11217,20 +11502,20 @@ class CCitadelUserMessage_CurrencyChanged final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const CCitadelUserMessage_CurrencyChanged& default_instance() {
+  static const CCitadelUserMsg_CurrencyChanged& default_instance() {
     return *internal_default_instance();
   }
-  static inline const CCitadelUserMessage_CurrencyChanged* internal_default_instance() {
-    return reinterpret_cast<const CCitadelUserMessage_CurrencyChanged*>(
-               &_CCitadelUserMessage_CurrencyChanged_default_instance_);
+  static inline const CCitadelUserMsg_CurrencyChanged* internal_default_instance() {
+    return reinterpret_cast<const CCitadelUserMsg_CurrencyChanged*>(
+               &_CCitadelUserMsg_CurrencyChanged_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     47;
 
-  friend void swap(CCitadelUserMessage_CurrencyChanged& a, CCitadelUserMessage_CurrencyChanged& b) {
+  friend void swap(CCitadelUserMsg_CurrencyChanged& a, CCitadelUserMsg_CurrencyChanged& b) {
     a.Swap(&b);
   }
-  inline void Swap(CCitadelUserMessage_CurrencyChanged* other) {
+  inline void Swap(CCitadelUserMsg_CurrencyChanged* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -11243,7 +11528,7 @@ class CCitadelUserMessage_CurrencyChanged final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(CCitadelUserMessage_CurrencyChanged* other) {
+  void UnsafeArenaSwap(CCitadelUserMsg_CurrencyChanged* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -11251,14 +11536,14 @@ class CCitadelUserMessage_CurrencyChanged final :
 
   // implements Message ----------------------------------------------
 
-  CCitadelUserMessage_CurrencyChanged* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<CCitadelUserMessage_CurrencyChanged>(arena);
+  CCitadelUserMsg_CurrencyChanged* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CCitadelUserMsg_CurrencyChanged>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const CCitadelUserMessage_CurrencyChanged& from);
+  void CopyFrom(const CCitadelUserMsg_CurrencyChanged& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const CCitadelUserMessage_CurrencyChanged& from) {
-    CCitadelUserMessage_CurrencyChanged::MergeImpl(*this, from);
+  void MergeFrom( const CCitadelUserMsg_CurrencyChanged& from) {
+    CCitadelUserMsg_CurrencyChanged::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -11276,15 +11561,15 @@ class CCitadelUserMessage_CurrencyChanged final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(CCitadelUserMessage_CurrencyChanged* other);
+  void InternalSwap(CCitadelUserMsg_CurrencyChanged* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CCitadelUserMessage_CurrencyChanged";
+    return "CCitadelUserMsg_CurrencyChanged";
   }
   protected:
-  explicit CCitadelUserMessage_CurrencyChanged(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CCitadelUserMsg_CurrencyChanged(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -11307,7 +11592,7 @@ class CCitadelUserMessage_CurrencyChanged final :
     kAbilityIdFieldNumber = 9,
     kNewValueFieldNumber = 10,
     kUseridFieldNumber = 1,
-    kEntindexVictimFieldNumber = 6,
+    kVictimFieldNumber = 6,
   };
   // optional .CMsgVector victim_pos = 7;
   bool has_victim_pos() const;
@@ -11431,20 +11716,20 @@ class CCitadelUserMessage_CurrencyChanged final :
   void _internal_set_userid(int32_t value);
   public:
 
-  // optional int32 entindex_victim = 6 [default = -1];
-  bool has_entindex_victim() const;
+  // optional uint32 victim = 6 [default = 16777215];
+  bool has_victim() const;
   private:
-  bool _internal_has_entindex_victim() const;
+  bool _internal_has_victim() const;
   public:
-  void clear_entindex_victim();
-  int32_t entindex_victim() const;
-  void set_entindex_victim(int32_t value);
+  void clear_victim();
+  uint32_t victim() const;
+  void set_victim(uint32_t value);
   private:
-  int32_t _internal_entindex_victim() const;
-  void _internal_set_entindex_victim(int32_t value);
+  uint32_t _internal_victim() const;
+  void _internal_set_victim(uint32_t value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CCitadelUserMessage_CurrencyChanged)
+  // @@protoc_insertion_point(class_scope:CCitadelUserMsg_CurrencyChanged)
  private:
   class _Internal;
 
@@ -11463,7 +11748,7 @@ class CCitadelUserMessage_CurrencyChanged final :
     uint32_t ability_id_;
     uint32_t new_value_;
     int32_t userid_;
-    int32_t entindex_victim_;
+    uint32_t victim_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fusermessages_2eproto;
@@ -13140,6 +13425,8 @@ class CCitadelUserMsg_BossKilled final :
     kEntityKilledClassFieldNumber = 4,
     kGametimeFieldNumber = 6,
     kBossesRemainingFieldNumber = 7,
+    kKillfeedGoldFieldNumber = 9,
+    kKillerAbilityIdFieldNumber = 10,
     kEntityKilledFieldNumber = 3,
     kEntityKillerFieldNumber = 5,
   };
@@ -13226,6 +13513,32 @@ class CCitadelUserMsg_BossKilled final :
   void _internal_set_bosses_remaining(int32_t value);
   public:
 
+  // optional int32 killfeed_gold = 9;
+  bool has_killfeed_gold() const;
+  private:
+  bool _internal_has_killfeed_gold() const;
+  public:
+  void clear_killfeed_gold();
+  int32_t killfeed_gold() const;
+  void set_killfeed_gold(int32_t value);
+  private:
+  int32_t _internal_killfeed_gold() const;
+  void _internal_set_killfeed_gold(int32_t value);
+  public:
+
+  // optional uint32 killer_ability_id = 10;
+  bool has_killer_ability_id() const;
+  private:
+  bool _internal_has_killer_ability_id() const;
+  public:
+  void clear_killer_ability_id();
+  uint32_t killer_ability_id() const;
+  void set_killer_ability_id(uint32_t value);
+  private:
+  uint32_t _internal_killer_ability_id() const;
+  void _internal_set_killer_ability_id(uint32_t value);
+  public:
+
   // optional uint32 entity_killed = 3 [default = 16777215];
   bool has_entity_killed() const;
   private:
@@ -13268,6 +13581,8 @@ class CCitadelUserMsg_BossKilled final :
     int32_t entity_killed_class_;
     float gametime_;
     int32_t bosses_remaining_;
+    int32_t killfeed_gold_;
+    uint32_t killer_ability_id_;
     uint32_t entity_killed_;
     uint32_t entity_killer_;
   };
@@ -14147,6 +14462,7 @@ class CCitadelUserMsg_TeamMsg final :
     kEventTypeFieldNumber = 1,
     kTeamNumberFieldNumber = 2,
     kLaneColorFieldNumber = 3,
+    kKillfeedGoldFieldNumber = 5,
     kPlayerControllerFieldNumber = 4,
   };
   // optional int32 event_type = 1;
@@ -14188,6 +14504,19 @@ class CCitadelUserMsg_TeamMsg final :
   void _internal_set_lane_color(int32_t value);
   public:
 
+  // optional int32 killfeed_gold = 5;
+  bool has_killfeed_gold() const;
+  private:
+  bool _internal_has_killfeed_gold() const;
+  public:
+  void clear_killfeed_gold();
+  int32_t killfeed_gold() const;
+  void set_killfeed_gold(int32_t value);
+  private:
+  int32_t _internal_killfeed_gold() const;
+  void _internal_set_killfeed_gold(int32_t value);
+  public:
+
   // optional uint32 player_controller = 4 [default = 16777215];
   bool has_player_controller() const;
   private:
@@ -14214,6 +14543,7 @@ class CCitadelUserMsg_TeamMsg final :
     int32_t event_type_;
     int32_t team_number_;
     int32_t lane_color_;
+    int32_t killfeed_gold_;
     uint32_t player_controller_;
   };
   union { Impl_ _impl_; };
@@ -14350,6 +14680,7 @@ class CCitadelUserMsg_PlayerRespawned final :
 
   enum : int {
     kFacingYawFieldNumber = 2,
+    kRespawnReasonFieldNumber = 3,
     kPlayerPawnFieldNumber = 1,
   };
   // optional float facing_yaw = 2;
@@ -14363,6 +14694,19 @@ class CCitadelUserMsg_PlayerRespawned final :
   private:
   float _internal_facing_yaw() const;
   void _internal_set_facing_yaw(float value);
+  public:
+
+  // optional uint32 respawn_reason = 3;
+  bool has_respawn_reason() const;
+  private:
+  bool _internal_has_respawn_reason() const;
+  public:
+  void clear_respawn_reason();
+  uint32_t respawn_reason() const;
+  void set_respawn_reason(uint32_t value);
+  private:
+  uint32_t _internal_respawn_reason() const;
+  void _internal_set_respawn_reason(uint32_t value);
   public:
 
   // optional uint32 player_pawn = 1 [default = 16777215];
@@ -14389,6 +14733,7 @@ class CCitadelUserMsg_PlayerRespawned final :
     ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
     float facing_yaw_;
+    uint32_t respawn_reason_;
     uint32_t player_pawn_;
   };
   union { Impl_ _impl_; };
@@ -15286,191 +15631,6 @@ class CCitadelUserMsg_SeasonalKill final :
 };
 // -------------------------------------------------------------------
 
-class CCitadelUserMsg_AG2ParamTrigger final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMsg_AG2ParamTrigger) */ {
- public:
-  inline CCitadelUserMsg_AG2ParamTrigger() : CCitadelUserMsg_AG2ParamTrigger(nullptr) {}
-  ~CCitadelUserMsg_AG2ParamTrigger() override;
-  explicit PROTOBUF_CONSTEXPR CCitadelUserMsg_AG2ParamTrigger(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
-
-  CCitadelUserMsg_AG2ParamTrigger(const CCitadelUserMsg_AG2ParamTrigger& from);
-  CCitadelUserMsg_AG2ParamTrigger(CCitadelUserMsg_AG2ParamTrigger&& from) noexcept
-    : CCitadelUserMsg_AG2ParamTrigger() {
-    *this = ::std::move(from);
-  }
-
-  inline CCitadelUserMsg_AG2ParamTrigger& operator=(const CCitadelUserMsg_AG2ParamTrigger& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline CCitadelUserMsg_AG2ParamTrigger& operator=(CCitadelUserMsg_AG2ParamTrigger&& from) noexcept {
-    if (this == &from) return *this;
-    if (GetOwningArena() == from.GetOwningArena()
-  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
-        && GetOwningArena() != nullptr
-  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
-    ) {
-      InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
-  }
-  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return default_instance().GetMetadata().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return default_instance().GetMetadata().reflection;
-  }
-  static const CCitadelUserMsg_AG2ParamTrigger& default_instance() {
-    return *internal_default_instance();
-  }
-  static inline const CCitadelUserMsg_AG2ParamTrigger* internal_default_instance() {
-    return reinterpret_cast<const CCitadelUserMsg_AG2ParamTrigger*>(
-               &_CCitadelUserMsg_AG2ParamTrigger_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    68;
-
-  friend void swap(CCitadelUserMsg_AG2ParamTrigger& a, CCitadelUserMsg_AG2ParamTrigger& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(CCitadelUserMsg_AG2ParamTrigger* other) {
-    if (other == this) return;
-  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() != nullptr &&
-        GetOwningArena() == other->GetOwningArena()) {
-   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() == other->GetOwningArena()) {
-  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(CCitadelUserMsg_AG2ParamTrigger* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  CCitadelUserMsg_AG2ParamTrigger* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<CCitadelUserMsg_AG2ParamTrigger>(arena);
-  }
-  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const CCitadelUserMsg_AG2ParamTrigger& from);
-  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const CCitadelUserMsg_AG2ParamTrigger& from) {
-    CCitadelUserMsg_AG2ParamTrigger::MergeImpl(*this, from);
-  }
-  private:
-  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
-  public:
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  uint8_t* _InternalSerialize(
-      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
-
-  private:
-  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(CCitadelUserMsg_AG2ParamTrigger* other);
-
-  private:
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CCitadelUserMsg_AG2ParamTrigger";
-  }
-  protected:
-  explicit CCitadelUserMsg_AG2ParamTrigger(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                       bool is_message_owned = false);
-  public:
-
-  static const ClassData _class_data_;
-  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kParamIdFieldNumber = 1,
-    kParamValueFieldNumber = 2,
-  };
-  // optional string param_id = 1;
-  bool has_param_id() const;
-  private:
-  bool _internal_has_param_id() const;
-  public:
-  void clear_param_id();
-  const std::string& param_id() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_param_id(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_param_id();
-  PROTOBUF_NODISCARD std::string* release_param_id();
-  void set_allocated_param_id(std::string* param_id);
-  private:
-  const std::string& _internal_param_id() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_param_id(const std::string& value);
-  std::string* _internal_mutable_param_id();
-  public:
-
-  // optional string param_value = 2;
-  bool has_param_value() const;
-  private:
-  bool _internal_has_param_value() const;
-  public:
-  void clear_param_value();
-  const std::string& param_value() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_param_value(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_param_value();
-  PROTOBUF_NODISCARD std::string* release_param_value();
-  void set_allocated_param_value(std::string* param_value);
-  private:
-  const std::string& _internal_param_value() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_param_value(const std::string& value);
-  std::string* _internal_mutable_param_value();
-  public:
-
-  // @@protoc_insertion_point(class_scope:CCitadelUserMsg_AG2ParamTrigger)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
-    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr param_id_;
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr param_value_;
-  };
-  union { Impl_ _impl_; };
-  friend struct ::TableStruct_citadel_5fusermessages_2eproto;
-};
-// -------------------------------------------------------------------
-
 class CCitadelUserMsg_EntityPortalled final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMsg_EntityPortalled) */ {
  public:
@@ -15526,7 +15686,7 @@ class CCitadelUserMsg_EntityPortalled final :
                &_CCitadelUserMsg_EntityPortalled_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    69;
+    68;
 
   friend void swap(CCitadelUserMsg_EntityPortalled& a, CCitadelUserMsg_EntityPortalled& b) {
     a.Swap(&b);
@@ -15706,7 +15866,7 @@ class CCitadelUserMsg_StreetBrawlScoring final :
                &_CCitadelUserMsg_StreetBrawlScoring_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    70;
+    69;
 
   friend void swap(CCitadelUserMsg_StreetBrawlScoring& a, CCitadelUserMsg_StreetBrawlScoring& b) {
     a.Swap(&b);
@@ -15911,7 +16071,7 @@ class CCitadelUserMsg_HudGameAnnouncement final :
                &_CCitadelUserMsg_HudGameAnnouncement_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    71;
+    70;
 
   friend void swap(CCitadelUserMsg_HudGameAnnouncement& a, CCitadelUserMsg_HudGameAnnouncement& b) {
     a.Swap(&b);
@@ -15987,8 +16147,12 @@ class CCitadelUserMsg_HudGameAnnouncement final :
     kClassnameFieldNumber = 3,
     kDialogVariableNameFieldNumber = 4,
     kDialogVariableLocstringFieldNumber = 5,
+    kDialogVariableIntNameFieldNumber = 8,
+    kDialogVariableIntValueFieldNumber = 9,
     kTitleLocstringFieldNumber = 1,
     kDescriptionLocstringFieldNumber = 2,
+    kSnippetPanelFieldNumber = 7,
+    kDurationOverrideFieldNumber = 6,
   };
   // repeated string classname = 3;
   int classname_size() const;
@@ -16062,6 +16226,52 @@ class CCitadelUserMsg_HudGameAnnouncement final :
   std::string* _internal_add_dialog_variable_locstring();
   public:
 
+  // repeated string dialog_variable_int_name = 8;
+  int dialog_variable_int_name_size() const;
+  private:
+  int _internal_dialog_variable_int_name_size() const;
+  public:
+  void clear_dialog_variable_int_name();
+  const std::string& dialog_variable_int_name(int index) const;
+  std::string* mutable_dialog_variable_int_name(int index);
+  void set_dialog_variable_int_name(int index, const std::string& value);
+  void set_dialog_variable_int_name(int index, std::string&& value);
+  void set_dialog_variable_int_name(int index, const char* value);
+  void set_dialog_variable_int_name(int index, const char* value, size_t size);
+  std::string* add_dialog_variable_int_name();
+  void add_dialog_variable_int_name(const std::string& value);
+  void add_dialog_variable_int_name(std::string&& value);
+  void add_dialog_variable_int_name(const char* value);
+  void add_dialog_variable_int_name(const char* value, size_t size);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>& dialog_variable_int_name() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>* mutable_dialog_variable_int_name();
+  private:
+  const std::string& _internal_dialog_variable_int_name(int index) const;
+  std::string* _internal_add_dialog_variable_int_name();
+  public:
+
+  // repeated int32 dialog_variable_int_value = 9;
+  int dialog_variable_int_value_size() const;
+  private:
+  int _internal_dialog_variable_int_value_size() const;
+  public:
+  void clear_dialog_variable_int_value();
+  private:
+  int32_t _internal_dialog_variable_int_value(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >&
+      _internal_dialog_variable_int_value() const;
+  void _internal_add_dialog_variable_int_value(int32_t value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
+      _internal_mutable_dialog_variable_int_value();
+  public:
+  int32_t dialog_variable_int_value(int index) const;
+  void set_dialog_variable_int_value(int index, int32_t value);
+  void add_dialog_variable_int_value(int32_t value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >&
+      dialog_variable_int_value() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
+      mutable_dialog_variable_int_value();
+
   // optional string title_locstring = 1;
   bool has_title_locstring() const;
   private:
@@ -16098,6 +16308,37 @@ class CCitadelUserMsg_HudGameAnnouncement final :
   std::string* _internal_mutable_description_locstring();
   public:
 
+  // optional string snippet_panel = 7;
+  bool has_snippet_panel() const;
+  private:
+  bool _internal_has_snippet_panel() const;
+  public:
+  void clear_snippet_panel();
+  const std::string& snippet_panel() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_snippet_panel(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_snippet_panel();
+  PROTOBUF_NODISCARD std::string* release_snippet_panel();
+  void set_allocated_snippet_panel(std::string* snippet_panel);
+  private:
+  const std::string& _internal_snippet_panel() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_snippet_panel(const std::string& value);
+  std::string* _internal_mutable_snippet_panel();
+  public:
+
+  // optional float duration_override = 6;
+  bool has_duration_override() const;
+  private:
+  bool _internal_has_duration_override() const;
+  public:
+  void clear_duration_override();
+  float duration_override() const;
+  void set_duration_override(float value);
+  private:
+  float _internal_duration_override() const;
+  void _internal_set_duration_override(float value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CCitadelUserMsg_HudGameAnnouncement)
  private:
   class _Internal;
@@ -16111,8 +16352,12 @@ class CCitadelUserMsg_HudGameAnnouncement final :
     ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string> classname_;
     ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string> dialog_variable_name_;
     ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string> dialog_variable_locstring_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string> dialog_variable_int_name_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t > dialog_variable_int_value_;
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr title_locstring_;
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr description_locstring_;
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr snippet_panel_;
+    float duration_override_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fusermessages_2eproto;
@@ -16174,7 +16419,7 @@ class CCitadelUserMessage_ImportantAbilityUsed final :
                &_CCitadelUserMessage_ImportantAbilityUsed_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    72;
+    71;
 
   friend void swap(CCitadelUserMessage_ImportantAbilityUsed& a, CCitadelUserMessage_ImportantAbilityUsed& b) {
     a.Swap(&b);
@@ -16369,7 +16614,7 @@ class CCitadelUserMsg_BannedHeroes final :
                &_CCitadelUserMsg_BannedHeroes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    73;
+    72;
 
   friend void swap(CCitadelUserMsg_BannedHeroes& a, CCitadelUserMsg_BannedHeroes& b) {
     a.Swap(&b);
@@ -16476,6 +16721,1349 @@ class CCitadelUserMsg_BannedHeroes final :
   struct Impl_ {
     ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t > banned_hero_ids_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fusermessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CCitadelUserMsg_CombatLogBulkData final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMsg_CombatLogBulkData) */ {
+ public:
+  inline CCitadelUserMsg_CombatLogBulkData() : CCitadelUserMsg_CombatLogBulkData(nullptr) {}
+  ~CCitadelUserMsg_CombatLogBulkData() override;
+  explicit PROTOBUF_CONSTEXPR CCitadelUserMsg_CombatLogBulkData(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CCitadelUserMsg_CombatLogBulkData(const CCitadelUserMsg_CombatLogBulkData& from);
+  CCitadelUserMsg_CombatLogBulkData(CCitadelUserMsg_CombatLogBulkData&& from) noexcept
+    : CCitadelUserMsg_CombatLogBulkData() {
+    *this = ::std::move(from);
+  }
+
+  inline CCitadelUserMsg_CombatLogBulkData& operator=(const CCitadelUserMsg_CombatLogBulkData& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CCitadelUserMsg_CombatLogBulkData& operator=(CCitadelUserMsg_CombatLogBulkData&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CCitadelUserMsg_CombatLogBulkData& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CCitadelUserMsg_CombatLogBulkData* internal_default_instance() {
+    return reinterpret_cast<const CCitadelUserMsg_CombatLogBulkData*>(
+               &_CCitadelUserMsg_CombatLogBulkData_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    73;
+
+  friend void swap(CCitadelUserMsg_CombatLogBulkData& a, CCitadelUserMsg_CombatLogBulkData& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CCitadelUserMsg_CombatLogBulkData* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CCitadelUserMsg_CombatLogBulkData* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CCitadelUserMsg_CombatLogBulkData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CCitadelUserMsg_CombatLogBulkData>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CCitadelUserMsg_CombatLogBulkData& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CCitadelUserMsg_CombatLogBulkData& from) {
+    CCitadelUserMsg_CombatLogBulkData::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CCitadelUserMsg_CombatLogBulkData* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CCitadelUserMsg_CombatLogBulkData";
+  }
+  protected:
+  explicit CCitadelUserMsg_CombatLogBulkData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCombatEntriesFieldNumber = 1,
+    kTimestampFieldNumber = 2,
+    kDurationFieldNumber = 3,
+    kRequestTimeFieldNumber = 5,
+    kPlayerSlotFieldNumber = 4,
+  };
+  // repeated .CMsgCitadelCombatLogEntry combat_entries = 1;
+  int combat_entries_size() const;
+  private:
+  int _internal_combat_entries_size() const;
+  public:
+  void clear_combat_entries();
+  ::CMsgCitadelCombatLogEntry* mutable_combat_entries(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCombatLogEntry >*
+      mutable_combat_entries();
+  private:
+  const ::CMsgCitadelCombatLogEntry& _internal_combat_entries(int index) const;
+  ::CMsgCitadelCombatLogEntry* _internal_add_combat_entries();
+  public:
+  const ::CMsgCitadelCombatLogEntry& combat_entries(int index) const;
+  ::CMsgCitadelCombatLogEntry* add_combat_entries();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCombatLogEntry >&
+      combat_entries() const;
+
+  // optional float timestamp = 2;
+  bool has_timestamp() const;
+  private:
+  bool _internal_has_timestamp() const;
+  public:
+  void clear_timestamp();
+  float timestamp() const;
+  void set_timestamp(float value);
+  private:
+  float _internal_timestamp() const;
+  void _internal_set_timestamp(float value);
+  public:
+
+  // optional float duration = 3;
+  bool has_duration() const;
+  private:
+  bool _internal_has_duration() const;
+  public:
+  void clear_duration();
+  float duration() const;
+  void set_duration(float value);
+  private:
+  float _internal_duration() const;
+  void _internal_set_duration(float value);
+  public:
+
+  // optional float request_time = 5;
+  bool has_request_time() const;
+  private:
+  bool _internal_has_request_time() const;
+  public:
+  void clear_request_time();
+  float request_time() const;
+  void set_request_time(float value);
+  private:
+  float _internal_request_time() const;
+  void _internal_set_request_time(float value);
+  public:
+
+  // optional int32 player_slot = 4 [default = -1];
+  bool has_player_slot() const;
+  private:
+  bool _internal_has_player_slot() const;
+  public:
+  void clear_player_slot();
+  int32_t player_slot() const;
+  void set_player_slot(int32_t value);
+  private:
+  int32_t _internal_player_slot() const;
+  void _internal_set_player_slot(int32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CCitadelUserMsg_CombatLogBulkData)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCombatLogEntry > combat_entries_;
+    float timestamp_;
+    float duration_;
+    float request_time_;
+    int32_t player_slot_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fusermessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CCitadelUserMsg_PlayerTyping final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMsg_PlayerTyping) */ {
+ public:
+  inline CCitadelUserMsg_PlayerTyping() : CCitadelUserMsg_PlayerTyping(nullptr) {}
+  ~CCitadelUserMsg_PlayerTyping() override;
+  explicit PROTOBUF_CONSTEXPR CCitadelUserMsg_PlayerTyping(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CCitadelUserMsg_PlayerTyping(const CCitadelUserMsg_PlayerTyping& from);
+  CCitadelUserMsg_PlayerTyping(CCitadelUserMsg_PlayerTyping&& from) noexcept
+    : CCitadelUserMsg_PlayerTyping() {
+    *this = ::std::move(from);
+  }
+
+  inline CCitadelUserMsg_PlayerTyping& operator=(const CCitadelUserMsg_PlayerTyping& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CCitadelUserMsg_PlayerTyping& operator=(CCitadelUserMsg_PlayerTyping&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CCitadelUserMsg_PlayerTyping& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CCitadelUserMsg_PlayerTyping* internal_default_instance() {
+    return reinterpret_cast<const CCitadelUserMsg_PlayerTyping*>(
+               &_CCitadelUserMsg_PlayerTyping_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    74;
+
+  friend void swap(CCitadelUserMsg_PlayerTyping& a, CCitadelUserMsg_PlayerTyping& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CCitadelUserMsg_PlayerTyping* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CCitadelUserMsg_PlayerTyping* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CCitadelUserMsg_PlayerTyping* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CCitadelUserMsg_PlayerTyping>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CCitadelUserMsg_PlayerTyping& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CCitadelUserMsg_PlayerTyping& from) {
+    CCitadelUserMsg_PlayerTyping::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CCitadelUserMsg_PlayerTyping* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CCitadelUserMsg_PlayerTyping";
+  }
+  protected:
+  explicit CCitadelUserMsg_PlayerTyping(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kGameTimeFieldNumber = 2,
+    kAllChatFieldNumber = 3,
+    kTypingFieldNumber = 4,
+    kPlayerSlotFieldNumber = 1,
+  };
+  // optional float game_time = 2;
+  bool has_game_time() const;
+  private:
+  bool _internal_has_game_time() const;
+  public:
+  void clear_game_time();
+  float game_time() const;
+  void set_game_time(float value);
+  private:
+  float _internal_game_time() const;
+  void _internal_set_game_time(float value);
+  public:
+
+  // optional bool all_chat = 3;
+  bool has_all_chat() const;
+  private:
+  bool _internal_has_all_chat() const;
+  public:
+  void clear_all_chat();
+  bool all_chat() const;
+  void set_all_chat(bool value);
+  private:
+  bool _internal_all_chat() const;
+  void _internal_set_all_chat(bool value);
+  public:
+
+  // optional bool typing = 4;
+  bool has_typing() const;
+  private:
+  bool _internal_has_typing() const;
+  public:
+  void clear_typing();
+  bool typing() const;
+  void set_typing(bool value);
+  private:
+  bool _internal_typing() const;
+  void _internal_set_typing(bool value);
+  public:
+
+  // optional int32 player_slot = 1 [default = -1];
+  bool has_player_slot() const;
+  private:
+  bool _internal_has_player_slot() const;
+  public:
+  void clear_player_slot();
+  int32_t player_slot() const;
+  void set_player_slot(int32_t value);
+  private:
+  int32_t _internal_player_slot() const;
+  void _internal_set_player_slot(int32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CCitadelUserMsg_PlayerTyping)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    float game_time_;
+    bool all_chat_;
+    bool typing_;
+    int32_t player_slot_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fusermessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CCitadelUserMsg_ChangeHeroStatus final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMsg_ChangeHeroStatus) */ {
+ public:
+  inline CCitadelUserMsg_ChangeHeroStatus() : CCitadelUserMsg_ChangeHeroStatus(nullptr) {}
+  ~CCitadelUserMsg_ChangeHeroStatus() override;
+  explicit PROTOBUF_CONSTEXPR CCitadelUserMsg_ChangeHeroStatus(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CCitadelUserMsg_ChangeHeroStatus(const CCitadelUserMsg_ChangeHeroStatus& from);
+  CCitadelUserMsg_ChangeHeroStatus(CCitadelUserMsg_ChangeHeroStatus&& from) noexcept
+    : CCitadelUserMsg_ChangeHeroStatus() {
+    *this = ::std::move(from);
+  }
+
+  inline CCitadelUserMsg_ChangeHeroStatus& operator=(const CCitadelUserMsg_ChangeHeroStatus& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CCitadelUserMsg_ChangeHeroStatus& operator=(CCitadelUserMsg_ChangeHeroStatus&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CCitadelUserMsg_ChangeHeroStatus& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CCitadelUserMsg_ChangeHeroStatus* internal_default_instance() {
+    return reinterpret_cast<const CCitadelUserMsg_ChangeHeroStatus*>(
+               &_CCitadelUserMsg_ChangeHeroStatus_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    75;
+
+  friend void swap(CCitadelUserMsg_ChangeHeroStatus& a, CCitadelUserMsg_ChangeHeroStatus& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CCitadelUserMsg_ChangeHeroStatus* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CCitadelUserMsg_ChangeHeroStatus* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CCitadelUserMsg_ChangeHeroStatus* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CCitadelUserMsg_ChangeHeroStatus>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CCitadelUserMsg_ChangeHeroStatus& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CCitadelUserMsg_ChangeHeroStatus& from) {
+    CCitadelUserMsg_ChangeHeroStatus::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CCitadelUserMsg_ChangeHeroStatus* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CCitadelUserMsg_ChangeHeroStatus";
+  }
+  protected:
+  explicit CCitadelUserMsg_ChangeHeroStatus(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kLockHeroIdsFieldNumber = 3,
+    kUnlockHeroIdsFieldNumber = 4,
+    kSuccessFieldNumber = 1,
+    kIsHeroLockedFieldNumber = 2,
+  };
+  // repeated uint32 lock_hero_ids = 3;
+  int lock_hero_ids_size() const;
+  private:
+  int _internal_lock_hero_ids_size() const;
+  public:
+  void clear_lock_hero_ids();
+  private:
+  uint32_t _internal_lock_hero_ids(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+      _internal_lock_hero_ids() const;
+  void _internal_add_lock_hero_ids(uint32_t value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+      _internal_mutable_lock_hero_ids();
+  public:
+  uint32_t lock_hero_ids(int index) const;
+  void set_lock_hero_ids(int index, uint32_t value);
+  void add_lock_hero_ids(uint32_t value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+      lock_hero_ids() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+      mutable_lock_hero_ids();
+
+  // repeated uint32 unlock_hero_ids = 4;
+  int unlock_hero_ids_size() const;
+  private:
+  int _internal_unlock_hero_ids_size() const;
+  public:
+  void clear_unlock_hero_ids();
+  private:
+  uint32_t _internal_unlock_hero_ids(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+      _internal_unlock_hero_ids() const;
+  void _internal_add_unlock_hero_ids(uint32_t value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+      _internal_mutable_unlock_hero_ids();
+  public:
+  uint32_t unlock_hero_ids(int index) const;
+  void set_unlock_hero_ids(int index, uint32_t value);
+  void add_unlock_hero_ids(uint32_t value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+      unlock_hero_ids() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+      mutable_unlock_hero_ids();
+
+  // optional bool success = 1;
+  bool has_success() const;
+  private:
+  bool _internal_has_success() const;
+  public:
+  void clear_success();
+  bool success() const;
+  void set_success(bool value);
+  private:
+  bool _internal_success() const;
+  void _internal_set_success(bool value);
+  public:
+
+  // optional bool is_hero_locked = 2;
+  bool has_is_hero_locked() const;
+  private:
+  bool _internal_has_is_hero_locked() const;
+  public:
+  void clear_is_hero_locked();
+  bool is_hero_locked() const;
+  void set_is_hero_locked(bool value);
+  private:
+  bool _internal_is_hero_locked() const;
+  void _internal_set_is_hero_locked(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CCitadelUserMsg_ChangeHeroStatus)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t > lock_hero_ids_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t > unlock_hero_ids_;
+    bool success_;
+    bool is_hero_locked_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fusermessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CCitadelUserMsg_MusicQueue final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMsg_MusicQueue) */ {
+ public:
+  inline CCitadelUserMsg_MusicQueue() : CCitadelUserMsg_MusicQueue(nullptr) {}
+  ~CCitadelUserMsg_MusicQueue() override;
+  explicit PROTOBUF_CONSTEXPR CCitadelUserMsg_MusicQueue(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CCitadelUserMsg_MusicQueue(const CCitadelUserMsg_MusicQueue& from);
+  CCitadelUserMsg_MusicQueue(CCitadelUserMsg_MusicQueue&& from) noexcept
+    : CCitadelUserMsg_MusicQueue() {
+    *this = ::std::move(from);
+  }
+
+  inline CCitadelUserMsg_MusicQueue& operator=(const CCitadelUserMsg_MusicQueue& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CCitadelUserMsg_MusicQueue& operator=(CCitadelUserMsg_MusicQueue&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CCitadelUserMsg_MusicQueue& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CCitadelUserMsg_MusicQueue* internal_default_instance() {
+    return reinterpret_cast<const CCitadelUserMsg_MusicQueue*>(
+               &_CCitadelUserMsg_MusicQueue_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    76;
+
+  friend void swap(CCitadelUserMsg_MusicQueue& a, CCitadelUserMsg_MusicQueue& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CCitadelUserMsg_MusicQueue* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CCitadelUserMsg_MusicQueue* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CCitadelUserMsg_MusicQueue* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CCitadelUserMsg_MusicQueue>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CCitadelUserMsg_MusicQueue& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CCitadelUserMsg_MusicQueue& from) {
+    CCitadelUserMsg_MusicQueue::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CCitadelUserMsg_MusicQueue* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CCitadelUserMsg_MusicQueue";
+  }
+  protected:
+  explicit CCitadelUserMsg_MusicQueue(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kQueueFieldNumber = 1,
+  };
+  // optional .CitadelMusicMsgType queue = 1 [default = k_EMusicQueue_Invalid];
+  bool has_queue() const;
+  private:
+  bool _internal_has_queue() const;
+  public:
+  void clear_queue();
+  ::CitadelMusicMsgType queue() const;
+  void set_queue(::CitadelMusicMsgType value);
+  private:
+  ::CitadelMusicMsgType _internal_queue() const;
+  void _internal_set_queue(::CitadelMusicMsgType value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CCitadelUserMsg_MusicQueue)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    int queue_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fusermessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CCitadelUserMsg_LocalLobby final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMsg_LocalLobby) */ {
+ public:
+  inline CCitadelUserMsg_LocalLobby() : CCitadelUserMsg_LocalLobby(nullptr) {}
+  ~CCitadelUserMsg_LocalLobby() override;
+  explicit PROTOBUF_CONSTEXPR CCitadelUserMsg_LocalLobby(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CCitadelUserMsg_LocalLobby(const CCitadelUserMsg_LocalLobby& from);
+  CCitadelUserMsg_LocalLobby(CCitadelUserMsg_LocalLobby&& from) noexcept
+    : CCitadelUserMsg_LocalLobby() {
+    *this = ::std::move(from);
+  }
+
+  inline CCitadelUserMsg_LocalLobby& operator=(const CCitadelUserMsg_LocalLobby& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CCitadelUserMsg_LocalLobby& operator=(CCitadelUserMsg_LocalLobby&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CCitadelUserMsg_LocalLobby& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CCitadelUserMsg_LocalLobby* internal_default_instance() {
+    return reinterpret_cast<const CCitadelUserMsg_LocalLobby*>(
+               &_CCitadelUserMsg_LocalLobby_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    77;
+
+  friend void swap(CCitadelUserMsg_LocalLobby& a, CCitadelUserMsg_LocalLobby& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CCitadelUserMsg_LocalLobby* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CCitadelUserMsg_LocalLobby* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CCitadelUserMsg_LocalLobby* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CCitadelUserMsg_LocalLobby>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CCitadelUserMsg_LocalLobby& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CCitadelUserMsg_LocalLobby& from) {
+    CCitadelUserMsg_LocalLobby::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CCitadelUserMsg_LocalLobby* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CCitadelUserMsg_LocalLobby";
+  }
+  protected:
+  explicit CCitadelUserMsg_LocalLobby(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kLobbyFieldNumber = 1,
+  };
+  // optional .CSOCitadelLobby lobby = 1;
+  bool has_lobby() const;
+  private:
+  bool _internal_has_lobby() const;
+  public:
+  void clear_lobby();
+  const ::CSOCitadelLobby& lobby() const;
+  PROTOBUF_NODISCARD ::CSOCitadelLobby* release_lobby();
+  ::CSOCitadelLobby* mutable_lobby();
+  void set_allocated_lobby(::CSOCitadelLobby* lobby);
+  private:
+  const ::CSOCitadelLobby& _internal_lobby() const;
+  ::CSOCitadelLobby* _internal_mutable_lobby();
+  public:
+  void unsafe_arena_set_allocated_lobby(
+      ::CSOCitadelLobby* lobby);
+  ::CSOCitadelLobby* unsafe_arena_release_lobby();
+
+  // @@protoc_insertion_point(class_scope:CCitadelUserMsg_LocalLobby)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::CSOCitadelLobby* lobby_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fusermessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CCitadelUserMsg_SoulBagPickup final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMsg_SoulBagPickup) */ {
+ public:
+  inline CCitadelUserMsg_SoulBagPickup() : CCitadelUserMsg_SoulBagPickup(nullptr) {}
+  ~CCitadelUserMsg_SoulBagPickup() override;
+  explicit PROTOBUF_CONSTEXPR CCitadelUserMsg_SoulBagPickup(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CCitadelUserMsg_SoulBagPickup(const CCitadelUserMsg_SoulBagPickup& from);
+  CCitadelUserMsg_SoulBagPickup(CCitadelUserMsg_SoulBagPickup&& from) noexcept
+    : CCitadelUserMsg_SoulBagPickup() {
+    *this = ::std::move(from);
+  }
+
+  inline CCitadelUserMsg_SoulBagPickup& operator=(const CCitadelUserMsg_SoulBagPickup& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CCitadelUserMsg_SoulBagPickup& operator=(CCitadelUserMsg_SoulBagPickup&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CCitadelUserMsg_SoulBagPickup& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CCitadelUserMsg_SoulBagPickup* internal_default_instance() {
+    return reinterpret_cast<const CCitadelUserMsg_SoulBagPickup*>(
+               &_CCitadelUserMsg_SoulBagPickup_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    78;
+
+  friend void swap(CCitadelUserMsg_SoulBagPickup& a, CCitadelUserMsg_SoulBagPickup& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CCitadelUserMsg_SoulBagPickup* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CCitadelUserMsg_SoulBagPickup* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CCitadelUserMsg_SoulBagPickup* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CCitadelUserMsg_SoulBagPickup>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CCitadelUserMsg_SoulBagPickup& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CCitadelUserMsg_SoulBagPickup& from) {
+    CCitadelUserMsg_SoulBagPickup::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CCitadelUserMsg_SoulBagPickup* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CCitadelUserMsg_SoulBagPickup";
+  }
+  protected:
+  explicit CCitadelUserMsg_SoulBagPickup(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kKillfeedGoldFieldNumber = 3,
+    kPickupPlayerFieldNumber = 1,
+    kVictimPlayerFieldNumber = 2,
+  };
+  // optional int32 killfeed_gold = 3;
+  bool has_killfeed_gold() const;
+  private:
+  bool _internal_has_killfeed_gold() const;
+  public:
+  void clear_killfeed_gold();
+  int32_t killfeed_gold() const;
+  void set_killfeed_gold(int32_t value);
+  private:
+  int32_t _internal_killfeed_gold() const;
+  void _internal_set_killfeed_gold(int32_t value);
+  public:
+
+  // optional uint32 pickup_player = 1 [default = 16777215];
+  bool has_pickup_player() const;
+  private:
+  bool _internal_has_pickup_player() const;
+  public:
+  void clear_pickup_player();
+  uint32_t pickup_player() const;
+  void set_pickup_player(uint32_t value);
+  private:
+  uint32_t _internal_pickup_player() const;
+  void _internal_set_pickup_player(uint32_t value);
+  public:
+
+  // optional uint32 victim_player = 2 [default = 16777215];
+  bool has_victim_player() const;
+  private:
+  bool _internal_has_victim_player() const;
+  public:
+  void clear_victim_player();
+  uint32_t victim_player() const;
+  void set_victim_player(uint32_t value);
+  private:
+  uint32_t _internal_victim_player() const;
+  void _internal_set_victim_player(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CCitadelUserMsg_SoulBagPickup)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    int32_t killfeed_gold_;
+    uint32_t pickup_player_;
+    uint32_t victim_player_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fusermessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CCitadelUserMsg_HeroReleaseVote final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCitadelUserMsg_HeroReleaseVote) */ {
+ public:
+  inline CCitadelUserMsg_HeroReleaseVote() : CCitadelUserMsg_HeroReleaseVote(nullptr) {}
+  ~CCitadelUserMsg_HeroReleaseVote() override;
+  explicit PROTOBUF_CONSTEXPR CCitadelUserMsg_HeroReleaseVote(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CCitadelUserMsg_HeroReleaseVote(const CCitadelUserMsg_HeroReleaseVote& from);
+  CCitadelUserMsg_HeroReleaseVote(CCitadelUserMsg_HeroReleaseVote&& from) noexcept
+    : CCitadelUserMsg_HeroReleaseVote() {
+    *this = ::std::move(from);
+  }
+
+  inline CCitadelUserMsg_HeroReleaseVote& operator=(const CCitadelUserMsg_HeroReleaseVote& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CCitadelUserMsg_HeroReleaseVote& operator=(CCitadelUserMsg_HeroReleaseVote&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CCitadelUserMsg_HeroReleaseVote& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CCitadelUserMsg_HeroReleaseVote* internal_default_instance() {
+    return reinterpret_cast<const CCitadelUserMsg_HeroReleaseVote*>(
+               &_CCitadelUserMsg_HeroReleaseVote_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    79;
+
+  friend void swap(CCitadelUserMsg_HeroReleaseVote& a, CCitadelUserMsg_HeroReleaseVote& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CCitadelUserMsg_HeroReleaseVote* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CCitadelUserMsg_HeroReleaseVote* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CCitadelUserMsg_HeroReleaseVote* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CCitadelUserMsg_HeroReleaseVote>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CCitadelUserMsg_HeroReleaseVote& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CCitadelUserMsg_HeroReleaseVote& from) {
+    CCitadelUserMsg_HeroReleaseVote::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CCitadelUserMsg_HeroReleaseVote* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CCitadelUserMsg_HeroReleaseVote";
+  }
+  protected:
+  explicit CCitadelUserMsg_HeroReleaseVote(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kVotedHeroIdFieldNumber = 2,
+    kPlayerSlotFieldNumber = 1,
+  };
+  // optional uint32 voted_hero_id = 2;
+  bool has_voted_hero_id() const;
+  private:
+  bool _internal_has_voted_hero_id() const;
+  public:
+  void clear_voted_hero_id();
+  uint32_t voted_hero_id() const;
+  void set_voted_hero_id(uint32_t value);
+  private:
+  uint32_t _internal_voted_hero_id() const;
+  void _internal_set_voted_hero_id(uint32_t value);
+  public:
+
+  // optional int32 player_slot = 1 [default = -1];
+  bool has_player_slot() const;
+  private:
+  bool _internal_has_player_slot() const;
+  public:
+  void clear_player_slot();
+  int32_t player_slot() const;
+  void set_player_slot(int32_t value);
+  private:
+  int32_t _internal_player_slot() const;
+  void _internal_set_player_slot(int32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CCitadelUserMsg_HeroReleaseVote)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint32_t voted_hero_id_;
+    int32_t player_slot_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fusermessages_2eproto;
@@ -16752,7 +18340,7 @@ inline void CCitadelUserMessage_Damage::set_allocated_origin(::CMsgVector* origi
 
 // optional int32 entindex_victim = 6 [default = -1];
 inline bool CCitadelUserMessage_Damage::_internal_has_entindex_victim() const {
-  bool value = (_impl_._has_bits_[0] & 0x02000000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x04000000u) != 0;
   return value;
 }
 inline bool CCitadelUserMessage_Damage::has_entindex_victim() const {
@@ -16760,7 +18348,7 @@ inline bool CCitadelUserMessage_Damage::has_entindex_victim() const {
 }
 inline void CCitadelUserMessage_Damage::clear_entindex_victim() {
   _impl_.entindex_victim_ = -1;
-  _impl_._has_bits_[0] &= ~0x02000000u;
+  _impl_._has_bits_[0] &= ~0x04000000u;
 }
 inline int32_t CCitadelUserMessage_Damage::_internal_entindex_victim() const {
   return _impl_.entindex_victim_;
@@ -16770,7 +18358,7 @@ inline int32_t CCitadelUserMessage_Damage::entindex_victim() const {
   return _internal_entindex_victim();
 }
 inline void CCitadelUserMessage_Damage::_internal_set_entindex_victim(int32_t value) {
-  _impl_._has_bits_[0] |= 0x02000000u;
+  _impl_._has_bits_[0] |= 0x04000000u;
   _impl_.entindex_victim_ = value;
 }
 inline void CCitadelUserMessage_Damage::set_entindex_victim(int32_t value) {
@@ -16780,7 +18368,7 @@ inline void CCitadelUserMessage_Damage::set_entindex_victim(int32_t value) {
 
 // optional int32 entindex_inflictor = 7 [default = -1];
 inline bool CCitadelUserMessage_Damage::_internal_has_entindex_inflictor() const {
-  bool value = (_impl_._has_bits_[0] & 0x04000000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x08000000u) != 0;
   return value;
 }
 inline bool CCitadelUserMessage_Damage::has_entindex_inflictor() const {
@@ -16788,7 +18376,7 @@ inline bool CCitadelUserMessage_Damage::has_entindex_inflictor() const {
 }
 inline void CCitadelUserMessage_Damage::clear_entindex_inflictor() {
   _impl_.entindex_inflictor_ = -1;
-  _impl_._has_bits_[0] &= ~0x04000000u;
+  _impl_._has_bits_[0] &= ~0x08000000u;
 }
 inline int32_t CCitadelUserMessage_Damage::_internal_entindex_inflictor() const {
   return _impl_.entindex_inflictor_;
@@ -16798,7 +18386,7 @@ inline int32_t CCitadelUserMessage_Damage::entindex_inflictor() const {
   return _internal_entindex_inflictor();
 }
 inline void CCitadelUserMessage_Damage::_internal_set_entindex_inflictor(int32_t value) {
-  _impl_._has_bits_[0] |= 0x04000000u;
+  _impl_._has_bits_[0] |= 0x08000000u;
   _impl_.entindex_inflictor_ = value;
 }
 inline void CCitadelUserMessage_Damage::set_entindex_inflictor(int32_t value) {
@@ -16808,7 +18396,7 @@ inline void CCitadelUserMessage_Damage::set_entindex_inflictor(int32_t value) {
 
 // optional int32 entindex_attacker = 8 [default = -1];
 inline bool CCitadelUserMessage_Damage::_internal_has_entindex_attacker() const {
-  bool value = (_impl_._has_bits_[0] & 0x08000000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x10000000u) != 0;
   return value;
 }
 inline bool CCitadelUserMessage_Damage::has_entindex_attacker() const {
@@ -16816,7 +18404,7 @@ inline bool CCitadelUserMessage_Damage::has_entindex_attacker() const {
 }
 inline void CCitadelUserMessage_Damage::clear_entindex_attacker() {
   _impl_.entindex_attacker_ = -1;
-  _impl_._has_bits_[0] &= ~0x08000000u;
+  _impl_._has_bits_[0] &= ~0x10000000u;
 }
 inline int32_t CCitadelUserMessage_Damage::_internal_entindex_attacker() const {
   return _impl_.entindex_attacker_;
@@ -16826,7 +18414,7 @@ inline int32_t CCitadelUserMessage_Damage::entindex_attacker() const {
   return _internal_entindex_attacker();
 }
 inline void CCitadelUserMessage_Damage::_internal_set_entindex_attacker(int32_t value) {
-  _impl_._has_bits_[0] |= 0x08000000u;
+  _impl_._has_bits_[0] |= 0x10000000u;
   _impl_.entindex_attacker_ = value;
 }
 inline void CCitadelUserMessage_Damage::set_entindex_attacker(int32_t value) {
@@ -16836,7 +18424,7 @@ inline void CCitadelUserMessage_Damage::set_entindex_attacker(int32_t value) {
 
 // optional int32 entindex_ability = 9 [default = -1];
 inline bool CCitadelUserMessage_Damage::_internal_has_entindex_ability() const {
-  bool value = (_impl_._has_bits_[0] & 0x10000000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x20000000u) != 0;
   return value;
 }
 inline bool CCitadelUserMessage_Damage::has_entindex_ability() const {
@@ -16844,7 +18432,7 @@ inline bool CCitadelUserMessage_Damage::has_entindex_ability() const {
 }
 inline void CCitadelUserMessage_Damage::clear_entindex_ability() {
   _impl_.entindex_ability_ = -1;
-  _impl_._has_bits_[0] &= ~0x10000000u;
+  _impl_._has_bits_[0] &= ~0x20000000u;
 }
 inline int32_t CCitadelUserMessage_Damage::_internal_entindex_ability() const {
   return _impl_.entindex_ability_;
@@ -16854,7 +18442,7 @@ inline int32_t CCitadelUserMessage_Damage::entindex_ability() const {
   return _internal_entindex_ability();
 }
 inline void CCitadelUserMessage_Damage::_internal_set_entindex_ability(int32_t value) {
-  _impl_._has_bits_[0] |= 0x10000000u;
+  _impl_._has_bits_[0] |= 0x20000000u;
   _impl_.entindex_ability_ = value;
 }
 inline void CCitadelUserMessage_Damage::set_entindex_ability(int32_t value) {
@@ -17058,6 +18646,34 @@ inline void CCitadelUserMessage_Damage::set_attacker_class(uint32_t value) {
   // @@protoc_insertion_point(field_set:CCitadelUserMessage_Damage.attacker_class)
 }
 
+// optional uint32 attacker_subclass = 31;
+inline bool CCitadelUserMessage_Damage::_internal_has_attacker_subclass() const {
+  bool value = (_impl_._has_bits_[0] & 0x01000000u) != 0;
+  return value;
+}
+inline bool CCitadelUserMessage_Damage::has_attacker_subclass() const {
+  return _internal_has_attacker_subclass();
+}
+inline void CCitadelUserMessage_Damage::clear_attacker_subclass() {
+  _impl_.attacker_subclass_ = 0u;
+  _impl_._has_bits_[0] &= ~0x01000000u;
+}
+inline uint32_t CCitadelUserMessage_Damage::_internal_attacker_subclass() const {
+  return _impl_.attacker_subclass_;
+}
+inline uint32_t CCitadelUserMessage_Damage::attacker_subclass() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMessage_Damage.attacker_subclass)
+  return _internal_attacker_subclass();
+}
+inline void CCitadelUserMessage_Damage::_internal_set_attacker_subclass(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x01000000u;
+  _impl_.attacker_subclass_ = value;
+}
+inline void CCitadelUserMessage_Damage::set_attacker_subclass(uint32_t value) {
+  _internal_set_attacker_subclass(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMessage_Damage.attacker_subclass)
+}
+
 // optional uint32 victim_class = 16;
 inline bool CCitadelUserMessage_Damage::_internal_has_victim_class() const {
   bool value = (_impl_._has_bits_[0] & 0x00001000u) != 0;
@@ -17228,7 +18844,7 @@ inline void CCitadelUserMessage_Damage::set_hitgroup_id(int32_t value) {
 
 // optional int32 entindex_attacking_object = 22 [default = -1];
 inline bool CCitadelUserMessage_Damage::_internal_has_entindex_attacking_object() const {
-  bool value = (_impl_._has_bits_[0] & 0x01000000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x02000000u) != 0;
   return value;
 }
 inline bool CCitadelUserMessage_Damage::has_entindex_attacking_object() const {
@@ -17236,7 +18852,7 @@ inline bool CCitadelUserMessage_Damage::has_entindex_attacking_object() const {
 }
 inline void CCitadelUserMessage_Damage::clear_entindex_attacking_object() {
   _impl_.entindex_attacking_object_ = -1;
-  _impl_._has_bits_[0] &= ~0x01000000u;
+  _impl_._has_bits_[0] &= ~0x02000000u;
 }
 inline int32_t CCitadelUserMessage_Damage::_internal_entindex_attacking_object() const {
   return _impl_.entindex_attacking_object_;
@@ -17246,7 +18862,7 @@ inline int32_t CCitadelUserMessage_Damage::entindex_attacking_object() const {
   return _internal_entindex_attacking_object();
 }
 inline void CCitadelUserMessage_Damage::_internal_set_entindex_attacking_object(int32_t value) {
-  _impl_._has_bits_[0] |= 0x01000000u;
+  _impl_._has_bits_[0] |= 0x02000000u;
   _impl_.entindex_attacking_object_ = value;
 }
 inline void CCitadelUserMessage_Damage::set_entindex_attacking_object(int32_t value) {
@@ -17574,7 +19190,7 @@ inline void PingCommonData::set_allocated_ping_location(::CMsgVector* ping_locat
 
 // optional uint32 entity_index = 3 [default = 16777215];
 inline bool PingCommonData::_internal_has_entity_index() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000200u) != 0;
   return value;
 }
 inline bool PingCommonData::has_entity_index() const {
@@ -17582,7 +19198,7 @@ inline bool PingCommonData::has_entity_index() const {
 }
 inline void PingCommonData::clear_entity_index() {
   _impl_.entity_index_ = 16777215u;
-  _impl_._has_bits_[0] &= ~0x00000020u;
+  _impl_._has_bits_[0] &= ~0x00000200u;
 }
 inline uint32_t PingCommonData::_internal_entity_index() const {
   return _impl_.entity_index_;
@@ -17592,7 +19208,7 @@ inline uint32_t PingCommonData::entity_index() const {
   return _internal_entity_index();
 }
 inline void PingCommonData::_internal_set_entity_index(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000020u;
+  _impl_._has_bits_[0] |= 0x00000200u;
   _impl_.entity_index_ = value;
 }
 inline void PingCommonData::set_entity_index(uint32_t value) {
@@ -17602,7 +19218,7 @@ inline void PingCommonData::set_entity_index(uint32_t value) {
 
 // optional int32 sender_player_slot = 4 [default = -1];
 inline bool PingCommonData::_internal_has_sender_player_slot() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000400u) != 0;
   return value;
 }
 inline bool PingCommonData::has_sender_player_slot() const {
@@ -17610,7 +19226,7 @@ inline bool PingCommonData::has_sender_player_slot() const {
 }
 inline void PingCommonData::clear_sender_player_slot() {
   _impl_.sender_player_slot_ = -1;
-  _impl_._has_bits_[0] &= ~0x00000040u;
+  _impl_._has_bits_[0] &= ~0x00000400u;
 }
 inline int32_t PingCommonData::_internal_sender_player_slot() const {
   return _impl_.sender_player_slot_;
@@ -17620,7 +19236,7 @@ inline int32_t PingCommonData::sender_player_slot() const {
   return _internal_sender_player_slot();
 }
 inline void PingCommonData::_internal_set_sender_player_slot(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000040u;
+  _impl_._has_bits_[0] |= 0x00000400u;
   _impl_.sender_player_slot_ = value;
 }
 inline void PingCommonData::set_sender_player_slot(int32_t value) {
@@ -17750,6 +19366,119 @@ inline void PingCommonData::_internal_set_cooldown_time(float value) {
 inline void PingCommonData::set_cooldown_time(float value) {
   _internal_set_cooldown_time(value);
   // @@protoc_insertion_point(field_set:PingCommonData.cooldown_time)
+}
+
+// optional .CMsgLaneColor lane_color = 8 [default = k_ELaneColor_Invalid];
+inline bool PingCommonData::_internal_has_lane_color() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
+  return value;
+}
+inline bool PingCommonData::has_lane_color() const {
+  return _internal_has_lane_color();
+}
+inline void PingCommonData::clear_lane_color() {
+  _impl_.lane_color_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000020u;
+}
+inline ::CMsgLaneColor PingCommonData::_internal_lane_color() const {
+  return static_cast< ::CMsgLaneColor >(_impl_.lane_color_);
+}
+inline ::CMsgLaneColor PingCommonData::lane_color() const {
+  // @@protoc_insertion_point(field_get:PingCommonData.lane_color)
+  return _internal_lane_color();
+}
+inline void PingCommonData::_internal_set_lane_color(::CMsgLaneColor value) {
+  assert(::CMsgLaneColor_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000020u;
+  _impl_.lane_color_ = value;
+}
+inline void PingCommonData::set_lane_color(::CMsgLaneColor value) {
+  _internal_set_lane_color(value);
+  // @@protoc_insertion_point(field_set:PingCommonData.lane_color)
+}
+
+// optional int32 ping_anim_type = 9;
+inline bool PingCommonData::_internal_has_ping_anim_type() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
+  return value;
+}
+inline bool PingCommonData::has_ping_anim_type() const {
+  return _internal_has_ping_anim_type();
+}
+inline void PingCommonData::clear_ping_anim_type() {
+  _impl_.ping_anim_type_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000040u;
+}
+inline int32_t PingCommonData::_internal_ping_anim_type() const {
+  return _impl_.ping_anim_type_;
+}
+inline int32_t PingCommonData::ping_anim_type() const {
+  // @@protoc_insertion_point(field_get:PingCommonData.ping_anim_type)
+  return _internal_ping_anim_type();
+}
+inline void PingCommonData::_internal_set_ping_anim_type(int32_t value) {
+  _impl_._has_bits_[0] |= 0x00000040u;
+  _impl_.ping_anim_type_ = value;
+}
+inline void PingCommonData::set_ping_anim_type(int32_t value) {
+  _internal_set_ping_anim_type(value);
+  // @@protoc_insertion_point(field_set:PingCommonData.ping_anim_type)
+}
+
+// optional uint32 ability_id = 10;
+inline bool PingCommonData::_internal_has_ability_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
+  return value;
+}
+inline bool PingCommonData::has_ability_id() const {
+  return _internal_has_ability_id();
+}
+inline void PingCommonData::clear_ability_id() {
+  _impl_.ability_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000080u;
+}
+inline uint32_t PingCommonData::_internal_ability_id() const {
+  return _impl_.ability_id_;
+}
+inline uint32_t PingCommonData::ability_id() const {
+  // @@protoc_insertion_point(field_get:PingCommonData.ability_id)
+  return _internal_ability_id();
+}
+inline void PingCommonData::_internal_set_ability_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000080u;
+  _impl_.ability_id_ = value;
+}
+inline void PingCommonData::set_ability_id(uint32_t value) {
+  _internal_set_ability_id(value);
+  // @@protoc_insertion_point(field_set:PingCommonData.ability_id)
+}
+
+// optional bool is_corrupted_item = 11;
+inline bool PingCommonData::_internal_has_is_corrupted_item() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000100u) != 0;
+  return value;
+}
+inline bool PingCommonData::has_is_corrupted_item() const {
+  return _internal_has_is_corrupted_item();
+}
+inline void PingCommonData::clear_is_corrupted_item() {
+  _impl_.is_corrupted_item_ = false;
+  _impl_._has_bits_[0] &= ~0x00000100u;
+}
+inline bool PingCommonData::_internal_is_corrupted_item() const {
+  return _impl_.is_corrupted_item_;
+}
+inline bool PingCommonData::is_corrupted_item() const {
+  // @@protoc_insertion_point(field_get:PingCommonData.is_corrupted_item)
+  return _internal_is_corrupted_item();
+}
+inline void PingCommonData::_internal_set_is_corrupted_item(bool value) {
+  _impl_._has_bits_[0] |= 0x00000100u;
+  _impl_.is_corrupted_item_ = value;
+}
+inline void PingCommonData::set_is_corrupted_item(bool value) {
+  _internal_set_is_corrupted_item(value);
+  // @@protoc_insertion_point(field_set:PingCommonData.is_corrupted_item)
 }
 
 // -------------------------------------------------------------------
@@ -18205,6 +19934,62 @@ inline void CCitadelUserMsg_PingWheel::set_ping_wheel_option_id(uint32_t value) 
   // @@protoc_insertion_point(field_set:CCitadelUserMsg_PingWheel.ping_wheel_option_id)
 }
 
+// optional bool pinged_enemy_entity = 3;
+inline bool CCitadelUserMsg_PingWheel::_internal_has_pinged_enemy_entity() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_PingWheel::has_pinged_enemy_entity() const {
+  return _internal_has_pinged_enemy_entity();
+}
+inline void CCitadelUserMsg_PingWheel::clear_pinged_enemy_entity() {
+  _impl_.pinged_enemy_entity_ = false;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline bool CCitadelUserMsg_PingWheel::_internal_pinged_enemy_entity() const {
+  return _impl_.pinged_enemy_entity_;
+}
+inline bool CCitadelUserMsg_PingWheel::pinged_enemy_entity() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_PingWheel.pinged_enemy_entity)
+  return _internal_pinged_enemy_entity();
+}
+inline void CCitadelUserMsg_PingWheel::_internal_set_pinged_enemy_entity(bool value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.pinged_enemy_entity_ = value;
+}
+inline void CCitadelUserMsg_PingWheel::set_pinged_enemy_entity(bool value) {
+  _internal_set_pinged_enemy_entity(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_PingWheel.pinged_enemy_entity)
+}
+
+// optional bool is_blind_ping = 4;
+inline bool CCitadelUserMsg_PingWheel::_internal_has_is_blind_ping() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_PingWheel::has_is_blind_ping() const {
+  return _internal_has_is_blind_ping();
+}
+inline void CCitadelUserMsg_PingWheel::clear_is_blind_ping() {
+  _impl_.is_blind_ping_ = false;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline bool CCitadelUserMsg_PingWheel::_internal_is_blind_ping() const {
+  return _impl_.is_blind_ping_;
+}
+inline bool CCitadelUserMsg_PingWheel::is_blind_ping() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_PingWheel.is_blind_ping)
+  return _internal_is_blind_ping();
+}
+inline void CCitadelUserMsg_PingWheel::_internal_set_is_blind_ping(bool value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.is_blind_ping_ = value;
+}
+inline void CCitadelUserMsg_PingWheel::set_is_blind_ping(bool value) {
+  _internal_set_is_blind_ping(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_PingWheel.is_blind_ping)
+}
+
 // -------------------------------------------------------------------
 
 // CCitadelUserMsg_AbilityPing
@@ -18508,7 +20293,7 @@ inline void CCitadelUserMsg_QuickResponse::set_responding_to_ping_message_id(uin
 
 // optional int32 responding_to_player_slot = 3 [default = -1];
 inline bool CCitadelUserMsg_QuickResponse::_internal_has_responding_to_player_slot() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_QuickResponse::has_responding_to_player_slot() const {
@@ -18516,7 +20301,7 @@ inline bool CCitadelUserMsg_QuickResponse::has_responding_to_player_slot() const
 }
 inline void CCitadelUserMsg_QuickResponse::clear_responding_to_player_slot() {
   _impl_.responding_to_player_slot_ = -1;
-  _impl_._has_bits_[0] &= ~0x00000008u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 inline int32_t CCitadelUserMsg_QuickResponse::_internal_responding_to_player_slot() const {
   return _impl_.responding_to_player_slot_;
@@ -18526,41 +20311,12 @@ inline int32_t CCitadelUserMsg_QuickResponse::responding_to_player_slot() const 
   return _internal_responding_to_player_slot();
 }
 inline void CCitadelUserMsg_QuickResponse::_internal_set_responding_to_player_slot(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_._has_bits_[0] |= 0x00000004u;
   _impl_.responding_to_player_slot_ = value;
 }
 inline void CCitadelUserMsg_QuickResponse::set_responding_to_player_slot(int32_t value) {
   _internal_set_responding_to_player_slot(value);
   // @@protoc_insertion_point(field_set:CCitadelUserMsg_QuickResponse.responding_to_player_slot)
-}
-
-// optional .CMsgLaneColor lane_color = 4 [default = k_ELaneColor_Invalid];
-inline bool CCitadelUserMsg_QuickResponse::_internal_has_lane_color() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
-  return value;
-}
-inline bool CCitadelUserMsg_QuickResponse::has_lane_color() const {
-  return _internal_has_lane_color();
-}
-inline void CCitadelUserMsg_QuickResponse::clear_lane_color() {
-  _impl_.lane_color_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000004u;
-}
-inline ::CMsgLaneColor CCitadelUserMsg_QuickResponse::_internal_lane_color() const {
-  return static_cast< ::CMsgLaneColor >(_impl_.lane_color_);
-}
-inline ::CMsgLaneColor CCitadelUserMsg_QuickResponse::lane_color() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMsg_QuickResponse.lane_color)
-  return _internal_lane_color();
-}
-inline void CCitadelUserMsg_QuickResponse::_internal_set_lane_color(::CMsgLaneColor value) {
-  assert(::CMsgLaneColor_IsValid(value));
-  _impl_._has_bits_[0] |= 0x00000004u;
-  _impl_.lane_color_ = value;
-}
-inline void CCitadelUserMsg_QuickResponse::set_lane_color(::CMsgLaneColor value) {
-  _internal_set_lane_color(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMsg_QuickResponse.lane_color)
 }
 
 // -------------------------------------------------------------------
@@ -19838,6 +21594,34 @@ inline void CCitadelUserMsg_RecentDamageSummary_DamageRecord::_internal_set_crit
 inline void CCitadelUserMsg_RecentDamageSummary_DamageRecord::set_crit_damage(float value) {
   _internal_set_crit_damage(value);
   // @@protoc_insertion_point(field_set:CCitadelUserMsg_RecentDamageSummary.DamageRecord.crit_damage)
+}
+
+// optional uint32 attacker_subclass = 13;
+inline bool CCitadelUserMsg_RecentDamageSummary_DamageRecord::_internal_has_attacker_subclass() const {
+  bool value = (_impl_._has_bits_[0] & 0x00001000u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_RecentDamageSummary_DamageRecord::has_attacker_subclass() const {
+  return _internal_has_attacker_subclass();
+}
+inline void CCitadelUserMsg_RecentDamageSummary_DamageRecord::clear_attacker_subclass() {
+  _impl_.attacker_subclass_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00001000u;
+}
+inline uint32_t CCitadelUserMsg_RecentDamageSummary_DamageRecord::_internal_attacker_subclass() const {
+  return _impl_.attacker_subclass_;
+}
+inline uint32_t CCitadelUserMsg_RecentDamageSummary_DamageRecord::attacker_subclass() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_RecentDamageSummary.DamageRecord.attacker_subclass)
+  return _internal_attacker_subclass();
+}
+inline void CCitadelUserMsg_RecentDamageSummary_DamageRecord::_internal_set_attacker_subclass(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00001000u;
+  _impl_.attacker_subclass_ = value;
+}
+inline void CCitadelUserMsg_RecentDamageSummary_DamageRecord::set_attacker_subclass(uint32_t value) {
+  _internal_set_attacker_subclass(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_RecentDamageSummary.DamageRecord.attacker_subclass)
 }
 
 // -------------------------------------------------------------------
@@ -21889,7 +23673,7 @@ inline void CCitadelUserMsg_CameraController::set_action(::CameraAction value) {
 
 // optional .CameraOperation operation = 2 [default = k_ECameraOp_Maintain];
 inline bool CCitadelUserMsg_CameraController::_internal_has_operation() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000800u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00001000u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_CameraController::has_operation() const {
@@ -21897,7 +23681,7 @@ inline bool CCitadelUserMsg_CameraController::has_operation() const {
 }
 inline void CCitadelUserMsg_CameraController::clear_operation() {
   _impl_.operation_ = 2;
-  _impl_._has_bits_[0] &= ~0x00000800u;
+  _impl_._has_bits_[0] &= ~0x00001000u;
 }
 inline ::CameraOperation CCitadelUserMsg_CameraController::_internal_operation() const {
   return static_cast< ::CameraOperation >(_impl_.operation_);
@@ -21908,7 +23692,7 @@ inline ::CameraOperation CCitadelUserMsg_CameraController::operation() const {
 }
 inline void CCitadelUserMsg_CameraController::_internal_set_operation(::CameraOperation value) {
   assert(::CameraOperation_IsValid(value));
-  _impl_._has_bits_[0] |= 0x00000800u;
+  _impl_._has_bits_[0] |= 0x00001000u;
   _impl_.operation_ = value;
 }
 inline void CCitadelUserMsg_CameraController::set_operation(::CameraOperation value) {
@@ -22060,7 +23844,7 @@ inline void CCitadelUserMsg_CameraController::set_context_symbol_id(uint32_t val
 
 // optional uint32 priority = 13 [default = 1];
 inline bool CCitadelUserMsg_CameraController::_internal_has_priority() const {
-  bool value = (_impl_._has_bits_[0] & 0x00001000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00002000u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_CameraController::has_priority() const {
@@ -22068,7 +23852,7 @@ inline bool CCitadelUserMsg_CameraController::has_priority() const {
 }
 inline void CCitadelUserMsg_CameraController::clear_priority() {
   _impl_.priority_ = 1u;
-  _impl_._has_bits_[0] &= ~0x00001000u;
+  _impl_._has_bits_[0] &= ~0x00002000u;
 }
 inline uint32_t CCitadelUserMsg_CameraController::_internal_priority() const {
   return _impl_.priority_;
@@ -22078,12 +23862,40 @@ inline uint32_t CCitadelUserMsg_CameraController::priority() const {
   return _internal_priority();
 }
 inline void CCitadelUserMsg_CameraController::_internal_set_priority(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00001000u;
+  _impl_._has_bits_[0] |= 0x00002000u;
   _impl_.priority_ = value;
 }
 inline void CCitadelUserMsg_CameraController::set_priority(uint32_t value) {
   _internal_set_priority(value);
   // @@protoc_insertion_point(field_set:CCitadelUserMsg_CameraController.priority)
+}
+
+// optional uint32 target_pawn = 14 [default = 16777215];
+inline bool CCitadelUserMsg_CameraController::_internal_has_target_pawn() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000800u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_CameraController::has_target_pawn() const {
+  return _internal_has_target_pawn();
+}
+inline void CCitadelUserMsg_CameraController::clear_target_pawn() {
+  _impl_.target_pawn_ = 16777215u;
+  _impl_._has_bits_[0] &= ~0x00000800u;
+}
+inline uint32_t CCitadelUserMsg_CameraController::_internal_target_pawn() const {
+  return _impl_.target_pawn_;
+}
+inline uint32_t CCitadelUserMsg_CameraController::target_pawn() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CameraController.target_pawn)
+  return _internal_target_pawn();
+}
+inline void CCitadelUserMsg_CameraController::_internal_set_target_pawn(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000800u;
+  _impl_.target_pawn_ = value;
+}
+inline void CCitadelUserMsg_CameraController::set_target_pawn(uint32_t value) {
+  _internal_set_target_pawn(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CameraController.target_pawn)
 }
 
 // optional .CCitadelUserMsg_CameraController.Maintain maintain = 6;
@@ -22741,7 +24553,7 @@ CCitadelUserMsg_ChatEvent::mutable_player_slots() {
 
 // optional int32 entindex_victim = 1 [default = -1];
 inline bool CCitadelUserMsg_HeroKilled::_internal_has_entindex_victim() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_HeroKilled::has_entindex_victim() const {
@@ -22749,7 +24561,7 @@ inline bool CCitadelUserMsg_HeroKilled::has_entindex_victim() const {
 }
 inline void CCitadelUserMsg_HeroKilled::clear_entindex_victim() {
   _impl_.entindex_victim_ = -1;
-  _impl_._has_bits_[0] &= ~0x00000004u;
+  _impl_._has_bits_[0] &= ~0x00000020u;
 }
 inline int32_t CCitadelUserMsg_HeroKilled::_internal_entindex_victim() const {
   return _impl_.entindex_victim_;
@@ -22759,7 +24571,7 @@ inline int32_t CCitadelUserMsg_HeroKilled::entindex_victim() const {
   return _internal_entindex_victim();
 }
 inline void CCitadelUserMsg_HeroKilled::_internal_set_entindex_victim(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_._has_bits_[0] |= 0x00000020u;
   _impl_.entindex_victim_ = value;
 }
 inline void CCitadelUserMsg_HeroKilled::set_entindex_victim(int32_t value) {
@@ -22769,7 +24581,7 @@ inline void CCitadelUserMsg_HeroKilled::set_entindex_victim(int32_t value) {
 
 // optional int32 entindex_inflictor = 2 [default = -1];
 inline bool CCitadelUserMsg_HeroKilled::_internal_has_entindex_inflictor() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_HeroKilled::has_entindex_inflictor() const {
@@ -22777,7 +24589,7 @@ inline bool CCitadelUserMsg_HeroKilled::has_entindex_inflictor() const {
 }
 inline void CCitadelUserMsg_HeroKilled::clear_entindex_inflictor() {
   _impl_.entindex_inflictor_ = -1;
-  _impl_._has_bits_[0] &= ~0x00000008u;
+  _impl_._has_bits_[0] &= ~0x00000040u;
 }
 inline int32_t CCitadelUserMsg_HeroKilled::_internal_entindex_inflictor() const {
   return _impl_.entindex_inflictor_;
@@ -22787,7 +24599,7 @@ inline int32_t CCitadelUserMsg_HeroKilled::entindex_inflictor() const {
   return _internal_entindex_inflictor();
 }
 inline void CCitadelUserMsg_HeroKilled::_internal_set_entindex_inflictor(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_._has_bits_[0] |= 0x00000040u;
   _impl_.entindex_inflictor_ = value;
 }
 inline void CCitadelUserMsg_HeroKilled::set_entindex_inflictor(int32_t value) {
@@ -22797,7 +24609,7 @@ inline void CCitadelUserMsg_HeroKilled::set_entindex_inflictor(int32_t value) {
 
 // optional int32 entindex_attacker = 3 [default = -1];
 inline bool CCitadelUserMsg_HeroKilled::_internal_has_entindex_attacker() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_HeroKilled::has_entindex_attacker() const {
@@ -22805,7 +24617,7 @@ inline bool CCitadelUserMsg_HeroKilled::has_entindex_attacker() const {
 }
 inline void CCitadelUserMsg_HeroKilled::clear_entindex_attacker() {
   _impl_.entindex_attacker_ = -1;
-  _impl_._has_bits_[0] &= ~0x00000010u;
+  _impl_._has_bits_[0] &= ~0x00000080u;
 }
 inline int32_t CCitadelUserMsg_HeroKilled::_internal_entindex_attacker() const {
   return _impl_.entindex_attacker_;
@@ -22815,7 +24627,7 @@ inline int32_t CCitadelUserMsg_HeroKilled::entindex_attacker() const {
   return _internal_entindex_attacker();
 }
 inline void CCitadelUserMsg_HeroKilled::_internal_set_entindex_attacker(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_._has_bits_[0] |= 0x00000080u;
   _impl_.entindex_attacker_ = value;
 }
 inline void CCitadelUserMsg_HeroKilled::set_entindex_attacker(int32_t value) {
@@ -22872,7 +24684,7 @@ CCitadelUserMsg_HeroKilled::mutable_entindex_assisters() {
 
 // optional int32 entindex_scorer = 5 [default = -1];
 inline bool CCitadelUserMsg_HeroKilled::_internal_has_entindex_scorer() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000100u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_HeroKilled::has_entindex_scorer() const {
@@ -22880,7 +24692,7 @@ inline bool CCitadelUserMsg_HeroKilled::has_entindex_scorer() const {
 }
 inline void CCitadelUserMsg_HeroKilled::clear_entindex_scorer() {
   _impl_.entindex_scorer_ = -1;
-  _impl_._has_bits_[0] &= ~0x00000020u;
+  _impl_._has_bits_[0] &= ~0x00000100u;
 }
 inline int32_t CCitadelUserMsg_HeroKilled::_internal_entindex_scorer() const {
   return _impl_.entindex_scorer_;
@@ -22890,7 +24702,7 @@ inline int32_t CCitadelUserMsg_HeroKilled::entindex_scorer() const {
   return _internal_entindex_scorer();
 }
 inline void CCitadelUserMsg_HeroKilled::_internal_set_entindex_scorer(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000020u;
+  _impl_._has_bits_[0] |= 0x00000100u;
   _impl_.entindex_scorer_ = value;
 }
 inline void CCitadelUserMsg_HeroKilled::set_entindex_scorer(int32_t value) {
@@ -22952,6 +24764,90 @@ inline void CCitadelUserMsg_HeroKilled::_internal_set_victim_team_number(int32_t
 inline void CCitadelUserMsg_HeroKilled::set_victim_team_number(int32_t value) {
   _internal_set_victim_team_number(value);
   // @@protoc_insertion_point(field_set:CCitadelUserMsg_HeroKilled.victim_team_number)
+}
+
+// optional int32 killfeed_gold = 8;
+inline bool CCitadelUserMsg_HeroKilled::_internal_has_killfeed_gold() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_HeroKilled::has_killfeed_gold() const {
+  return _internal_has_killfeed_gold();
+}
+inline void CCitadelUserMsg_HeroKilled::clear_killfeed_gold() {
+  _impl_.killfeed_gold_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline int32_t CCitadelUserMsg_HeroKilled::_internal_killfeed_gold() const {
+  return _impl_.killfeed_gold_;
+}
+inline int32_t CCitadelUserMsg_HeroKilled::killfeed_gold() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_HeroKilled.killfeed_gold)
+  return _internal_killfeed_gold();
+}
+inline void CCitadelUserMsg_HeroKilled::_internal_set_killfeed_gold(int32_t value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.killfeed_gold_ = value;
+}
+inline void CCitadelUserMsg_HeroKilled::set_killfeed_gold(int32_t value) {
+  _internal_set_killfeed_gold(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_HeroKilled.killfeed_gold)
+}
+
+// optional uint32 killer_ability_id = 9;
+inline bool CCitadelUserMsg_HeroKilled::_internal_has_killer_ability_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_HeroKilled::has_killer_ability_id() const {
+  return _internal_has_killer_ability_id();
+}
+inline void CCitadelUserMsg_HeroKilled::clear_killer_ability_id() {
+  _impl_.killer_ability_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline uint32_t CCitadelUserMsg_HeroKilled::_internal_killer_ability_id() const {
+  return _impl_.killer_ability_id_;
+}
+inline uint32_t CCitadelUserMsg_HeroKilled::killer_ability_id() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_HeroKilled.killer_ability_id)
+  return _internal_killer_ability_id();
+}
+inline void CCitadelUserMsg_HeroKilled::_internal_set_killer_ability_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.killer_ability_id_ = value;
+}
+inline void CCitadelUserMsg_HeroKilled::set_killer_ability_id(uint32_t value) {
+  _internal_set_killer_ability_id(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_HeroKilled.killer_ability_id)
+}
+
+// optional bool first_blood = 10;
+inline bool CCitadelUserMsg_HeroKilled::_internal_has_first_blood() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_HeroKilled::has_first_blood() const {
+  return _internal_has_first_blood();
+}
+inline void CCitadelUserMsg_HeroKilled::clear_first_blood() {
+  _impl_.first_blood_ = false;
+  _impl_._has_bits_[0] &= ~0x00000010u;
+}
+inline bool CCitadelUserMsg_HeroKilled::_internal_first_blood() const {
+  return _impl_.first_blood_;
+}
+inline bool CCitadelUserMsg_HeroKilled::first_blood() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_HeroKilled.first_blood)
+  return _internal_first_blood();
+}
+inline void CCitadelUserMsg_HeroKilled::_internal_set_first_blood(bool value) {
+  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_.first_blood_ = value;
+}
+inline void CCitadelUserMsg_HeroKilled::set_first_blood(bool value) {
+  _internal_set_first_blood(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_HeroKilled.first_blood)
 }
 
 // -------------------------------------------------------------------
@@ -23245,6 +25141,34 @@ inline void CCitadelEntityMsg_BreakablePropSpawnDebris::set_allocated_damage_for
   }
   _impl_.damage_force_ = damage_force;
   // @@protoc_insertion_point(field_set_allocated:CCitadelEntityMsg_BreakablePropSpawnDebris.damage_force)
+}
+
+// optional float radial_force = 5;
+inline bool CCitadelEntityMsg_BreakablePropSpawnDebris::_internal_has_radial_force() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  return value;
+}
+inline bool CCitadelEntityMsg_BreakablePropSpawnDebris::has_radial_force() const {
+  return _internal_has_radial_force();
+}
+inline void CCitadelEntityMsg_BreakablePropSpawnDebris::clear_radial_force() {
+  _impl_.radial_force_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000010u;
+}
+inline float CCitadelEntityMsg_BreakablePropSpawnDebris::_internal_radial_force() const {
+  return _impl_.radial_force_;
+}
+inline float CCitadelEntityMsg_BreakablePropSpawnDebris::radial_force() const {
+  // @@protoc_insertion_point(field_get:CCitadelEntityMsg_BreakablePropSpawnDebris.radial_force)
+  return _internal_radial_force();
+}
+inline void CCitadelEntityMsg_BreakablePropSpawnDebris::_internal_set_radial_force(float value) {
+  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_.radial_force_ = value;
+}
+inline void CCitadelEntityMsg_BreakablePropSpawnDebris::set_radial_force(float value) {
+  _internal_set_radial_force(value);
+  // @@protoc_insertion_point(field_set:CCitadelEntityMsg_BreakablePropSpawnDebris.radial_force)
 }
 
 // -------------------------------------------------------------------
@@ -24736,32 +26660,32 @@ inline void CCitadelUserMsg_PlayerLifetimeStatInfo::set_is_official_match(bool v
 
 // CCitadelUserMsg_StaminaConsumed
 
-// optional int32 entindex_target = 1 [default = -1];
-inline bool CCitadelUserMsg_StaminaConsumed::_internal_has_entindex_target() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
+// optional uint32 target = 1 [default = 16777215];
+inline bool CCitadelUserMsg_StaminaConsumed::_internal_has_target() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
   return value;
 }
-inline bool CCitadelUserMsg_StaminaConsumed::has_entindex_target() const {
-  return _internal_has_entindex_target();
+inline bool CCitadelUserMsg_StaminaConsumed::has_target() const {
+  return _internal_has_target();
 }
-inline void CCitadelUserMsg_StaminaConsumed::clear_entindex_target() {
-  _impl_.entindex_target_ = -1;
-  _impl_._has_bits_[0] &= ~0x00000020u;
+inline void CCitadelUserMsg_StaminaConsumed::clear_target() {
+  _impl_.target_ = 16777215u;
+  _impl_._has_bits_[0] &= ~0x00000080u;
 }
-inline int32_t CCitadelUserMsg_StaminaConsumed::_internal_entindex_target() const {
-  return _impl_.entindex_target_;
+inline uint32_t CCitadelUserMsg_StaminaConsumed::_internal_target() const {
+  return _impl_.target_;
 }
-inline int32_t CCitadelUserMsg_StaminaConsumed::entindex_target() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMsg_StaminaConsumed.entindex_target)
-  return _internal_entindex_target();
+inline uint32_t CCitadelUserMsg_StaminaConsumed::target() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_StaminaConsumed.target)
+  return _internal_target();
 }
-inline void CCitadelUserMsg_StaminaConsumed::_internal_set_entindex_target(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000020u;
-  _impl_.entindex_target_ = value;
+inline void CCitadelUserMsg_StaminaConsumed::_internal_set_target(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000080u;
+  _impl_.target_ = value;
 }
-inline void CCitadelUserMsg_StaminaConsumed::set_entindex_target(int32_t value) {
-  _internal_set_entindex_target(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMsg_StaminaConsumed.entindex_target)
+inline void CCitadelUserMsg_StaminaConsumed::set_target(uint32_t value) {
+  _internal_set_target(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_StaminaConsumed.target)
 }
 
 // optional float stamina_before = 3;
@@ -24822,7 +26746,7 @@ inline void CCitadelUserMsg_StaminaConsumed::set_stamina_after(float value) {
 
 // optional bool drained = 5;
 inline bool CCitadelUserMsg_StaminaConsumed::_internal_has_drained() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_StaminaConsumed::has_drained() const {
@@ -24830,7 +26754,7 @@ inline bool CCitadelUserMsg_StaminaConsumed::has_drained() const {
 }
 inline void CCitadelUserMsg_StaminaConsumed::clear_drained() {
   _impl_.drained_ = false;
-  _impl_._has_bits_[0] &= ~0x00000004u;
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 inline bool CCitadelUserMsg_StaminaConsumed::_internal_drained() const {
   return _impl_.drained_;
@@ -24840,7 +26764,7 @@ inline bool CCitadelUserMsg_StaminaConsumed::drained() const {
   return _internal_drained();
 }
 inline void CCitadelUserMsg_StaminaConsumed::_internal_set_drained(bool value) {
-  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_._has_bits_[0] |= 0x00000010u;
   _impl_.drained_ = value;
 }
 inline void CCitadelUserMsg_StaminaConsumed::set_drained(bool value) {
@@ -24850,7 +26774,7 @@ inline void CCitadelUserMsg_StaminaConsumed::set_drained(bool value) {
 
 // optional float stamina_max = 6;
 inline bool CCitadelUserMsg_StaminaConsumed::_internal_has_stamina_max() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_StaminaConsumed::has_stamina_max() const {
@@ -24858,7 +26782,7 @@ inline bool CCitadelUserMsg_StaminaConsumed::has_stamina_max() const {
 }
 inline void CCitadelUserMsg_StaminaConsumed::clear_stamina_max() {
   _impl_.stamina_max_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000008u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 inline float CCitadelUserMsg_StaminaConsumed::_internal_stamina_max() const {
   return _impl_.stamina_max_;
@@ -24868,7 +26792,7 @@ inline float CCitadelUserMsg_StaminaConsumed::stamina_max() const {
   return _internal_stamina_max();
 }
 inline void CCitadelUserMsg_StaminaConsumed::_internal_set_stamina_max(float value) {
-  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_._has_bits_[0] |= 0x00000004u;
   _impl_.stamina_max_ = value;
 }
 inline void CCitadelUserMsg_StaminaConsumed::set_stamina_max(float value) {
@@ -24878,7 +26802,7 @@ inline void CCitadelUserMsg_StaminaConsumed::set_stamina_max(float value) {
 
 // optional float gametime = 7;
 inline bool CCitadelUserMsg_StaminaConsumed::_internal_has_gametime() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_StaminaConsumed::has_gametime() const {
@@ -24886,7 +26810,7 @@ inline bool CCitadelUserMsg_StaminaConsumed::has_gametime() const {
 }
 inline void CCitadelUserMsg_StaminaConsumed::clear_gametime() {
   _impl_.gametime_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000010u;
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 inline float CCitadelUserMsg_StaminaConsumed::_internal_gametime() const {
   return _impl_.gametime_;
@@ -24896,7 +26820,7 @@ inline float CCitadelUserMsg_StaminaConsumed::gametime() const {
   return _internal_gametime();
 }
 inline void CCitadelUserMsg_StaminaConsumed::_internal_set_gametime(float value) {
-  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_._has_bits_[0] |= 0x00000008u;
   _impl_.gametime_ = value;
 }
 inline void CCitadelUserMsg_StaminaConsumed::set_gametime(float value) {
@@ -24904,313 +26828,397 @@ inline void CCitadelUserMsg_StaminaConsumed::set_gametime(float value) {
   // @@protoc_insertion_point(field_set:CCitadelUserMsg_StaminaConsumed.gametime)
 }
 
-// -------------------------------------------------------------------
-
-// CCitadelUserMessage_AbilityNotify
-
-// optional int32 entindex_victim = 1 [default = -1];
-inline bool CCitadelUserMessage_AbilityNotify::_internal_has_entindex_victim() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+// optional bool play_sound = 8;
+inline bool CCitadelUserMsg_StaminaConsumed::_internal_has_play_sound() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
   return value;
 }
-inline bool CCitadelUserMessage_AbilityNotify::has_entindex_victim() const {
-  return _internal_has_entindex_victim();
+inline bool CCitadelUserMsg_StaminaConsumed::has_play_sound() const {
+  return _internal_has_play_sound();
 }
-inline void CCitadelUserMessage_AbilityNotify::clear_entindex_victim() {
-  _impl_.entindex_victim_ = -1;
-  _impl_._has_bits_[0] &= ~0x00000004u;
+inline void CCitadelUserMsg_StaminaConsumed::clear_play_sound() {
+  _impl_.play_sound_ = false;
+  _impl_._has_bits_[0] &= ~0x00000020u;
 }
-inline int32_t CCitadelUserMessage_AbilityNotify::_internal_entindex_victim() const {
-  return _impl_.entindex_victim_;
+inline bool CCitadelUserMsg_StaminaConsumed::_internal_play_sound() const {
+  return _impl_.play_sound_;
 }
-inline int32_t CCitadelUserMessage_AbilityNotify::entindex_victim() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_AbilityNotify.entindex_victim)
-  return _internal_entindex_victim();
+inline bool CCitadelUserMsg_StaminaConsumed::play_sound() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_StaminaConsumed.play_sound)
+  return _internal_play_sound();
 }
-inline void CCitadelUserMessage_AbilityNotify::_internal_set_entindex_victim(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000004u;
-  _impl_.entindex_victim_ = value;
+inline void CCitadelUserMsg_StaminaConsumed::_internal_set_play_sound(bool value) {
+  _impl_._has_bits_[0] |= 0x00000020u;
+  _impl_.play_sound_ = value;
 }
-inline void CCitadelUserMessage_AbilityNotify::set_entindex_victim(int32_t value) {
-  _internal_set_entindex_victim(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_AbilityNotify.entindex_victim)
-}
-
-// optional int32 entindex_attacker = 2 [default = -1];
-inline bool CCitadelUserMessage_AbilityNotify::_internal_has_entindex_attacker() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
-  return value;
-}
-inline bool CCitadelUserMessage_AbilityNotify::has_entindex_attacker() const {
-  return _internal_has_entindex_attacker();
-}
-inline void CCitadelUserMessage_AbilityNotify::clear_entindex_attacker() {
-  _impl_.entindex_attacker_ = -1;
-  _impl_._has_bits_[0] &= ~0x00000008u;
-}
-inline int32_t CCitadelUserMessage_AbilityNotify::_internal_entindex_attacker() const {
-  return _impl_.entindex_attacker_;
-}
-inline int32_t CCitadelUserMessage_AbilityNotify::entindex_attacker() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_AbilityNotify.entindex_attacker)
-  return _internal_entindex_attacker();
-}
-inline void CCitadelUserMessage_AbilityNotify::_internal_set_entindex_attacker(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000008u;
-  _impl_.entindex_attacker_ = value;
-}
-inline void CCitadelUserMessage_AbilityNotify::set_entindex_attacker(int32_t value) {
-  _internal_set_entindex_attacker(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_AbilityNotify.entindex_attacker)
+inline void CCitadelUserMsg_StaminaConsumed::set_play_sound(bool value) {
+  _internal_set_play_sound(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_StaminaConsumed.play_sound)
 }
 
-// optional uint32 ability_id = 3;
-inline bool CCitadelUserMessage_AbilityNotify::_internal_has_ability_id() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+// optional bool periodic_update = 9;
+inline bool CCitadelUserMsg_StaminaConsumed::_internal_has_periodic_update() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
   return value;
 }
-inline bool CCitadelUserMessage_AbilityNotify::has_ability_id() const {
-  return _internal_has_ability_id();
+inline bool CCitadelUserMsg_StaminaConsumed::has_periodic_update() const {
+  return _internal_has_periodic_update();
 }
-inline void CCitadelUserMessage_AbilityNotify::clear_ability_id() {
-  _impl_.ability_id_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000001u;
+inline void CCitadelUserMsg_StaminaConsumed::clear_periodic_update() {
+  _impl_.periodic_update_ = false;
+  _impl_._has_bits_[0] &= ~0x00000040u;
 }
-inline uint32_t CCitadelUserMessage_AbilityNotify::_internal_ability_id() const {
-  return _impl_.ability_id_;
+inline bool CCitadelUserMsg_StaminaConsumed::_internal_periodic_update() const {
+  return _impl_.periodic_update_;
 }
-inline uint32_t CCitadelUserMessage_AbilityNotify::ability_id() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_AbilityNotify.ability_id)
-  return _internal_ability_id();
+inline bool CCitadelUserMsg_StaminaConsumed::periodic_update() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_StaminaConsumed.periodic_update)
+  return _internal_periodic_update();
 }
-inline void CCitadelUserMessage_AbilityNotify::_internal_set_ability_id(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000001u;
-  _impl_.ability_id_ = value;
+inline void CCitadelUserMsg_StaminaConsumed::_internal_set_periodic_update(bool value) {
+  _impl_._has_bits_[0] |= 0x00000040u;
+  _impl_.periodic_update_ = value;
 }
-inline void CCitadelUserMessage_AbilityNotify::set_ability_id(uint32_t value) {
-  _internal_set_ability_id(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_AbilityNotify.ability_id)
-}
-
-// optional uint32 status_impact = 4;
-inline bool CCitadelUserMessage_AbilityNotify::_internal_has_status_impact() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
-  return value;
-}
-inline bool CCitadelUserMessage_AbilityNotify::has_status_impact() const {
-  return _internal_has_status_impact();
-}
-inline void CCitadelUserMessage_AbilityNotify::clear_status_impact() {
-  _impl_.status_impact_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000002u;
-}
-inline uint32_t CCitadelUserMessage_AbilityNotify::_internal_status_impact() const {
-  return _impl_.status_impact_;
-}
-inline uint32_t CCitadelUserMessage_AbilityNotify::status_impact() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_AbilityNotify.status_impact)
-  return _internal_status_impact();
-}
-inline void CCitadelUserMessage_AbilityNotify::_internal_set_status_impact(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000002u;
-  _impl_.status_impact_ = value;
-}
-inline void CCitadelUserMessage_AbilityNotify::set_status_impact(uint32_t value) {
-  _internal_set_status_impact(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_AbilityNotify.status_impact)
+inline void CCitadelUserMsg_StaminaConsumed::set_periodic_update(bool value) {
+  _internal_set_periodic_update(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_StaminaConsumed.periodic_update)
 }
 
 // -------------------------------------------------------------------
 
-// CCitadelUserMessage_CurrencyChanged
+// CCitadelUserMsg_AbilityNotify
 
-// optional int32 userid = 1 [default = -1];
-inline bool CCitadelUserMessage_CurrencyChanged::_internal_has_userid() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000100u) != 0;
-  return value;
-}
-inline bool CCitadelUserMessage_CurrencyChanged::has_userid() const {
-  return _internal_has_userid();
-}
-inline void CCitadelUserMessage_CurrencyChanged::clear_userid() {
-  _impl_.userid_ = -1;
-  _impl_._has_bits_[0] &= ~0x00000100u;
-}
-inline int32_t CCitadelUserMessage_CurrencyChanged::_internal_userid() const {
-  return _impl_.userid_;
-}
-inline int32_t CCitadelUserMessage_CurrencyChanged::userid() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_CurrencyChanged.userid)
-  return _internal_userid();
-}
-inline void CCitadelUserMessage_CurrencyChanged::_internal_set_userid(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000100u;
-  _impl_.userid_ = value;
-}
-inline void CCitadelUserMessage_CurrencyChanged::set_userid(int32_t value) {
-  _internal_set_userid(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_CurrencyChanged.userid)
-}
-
-// optional int32 currency_type = 2;
-inline bool CCitadelUserMessage_CurrencyChanged::_internal_has_currency_type() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
-  return value;
-}
-inline bool CCitadelUserMessage_CurrencyChanged::has_currency_type() const {
-  return _internal_has_currency_type();
-}
-inline void CCitadelUserMessage_CurrencyChanged::clear_currency_type() {
-  _impl_.currency_type_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000002u;
-}
-inline int32_t CCitadelUserMessage_CurrencyChanged::_internal_currency_type() const {
-  return _impl_.currency_type_;
-}
-inline int32_t CCitadelUserMessage_CurrencyChanged::currency_type() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_CurrencyChanged.currency_type)
-  return _internal_currency_type();
-}
-inline void CCitadelUserMessage_CurrencyChanged::_internal_set_currency_type(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000002u;
-  _impl_.currency_type_ = value;
-}
-inline void CCitadelUserMessage_CurrencyChanged::set_currency_type(int32_t value) {
-  _internal_set_currency_type(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_CurrencyChanged.currency_type)
-}
-
-// optional int32 currency_source = 3;
-inline bool CCitadelUserMessage_CurrencyChanged::_internal_has_currency_source() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
-  return value;
-}
-inline bool CCitadelUserMessage_CurrencyChanged::has_currency_source() const {
-  return _internal_has_currency_source();
-}
-inline void CCitadelUserMessage_CurrencyChanged::clear_currency_source() {
-  _impl_.currency_source_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000004u;
-}
-inline int32_t CCitadelUserMessage_CurrencyChanged::_internal_currency_source() const {
-  return _impl_.currency_source_;
-}
-inline int32_t CCitadelUserMessage_CurrencyChanged::currency_source() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_CurrencyChanged.currency_source)
-  return _internal_currency_source();
-}
-inline void CCitadelUserMessage_CurrencyChanged::_internal_set_currency_source(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000004u;
-  _impl_.currency_source_ = value;
-}
-inline void CCitadelUserMessage_CurrencyChanged::set_currency_source(int32_t value) {
-  _internal_set_currency_source(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_CurrencyChanged.currency_source)
-}
-
-// optional int32 delta = 4;
-inline bool CCitadelUserMessage_CurrencyChanged::_internal_has_delta() const {
+// optional uint32 victim = 1 [default = 16777215];
+inline bool CCitadelUserMsg_AbilityNotify::_internal_has_victim() const {
   bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
   return value;
 }
-inline bool CCitadelUserMessage_CurrencyChanged::has_delta() const {
-  return _internal_has_delta();
+inline bool CCitadelUserMsg_AbilityNotify::has_victim() const {
+  return _internal_has_victim();
 }
-inline void CCitadelUserMessage_CurrencyChanged::clear_delta() {
-  _impl_.delta_ = 0;
+inline void CCitadelUserMsg_AbilityNotify::clear_victim() {
+  _impl_.victim_ = 16777215u;
   _impl_._has_bits_[0] &= ~0x00000008u;
 }
-inline int32_t CCitadelUserMessage_CurrencyChanged::_internal_delta() const {
-  return _impl_.delta_;
+inline uint32_t CCitadelUserMsg_AbilityNotify::_internal_victim() const {
+  return _impl_.victim_;
 }
-inline int32_t CCitadelUserMessage_CurrencyChanged::delta() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_CurrencyChanged.delta)
-  return _internal_delta();
+inline uint32_t CCitadelUserMsg_AbilityNotify::victim() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_AbilityNotify.victim)
+  return _internal_victim();
 }
-inline void CCitadelUserMessage_CurrencyChanged::_internal_set_delta(int32_t value) {
+inline void CCitadelUserMsg_AbilityNotify::_internal_set_victim(uint32_t value) {
   _impl_._has_bits_[0] |= 0x00000008u;
-  _impl_.delta_ = value;
+  _impl_.victim_ = value;
 }
-inline void CCitadelUserMessage_CurrencyChanged::set_delta(int32_t value) {
-  _internal_set_delta(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_CurrencyChanged.delta)
+inline void CCitadelUserMsg_AbilityNotify::set_victim(uint32_t value) {
+  _internal_set_victim(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_AbilityNotify.victim)
 }
 
-// optional bool notification = 5;
-inline bool CCitadelUserMessage_CurrencyChanged::_internal_has_notification() const {
+// optional uint32 attacker = 2 [default = 16777215];
+inline bool CCitadelUserMsg_AbilityNotify::_internal_has_attacker() const {
   bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
   return value;
 }
-inline bool CCitadelUserMessage_CurrencyChanged::has_notification() const {
+inline bool CCitadelUserMsg_AbilityNotify::has_attacker() const {
+  return _internal_has_attacker();
+}
+inline void CCitadelUserMsg_AbilityNotify::clear_attacker() {
+  _impl_.attacker_ = 16777215u;
+  _impl_._has_bits_[0] &= ~0x00000010u;
+}
+inline uint32_t CCitadelUserMsg_AbilityNotify::_internal_attacker() const {
+  return _impl_.attacker_;
+}
+inline uint32_t CCitadelUserMsg_AbilityNotify::attacker() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_AbilityNotify.attacker)
+  return _internal_attacker();
+}
+inline void CCitadelUserMsg_AbilityNotify::_internal_set_attacker(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_.attacker_ = value;
+}
+inline void CCitadelUserMsg_AbilityNotify::set_attacker(uint32_t value) {
+  _internal_set_attacker(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_AbilityNotify.attacker)
+}
+
+// optional uint32 ability_id = 3;
+inline bool CCitadelUserMsg_AbilityNotify::_internal_has_ability_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_AbilityNotify::has_ability_id() const {
+  return _internal_has_ability_id();
+}
+inline void CCitadelUserMsg_AbilityNotify::clear_ability_id() {
+  _impl_.ability_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint32_t CCitadelUserMsg_AbilityNotify::_internal_ability_id() const {
+  return _impl_.ability_id_;
+}
+inline uint32_t CCitadelUserMsg_AbilityNotify::ability_id() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_AbilityNotify.ability_id)
+  return _internal_ability_id();
+}
+inline void CCitadelUserMsg_AbilityNotify::_internal_set_ability_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.ability_id_ = value;
+}
+inline void CCitadelUserMsg_AbilityNotify::set_ability_id(uint32_t value) {
+  _internal_set_ability_id(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_AbilityNotify.ability_id)
+}
+
+// optional uint32 status_impact = 4;
+inline bool CCitadelUserMsg_AbilityNotify::_internal_has_status_impact() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_AbilityNotify::has_status_impact() const {
+  return _internal_has_status_impact();
+}
+inline void CCitadelUserMsg_AbilityNotify::clear_status_impact() {
+  _impl_.status_impact_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CCitadelUserMsg_AbilityNotify::_internal_status_impact() const {
+  return _impl_.status_impact_;
+}
+inline uint32_t CCitadelUserMsg_AbilityNotify::status_impact() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_AbilityNotify.status_impact)
+  return _internal_status_impact();
+}
+inline void CCitadelUserMsg_AbilityNotify::_internal_set_status_impact(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.status_impact_ = value;
+}
+inline void CCitadelUserMsg_AbilityNotify::set_status_impact(uint32_t value) {
+  _internal_set_status_impact(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_AbilityNotify.status_impact)
+}
+
+// optional bool is_refresh = 5;
+inline bool CCitadelUserMsg_AbilityNotify::_internal_has_is_refresh() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_AbilityNotify::has_is_refresh() const {
+  return _internal_has_is_refresh();
+}
+inline void CCitadelUserMsg_AbilityNotify::clear_is_refresh() {
+  _impl_.is_refresh_ = false;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline bool CCitadelUserMsg_AbilityNotify::_internal_is_refresh() const {
+  return _impl_.is_refresh_;
+}
+inline bool CCitadelUserMsg_AbilityNotify::is_refresh() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_AbilityNotify.is_refresh)
+  return _internal_is_refresh();
+}
+inline void CCitadelUserMsg_AbilityNotify::_internal_set_is_refresh(bool value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.is_refresh_ = value;
+}
+inline void CCitadelUserMsg_AbilityNotify::set_is_refresh(bool value) {
+  _internal_set_is_refresh(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_AbilityNotify.is_refresh)
+}
+
+// -------------------------------------------------------------------
+
+// CCitadelUserMsg_CurrencyChanged
+
+// optional int32 userid = 1 [default = -1];
+inline bool CCitadelUserMsg_CurrencyChanged::_internal_has_userid() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000100u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_CurrencyChanged::has_userid() const {
+  return _internal_has_userid();
+}
+inline void CCitadelUserMsg_CurrencyChanged::clear_userid() {
+  _impl_.userid_ = -1;
+  _impl_._has_bits_[0] &= ~0x00000100u;
+}
+inline int32_t CCitadelUserMsg_CurrencyChanged::_internal_userid() const {
+  return _impl_.userid_;
+}
+inline int32_t CCitadelUserMsg_CurrencyChanged::userid() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CurrencyChanged.userid)
+  return _internal_userid();
+}
+inline void CCitadelUserMsg_CurrencyChanged::_internal_set_userid(int32_t value) {
+  _impl_._has_bits_[0] |= 0x00000100u;
+  _impl_.userid_ = value;
+}
+inline void CCitadelUserMsg_CurrencyChanged::set_userid(int32_t value) {
+  _internal_set_userid(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CurrencyChanged.userid)
+}
+
+// optional int32 currency_type = 2;
+inline bool CCitadelUserMsg_CurrencyChanged::_internal_has_currency_type() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_CurrencyChanged::has_currency_type() const {
+  return _internal_has_currency_type();
+}
+inline void CCitadelUserMsg_CurrencyChanged::clear_currency_type() {
+  _impl_.currency_type_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline int32_t CCitadelUserMsg_CurrencyChanged::_internal_currency_type() const {
+  return _impl_.currency_type_;
+}
+inline int32_t CCitadelUserMsg_CurrencyChanged::currency_type() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CurrencyChanged.currency_type)
+  return _internal_currency_type();
+}
+inline void CCitadelUserMsg_CurrencyChanged::_internal_set_currency_type(int32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.currency_type_ = value;
+}
+inline void CCitadelUserMsg_CurrencyChanged::set_currency_type(int32_t value) {
+  _internal_set_currency_type(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CurrencyChanged.currency_type)
+}
+
+// optional int32 currency_source = 3;
+inline bool CCitadelUserMsg_CurrencyChanged::_internal_has_currency_source() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_CurrencyChanged::has_currency_source() const {
+  return _internal_has_currency_source();
+}
+inline void CCitadelUserMsg_CurrencyChanged::clear_currency_source() {
+  _impl_.currency_source_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline int32_t CCitadelUserMsg_CurrencyChanged::_internal_currency_source() const {
+  return _impl_.currency_source_;
+}
+inline int32_t CCitadelUserMsg_CurrencyChanged::currency_source() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CurrencyChanged.currency_source)
+  return _internal_currency_source();
+}
+inline void CCitadelUserMsg_CurrencyChanged::_internal_set_currency_source(int32_t value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.currency_source_ = value;
+}
+inline void CCitadelUserMsg_CurrencyChanged::set_currency_source(int32_t value) {
+  _internal_set_currency_source(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CurrencyChanged.currency_source)
+}
+
+// optional int32 delta = 4;
+inline bool CCitadelUserMsg_CurrencyChanged::_internal_has_delta() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_CurrencyChanged::has_delta() const {
+  return _internal_has_delta();
+}
+inline void CCitadelUserMsg_CurrencyChanged::clear_delta() {
+  _impl_.delta_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline int32_t CCitadelUserMsg_CurrencyChanged::_internal_delta() const {
+  return _impl_.delta_;
+}
+inline int32_t CCitadelUserMsg_CurrencyChanged::delta() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CurrencyChanged.delta)
+  return _internal_delta();
+}
+inline void CCitadelUserMsg_CurrencyChanged::_internal_set_delta(int32_t value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.delta_ = value;
+}
+inline void CCitadelUserMsg_CurrencyChanged::set_delta(int32_t value) {
+  _internal_set_delta(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CurrencyChanged.delta)
+}
+
+// optional bool notification = 5;
+inline bool CCitadelUserMsg_CurrencyChanged::_internal_has_notification() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_CurrencyChanged::has_notification() const {
   return _internal_has_notification();
 }
-inline void CCitadelUserMessage_CurrencyChanged::clear_notification() {
+inline void CCitadelUserMsg_CurrencyChanged::clear_notification() {
   _impl_.notification_ = false;
   _impl_._has_bits_[0] &= ~0x00000010u;
 }
-inline bool CCitadelUserMessage_CurrencyChanged::_internal_notification() const {
+inline bool CCitadelUserMsg_CurrencyChanged::_internal_notification() const {
   return _impl_.notification_;
 }
-inline bool CCitadelUserMessage_CurrencyChanged::notification() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_CurrencyChanged.notification)
+inline bool CCitadelUserMsg_CurrencyChanged::notification() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CurrencyChanged.notification)
   return _internal_notification();
 }
-inline void CCitadelUserMessage_CurrencyChanged::_internal_set_notification(bool value) {
+inline void CCitadelUserMsg_CurrencyChanged::_internal_set_notification(bool value) {
   _impl_._has_bits_[0] |= 0x00000010u;
   _impl_.notification_ = value;
 }
-inline void CCitadelUserMessage_CurrencyChanged::set_notification(bool value) {
+inline void CCitadelUserMsg_CurrencyChanged::set_notification(bool value) {
   _internal_set_notification(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_CurrencyChanged.notification)
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CurrencyChanged.notification)
 }
 
-// optional int32 entindex_victim = 6 [default = -1];
-inline bool CCitadelUserMessage_CurrencyChanged::_internal_has_entindex_victim() const {
+// optional uint32 victim = 6 [default = 16777215];
+inline bool CCitadelUserMsg_CurrencyChanged::_internal_has_victim() const {
   bool value = (_impl_._has_bits_[0] & 0x00000200u) != 0;
   return value;
 }
-inline bool CCitadelUserMessage_CurrencyChanged::has_entindex_victim() const {
-  return _internal_has_entindex_victim();
+inline bool CCitadelUserMsg_CurrencyChanged::has_victim() const {
+  return _internal_has_victim();
 }
-inline void CCitadelUserMessage_CurrencyChanged::clear_entindex_victim() {
-  _impl_.entindex_victim_ = -1;
+inline void CCitadelUserMsg_CurrencyChanged::clear_victim() {
+  _impl_.victim_ = 16777215u;
   _impl_._has_bits_[0] &= ~0x00000200u;
 }
-inline int32_t CCitadelUserMessage_CurrencyChanged::_internal_entindex_victim() const {
-  return _impl_.entindex_victim_;
+inline uint32_t CCitadelUserMsg_CurrencyChanged::_internal_victim() const {
+  return _impl_.victim_;
 }
-inline int32_t CCitadelUserMessage_CurrencyChanged::entindex_victim() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_CurrencyChanged.entindex_victim)
-  return _internal_entindex_victim();
+inline uint32_t CCitadelUserMsg_CurrencyChanged::victim() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CurrencyChanged.victim)
+  return _internal_victim();
 }
-inline void CCitadelUserMessage_CurrencyChanged::_internal_set_entindex_victim(int32_t value) {
+inline void CCitadelUserMsg_CurrencyChanged::_internal_set_victim(uint32_t value) {
   _impl_._has_bits_[0] |= 0x00000200u;
-  _impl_.entindex_victim_ = value;
+  _impl_.victim_ = value;
 }
-inline void CCitadelUserMessage_CurrencyChanged::set_entindex_victim(int32_t value) {
-  _internal_set_entindex_victim(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_CurrencyChanged.entindex_victim)
+inline void CCitadelUserMsg_CurrencyChanged::set_victim(uint32_t value) {
+  _internal_set_victim(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CurrencyChanged.victim)
 }
 
 // optional .CMsgVector victim_pos = 7;
-inline bool CCitadelUserMessage_CurrencyChanged::_internal_has_victim_pos() const {
+inline bool CCitadelUserMsg_CurrencyChanged::_internal_has_victim_pos() const {
   bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
   PROTOBUF_ASSUME(!value || _impl_.victim_pos_ != nullptr);
   return value;
 }
-inline bool CCitadelUserMessage_CurrencyChanged::has_victim_pos() const {
+inline bool CCitadelUserMsg_CurrencyChanged::has_victim_pos() const {
   return _internal_has_victim_pos();
 }
-inline const ::CMsgVector& CCitadelUserMessage_CurrencyChanged::_internal_victim_pos() const {
+inline const ::CMsgVector& CCitadelUserMsg_CurrencyChanged::_internal_victim_pos() const {
   const ::CMsgVector* p = _impl_.victim_pos_;
   return p != nullptr ? *p : reinterpret_cast<const ::CMsgVector&>(
       ::_CMsgVector_default_instance_);
 }
-inline const ::CMsgVector& CCitadelUserMessage_CurrencyChanged::victim_pos() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_CurrencyChanged.victim_pos)
+inline const ::CMsgVector& CCitadelUserMsg_CurrencyChanged::victim_pos() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CurrencyChanged.victim_pos)
   return _internal_victim_pos();
 }
-inline void CCitadelUserMessage_CurrencyChanged::unsafe_arena_set_allocated_victim_pos(
+inline void CCitadelUserMsg_CurrencyChanged::unsafe_arena_set_allocated_victim_pos(
     ::CMsgVector* victim_pos) {
   if (GetArenaForAllocation() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.victim_pos_);
@@ -25221,9 +27229,9 @@ inline void CCitadelUserMessage_CurrencyChanged::unsafe_arena_set_allocated_vict
   } else {
     _impl_._has_bits_[0] &= ~0x00000001u;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CCitadelUserMessage_CurrencyChanged.victim_pos)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CCitadelUserMsg_CurrencyChanged.victim_pos)
 }
-inline ::CMsgVector* CCitadelUserMessage_CurrencyChanged::release_victim_pos() {
+inline ::CMsgVector* CCitadelUserMsg_CurrencyChanged::release_victim_pos() {
   _impl_._has_bits_[0] &= ~0x00000001u;
   ::CMsgVector* temp = _impl_.victim_pos_;
   _impl_.victim_pos_ = nullptr;
@@ -25238,14 +27246,14 @@ inline ::CMsgVector* CCitadelUserMessage_CurrencyChanged::release_victim_pos() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::CMsgVector* CCitadelUserMessage_CurrencyChanged::unsafe_arena_release_victim_pos() {
-  // @@protoc_insertion_point(field_release:CCitadelUserMessage_CurrencyChanged.victim_pos)
+inline ::CMsgVector* CCitadelUserMsg_CurrencyChanged::unsafe_arena_release_victim_pos() {
+  // @@protoc_insertion_point(field_release:CCitadelUserMsg_CurrencyChanged.victim_pos)
   _impl_._has_bits_[0] &= ~0x00000001u;
   ::CMsgVector* temp = _impl_.victim_pos_;
   _impl_.victim_pos_ = nullptr;
   return temp;
 }
-inline ::CMsgVector* CCitadelUserMessage_CurrencyChanged::_internal_mutable_victim_pos() {
+inline ::CMsgVector* CCitadelUserMsg_CurrencyChanged::_internal_mutable_victim_pos() {
   _impl_._has_bits_[0] |= 0x00000001u;
   if (_impl_.victim_pos_ == nullptr) {
     auto* p = CreateMaybeMessage<::CMsgVector>(GetArenaForAllocation());
@@ -25253,12 +27261,12 @@ inline ::CMsgVector* CCitadelUserMessage_CurrencyChanged::_internal_mutable_vict
   }
   return _impl_.victim_pos_;
 }
-inline ::CMsgVector* CCitadelUserMessage_CurrencyChanged::mutable_victim_pos() {
+inline ::CMsgVector* CCitadelUserMsg_CurrencyChanged::mutable_victim_pos() {
   ::CMsgVector* _msg = _internal_mutable_victim_pos();
-  // @@protoc_insertion_point(field_mutable:CCitadelUserMessage_CurrencyChanged.victim_pos)
+  // @@protoc_insertion_point(field_mutable:CCitadelUserMsg_CurrencyChanged.victim_pos)
   return _msg;
 }
-inline void CCitadelUserMessage_CurrencyChanged::set_allocated_victim_pos(::CMsgVector* victim_pos) {
+inline void CCitadelUserMsg_CurrencyChanged::set_allocated_victim_pos(::CMsgVector* victim_pos) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.victim_pos_);
@@ -25276,91 +27284,91 @@ inline void CCitadelUserMessage_CurrencyChanged::set_allocated_victim_pos(::CMsg
     _impl_._has_bits_[0] &= ~0x00000001u;
   }
   _impl_.victim_pos_ = victim_pos;
-  // @@protoc_insertion_point(field_set_allocated:CCitadelUserMessage_CurrencyChanged.victim_pos)
+  // @@protoc_insertion_point(field_set_allocated:CCitadelUserMsg_CurrencyChanged.victim_pos)
 }
 
 // optional int32 playsound = 8;
-inline bool CCitadelUserMessage_CurrencyChanged::_internal_has_playsound() const {
+inline bool CCitadelUserMsg_CurrencyChanged::_internal_has_playsound() const {
   bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
   return value;
 }
-inline bool CCitadelUserMessage_CurrencyChanged::has_playsound() const {
+inline bool CCitadelUserMsg_CurrencyChanged::has_playsound() const {
   return _internal_has_playsound();
 }
-inline void CCitadelUserMessage_CurrencyChanged::clear_playsound() {
+inline void CCitadelUserMsg_CurrencyChanged::clear_playsound() {
   _impl_.playsound_ = 0;
   _impl_._has_bits_[0] &= ~0x00000020u;
 }
-inline int32_t CCitadelUserMessage_CurrencyChanged::_internal_playsound() const {
+inline int32_t CCitadelUserMsg_CurrencyChanged::_internal_playsound() const {
   return _impl_.playsound_;
 }
-inline int32_t CCitadelUserMessage_CurrencyChanged::playsound() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_CurrencyChanged.playsound)
+inline int32_t CCitadelUserMsg_CurrencyChanged::playsound() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CurrencyChanged.playsound)
   return _internal_playsound();
 }
-inline void CCitadelUserMessage_CurrencyChanged::_internal_set_playsound(int32_t value) {
+inline void CCitadelUserMsg_CurrencyChanged::_internal_set_playsound(int32_t value) {
   _impl_._has_bits_[0] |= 0x00000020u;
   _impl_.playsound_ = value;
 }
-inline void CCitadelUserMessage_CurrencyChanged::set_playsound(int32_t value) {
+inline void CCitadelUserMsg_CurrencyChanged::set_playsound(int32_t value) {
   _internal_set_playsound(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_CurrencyChanged.playsound)
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CurrencyChanged.playsound)
 }
 
 // optional uint32 ability_id = 9;
-inline bool CCitadelUserMessage_CurrencyChanged::_internal_has_ability_id() const {
+inline bool CCitadelUserMsg_CurrencyChanged::_internal_has_ability_id() const {
   bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
   return value;
 }
-inline bool CCitadelUserMessage_CurrencyChanged::has_ability_id() const {
+inline bool CCitadelUserMsg_CurrencyChanged::has_ability_id() const {
   return _internal_has_ability_id();
 }
-inline void CCitadelUserMessage_CurrencyChanged::clear_ability_id() {
+inline void CCitadelUserMsg_CurrencyChanged::clear_ability_id() {
   _impl_.ability_id_ = 0u;
   _impl_._has_bits_[0] &= ~0x00000040u;
 }
-inline uint32_t CCitadelUserMessage_CurrencyChanged::_internal_ability_id() const {
+inline uint32_t CCitadelUserMsg_CurrencyChanged::_internal_ability_id() const {
   return _impl_.ability_id_;
 }
-inline uint32_t CCitadelUserMessage_CurrencyChanged::ability_id() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_CurrencyChanged.ability_id)
+inline uint32_t CCitadelUserMsg_CurrencyChanged::ability_id() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CurrencyChanged.ability_id)
   return _internal_ability_id();
 }
-inline void CCitadelUserMessage_CurrencyChanged::_internal_set_ability_id(uint32_t value) {
+inline void CCitadelUserMsg_CurrencyChanged::_internal_set_ability_id(uint32_t value) {
   _impl_._has_bits_[0] |= 0x00000040u;
   _impl_.ability_id_ = value;
 }
-inline void CCitadelUserMessage_CurrencyChanged::set_ability_id(uint32_t value) {
+inline void CCitadelUserMsg_CurrencyChanged::set_ability_id(uint32_t value) {
   _internal_set_ability_id(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_CurrencyChanged.ability_id)
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CurrencyChanged.ability_id)
 }
 
 // optional uint32 new_value = 10;
-inline bool CCitadelUserMessage_CurrencyChanged::_internal_has_new_value() const {
+inline bool CCitadelUserMsg_CurrencyChanged::_internal_has_new_value() const {
   bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
   return value;
 }
-inline bool CCitadelUserMessage_CurrencyChanged::has_new_value() const {
+inline bool CCitadelUserMsg_CurrencyChanged::has_new_value() const {
   return _internal_has_new_value();
 }
-inline void CCitadelUserMessage_CurrencyChanged::clear_new_value() {
+inline void CCitadelUserMsg_CurrencyChanged::clear_new_value() {
   _impl_.new_value_ = 0u;
   _impl_._has_bits_[0] &= ~0x00000080u;
 }
-inline uint32_t CCitadelUserMessage_CurrencyChanged::_internal_new_value() const {
+inline uint32_t CCitadelUserMsg_CurrencyChanged::_internal_new_value() const {
   return _impl_.new_value_;
 }
-inline uint32_t CCitadelUserMessage_CurrencyChanged::new_value() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMessage_CurrencyChanged.new_value)
+inline uint32_t CCitadelUserMsg_CurrencyChanged::new_value() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CurrencyChanged.new_value)
   return _internal_new_value();
 }
-inline void CCitadelUserMessage_CurrencyChanged::_internal_set_new_value(uint32_t value) {
+inline void CCitadelUserMsg_CurrencyChanged::_internal_set_new_value(uint32_t value) {
   _impl_._has_bits_[0] |= 0x00000080u;
   _impl_.new_value_ = value;
 }
-inline void CCitadelUserMessage_CurrencyChanged::set_new_value(uint32_t value) {
+inline void CCitadelUserMsg_CurrencyChanged::set_new_value(uint32_t value) {
   _internal_set_new_value(value);
-  // @@protoc_insertion_point(field_set:CCitadelUserMessage_CurrencyChanged.new_value)
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CurrencyChanged.new_value)
 }
 
 // -------------------------------------------------------------------
@@ -26553,7 +28561,7 @@ inline void CCitadelUserMsg_BossKilled::set_objective_mask_change(int32_t value)
 
 // optional uint32 entity_killed = 3 [default = 16777215];
 inline bool CCitadelUserMsg_BossKilled::_internal_has_entity_killed() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000100u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_BossKilled::has_entity_killed() const {
@@ -26561,7 +28569,7 @@ inline bool CCitadelUserMsg_BossKilled::has_entity_killed() const {
 }
 inline void CCitadelUserMsg_BossKilled::clear_entity_killed() {
   _impl_.entity_killed_ = 16777215u;
-  _impl_._has_bits_[0] &= ~0x00000040u;
+  _impl_._has_bits_[0] &= ~0x00000100u;
 }
 inline uint32_t CCitadelUserMsg_BossKilled::_internal_entity_killed() const {
   return _impl_.entity_killed_;
@@ -26571,7 +28579,7 @@ inline uint32_t CCitadelUserMsg_BossKilled::entity_killed() const {
   return _internal_entity_killed();
 }
 inline void CCitadelUserMsg_BossKilled::_internal_set_entity_killed(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000040u;
+  _impl_._has_bits_[0] |= 0x00000100u;
   _impl_.entity_killed_ = value;
 }
 inline void CCitadelUserMsg_BossKilled::set_entity_killed(uint32_t value) {
@@ -26609,7 +28617,7 @@ inline void CCitadelUserMsg_BossKilled::set_entity_killed_class(int32_t value) {
 
 // optional uint32 entity_killer = 5 [default = 16777215];
 inline bool CCitadelUserMsg_BossKilled::_internal_has_entity_killer() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000200u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_BossKilled::has_entity_killer() const {
@@ -26617,7 +28625,7 @@ inline bool CCitadelUserMsg_BossKilled::has_entity_killer() const {
 }
 inline void CCitadelUserMsg_BossKilled::clear_entity_killer() {
   _impl_.entity_killer_ = 16777215u;
-  _impl_._has_bits_[0] &= ~0x00000080u;
+  _impl_._has_bits_[0] &= ~0x00000200u;
 }
 inline uint32_t CCitadelUserMsg_BossKilled::_internal_entity_killer() const {
   return _impl_.entity_killer_;
@@ -26627,7 +28635,7 @@ inline uint32_t CCitadelUserMsg_BossKilled::entity_killer() const {
   return _internal_entity_killer();
 }
 inline void CCitadelUserMsg_BossKilled::_internal_set_entity_killer(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000080u;
+  _impl_._has_bits_[0] |= 0x00000200u;
   _impl_.entity_killer_ = value;
 }
 inline void CCitadelUserMsg_BossKilled::set_entity_killer(uint32_t value) {
@@ -26776,6 +28784,62 @@ inline void CCitadelUserMsg_BossKilled::set_allocated_entity_position(::CMsgVect
   }
   _impl_.entity_position_ = entity_position;
   // @@protoc_insertion_point(field_set_allocated:CCitadelUserMsg_BossKilled.entity_position)
+}
+
+// optional int32 killfeed_gold = 9;
+inline bool CCitadelUserMsg_BossKilled::_internal_has_killfeed_gold() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_BossKilled::has_killfeed_gold() const {
+  return _internal_has_killfeed_gold();
+}
+inline void CCitadelUserMsg_BossKilled::clear_killfeed_gold() {
+  _impl_.killfeed_gold_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000040u;
+}
+inline int32_t CCitadelUserMsg_BossKilled::_internal_killfeed_gold() const {
+  return _impl_.killfeed_gold_;
+}
+inline int32_t CCitadelUserMsg_BossKilled::killfeed_gold() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_BossKilled.killfeed_gold)
+  return _internal_killfeed_gold();
+}
+inline void CCitadelUserMsg_BossKilled::_internal_set_killfeed_gold(int32_t value) {
+  _impl_._has_bits_[0] |= 0x00000040u;
+  _impl_.killfeed_gold_ = value;
+}
+inline void CCitadelUserMsg_BossKilled::set_killfeed_gold(int32_t value) {
+  _internal_set_killfeed_gold(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_BossKilled.killfeed_gold)
+}
+
+// optional uint32 killer_ability_id = 10;
+inline bool CCitadelUserMsg_BossKilled::_internal_has_killer_ability_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_BossKilled::has_killer_ability_id() const {
+  return _internal_has_killer_ability_id();
+}
+inline void CCitadelUserMsg_BossKilled::clear_killer_ability_id() {
+  _impl_.killer_ability_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000080u;
+}
+inline uint32_t CCitadelUserMsg_BossKilled::_internal_killer_ability_id() const {
+  return _impl_.killer_ability_id_;
+}
+inline uint32_t CCitadelUserMsg_BossKilled::killer_ability_id() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_BossKilled.killer_ability_id)
+  return _internal_killer_ability_id();
+}
+inline void CCitadelUserMsg_BossKilled::_internal_set_killer_ability_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000080u;
+  _impl_.killer_ability_id_ = value;
+}
+inline void CCitadelUserMsg_BossKilled::set_killer_ability_id(uint32_t value) {
+  _internal_set_killer_ability_id(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_BossKilled.killer_ability_id)
 }
 
 // -------------------------------------------------------------------
@@ -27220,7 +29284,7 @@ inline void CCitadelUserMsg_TeamMsg::set_lane_color(int32_t value) {
 
 // optional uint32 player_controller = 4 [default = 16777215];
 inline bool CCitadelUserMsg_TeamMsg::_internal_has_player_controller() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_TeamMsg::has_player_controller() const {
@@ -27228,7 +29292,7 @@ inline bool CCitadelUserMsg_TeamMsg::has_player_controller() const {
 }
 inline void CCitadelUserMsg_TeamMsg::clear_player_controller() {
   _impl_.player_controller_ = 16777215u;
-  _impl_._has_bits_[0] &= ~0x00000008u;
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 inline uint32_t CCitadelUserMsg_TeamMsg::_internal_player_controller() const {
   return _impl_.player_controller_;
@@ -27238,12 +29302,40 @@ inline uint32_t CCitadelUserMsg_TeamMsg::player_controller() const {
   return _internal_player_controller();
 }
 inline void CCitadelUserMsg_TeamMsg::_internal_set_player_controller(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_._has_bits_[0] |= 0x00000010u;
   _impl_.player_controller_ = value;
 }
 inline void CCitadelUserMsg_TeamMsg::set_player_controller(uint32_t value) {
   _internal_set_player_controller(value);
   // @@protoc_insertion_point(field_set:CCitadelUserMsg_TeamMsg.player_controller)
+}
+
+// optional int32 killfeed_gold = 5;
+inline bool CCitadelUserMsg_TeamMsg::_internal_has_killfeed_gold() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_TeamMsg::has_killfeed_gold() const {
+  return _internal_has_killfeed_gold();
+}
+inline void CCitadelUserMsg_TeamMsg::clear_killfeed_gold() {
+  _impl_.killfeed_gold_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline int32_t CCitadelUserMsg_TeamMsg::_internal_killfeed_gold() const {
+  return _impl_.killfeed_gold_;
+}
+inline int32_t CCitadelUserMsg_TeamMsg::killfeed_gold() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_TeamMsg.killfeed_gold)
+  return _internal_killfeed_gold();
+}
+inline void CCitadelUserMsg_TeamMsg::_internal_set_killfeed_gold(int32_t value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.killfeed_gold_ = value;
+}
+inline void CCitadelUserMsg_TeamMsg::set_killfeed_gold(int32_t value) {
+  _internal_set_killfeed_gold(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_TeamMsg.killfeed_gold)
 }
 
 // -------------------------------------------------------------------
@@ -27252,7 +29344,7 @@ inline void CCitadelUserMsg_TeamMsg::set_player_controller(uint32_t value) {
 
 // optional uint32 player_pawn = 1 [default = 16777215];
 inline bool CCitadelUserMsg_PlayerRespawned::_internal_has_player_pawn() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
   return value;
 }
 inline bool CCitadelUserMsg_PlayerRespawned::has_player_pawn() const {
@@ -27260,7 +29352,7 @@ inline bool CCitadelUserMsg_PlayerRespawned::has_player_pawn() const {
 }
 inline void CCitadelUserMsg_PlayerRespawned::clear_player_pawn() {
   _impl_.player_pawn_ = 16777215u;
-  _impl_._has_bits_[0] &= ~0x00000002u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 inline uint32_t CCitadelUserMsg_PlayerRespawned::_internal_player_pawn() const {
   return _impl_.player_pawn_;
@@ -27270,7 +29362,7 @@ inline uint32_t CCitadelUserMsg_PlayerRespawned::player_pawn() const {
   return _internal_player_pawn();
 }
 inline void CCitadelUserMsg_PlayerRespawned::_internal_set_player_pawn(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_._has_bits_[0] |= 0x00000004u;
   _impl_.player_pawn_ = value;
 }
 inline void CCitadelUserMsg_PlayerRespawned::set_player_pawn(uint32_t value) {
@@ -27304,6 +29396,34 @@ inline void CCitadelUserMsg_PlayerRespawned::_internal_set_facing_yaw(float valu
 inline void CCitadelUserMsg_PlayerRespawned::set_facing_yaw(float value) {
   _internal_set_facing_yaw(value);
   // @@protoc_insertion_point(field_set:CCitadelUserMsg_PlayerRespawned.facing_yaw)
+}
+
+// optional uint32 respawn_reason = 3;
+inline bool CCitadelUserMsg_PlayerRespawned::_internal_has_respawn_reason() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_PlayerRespawned::has_respawn_reason() const {
+  return _internal_has_respawn_reason();
+}
+inline void CCitadelUserMsg_PlayerRespawned::clear_respawn_reason() {
+  _impl_.respawn_reason_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CCitadelUserMsg_PlayerRespawned::_internal_respawn_reason() const {
+  return _impl_.respawn_reason_;
+}
+inline uint32_t CCitadelUserMsg_PlayerRespawned::respawn_reason() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_PlayerRespawned.respawn_reason)
+  return _internal_respawn_reason();
+}
+inline void CCitadelUserMsg_PlayerRespawned::_internal_set_respawn_reason(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.respawn_reason_ = value;
+}
+inline void CCitadelUserMsg_PlayerRespawned::set_respawn_reason(uint32_t value) {
+  _internal_set_respawn_reason(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_PlayerRespawned.respawn_reason)
 }
 
 // -------------------------------------------------------------------
@@ -27632,146 +29752,6 @@ inline void CCitadelUserMsg_SeasonalKill::_internal_set_victim(uint32_t value) {
 inline void CCitadelUserMsg_SeasonalKill::set_victim(uint32_t value) {
   _internal_set_victim(value);
   // @@protoc_insertion_point(field_set:CCitadelUserMsg_SeasonalKill.victim)
-}
-
-// -------------------------------------------------------------------
-
-// CCitadelUserMsg_AG2ParamTrigger
-
-// optional string param_id = 1;
-inline bool CCitadelUserMsg_AG2ParamTrigger::_internal_has_param_id() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
-  return value;
-}
-inline bool CCitadelUserMsg_AG2ParamTrigger::has_param_id() const {
-  return _internal_has_param_id();
-}
-inline void CCitadelUserMsg_AG2ParamTrigger::clear_param_id() {
-  _impl_.param_id_.ClearToEmpty();
-  _impl_._has_bits_[0] &= ~0x00000001u;
-}
-inline const std::string& CCitadelUserMsg_AG2ParamTrigger::param_id() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMsg_AG2ParamTrigger.param_id)
-  return _internal_param_id();
-}
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void CCitadelUserMsg_AG2ParamTrigger::set_param_id(ArgT0&& arg0, ArgT... args) {
- _impl_._has_bits_[0] |= 0x00000001u;
- _impl_.param_id_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:CCitadelUserMsg_AG2ParamTrigger.param_id)
-}
-inline std::string* CCitadelUserMsg_AG2ParamTrigger::mutable_param_id() {
-  std::string* _s = _internal_mutable_param_id();
-  // @@protoc_insertion_point(field_mutable:CCitadelUserMsg_AG2ParamTrigger.param_id)
-  return _s;
-}
-inline const std::string& CCitadelUserMsg_AG2ParamTrigger::_internal_param_id() const {
-  return _impl_.param_id_.Get();
-}
-inline void CCitadelUserMsg_AG2ParamTrigger::_internal_set_param_id(const std::string& value) {
-  _impl_._has_bits_[0] |= 0x00000001u;
-  _impl_.param_id_.Set(value, GetArenaForAllocation());
-}
-inline std::string* CCitadelUserMsg_AG2ParamTrigger::_internal_mutable_param_id() {
-  _impl_._has_bits_[0] |= 0x00000001u;
-  return _impl_.param_id_.Mutable(GetArenaForAllocation());
-}
-inline std::string* CCitadelUserMsg_AG2ParamTrigger::release_param_id() {
-  // @@protoc_insertion_point(field_release:CCitadelUserMsg_AG2ParamTrigger.param_id)
-  if (!_internal_has_param_id()) {
-    return nullptr;
-  }
-  _impl_._has_bits_[0] &= ~0x00000001u;
-  auto* p = _impl_.param_id_.Release();
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.param_id_.IsDefault()) {
-    _impl_.param_id_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void CCitadelUserMsg_AG2ParamTrigger::set_allocated_param_id(std::string* param_id) {
-  if (param_id != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000001u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000001u;
-  }
-  _impl_.param_id_.SetAllocated(param_id, GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.param_id_.IsDefault()) {
-    _impl_.param_id_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:CCitadelUserMsg_AG2ParamTrigger.param_id)
-}
-
-// optional string param_value = 2;
-inline bool CCitadelUserMsg_AG2ParamTrigger::_internal_has_param_value() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
-  return value;
-}
-inline bool CCitadelUserMsg_AG2ParamTrigger::has_param_value() const {
-  return _internal_has_param_value();
-}
-inline void CCitadelUserMsg_AG2ParamTrigger::clear_param_value() {
-  _impl_.param_value_.ClearToEmpty();
-  _impl_._has_bits_[0] &= ~0x00000002u;
-}
-inline const std::string& CCitadelUserMsg_AG2ParamTrigger::param_value() const {
-  // @@protoc_insertion_point(field_get:CCitadelUserMsg_AG2ParamTrigger.param_value)
-  return _internal_param_value();
-}
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void CCitadelUserMsg_AG2ParamTrigger::set_param_value(ArgT0&& arg0, ArgT... args) {
- _impl_._has_bits_[0] |= 0x00000002u;
- _impl_.param_value_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:CCitadelUserMsg_AG2ParamTrigger.param_value)
-}
-inline std::string* CCitadelUserMsg_AG2ParamTrigger::mutable_param_value() {
-  std::string* _s = _internal_mutable_param_value();
-  // @@protoc_insertion_point(field_mutable:CCitadelUserMsg_AG2ParamTrigger.param_value)
-  return _s;
-}
-inline const std::string& CCitadelUserMsg_AG2ParamTrigger::_internal_param_value() const {
-  return _impl_.param_value_.Get();
-}
-inline void CCitadelUserMsg_AG2ParamTrigger::_internal_set_param_value(const std::string& value) {
-  _impl_._has_bits_[0] |= 0x00000002u;
-  _impl_.param_value_.Set(value, GetArenaForAllocation());
-}
-inline std::string* CCitadelUserMsg_AG2ParamTrigger::_internal_mutable_param_value() {
-  _impl_._has_bits_[0] |= 0x00000002u;
-  return _impl_.param_value_.Mutable(GetArenaForAllocation());
-}
-inline std::string* CCitadelUserMsg_AG2ParamTrigger::release_param_value() {
-  // @@protoc_insertion_point(field_release:CCitadelUserMsg_AG2ParamTrigger.param_value)
-  if (!_internal_has_param_value()) {
-    return nullptr;
-  }
-  _impl_._has_bits_[0] &= ~0x00000002u;
-  auto* p = _impl_.param_value_.Release();
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.param_value_.IsDefault()) {
-    _impl_.param_value_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void CCitadelUserMsg_AG2ParamTrigger::set_allocated_param_value(std::string* param_value) {
-  if (param_value != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000002u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000002u;
-  }
-  _impl_.param_value_.SetAllocated(param_value, GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.param_value_.IsDefault()) {
-    _impl_.param_value_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:CCitadelUserMsg_AG2ParamTrigger.param_value)
 }
 
 // -------------------------------------------------------------------
@@ -28374,6 +30354,224 @@ CCitadelUserMsg_HudGameAnnouncement::mutable_dialog_variable_locstring() {
   return &_impl_.dialog_variable_locstring_;
 }
 
+// optional float duration_override = 6;
+inline bool CCitadelUserMsg_HudGameAnnouncement::_internal_has_duration_override() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_HudGameAnnouncement::has_duration_override() const {
+  return _internal_has_duration_override();
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::clear_duration_override() {
+  _impl_.duration_override_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline float CCitadelUserMsg_HudGameAnnouncement::_internal_duration_override() const {
+  return _impl_.duration_override_;
+}
+inline float CCitadelUserMsg_HudGameAnnouncement::duration_override() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_HudGameAnnouncement.duration_override)
+  return _internal_duration_override();
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::_internal_set_duration_override(float value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.duration_override_ = value;
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::set_duration_override(float value) {
+  _internal_set_duration_override(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_HudGameAnnouncement.duration_override)
+}
+
+// optional string snippet_panel = 7;
+inline bool CCitadelUserMsg_HudGameAnnouncement::_internal_has_snippet_panel() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_HudGameAnnouncement::has_snippet_panel() const {
+  return _internal_has_snippet_panel();
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::clear_snippet_panel() {
+  _impl_.snippet_panel_.ClearToEmpty();
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline const std::string& CCitadelUserMsg_HudGameAnnouncement::snippet_panel() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_HudGameAnnouncement.snippet_panel)
+  return _internal_snippet_panel();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void CCitadelUserMsg_HudGameAnnouncement::set_snippet_panel(ArgT0&& arg0, ArgT... args) {
+ _impl_._has_bits_[0] |= 0x00000004u;
+ _impl_.snippet_panel_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_HudGameAnnouncement.snippet_panel)
+}
+inline std::string* CCitadelUserMsg_HudGameAnnouncement::mutable_snippet_panel() {
+  std::string* _s = _internal_mutable_snippet_panel();
+  // @@protoc_insertion_point(field_mutable:CCitadelUserMsg_HudGameAnnouncement.snippet_panel)
+  return _s;
+}
+inline const std::string& CCitadelUserMsg_HudGameAnnouncement::_internal_snippet_panel() const {
+  return _impl_.snippet_panel_.Get();
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::_internal_set_snippet_panel(const std::string& value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.snippet_panel_.Set(value, GetArenaForAllocation());
+}
+inline std::string* CCitadelUserMsg_HudGameAnnouncement::_internal_mutable_snippet_panel() {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  return _impl_.snippet_panel_.Mutable(GetArenaForAllocation());
+}
+inline std::string* CCitadelUserMsg_HudGameAnnouncement::release_snippet_panel() {
+  // @@protoc_insertion_point(field_release:CCitadelUserMsg_HudGameAnnouncement.snippet_panel)
+  if (!_internal_has_snippet_panel()) {
+    return nullptr;
+  }
+  _impl_._has_bits_[0] &= ~0x00000004u;
+  auto* p = _impl_.snippet_panel_.Release();
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (_impl_.snippet_panel_.IsDefault()) {
+    _impl_.snippet_panel_.Set("", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  return p;
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::set_allocated_snippet_panel(std::string* snippet_panel) {
+  if (snippet_panel != nullptr) {
+    _impl_._has_bits_[0] |= 0x00000004u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000004u;
+  }
+  _impl_.snippet_panel_.SetAllocated(snippet_panel, GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (_impl_.snippet_panel_.IsDefault()) {
+    _impl_.snippet_panel_.Set("", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:CCitadelUserMsg_HudGameAnnouncement.snippet_panel)
+}
+
+// repeated string dialog_variable_int_name = 8;
+inline int CCitadelUserMsg_HudGameAnnouncement::_internal_dialog_variable_int_name_size() const {
+  return _impl_.dialog_variable_int_name_.size();
+}
+inline int CCitadelUserMsg_HudGameAnnouncement::dialog_variable_int_name_size() const {
+  return _internal_dialog_variable_int_name_size();
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::clear_dialog_variable_int_name() {
+  _impl_.dialog_variable_int_name_.Clear();
+}
+inline std::string* CCitadelUserMsg_HudGameAnnouncement::add_dialog_variable_int_name() {
+  std::string* _s = _internal_add_dialog_variable_int_name();
+  // @@protoc_insertion_point(field_add_mutable:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+  return _s;
+}
+inline const std::string& CCitadelUserMsg_HudGameAnnouncement::_internal_dialog_variable_int_name(int index) const {
+  return _impl_.dialog_variable_int_name_.Get(index);
+}
+inline const std::string& CCitadelUserMsg_HudGameAnnouncement::dialog_variable_int_name(int index) const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+  return _internal_dialog_variable_int_name(index);
+}
+inline std::string* CCitadelUserMsg_HudGameAnnouncement::mutable_dialog_variable_int_name(int index) {
+  // @@protoc_insertion_point(field_mutable:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+  return _impl_.dialog_variable_int_name_.Mutable(index);
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::set_dialog_variable_int_name(int index, const std::string& value) {
+  _impl_.dialog_variable_int_name_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::set_dialog_variable_int_name(int index, std::string&& value) {
+  _impl_.dialog_variable_int_name_.Mutable(index)->assign(std::move(value));
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::set_dialog_variable_int_name(int index, const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _impl_.dialog_variable_int_name_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::set_dialog_variable_int_name(int index, const char* value, size_t size) {
+  _impl_.dialog_variable_int_name_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+}
+inline std::string* CCitadelUserMsg_HudGameAnnouncement::_internal_add_dialog_variable_int_name() {
+  return _impl_.dialog_variable_int_name_.Add();
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::add_dialog_variable_int_name(const std::string& value) {
+  _impl_.dialog_variable_int_name_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::add_dialog_variable_int_name(std::string&& value) {
+  _impl_.dialog_variable_int_name_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::add_dialog_variable_int_name(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _impl_.dialog_variable_int_name_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::add_dialog_variable_int_name(const char* value, size_t size) {
+  _impl_.dialog_variable_int_name_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>&
+CCitadelUserMsg_HudGameAnnouncement::dialog_variable_int_name() const {
+  // @@protoc_insertion_point(field_list:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+  return _impl_.dialog_variable_int_name_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>*
+CCitadelUserMsg_HudGameAnnouncement::mutable_dialog_variable_int_name() {
+  // @@protoc_insertion_point(field_mutable_list:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_name)
+  return &_impl_.dialog_variable_int_name_;
+}
+
+// repeated int32 dialog_variable_int_value = 9;
+inline int CCitadelUserMsg_HudGameAnnouncement::_internal_dialog_variable_int_value_size() const {
+  return _impl_.dialog_variable_int_value_.size();
+}
+inline int CCitadelUserMsg_HudGameAnnouncement::dialog_variable_int_value_size() const {
+  return _internal_dialog_variable_int_value_size();
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::clear_dialog_variable_int_value() {
+  _impl_.dialog_variable_int_value_.Clear();
+}
+inline int32_t CCitadelUserMsg_HudGameAnnouncement::_internal_dialog_variable_int_value(int index) const {
+  return _impl_.dialog_variable_int_value_.Get(index);
+}
+inline int32_t CCitadelUserMsg_HudGameAnnouncement::dialog_variable_int_value(int index) const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_value)
+  return _internal_dialog_variable_int_value(index);
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::set_dialog_variable_int_value(int index, int32_t value) {
+  _impl_.dialog_variable_int_value_.Set(index, value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_value)
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::_internal_add_dialog_variable_int_value(int32_t value) {
+  _impl_.dialog_variable_int_value_.Add(value);
+}
+inline void CCitadelUserMsg_HudGameAnnouncement::add_dialog_variable_int_value(int32_t value) {
+  _internal_add_dialog_variable_int_value(value);
+  // @@protoc_insertion_point(field_add:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_value)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >&
+CCitadelUserMsg_HudGameAnnouncement::_internal_dialog_variable_int_value() const {
+  return _impl_.dialog_variable_int_value_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >&
+CCitadelUserMsg_HudGameAnnouncement::dialog_variable_int_value() const {
+  // @@protoc_insertion_point(field_list:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_value)
+  return _internal_dialog_variable_int_value();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
+CCitadelUserMsg_HudGameAnnouncement::_internal_mutable_dialog_variable_int_value() {
+  return &_impl_.dialog_variable_int_value_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
+CCitadelUserMsg_HudGameAnnouncement::mutable_dialog_variable_int_value() {
+  // @@protoc_insertion_point(field_mutable_list:CCitadelUserMsg_HudGameAnnouncement.dialog_variable_int_value)
+  return _internal_mutable_dialog_variable_int_value();
+}
+
 // -------------------------------------------------------------------
 
 // CCitadelUserMessage_ImportantAbilityUsed
@@ -28553,9 +30751,716 @@ CCitadelUserMsg_BannedHeroes::mutable_banned_hero_ids() {
   return _internal_mutable_banned_hero_ids();
 }
 
+// -------------------------------------------------------------------
+
+// CCitadelUserMsg_CombatLogBulkData
+
+// repeated .CMsgCitadelCombatLogEntry combat_entries = 1;
+inline int CCitadelUserMsg_CombatLogBulkData::_internal_combat_entries_size() const {
+  return _impl_.combat_entries_.size();
+}
+inline int CCitadelUserMsg_CombatLogBulkData::combat_entries_size() const {
+  return _internal_combat_entries_size();
+}
+inline ::CMsgCitadelCombatLogEntry* CCitadelUserMsg_CombatLogBulkData::mutable_combat_entries(int index) {
+  // @@protoc_insertion_point(field_mutable:CCitadelUserMsg_CombatLogBulkData.combat_entries)
+  return _impl_.combat_entries_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCombatLogEntry >*
+CCitadelUserMsg_CombatLogBulkData::mutable_combat_entries() {
+  // @@protoc_insertion_point(field_mutable_list:CCitadelUserMsg_CombatLogBulkData.combat_entries)
+  return &_impl_.combat_entries_;
+}
+inline const ::CMsgCitadelCombatLogEntry& CCitadelUserMsg_CombatLogBulkData::_internal_combat_entries(int index) const {
+  return _impl_.combat_entries_.Get(index);
+}
+inline const ::CMsgCitadelCombatLogEntry& CCitadelUserMsg_CombatLogBulkData::combat_entries(int index) const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CombatLogBulkData.combat_entries)
+  return _internal_combat_entries(index);
+}
+inline ::CMsgCitadelCombatLogEntry* CCitadelUserMsg_CombatLogBulkData::_internal_add_combat_entries() {
+  return _impl_.combat_entries_.Add();
+}
+inline ::CMsgCitadelCombatLogEntry* CCitadelUserMsg_CombatLogBulkData::add_combat_entries() {
+  ::CMsgCitadelCombatLogEntry* _add = _internal_add_combat_entries();
+  // @@protoc_insertion_point(field_add:CCitadelUserMsg_CombatLogBulkData.combat_entries)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCombatLogEntry >&
+CCitadelUserMsg_CombatLogBulkData::combat_entries() const {
+  // @@protoc_insertion_point(field_list:CCitadelUserMsg_CombatLogBulkData.combat_entries)
+  return _impl_.combat_entries_;
+}
+
+// optional float timestamp = 2;
+inline bool CCitadelUserMsg_CombatLogBulkData::_internal_has_timestamp() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_CombatLogBulkData::has_timestamp() const {
+  return _internal_has_timestamp();
+}
+inline void CCitadelUserMsg_CombatLogBulkData::clear_timestamp() {
+  _impl_.timestamp_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline float CCitadelUserMsg_CombatLogBulkData::_internal_timestamp() const {
+  return _impl_.timestamp_;
+}
+inline float CCitadelUserMsg_CombatLogBulkData::timestamp() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CombatLogBulkData.timestamp)
+  return _internal_timestamp();
+}
+inline void CCitadelUserMsg_CombatLogBulkData::_internal_set_timestamp(float value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.timestamp_ = value;
+}
+inline void CCitadelUserMsg_CombatLogBulkData::set_timestamp(float value) {
+  _internal_set_timestamp(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CombatLogBulkData.timestamp)
+}
+
+// optional float duration = 3;
+inline bool CCitadelUserMsg_CombatLogBulkData::_internal_has_duration() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_CombatLogBulkData::has_duration() const {
+  return _internal_has_duration();
+}
+inline void CCitadelUserMsg_CombatLogBulkData::clear_duration() {
+  _impl_.duration_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline float CCitadelUserMsg_CombatLogBulkData::_internal_duration() const {
+  return _impl_.duration_;
+}
+inline float CCitadelUserMsg_CombatLogBulkData::duration() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CombatLogBulkData.duration)
+  return _internal_duration();
+}
+inline void CCitadelUserMsg_CombatLogBulkData::_internal_set_duration(float value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.duration_ = value;
+}
+inline void CCitadelUserMsg_CombatLogBulkData::set_duration(float value) {
+  _internal_set_duration(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CombatLogBulkData.duration)
+}
+
+// optional int32 player_slot = 4 [default = -1];
+inline bool CCitadelUserMsg_CombatLogBulkData::_internal_has_player_slot() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_CombatLogBulkData::has_player_slot() const {
+  return _internal_has_player_slot();
+}
+inline void CCitadelUserMsg_CombatLogBulkData::clear_player_slot() {
+  _impl_.player_slot_ = -1;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline int32_t CCitadelUserMsg_CombatLogBulkData::_internal_player_slot() const {
+  return _impl_.player_slot_;
+}
+inline int32_t CCitadelUserMsg_CombatLogBulkData::player_slot() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CombatLogBulkData.player_slot)
+  return _internal_player_slot();
+}
+inline void CCitadelUserMsg_CombatLogBulkData::_internal_set_player_slot(int32_t value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.player_slot_ = value;
+}
+inline void CCitadelUserMsg_CombatLogBulkData::set_player_slot(int32_t value) {
+  _internal_set_player_slot(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CombatLogBulkData.player_slot)
+}
+
+// optional float request_time = 5;
+inline bool CCitadelUserMsg_CombatLogBulkData::_internal_has_request_time() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_CombatLogBulkData::has_request_time() const {
+  return _internal_has_request_time();
+}
+inline void CCitadelUserMsg_CombatLogBulkData::clear_request_time() {
+  _impl_.request_time_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline float CCitadelUserMsg_CombatLogBulkData::_internal_request_time() const {
+  return _impl_.request_time_;
+}
+inline float CCitadelUserMsg_CombatLogBulkData::request_time() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_CombatLogBulkData.request_time)
+  return _internal_request_time();
+}
+inline void CCitadelUserMsg_CombatLogBulkData::_internal_set_request_time(float value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.request_time_ = value;
+}
+inline void CCitadelUserMsg_CombatLogBulkData::set_request_time(float value) {
+  _internal_set_request_time(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_CombatLogBulkData.request_time)
+}
+
+// -------------------------------------------------------------------
+
+// CCitadelUserMsg_PlayerTyping
+
+// optional int32 player_slot = 1 [default = -1];
+inline bool CCitadelUserMsg_PlayerTyping::_internal_has_player_slot() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_PlayerTyping::has_player_slot() const {
+  return _internal_has_player_slot();
+}
+inline void CCitadelUserMsg_PlayerTyping::clear_player_slot() {
+  _impl_.player_slot_ = -1;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline int32_t CCitadelUserMsg_PlayerTyping::_internal_player_slot() const {
+  return _impl_.player_slot_;
+}
+inline int32_t CCitadelUserMsg_PlayerTyping::player_slot() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_PlayerTyping.player_slot)
+  return _internal_player_slot();
+}
+inline void CCitadelUserMsg_PlayerTyping::_internal_set_player_slot(int32_t value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.player_slot_ = value;
+}
+inline void CCitadelUserMsg_PlayerTyping::set_player_slot(int32_t value) {
+  _internal_set_player_slot(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_PlayerTyping.player_slot)
+}
+
+// optional float game_time = 2;
+inline bool CCitadelUserMsg_PlayerTyping::_internal_has_game_time() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_PlayerTyping::has_game_time() const {
+  return _internal_has_game_time();
+}
+inline void CCitadelUserMsg_PlayerTyping::clear_game_time() {
+  _impl_.game_time_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline float CCitadelUserMsg_PlayerTyping::_internal_game_time() const {
+  return _impl_.game_time_;
+}
+inline float CCitadelUserMsg_PlayerTyping::game_time() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_PlayerTyping.game_time)
+  return _internal_game_time();
+}
+inline void CCitadelUserMsg_PlayerTyping::_internal_set_game_time(float value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.game_time_ = value;
+}
+inline void CCitadelUserMsg_PlayerTyping::set_game_time(float value) {
+  _internal_set_game_time(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_PlayerTyping.game_time)
+}
+
+// optional bool all_chat = 3;
+inline bool CCitadelUserMsg_PlayerTyping::_internal_has_all_chat() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_PlayerTyping::has_all_chat() const {
+  return _internal_has_all_chat();
+}
+inline void CCitadelUserMsg_PlayerTyping::clear_all_chat() {
+  _impl_.all_chat_ = false;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline bool CCitadelUserMsg_PlayerTyping::_internal_all_chat() const {
+  return _impl_.all_chat_;
+}
+inline bool CCitadelUserMsg_PlayerTyping::all_chat() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_PlayerTyping.all_chat)
+  return _internal_all_chat();
+}
+inline void CCitadelUserMsg_PlayerTyping::_internal_set_all_chat(bool value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.all_chat_ = value;
+}
+inline void CCitadelUserMsg_PlayerTyping::set_all_chat(bool value) {
+  _internal_set_all_chat(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_PlayerTyping.all_chat)
+}
+
+// optional bool typing = 4;
+inline bool CCitadelUserMsg_PlayerTyping::_internal_has_typing() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_PlayerTyping::has_typing() const {
+  return _internal_has_typing();
+}
+inline void CCitadelUserMsg_PlayerTyping::clear_typing() {
+  _impl_.typing_ = false;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline bool CCitadelUserMsg_PlayerTyping::_internal_typing() const {
+  return _impl_.typing_;
+}
+inline bool CCitadelUserMsg_PlayerTyping::typing() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_PlayerTyping.typing)
+  return _internal_typing();
+}
+inline void CCitadelUserMsg_PlayerTyping::_internal_set_typing(bool value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.typing_ = value;
+}
+inline void CCitadelUserMsg_PlayerTyping::set_typing(bool value) {
+  _internal_set_typing(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_PlayerTyping.typing)
+}
+
+// -------------------------------------------------------------------
+
+// CCitadelUserMsg_ChangeHeroStatus
+
+// optional bool success = 1;
+inline bool CCitadelUserMsg_ChangeHeroStatus::_internal_has_success() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_ChangeHeroStatus::has_success() const {
+  return _internal_has_success();
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::clear_success() {
+  _impl_.success_ = false;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline bool CCitadelUserMsg_ChangeHeroStatus::_internal_success() const {
+  return _impl_.success_;
+}
+inline bool CCitadelUserMsg_ChangeHeroStatus::success() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_ChangeHeroStatus.success)
+  return _internal_success();
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::_internal_set_success(bool value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.success_ = value;
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::set_success(bool value) {
+  _internal_set_success(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_ChangeHeroStatus.success)
+}
+
+// optional bool is_hero_locked = 2;
+inline bool CCitadelUserMsg_ChangeHeroStatus::_internal_has_is_hero_locked() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_ChangeHeroStatus::has_is_hero_locked() const {
+  return _internal_has_is_hero_locked();
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::clear_is_hero_locked() {
+  _impl_.is_hero_locked_ = false;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline bool CCitadelUserMsg_ChangeHeroStatus::_internal_is_hero_locked() const {
+  return _impl_.is_hero_locked_;
+}
+inline bool CCitadelUserMsg_ChangeHeroStatus::is_hero_locked() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_ChangeHeroStatus.is_hero_locked)
+  return _internal_is_hero_locked();
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::_internal_set_is_hero_locked(bool value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.is_hero_locked_ = value;
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::set_is_hero_locked(bool value) {
+  _internal_set_is_hero_locked(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_ChangeHeroStatus.is_hero_locked)
+}
+
+// repeated uint32 lock_hero_ids = 3;
+inline int CCitadelUserMsg_ChangeHeroStatus::_internal_lock_hero_ids_size() const {
+  return _impl_.lock_hero_ids_.size();
+}
+inline int CCitadelUserMsg_ChangeHeroStatus::lock_hero_ids_size() const {
+  return _internal_lock_hero_ids_size();
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::clear_lock_hero_ids() {
+  _impl_.lock_hero_ids_.Clear();
+}
+inline uint32_t CCitadelUserMsg_ChangeHeroStatus::_internal_lock_hero_ids(int index) const {
+  return _impl_.lock_hero_ids_.Get(index);
+}
+inline uint32_t CCitadelUserMsg_ChangeHeroStatus::lock_hero_ids(int index) const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_ChangeHeroStatus.lock_hero_ids)
+  return _internal_lock_hero_ids(index);
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::set_lock_hero_ids(int index, uint32_t value) {
+  _impl_.lock_hero_ids_.Set(index, value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_ChangeHeroStatus.lock_hero_ids)
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::_internal_add_lock_hero_ids(uint32_t value) {
+  _impl_.lock_hero_ids_.Add(value);
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::add_lock_hero_ids(uint32_t value) {
+  _internal_add_lock_hero_ids(value);
+  // @@protoc_insertion_point(field_add:CCitadelUserMsg_ChangeHeroStatus.lock_hero_ids)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+CCitadelUserMsg_ChangeHeroStatus::_internal_lock_hero_ids() const {
+  return _impl_.lock_hero_ids_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+CCitadelUserMsg_ChangeHeroStatus::lock_hero_ids() const {
+  // @@protoc_insertion_point(field_list:CCitadelUserMsg_ChangeHeroStatus.lock_hero_ids)
+  return _internal_lock_hero_ids();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+CCitadelUserMsg_ChangeHeroStatus::_internal_mutable_lock_hero_ids() {
+  return &_impl_.lock_hero_ids_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+CCitadelUserMsg_ChangeHeroStatus::mutable_lock_hero_ids() {
+  // @@protoc_insertion_point(field_mutable_list:CCitadelUserMsg_ChangeHeroStatus.lock_hero_ids)
+  return _internal_mutable_lock_hero_ids();
+}
+
+// repeated uint32 unlock_hero_ids = 4;
+inline int CCitadelUserMsg_ChangeHeroStatus::_internal_unlock_hero_ids_size() const {
+  return _impl_.unlock_hero_ids_.size();
+}
+inline int CCitadelUserMsg_ChangeHeroStatus::unlock_hero_ids_size() const {
+  return _internal_unlock_hero_ids_size();
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::clear_unlock_hero_ids() {
+  _impl_.unlock_hero_ids_.Clear();
+}
+inline uint32_t CCitadelUserMsg_ChangeHeroStatus::_internal_unlock_hero_ids(int index) const {
+  return _impl_.unlock_hero_ids_.Get(index);
+}
+inline uint32_t CCitadelUserMsg_ChangeHeroStatus::unlock_hero_ids(int index) const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_ChangeHeroStatus.unlock_hero_ids)
+  return _internal_unlock_hero_ids(index);
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::set_unlock_hero_ids(int index, uint32_t value) {
+  _impl_.unlock_hero_ids_.Set(index, value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_ChangeHeroStatus.unlock_hero_ids)
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::_internal_add_unlock_hero_ids(uint32_t value) {
+  _impl_.unlock_hero_ids_.Add(value);
+}
+inline void CCitadelUserMsg_ChangeHeroStatus::add_unlock_hero_ids(uint32_t value) {
+  _internal_add_unlock_hero_ids(value);
+  // @@protoc_insertion_point(field_add:CCitadelUserMsg_ChangeHeroStatus.unlock_hero_ids)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+CCitadelUserMsg_ChangeHeroStatus::_internal_unlock_hero_ids() const {
+  return _impl_.unlock_hero_ids_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+CCitadelUserMsg_ChangeHeroStatus::unlock_hero_ids() const {
+  // @@protoc_insertion_point(field_list:CCitadelUserMsg_ChangeHeroStatus.unlock_hero_ids)
+  return _internal_unlock_hero_ids();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+CCitadelUserMsg_ChangeHeroStatus::_internal_mutable_unlock_hero_ids() {
+  return &_impl_.unlock_hero_ids_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+CCitadelUserMsg_ChangeHeroStatus::mutable_unlock_hero_ids() {
+  // @@protoc_insertion_point(field_mutable_list:CCitadelUserMsg_ChangeHeroStatus.unlock_hero_ids)
+  return _internal_mutable_unlock_hero_ids();
+}
+
+// -------------------------------------------------------------------
+
+// CCitadelUserMsg_MusicQueue
+
+// optional .CitadelMusicMsgType queue = 1 [default = k_EMusicQueue_Invalid];
+inline bool CCitadelUserMsg_MusicQueue::_internal_has_queue() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_MusicQueue::has_queue() const {
+  return _internal_has_queue();
+}
+inline void CCitadelUserMsg_MusicQueue::clear_queue() {
+  _impl_.queue_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::CitadelMusicMsgType CCitadelUserMsg_MusicQueue::_internal_queue() const {
+  return static_cast< ::CitadelMusicMsgType >(_impl_.queue_);
+}
+inline ::CitadelMusicMsgType CCitadelUserMsg_MusicQueue::queue() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_MusicQueue.queue)
+  return _internal_queue();
+}
+inline void CCitadelUserMsg_MusicQueue::_internal_set_queue(::CitadelMusicMsgType value) {
+  assert(::CitadelMusicMsgType_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.queue_ = value;
+}
+inline void CCitadelUserMsg_MusicQueue::set_queue(::CitadelMusicMsgType value) {
+  _internal_set_queue(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_MusicQueue.queue)
+}
+
+// -------------------------------------------------------------------
+
+// CCitadelUserMsg_LocalLobby
+
+// optional .CSOCitadelLobby lobby = 1;
+inline bool CCitadelUserMsg_LocalLobby::_internal_has_lobby() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.lobby_ != nullptr);
+  return value;
+}
+inline bool CCitadelUserMsg_LocalLobby::has_lobby() const {
+  return _internal_has_lobby();
+}
+inline const ::CSOCitadelLobby& CCitadelUserMsg_LocalLobby::_internal_lobby() const {
+  const ::CSOCitadelLobby* p = _impl_.lobby_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CSOCitadelLobby&>(
+      ::_CSOCitadelLobby_default_instance_);
+}
+inline const ::CSOCitadelLobby& CCitadelUserMsg_LocalLobby::lobby() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_LocalLobby.lobby)
+  return _internal_lobby();
+}
+inline void CCitadelUserMsg_LocalLobby::unsafe_arena_set_allocated_lobby(
+    ::CSOCitadelLobby* lobby) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.lobby_);
+  }
+  _impl_.lobby_ = lobby;
+  if (lobby) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CCitadelUserMsg_LocalLobby.lobby)
+}
+inline ::CSOCitadelLobby* CCitadelUserMsg_LocalLobby::release_lobby() {
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::CSOCitadelLobby* temp = _impl_.lobby_;
+  _impl_.lobby_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::CSOCitadelLobby* CCitadelUserMsg_LocalLobby::unsafe_arena_release_lobby() {
+  // @@protoc_insertion_point(field_release:CCitadelUserMsg_LocalLobby.lobby)
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::CSOCitadelLobby* temp = _impl_.lobby_;
+  _impl_.lobby_ = nullptr;
+  return temp;
+}
+inline ::CSOCitadelLobby* CCitadelUserMsg_LocalLobby::_internal_mutable_lobby() {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  if (_impl_.lobby_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CSOCitadelLobby>(GetArenaForAllocation());
+    _impl_.lobby_ = p;
+  }
+  return _impl_.lobby_;
+}
+inline ::CSOCitadelLobby* CCitadelUserMsg_LocalLobby::mutable_lobby() {
+  ::CSOCitadelLobby* _msg = _internal_mutable_lobby();
+  // @@protoc_insertion_point(field_mutable:CCitadelUserMsg_LocalLobby.lobby)
+  return _msg;
+}
+inline void CCitadelUserMsg_LocalLobby::set_allocated_lobby(::CSOCitadelLobby* lobby) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.lobby_);
+  }
+  if (lobby) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(
+                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(lobby));
+    if (message_arena != submessage_arena) {
+      lobby = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, lobby, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  _impl_.lobby_ = lobby;
+  // @@protoc_insertion_point(field_set_allocated:CCitadelUserMsg_LocalLobby.lobby)
+}
+
+// -------------------------------------------------------------------
+
+// CCitadelUserMsg_SoulBagPickup
+
+// optional uint32 pickup_player = 1 [default = 16777215];
+inline bool CCitadelUserMsg_SoulBagPickup::_internal_has_pickup_player() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_SoulBagPickup::has_pickup_player() const {
+  return _internal_has_pickup_player();
+}
+inline void CCitadelUserMsg_SoulBagPickup::clear_pickup_player() {
+  _impl_.pickup_player_ = 16777215u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CCitadelUserMsg_SoulBagPickup::_internal_pickup_player() const {
+  return _impl_.pickup_player_;
+}
+inline uint32_t CCitadelUserMsg_SoulBagPickup::pickup_player() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_SoulBagPickup.pickup_player)
+  return _internal_pickup_player();
+}
+inline void CCitadelUserMsg_SoulBagPickup::_internal_set_pickup_player(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.pickup_player_ = value;
+}
+inline void CCitadelUserMsg_SoulBagPickup::set_pickup_player(uint32_t value) {
+  _internal_set_pickup_player(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_SoulBagPickup.pickup_player)
+}
+
+// optional uint32 victim_player = 2 [default = 16777215];
+inline bool CCitadelUserMsg_SoulBagPickup::_internal_has_victim_player() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_SoulBagPickup::has_victim_player() const {
+  return _internal_has_victim_player();
+}
+inline void CCitadelUserMsg_SoulBagPickup::clear_victim_player() {
+  _impl_.victim_player_ = 16777215u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline uint32_t CCitadelUserMsg_SoulBagPickup::_internal_victim_player() const {
+  return _impl_.victim_player_;
+}
+inline uint32_t CCitadelUserMsg_SoulBagPickup::victim_player() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_SoulBagPickup.victim_player)
+  return _internal_victim_player();
+}
+inline void CCitadelUserMsg_SoulBagPickup::_internal_set_victim_player(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.victim_player_ = value;
+}
+inline void CCitadelUserMsg_SoulBagPickup::set_victim_player(uint32_t value) {
+  _internal_set_victim_player(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_SoulBagPickup.victim_player)
+}
+
+// optional int32 killfeed_gold = 3;
+inline bool CCitadelUserMsg_SoulBagPickup::_internal_has_killfeed_gold() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_SoulBagPickup::has_killfeed_gold() const {
+  return _internal_has_killfeed_gold();
+}
+inline void CCitadelUserMsg_SoulBagPickup::clear_killfeed_gold() {
+  _impl_.killfeed_gold_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline int32_t CCitadelUserMsg_SoulBagPickup::_internal_killfeed_gold() const {
+  return _impl_.killfeed_gold_;
+}
+inline int32_t CCitadelUserMsg_SoulBagPickup::killfeed_gold() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_SoulBagPickup.killfeed_gold)
+  return _internal_killfeed_gold();
+}
+inline void CCitadelUserMsg_SoulBagPickup::_internal_set_killfeed_gold(int32_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.killfeed_gold_ = value;
+}
+inline void CCitadelUserMsg_SoulBagPickup::set_killfeed_gold(int32_t value) {
+  _internal_set_killfeed_gold(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_SoulBagPickup.killfeed_gold)
+}
+
+// -------------------------------------------------------------------
+
+// CCitadelUserMsg_HeroReleaseVote
+
+// optional int32 player_slot = 1 [default = -1];
+inline bool CCitadelUserMsg_HeroReleaseVote::_internal_has_player_slot() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_HeroReleaseVote::has_player_slot() const {
+  return _internal_has_player_slot();
+}
+inline void CCitadelUserMsg_HeroReleaseVote::clear_player_slot() {
+  _impl_.player_slot_ = -1;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline int32_t CCitadelUserMsg_HeroReleaseVote::_internal_player_slot() const {
+  return _impl_.player_slot_;
+}
+inline int32_t CCitadelUserMsg_HeroReleaseVote::player_slot() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_HeroReleaseVote.player_slot)
+  return _internal_player_slot();
+}
+inline void CCitadelUserMsg_HeroReleaseVote::_internal_set_player_slot(int32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.player_slot_ = value;
+}
+inline void CCitadelUserMsg_HeroReleaseVote::set_player_slot(int32_t value) {
+  _internal_set_player_slot(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_HeroReleaseVote.player_slot)
+}
+
+// optional uint32 voted_hero_id = 2;
+inline bool CCitadelUserMsg_HeroReleaseVote::_internal_has_voted_hero_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CCitadelUserMsg_HeroReleaseVote::has_voted_hero_id() const {
+  return _internal_has_voted_hero_id();
+}
+inline void CCitadelUserMsg_HeroReleaseVote::clear_voted_hero_id() {
+  _impl_.voted_hero_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint32_t CCitadelUserMsg_HeroReleaseVote::_internal_voted_hero_id() const {
+  return _impl_.voted_hero_id_;
+}
+inline uint32_t CCitadelUserMsg_HeroReleaseVote::voted_hero_id() const {
+  // @@protoc_insertion_point(field_get:CCitadelUserMsg_HeroReleaseVote.voted_hero_id)
+  return _internal_voted_hero_id();
+}
+inline void CCitadelUserMsg_HeroReleaseVote::_internal_set_voted_hero_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.voted_hero_id_ = value;
+}
+inline void CCitadelUserMsg_HeroReleaseVote::set_voted_hero_id(uint32_t value) {
+  _internal_set_voted_hero_id(value);
+  // @@protoc_insertion_point(field_set:CCitadelUserMsg_HeroReleaseVote.voted_hero_id)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -28757,6 +31662,11 @@ template <> struct is_proto_enum< ::PostProcessingGameStates> : ::std::true_type
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::PostProcessingGameStates>() {
   return ::PostProcessingGameStates_descriptor();
+}
+template <> struct is_proto_enum< ::CitadelMusicMsgType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CitadelMusicMsgType>() {
+  return ::CitadelMusicMsgType_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

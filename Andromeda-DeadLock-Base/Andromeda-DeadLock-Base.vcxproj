@@ -250,6 +250,7 @@
     <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\base_gcmessages.pb.h" />
     <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\base_modifier.pb.h" />
     <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\citadel_clientmessages.pb.h" />
+    <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\citadel_client_localmatchmessages.pb.h" />
     <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\citadel_gameevents.pb.h" />
     <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\citadel_gamemessages.pb.h" />
     <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\citadel_gcmessages_client.pb.h" />
@@ -265,6 +266,10 @@
     <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\econ_shared_enums.pb.h" />
     <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\engine_gcmessages.pb.h" />
     <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\enums_clientserver.pb.h" />
+    <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\events.pb.h" />
+    <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\event_gcmessages_client.pb.h" />
+    <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\event_gcmessages_common.pb.h" />
+    <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\event_gcmessages_server.pb.h" />
     <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\gameevents.pb.h" />
     <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\gcsdk_gcmessages.pb.h" />
     <ClInclude Include="Andromeda-DeadLock\DeadLock\Protobuf\gcsystemmsgs.pb.h" />
@@ -392,6 +397,7 @@
     <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\base_gcmessages.pb.cc" />
     <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\base_modifier.pb.cc" />
     <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\citadel_clientmessages.pb.cc" />
+    <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\citadel_client_localmatchmessages.pb.cc" />
     <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\citadel_gameevents.pb.cc" />
     <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\citadel_gamemessages.pb.cc" />
     <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\citadel_gcmessages_client.pb.cc" />
@@ -407,6 +413,10 @@
     <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\econ_shared_enums.pb.cc" />
     <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\engine_gcmessages.pb.cc" />
     <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\enums_clientserver.pb.cc" />
+    <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\events.pb.cc" />
+    <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\event_gcmessages_client.pb.cc" />
+    <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\event_gcmessages_common.pb.cc" />
+    <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\event_gcmessages_server.pb.cc" />
     <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\gameevents.pb.cc" />
     <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\gcsdk_gcmessages.pb.cc" />
     <ClCompile Include="Andromeda-DeadLock\DeadLock\Protobuf\gcsystemmsgs.pb.cc" />

@@ -78,7 +78,7 @@ namespace SDK
 			00007FFA820122F | call client.7FFA82A05750                              | GetBaseEntity
 			*/
 
-			auto ppGameEntitySystem = reinterpret_cast<uintptr_t>( FindPattern( CLIENT_DLL , XorStr( "48 8B ? ? ? ? ? 8B D0 E8 ? ? ? ? 44 8B 83 ? ? ? ? 33 FF" ) ) );
+			auto ppGameEntitySystem = reinterpret_cast<uintptr_t>( FindPattern( CLIENT_DLL , XorStr( "48 8B 0D ? ? ? ? F2 0F 11 44 24 ? 89 44 24 ? E8" ) ) );
 
 			if ( !ppGameEntitySystem )
 				return nullptr;
@@ -133,7 +133,7 @@ GetGameEntitySystemPointer:;
 	{
 		if ( !g_ppCUserCmd )
 		{
-			auto ppCUserCmd = reinterpret_cast<uintptr_t>( FindPattern( CLIENT_DLL , XorStr( "48 8B 0D ? ? ? ? E8 ? ? ? ? 48 8B CF 48 8B F0" ) ) );
+			auto ppCUserCmd = reinterpret_cast<uintptr_t>( FindPattern( CLIENT_DLL , XorStr( "48 8B 0D ? ? ? ? E8 ? ? ? ? 48 8B CF 4C 8B F8" ) ) );
 
 			if ( !ppCUserCmd )
 				return nullptr;
@@ -148,7 +148,7 @@ GetGameEntitySystemPointer:;
 	{
 		if ( !g_ppCVPhys2World )
 		{
-			auto ppCVPhys2World = reinterpret_cast<uintptr_t>( FindPattern( CLIENT_DLL , XorStr( "48 8B 0D ? ? ? ? 4C 8D 44 24 ? F3 44 0F 11 64 24" ) ) );
+			auto ppCVPhys2World = reinterpret_cast<uintptr_t>( FindPattern( CLIENT_DLL , XorStr( "48 8B 0D ? ? ? ? 4C 8D 44 24 ? C6 44 24 ? ? 48 8D 54 24" ) ) );
 
 			if ( !ppCVPhys2World )
 				return nullptr;
@@ -163,7 +163,7 @@ GetGameEntitySystemPointer:;
 	{
 		if ( !g_ppCGlobalVarsBase )
 		{
-			auto ppCGlobalVarsBase = reinterpret_cast<uintptr_t>( FindPattern( CLIENT_DLL , XorStr( "48 8B 05 ? ? ? ? 44 8B B7 DC 00 00 00 8B 70 04 B8 FF FF 00 00 89 B7 DC 00 00 00 66 01 43 04" ) ) );
+			auto ppCGlobalVarsBase = reinterpret_cast<uintptr_t>( FindPattern( CLIENT_DLL , XorStr( "48 8B ? ? ? ? ? 85 C0 78 09 3B 41 44 0F 8C ? ? ? ? 8B 49 44 48 89 7C 24 30 3B C1 74 1E 85 C0 78 04 3B C1" ) ) );
 
 			if ( !ppCGlobalVarsBase )
 				return nullptr;

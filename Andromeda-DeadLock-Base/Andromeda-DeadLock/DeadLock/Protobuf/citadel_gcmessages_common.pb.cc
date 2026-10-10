@@ -20,6 +20,22 @@ PROTOBUF_PRAGMA_INIT_SEG
 namespace _pb = ::PROTOBUF_NAMESPACE_ID;
 namespace _pbi = _pb::internal;
 
+PROTOBUF_CONSTEXPR CMsgHeroXPGrant::CMsgHeroXPGrant(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.hero_id_)*/0u
+  , /*decltype(_impl_.xp_grant_)*/0u
+  , /*decltype(_impl_.reason_)*/0} {}
+struct CMsgHeroXPGrantDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CMsgHeroXPGrantDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CMsgHeroXPGrantDefaultTypeInternal() {}
+  union {
+    CMsgHeroXPGrant _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CMsgHeroXPGrantDefaultTypeInternal _CMsgHeroXPGrant_default_instance_;
 PROTOBUF_CONSTEXPR CSOCitadelLobby::CSOCitadelLobby(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_._has_bits_)*/{}
@@ -78,7 +94,8 @@ PROTOBUF_CONSTEXPR CSOCitadelHideoutLobby::CSOCitadelHideoutLobby(
   , /*decltype(_impl_.udp_connect_port_)*/0u
   , /*decltype(_impl_.server_version_)*/0u
   , /*decltype(_impl_.compat_version_)*/0u
-  , /*decltype(_impl_.active_account_hideout_)*/0u} {}
+  , /*decltype(_impl_.active_account_hideout_)*/0u
+  , /*decltype(_impl_.server_status_)*/0} {}
 struct CSOCitadelHideoutLobbyDefaultTypeInternal {
   PROTOBUF_CONSTEXPR CSOCitadelHideoutLobbyDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
@@ -300,7 +317,8 @@ PROTOBUF_CONSTEXPR CSOCitadelParty_PrivateLobbySettings::CSOCitadelParty_Private
   , /*decltype(_impl_.randomize_lanes_)*/false
   , /*decltype(_impl_.is_publicly_visible_)*/false
   , /*decltype(_impl_.cheats_enabled_)*/false
-  , /*decltype(_impl_.duplicate_heroes_enabled_)*/false} {}
+  , /*decltype(_impl_.duplicate_heroes_enabled_)*/false
+  , /*decltype(_impl_.corrupted_item_shop_spawn_minutes_)*/0u} {}
 struct CSOCitadelParty_PrivateLobbySettingsDefaultTypeInternal {
   PROTOBUF_CONSTEXPR CSOCitadelParty_PrivateLobbySettingsDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
@@ -310,12 +328,33 @@ struct CSOCitadelParty_PrivateLobbySettingsDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CSOCitadelParty_PrivateLobbySettingsDefaultTypeInternal _CSOCitadelParty_PrivateLobbySettings_default_instance_;
+PROTOBUF_CONSTEXPR CSOCitadelParty_RankedScores::CSOCitadelParty_RankedScores(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.unlocked_heroes_)*/{}
+  , /*decltype(_impl_.rank_type_)*/0
+  , /*decltype(_impl_.rank_interval_)*/0u
+  , /*decltype(_impl_.rank_display_badge_)*/0u
+  , /*decltype(_impl_.in_calibration_)*/false} {}
+struct CSOCitadelParty_RankedScoresDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CSOCitadelParty_RankedScoresDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CSOCitadelParty_RankedScoresDefaultTypeInternal() {}
+  union {
+    CSOCitadelParty_RankedScores _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CSOCitadelParty_RankedScoresDefaultTypeInternal _CSOCitadelParty_RankedScores_default_instance_;
 PROTOBUF_CONSTEXPR CSOCitadelParty_Member::CSOCitadelParty_Member(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_._has_bits_)*/{}
   , /*decltype(_impl_._cached_size_)*/{}
   , /*decltype(_impl_.owned_heroes_)*/{}
   , /*decltype(_impl_._owned_heroes_cached_byte_size_)*/{0}
+  , /*decltype(_impl_.ranked_scores_)*/{}
+  , /*decltype(_impl_.player_cabals_)*/{}
+  , /*decltype(_impl_._player_cabals_cached_byte_size_)*/{0}
   , /*decltype(_impl_.persona_name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.hero_roster_)*/nullptr
   , /*decltype(_impl_.account_id_)*/0u
@@ -376,6 +415,8 @@ PROTOBUF_CONSTEXPR CSOCitadelParty::CSOCitadelParty(
   , /*decltype(_impl_.members_)*/{}
   , /*decltype(_impl_.invites_)*/{}
   , /*decltype(_impl_.left_members_)*/{}
+  , /*decltype(_impl_.candidate_cabals_)*/{}
+  , /*decltype(_impl_._candidate_cabals_cached_byte_size_)*/{0}
   , /*decltype(_impl_.dev_server_command_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.server_search_key_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.hideout_search_key_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
@@ -391,7 +432,12 @@ PROTOBUF_CONSTEXPR CSOCitadelParty::CSOCitadelParty(
   , /*decltype(_impl_.is_high_skill_range_party_)*/false
   , /*decltype(_impl_.is_private_lobby_)*/false
   , /*decltype(_impl_.desires_laning_together_)*/false
-  , /*decltype(_impl_.mm_preference_)*/0} {}
+  , /*decltype(_impl_.mm_preference_)*/0
+  , /*decltype(_impl_.active_cabal_)*/uint64_t{0u}
+  , /*decltype(_impl_.party_min_cabal_tier_)*/0
+  , /*decltype(_impl_.party_active_cabal_tier_)*/0
+  , /*decltype(_impl_.ranked_type_)*/0
+  , /*decltype(_impl_.rank_interval_)*/0u} {}
 struct CSOCitadelPartyDefaultTypeInternal {
   PROTOBUF_CONSTEXPR CSOCitadelPartyDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
@@ -525,6 +571,27 @@ struct CMsgMatchPlayerDamageMatrixDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CMsgMatchPlayerDamageMatrixDefaultTypeInternal _CMsgMatchPlayerDamageMatrix_default_instance_;
+PROTOBUF_CONSTEXPR CMsgMatchPlayerRankData::CMsgMatchPlayerRankData(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.initial_display_rank_)*/0u
+  , /*decltype(_impl_.initial_flat_progress_)*/0u
+  , /*decltype(_impl_.final_flat_progress_)*/0u
+  , /*decltype(_impl_.desired_progress_change_)*/0
+  , /*decltype(_impl_.initial_calibration_games_)*/0u
+  , /*decltype(_impl_.initial_demotion_protection_games_)*/0u
+  , /*decltype(_impl_.consumed_demotion_protection_)*/false
+  , /*decltype(_impl_.initial_win_streak_)*/0u} {}
+struct CMsgMatchPlayerRankDataDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CMsgMatchPlayerRankDataDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CMsgMatchPlayerRankDataDefaultTypeInternal() {}
+  union {
+    CMsgMatchPlayerRankData _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CMsgMatchPlayerRankDataDefaultTypeInternal _CMsgMatchPlayerRankData_default_instance_;
 PROTOBUF_CONSTEXPR CMsgMatchMetaDataContents_Position::CMsgMatchMetaDataContents_Position(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_._has_bits_)*/{}
@@ -648,6 +715,9 @@ PROTOBUF_CONSTEXPR CMsgMatchMetaDataContents_PowerUpBuff::CMsgMatchMetaDataConte
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_._has_bits_)*/{}
   , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.pickup_times_s_)*/{}
+  , /*decltype(_impl_._pickup_times_s_cached_byte_size_)*/{0}
+  , /*decltype(_impl_.pickup_stat_values_)*/{}
   , /*decltype(_impl_.type_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.value_)*/0u
   , /*decltype(_impl_.is_permanent_)*/false} {}
@@ -755,6 +825,20 @@ struct CMsgMatchMetaDataContents_BookRewardDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CMsgMatchMetaDataContents_BookRewardDefaultTypeInternal _CMsgMatchMetaDataContents_BookReward_default_instance_;
+PROTOBUF_CONSTEXPR CMsgMatchMetaDataContents_HeroXPReward::CMsgMatchMetaDataContents_HeroXPReward(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.xp_grant_)*/nullptr} {}
+struct CMsgMatchMetaDataContents_HeroXPRewardDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CMsgMatchMetaDataContents_HeroXPRewardDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CMsgMatchMetaDataContents_HeroXPRewardDefaultTypeInternal() {}
+  union {
+    CMsgMatchMetaDataContents_HeroXPReward _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CMsgMatchMetaDataContents_HeroXPRewardDefaultTypeInternal _CMsgMatchMetaDataContents_HeroXPReward_default_instance_;
 PROTOBUF_CONSTEXPR CMsgMatchMetaDataContents_PlayerAccolade::CMsgMatchMetaDataContents_PlayerAccolade(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_._has_bits_)*/{}
@@ -784,8 +868,10 @@ PROTOBUF_CONSTEXPR CMsgMatchMetaDataContents_Players::CMsgMatchMetaDataContents_
   , /*decltype(_impl_.book_rewards_)*/{}
   , /*decltype(_impl_.accolades_)*/{}
   , /*decltype(_impl_.power_up_buffs_)*/{}
+  , /*decltype(_impl_.hero_xp_rewards_)*/{}
   , /*decltype(_impl_.player_tracked_stats_)*/{}
   , /*decltype(_impl_.hero_data_)*/nullptr
+  , /*decltype(_impl_.player_rank_data_)*/nullptr
   , /*decltype(_impl_.account_id_)*/0u
   , /*decltype(_impl_.player_slot_)*/0u
   , /*decltype(_impl_.team_)*/0
@@ -802,7 +888,8 @@ PROTOBUF_CONSTEXPR CMsgMatchMetaDataContents_Players::CMsgMatchMetaDataContents_
   , /*decltype(_impl_.abandon_match_time_s_)*/0u
   , /*decltype(_impl_.rewards_eligible_)*/false
   , /*decltype(_impl_.earned_holiday_award_2025_)*/false
-  , /*decltype(_impl_.mvp_rank_)*/0u} {}
+  , /*decltype(_impl_.mvp_rank_)*/0u
+  , /*decltype(_impl_.player_match_outcome_)*/0} {}
 struct CMsgMatchMetaDataContents_PlayersDefaultTypeInternal {
   PROTOBUF_CONSTEXPR CMsgMatchMetaDataContents_PlayersDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
@@ -926,6 +1013,7 @@ PROTOBUF_CONSTEXPR CMsgMatchMetaDataContents_MatchInfo::CMsgMatchMetaDataContent
   , /*decltype(_impl_.match_tracked_stats_)*/{}
   , /*decltype(_impl_.teams_)*/{}
   , /*decltype(_impl_.street_brawl_rounds_)*/{}
+  , /*decltype(_impl_.extra_messages_)*/{}
   , /*decltype(_impl_.match_paths_)*/nullptr
   , /*decltype(_impl_.damage_matrix_)*/nullptr
   , /*decltype(_impl_.duration_s_)*/0u
@@ -946,7 +1034,10 @@ PROTOBUF_CONSTEXPR CMsgMatchMetaDataContents_MatchInfo::CMsgMatchMetaDataContent
   , /*decltype(_impl_.average_badge_team1_)*/0u
   , /*decltype(_impl_.game_mode_version_)*/0u
   , /*decltype(_impl_.not_scored_)*/false
-  , /*decltype(_impl_.bot_difficulty_)*/0} {}
+  , /*decltype(_impl_.bot_difficulty_)*/0
+  , /*decltype(_impl_.ranked_type_)*/0
+  , /*decltype(_impl_.rank_interval_)*/0u
+  , /*decltype(_impl_.corrupted_penalty_seed_)*/0u} {}
 struct CMsgMatchMetaDataContents_MatchInfoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR CMsgMatchMetaDataContents_MatchInfoDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
@@ -1072,7 +1163,8 @@ PROTOBUF_CONSTEXPR CMsgGCAccountData::CMsgGCAccountData(
     /*decltype(_impl_._has_bits_)*/{}
   , /*decltype(_impl_._cached_size_)*/{}
   , /*decltype(_impl_.account_id_)*/0u
-  , /*decltype(_impl_.cheater_report_score_)*/0} {}
+  , /*decltype(_impl_.cheater_report_score_)*/0
+  , /*decltype(_impl_.num_comms_reports_)*/0u} {}
 struct CMsgGCAccountDataDefaultTypeInternal {
   PROTOBUF_CONSTEXPR CMsgGCAccountDataDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
@@ -1206,6 +1298,119 @@ struct CMsgHeroBuildPreferenceDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CMsgHeroBuildPreferenceDefaultTypeInternal _CMsgHeroBuildPreference_default_instance_;
+PROTOBUF_CONSTEXPR CMsgCitadelCombatLogEntry::CMsgCitadelCombatLogEntry(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.assist_players_)*/{}
+  , /*decltype(_impl_.target_name_)*/0u
+  , /*decltype(_impl_.target_source_name_)*/0u
+  , /*decltype(_impl_.attacker_name_)*/0u
+  , /*decltype(_impl_.damage_source_name_)*/0u
+  , /*decltype(_impl_.inflictor_name_)*/0u
+  , /*decltype(_impl_.is_attacker_hero_)*/false
+  , /*decltype(_impl_.is_target_hero_)*/false
+  , /*decltype(_impl_.is_visible_sapphire_)*/false
+  , /*decltype(_impl_.is_visible_amber_)*/false
+  , /*decltype(_impl_.value_)*/0u
+  , /*decltype(_impl_.health_)*/0
+  , /*decltype(_impl_.timestamp_)*/0
+  , /*decltype(_impl_.timestamp_raw_)*/0
+  , /*decltype(_impl_.attacker_team_)*/0u
+  , /*decltype(_impl_.target_team_)*/0u
+  , /*decltype(_impl_.damage_type_)*/0u
+  , /*decltype(_impl_.networth_)*/0u
+  , /*decltype(_impl_.target_objective_id_)*/0u
+  , /*decltype(_impl_.currency_type_)*/0u
+  , /*decltype(_impl_.location_x_)*/0
+  , /*decltype(_impl_.is_ability_toggle_on_)*/false
+  , /*decltype(_impl_.is_ability_toggle_off_)*/false
+  , /*decltype(_impl_.target_is_self_)*/false
+  , /*decltype(_impl_.is_ultimate_ability_)*/false
+  , /*decltype(_impl_.location_y_)*/0
+  , /*decltype(_impl_.ability_upgrade_bits_)*/0
+  , /*decltype(_impl_.modifier_duration_)*/0
+  , /*decltype(_impl_.uses_charges_)*/false
+  , /*decltype(_impl_.inflictor_is_stolen_ability_)*/false
+  , /*decltype(_impl_.spell_generated_attack_)*/false
+  , /*decltype(_impl_.heal_from_lifesteal_)*/false
+  , /*decltype(_impl_.regenerated_health_)*/0
+  , /*decltype(_impl_.modifier_ability_)*/0u
+  , /*decltype(_impl_.will_reincarnate_)*/false
+  , /*decltype(_impl_.modifier_hidden_)*/false
+  , /*decltype(_impl_.hidden_modifier_)*/false
+  , /*decltype(_impl_.silence_modifier_)*/false
+  , /*decltype(_impl_.modifier_elapsed_duration_)*/0
+  , /*decltype(_impl_.currency_source_)*/0u
+  , /*decltype(_impl_.modifier_purged_)*/false
+  , /*decltype(_impl_.long_range_kill_)*/false
+  , /*decltype(_impl_.aura_modifier_)*/false
+  , /*decltype(_impl_.immobilize_modifier_)*/false
+  , /*decltype(_impl_.modifier_purge_npc_)*/0
+  , /*decltype(_impl_.modifier_purge_ability_)*/0
+  , /*decltype(_impl_.modifier_purged_duration_)*/0
+  , /*decltype(_impl_.powerup_type_)*/0
+  , /*decltype(_impl_.target_class_)*/0
+  , /*decltype(_impl_.movement_control_modifier_)*/false
+  , /*decltype(_impl_.is_primary_weapon_)*/false
+  , /*decltype(_impl_.is_headshot_)*/false
+  , /*decltype(_impl_.ability_name_)*/0
+  , /*decltype(_impl_.full_refresh_)*/0
+  , /*decltype(_impl_.hits_)*/0
+  , /*decltype(_impl_.type_)*/-1} {}
+struct CMsgCitadelCombatLogEntryDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CMsgCitadelCombatLogEntryDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CMsgCitadelCombatLogEntryDefaultTypeInternal() {}
+  union {
+    CMsgCitadelCombatLogEntry _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CMsgCitadelCombatLogEntryDefaultTypeInternal _CMsgCitadelCombatLogEntry_default_instance_;
+PROTOBUF_CONSTEXPR CSerializedCombatLog_Dictionary_DictString::CSerializedCombatLog_Dictionary_DictString(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.value_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.id_)*/0u} {}
+struct CSerializedCombatLog_Dictionary_DictStringDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CSerializedCombatLog_Dictionary_DictStringDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CSerializedCombatLog_Dictionary_DictStringDefaultTypeInternal() {}
+  union {
+    CSerializedCombatLog_Dictionary_DictString _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CSerializedCombatLog_Dictionary_DictStringDefaultTypeInternal _CSerializedCombatLog_Dictionary_DictString_default_instance_;
+PROTOBUF_CONSTEXPR CSerializedCombatLog_Dictionary::CSerializedCombatLog_Dictionary(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.strings_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct CSerializedCombatLog_DictionaryDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CSerializedCombatLog_DictionaryDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CSerializedCombatLog_DictionaryDefaultTypeInternal() {}
+  union {
+    CSerializedCombatLog_Dictionary _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CSerializedCombatLog_DictionaryDefaultTypeInternal _CSerializedCombatLog_Dictionary_default_instance_;
+PROTOBUF_CONSTEXPR CSerializedCombatLog::CSerializedCombatLog(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.entries_)*/{}
+  , /*decltype(_impl_.dictionary_)*/nullptr
+  , /*decltype(_impl_.version_)*/0u} {}
+struct CSerializedCombatLogDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CSerializedCombatLogDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CSerializedCombatLogDefaultTypeInternal() {}
+  union {
+    CSerializedCombatLog _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CSerializedCombatLogDefaultTypeInternal _CSerializedCombatLog_default_instance_;
 PROTOBUF_CONSTEXPR CMsgHeroReleaseVoteTally::CMsgHeroReleaseVoteTally(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_._has_bits_)*/{}
@@ -1223,11 +1428,67 @@ struct CMsgHeroReleaseVoteTallyDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CMsgHeroReleaseVoteTallyDefaultTypeInternal _CMsgHeroReleaseVoteTally_default_instance_;
-static ::_pb::Metadata file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[64];
-static const ::_pb::EnumDescriptor* file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[23];
+PROTOBUF_CONSTEXPR CMsgMatchHeroReleaseVotes_HeroVote::CMsgMatchHeroReleaseVotes_HeroVote(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.vote_player_slot_)*/0u
+  , /*decltype(_impl_.vote_hero_id_)*/0u
+  , /*decltype(_impl_.vote_count_)*/1u} {}
+struct CMsgMatchHeroReleaseVotes_HeroVoteDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CMsgMatchHeroReleaseVotes_HeroVoteDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CMsgMatchHeroReleaseVotes_HeroVoteDefaultTypeInternal() {}
+  union {
+    CMsgMatchHeroReleaseVotes_HeroVote _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CMsgMatchHeroReleaseVotes_HeroVoteDefaultTypeInternal _CMsgMatchHeroReleaseVotes_HeroVote_default_instance_;
+PROTOBUF_CONSTEXPR CMsgMatchHeroReleaseVotes_Category::CMsgMatchHeroReleaseVotes_Category(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.hero_votes_)*/{}
+  , /*decltype(_impl_.vote_category_)*/0} {}
+struct CMsgMatchHeroReleaseVotes_CategoryDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CMsgMatchHeroReleaseVotes_CategoryDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CMsgMatchHeroReleaseVotes_CategoryDefaultTypeInternal() {}
+  union {
+    CMsgMatchHeroReleaseVotes_Category _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CMsgMatchHeroReleaseVotes_CategoryDefaultTypeInternal _CMsgMatchHeroReleaseVotes_Category_default_instance_;
+PROTOBUF_CONSTEXPR CMsgMatchHeroReleaseVotes::CMsgMatchHeroReleaseVotes(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.categories_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct CMsgMatchHeroReleaseVotesDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CMsgMatchHeroReleaseVotesDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CMsgMatchHeroReleaseVotesDefaultTypeInternal() {}
+  union {
+    CMsgMatchHeroReleaseVotes _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CMsgMatchHeroReleaseVotesDefaultTypeInternal _CMsgMatchHeroReleaseVotes_default_instance_;
+static ::_pb::Metadata file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[75];
+static const ::_pb::EnumDescriptor* file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[31];
 static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_citadel_5fgcmessages_5fcommon_2eproto = nullptr;
 
 const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::CMsgHeroXPGrant, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgHeroXPGrant, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::CMsgHeroXPGrant, _impl_.hero_id_),
+  PROTOBUF_FIELD_OFFSET(::CMsgHeroXPGrant, _impl_.xp_grant_),
+  PROTOBUF_FIELD_OFFSET(::CMsgHeroXPGrant, _impl_.reason_),
+  0,
+  1,
+  2,
   PROTOBUF_FIELD_OFFSET(::CSOCitadelLobby, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::CSOCitadelLobby, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1293,6 +1554,7 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   PROTOBUF_FIELD_OFFSET(::CSOCitadelHideoutLobby, _impl_.members_),
   PROTOBUF_FIELD_OFFSET(::CSOCitadelHideoutLobby, _impl_.active_account_hideout_),
   PROTOBUF_FIELD_OFFSET(::CSOCitadelHideoutLobby, _impl_.extra_messages_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelHideoutLobby, _impl_.server_status_),
   1,
   2,
   3,
@@ -1304,6 +1566,7 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   ~0u,
   8,
   ~0u,
+  9,
   PROTOBUF_FIELD_OFFSET(::CLobbyData_PostMatchSurvey_PlayerSurvey, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::CLobbyData_PostMatchSurvey_PlayerSurvey, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1460,6 +1723,7 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_PrivateLobbySettings, _impl_.cheats_enabled_),
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_PrivateLobbySettings, _impl_.available_regions_),
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_PrivateLobbySettings, _impl_.duplicate_heroes_enabled_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_PrivateLobbySettings, _impl_.corrupted_item_shop_spawn_minutes_),
   0,
   ~0u,
   2,
@@ -1468,6 +1732,23 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   4,
   ~0u,
   5,
+  6,
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_RankedScores, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_RankedScores, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_RankedScores, _impl_.rank_type_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_RankedScores, _impl_.rank_interval_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_RankedScores, _impl_.rank_display_badge_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_RankedScores, _impl_.unlocked_heroes_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_RankedScores, _impl_.in_calibration_),
+  0,
+  1,
+  2,
+  ~0u,
+  3,
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_Member, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_Member, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1487,6 +1768,8 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_Member, _impl_.new_player_progress_),
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_Member, _impl_.owned_heroes_),
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_Member, _impl_.low_priority_games_remaining_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_Member, _impl_.ranked_scores_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_Member, _impl_.player_cabals_),
   2,
   0,
   3,
@@ -1500,6 +1783,8 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   11,
   ~0u,
   10,
+  ~0u,
+  ~0u,
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_LeftMember, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty_LeftMember, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1549,6 +1834,12 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty, _impl_.desires_laning_together_),
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty, _impl_.mm_preference_),
   PROTOBUF_FIELD_OFFSET(::CSOCitadelParty, _impl_.hideout_search_key_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty, _impl_.candidate_cabals_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty, _impl_.active_cabal_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty, _impl_.party_min_cabal_tier_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty, _impl_.party_active_cabal_tier_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty, _impl_.ranked_type_),
+  PROTOBUF_FIELD_OFFSET(::CSOCitadelParty, _impl_.rank_interval_),
   4,
   ~0u,
   ~0u,
@@ -1568,6 +1859,12 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   14,
   15,
   2,
+  ~0u,
+  16,
+  17,
+  18,
+  19,
+  20,
   PROTOBUF_FIELD_OFFSET(::CMsgMatchPlayerPathsData_Path, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::CMsgMatchPlayerPathsData_Path, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1660,6 +1957,28 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   ~0u,
   ~0u,
   0,
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchPlayerRankData, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchPlayerRankData, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchPlayerRankData, _impl_.initial_display_rank_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchPlayerRankData, _impl_.initial_flat_progress_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchPlayerRankData, _impl_.final_flat_progress_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchPlayerRankData, _impl_.desired_progress_change_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchPlayerRankData, _impl_.initial_calibration_games_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchPlayerRankData, _impl_.initial_demotion_protection_games_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchPlayerRankData, _impl_.consumed_demotion_protection_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchPlayerRankData, _impl_.initial_win_streak_),
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_Position, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_Position, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1767,9 +2086,13 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_PowerUpBuff, _impl_.type_),
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_PowerUpBuff, _impl_.value_),
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_PowerUpBuff, _impl_.is_permanent_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_PowerUpBuff, _impl_.pickup_times_s_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_PowerUpBuff, _impl_.pickup_stat_values_),
   0,
   1,
   2,
+  ~0u,
+  ~0u,
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_PlayerStats, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_PlayerStats, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1900,6 +2223,14 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   0,
   1,
   2,
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_HeroXPReward, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_HeroXPReward, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_HeroXPReward, _impl_.xp_grant_),
+  0,
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_PlayerAccolade, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_PlayerAccolade, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1946,12 +2277,14 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_Players, _impl_.mvp_rank_),
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_Players, _impl_.earned_holiday_award_2025_),
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_Players, _impl_.power_up_buffs_),
-  1,
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_Players, _impl_.hero_xp_rewards_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_Players, _impl_.player_rank_data_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_Players, _impl_.player_match_outcome_),
   2,
-  ~0u,
-  ~0u,
-  ~0u,
   3,
+  ~0u,
+  ~0u,
+  ~0u,
   4,
   5,
   6,
@@ -1962,18 +2295,22 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   11,
   12,
   13,
-  ~0u,
-  ~0u,
-  ~0u,
-  ~0u,
   14,
-  0,
+  ~0u,
+  ~0u,
+  ~0u,
+  ~0u,
   15,
-  ~0u,
-  ~0u,
-  17,
+  0,
   16,
   ~0u,
+  ~0u,
+  18,
+  17,
+  ~0u,
+  ~0u,
+  1,
+  19,
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_Teams, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_Teams, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -2091,6 +2428,10 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_MatchInfo, _impl_.teams_),
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_MatchInfo, _impl_.bot_difficulty_),
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_MatchInfo, _impl_.street_brawl_rounds_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_MatchInfo, _impl_.ranked_type_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_MatchInfo, _impl_.rank_interval_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_MatchInfo, _impl_.corrupted_penalty_seed_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents_MatchInfo, _impl_.extra_messages_),
   2,
   3,
   4,
@@ -2121,6 +2462,10 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   ~0u,
   ~0u,
   20,
+  ~0u,
+  21,
+  22,
+  23,
   ~0u,
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::CMsgMatchMetaDataContents, _internal_metadata_),
@@ -2212,8 +2557,10 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::CMsgGCAccountData, _impl_.account_id_),
   PROTOBUF_FIELD_OFFSET(::CMsgGCAccountData, _impl_.cheater_report_score_),
+  PROTOBUF_FIELD_OFFSET(::CMsgGCAccountData, _impl_.num_comms_reports_),
   0,
   1,
+  2,
   PROTOBUF_FIELD_OFFSET(::CMsgHeroBuild_BuildModEntry, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::CMsgHeroBuild_BuildModEntry, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -2323,6 +2670,153 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   0,
   1,
   2,
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.type_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.target_name_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.target_source_name_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.attacker_name_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.damage_source_name_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.inflictor_name_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.is_attacker_hero_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.is_target_hero_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.is_visible_sapphire_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.is_visible_amber_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.value_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.health_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.timestamp_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.timestamp_raw_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.attacker_team_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.target_team_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.is_ability_toggle_on_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.is_ability_toggle_off_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.damage_type_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.networth_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.currency_type_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.currency_source_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.location_x_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.location_y_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.ability_upgrade_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.modifier_duration_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.assist_players_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.target_objective_id_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.target_is_self_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.target_class_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.is_ultimate_ability_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.uses_charges_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.inflictor_is_stolen_ability_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.spell_generated_attack_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.heal_from_lifesteal_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.regenerated_health_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.will_reincarnate_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.modifier_ability_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.modifier_hidden_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.modifier_elapsed_duration_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.hidden_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.silence_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.modifier_purged_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.long_range_kill_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.aura_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.immobilize_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.modifier_purge_npc_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.modifier_purge_ability_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.modifier_purged_duration_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.movement_control_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.powerup_type_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.is_primary_weapon_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.is_headshot_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.ability_name_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.full_refresh_),
+  PROTOBUF_FIELD_OFFSET(::CMsgCitadelCombatLogEntry, _impl_.hits_),
+  54,
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  20,
+  21,
+  15,
+  16,
+  18,
+  38,
+  19,
+  24,
+  25,
+  26,
+  ~0u,
+  17,
+  22,
+  47,
+  23,
+  27,
+  28,
+  29,
+  30,
+  31,
+  33,
+  32,
+  34,
+  37,
+  35,
+  36,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  48,
+  46,
+  49,
+  50,
+  51,
+  52,
+  53,
+  PROTOBUF_FIELD_OFFSET(::CSerializedCombatLog_Dictionary_DictString, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CSerializedCombatLog_Dictionary_DictString, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::CSerializedCombatLog_Dictionary_DictString, _impl_.id_),
+  PROTOBUF_FIELD_OFFSET(::CSerializedCombatLog_Dictionary_DictString, _impl_.value_),
+  1,
+  0,
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::CSerializedCombatLog_Dictionary, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::CSerializedCombatLog_Dictionary, _impl_.strings_),
+  PROTOBUF_FIELD_OFFSET(::CSerializedCombatLog, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CSerializedCombatLog, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::CSerializedCombatLog, _impl_.version_),
+  PROTOBUF_FIELD_OFFSET(::CSerializedCombatLog, _impl_.dictionary_),
+  PROTOBUF_FIELD_OFFSET(::CSerializedCombatLog, _impl_.entries_),
+  1,
+  0,
+  ~0u,
   PROTOBUF_FIELD_OFFSET(::CMsgHeroReleaseVoteTally, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::CMsgHeroReleaseVoteTally, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -2335,75 +2829,116 @@ const uint32_t TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets[] PROT
   0,
   ~0u,
   1,
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchHeroReleaseVotes_HeroVote, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchHeroReleaseVotes_HeroVote, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchHeroReleaseVotes_HeroVote, _impl_.vote_player_slot_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchHeroReleaseVotes_HeroVote, _impl_.vote_hero_id_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchHeroReleaseVotes_HeroVote, _impl_.vote_count_),
+  0,
+  1,
+  2,
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchHeroReleaseVotes_Category, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchHeroReleaseVotes_Category, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchHeroReleaseVotes_Category, _impl_.vote_category_),
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchHeroReleaseVotes_Category, _impl_.hero_votes_),
+  0,
+  ~0u,
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchHeroReleaseVotes, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::CMsgMatchHeroReleaseVotes, _impl_.categories_),
 };
 static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 21, -1, sizeof(::CSOCitadelLobby)},
-  { 36, 45, -1, sizeof(::CSOCitadelHideoutLobby_Member)},
-  { 48, 65, -1, sizeof(::CSOCitadelHideoutLobby)},
-  { 76, 84, -1, sizeof(::CLobbyData_PostMatchSurvey_PlayerSurvey)},
-  { 86, -1, -1, sizeof(::CLobbyData_PostMatchSurvey)},
-  { 93, 101, -1, sizeof(::CMsgHeroSelectionMatchInfo_Hero)},
-  { 103, -1, -1, sizeof(::CMsgHeroSelectionMatchInfo)},
-  { 111, 125, -1, sizeof(::CMsgStartFindingMatchInfo)},
-  { 133, 147, -1, sizeof(::CMsgAnyToGCReportAsserts_TrackedAssert)},
-  { 155, 164, -1, sizeof(::CMsgAnyToGCReportAsserts)},
-  { 167, 174, -1, sizeof(::CMsgAnyToGCReportAssertsResponse)},
-  { 175, -1, -1, sizeof(::CMsgRegionPingTimesClient)},
-  { 183, -1, -1, sizeof(::CMsgEquippedItemList)},
-  { 190, 198, -1, sizeof(::CMsgPlayerHeroData)},
-  { 200, 208, -1, sizeof(::CSOCitadelParty_PrivateLobbySlot)},
-  { 210, 217, -1, sizeof(::CSOCitadelParty_ServerRegion)},
-  { 218, 232, -1, sizeof(::CSOCitadelParty_PrivateLobbySettings)},
-  { 240, 259, -1, sizeof(::CSOCitadelParty_Member)},
-  { 272, 281, -1, sizeof(::CSOCitadelParty_LeftMember)},
-  { 284, 293, -1, sizeof(::CSOCitadelParty_Invite)},
-  { 296, 321, -1, sizeof(::CSOCitadelParty)},
-  { 340, 356, -1, sizeof(::CMsgMatchPlayerPathsData_Path)},
-  { 366, 377, -1, sizeof(::CMsgMatchPlayerPathsData)},
-  { 382, 390, -1, sizeof(::CMsgMatchPlayerDamageMatrix_DamageToPlayer)},
-  { 392, 400, -1, sizeof(::CMsgMatchPlayerDamageMatrix_DamageSource)},
-  { 402, 410, -1, sizeof(::CMsgMatchPlayerDamageMatrix_DamageDealer)},
-  { 412, -1, -1, sizeof(::CMsgMatchPlayerDamageMatrix_SourceDetails)},
-  { 420, 429, -1, sizeof(::CMsgMatchPlayerDamageMatrix)},
-  { 432, 441, -1, sizeof(::CMsgMatchMetaDataContents_Position)},
-  { 444, 456, -1, sizeof(::CMsgMatchMetaDataContents_Deaths)},
-  { 462, 475, -1, sizeof(::CMsgMatchMetaDataContents_Items)},
-  { 482, 491, -1, sizeof(::CMsgMatchMetaDataContents_Ping)},
-  { 494, 505, -1, sizeof(::CMsgMatchMetaDataContents_GoldSource)},
-  { 510, 518, -1, sizeof(::CMsgMatchMetaDataContents_CustomUserStatInfo)},
-  { 520, 528, -1, sizeof(::CMsgMatchMetaDataContents_CustomUserStat)},
-  { 530, 539, -1, sizeof(::CMsgMatchMetaDataContents_PowerUpBuff)},
-  { 542, 599, -1, sizeof(::CMsgMatchMetaDataContents_PlayerStats)},
-  { 650, 658, -1, sizeof(::CMsgMatchMetaDataContents_AbilityStat)},
-  { 660, 669, -1, sizeof(::CMsgMatchMetaDataContents_BookReward)},
-  { 672, 681, -1, sizeof(::CMsgMatchMetaDataContents_PlayerAccolade)},
-  { 684, 718, -1, sizeof(::CMsgMatchMetaDataContents_Players)},
-  { 746, 754, -1, sizeof(::CMsgMatchMetaDataContents_Teams)},
-  { 756, 772, -1, sizeof(::CMsgMatchMetaDataContents_Objective)},
-  { 782, 791, -1, sizeof(::CMsgMatchMetaDataContents_MidBoss)},
-  { 794, 803, -1, sizeof(::CMsgMatchMetaDataContents_Pause)},
-  { 806, 814, -1, sizeof(::CMsgMatchMetaDataContents_WatchedDeathReplay)},
-  { 816, 824, -1, sizeof(::CMsgMatchMetaDataContents_StreetBrawlRound)},
-  { 826, 863, -1, sizeof(::CMsgMatchMetaDataContents_MatchInfo)},
-  { 894, 901, -1, sizeof(::CMsgMatchMetaDataContents)},
-  { 902, 911, -1, sizeof(::CMsgMatchMetaData)},
-  { 914, 923, -1, sizeof(::CMsgMapLine)},
-  { 926, 938, -1, sizeof(::CMsgAccountHeroStats)},
-  { 944, 953, -1, sizeof(::CMsgAccountBookStats)},
-  { 956, 964, -1, sizeof(::CMsgAccountStats)},
-  { 966, 974, -1, sizeof(::CMsgTrackedStat)},
-  { 976, 984, -1, sizeof(::CMsgGCAccountData)},
-  { 986, 997, -1, sizeof(::CMsgHeroBuild_BuildModEntry)},
-  { 1002, 1014, -1, sizeof(::CMsgHeroBuild_BuildModCategory)},
-  { 1020, 1030, -1, sizeof(::CMsgHeroBuild_CurrencyChange)},
-  { 1034, -1, -1, sizeof(::CMsgHeroBuild_AbilityOrder)},
-  { 1041, 1049, -1, sizeof(::CMsgHeroBuild_Details_V0)},
-  { 1051, 1070, -1, sizeof(::CMsgHeroBuild)},
-  { 1083, 1092, -1, sizeof(::CMsgHeroBuildPreference)},
-  { 1095, 1104, -1, sizeof(::CMsgHeroReleaseVoteTally)},
+  { 0, 9, -1, sizeof(::CMsgHeroXPGrant)},
+  { 12, 33, -1, sizeof(::CSOCitadelLobby)},
+  { 48, 57, -1, sizeof(::CSOCitadelHideoutLobby_Member)},
+  { 60, 78, -1, sizeof(::CSOCitadelHideoutLobby)},
+  { 90, 98, -1, sizeof(::CLobbyData_PostMatchSurvey_PlayerSurvey)},
+  { 100, -1, -1, sizeof(::CLobbyData_PostMatchSurvey)},
+  { 107, 115, -1, sizeof(::CMsgHeroSelectionMatchInfo_Hero)},
+  { 117, -1, -1, sizeof(::CMsgHeroSelectionMatchInfo)},
+  { 125, 139, -1, sizeof(::CMsgStartFindingMatchInfo)},
+  { 147, 161, -1, sizeof(::CMsgAnyToGCReportAsserts_TrackedAssert)},
+  { 169, 178, -1, sizeof(::CMsgAnyToGCReportAsserts)},
+  { 181, 188, -1, sizeof(::CMsgAnyToGCReportAssertsResponse)},
+  { 189, -1, -1, sizeof(::CMsgRegionPingTimesClient)},
+  { 197, -1, -1, sizeof(::CMsgEquippedItemList)},
+  { 204, 212, -1, sizeof(::CMsgPlayerHeroData)},
+  { 214, 222, -1, sizeof(::CSOCitadelParty_PrivateLobbySlot)},
+  { 224, 231, -1, sizeof(::CSOCitadelParty_ServerRegion)},
+  { 232, 247, -1, sizeof(::CSOCitadelParty_PrivateLobbySettings)},
+  { 256, 267, -1, sizeof(::CSOCitadelParty_RankedScores)},
+  { 272, 293, -1, sizeof(::CSOCitadelParty_Member)},
+  { 308, 317, -1, sizeof(::CSOCitadelParty_LeftMember)},
+  { 320, 329, -1, sizeof(::CSOCitadelParty_Invite)},
+  { 332, 363, -1, sizeof(::CSOCitadelParty)},
+  { 388, 404, -1, sizeof(::CMsgMatchPlayerPathsData_Path)},
+  { 414, 425, -1, sizeof(::CMsgMatchPlayerPathsData)},
+  { 430, 438, -1, sizeof(::CMsgMatchPlayerDamageMatrix_DamageToPlayer)},
+  { 440, 448, -1, sizeof(::CMsgMatchPlayerDamageMatrix_DamageSource)},
+  { 450, 458, -1, sizeof(::CMsgMatchPlayerDamageMatrix_DamageDealer)},
+  { 460, -1, -1, sizeof(::CMsgMatchPlayerDamageMatrix_SourceDetails)},
+  { 468, 477, -1, sizeof(::CMsgMatchPlayerDamageMatrix)},
+  { 480, 494, -1, sizeof(::CMsgMatchPlayerRankData)},
+  { 502, 511, -1, sizeof(::CMsgMatchMetaDataContents_Position)},
+  { 514, 526, -1, sizeof(::CMsgMatchMetaDataContents_Deaths)},
+  { 532, 545, -1, sizeof(::CMsgMatchMetaDataContents_Items)},
+  { 552, 561, -1, sizeof(::CMsgMatchMetaDataContents_Ping)},
+  { 564, 575, -1, sizeof(::CMsgMatchMetaDataContents_GoldSource)},
+  { 580, 588, -1, sizeof(::CMsgMatchMetaDataContents_CustomUserStatInfo)},
+  { 590, 598, -1, sizeof(::CMsgMatchMetaDataContents_CustomUserStat)},
+  { 600, 611, -1, sizeof(::CMsgMatchMetaDataContents_PowerUpBuff)},
+  { 616, 673, -1, sizeof(::CMsgMatchMetaDataContents_PlayerStats)},
+  { 724, 732, -1, sizeof(::CMsgMatchMetaDataContents_AbilityStat)},
+  { 734, 743, -1, sizeof(::CMsgMatchMetaDataContents_BookReward)},
+  { 746, 753, -1, sizeof(::CMsgMatchMetaDataContents_HeroXPReward)},
+  { 754, 763, -1, sizeof(::CMsgMatchMetaDataContents_PlayerAccolade)},
+  { 766, 803, -1, sizeof(::CMsgMatchMetaDataContents_Players)},
+  { 834, 842, -1, sizeof(::CMsgMatchMetaDataContents_Teams)},
+  { 844, 860, -1, sizeof(::CMsgMatchMetaDataContents_Objective)},
+  { 870, 879, -1, sizeof(::CMsgMatchMetaDataContents_MidBoss)},
+  { 882, 891, -1, sizeof(::CMsgMatchMetaDataContents_Pause)},
+  { 894, 902, -1, sizeof(::CMsgMatchMetaDataContents_WatchedDeathReplay)},
+  { 904, 912, -1, sizeof(::CMsgMatchMetaDataContents_StreetBrawlRound)},
+  { 914, 955, -1, sizeof(::CMsgMatchMetaDataContents_MatchInfo)},
+  { 990, 997, -1, sizeof(::CMsgMatchMetaDataContents)},
+  { 998, 1007, -1, sizeof(::CMsgMatchMetaData)},
+  { 1010, 1019, -1, sizeof(::CMsgMapLine)},
+  { 1022, 1034, -1, sizeof(::CMsgAccountHeroStats)},
+  { 1040, 1049, -1, sizeof(::CMsgAccountBookStats)},
+  { 1052, 1060, -1, sizeof(::CMsgAccountStats)},
+  { 1062, 1070, -1, sizeof(::CMsgTrackedStat)},
+  { 1072, 1081, -1, sizeof(::CMsgGCAccountData)},
+  { 1084, 1095, -1, sizeof(::CMsgHeroBuild_BuildModEntry)},
+  { 1100, 1112, -1, sizeof(::CMsgHeroBuild_BuildModCategory)},
+  { 1118, 1128, -1, sizeof(::CMsgHeroBuild_CurrencyChange)},
+  { 1132, -1, -1, sizeof(::CMsgHeroBuild_AbilityOrder)},
+  { 1139, 1147, -1, sizeof(::CMsgHeroBuild_Details_V0)},
+  { 1149, 1168, -1, sizeof(::CMsgHeroBuild)},
+  { 1181, 1190, -1, sizeof(::CMsgHeroBuildPreference)},
+  { 1193, 1255, -1, sizeof(::CMsgCitadelCombatLogEntry)},
+  { 1311, 1319, -1, sizeof(::CSerializedCombatLog_Dictionary_DictString)},
+  { 1321, -1, -1, sizeof(::CSerializedCombatLog_Dictionary)},
+  { 1328, 1337, -1, sizeof(::CSerializedCombatLog)},
+  { 1340, 1349, -1, sizeof(::CMsgHeroReleaseVoteTally)},
+  { 1352, 1361, -1, sizeof(::CMsgMatchHeroReleaseVotes_HeroVote)},
+  { 1364, 1372, -1, sizeof(::CMsgMatchHeroReleaseVotes_Category)},
+  { 1374, -1, -1, sizeof(::CMsgMatchHeroReleaseVotes)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
+  &::_CMsgHeroXPGrant_default_instance_._instance,
   &::_CSOCitadelLobby_default_instance_._instance,
   &::_CSOCitadelHideoutLobby_Member_default_instance_._instance,
   &::_CSOCitadelHideoutLobby_default_instance_._instance,
@@ -2421,6 +2956,7 @@ static const ::_pb::Message* const file_default_instances[] = {
   &::_CSOCitadelParty_PrivateLobbySlot_default_instance_._instance,
   &::_CSOCitadelParty_ServerRegion_default_instance_._instance,
   &::_CSOCitadelParty_PrivateLobbySettings_default_instance_._instance,
+  &::_CSOCitadelParty_RankedScores_default_instance_._instance,
   &::_CSOCitadelParty_Member_default_instance_._instance,
   &::_CSOCitadelParty_LeftMember_default_instance_._instance,
   &::_CSOCitadelParty_Invite_default_instance_._instance,
@@ -2432,6 +2968,7 @@ static const ::_pb::Message* const file_default_instances[] = {
   &::_CMsgMatchPlayerDamageMatrix_DamageDealer_default_instance_._instance,
   &::_CMsgMatchPlayerDamageMatrix_SourceDetails_default_instance_._instance,
   &::_CMsgMatchPlayerDamageMatrix_default_instance_._instance,
+  &::_CMsgMatchPlayerRankData_default_instance_._instance,
   &::_CMsgMatchMetaDataContents_Position_default_instance_._instance,
   &::_CMsgMatchMetaDataContents_Deaths_default_instance_._instance,
   &::_CMsgMatchMetaDataContents_Items_default_instance_._instance,
@@ -2443,6 +2980,7 @@ static const ::_pb::Message* const file_default_instances[] = {
   &::_CMsgMatchMetaDataContents_PlayerStats_default_instance_._instance,
   &::_CMsgMatchMetaDataContents_AbilityStat_default_instance_._instance,
   &::_CMsgMatchMetaDataContents_BookReward_default_instance_._instance,
+  &::_CMsgMatchMetaDataContents_HeroXPReward_default_instance_._instance,
   &::_CMsgMatchMetaDataContents_PlayerAccolade_default_instance_._instance,
   &::_CMsgMatchMetaDataContents_Players_default_instance_._instance,
   &::_CMsgMatchMetaDataContents_Teams_default_instance_._instance,
@@ -2467,489 +3005,640 @@ static const ::_pb::Message* const file_default_instances[] = {
   &::_CMsgHeroBuild_Details_V0_default_instance_._instance,
   &::_CMsgHeroBuild_default_instance_._instance,
   &::_CMsgHeroBuildPreference_default_instance_._instance,
+  &::_CMsgCitadelCombatLogEntry_default_instance_._instance,
+  &::_CSerializedCombatLog_Dictionary_DictString_default_instance_._instance,
+  &::_CSerializedCombatLog_Dictionary_default_instance_._instance,
+  &::_CSerializedCombatLog_default_instance_._instance,
   &::_CMsgHeroReleaseVoteTally_default_instance_._instance,
+  &::_CMsgMatchHeroReleaseVotes_HeroVote_default_instance_._instance,
+  &::_CMsgMatchHeroReleaseVotes_Category_default_instance_._instance,
+  &::_CMsgMatchHeroReleaseVotes_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_citadel_5fgcmessages_5fcommon_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\037citadel_gcmessages_common.proto\032\023steam"
   "messages.proto\032\026gcsdk_gcmessages.proto\032\025"
   "base_gcmessages.proto\032\025valveextensions.p"
-  "roto\"\227\004\n\017CSOCitadelLobby\022\020\n\010lobby_id\030\001 \001"
-  "(\004\022\020\n\010match_id\030\002 \001(\004\022C\n\nmatch_mode\030\003 \001(\016"
-  "2\022.ECitadelMatchMode:\033k_ECitadelMatchMod"
-  "e_Invalid\022@\n\tgame_mode\030\004 \001(\0162\021.ECitadelG"
-  "ameMode:\032k_ECitadelGameMode_Invalid\022\035\n\025c"
-  "ompatibility_version\030\005 \001(\r\022\'\n\016extra_mess"
-  "ages\030\006 \003(\0132\017.CExtraMsgBlock\022\027\n\017server_st"
-  "eam_id\030\007 \001(\006\022D\n\014server_state\030\010 \001(\0162\022.ELo"
-  "bbyServerState:\032k_eLobbyServerState_Assi"
-  "gn\022\026\n\016udp_connect_ip\030\t \001(\r\022\030\n\020udp_connec"
-  "t_port\030\n \001(\r\022\023\n\013sdr_address\030\014 \001(\014\022\026\n\016ser"
-  "ver_version\030\r \001(\r\022\027\n\017safe_to_abandon\030\016 \001"
-  "(\010\022\037\n\027match_punishes_abandons\030\017 \001(\010\022\031\n\021g"
-  "ame_mode_version\030\020 \001(\r\"\264\003\n\026CSOCitadelHid"
-  "eoutLobby\022\030\n\020hideout_lobby_id\030\001 \001(\004\022\020\n\010p"
-  "arty_id\030\002 \001(\004\022\027\n\017server_steam_id\030\003 \001(\006\022\026"
-  "\n\016udp_connect_ip\030\004 \001(\r\022\030\n\020udp_connect_po"
-  "rt\030\005 \001(\r\022\023\n\013sdr_address\030\006 \001(\014\022\026\n\016server_"
-  "version\030\007 \001(\r\022\026\n\016compat_version\030\010 \001(\r\022/\n"
-  "\007members\030\t \003(\0132\036.CSOCitadelHideoutLobby."
-  "Member\022\036\n\026active_account_hideout\030\n \001(\r\022\'"
-  "\n\016extra_messages\030\013 \003(\0132\017.CExtraMsgBlock\032"
-  "d\n\006Member\022\022\n\naccount_id\030\001 \001(\r\022\"\n\032hideout"
-  "_holiday_award_2024\030\036 \001(\010\022\"\n\032hideout_hol"
-  "iday_award_2025\030  \001(\010\"\220\001\n\032CLobbyData_Pos"
-  "tMatchSurvey\0229\n\007surveys\030\001 \003(\0132(.CLobbyDa"
-  "ta_PostMatchSurvey.PlayerSurvey\0327\n\014Playe"
-  "rSurvey\022\022\n\naccount_id\030\001 \001(\r\022\023\n\013question_"
-  "id\030\002 \001(\r\"\231\001\n\032CMsgHeroSelectionMatchInfo\022"
-  "9\n\017hero_selections\030\001 \003(\0132 .CMsgHeroSelec"
-  "tionMatchInfo.Hero\022\025\n\rbanned_heroes\030\002 \003("
-  "\r\032)\n\004Hero\022\017\n\007hero_id\030\001 \001(\r\022\020\n\010priority\030\002"
-  " \001(\r\"\326\003\n\031CMsgStartFindingMatchInfo\022\031\n\021se"
-  "rver_search_key\030\001 \001(\t\022\035\n\025server_command_"
-  "string\030\002 \001(\t\022C\n\nmatch_mode\030\003 \001(\0162\022.ECita"
-  "delMatchMode:\033k_ECitadelMatchMode_Invali"
-  "d\022@\n\tgame_mode\030\005 \001(\0162\021.ECitadelGameMode:"
-  "\032k_ECitadelGameMode_Invalid\022L\n\016bot_diffi"
-  "culty\030\007 \001(\0162\026.ECitadelBotDifficulty:\034k_E"
-  "CitadelBotDifficulty_None\022B\n\013region_mode"
-  "\030\010 \001(\0162\023.ECitadelRegionMode:\030k_ECitadelR"
-  "egionMode_ROW\022\030\n\020prefer_solo_only\030\t \001(\010\022"
-  "L\n\rmm_preference\030\n \001(\0162\025.ECitadelMMPrefe"
-  "rence:\036k_ECitadelMMPreference_Invalid\"\264\002"
-  "\n\030CMsgAnyToGCReportAsserts\022\017\n\007version\030\001 "
-  "\001(\r\0228\n\007asserts\030\002 \003(\0132\'.CMsgAnyToGCReport"
-  "Asserts.TrackedAssert\022\020\n\010match_id\030\003 \001(\004\032"
-  "\272\001\n\rTrackedAssert\022\020\n\010filename\030\001 \001(\t\022\023\n\013l"
-  "ine_number\030\002 \001(\r\022\022\n\nsample_msg\030\003 \001(\t\022\024\n\014"
-  "sample_stack\030\004 \001(\t\022\023\n\013times_fired\030\005 \001(\r\022"
-  "\025\n\rfunction_name\030\006 \001(\t\022\021\n\tcondition\030\007 \001("
-  "\t\022\031\n\021total_times_fired\030\010 \001(\r\"3\n CMsgAnyT"
-  "oGCReportAssertsResponse\022\017\n\007success\030\001 \001("
-  "\010\"R\n\031CMsgRegionPingTimesClient\022\035\n\021data_c"
-  "enter_codes\030\001 \003(\007B\002\020\001\022\026\n\nping_times\030\002 \003("
-  "\rB\002\020\001\"3\n\024CMsgEquippedItemList\022\033\n\005items\030\001"
-  " \003(\0132\014.CSOEconItem\"Q\n\022CMsgPlayerHeroData"
-  "\022\017\n\007hero_xp\030\001 \001(\r\022*\n\013hero_equips\030\002 \001(\0132\025"
-  ".CMsgEquippedItemList\"\303\020\n\017CSOCitadelPart"
-  "y\022\020\n\010party_id\030\001 \001(\004\022(\n\007members\030\002 \003(\0132\027.C"
-  "SOCitadelParty.Member\022(\n\007invites\030\003 \003(\0132\027"
-  ".CSOCitadelParty.Invite\022\032\n\022dev_server_co"
-  "mmand\030\004 \001(\t\0221\n\014left_members\030\005 \003(\0132\033.CSOC"
-  "itadelParty.LeftMember\022\021\n\tjoin_code\030\006 \001("
-  "\004\022L\n\016bot_difficulty\030\007 \001(\0162\026.ECitadelBotD"
-  "ifficulty:\034k_ECitadelBotDifficulty_None\022"
-  "C\n\nmatch_mode\030\t \001(\0162\022.ECitadelMatchMode:"
-  "\033k_ECitadelMatchMode_Invalid\022@\n\tgame_mod"
-  "e\030\n \001(\0162\021.ECitadelGameMode:\032k_ECitadelGa"
-  "meMode_Invalid\022\037\n\027match_making_start_tim"
-  "e\030\013 \001(\r\022\031\n\021server_search_key\030\014 \001(\t\022!\n\031is"
-  "_high_skill_range_party\030\r \001(\010\0226\n\tchat_mo"
-  "de\030\016 \001(\0162\032.CSOCitadelParty.EChatMode:\007k_"
-  "eNone\022B\n\013region_mode\030\017 \001(\0162\023.ECitadelReg"
-  "ionMode:\030k_ECitadelRegionMode_ROW\022\030\n\020is_"
-  "private_lobby\030\020 \001(\010\022E\n\026private_lobby_set"
-  "tings\030\021 \001(\0132%.CSOCitadelParty.PrivateLob"
-  "bySettings\022\037\n\027desires_laning_together\030\022 "
-  "\001(\010\022L\n\rmm_preference\030\023 \001(\0162\025.ECitadelMMP"
-  "reference:\036k_ECitadelMMPreference_Invali"
-  "d\022\032\n\022hideout_search_key\030\025 \001(\t\032>\n\020Private"
-  "LobbySlot\022\017\n\007slot_id\030\001 \001(\r\022\031\n\021player_acc"
-  "ount_id\030\002 \001(\r\032!\n\014ServerRegion\022\021\n\tregion_"
-  "id\030\001 \001(\r\032\250\002\n\024PrivateLobbySettings\022\027\n\017min"
-  "_roster_size\030\001 \001(\r\0226\n\013match_slots\030\002 \003(\0132"
-  "!.CSOCitadelParty.PrivateLobbySlot\022\027\n\017ra"
-  "ndomize_lanes\030\003 \001(\010\022\025\n\rserver_region\030\004 \001"
-  "(\r\022\033\n\023is_publicly_visible\030\006 \001(\010\022\026\n\016cheat"
-  "s_enabled\030\007 \001(\010\0228\n\021available_regions\030\010 \003"
-  "(\0132\035.CSOCitadelParty.ServerRegion\022 \n\030dup"
-  "licate_heroes_enabled\030\t \001(\010\032\250\003\n\006Member\022\022"
-  "\n\naccount_id\030\001 \001(\r\022\024\n\014persona_name\030\002 \001(\t"
-  "\022\024\n\014rights_flags\030\003 \001(\r\022\020\n\010is_ready\030\004 \001(\010"
-  "\022G\n\013player_type\030\005 \001(\0162\034.CSOCitadelParty."
-  "EPlayerType:\024k_ePlayerType_Player\022\035\n\025com"
-  "patibility_version\030\006 \001(\r\0222\n\010platform\030\007 \001"
-  "(\0162\014.EGCPlatform:\022k_eGCPlatform_None\022\014\n\004"
-  "team\030\010 \001(\r\0220\n\013hero_roster\030\t \001(\0132\033.CMsgHe"
-  "roSelectionMatchInfo\022\023\n\013permissions\030\n \001("
-  "\004\022\033\n\023new_player_progress\030\013 \001(\004\022\030\n\014owned_"
-  "heroes\030\014 \003(\rB\002\020\001\022$\n\034low_priority_games_r"
-  "emaining\030\r \001(\r\032\177\n\nLeftMember\022\022\n\naccount_"
-  "id\030\001 \001(\r\022\024\n\014rights_flags\030\002 \001(\r\022G\n\013player"
-  "_type\030\003 \001(\0162\034.CSOCitadelParty.EPlayerTyp"
-  "e:\024k_ePlayerType_Player\032F\n\006Invite\022\022\n\nacc"
-  "ount_id\030\001 \001(\r\022\024\n\014persona_name\030\002 \001(\t\022\022\n\ni"
-  "nvited_by\030\003 \001(\r\"G\n\rEMemberRights\022\031\n\025k_eM"
-  "emberRights_Admin\020\001\022\033\n\027k_eMemberRights_C"
-  "reator\020\002\"D\n\013EPlayerType\022\030\n\024k_ePlayerType"
-  "_Player\020\000\022\033\n\027k_ePlayerType_Spectator\020\001\";"
-  "\n\tEChatMode\022\013\n\007k_eNone\020\000\022\020\n\014k_ePartyChat"
-  "\020\001\022\017\n\013k_eTeamChat\020\002\"\233\006\n\030CMsgMatchPlayerP"
-  "athsData\022\017\n\007version\030\001 \001(\r\022\022\n\ninterval_s\030"
-  "\002 \001(\002\022\024\n\014x_resolution\030\003 \001(\r\022\024\n\014y_resolut"
-  "ion\030\004 \001(\r\022-\n\005paths\030\005 \003(\0132\036.CMsgMatchPlay"
-  "erPathsData.Path\032\215\002\n\004Path\022\023\n\013player_slot"
-  "\030\001 \001(\r\022\r\n\005x_min\030\002 \001(\002\022\r\n\005y_min\030\003 \001(\002\022\r\n\005"
-  "x_max\030\004 \001(\002\022\r\n\005y_max\030\005 \001(\002\022\021\n\005x_pos\030\006 \003("
-  "\rB\002\020\001\022\021\n\005y_pos\030\007 \003(\rB\002\020\001\022\022\n\006health\030\t \003(\r"
-  "B\002\020\001\022>\n\013combat_type\030\n \003(\0162%.CMsgMatchPla"
-  "yerPathsData.ECombatTypeB\002\020\001\022:\n\tmove_typ"
-  "e\030\013 \003(\0162#.CMsgMatchPlayerPathsData.EMove"
-  "TypeB\002\020\001\"u\n\013ECombatType\022\025\n\021k_eCombatType"
-  "_Out\020\000\022\030\n\024k_eCombatType_Player\020\001\022\032\n\026k_eC"
-  "ombatType_EnemyNPC\020\002\022\031\n\025k_eCombatType_Ne"
-  "utral\020\003\"\367\001\n\tEMoveType\022\026\n\022k_eMoveType_Nor"
-  "mal\020\000\022\027\n\023k_eMoveType_Ability\020\001\022\035\n\031k_eMov"
-  "eType_AbilityDebuff\020\002\022\032\n\026k_eMoveType_Gro"
-  "undDash\020\003\022\025\n\021k_eMoveType_Slide\020\004\022\034\n\030k_eM"
-  "oveType_RopeClimbing\020\005\022\031\n\025k_eMoveType_Zi"
-  "plining\020\006\022\025\n\021k_eMoveType_InAir\020\007\022\027\n\023k_eM"
-  "oveType_AirDash\020\010\"\341\005\n\033CMsgMatchPlayerDam"
-  "ageMatrix\022A\n\016damage_dealers\030\001 \003(\0132).CMsg"
-  "MatchPlayerDamageMatrix.DamageDealer\022\031\n\r"
-  "sample_time_s\030\002 \003(\rB\002\020\001\022B\n\016source_detail"
-  "s\030\003 \001(\0132*.CMsgMatchPlayerDamageMatrix.So"
-  "urceDetails\032@\n\016DamageToPlayer\022\032\n\022target_"
-  "player_slot\030\001 \001(\r\022\022\n\006damage\030\002 \003(\rB\002\020\001\032t\n"
-  "\014DamageSource\022F\n\021damage_to_players\030\002 \003(\013"
-  "2+.CMsgMatchPlayerDamageMatrix.DamageToP"
-  "layer\022\034\n\024source_details_index\030\004 \001(\r\032m\n\014D"
-  "amageDealer\022\032\n\022dealer_player_slot\030\001 \001(\r\022"
-  "A\n\016damage_sources\030\002 \003(\0132).CMsgMatchPlaye"
-  "rDamageMatrix.DamageSource\032c\n\rSourceDeta"
-  "ils\022=\n\tstat_type\030\001 \003(\0162&.CMsgMatchPlayer"
-  "DamageMatrix.EStatTypeB\002\020\001\022\023\n\013source_nam"
-  "e\030\002 \003(\t\"\223\001\n\tEStatType\022\022\n\016k_eType_Damage\020"
-  "\000\022\023\n\017k_eType_Healing\020\001\022\031\n\025k_eType_HealPr"
-  "evented\020\002\022\025\n\021k_eType_Mitigated\020\003\022\030\n\024k_eT"
-  "ype_LethalDamage\020\004\022\021\n\rk_eType_Regen\020\005\"\351/"
-  "\n\031CMsgMatchMetaDataContents\0228\n\nmatch_inf"
-  "o\030\002 \001(\0132$.CMsgMatchMetaDataContents.Matc"
-  "hInfo\032+\n\010Position\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022"
-  "\t\n\001z\030\003 \001(\002\032\334\001\n\006Deaths\022\023\n\013game_time_s\030\001 \001"
-  "(\r\022\026\n\016time_to_kill_s\030\002 \001(\002\022\032\n\022killer_pla"
-  "yer_slot\030\t \001(\r\0226\n\tdeath_pos\030\n \001(\0132#.CMsg"
-  "MatchMetaDataContents.Position\0227\n\nkiller"
-  "_pos\030\013 \001(\0132#.CMsgMatchMetaDataContents.P"
-  "osition\022\030\n\020death_duration_s\030\014 \001(\r\032\226\001\n\005It"
-  "ems\022\023\n\013game_time_s\030\001 \001(\r\022\017\n\007item_id\030\002 \001("
-  "\r\022\022\n\nupgrade_id\030\003 \001(\r\022\023\n\013sold_time_s\030\004 \001"
-  "(\r\022\r\n\005flags\030\005 \001(\r\022\031\n\021imbued_ability_id\030\006"
-  " \001(\r\022\024\n\014upgrade_info\030\007 \001(\r\032A\n\004Ping\022\021\n\tpi"
-  "ng_type\030\001 \001(\r\022\021\n\tping_data\030\002 \001(\r\022\023\n\013game"
-  "_time_s\030\003 \001(\r\032\220\001\n\nGoldSource\022B\n\006source\030\001"
-  " \001(\0162&.CMsgMatchMetaDataContents.EGoldSo"
-  "urce:\nk_ePlayers\022\r\n\005kills\030\002 \001(\r\022\016\n\006damag"
-  "e\030\003 \001(\r\022\014\n\004gold\030\004 \001(\r\022\021\n\tgold_orbs\030\005 \001(\r"
-  "\032.\n\022CustomUserStatInfo\022\014\n\004name\030\001 \001(\t\022\n\n\002"
-  "id\030\002 \001(\r\032+\n\016CustomUserStat\022\r\n\005value\030\002 \001("
-  "\r\022\n\n\002id\030\003 \001(\r\032@\n\013PowerUpBuff\022\014\n\004type\030\001 \001"
-  "(\t\022\r\n\005value\030\002 \001(\r\022\024\n\014is_permanent\030\003 \001(\010\032"
-  "\370\t\n\013PlayerStats\022\024\n\014time_stamp_s\030\001 \001(\r\022\021\n"
-  "\tnet_worth\030\002 \001(\r\022\023\n\013gold_player\030\003 \001(\r\022\030\n"
-  "\020gold_player_orbs\030\004 \001(\r\022\034\n\024gold_lane_cre"
-  "ep_orbs\030\005 \001(\r\022\037\n\027gold_neutral_creep_orbs"
-  "\030\006 \001(\r\022\021\n\tgold_boss\030\007 \001(\r\022\025\n\rgold_boss_o"
-  "rb\030\010 \001(\r\022\025\n\rgold_treasure\030\t \001(\r\022\023\n\013gold_"
-  "denied\030\n \001(\r\022\027\n\017gold_death_loss\030\013 \001(\r\022\027\n"
-  "\017gold_lane_creep\030\014 \001(\r\022\032\n\022gold_neutral_c"
-  "reep\030\r \001(\r\022\r\n\005kills\030\016 \001(\r\022\016\n\006deaths\030\017 \001("
-  "\r\022\017\n\007assists\030\020 \001(\r\022\023\n\013creep_kills\030\021 \001(\r\022"
-  "\025\n\rneutral_kills\030\022 \001(\r\022\027\n\017possible_creep"
-  "s\030\023 \001(\r\022\024\n\014creep_damage\030\024 \001(\r\022\025\n\rplayer_"
-  "damage\030\025 \001(\r\022\026\n\016neutral_damage\030\026 \001(\r\022\023\n\013"
-  "boss_damage\030\027 \001(\r\022\016\n\006denies\030\030 \001(\r\022\026\n\016pla"
-  "yer_healing\030\031 \001(\r\022\026\n\016ability_points\030\032 \001("
-  "\r\022\024\n\014self_healing\030\033 \001(\r\022\033\n\023player_damage"
-  "_taken\030\034 \001(\r\022\022\n\nmax_health\030\035 \001(\r\022\024\n\014weap"
-  "on_power\030\036 \001(\r\022\022\n\ntech_power\030\037 \001(\r\022\021\n\tsh"
-  "ots_hit\030  \001(\r\022\024\n\014shots_missed\030! \001(\r\022\027\n\017d"
-  "amage_absorbed\030\" \001(\r\022\033\n\023absorption_provi"
-  "ded\030# \001(\r\022\030\n\020hero_bullets_hit\030$ \001(\r\022\035\n\025h"
-  "ero_bullets_hit_crit\030% \001(\r\022\026\n\016heal_preve"
-  "nted\030& \001(\r\022\021\n\theal_lost\030\' \001(\r\022;\n\014gold_so"
-  "urces\030( \003(\0132%.CMsgMatchMetaDataContents."
-  "GoldSource\022D\n\021custom_user_stats\030) \003(\0132)."
-  "CMsgMatchMetaDataContents.CustomUserStat"
-  "\022\030\n\020damage_mitigated\030* \001(\r\022\r\n\005level\030+ \001("
-  "\r\022\031\n\021player_barriering\030, \001(\r\022\030\n\020teammate"
-  "_healing\030- \001(\r\022\033\n\023teammate_barriering\030. "
-  "\001(\r\022\023\n\013self_damage\030/ \001(\r\022\024\n\014bullet_kills"
-  "\0300 \001(\r\022\023\n\013melee_kills\0301 \001(\r\022\025\n\rability_k"
-  "ills\0302 \001(\r\022\026\n\016headshot_kills\0303 \001(\r\0328\n\013Ab"
-  "ilityStat\022\022\n\nability_id\030\001 \001(\r\022\025\n\rability"
-  "_value\030\002 \001(\r\032E\n\nBookReward\022\017\n\007book_id\030\001 "
-  "\001(\r\022\021\n\txp_amount\030\002 \001(\r\022\023\n\013starting_xp\030\003 "
-  "\001(\r\032g\n\016PlayerAccolade\022\023\n\013accolade_id\030\001 \001"
-  "(\r\022\033\n\023accolade_stat_value\030\002 \001(\005\022#\n\033accol"
-  "ade_threshold_achieved\030\003 \001(\005\032\322\007\n\007Players"
-  "\022\022\n\naccount_id\030\001 \001(\r\022\023\n\013player_slot\030\002 \001("
-  "\r\0228\n\rdeath_details\030\003 \003(\0132!.CMsgMatchMeta"
-  "DataContents.Deaths\022/\n\005items\030\004 \003(\0132 .CMs"
-  "gMatchMetaDataContents.Items\0225\n\005stats\030\005 "
-  "\003(\0132&.CMsgMatchMetaDataContents.PlayerSt"
-  "ats\022;\n\004team\030\006 \001(\0162\022.ECitadelLobbyTeam:\031k"
-  "_ECitadelLobbyTeam_Team0\022\r\n\005kills\030\010 \001(\r\022"
-  "\016\n\006deaths\030\t \001(\r\022\017\n\007assists\030\n \001(\r\022\021\n\tnet_"
-  "worth\030\013 \001(\r\022\017\n\007hero_id\030\014 \001(\r\022\021\n\tlast_hit"
-  "s\030\r \001(\r\022\016\n\006denies\030\016 \001(\r\022\026\n\016ability_point"
-  "s\030\017 \001(\r\022\025\n\rassigned_lane\030\021 \001(\r\022\r\n\005level\030"
-  "\022 \001(\r\022.\n\005pings\030\023 \003(\0132\037.CMsgMatchMetaData"
-  "Contents.Ping\022=\n\rability_stats\030\024 \003(\0132&.C"
-  "MsgMatchMetaDataContents.AbilityStat\022\033\n\017"
-  "stats_type_stat\030\025 \003(\002B\002\020\001\022;\n\014book_reward"
-  "s\030\026 \003(\0132%.CMsgMatchMetaDataContents.Book"
-  "Reward\022\034\n\024abandon_match_time_s\030\027 \001(\r\022&\n\t"
-  "hero_data\030\031 \001(\0132\023.CMsgPlayerHeroData\022\030\n\020"
-  "rewards_eligible\030\032 \001(\010\022.\n\024player_tracked"
-  "_stats\0300 \003(\0132\020.CMsgTrackedStat\022<\n\taccola"
-  "des\030\033 \003(\0132).CMsgMatchMetaDataContents.Pl"
-  "ayerAccolade\022\020\n\010mvp_rank\030\034 \001(\r\022!\n\031earned"
-  "_holiday_award_2025\030\035 \001(\010\022>\n\016power_up_bu"
-  "ffs\030\036 \003(\0132&.CMsgMatchMetaDataContents.Po"
-  "werUpBuff\032r\n\005Teams\022;\n\004team\030\001 \001(\0162\022.ECita"
-  "delLobbyTeam:\031k_ECitadelLobbyTeam_Team0\022"
-  ",\n\022team_tracked_stats\030\002 \003(\0132\020.CMsgTracke"
-  "dStat\032\255\003\n\tObjective\022O\n\023legacy_objective_"
-  "id\030\001 \001(\0162\022.ECitadelObjective:\036k_eCitadel"
-  "Objective_Team0_Core\022\030\n\020destroyed_time_s"
-  "\030\002 \001(\r\022\024\n\014creep_damage\030\004 \001(\r\022\036\n\026creep_da"
-  "mage_mitigated\030\005 \001(\r\022\025\n\rplayer_damage\030\006 "
-  "\001(\r\022\037\n\027player_damage_mitigated\030\007 \001(\r\022\033\n\023"
-  "first_damage_time_s\030\010 \001(\r\022O\n\021team_object"
-  "ive_id\030\t \001(\0162\026.ECitadelTeamObjective:\034k_"
-  "eCitadelTeamObjective_Core\022;\n\004team\030\n \001(\016"
+  "roto\032\026networkbasetypes.proto\"g\n\017CMsgHero"
+  "XPGrant\022\017\n\007hero_id\030\001 \001(\r\022\020\n\010xp_grant\030\002 \001"
+  "(\r\0221\n\006reason\030\003 \001(\0162\023.EHeroXPGrantReason:"
+  "\014k_eGrant_Win\"\227\004\n\017CSOCitadelLobby\022\020\n\010lob"
+  "by_id\030\001 \001(\004\022\020\n\010match_id\030\002 \001(\004\022C\n\nmatch_m"
+  "ode\030\003 \001(\0162\022.ECitadelMatchMode:\033k_ECitade"
+  "lMatchMode_Invalid\022@\n\tgame_mode\030\004 \001(\0162\021."
+  "ECitadelGameMode:\032k_ECitadelGameMode_Inv"
+  "alid\022\035\n\025compatibility_version\030\005 \001(\r\022\'\n\016e"
+  "xtra_messages\030\006 \003(\0132\017.CExtraMsgBlock\022\027\n\017"
+  "server_steam_id\030\007 \001(\006\022D\n\014server_state\030\010 "
+  "\001(\0162\022.ELobbyServerState:\032k_eLobbyServerS"
+  "tate_Assign\022\026\n\016udp_connect_ip\030\t \001(\r\022\030\n\020u"
+  "dp_connect_port\030\n \001(\r\022\023\n\013sdr_address\030\014 \001"
+  "(\014\022\026\n\016server_version\030\r \001(\r\022\027\n\017safe_to_ab"
+  "andon\030\016 \001(\010\022\037\n\027match_punishes_abandons\030\017"
+  " \001(\010\022\031\n\021game_mode_version\030\020 \001(\r\"\366\004\n\026CSOC"
+  "itadelHideoutLobby\022\030\n\020hideout_lobby_id\030\001"
+  " \001(\004\022\020\n\010party_id\030\002 \001(\004\022\027\n\017server_steam_i"
+  "d\030\003 \001(\006\022\026\n\016udp_connect_ip\030\004 \001(\r\022\030\n\020udp_c"
+  "onnect_port\030\005 \001(\r\022\023\n\013sdr_address\030\006 \001(\014\022\026"
+  "\n\016server_version\030\007 \001(\r\022\026\n\016compat_version"
+  "\030\010 \001(\r\022/\n\007members\030\t \003(\0132\036.CSOCitadelHide"
+  "outLobby.Member\022\036\n\026active_account_hideou"
+  "t\030\n \001(\r\022\'\n\016extra_messages\030\013 \003(\0132\017.CExtra"
+  "MsgBlock\022I\n\rserver_status\030\014 \001(\0162%.CSOCit"
+  "adelHideoutLobby.EServerStatus:\013k_eNoSer"
+  "ver\032d\n\006Member\022\022\n\naccount_id\030\001 \001(\r\022\"\n\032hid"
+  "eout_holiday_award_2024\030\036 \001(\010\022\"\n\032hideout"
+  "_holiday_award_2025\030  \001(\010\"u\n\rEServerStat"
+  "us\022\017\n\013k_eNoServer\020\000\022\025\n\021k_eServerAssigned"
+  "\020\001\022\024\n\020k_eTooFewPlayers\020\002\022\025\n\021k_ePlayersIn"
+  "Match\020\003\022\017\n\013k_eDisabled\020\004\"\220\001\n\032CLobbyData_"
+  "PostMatchSurvey\0229\n\007surveys\030\001 \003(\0132(.CLobb"
+  "yData_PostMatchSurvey.PlayerSurvey\0327\n\014Pl"
+  "ayerSurvey\022\022\n\naccount_id\030\001 \001(\r\022\023\n\013questi"
+  "on_id\030\002 \001(\r\"\231\001\n\032CMsgHeroSelectionMatchIn"
+  "fo\0229\n\017hero_selections\030\001 \003(\0132 .CMsgHeroSe"
+  "lectionMatchInfo.Hero\022\025\n\rbanned_heroes\030\002"
+  " \003(\r\032)\n\004Hero\022\017\n\007hero_id\030\001 \001(\r\022\020\n\010priorit"
+  "y\030\002 \001(\r\"\326\003\n\031CMsgStartFindingMatchInfo\022\031\n"
+  "\021server_search_key\030\001 \001(\t\022\035\n\025server_comma"
+  "nd_string\030\002 \001(\t\022C\n\nmatch_mode\030\003 \001(\0162\022.EC"
+  "itadelMatchMode:\033k_ECitadelMatchMode_Inv"
+  "alid\022@\n\tgame_mode\030\005 \001(\0162\021.ECitadelGameMo"
+  "de:\032k_ECitadelGameMode_Invalid\022L\n\016bot_di"
+  "fficulty\030\007 \001(\0162\026.ECitadelBotDifficulty:\034"
+  "k_ECitadelBotDifficulty_None\022B\n\013region_m"
+  "ode\030\010 \001(\0162\023.ECitadelRegionMode:\030k_ECitad"
+  "elRegionMode_ROW\022\030\n\020prefer_solo_only\030\t \001"
+  "(\010\022L\n\rmm_preference\030\n \001(\0162\025.ECitadelMMPr"
+  "eference:\036k_ECitadelMMPreference_Invalid"
+  "\"\264\002\n\030CMsgAnyToGCReportAsserts\022\017\n\007version"
+  "\030\001 \001(\r\0228\n\007asserts\030\002 \003(\0132\'.CMsgAnyToGCRep"
+  "ortAsserts.TrackedAssert\022\020\n\010match_id\030\003 \001"
+  "(\004\032\272\001\n\rTrackedAssert\022\020\n\010filename\030\001 \001(\t\022\023"
+  "\n\013line_number\030\002 \001(\r\022\022\n\nsample_msg\030\003 \001(\t\022"
+  "\024\n\014sample_stack\030\004 \001(\t\022\023\n\013times_fired\030\005 \001"
+  "(\r\022\025\n\rfunction_name\030\006 \001(\t\022\021\n\tcondition\030\007"
+  " \001(\t\022\031\n\021total_times_fired\030\010 \001(\r\"3\n CMsgA"
+  "nyToGCReportAssertsResponse\022\017\n\007success\030\001"
+  " \001(\010\"R\n\031CMsgRegionPingTimesClient\022\035\n\021dat"
+  "a_center_codes\030\001 \003(\007B\002\020\001\022\026\n\nping_times\030\002"
+  " \003(\rB\002\020\001\"3\n\024CMsgEquippedItemList\022\033\n\005item"
+  "s\030\001 \003(\0132\014.CSOEconItem\"Q\n\022CMsgPlayerHeroD"
+  "ata\022\017\n\007hero_xp\030\001 \001(\r\022*\n\013hero_equips\030\002 \001("
+  "\0132\025.CMsgEquippedItemList\"\250\025\n\017CSOCitadelP"
+  "arty\022\020\n\010party_id\030\001 \001(\004\022(\n\007members\030\002 \003(\0132"
+  "\027.CSOCitadelParty.Member\022(\n\007invites\030\003 \003("
+  "\0132\027.CSOCitadelParty.Invite\022\032\n\022dev_server"
+  "_command\030\004 \001(\t\0221\n\014left_members\030\005 \003(\0132\033.C"
+  "SOCitadelParty.LeftMember\022\021\n\tjoin_code\030\006"
+  " \001(\004\022L\n\016bot_difficulty\030\007 \001(\0162\026.ECitadelB"
+  "otDifficulty:\034k_ECitadelBotDifficulty_No"
+  "ne\022C\n\nmatch_mode\030\t \001(\0162\022.ECitadelMatchMo"
+  "de:\033k_ECitadelMatchMode_Invalid\022@\n\tgame_"
+  "mode\030\n \001(\0162\021.ECitadelGameMode:\032k_ECitade"
+  "lGameMode_Invalid\022\037\n\027match_making_start_"
+  "time\030\013 \001(\r\022\031\n\021server_search_key\030\014 \001(\t\022!\n"
+  "\031is_high_skill_range_party\030\r \001(\010\0226\n\tchat"
+  "_mode\030\016 \001(\0162\032.CSOCitadelParty.EChatMode:"
+  "\007k_eNone\022B\n\013region_mode\030\017 \001(\0162\023.ECitadel"
+  "RegionMode:\030k_ECitadelRegionMode_ROW\022\030\n\020"
+  "is_private_lobby\030\020 \001(\010\022E\n\026private_lobby_"
+  "settings\030\021 \001(\0132%.CSOCitadelParty.Private"
+  "LobbySettings\022\037\n\027desires_laning_together"
+  "\030\022 \001(\010\022L\n\rmm_preference\030\023 \001(\0162\025.ECitadel"
+  "MMPreference:\036k_ECitadelMMPreference_Inv"
+  "alid\022\032\n\022hideout_search_key\030\025 \001(\t\022\034\n\020cand"
+  "idate_cabals\030\026 \003(\004B\002\020\001\022\024\n\014active_cabal\030\027"
+  " \001(\004\022J\n\024party_min_cabal_tier\030\030 \001(\0162\024.ECi"
+  "tadelCabalMMTier:\026k_eCabalMMTier_Invalid"
+  "\022M\n\027party_active_cabal_tier\030\031 \001(\0162\024.ECit"
+  "adelCabalMMTier:\026k_eCabalMMTier_Invalid\022"
+  "F\n\013ranked_type\030\032 \001(\0162\023.ECitadelRankedTyp"
+  "e:\034k_eCitadelRankedType_Invalid\022\025\n\rrank_"
+  "interval\030\033 \001(\r\032>\n\020PrivateLobbySlot\022\017\n\007sl"
+  "ot_id\030\001 \001(\r\022\031\n\021player_account_id\030\002 \001(\r\032!"
+  "\n\014ServerRegion\022\021\n\tregion_id\030\001 \001(\r\032\323\002\n\024Pr"
+  "ivateLobbySettings\022\027\n\017min_roster_size\030\001 "
+  "\001(\r\0226\n\013match_slots\030\002 \003(\0132!.CSOCitadelPar"
+  "ty.PrivateLobbySlot\022\027\n\017randomize_lanes\030\003"
+  " \001(\010\022\025\n\rserver_region\030\004 \001(\r\022\033\n\023is_public"
+  "ly_visible\030\006 \001(\010\022\026\n\016cheats_enabled\030\007 \001(\010"
+  "\0228\n\021available_regions\030\010 \003(\0132\035.CSOCitadel"
+  "Party.ServerRegion\022 \n\030duplicate_heroes_e"
+  "nabled\030\t \001(\010\022)\n!corrupted_item_shop_spaw"
+  "n_minutes\030\n \001(\r\032\270\001\n\014RankedScores\022D\n\trank"
+  "_type\030\001 \001(\0162\023.ECitadelRankedType:\034k_eCit"
+  "adelRankedType_Invalid\022\025\n\rrank_interval\030"
+  "\002 \001(\r\022\032\n\022rank_display_badge\030\003 \001(\r\022\027\n\017unl"
+  "ocked_heroes\030\005 \003(\r\022\026\n\016in_calibration\030\006 \001"
+  "(\010\032\371\003\n\006Member\022\022\n\naccount_id\030\001 \001(\r\022\024\n\014per"
+  "sona_name\030\002 \001(\t\022\024\n\014rights_flags\030\003 \001(\r\022\020\n"
+  "\010is_ready\030\004 \001(\010\022G\n\013player_type\030\005 \001(\0162\034.C"
+  "SOCitadelParty.EPlayerType:\024k_ePlayerTyp"
+  "e_Player\022\035\n\025compatibility_version\030\006 \001(\r\022"
+  "2\n\010platform\030\007 \001(\0162\014.EGCPlatform:\022k_eGCPl"
+  "atform_None\022\014\n\004team\030\010 \001(\r\0220\n\013hero_roster"
+  "\030\t \001(\0132\033.CMsgHeroSelectionMatchInfo\022\023\n\013p"
+  "ermissions\030\n \001(\004\022\033\n\023new_player_progress\030"
+  "\013 \001(\004\022\030\n\014owned_heroes\030\014 \003(\rB\002\020\001\022$\n\034low_p"
+  "riority_games_remaining\030\r \001(\r\0224\n\rranked_"
+  "scores\030\016 \003(\0132\035.CSOCitadelParty.RankedSco"
+  "res\022\031\n\rplayer_cabals\030\017 \003(\004B\002\020\001\032\177\n\nLeftMe"
+  "mber\022\022\n\naccount_id\030\001 \001(\r\022\024\n\014rights_flags"
+  "\030\002 \001(\r\022G\n\013player_type\030\003 \001(\0162\034.CSOCitadel"
+  "Party.EPlayerType:\024k_ePlayerType_Player\032"
+  "F\n\006Invite\022\022\n\naccount_id\030\001 \001(\r\022\024\n\014persona"
+  "_name\030\002 \001(\t\022\022\n\ninvited_by\030\003 \001(\r\"G\n\rEMemb"
+  "erRights\022\031\n\025k_eMemberRights_Admin\020\001\022\033\n\027k"
+  "_eMemberRights_Creator\020\002\"D\n\013EPlayerType\022"
+  "\030\n\024k_ePlayerType_Player\020\000\022\033\n\027k_ePlayerTy"
+  "pe_Spectator\020\001\";\n\tEChatMode\022\013\n\007k_eNone\020\000"
+  "\022\020\n\014k_ePartyChat\020\001\022\017\n\013k_eTeamChat\020\002\"\233\006\n\030"
+  "CMsgMatchPlayerPathsData\022\017\n\007version\030\001 \001("
+  "\r\022\022\n\ninterval_s\030\002 \001(\002\022\024\n\014x_resolution\030\003 "
+  "\001(\r\022\024\n\014y_resolution\030\004 \001(\r\022-\n\005paths\030\005 \003(\013"
+  "2\036.CMsgMatchPlayerPathsData.Path\032\215\002\n\004Pat"
+  "h\022\023\n\013player_slot\030\001 \001(\r\022\r\n\005x_min\030\002 \001(\002\022\r\n"
+  "\005y_min\030\003 \001(\002\022\r\n\005x_max\030\004 \001(\002\022\r\n\005y_max\030\005 \001"
+  "(\002\022\021\n\005x_pos\030\006 \003(\rB\002\020\001\022\021\n\005y_pos\030\007 \003(\rB\002\020\001"
+  "\022\022\n\006health\030\t \003(\rB\002\020\001\022>\n\013combat_type\030\n \003("
+  "\0162%.CMsgMatchPlayerPathsData.ECombatType"
+  "B\002\020\001\022:\n\tmove_type\030\013 \003(\0162#.CMsgMatchPlaye"
+  "rPathsData.EMoveTypeB\002\020\001\"u\n\013ECombatType\022"
+  "\025\n\021k_eCombatType_Out\020\000\022\030\n\024k_eCombatType_"
+  "Player\020\001\022\032\n\026k_eCombatType_EnemyNPC\020\002\022\031\n\025"
+  "k_eCombatType_Neutral\020\003\"\367\001\n\tEMoveType\022\026\n"
+  "\022k_eMoveType_Normal\020\000\022\027\n\023k_eMoveType_Abi"
+  "lity\020\001\022\035\n\031k_eMoveType_AbilityDebuff\020\002\022\032\n"
+  "\026k_eMoveType_GroundDash\020\003\022\025\n\021k_eMoveType"
+  "_Slide\020\004\022\034\n\030k_eMoveType_RopeClimbing\020\005\022\031"
+  "\n\025k_eMoveType_Ziplining\020\006\022\025\n\021k_eMoveType"
+  "_InAir\020\007\022\027\n\023k_eMoveType_AirDash\020\010\"\341\005\n\033CM"
+  "sgMatchPlayerDamageMatrix\022A\n\016damage_deal"
+  "ers\030\001 \003(\0132).CMsgMatchPlayerDamageMatrix."
+  "DamageDealer\022\031\n\rsample_time_s\030\002 \003(\rB\002\020\001\022"
+  "B\n\016source_details\030\003 \001(\0132*.CMsgMatchPlaye"
+  "rDamageMatrix.SourceDetails\032@\n\016DamageToP"
+  "layer\022\032\n\022target_player_slot\030\001 \001(\r\022\022\n\006dam"
+  "age\030\002 \003(\rB\002\020\001\032t\n\014DamageSource\022F\n\021damage_"
+  "to_players\030\002 \003(\0132+.CMsgMatchPlayerDamage"
+  "Matrix.DamageToPlayer\022\034\n\024source_details_"
+  "index\030\004 \001(\r\032m\n\014DamageDealer\022\032\n\022dealer_pl"
+  "ayer_slot\030\001 \001(\r\022A\n\016damage_sources\030\002 \003(\0132"
+  ").CMsgMatchPlayerDamageMatrix.DamageSour"
+  "ce\032c\n\rSourceDetails\022=\n\tstat_type\030\001 \003(\0162&"
+  ".CMsgMatchPlayerDamageMatrix.EStatTypeB\002"
+  "\020\001\022\023\n\013source_name\030\002 \003(\t\"\223\001\n\tEStatType\022\022\n"
+  "\016k_eType_Damage\020\000\022\023\n\017k_eType_Healing\020\001\022\031"
+  "\n\025k_eType_HealPrevented\020\002\022\025\n\021k_eType_Mit"
+  "igated\020\003\022\030\n\024k_eType_LethalDamage\020\004\022\021\n\rk_"
+  "eType_Regen\020\005\"\244\002\n\027CMsgMatchPlayerRankDat"
+  "a\022\034\n\024initial_display_rank\030\001 \001(\r\022\035\n\025initi"
+  "al_flat_progress\030\002 \001(\r\022\033\n\023final_flat_pro"
+  "gress\030\003 \001(\r\022\037\n\027desired_progress_change\030\004"
+  " \001(\005\022!\n\031initial_calibration_games\030\006 \001(\r\022"
+  ")\n!initial_demotion_protection_games\030\007 \001"
+  "(\r\022$\n\034consumed_demotion_protection\030\010 \001(\010"
+  "\022\032\n\022initial_win_streak\030\t \001(\r\"\3123\n\031CMsgMat"
+  "chMetaDataContents\0228\n\nmatch_info\030\002 \001(\0132$"
+  ".CMsgMatchMetaDataContents.MatchInfo\032+\n\010"
+  "Position\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001("
+  "\002\032\334\001\n\006Deaths\022\023\n\013game_time_s\030\001 \001(\r\022\026\n\016tim"
+  "e_to_kill_s\030\002 \001(\002\022\032\n\022killer_player_slot\030"
+  "\t \001(\r\0226\n\tdeath_pos\030\n \001(\0132#.CMsgMatchMeta"
+  "DataContents.Position\0227\n\nkiller_pos\030\013 \001("
+  "\0132#.CMsgMatchMetaDataContents.Position\022\030"
+  "\n\020death_duration_s\030\014 \001(\r\032\226\001\n\005Items\022\023\n\013ga"
+  "me_time_s\030\001 \001(\r\022\017\n\007item_id\030\002 \001(\r\022\022\n\nupgr"
+  "ade_id\030\003 \001(\r\022\023\n\013sold_time_s\030\004 \001(\r\022\r\n\005fla"
+  "gs\030\005 \001(\r\022\031\n\021imbued_ability_id\030\006 \001(\r\022\024\n\014u"
+  "pgrade_info\030\007 \001(\r\032A\n\004Ping\022\021\n\tping_type\030\001"
+  " \001(\r\022\021\n\tping_data\030\002 \001(\r\022\023\n\013game_time_s\030\003"
+  " \001(\r\032\220\001\n\nGoldSource\022B\n\006source\030\001 \001(\0162&.CM"
+  "sgMatchMetaDataContents.EGoldSource:\nk_e"
+  "Players\022\r\n\005kills\030\002 \001(\r\022\016\n\006damage\030\003 \001(\r\022\014"
+  "\n\004gold\030\004 \001(\r\022\021\n\tgold_orbs\030\005 \001(\r\032.\n\022Custo"
+  "mUserStatInfo\022\014\n\004name\030\001 \001(\t\022\n\n\002id\030\002 \001(\r\032"
+  "+\n\016CustomUserStat\022\r\n\005value\030\002 \001(\r\022\n\n\002id\030\003"
+  " \001(\r\032|\n\013PowerUpBuff\022\014\n\004type\030\001 \001(\t\022\r\n\005val"
+  "ue\030\002 \001(\r\022\024\n\014is_permanent\030\003 \001(\010\022\032\n\016pickup"
+  "_times_s\030\004 \003(\rB\002\020\001\022\036\n\022pickup_stat_values"
+  "\030\005 \003(\002B\002\020\001\032\370\t\n\013PlayerStats\022\024\n\014time_stamp"
+  "_s\030\001 \001(\r\022\021\n\tnet_worth\030\002 \001(\r\022\023\n\013gold_play"
+  "er\030\003 \001(\r\022\030\n\020gold_player_orbs\030\004 \001(\r\022\034\n\024go"
+  "ld_lane_creep_orbs\030\005 \001(\r\022\037\n\027gold_neutral"
+  "_creep_orbs\030\006 \001(\r\022\021\n\tgold_boss\030\007 \001(\r\022\025\n\r"
+  "gold_boss_orb\030\010 \001(\r\022\025\n\rgold_treasure\030\t \001"
+  "(\r\022\023\n\013gold_denied\030\n \001(\r\022\027\n\017gold_death_lo"
+  "ss\030\013 \001(\r\022\027\n\017gold_lane_creep\030\014 \001(\r\022\032\n\022gol"
+  "d_neutral_creep\030\r \001(\r\022\r\n\005kills\030\016 \001(\r\022\016\n\006"
+  "deaths\030\017 \001(\r\022\017\n\007assists\030\020 \001(\r\022\023\n\013creep_k"
+  "ills\030\021 \001(\r\022\025\n\rneutral_kills\030\022 \001(\r\022\027\n\017pos"
+  "sible_creeps\030\023 \001(\r\022\024\n\014creep_damage\030\024 \001(\r"
+  "\022\025\n\rplayer_damage\030\025 \001(\r\022\026\n\016neutral_damag"
+  "e\030\026 \001(\r\022\023\n\013boss_damage\030\027 \001(\r\022\016\n\006denies\030\030"
+  " \001(\r\022\026\n\016player_healing\030\031 \001(\r\022\026\n\016ability_"
+  "points\030\032 \001(\r\022\024\n\014self_healing\030\033 \001(\r\022\033\n\023pl"
+  "ayer_damage_taken\030\034 \001(\r\022\022\n\nmax_health\030\035 "
+  "\001(\r\022\024\n\014weapon_power\030\036 \001(\r\022\022\n\ntech_power\030"
+  "\037 \001(\r\022\021\n\tshots_hit\030  \001(\r\022\024\n\014shots_missed"
+  "\030! \001(\r\022\027\n\017damage_absorbed\030\" \001(\r\022\033\n\023absor"
+  "ption_provided\030# \001(\r\022\030\n\020hero_bullets_hit"
+  "\030$ \001(\r\022\035\n\025hero_bullets_hit_crit\030% \001(\r\022\026\n"
+  "\016heal_prevented\030& \001(\r\022\021\n\theal_lost\030\' \001(\r"
+  "\022;\n\014gold_sources\030( \003(\0132%.CMsgMatchMetaDa"
+  "taContents.GoldSource\022D\n\021custom_user_sta"
+  "ts\030) \003(\0132).CMsgMatchMetaDataContents.Cus"
+  "tomUserStat\022\030\n\020damage_mitigated\030* \001(\r\022\r\n"
+  "\005level\030+ \001(\r\022\031\n\021player_barriering\030, \001(\r\022"
+  "\030\n\020teammate_healing\030- \001(\r\022\033\n\023teammate_ba"
+  "rriering\030. \001(\r\022\023\n\013self_damage\030/ \001(\r\022\024\n\014b"
+  "ullet_kills\0300 \001(\r\022\023\n\013melee_kills\0301 \001(\r\022\025"
+  "\n\rability_kills\0302 \001(\r\022\026\n\016headshot_kills\030"
+  "3 \001(\r\0328\n\013AbilityStat\022\022\n\nability_id\030\001 \001(\r"
+  "\022\025\n\rability_value\030\002 \001(\r\032E\n\nBookReward\022\017\n"
+  "\007book_id\030\001 \001(\r\022\021\n\txp_amount\030\002 \001(\r\022\023\n\013sta"
+  "rting_xp\030\003 \001(\r\0322\n\014HeroXPReward\022\"\n\010xp_gra"
+  "nt\030\001 \001(\0132\020.CMsgHeroXPGrant\032g\n\016PlayerAcco"
+  "lade\022\023\n\013accolade_id\030\001 \001(\r\022\033\n\023accolade_st"
+  "at_value\030\002 \001(\005\022#\n\033accolade_threshold_ach"
+  "ieved\030\003 \001(\005\032\233\t\n\007Players\022\022\n\naccount_id\030\001 "
+  "\001(\r\022\023\n\013player_slot\030\002 \001(\r\0228\n\rdeath_detail"
+  "s\030\003 \003(\0132!.CMsgMatchMetaDataContents.Deat"
+  "hs\022/\n\005items\030\004 \003(\0132 .CMsgMatchMetaDataCon"
+  "tents.Items\0225\n\005stats\030\005 \003(\0132&.CMsgMatchMe"
+  "taDataContents.PlayerStats\022;\n\004team\030\006 \001(\016"
   "2\022.ECitadelLobbyTeam:\031k_ECitadelLobbyTea"
-  "m_Team0\022\034\n\024player_spirit_damage\030\013 \001(\r\032\254\001"
-  "\n\007MidBoss\022B\n\013team_killed\030\001 \001(\0162\022.ECitade"
-  "lLobbyTeam:\031k_ECitadelLobbyTeam_Team0\022C\n"
-  "\014team_claimed\030\002 \001(\0162\022.ECitadelLobbyTeam:"
-  "\031k_ECitadelLobbyTeam_Team0\022\030\n\020destroyed_"
-  "time_s\030\003 \001(\r\032K\n\005Pause\022\023\n\013game_time_s\030\001 \001"
-  "(\r\022\030\n\020pause_duration_s\030\002 \001(\r\022\023\n\013player_s"
-  "lot\030\003 \001(\r\032>\n\022WatchedDeathReplay\022\023\n\013game_"
-  "time_s\030\001 \001(\r\022\023\n\013player_slot\030\002 \001(\r\032q\n\020Str"
-  "eetBrawlRound\022\030\n\020round_duration_s\030\001 \001(\r\022"
-  "C\n\014winning_team\030\002 \001(\0162\022.ECitadelLobbyTea"
-  "m:\031k_ECitadelLobbyTeam_Team0\032\201\013\n\tMatchIn"
-  "fo\022\022\n\nduration_s\030\001 \001(\r\022S\n\rmatch_outcome\030"
-  "\002 \001(\0162(.CMsgMatchMetaDataContents.EMatch"
-  "Outcome:\022k_eOutcome_TeamWin\022C\n\014winning_t"
-  "eam\030\003 \001(\0162\022.ECitadelLobbyTeam:\031k_ECitade"
-  "lLobbyTeam_Team0\0223\n\007players\030\004 \003(\0132\".CMsg"
-  "MatchMetaDataContents.Players\022\022\n\nstart_t"
-  "ime\030\005 \001(\r\022\020\n\010match_id\030\006 \001(\004\022\036\n\026legacy_ob"
-  "jectives_mask\030\010 \001(\r\022@\n\tgame_mode\030\t \001(\0162\021"
-  ".ECitadelGameMode:\032k_ECitadelGameMode_In"
-  "valid\022C\n\nmatch_mode\030\n \001(\0162\022.ECitadelMatc"
-  "hMode:\033k_ECitadelMatchMode_Invalid\0228\n\nob"
-  "jectives\030\013 \003(\0132$.CMsgMatchMetaDataConten"
-  "ts.Objective\022.\n\013match_paths\030\014 \001(\0132\031.CMsg"
-  "MatchPlayerPathsData\0223\n\rdamage_matrix\030\r "
-  "\001(\0132\034.CMsgMatchPlayerDamageMatrix\0226\n\014mat"
-  "ch_pauses\030\016 \003(\0132 .CMsgMatchMetaDataConte"
-  "nts.Pause\022H\n\021custom_user_stats\030\017 \003(\0132-.C"
-  "MsgMatchMetaDataContents.CustomUserStatI"
-  "nfo\022L\n\025watched_death_replays\030\020 \003(\0132-.CMs"
-  "gMatchMetaDataContents.WatchedDeathRepla"
-  "y\022\035\n\025objectives_mask_team0\030\021 \001(\004\022\035\n\025obje"
-  "ctives_mask_team1\030\022 \001(\004\0224\n\010mid_boss\030\023 \003("
-  "\0132\".CMsgMatchMetaDataContents.MidBoss\022#\n"
-  "\033is_high_skill_range_parties\030\024 \001(\010\022\024\n\014lo"
-  "w_pri_pool\030\025 \001(\010\022\027\n\017new_player_pool\030\026 \001("
-  "\010\022\033\n\023average_badge_team0\030\027 \001(\r\022\033\n\023averag"
-  "e_badge_team1\030\030 \001(\r\022\031\n\021game_mode_version"
-  "\030\031 \001(\r\022\030\n\020rewards_eligible\030\032 \001(\010\022\022\n\nnot_"
-  "scored\030\033 \001(\010\022\022\n\nteam_score\030\034 \003(\r\022-\n\023matc"
-  "h_tracked_stats\030\035 \003(\0132\020.CMsgTrackedStat\022"
-  "/\n\005teams\030\036 \003(\0132 .CMsgMatchMetaDataConten"
-  "ts.Teams\022L\n\016bot_difficulty\030  \001(\0162\026.ECita"
-  "delBotDifficulty:\034k_ECitadelBotDifficult"
-  "y_None\022H\n\023street_brawl_rounds\030! \003(\0132+.CM"
-  "sgMatchMetaDataContents.StreetBrawlRound"
-  "\"W\n\rEMatchOutcome\022\026\n\022k_eOutcome_TeamWin\020"
-  "\000\022\024\n\020k_eOutcome_Error\020\001\022\030\n\024k_eOutcome_Ma"
-  "tchDraw\020\002\"\215\002\n\013EGoldSource\022\016\n\nk_ePlayers\020"
-  "\001\022\021\n\rk_eLaneCreeps\020\002\022\017\n\013k_eNeutrals\020\003\022\r\n"
-  "\tk_eBosses\020\004\022\017\n\013k_eTreasure\020\005\022\016\n\nk_eAssi"
-  "sts\020\006\022\r\n\tk_eDenies\020\007\022\020\n\014k_eTeamBonus\020\010\022\031"
-  "\n\025k_eAbilityAssassinate\020\t\022\032\n\026k_eItemTrop"
-  "hyCollector\020\n\022\033\n\027k_eItemCultistSacrifice"
-  "\020\013\022\020\n\014k_eBreakable\020\014\022\023\n\017k_eItemGooseEgg\020"
-  "\r\"M\n\021CMsgMatchMetaData\022\017\n\007version\030\001 \001(\r\022"
-  "\025\n\rmatch_details\030\002 \001(\014\022\020\n\010match_id\030\003 \001(\004"
-  "\"4\n\013CMsgMapLine\022\t\n\001x\030\001 \001(\005\022\t\n\001y\030\002 \001(\005\022\017\n"
-  "\007initial\030\003 \001(\010\"\220\001\n\024CMsgAccountHeroStats\022"
-  "\017\n\007hero_id\030\001 \001(\r\022\017\n\007stat_id\030\002 \003(\r\022\023\n\013tot"
-  "al_value\030\003 \003(\004\022\025\n\rmedals_bronze\030\004 \003(\r\022\025\n"
-  "\rmedals_silver\030\005 \003(\r\022\023\n\013medals_gold\030\006 \003("
-  "\r\"M\n\024CMsgAccountBookStats\022\017\n\007book_id\030\001 \001"
-  "(\r\022\017\n\007book_xp\030\002 \001(\r\022\023\n\013book_max_xp\030\003 \001(\r"
-  "\"L\n\020CMsgAccountStats\022\022\n\naccount_id\030\001 \001(\r"
-  "\022$\n\005stats\030\002 \003(\0132\025.CMsgAccountHeroStats\"F"
-  "\n\017CMsgTrackedStat\022\027\n\017tracked_stat_id\030\001 \001"
-  "(\r\022\032\n\022tracked_stat_value\030\002 \001(\005\"E\n\021CMsgGC"
-  "AccountData\022\022\n\naccount_id\030\001 \001(\r\022\034\n\024cheat"
-  "er_report_score\030\002 \001(\002\"\211\007\n\rCMsgHeroBuild\022"
-  "\025\n\rhero_build_id\030\001 \001(\r\022\017\n\007hero_id\030\002 \001(\r\022"
-  "\031\n\021author_account_id\030\003 \001(\r\022\036\n\026last_updat"
-  "ed_timestamp\030\004 \001(\r\022\014\n\004name\030\005 \001(\t\022\023\n\013desc"
-  "ription\030\006 \001(\t\022\020\n\010language\030\007 \001(\r\022\017\n\007versi"
-  "on\030\010 \001(\r\022\027\n\017origin_build_id\030\t \001(\r\022*\n\007det"
-  "ails\030\n \001(\0132\031.CMsgHeroBuild.Details_V0\022\014\n"
-  "\004tags\030\013 \003(\r\022\031\n\021development_build\030\014 \001(\010\022\031"
-  "\n\021publish_timestamp\030\r \001(\r\032\214\001\n\rBuildModEn"
-  "try\022\022\n\nability_id\030\001 \001(\r\022\022\n\nannotation\030\002 "
-  "\001(\t\022\033\n\023required_flex_slots\030\003 \001(\r\022\025\n\rsell"
-  "_priority\030\004 \001(\r\022\037\n\027imbue_target_ability_"
-  "id\030\005 \001(\r\032\222\001\n\020BuildModCategory\022*\n\004mods\030\001 "
-  "\003(\0132\034.CMsgHeroBuild.BuildModEntry\022\014\n\004nam"
-  "e\030\002 \001(\t\022\023\n\013description\030\003 \001(\t\022\r\n\005width\030\004 "
-  "\001(\002\022\016\n\006height\030\005 \001(\002\022\020\n\010optional\030\006 \001(\010\032^\n"
-  "\016CurrencyChange\022\022\n\nability_id\030\001 \001(\r\022\025\n\rc"
-  "urrency_type\030\002 \001(\005\022\r\n\005delta\030\003 \001(\005\022\022\n\nann"
-  "otation\030\004 \001(\t\032G\n\014AbilityOrder\0227\n\020currenc"
-  "y_changes\030\001 \003(\0132\035.CMsgHeroBuild.Currency"
-  "Change\032y\n\nDetails_V0\0227\n\016mod_categories\030\001"
-  " \003(\0132\037.CMsgHeroBuild.BuildModCategory\0222\n"
-  "\rability_order\030\002 \001(\0132\033.CMsgHeroBuild.Abi"
-  "lityOrder\"O\n\027CMsgHeroBuildPreference\022\021\n\t"
-  "favorited\030\001 \001(\010\022\017\n\007ignored\030\002 \001(\010\022\020\n\010repo"
-  "rted\030\003 \001(\010\"l\n\030CMsgHeroReleaseVoteTally\022\027"
-  "\n\017remaining_votes\030\001 \001(\r\022\026\n\nvotes_cast\030\002 "
-  "\003(\rB\002\020\001\022\037\n\027daily_reward_time_stamp\030\003 \001(\r"
-  "*\274\001\n\rCMsgLaneColor\022!\n\024k_ELaneColor_Inval"
-  "id\020\000\032\007\302>\004None\022\"\n\023k_ELaneColor_Yellow\020\001\032\t"
-  "\302>\006Yellow\022 \n\022k_ELaneColor_Green\020\003\032\010\302>\005Gr"
-  "een\022\036\n\021k_ELaneColor_Blue\020\004\032\007\302>\004Blue\022\"\n\023k"
-  "_ELaneColor_Purple\020\006\032\t\302>\006Purple*d\n\030EGCCi"
-  "tadelCommonMessages\022\037\n\032k_EMsgAnyToGCRepo"
-  "rtAsserts\020\3306\022\'\n\"k_EMsgAnyToGCReportAsser"
-  "tsResponse\020\3316*\312\002\n\021ECitadelMatchMode\022\037\n\033k"
-  "_ECitadelMatchMode_Invalid\020\000\022 \n\034k_ECitad"
-  "elMatchMode_Unranked\020\001\022$\n k_ECitadelMatc"
-  "hMode_PrivateLobby\020\002\022\037\n\033k_ECitadelMatchM"
-  "ode_CoopBot\020\003\022\036\n\032k_ECitadelMatchMode_Ran"
-  "ked\020\004\022\"\n\036k_ECitadelMatchMode_ServerTest\020"
-  "\005\022 \n\034k_ECitadelMatchMode_Tutorial\020\006\022 \n\034k"
-  "_ECitadelMatchMode_HeroLabs\020\007\022#\n\037k_ECita"
-  "delMatchMode_Calibration\020\010*t\n\021ECitadelLo"
+  "m_Team0\022\r\n\005kills\030\010 \001(\r\022\016\n\006deaths\030\t \001(\r\022\017"
+  "\n\007assists\030\n \001(\r\022\021\n\tnet_worth\030\013 \001(\r\022\017\n\007he"
+  "ro_id\030\014 \001(\r\022\021\n\tlast_hits\030\r \001(\r\022\016\n\006denies"
+  "\030\016 \001(\r\022\026\n\016ability_points\030\017 \001(\r\022\025\n\rassign"
+  "ed_lane\030\021 \001(\r\022\r\n\005level\030\022 \001(\r\022.\n\005pings\030\023 "
+  "\003(\0132\037.CMsgMatchMetaDataContents.Ping\022=\n\r"
+  "ability_stats\030\024 \003(\0132&.CMsgMatchMetaDataC"
+  "ontents.AbilityStat\022\033\n\017stats_type_stat\030\025"
+  " \003(\002B\002\020\001\022;\n\014book_rewards\030\026 \003(\0132%.CMsgMat"
+  "chMetaDataContents.BookReward\022\034\n\024abandon"
+  "_match_time_s\030\027 \001(\r\022&\n\thero_data\030\031 \001(\0132\023"
+  ".CMsgPlayerHeroData\022\030\n\020rewards_eligible\030"
+  "\032 \001(\010\022.\n\024player_tracked_stats\0300 \003(\0132\020.CM"
+  "sgTrackedStat\022<\n\taccolades\030\033 \003(\0132).CMsgM"
+  "atchMetaDataContents.PlayerAccolade\022\020\n\010m"
+  "vp_rank\030\034 \001(\r\022!\n\031earned_holiday_award_20"
+  "25\030\035 \001(\010\022>\n\016power_up_buffs\030\036 \003(\0132&.CMsgM"
+  "atchMetaDataContents.PowerUpBuff\022@\n\017hero"
+  "_xp_rewards\030\037 \003(\0132\'.CMsgMatchMetaDataCon"
+  "tents.HeroXPReward\0222\n\020player_rank_data\030 "
+  " \001(\0132\030.CMsgMatchPlayerRankData\022Q\n\024player"
+  "_match_outcome\030! \001(\0162\024.EPlayerMatchOutco"
+  "me:\035k_EPlayerMatchOutcome_Invalid\032r\n\005Tea"
+  "ms\022;\n\004team\030\001 \001(\0162\022.ECitadelLobbyTeam:\031k_"
+  "ECitadelLobbyTeam_Team0\022,\n\022team_tracked_"
+  "stats\030\002 \003(\0132\020.CMsgTrackedStat\032\255\003\n\tObject"
+  "ive\022O\n\023legacy_objective_id\030\001 \001(\0162\022.ECita"
+  "delObjective:\036k_eCitadelObjective_Team0_"
+  "Core\022\030\n\020destroyed_time_s\030\002 \001(\r\022\024\n\014creep_"
+  "damage\030\004 \001(\r\022\036\n\026creep_damage_mitigated\030\005"
+  " \001(\r\022\025\n\rplayer_damage\030\006 \001(\r\022\037\n\027player_da"
+  "mage_mitigated\030\007 \001(\r\022\033\n\023first_damage_tim"
+  "e_s\030\010 \001(\r\022O\n\021team_objective_id\030\t \001(\0162\026.E"
+  "CitadelTeamObjective:\034k_eCitadelTeamObje"
+  "ctive_Core\022;\n\004team\030\n \001(\0162\022.ECitadelLobby"
+  "Team:\031k_ECitadelLobbyTeam_Team0\022\034\n\024playe"
+  "r_spirit_damage\030\013 \001(\r\032\254\001\n\007MidBoss\022B\n\013tea"
+  "m_killed\030\001 \001(\0162\022.ECitadelLobbyTeam:\031k_EC"
+  "itadelLobbyTeam_Team0\022C\n\014team_claimed\030\002 "
+  "\001(\0162\022.ECitadelLobbyTeam:\031k_ECitadelLobby"
+  "Team_Team0\022\030\n\020destroyed_time_s\030\003 \001(\r\032K\n\005"
+  "Pause\022\023\n\013game_time_s\030\001 \001(\r\022\030\n\020pause_dura"
+  "tion_s\030\002 \001(\r\022\023\n\013player_slot\030\003 \001(\r\032>\n\022Wat"
+  "chedDeathReplay\022\023\n\013game_time_s\030\001 \001(\r\022\023\n\013"
+  "player_slot\030\002 \001(\r\032q\n\020StreetBrawlRound\022\030\n"
+  "\020round_duration_s\030\001 \001(\r\022C\n\014winning_team\030"
+  "\002 \001(\0162\022.ECitadelLobbyTeam:\031k_ECitadelLob"
+  "byTeam_Team0\032\251\014\n\tMatchInfo\022\022\n\nduration_s"
+  "\030\001 \001(\r\022S\n\rmatch_outcome\030\002 \001(\0162(.CMsgMatc"
+  "hMetaDataContents.EMatchOutcome:\022k_eOutc"
+  "ome_TeamWin\022C\n\014winning_team\030\003 \001(\0162\022.ECit"
+  "adelLobbyTeam:\031k_ECitadelLobbyTeam_Team0"
+  "\0223\n\007players\030\004 \003(\0132\".CMsgMatchMetaDataCon"
+  "tents.Players\022\022\n\nstart_time\030\005 \001(\r\022\020\n\010mat"
+  "ch_id\030\006 \001(\004\022\036\n\026legacy_objectives_mask\030\010 "
+  "\001(\r\022@\n\tgame_mode\030\t \001(\0162\021.ECitadelGameMod"
+  "e:\032k_ECitadelGameMode_Invalid\022C\n\nmatch_m"
+  "ode\030\n \001(\0162\022.ECitadelMatchMode:\033k_ECitade"
+  "lMatchMode_Invalid\0228\n\nobjectives\030\013 \003(\0132$"
+  ".CMsgMatchMetaDataContents.Objective\022.\n\013"
+  "match_paths\030\014 \001(\0132\031.CMsgMatchPlayerPaths"
+  "Data\0223\n\rdamage_matrix\030\r \001(\0132\034.CMsgMatchP"
+  "layerDamageMatrix\0226\n\014match_pauses\030\016 \003(\0132"
+  " .CMsgMatchMetaDataContents.Pause\022H\n\021cus"
+  "tom_user_stats\030\017 \003(\0132-.CMsgMatchMetaData"
+  "Contents.CustomUserStatInfo\022L\n\025watched_d"
+  "eath_replays\030\020 \003(\0132-.CMsgMatchMetaDataCo"
+  "ntents.WatchedDeathReplay\022\035\n\025objectives_"
+  "mask_team0\030\021 \001(\004\022\035\n\025objectives_mask_team"
+  "1\030\022 \001(\004\0224\n\010mid_boss\030\023 \003(\0132\".CMsgMatchMet"
+  "aDataContents.MidBoss\022#\n\033is_high_skill_r"
+  "ange_parties\030\024 \001(\010\022\024\n\014low_pri_pool\030\025 \001(\010"
+  "\022\027\n\017new_player_pool\030\026 \001(\010\022\033\n\023average_bad"
+  "ge_team0\030\027 \001(\r\022\033\n\023average_badge_team1\030\030 "
+  "\001(\r\022\031\n\021game_mode_version\030\031 \001(\r\022\030\n\020reward"
+  "s_eligible\030\032 \001(\010\022\022\n\nnot_scored\030\033 \001(\010\022\022\n\n"
+  "team_score\030\034 \003(\r\022-\n\023match_tracked_stats\030"
+  "\035 \003(\0132\020.CMsgTrackedStat\022/\n\005teams\030\036 \003(\0132 "
+  ".CMsgMatchMetaDataContents.Teams\022L\n\016bot_"
+  "difficulty\030  \001(\0162\026.ECitadelBotDifficulty"
+  ":\034k_ECitadelBotDifficulty_None\022H\n\023street"
+  "_brawl_rounds\030! \003(\0132+.CMsgMatchMetaDataC"
+  "ontents.StreetBrawlRound\022F\n\013ranked_type\030"
+  "\" \001(\0162\023.ECitadelRankedType:\034k_eCitadelRa"
+  "nkedType_Invalid\022\025\n\rrank_interval\030# \001(\r\022"
+  "\036\n\026corrupted_penalty_seed\030$ \001(\r\022\'\n\016extra"
+  "_messages\030% \003(\0132\017.CExtraMsgBlock\"W\n\rEMat"
+  "chOutcome\022\026\n\022k_eOutcome_TeamWin\020\000\022\024\n\020k_e"
+  "Outcome_Error\020\001\022\030\n\024k_eOutcome_MatchDraw\020"
+  "\002\"\215\002\n\013EGoldSource\022\016\n\nk_ePlayers\020\001\022\021\n\rk_e"
+  "LaneCreeps\020\002\022\017\n\013k_eNeutrals\020\003\022\r\n\tk_eBoss"
+  "es\020\004\022\017\n\013k_eTreasure\020\005\022\016\n\nk_eAssists\020\006\022\r\n"
+  "\tk_eDenies\020\007\022\020\n\014k_eTeamBonus\020\010\022\031\n\025k_eAbi"
+  "lityAssassinate\020\t\022\032\n\026k_eItemTrophyCollec"
+  "tor\020\n\022\033\n\027k_eItemCultistSacrifice\020\013\022\020\n\014k_"
+  "eBreakable\020\014\022\023\n\017k_eItemGooseEgg\020\r\"M\n\021CMs"
+  "gMatchMetaData\022\017\n\007version\030\001 \001(\r\022\025\n\rmatch"
+  "_details\030\002 \001(\014\022\020\n\010match_id\030\003 \001(\004\"4\n\013CMsg"
+  "MapLine\022\t\n\001x\030\001 \001(\005\022\t\n\001y\030\002 \001(\005\022\017\n\007initial"
+  "\030\003 \001(\010\"\220\001\n\024CMsgAccountHeroStats\022\017\n\007hero_"
+  "id\030\001 \001(\r\022\017\n\007stat_id\030\002 \003(\r\022\023\n\013total_value"
+  "\030\003 \003(\004\022\025\n\rmedals_bronze\030\004 \003(\r\022\025\n\rmedals_"
+  "silver\030\005 \003(\r\022\023\n\013medals_gold\030\006 \003(\r\"M\n\024CMs"
+  "gAccountBookStats\022\017\n\007book_id\030\001 \001(\r\022\017\n\007bo"
+  "ok_xp\030\002 \001(\r\022\023\n\013book_max_xp\030\003 \001(\r\"L\n\020CMsg"
+  "AccountStats\022\022\n\naccount_id\030\001 \001(\r\022$\n\005stat"
+  "s\030\002 \003(\0132\025.CMsgAccountHeroStats\"F\n\017CMsgTr"
+  "ackedStat\022\027\n\017tracked_stat_id\030\001 \001(\r\022\032\n\022tr"
+  "acked_stat_value\030\002 \001(\005\"`\n\021CMsgGCAccountD"
+  "ata\022\022\n\naccount_id\030\001 \001(\r\022\034\n\024cheater_repor"
+  "t_score\030\002 \001(\002\022\031\n\021num_comms_reports\030\003 \001(\r"
+  "\"\220\007\n\rCMsgHeroBuild\022\025\n\rhero_build_id\030\001 \001("
+  "\r\022\017\n\007hero_id\030\002 \001(\r\022\031\n\021author_account_id\030"
+  "\003 \001(\r\022\036\n\026last_updated_timestamp\030\004 \001(\r\022\014\n"
+  "\004name\030\005 \001(\t\022\023\n\013description\030\006 \001(\t\022\020\n\010lang"
+  "uage\030\007 \001(\r\022\017\n\007version\030\010 \001(\r\022\027\n\017origin_bu"
+  "ild_id\030\t \001(\r\022*\n\007details\030\n \001(\0132\031.CMsgHero"
+  "Build.Details_V0\022\014\n\004tags\030\013 \003(\r\022\031\n\021develo"
+  "pment_build\030\014 \001(\010\022\031\n\021publish_timestamp\030\r"
+  " \001(\r\032\214\001\n\rBuildModEntry\022\022\n\nability_id\030\001 \001"
+  "(\r\022\022\n\nannotation\030\002 \001(\t\022\033\n\023required_flex_"
+  "slots\030\003 \001(\r\022\025\n\rsell_priority\030\004 \001(\r\022\037\n\027im"
+  "bue_target_ability_id\030\005 \001(\r\032\222\001\n\020BuildMod"
+  "Category\022*\n\004mods\030\001 \003(\0132\034.CMsgHeroBuild.B"
+  "uildModEntry\022\014\n\004name\030\002 \001(\t\022\023\n\013descriptio"
+  "n\030\003 \001(\t\022\r\n\005width\030\004 \001(\002\022\016\n\006height\030\005 \001(\002\022\020"
+  "\n\010optional\030\006 \001(\010\032^\n\016CurrencyChange\022\022\n\nab"
+  "ility_id\030\001 \001(\r\022\025\n\rcurrency_type\030\002 \001(\005\022\r\n"
+  "\005delta\030\003 \001(\005\022\022\n\nannotation\030\004 \001(\t\032G\n\014Abil"
+  "ityOrder\0227\n\020currency_changes\030\001 \003(\0132\035.CMs"
+  "gHeroBuild.CurrencyChange\032y\n\nDetails_V0\022"
+  "7\n\016mod_categories\030\001 \003(\0132\037.CMsgHeroBuild."
+  "BuildModCategory\0222\n\rability_order\030\002 \001(\0132"
+  "\033.CMsgHeroBuild.AbilityOrder:\005\200\265\030\200}\"O\n\027C"
+  "MsgHeroBuildPreference\022\021\n\tfavorited\030\001 \001("
+  "\010\022\017\n\007ignored\030\002 \001(\010\022\020\n\010reported\030\003 \001(\010\"\314\013\n"
+  "\031CMsgCitadelCombatLogEntry\022B\n\004type\030\001 \001(\016"
+  "2\027.ECitadelCombatLogTypes:\033k_eCitadelCom"
+  "batLog_Invalid\022\023\n\013target_name\030\002 \001(\r\022\032\n\022t"
+  "arget_source_name\030\003 \001(\r\022\025\n\rattacker_name"
+  "\030\004 \001(\r\022\032\n\022damage_source_name\030\005 \001(\r\022\026\n\016in"
+  "flictor_name\030\006 \001(\r\022\030\n\020is_attacker_hero\030\007"
+  " \001(\010\022\026\n\016is_target_hero\030\010 \001(\010\022\033\n\023is_visib"
+  "le_sapphire\030\t \001(\010\022\030\n\020is_visible_amber\030\n "
+  "\001(\010\022\r\n\005value\030\013 \001(\r\022\016\n\006health\030\014 \001(\005\022\021\n\tti"
+  "mestamp\030\r \001(\002\022\025\n\rtimestamp_raw\030\016 \001(\002\022\025\n\r"
+  "attacker_team\030\021 \001(\r\022\023\n\013target_team\030\022 \001(\r"
+  "\022\034\n\024is_ability_toggle_on\030\023 \001(\010\022\035\n\025is_abi"
+  "lity_toggle_off\030\024 \001(\010\022\023\n\013damage_type\030\025 \001"
+  "(\r\022\020\n\010networth\030\026 \001(\r\022\025\n\rcurrency_type\030\030 "
+  "\001(\r\022\027\n\017currency_source\030- \001(\r\022\022\n\nlocation"
+  "_x\030\031 \001(\002\022\022\n\nlocation_y\030\032 \001(\002\022\034\n\024ability_"
+  "upgrade_bits\030\033 \001(\005\022\031\n\021modifier_duration\030"
+  "\034 \001(\002\022\026\n\016assist_players\030\035 \003(\005\022\033\n\023target_"
+  "objective_id\030\027 \001(\r\022\026\n\016target_is_self\030\037 \001"
+  "(\010\022\024\n\014target_class\0306 \001(\005\022\033\n\023is_ultimate_"
+  "ability\030  \001(\010\022\024\n\014uses_charges\030! \001(\010\022#\n\033i"
+  "nflictor_is_stolen_ability\030\" \001(\010\022\036\n\026spel"
+  "l_generated_attack\030# \001(\010\022\033\n\023heal_from_li"
+  "festeal\030$ \001(\010\022\032\n\022regenerated_health\030% \001("
+  "\002\022\030\n\020will_reincarnate\030& \001(\010\022\030\n\020modifier_"
+  "ability\030\' \001(\r\022\027\n\017modifier_hidden\030( \001(\010\022!"
+  "\n\031modifier_elapsed_duration\030) \001(\002\022\027\n\017hid"
+  "den_modifier\030* \001(\010\022\030\n\020silence_modifier\030+"
+  " \001(\010\022\027\n\017modifier_purged\030, \001(\010\022\027\n\017long_ra"
+  "nge_kill\030. \001(\010\022\025\n\raura_modifier\030/ \001(\010\022\033\n"
+  "\023immobilize_modifier\0300 \001(\010\022\032\n\022modifier_p"
+  "urge_npc\0301 \001(\005\022\036\n\026modifier_purge_ability"
+  "\0302 \001(\005\022 \n\030modifier_purged_duration\0303 \001(\002"
+  "\022!\n\031movement_control_modifier\0304 \001(\010\022\024\n\014p"
+  "owerup_type\0305 \001(\005\022\031\n\021is_primary_weapon\0307"
+  " \001(\010\022\023\n\013is_headshot\0308 \001(\010\022\024\n\014ability_nam"
+  "e\0309 \001(\005\022\024\n\014full_refresh\030; \001(\005\022\014\n\004hits\030< "
+  "\001(\005\"\377\001\n\024CSerializedCombatLog\022\017\n\007version\030"
+  "\001 \001(\r\0224\n\ndictionary\030\002 \001(\0132 .CSerializedC"
+  "ombatLog.Dictionary\022+\n\007entries\030\003 \003(\0132\032.C"
+  "MsgCitadelCombatLogEntry\032s\n\nDictionary\022<"
+  "\n\007strings\030\001 \003(\0132+.CSerializedCombatLog.D"
+  "ictionary.DictString\032\'\n\nDictString\022\n\n\002id"
+  "\030\001 \001(\r\022\r\n\005value\030\002 \001(\t\"l\n\030CMsgHeroRelease"
+  "VoteTally\022\027\n\017remaining_votes\030\001 \001(\r\022\026\n\nvo"
+  "tes_cast\030\002 \003(\rB\002\020\001\022\037\n\027daily_reward_time_"
+  "stamp\030\003 \001(\r\"\243\003\n\031CMsgMatchHeroReleaseVote"
+  "s\0227\n\ncategories\030\001 \003(\0132#.CMsgMatchHeroRel"
+  "easeVotes.Category\032Q\n\010HeroVote\022\030\n\020vote_p"
+  "layer_slot\030\001 \001(\r\022\024\n\014vote_hero_id\030\002 \001(\r\022\025"
+  "\n\nvote_count\030\003 \001(\r:\0011\032\242\001\n\010Category\022]\n\rvo"
+  "te_category\030\001 \001(\01623.CMsgMatchHeroRelease"
+  "Votes.EHeroReleaseVoteCategory:\021k_eMatch"
+  "Completed\0227\n\nhero_votes\030\002 \003(\0132#.CMsgMatc"
+  "hHeroReleaseVotes.HeroVote\"U\n\030EHeroRelea"
+  "seVoteCategory\022\025\n\021k_eMatchCompleted\020\000\022\017\n"
+  "\013k_eMatchWon\020\001\022\021\n\rk_eDailyBonus\020\002*\274\001\n\rCM"
+  "sgLaneColor\022!\n\024k_ELaneColor_Invalid\020\000\032\007\302"
+  ">\004None\022\"\n\023k_ELaneColor_Yellow\020\001\032\t\302>\006Yell"
+  "ow\022 \n\022k_ELaneColor_Green\020\003\032\010\302>\005Green\022\036\n\021"
+  "k_ELaneColor_Blue\020\004\032\007\302>\004Blue\022\"\n\023k_ELaneC"
+  "olor_Purple\020\006\032\t\302>\006Purple*d\n\030EGCCitadelCo"
+  "mmonMessages\022\037\n\032k_EMsgAnyToGCReportAsser"
+  "ts\020\3306\022\'\n\"k_EMsgAnyToGCReportAssertsRespo"
+  "nse\020\3316*\321\002\n\021ECitadelMatchMode\022\037\n\033k_ECitad"
+  "elMatchMode_Invalid\020\000\022 \n\034k_ECitadelMatch"
+  "Mode_Unranked\020\001\022$\n k_ECitadelMatchMode_P"
+  "rivateLobby\020\002\022\037\n\033k_ECitadelMatchMode_Coo"
+  "pBot\020\003\022\036\n\032k_ECitadelMatchMode_Ranked\020\004\022\""
+  "\n\036k_ECitadelMatchMode_ServerTest\020\005\022 \n\034k_"
+  "ECitadelMatchMode_Tutorial\020\006\022 \n\034k_ECitad"
+  "elMatchMode_HeroLabs\020\007\022*\n&k_ECitadelMatc"
+  "hMode_NewPlayerPlacement\020\010*t\n\021ECitadelLo"
   "bbyTeam\022\035\n\031k_ECitadelLobbyTeam_Team0\020\000\022\035"
   "\n\031k_ECitadelLobbyTeam_Team1\020\001\022!\n\035k_ECita"
   "delLobbyTeam_Spectator\020\020*R\n\030ECitadelAcco"
   "untStatMedal\022\013\n\007k_eNone\020\000\022\r\n\tk_eBronze\020\001"
-  "\022\r\n\tk_eSilver\020\002\022\013\n\007k_eGold\020\003*\201\001\n\024ECitade"
-  "lMMPreference\022\"\n\036k_ECitadelMMPreference_"
-  "Invalid\020\000\022!\n\035k_ECitadelMMPreference_Casu"
-  "al\020\001\022\"\n\036k_ECitadelMMPreference_Serious\020\002"
-  "*\332\013\n\021ECitadelObjective\022\"\n\036k_eCitadelObje"
-  "ctive_Team0_Core\020\000\022)\n%k_eCitadelObjectiv"
-  "e_Team0_Tier1_Lane1\020\001\022)\n%k_eCitadelObjec"
-  "tive_Team0_Tier1_Lane2\020\002\022)\n%k_eCitadelOb"
-  "jective_Team0_Tier1_Lane3\020\003\022)\n%k_eCitade"
-  "lObjective_Team0_Tier1_Lane4\020\004\022)\n%k_eCit"
-  "adelObjective_Team0_Tier2_Lane1\020\005\022)\n%k_e"
-  "CitadelObjective_Team0_Tier2_Lane2\020\006\022)\n%"
-  "k_eCitadelObjective_Team0_Tier2_Lane3\020\007\022"
-  ")\n%k_eCitadelObjective_Team0_Tier2_Lane4"
-  "\020\010\022#\n\037k_eCitadelObjective_Team0_Titan\020\t\022"
-  "4\n0k_eCitadelObjective_Team0_TitanShield"
-  "Generator_1\020\n\0224\n0k_eCitadelObjective_Tea"
-  "m0_TitanShieldGenerator_2\020\013\022/\n+k_eCitade"
-  "lObjective_Team0_BarrackBoss_Lane1\020\014\022/\n+"
+  "\022\r\n\tk_eSilver\020\002\022\013\n\007k_eGold\020\003*W\n\022ECitadel"
+  "RankedType\022 \n\034k_eCitadelRankedType_Inval"
+  "id\020\000\022\037\n\033k_eCitadelRankedType_Normal\020\001*\201\001"
+  "\n\024ECitadelMMPreference\022\"\n\036k_ECitadelMMPr"
+  "eference_Invalid\020\000\022!\n\035k_ECitadelMMPrefer"
+  "ence_Casual\020\001\022\"\n\036k_ECitadelMMPreference_"
+  "Serious\020\002*\235\001\n\023ECitadelCabalMMTier\022\032\n\026k_e"
+  "CabalMMTier_Invalid\020\000\022\031\n\025k_eCabalMMTier_"
+  "Bronze\020\001\022\031\n\025k_eCabalMMTier_Silver\020\002\022\027\n\023k"
+  "_eCabalMMTier_Gold\020\003\022\033\n\027k_eCabalMMTier_P"
+  "latinum\020\004*\332\013\n\021ECitadelObjective\022\"\n\036k_eCi"
+  "tadelObjective_Team0_Core\020\000\022)\n%k_eCitade"
+  "lObjective_Team0_Tier1_Lane1\020\001\022)\n%k_eCit"
+  "adelObjective_Team0_Tier1_Lane2\020\002\022)\n%k_e"
+  "CitadelObjective_Team0_Tier1_Lane3\020\003\022)\n%"
+  "k_eCitadelObjective_Team0_Tier1_Lane4\020\004\022"
+  ")\n%k_eCitadelObjective_Team0_Tier2_Lane1"
+  "\020\005\022)\n%k_eCitadelObjective_Team0_Tier2_La"
+  "ne2\020\006\022)\n%k_eCitadelObjective_Team0_Tier2"
+  "_Lane3\020\007\022)\n%k_eCitadelObjective_Team0_Ti"
+  "er2_Lane4\020\010\022#\n\037k_eCitadelObjective_Team0"
+  "_Titan\020\t\0224\n0k_eCitadelObjective_Team0_Ti"
+  "tanShieldGenerator_1\020\n\0224\n0k_eCitadelObje"
+  "ctive_Team0_TitanShieldGenerator_2\020\013\022/\n+"
   "k_eCitadelObjective_Team0_BarrackBoss_La"
-  "ne2\020\r\022/\n+k_eCitadelObjective_Team0_Barra"
-  "ckBoss_Lane3\020\016\022/\n+k_eCitadelObjective_Te"
-  "am0_BarrackBoss_Lane4\020\017\022\"\n\036k_eCitadelObj"
-  "ective_Team1_Core\020\020\022)\n%k_eCitadelObjecti"
-  "ve_Team1_Tier1_Lane1\020\021\022)\n%k_eCitadelObje"
-  "ctive_Team1_Tier1_Lane2\020\022\022)\n%k_eCitadelO"
-  "bjective_Team1_Tier1_Lane3\020\023\022)\n%k_eCitad"
-  "elObjective_Team1_Tier1_Lane4\020\024\022)\n%k_eCi"
-  "tadelObjective_Team1_Tier2_Lane1\020\025\022)\n%k_"
-  "eCitadelObjective_Team1_Tier2_Lane2\020\026\022)\n"
-  "%k_eCitadelObjective_Team1_Tier2_Lane3\020\027"
+  "ne1\020\014\022/\n+k_eCitadelObjective_Team0_Barra"
+  "ckBoss_Lane2\020\r\022/\n+k_eCitadelObjective_Te"
+  "am0_BarrackBoss_Lane3\020\016\022/\n+k_eCitadelObj"
+  "ective_Team0_BarrackBoss_Lane4\020\017\022\"\n\036k_eC"
+  "itadelObjective_Team1_Core\020\020\022)\n%k_eCitad"
+  "elObjective_Team1_Tier1_Lane1\020\021\022)\n%k_eCi"
+  "tadelObjective_Team1_Tier1_Lane2\020\022\022)\n%k_"
+  "eCitadelObjective_Team1_Tier1_Lane3\020\023\022)\n"
+  "%k_eCitadelObjective_Team1_Tier1_Lane4\020\024"
   "\022)\n%k_eCitadelObjective_Team1_Tier2_Lane"
-  "4\020\030\022#\n\037k_eCitadelObjective_Team1_Titan\020\031"
-  "\0224\n0k_eCitadelObjective_Team1_TitanShiel"
-  "dGenerator_1\020\032\0224\n0k_eCitadelObjective_Te"
-  "am1_TitanShieldGenerator_2\020\033\022/\n+k_eCitad"
-  "elObjective_Team1_BarrackBoss_Lane1\020\034\022/\n"
+  "1\020\025\022)\n%k_eCitadelObjective_Team1_Tier2_L"
+  "ane2\020\026\022)\n%k_eCitadelObjective_Team1_Tier"
+  "2_Lane3\020\027\022)\n%k_eCitadelObjective_Team1_T"
+  "ier2_Lane4\020\030\022#\n\037k_eCitadelObjective_Team"
+  "1_Titan\020\031\0224\n0k_eCitadelObjective_Team1_T"
+  "itanShieldGenerator_1\020\032\0224\n0k_eCitadelObj"
+  "ective_Team1_TitanShieldGenerator_2\020\033\022/\n"
   "+k_eCitadelObjective_Team1_BarrackBoss_L"
-  "ane2\020\035\022/\n+k_eCitadelObjective_Team1_Barr"
-  "ackBoss_Lane3\020\036\022/\n+k_eCitadelObjective_T"
-  "eam1_BarrackBoss_Lane4\020\037\022#\n\037k_eCitadelOb"
-  "jective_Neutral_Mid\020 *\310\005\n\025ECitadelTeamOb"
-  "jective\022 \n\034k_eCitadelTeamObjective_Core\020"
-  "\000\022\'\n#k_eCitadelTeamObjective_Tier1_Lane1"
-  "\020\001\022\'\n#k_eCitadelTeamObjective_Tier1_Lane"
-  "2\020\002\022\'\n#k_eCitadelTeamObjective_Tier1_Lan"
-  "e3\020\003\022\'\n#k_eCitadelTeamObjective_Tier1_La"
-  "ne4\020\004\022\'\n#k_eCitadelTeamObjective_Tier2_L"
-  "ane1\020\005\022\'\n#k_eCitadelTeamObjective_Tier2_"
-  "Lane2\020\006\022\'\n#k_eCitadelTeamObjective_Tier2"
-  "_Lane3\020\007\022\'\n#k_eCitadelTeamObjective_Tier"
-  "2_Lane4\020\010\022!\n\035k_eCitadelTeamObjective_Tit"
-  "an\020\t\0222\n.k_eCitadelTeamObjective_TitanShi"
-  "eldGenerator_1\020\n\0222\n.k_eCitadelTeamObject"
-  "ive_TitanShieldGenerator_2\020\013\022-\n)k_eCitad"
-  "elTeamObjective_BarrackBoss_Lane1\020\014\022-\n)k"
-  "_eCitadelTeamObjective_BarrackBoss_Lane2"
-  "\020\r\022-\n)k_eCitadelTeamObjective_BarrackBos"
-  "s_Lane3\020\016\022-\n)k_eCitadelTeamObjective_Bar"
-  "rackBoss_Lane4\020\017*\354\001\n\025ECitadelBotDifficul"
-  "ty\022 \n\034k_ECitadelBotDifficulty_None\020\000\022 \n\034"
-  "k_ECitadelBotDifficulty_Easy\020\001\022\"\n\036k_ECit"
-  "adelBotDifficulty_Medium\020\002\022 \n\034k_ECitadel"
-  "BotDifficulty_Hard\020\003\022%\n!k_ECitadelBotDif"
-  "ficulty_Nightmare\020\004\022\"\n\036k_ECitadelBotDiff"
-  "iculty_Guided\020\005*\332\001\n\022ECitadelRegionMode\022\034"
-  "\n\030k_ECitadelRegionMode_ROW\020\000\022\037\n\033k_ECitad"
-  "elRegionMode_Europe\020\001\022\037\n\033k_ECitadelRegio"
-  "nMode_SEAsia\020\002\022!\n\035k_ECitadelRegionMode_S"
-  "America\020\003\022\037\n\033k_ECitadelRegionMode_Russia"
-  "\020\004\022 \n\034k_ECitadelRegionMode_Oceania\020\005*\214\002\n"
-  "\031ECitadelLeaderboardRegion\022$\n k_ECitadel"
-  "LeaderboardRegion_None\020\000\022&\n\"k_ECitadelLe"
-  "aderboardRegion_Europe\020\001\022$\n k_ECitadelLe"
-  "aderboardRegion_Asia\020\002\022(\n$k_ECitadelLead"
-  "erboardRegion_NAmerica\020\003\022(\n$k_ECitadelLe"
-  "aderboardRegion_SAmerica\020\004\022\'\n#k_ECitadel"
-  "LeaderboardRegion_Oceania\020\005*\371\001\n\020ECitadel"
-  "GameMode\022\036\n\032k_ECitadelGameMode_Invalid\020\000"
-  "\022\035\n\031k_ECitadelGameMode_Normal\020\001\022\036\n\032k_ECi"
-  "tadelGameMode_1v1Test\020\002\022\036\n\032k_ECitadelGam"
-  "eMode_Sandbox\020\003\022\"\n\036k_ECitadelGameMode_St"
-  "reetBrawl\020\004\022!\n\035k_ECitadelGameMode_Explor"
-  "eNYC\020\005\022\037\n\033k_ECitadelGameMode_Internal\020\006*"
-  "\274\001\n\021ELobbyServerState\022\036\n\032k_eLobbyServerS"
-  "tate_Assign\020\000\022\036\n\032k_eLobbyServerState_InG"
-  "ame\020\001\022!\n\035k_eLobbyServerState_PostMatch\020\002"
-  "\022!\n\035k_eLobbyServerState_SignedOut\020\003\022!\n\035k"
-  "_eLobbyServerState_Abandoned\020\004*\251\001\n\016EBann"
-  "edFeature\022\034\n\030k_eBannedFeature_Invalid\020\000\022"
-  "+\n\'k_eBannedFeature_LowPriorityMatchmaki"
-  "ng\020\001\022$\n k_eBannedFeature_CommsRestricted"
-  "\020\002\022&\n\"k_eBannedFeature_ReportingDisabled"
-  "\020\003*\340\001\n\021EFeatureBanReason\022\037\n\033k_eFeatureBa"
-  "nReason_Invalid\020\000\022\"\n\036k_eFeatureBanReason"
-  "_DevCommand\020\001\022.\n*k_eFeatureBanReason_Rep"
-  "ortedByOtherPlayers\020\002\022%\n!k_eFeatureBanRe"
-  "ason_MatchAbandons\020\003\022/\n+k_eFeatureBanRea"
-  "son_TooManyReportsSubmitted\020\004"
+  "ane1\020\034\022/\n+k_eCitadelObjective_Team1_Barr"
+  "ackBoss_Lane2\020\035\022/\n+k_eCitadelObjective_T"
+  "eam1_BarrackBoss_Lane3\020\036\022/\n+k_eCitadelOb"
+  "jective_Team1_BarrackBoss_Lane4\020\037\022#\n\037k_e"
+  "CitadelObjective_Neutral_Mid\020 *\310\005\n\025ECita"
+  "delTeamObjective\022 \n\034k_eCitadelTeamObject"
+  "ive_Core\020\000\022\'\n#k_eCitadelTeamObjective_Ti"
+  "er1_Lane1\020\001\022\'\n#k_eCitadelTeamObjective_T"
+  "ier1_Lane2\020\002\022\'\n#k_eCitadelTeamObjective_"
+  "Tier1_Lane3\020\003\022\'\n#k_eCitadelTeamObjective"
+  "_Tier1_Lane4\020\004\022\'\n#k_eCitadelTeamObjectiv"
+  "e_Tier2_Lane1\020\005\022\'\n#k_eCitadelTeamObjecti"
+  "ve_Tier2_Lane2\020\006\022\'\n#k_eCitadelTeamObject"
+  "ive_Tier2_Lane3\020\007\022\'\n#k_eCitadelTeamObjec"
+  "tive_Tier2_Lane4\020\010\022!\n\035k_eCitadelTeamObje"
+  "ctive_Titan\020\t\0222\n.k_eCitadelTeamObjective"
+  "_TitanShieldGenerator_1\020\n\0222\n.k_eCitadelT"
+  "eamObjective_TitanShieldGenerator_2\020\013\022-\n"
+  ")k_eCitadelTeamObjective_BarrackBoss_Lan"
+  "e1\020\014\022-\n)k_eCitadelTeamObjective_BarrackB"
+  "oss_Lane2\020\r\022-\n)k_eCitadelTeamObjective_B"
+  "arrackBoss_Lane3\020\016\022-\n)k_eCitadelTeamObje"
+  "ctive_BarrackBoss_Lane4\020\017*\354\001\n\025ECitadelBo"
+  "tDifficulty\022 \n\034k_ECitadelBotDifficulty_N"
+  "one\020\000\022 \n\034k_ECitadelBotDifficulty_Easy\020\001\022"
+  "\"\n\036k_ECitadelBotDifficulty_Medium\020\002\022 \n\034k"
+  "_ECitadelBotDifficulty_Hard\020\003\022%\n!k_ECita"
+  "delBotDifficulty_Nightmare\020\004\022\"\n\036k_ECitad"
+  "elBotDifficulty_Guided\020\005*\332\001\n\022ECitadelReg"
+  "ionMode\022\034\n\030k_ECitadelRegionMode_ROW\020\000\022\037\n"
+  "\033k_ECitadelRegionMode_Europe\020\001\022\037\n\033k_ECit"
+  "adelRegionMode_SEAsia\020\002\022!\n\035k_ECitadelReg"
+  "ionMode_SAmerica\020\003\022\037\n\033k_ECitadelRegionMo"
+  "de_Russia\020\004\022 \n\034k_ECitadelRegionMode_Ocea"
+  "nia\020\005*\214\002\n\031ECitadelLeaderboardRegion\022$\n k"
+  "_ECitadelLeaderboardRegion_None\020\000\022&\n\"k_E"
+  "CitadelLeaderboardRegion_Europe\020\001\022$\n k_E"
+  "CitadelLeaderboardRegion_Asia\020\002\022(\n$k_ECi"
+  "tadelLeaderboardRegion_NAmerica\020\003\022(\n$k_E"
+  "CitadelLeaderboardRegion_SAmerica\020\004\022\'\n#k"
+  "_ECitadelLeaderboardRegion_Oceania\020\005*\371\001\n"
+  "\020ECitadelGameMode\022\036\n\032k_ECitadelGameMode_"
+  "Invalid\020\000\022\035\n\031k_ECitadelGameMode_Normal\020\001"
+  "\022\036\n\032k_ECitadelGameMode_1v1Test\020\002\022\036\n\032k_EC"
+  "itadelGameMode_Sandbox\020\003\022\"\n\036k_ECitadelGa"
+  "meMode_StreetBrawl\020\004\022!\n\035k_ECitadelGameMo"
+  "de_ExploreNYC\020\005\022\037\n\033k_ECitadelGameMode_In"
+  "ternal\020\006*\274\001\n\021ELobbyServerState\022\036\n\032k_eLob"
+  "byServerState_Assign\020\000\022\036\n\032k_eLobbyServer"
+  "State_InGame\020\001\022!\n\035k_eLobbyServerState_Po"
+  "stMatch\020\002\022!\n\035k_eLobbyServerState_SignedO"
+  "ut\020\003\022!\n\035k_eLobbyServerState_Abandoned\020\004*"
+  "\251\001\n\016EBannedFeature\022\034\n\030k_eBannedFeature_I"
+  "nvalid\020\000\022+\n\'k_eBannedFeature_LowPriority"
+  "Matchmaking\020\001\022$\n k_eBannedFeature_CommsR"
+  "estricted\020\002\022&\n\"k_eBannedFeature_Reportin"
+  "gDisabled\020\003*\203\002\n\021EFeatureBanReason\022\037\n\033k_e"
+  "FeatureBanReason_Invalid\020\000\022\"\n\036k_eFeature"
+  "BanReason_DevCommand\020\001\022.\n*k_eFeatureBanR"
+  "eason_ReportedByOtherPlayers\020\002\022%\n!k_eFea"
+  "tureBanReason_MatchAbandons\020\003\022/\n+k_eFeat"
+  "ureBanReason_TooManyReportsSubmitted\020\004\022!"
+  "\n\035k_eFeatureBanReason_ToxicChat\020\005*M\n\022EHe"
+  "roXPGrantReason\022\020\n\014k_eGrant_Win\020\000\022\021\n\rk_e"
+  "Grant_Loss\020\001\022\022\n\016k_eGrant_Award\020\002*\353\001\n\023EPl"
+  "ayerMatchOutcome\022!\n\035k_EPlayerMatchOutcom"
+  "e_Invalid\020\000\022\035\n\031k_EPlayerMatchOutcome_Win"
+  "\020\001\022\036\n\032k_EPlayerMatchOutcome_Loss\020\002\022#\n\037k_"
+  "EPlayerMatchOutcome_Penalized\020\003\022(\n$k_EPl"
+  "ayerMatchOutcome_PenalizedParty\020\004\022#\n\037k_E"
+  "PlayerMatchOutcome_NotScored\020\005*O\n\032EMatch"
+  "MetadataExtraMessage\0221\n-k_EMatchMetadata"
+  "ExtraMessage_HeroReleaseVotes\020\002*\320\010\n\026ECit"
+  "adelCombatLogTypes\022(\n\033k_eCitadelCombatLo"
+  "g_Invalid\020\377\377\377\377\377\377\377\377\377\001\022\036\n\032k_eCitadelCombat"
+  "Log_Damage\020\000\022\034\n\030k_eCitadelCombatLog_Heal"
+  "\020\001\022#\n\037k_eCitadelCombatLog_ModifierAdd\020\002\022"
+  "&\n\"k_eCitadelCombatLog_ModifierRemove\020\003\022"
+  "\035\n\031k_eCitadelCombatLog_Death\020\004\022\"\n\036k_eCit"
+  "adelCombatLog_AbilityUse\020\005\022&\n\"k_eCitadel"
+  "CombatLog_AbilityTrigger\020*\022\037\n\033k_eCitadel"
+  "CombatLog_ItemUse\020\006\022 \n\034k_eCitadelCombatL"
+  "og_Location\020\007\022&\n\"k_eCitadelCombatLog_Cur"
+  "rencyChange\020\010\022$\n k_eCitadelCombatLog_Ite"
+  "mPurchase\020\013\022\"\n\036k_eCitadelCombatLog_SoulS"
+  "ecure\020\n\022!\n\035k_eCitadelCombatLog_Multikill"
+  "\020\017\022\"\n\036k_eCitadelCombatLog_Killstreak\020\020\022%"
+  "\n!k_eCitadelCombatLog_ObjectiveKill\020\021\022\"\n"
+  "\036k_eCitadelCombatLog_FirstBlood\020\022\022*\n&k_e"
+  "CitadelCombatLog_ModifierStackEvent\020\023\022\'\n"
+  "#k_eCitadelCombatLog_ActivatePowerup\020\025\022!"
+  "\n\035k_eCitadelCombatLog_HeroSaved\020\027\022#\n\037k_e"
+  "CitadelCombatLog_HeroLevelup\020\031\022(\n$k_eCit"
+  "adelCombatLog_InterruptChannel\020\034\022\"\n\036k_eC"
+  "itadelCombatLog_AlliedGold\020\035\022\"\n\036k_eCitad"
+  "elCombatLog_RejuvTaken\020\036\022$\n k_eCitadelCo"
+  "mbatLog_UnitSummoned\020!\022%\n!k_eCitadelComb"
+  "atLog_EndKillstreak\020%\022&\n\"k_eCitadelComba"
+  "tLog_CriticalDamage\020\'\022#\n\037k_eCitadelComba"
+  "tLog_SpellAbsorb\020(\022&\n\"k_eCitadelCombatLo"
+  "g_UnitTeleported\020)"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_deps[4] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_deps[5] = {
   &::descriptor_table_base_5fgcmessages_2eproto,
   &::descriptor_table_gcsdk_5fgcmessages_2eproto,
+  &::descriptor_table_networkbasetypes_2eproto,
   &::descriptor_table_steammessages_2eproto,
   &::descriptor_table_valveextensions_2eproto,
 };
 static ::_pbi::once_flag descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_citadel_5fgcmessages_5fcommon_2eproto = {
-    false, false, 18669, descriptor_table_protodef_citadel_5fgcmessages_5fcommon_2eproto,
+    false, false, 24378, descriptor_table_protodef_citadel_5fgcmessages_5fcommon_2eproto,
     "citadel_gcmessages_common.proto",
-    &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once, descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_deps, 4, 64,
+    &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once, descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_deps, 5, 75,
     schemas, file_default_instances, TableStruct_citadel_5fgcmessages_5fcommon_2eproto::offsets,
     file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto, file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto,
     file_level_service_descriptors_citadel_5fgcmessages_5fcommon_2eproto,
@@ -2960,9 +3649,36 @@ PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_citadel_
 
 // Force running AddDescriptors() at dynamic initialization time.
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_citadel_5fgcmessages_5fcommon_2eproto(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CSOCitadelParty_EMemberRights_descriptor() {
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CSOCitadelHideoutLobby_EServerStatus_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
   return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[0];
+}
+bool CSOCitadelHideoutLobby_EServerStatus_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
+constexpr CSOCitadelHideoutLobby_EServerStatus CSOCitadelHideoutLobby::k_eNoServer;
+constexpr CSOCitadelHideoutLobby_EServerStatus CSOCitadelHideoutLobby::k_eServerAssigned;
+constexpr CSOCitadelHideoutLobby_EServerStatus CSOCitadelHideoutLobby::k_eTooFewPlayers;
+constexpr CSOCitadelHideoutLobby_EServerStatus CSOCitadelHideoutLobby::k_ePlayersInMatch;
+constexpr CSOCitadelHideoutLobby_EServerStatus CSOCitadelHideoutLobby::k_eDisabled;
+constexpr CSOCitadelHideoutLobby_EServerStatus CSOCitadelHideoutLobby::EServerStatus_MIN;
+constexpr CSOCitadelHideoutLobby_EServerStatus CSOCitadelHideoutLobby::EServerStatus_MAX;
+constexpr int CSOCitadelHideoutLobby::EServerStatus_ARRAYSIZE;
+#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CSOCitadelParty_EMemberRights_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[1];
 }
 bool CSOCitadelParty_EMemberRights_IsValid(int value) {
   switch (value) {
@@ -2983,7 +3699,7 @@ constexpr int CSOCitadelParty::EMemberRights_ARRAYSIZE;
 #endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CSOCitadelParty_EPlayerType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[1];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[2];
 }
 bool CSOCitadelParty_EPlayerType_IsValid(int value) {
   switch (value) {
@@ -3004,7 +3720,7 @@ constexpr int CSOCitadelParty::EPlayerType_ARRAYSIZE;
 #endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CSOCitadelParty_EChatMode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[2];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[3];
 }
 bool CSOCitadelParty_EChatMode_IsValid(int value) {
   switch (value) {
@@ -3027,7 +3743,7 @@ constexpr int CSOCitadelParty::EChatMode_ARRAYSIZE;
 #endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgMatchPlayerPathsData_ECombatType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[3];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[4];
 }
 bool CMsgMatchPlayerPathsData_ECombatType_IsValid(int value) {
   switch (value) {
@@ -3052,7 +3768,7 @@ constexpr int CMsgMatchPlayerPathsData::ECombatType_ARRAYSIZE;
 #endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgMatchPlayerPathsData_EMoveType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[4];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[5];
 }
 bool CMsgMatchPlayerPathsData_EMoveType_IsValid(int value) {
   switch (value) {
@@ -3087,7 +3803,7 @@ constexpr int CMsgMatchPlayerPathsData::EMoveType_ARRAYSIZE;
 #endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgMatchPlayerDamageMatrix_EStatType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[5];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[6];
 }
 bool CMsgMatchPlayerDamageMatrix_EStatType_IsValid(int value) {
   switch (value) {
@@ -3116,7 +3832,7 @@ constexpr int CMsgMatchPlayerDamageMatrix::EStatType_ARRAYSIZE;
 #endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgMatchMetaDataContents_EMatchOutcome_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[6];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[7];
 }
 bool CMsgMatchMetaDataContents_EMatchOutcome_IsValid(int value) {
   switch (value) {
@@ -3139,7 +3855,7 @@ constexpr int CMsgMatchMetaDataContents::EMatchOutcome_ARRAYSIZE;
 #endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgMatchMetaDataContents_EGoldSource_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[7];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[8];
 }
 bool CMsgMatchMetaDataContents_EGoldSource_IsValid(int value) {
   switch (value) {
@@ -3180,9 +3896,32 @@ constexpr CMsgMatchMetaDataContents_EGoldSource CMsgMatchMetaDataContents::EGold
 constexpr CMsgMatchMetaDataContents_EGoldSource CMsgMatchMetaDataContents::EGoldSource_MAX;
 constexpr int CMsgMatchMetaDataContents::EGoldSource_ARRAYSIZE;
 #endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgMatchHeroReleaseVotes_EHeroReleaseVoteCategory_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[9];
+}
+bool CMsgMatchHeroReleaseVotes_EHeroReleaseVoteCategory_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
+constexpr CMsgMatchHeroReleaseVotes_EHeroReleaseVoteCategory CMsgMatchHeroReleaseVotes::k_eMatchCompleted;
+constexpr CMsgMatchHeroReleaseVotes_EHeroReleaseVoteCategory CMsgMatchHeroReleaseVotes::k_eMatchWon;
+constexpr CMsgMatchHeroReleaseVotes_EHeroReleaseVoteCategory CMsgMatchHeroReleaseVotes::k_eDailyBonus;
+constexpr CMsgMatchHeroReleaseVotes_EHeroReleaseVoteCategory CMsgMatchHeroReleaseVotes::EHeroReleaseVoteCategory_MIN;
+constexpr CMsgMatchHeroReleaseVotes_EHeroReleaseVoteCategory CMsgMatchHeroReleaseVotes::EHeroReleaseVoteCategory_MAX;
+constexpr int CMsgMatchHeroReleaseVotes::EHeroReleaseVoteCategory_ARRAYSIZE;
+#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgLaneColor_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[8];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[10];
 }
 bool CMsgLaneColor_IsValid(int value) {
   switch (value) {
@@ -3199,7 +3938,7 @@ bool CMsgLaneColor_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EGCCitadelCommonMessages_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[9];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[11];
 }
 bool EGCCitadelCommonMessages_IsValid(int value) {
   switch (value) {
@@ -3213,7 +3952,7 @@ bool EGCCitadelCommonMessages_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelMatchMode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[10];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[12];
 }
 bool ECitadelMatchMode_IsValid(int value) {
   switch (value) {
@@ -3234,7 +3973,7 @@ bool ECitadelMatchMode_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelLobbyTeam_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[11];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[13];
 }
 bool ECitadelLobbyTeam_IsValid(int value) {
   switch (value) {
@@ -3249,7 +3988,7 @@ bool ECitadelLobbyTeam_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelAccountStatMedal_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[12];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[14];
 }
 bool ECitadelAccountStatMedal_IsValid(int value) {
   switch (value) {
@@ -3263,9 +4002,23 @@ bool ECitadelAccountStatMedal_IsValid(int value) {
   }
 }
 
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelRankedType_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[15];
+}
+bool ECitadelRankedType_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+      return true;
+    default:
+      return false;
+  }
+}
+
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelMMPreference_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[13];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[16];
 }
 bool ECitadelMMPreference_IsValid(int value) {
   switch (value) {
@@ -3278,9 +4031,26 @@ bool ECitadelMMPreference_IsValid(int value) {
   }
 }
 
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelCabalMMTier_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[17];
+}
+bool ECitadelCabalMMTier_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+      return true;
+    default:
+      return false;
+  }
+}
+
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelObjective_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[14];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[18];
 }
 bool ECitadelObjective_IsValid(int value) {
   switch (value) {
@@ -3325,7 +4095,7 @@ bool ECitadelObjective_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelTeamObjective_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[15];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[19];
 }
 bool ECitadelTeamObjective_IsValid(int value) {
   switch (value) {
@@ -3353,7 +4123,7 @@ bool ECitadelTeamObjective_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelBotDifficulty_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[16];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[20];
 }
 bool ECitadelBotDifficulty_IsValid(int value) {
   switch (value) {
@@ -3371,7 +4141,7 @@ bool ECitadelBotDifficulty_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelRegionMode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[17];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[21];
 }
 bool ECitadelRegionMode_IsValid(int value) {
   switch (value) {
@@ -3389,7 +4159,7 @@ bool ECitadelRegionMode_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelLeaderboardRegion_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[18];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[22];
 }
 bool ECitadelLeaderboardRegion_IsValid(int value) {
   switch (value) {
@@ -3407,7 +4177,7 @@ bool ECitadelLeaderboardRegion_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelGameMode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[19];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[23];
 }
 bool ECitadelGameMode_IsValid(int value) {
   switch (value) {
@@ -3426,7 +4196,7 @@ bool ECitadelGameMode_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ELobbyServerState_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[20];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[24];
 }
 bool ELobbyServerState_IsValid(int value) {
   switch (value) {
@@ -3443,7 +4213,7 @@ bool ELobbyServerState_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EBannedFeature_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[21];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[25];
 }
 bool EBannedFeature_IsValid(int value) {
   switch (value) {
@@ -3459,7 +4229,7 @@ bool EBannedFeature_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EFeatureBanReason_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
-  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[22];
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[26];
 }
 bool EFeatureBanReason_IsValid(int value) {
   switch (value) {
@@ -3468,12 +4238,371 @@ bool EFeatureBanReason_IsValid(int value) {
     case 2:
     case 3:
     case 4:
+    case 5:
       return true;
     default:
       return false;
   }
 }
 
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EHeroXPGrantReason_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[27];
+}
+bool EHeroXPGrantReason_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EPlayerMatchOutcome_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[28];
+}
+bool EPlayerMatchOutcome_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMatchMetadataExtraMessage_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[29];
+}
+bool EMatchMetadataExtraMessage_IsValid(int value) {
+  switch (value) {
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECitadelCombatLogTypes_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_citadel_5fgcmessages_5fcommon_2eproto);
+  return file_level_enum_descriptors_citadel_5fgcmessages_5fcommon_2eproto[30];
+}
+bool ECitadelCombatLogTypes_IsValid(int value) {
+  switch (value) {
+    case -1:
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 10:
+    case 11:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 21:
+    case 23:
+    case 25:
+    case 28:
+    case 29:
+    case 30:
+    case 33:
+    case 37:
+    case 39:
+    case 40:
+    case 41:
+    case 42:
+      return true;
+    default:
+      return false;
+  }
+}
+
+
+// ===================================================================
+
+class CMsgHeroXPGrant::_Internal {
+ public:
+  using HasBits = decltype(std::declval<CMsgHeroXPGrant>()._impl_._has_bits_);
+  static void set_has_hero_id(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_xp_grant(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_reason(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+};
+
+CMsgHeroXPGrant::CMsgHeroXPGrant(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:CMsgHeroXPGrant)
+}
+CMsgHeroXPGrant::CMsgHeroXPGrant(const CMsgHeroXPGrant& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CMsgHeroXPGrant* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.hero_id_){}
+    , decltype(_impl_.xp_grant_){}
+    , decltype(_impl_.reason_){}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&_impl_.hero_id_, &from._impl_.hero_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.reason_) -
+    reinterpret_cast<char*>(&_impl_.hero_id_)) + sizeof(_impl_.reason_));
+  // @@protoc_insertion_point(copy_constructor:CMsgHeroXPGrant)
+}
+
+inline void CMsgHeroXPGrant::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.hero_id_){0u}
+    , decltype(_impl_.xp_grant_){0u}
+    , decltype(_impl_.reason_){0}
+  };
+}
+
+CMsgHeroXPGrant::~CMsgHeroXPGrant() {
+  // @@protoc_insertion_point(destructor:CMsgHeroXPGrant)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void CMsgHeroXPGrant::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void CMsgHeroXPGrant::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void CMsgHeroXPGrant::Clear() {
+// @@protoc_insertion_point(message_clear_start:CMsgHeroXPGrant)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
+    ::memset(&_impl_.hero_id_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.reason_) -
+        reinterpret_cast<char*>(&_impl_.hero_id_)) + sizeof(_impl_.reason_));
+  }
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CMsgHeroXPGrant::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // optional uint32 hero_id = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_hero_id(&has_bits);
+          _impl_.hero_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 xp_grant = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_xp_grant(&has_bits);
+          _impl_.xp_grant_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .EHeroXPGrantReason reason = 3 [default = k_eGrant_Win];
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::EHeroXPGrantReason_IsValid(val))) {
+            _internal_set_reason(static_cast<::EHeroXPGrantReason>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(3, val, mutable_unknown_fields());
+          }
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _impl_._has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CMsgHeroXPGrant::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CMsgHeroXPGrant)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional uint32 hero_id = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_hero_id(), target);
+  }
+
+  // optional uint32 xp_grant = 2;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_xp_grant(), target);
+  }
+
+  // optional .EHeroXPGrantReason reason = 3 [default = k_eGrant_Win];
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+      3, this->_internal_reason(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CMsgHeroXPGrant)
+  return target;
+}
+
+size_t CMsgHeroXPGrant::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CMsgHeroXPGrant)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
+    // optional uint32 hero_id = 1;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_hero_id());
+    }
+
+    // optional uint32 xp_grant = 2;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_xp_grant());
+    }
+
+    // optional .EHeroXPGrantReason reason = 3 [default = k_eGrant_Win];
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 1 +
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_reason());
+    }
+
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CMsgHeroXPGrant::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    CMsgHeroXPGrant::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CMsgHeroXPGrant::GetClassData() const { return &_class_data_; }
+
+
+void CMsgHeroXPGrant::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CMsgHeroXPGrant*>(&to_msg);
+  auto& from = static_cast<const CMsgHeroXPGrant&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CMsgHeroXPGrant)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_impl_.hero_id_ = from._impl_.hero_id_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.xp_grant_ = from._impl_.xp_grant_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_impl_.reason_ = from._impl_.reason_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CMsgHeroXPGrant::CopyFrom(const CMsgHeroXPGrant& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CMsgHeroXPGrant)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CMsgHeroXPGrant::IsInitialized() const {
+  return true;
+}
+
+void CMsgHeroXPGrant::InternalSwap(CMsgHeroXPGrant* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(CMsgHeroXPGrant, _impl_.reason_)
+      + sizeof(CMsgHeroXPGrant::_impl_.reason_)
+      - PROTOBUF_FIELD_OFFSET(CMsgHeroXPGrant, _impl_.hero_id_)>(
+          reinterpret_cast<char*>(&_impl_.hero_id_),
+          reinterpret_cast<char*>(&other->_impl_.hero_id_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CMsgHeroXPGrant::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[0]);
+}
 
 // ===================================================================
 
@@ -4136,7 +5265,7 @@ void CSOCitadelLobby::InternalSwap(CSOCitadelLobby* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CSOCitadelLobby::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[0]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[1]);
 }
 
 // ===================================================================
@@ -4401,7 +5530,7 @@ void CSOCitadelHideoutLobby_Member::InternalSwap(CSOCitadelHideoutLobby_Member* 
 ::PROTOBUF_NAMESPACE_ID::Metadata CSOCitadelHideoutLobby_Member::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[1]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[2]);
 }
 
 // ===================================================================
@@ -4436,6 +5565,9 @@ class CSOCitadelHideoutLobby::_Internal {
   static void set_has_active_account_hideout(HasBits* has_bits) {
     (*has_bits)[0] |= 256u;
   }
+  static void set_has_server_status(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
+  }
 };
 
 void CSOCitadelHideoutLobby::clear_extra_messages() {
@@ -4463,7 +5595,8 @@ CSOCitadelHideoutLobby::CSOCitadelHideoutLobby(const CSOCitadelHideoutLobby& fro
     , decltype(_impl_.udp_connect_port_){}
     , decltype(_impl_.server_version_){}
     , decltype(_impl_.compat_version_){}
-    , decltype(_impl_.active_account_hideout_){}};
+    , decltype(_impl_.active_account_hideout_){}
+    , decltype(_impl_.server_status_){}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   _impl_.sdr_address_.InitDefault();
@@ -4475,8 +5608,8 @@ CSOCitadelHideoutLobby::CSOCitadelHideoutLobby(const CSOCitadelHideoutLobby& fro
       _this->GetArenaForAllocation());
   }
   ::memcpy(&_impl_.hideout_lobby_id_, &from._impl_.hideout_lobby_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.active_account_hideout_) -
-    reinterpret_cast<char*>(&_impl_.hideout_lobby_id_)) + sizeof(_impl_.active_account_hideout_));
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.server_status_) -
+    reinterpret_cast<char*>(&_impl_.hideout_lobby_id_)) + sizeof(_impl_.server_status_));
   // @@protoc_insertion_point(copy_constructor:CSOCitadelHideoutLobby)
 }
 
@@ -4498,6 +5631,7 @@ inline void CSOCitadelHideoutLobby::SharedCtor(
     , decltype(_impl_.server_version_){0u}
     , decltype(_impl_.compat_version_){0u}
     , decltype(_impl_.active_account_hideout_){0u}
+    , decltype(_impl_.server_status_){0}
   };
   _impl_.sdr_address_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
@@ -4542,7 +5676,11 @@ void CSOCitadelHideoutLobby::Clear() {
         reinterpret_cast<char*>(&_impl_.compat_version_) -
         reinterpret_cast<char*>(&_impl_.hideout_lobby_id_)) + sizeof(_impl_.compat_version_));
   }
-  _impl_.active_account_hideout_ = 0u;
+  if (cached_has_bits & 0x00000300u) {
+    ::memset(&_impl_.active_account_hideout_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.server_status_) -
+        reinterpret_cast<char*>(&_impl_.active_account_hideout_)) + sizeof(_impl_.server_status_));
+  }
   _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -4661,6 +5799,19 @@ const char* CSOCitadelHideoutLobby::_InternalParse(const char* ptr, ::_pbi::Pars
         } else
           goto handle_unusual;
         continue;
+      // optional .CSOCitadelHideoutLobby.EServerStatus server_status = 12 [default = k_eNoServer];
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::CSOCitadelHideoutLobby_EServerStatus_IsValid(val))) {
+            _internal_set_server_status(static_cast<::CSOCitadelHideoutLobby_EServerStatus>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(12, val, mutable_unknown_fields());
+          }
+        } else
+          goto handle_unusual;
+        continue;
       default:
         goto handle_unusual;
     }  // switch
@@ -4762,6 +5913,13 @@ uint8_t* CSOCitadelHideoutLobby::_InternalSerialize(
         InternalWriteMessage(11, repfield, repfield.GetCachedSize(), target, stream);
   }
 
+  // optional .CSOCitadelHideoutLobby.EServerStatus server_status = 12 [default = k_eNoServer];
+  if (cached_has_bits & 0x00000200u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+      12, this->_internal_server_status(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -4837,11 +5995,19 @@ size_t CSOCitadelHideoutLobby::ByteSizeLong() const {
     }
 
   }
-  // optional uint32 active_account_hideout = 10;
-  if (cached_has_bits & 0x00000100u) {
-    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_active_account_hideout());
-  }
+  if (cached_has_bits & 0x00000300u) {
+    // optional uint32 active_account_hideout = 10;
+    if (cached_has_bits & 0x00000100u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_active_account_hideout());
+    }
 
+    // optional .CSOCitadelHideoutLobby.EServerStatus server_status = 12 [default = k_eNoServer];
+    if (cached_has_bits & 0x00000200u) {
+      total_size += 1 +
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_server_status());
+    }
+
+  }
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
@@ -4890,8 +6056,14 @@ void CSOCitadelHideoutLobby::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg,
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 0x00000100u) {
-    _this->_internal_set_active_account_hideout(from._internal_active_account_hideout());
+  if (cached_has_bits & 0x00000300u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_impl_.active_account_hideout_ = from._impl_.active_account_hideout_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_impl_.server_status_ = from._impl_.server_status_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -4920,8 +6092,8 @@ void CSOCitadelHideoutLobby::InternalSwap(CSOCitadelHideoutLobby* other) {
       &other->_impl_.sdr_address_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CSOCitadelHideoutLobby, _impl_.active_account_hideout_)
-      + sizeof(CSOCitadelHideoutLobby::_impl_.active_account_hideout_)
+      PROTOBUF_FIELD_OFFSET(CSOCitadelHideoutLobby, _impl_.server_status_)
+      + sizeof(CSOCitadelHideoutLobby::_impl_.server_status_)
       - PROTOBUF_FIELD_OFFSET(CSOCitadelHideoutLobby, _impl_.hideout_lobby_id_)>(
           reinterpret_cast<char*>(&_impl_.hideout_lobby_id_),
           reinterpret_cast<char*>(&other->_impl_.hideout_lobby_id_));
@@ -4930,7 +6102,7 @@ void CSOCitadelHideoutLobby::InternalSwap(CSOCitadelHideoutLobby* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CSOCitadelHideoutLobby::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[2]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[3]);
 }
 
 // ===================================================================
@@ -5167,7 +6339,7 @@ void CLobbyData_PostMatchSurvey_PlayerSurvey::InternalSwap(CLobbyData_PostMatchS
 ::PROTOBUF_NAMESPACE_ID::Metadata CLobbyData_PostMatchSurvey_PlayerSurvey::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[3]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[4]);
 }
 
 // ===================================================================
@@ -5352,7 +6524,7 @@ void CLobbyData_PostMatchSurvey::InternalSwap(CLobbyData_PostMatchSurvey* other)
 ::PROTOBUF_NAMESPACE_ID::Metadata CLobbyData_PostMatchSurvey::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[4]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[5]);
 }
 
 // ===================================================================
@@ -5589,7 +6761,7 @@ void CMsgHeroSelectionMatchInfo_Hero::InternalSwap(CMsgHeroSelectionMatchInfo_He
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgHeroSelectionMatchInfo_Hero::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[5]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[6]);
 }
 
 // ===================================================================
@@ -5811,7 +6983,7 @@ void CMsgHeroSelectionMatchInfo::InternalSwap(CMsgHeroSelectionMatchInfo* other)
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgHeroSelectionMatchInfo::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[6]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[7]);
 }
 
 // ===================================================================
@@ -6308,7 +7480,7 @@ void CMsgStartFindingMatchInfo::InternalSwap(CMsgStartFindingMatchInfo* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgStartFindingMatchInfo::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[7]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[8]);
 }
 
 // ===================================================================
@@ -6862,7 +8034,7 @@ void CMsgAnyToGCReportAsserts_TrackedAssert::InternalSwap(CMsgAnyToGCReportAsser
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgAnyToGCReportAsserts_TrackedAssert::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[8]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[9]);
 }
 
 // ===================================================================
@@ -7133,7 +8305,7 @@ void CMsgAnyToGCReportAsserts::InternalSwap(CMsgAnyToGCReportAsserts* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgAnyToGCReportAsserts::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[9]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[10]);
 }
 
 // ===================================================================
@@ -7324,7 +8496,7 @@ void CMsgAnyToGCReportAssertsResponse::InternalSwap(CMsgAnyToGCReportAssertsResp
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgAnyToGCReportAssertsResponse::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[10]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[11]);
 }
 
 // ===================================================================
@@ -7550,7 +8722,7 @@ void CMsgRegionPingTimesClient::InternalSwap(CMsgRegionPingTimesClient* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgRegionPingTimesClient::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[11]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[12]);
 }
 
 // ===================================================================
@@ -7738,7 +8910,7 @@ void CMsgEquippedItemList::InternalSwap(CMsgEquippedItemList* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgEquippedItemList::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[12]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[13]);
 }
 
 // ===================================================================
@@ -7985,7 +9157,7 @@ void CMsgPlayerHeroData::InternalSwap(CMsgPlayerHeroData* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgPlayerHeroData::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[13]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[14]);
 }
 
 // ===================================================================
@@ -8222,7 +9394,7 @@ void CSOCitadelParty_PrivateLobbySlot::InternalSwap(CSOCitadelParty_PrivateLobby
 ::PROTOBUF_NAMESPACE_ID::Metadata CSOCitadelParty_PrivateLobbySlot::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[14]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[15]);
 }
 
 // ===================================================================
@@ -8413,7 +9585,7 @@ void CSOCitadelParty_ServerRegion::InternalSwap(CSOCitadelParty_ServerRegion* ot
 ::PROTOBUF_NAMESPACE_ID::Metadata CSOCitadelParty_ServerRegion::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[15]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[16]);
 }
 
 // ===================================================================
@@ -8439,6 +9611,9 @@ class CSOCitadelParty_PrivateLobbySettings::_Internal {
   static void set_has_duplicate_heroes_enabled(HasBits* has_bits) {
     (*has_bits)[0] |= 32u;
   }
+  static void set_has_corrupted_item_shop_spawn_minutes(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
+  }
 };
 
 CSOCitadelParty_PrivateLobbySettings::CSOCitadelParty_PrivateLobbySettings(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -8460,12 +9635,13 @@ CSOCitadelParty_PrivateLobbySettings::CSOCitadelParty_PrivateLobbySettings(const
     , decltype(_impl_.randomize_lanes_){}
     , decltype(_impl_.is_publicly_visible_){}
     , decltype(_impl_.cheats_enabled_){}
-    , decltype(_impl_.duplicate_heroes_enabled_){}};
+    , decltype(_impl_.duplicate_heroes_enabled_){}
+    , decltype(_impl_.corrupted_item_shop_spawn_minutes_){}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&_impl_.min_roster_size_, &from._impl_.min_roster_size_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.duplicate_heroes_enabled_) -
-    reinterpret_cast<char*>(&_impl_.min_roster_size_)) + sizeof(_impl_.duplicate_heroes_enabled_));
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.corrupted_item_shop_spawn_minutes_) -
+    reinterpret_cast<char*>(&_impl_.min_roster_size_)) + sizeof(_impl_.corrupted_item_shop_spawn_minutes_));
   // @@protoc_insertion_point(copy_constructor:CSOCitadelParty.PrivateLobbySettings)
 }
 
@@ -8484,6 +9660,7 @@ inline void CSOCitadelParty_PrivateLobbySettings::SharedCtor(
     , decltype(_impl_.is_publicly_visible_){false}
     , decltype(_impl_.cheats_enabled_){false}
     , decltype(_impl_.duplicate_heroes_enabled_){false}
+    , decltype(_impl_.corrupted_item_shop_spawn_minutes_){0u}
   };
 }
 
@@ -8515,10 +9692,10 @@ void CSOCitadelParty_PrivateLobbySettings::Clear() {
   _impl_.match_slots_.Clear();
   _impl_.available_regions_.Clear();
   cached_has_bits = _impl_._has_bits_[0];
-  if (cached_has_bits & 0x0000003fu) {
+  if (cached_has_bits & 0x0000007fu) {
     ::memset(&_impl_.min_roster_size_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&_impl_.duplicate_heroes_enabled_) -
-        reinterpret_cast<char*>(&_impl_.min_roster_size_)) + sizeof(_impl_.duplicate_heroes_enabled_));
+        reinterpret_cast<char*>(&_impl_.corrupted_item_shop_spawn_minutes_) -
+        reinterpret_cast<char*>(&_impl_.min_roster_size_)) + sizeof(_impl_.corrupted_item_shop_spawn_minutes_));
   }
   _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -8611,6 +9788,15 @@ const char* CSOCitadelParty_PrivateLobbySettings::_InternalParse(const char* ptr
         } else
           goto handle_unusual;
         continue;
+      // optional uint32 corrupted_item_shop_spawn_minutes = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_corrupted_item_shop_spawn_minutes(&has_bits);
+          _impl_.corrupted_item_shop_spawn_minutes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
       default:
         goto handle_unusual;
     }  // switch
@@ -8694,6 +9880,12 @@ uint8_t* CSOCitadelParty_PrivateLobbySettings::_InternalSerialize(
     target = ::_pbi::WireFormatLite::WriteBoolToArray(9, this->_internal_duplicate_heroes_enabled(), target);
   }
 
+  // optional uint32 corrupted_item_shop_spawn_minutes = 10;
+  if (cached_has_bits & 0x00000040u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(10, this->_internal_corrupted_item_shop_spawn_minutes(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -8725,7 +9917,7 @@ size_t CSOCitadelParty_PrivateLobbySettings::ByteSizeLong() const {
   }
 
   cached_has_bits = _impl_._has_bits_[0];
-  if (cached_has_bits & 0x0000003fu) {
+  if (cached_has_bits & 0x0000007fu) {
     // optional uint32 min_roster_size = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_min_roster_size());
@@ -8756,6 +9948,11 @@ size_t CSOCitadelParty_PrivateLobbySettings::ByteSizeLong() const {
       total_size += 1 + 1;
     }
 
+    // optional uint32 corrupted_item_shop_spawn_minutes = 10;
+    if (cached_has_bits & 0x00000040u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_corrupted_item_shop_spawn_minutes());
+    }
+
   }
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
@@ -8778,7 +9975,7 @@ void CSOCitadelParty_PrivateLobbySettings::MergeImpl(::PROTOBUF_NAMESPACE_ID::Me
   _this->_impl_.match_slots_.MergeFrom(from._impl_.match_slots_);
   _this->_impl_.available_regions_.MergeFrom(from._impl_.available_regions_);
   cached_has_bits = from._impl_._has_bits_[0];
-  if (cached_has_bits & 0x0000003fu) {
+  if (cached_has_bits & 0x0000007fu) {
     if (cached_has_bits & 0x00000001u) {
       _this->_impl_.min_roster_size_ = from._impl_.min_roster_size_;
     }
@@ -8796,6 +9993,9 @@ void CSOCitadelParty_PrivateLobbySettings::MergeImpl(::PROTOBUF_NAMESPACE_ID::Me
     }
     if (cached_has_bits & 0x00000020u) {
       _this->_impl_.duplicate_heroes_enabled_ = from._impl_.duplicate_heroes_enabled_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      _this->_impl_.corrupted_item_shop_spawn_minutes_ = from._impl_.corrupted_item_shop_spawn_minutes_;
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
@@ -8820,8 +10020,8 @@ void CSOCitadelParty_PrivateLobbySettings::InternalSwap(CSOCitadelParty_PrivateL
   _impl_.match_slots_.InternalSwap(&other->_impl_.match_slots_);
   _impl_.available_regions_.InternalSwap(&other->_impl_.available_regions_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CSOCitadelParty_PrivateLobbySettings, _impl_.duplicate_heroes_enabled_)
-      + sizeof(CSOCitadelParty_PrivateLobbySettings::_impl_.duplicate_heroes_enabled_)
+      PROTOBUF_FIELD_OFFSET(CSOCitadelParty_PrivateLobbySettings, _impl_.corrupted_item_shop_spawn_minutes_)
+      + sizeof(CSOCitadelParty_PrivateLobbySettings::_impl_.corrupted_item_shop_spawn_minutes_)
       - PROTOBUF_FIELD_OFFSET(CSOCitadelParty_PrivateLobbySettings, _impl_.min_roster_size_)>(
           reinterpret_cast<char*>(&_impl_.min_roster_size_),
           reinterpret_cast<char*>(&other->_impl_.min_roster_size_));
@@ -8830,7 +10030,343 @@ void CSOCitadelParty_PrivateLobbySettings::InternalSwap(CSOCitadelParty_PrivateL
 ::PROTOBUF_NAMESPACE_ID::Metadata CSOCitadelParty_PrivateLobbySettings::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[16]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[17]);
+}
+
+// ===================================================================
+
+class CSOCitadelParty_RankedScores::_Internal {
+ public:
+  using HasBits = decltype(std::declval<CSOCitadelParty_RankedScores>()._impl_._has_bits_);
+  static void set_has_rank_type(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_rank_interval(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_rank_display_badge(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static void set_has_in_calibration(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
+  }
+};
+
+CSOCitadelParty_RankedScores::CSOCitadelParty_RankedScores(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:CSOCitadelParty.RankedScores)
+}
+CSOCitadelParty_RankedScores::CSOCitadelParty_RankedScores(const CSOCitadelParty_RankedScores& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CSOCitadelParty_RankedScores* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.unlocked_heroes_){from._impl_.unlocked_heroes_}
+    , decltype(_impl_.rank_type_){}
+    , decltype(_impl_.rank_interval_){}
+    , decltype(_impl_.rank_display_badge_){}
+    , decltype(_impl_.in_calibration_){}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&_impl_.rank_type_, &from._impl_.rank_type_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.in_calibration_) -
+    reinterpret_cast<char*>(&_impl_.rank_type_)) + sizeof(_impl_.in_calibration_));
+  // @@protoc_insertion_point(copy_constructor:CSOCitadelParty.RankedScores)
+}
+
+inline void CSOCitadelParty_RankedScores::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.unlocked_heroes_){arena}
+    , decltype(_impl_.rank_type_){0}
+    , decltype(_impl_.rank_interval_){0u}
+    , decltype(_impl_.rank_display_badge_){0u}
+    , decltype(_impl_.in_calibration_){false}
+  };
+}
+
+CSOCitadelParty_RankedScores::~CSOCitadelParty_RankedScores() {
+  // @@protoc_insertion_point(destructor:CSOCitadelParty.RankedScores)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void CSOCitadelParty_RankedScores::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.unlocked_heroes_.~RepeatedField();
+}
+
+void CSOCitadelParty_RankedScores::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void CSOCitadelParty_RankedScores::Clear() {
+// @@protoc_insertion_point(message_clear_start:CSOCitadelParty.RankedScores)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.unlocked_heroes_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
+    ::memset(&_impl_.rank_type_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.in_calibration_) -
+        reinterpret_cast<char*>(&_impl_.rank_type_)) + sizeof(_impl_.in_calibration_));
+  }
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CSOCitadelParty_RankedScores::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // optional .ECitadelRankedType rank_type = 1 [default = k_eCitadelRankedType_Invalid];
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ECitadelRankedType_IsValid(val))) {
+            _internal_set_rank_type(static_cast<::ECitadelRankedType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(1, val, mutable_unknown_fields());
+          }
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 rank_interval = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_rank_interval(&has_bits);
+          _impl_.rank_interval_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 rank_display_badge = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _Internal::set_has_rank_display_badge(&has_bits);
+          _impl_.rank_display_badge_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // repeated uint32 unlocked_heroes = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            _internal_add_unlocked_heroes(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr));
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<40>(ptr));
+        } else if (static_cast<uint8_t>(tag) == 42) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt32Parser(_internal_mutable_unlocked_heroes(), ptr, ctx);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool in_calibration = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_in_calibration(&has_bits);
+          _impl_.in_calibration_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _impl_._has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CSOCitadelParty_RankedScores::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CSOCitadelParty.RankedScores)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .ECitadelRankedType rank_type = 1 [default = k_eCitadelRankedType_Invalid];
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+      1, this->_internal_rank_type(), target);
+  }
+
+  // optional uint32 rank_interval = 2;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_rank_interval(), target);
+  }
+
+  // optional uint32 rank_display_badge = 3;
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(3, this->_internal_rank_display_badge(), target);
+  }
+
+  // repeated uint32 unlocked_heroes = 5;
+  for (int i = 0, n = this->_internal_unlocked_heroes_size(); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(5, this->_internal_unlocked_heroes(i), target);
+  }
+
+  // optional bool in_calibration = 6;
+  if (cached_has_bits & 0x00000008u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(6, this->_internal_in_calibration(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CSOCitadelParty.RankedScores)
+  return target;
+}
+
+size_t CSOCitadelParty_RankedScores::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CSOCitadelParty.RankedScores)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated uint32 unlocked_heroes = 5;
+  {
+    size_t data_size = ::_pbi::WireFormatLite::
+      UInt32Size(this->_impl_.unlocked_heroes_);
+    total_size += 1 *
+                  ::_pbi::FromIntSize(this->_internal_unlocked_heroes_size());
+    total_size += data_size;
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
+    // optional .ECitadelRankedType rank_type = 1 [default = k_eCitadelRankedType_Invalid];
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 1 +
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_rank_type());
+    }
+
+    // optional uint32 rank_interval = 2;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_rank_interval());
+    }
+
+    // optional uint32 rank_display_badge = 3;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_rank_display_badge());
+    }
+
+    // optional bool in_calibration = 6;
+    if (cached_has_bits & 0x00000008u) {
+      total_size += 1 + 1;
+    }
+
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CSOCitadelParty_RankedScores::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    CSOCitadelParty_RankedScores::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CSOCitadelParty_RankedScores::GetClassData() const { return &_class_data_; }
+
+
+void CSOCitadelParty_RankedScores::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CSOCitadelParty_RankedScores*>(&to_msg);
+  auto& from = static_cast<const CSOCitadelParty_RankedScores&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CSOCitadelParty.RankedScores)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_impl_.unlocked_heroes_.MergeFrom(from._impl_.unlocked_heroes_);
+  cached_has_bits = from._impl_._has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_impl_.rank_type_ = from._impl_.rank_type_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.rank_interval_ = from._impl_.rank_interval_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_impl_.rank_display_badge_ = from._impl_.rank_display_badge_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      _this->_impl_.in_calibration_ = from._impl_.in_calibration_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CSOCitadelParty_RankedScores::CopyFrom(const CSOCitadelParty_RankedScores& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CSOCitadelParty.RankedScores)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CSOCitadelParty_RankedScores::IsInitialized() const {
+  return true;
+}
+
+void CSOCitadelParty_RankedScores::InternalSwap(CSOCitadelParty_RankedScores* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.unlocked_heroes_.InternalSwap(&other->_impl_.unlocked_heroes_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(CSOCitadelParty_RankedScores, _impl_.in_calibration_)
+      + sizeof(CSOCitadelParty_RankedScores::_impl_.in_calibration_)
+      - PROTOBUF_FIELD_OFFSET(CSOCitadelParty_RankedScores, _impl_.rank_type_)>(
+          reinterpret_cast<char*>(&_impl_.rank_type_),
+          reinterpret_cast<char*>(&other->_impl_.rank_type_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CSOCitadelParty_RankedScores::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[18]);
 }
 
 // ===================================================================
@@ -8895,6 +10431,9 @@ CSOCitadelParty_Member::CSOCitadelParty_Member(const CSOCitadelParty_Member& fro
     , /*decltype(_impl_._cached_size_)*/{}
     , decltype(_impl_.owned_heroes_){from._impl_.owned_heroes_}
     , /*decltype(_impl_._owned_heroes_cached_byte_size_)*/{0}
+    , decltype(_impl_.ranked_scores_){from._impl_.ranked_scores_}
+    , decltype(_impl_.player_cabals_){from._impl_.player_cabals_}
+    , /*decltype(_impl_._player_cabals_cached_byte_size_)*/{0}
     , decltype(_impl_.persona_name_){}
     , decltype(_impl_.hero_roster_){nullptr}
     , decltype(_impl_.account_id_){}
@@ -8935,6 +10474,9 @@ inline void CSOCitadelParty_Member::SharedCtor(
     , /*decltype(_impl_._cached_size_)*/{}
     , decltype(_impl_.owned_heroes_){arena}
     , /*decltype(_impl_._owned_heroes_cached_byte_size_)*/{0}
+    , decltype(_impl_.ranked_scores_){arena}
+    , decltype(_impl_.player_cabals_){arena}
+    , /*decltype(_impl_._player_cabals_cached_byte_size_)*/{0}
     , decltype(_impl_.persona_name_){}
     , decltype(_impl_.hero_roster_){nullptr}
     , decltype(_impl_.account_id_){0u}
@@ -8966,6 +10508,8 @@ CSOCitadelParty_Member::~CSOCitadelParty_Member() {
 inline void CSOCitadelParty_Member::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.owned_heroes_.~RepeatedField();
+  _impl_.ranked_scores_.~RepeatedPtrField();
+  _impl_.player_cabals_.~RepeatedField();
   _impl_.persona_name_.Destroy();
   if (this != internal_default_instance()) delete _impl_.hero_roster_;
 }
@@ -8981,6 +10525,8 @@ void CSOCitadelParty_Member::Clear() {
   (void) cached_has_bits;
 
   _impl_.owned_heroes_.Clear();
+  _impl_.ranked_scores_.Clear();
+  _impl_.player_cabals_.Clear();
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
@@ -9141,6 +10687,30 @@ const char* CSOCitadelParty_Member::_InternalParse(const char* ptr, ::_pbi::Pars
         } else
           goto handle_unusual;
         continue;
+      // repeated .CSOCitadelParty.RankedScores ranked_scores = 14;
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 114)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_ranked_scores(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<114>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      // repeated uint64 player_cabals = 15 [packed = true];
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt64Parser(_internal_mutable_player_cabals(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<uint8_t>(tag) == 120) {
+          _internal_add_player_cabals(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
       default:
         goto handle_unusual;
     }  // switch
@@ -9260,6 +10830,23 @@ uint8_t* CSOCitadelParty_Member::_InternalSerialize(
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(13, this->_internal_low_priority_games_remaining(), target);
   }
 
+  // repeated .CSOCitadelParty.RankedScores ranked_scores = 14;
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_ranked_scores_size()); i < n; i++) {
+    const auto& repfield = this->_internal_ranked_scores(i);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        InternalWriteMessage(14, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  // repeated uint64 player_cabals = 15 [packed = true];
+  {
+    int byte_size = _impl_._player_cabals_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteUInt64Packed(
+          15, _internal_player_cabals(), byte_size, target);
+    }
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -9286,6 +10873,27 @@ size_t CSOCitadelParty_Member::ByteSizeLong() const {
     }
     int cached_size = ::_pbi::ToCachedSize(data_size);
     _impl_._owned_heroes_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated .CSOCitadelParty.RankedScores ranked_scores = 14;
+  total_size += 1UL * this->_internal_ranked_scores_size();
+  for (const auto& msg : this->_impl_.ranked_scores_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // repeated uint64 player_cabals = 15 [packed = true];
+  {
+    size_t data_size = ::_pbi::WireFormatLite::
+      UInt64Size(this->_impl_.player_cabals_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::_pbi::WireFormatLite::Int32Size(static_cast<int32_t>(data_size));
+    }
+    int cached_size = ::_pbi::ToCachedSize(data_size);
+    _impl_._player_cabals_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
@@ -9380,6 +10988,8 @@ void CSOCitadelParty_Member::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg,
   (void) cached_has_bits;
 
   _this->_impl_.owned_heroes_.MergeFrom(from._impl_.owned_heroes_);
+  _this->_impl_.ranked_scores_.MergeFrom(from._impl_.ranked_scores_);
+  _this->_impl_.player_cabals_.MergeFrom(from._impl_.player_cabals_);
   cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
@@ -9445,6 +11055,8 @@ void CSOCitadelParty_Member::InternalSwap(CSOCitadelParty_Member* other) {
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   _impl_.owned_heroes_.InternalSwap(&other->_impl_.owned_heroes_);
+  _impl_.ranked_scores_.InternalSwap(&other->_impl_.ranked_scores_);
+  _impl_.player_cabals_.InternalSwap(&other->_impl_.player_cabals_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
       &_impl_.persona_name_, lhs_arena,
       &other->_impl_.persona_name_, rhs_arena
@@ -9460,7 +11072,7 @@ void CSOCitadelParty_Member::InternalSwap(CSOCitadelParty_Member* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CSOCitadelParty_Member::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[17]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[19]);
 }
 
 // ===================================================================
@@ -9731,7 +11343,7 @@ void CSOCitadelParty_LeftMember::InternalSwap(CSOCitadelParty_LeftMember* other)
 ::PROTOBUF_NAMESPACE_ID::Metadata CSOCitadelParty_LeftMember::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[18]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[20]);
 }
 
 // ===================================================================
@@ -10027,7 +11639,7 @@ void CSOCitadelParty_Invite::InternalSwap(CSOCitadelParty_Invite* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CSOCitadelParty_Invite::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[19]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[21]);
 }
 
 // ===================================================================
@@ -10084,6 +11696,21 @@ class CSOCitadelParty::_Internal {
   static void set_has_hideout_search_key(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
   }
+  static void set_has_active_cabal(HasBits* has_bits) {
+    (*has_bits)[0] |= 65536u;
+  }
+  static void set_has_party_min_cabal_tier(HasBits* has_bits) {
+    (*has_bits)[0] |= 131072u;
+  }
+  static void set_has_party_active_cabal_tier(HasBits* has_bits) {
+    (*has_bits)[0] |= 262144u;
+  }
+  static void set_has_ranked_type(HasBits* has_bits) {
+    (*has_bits)[0] |= 524288u;
+  }
+  static void set_has_rank_interval(HasBits* has_bits) {
+    (*has_bits)[0] |= 1048576u;
+  }
 };
 
 const ::CSOCitadelParty_PrivateLobbySettings&
@@ -10105,6 +11732,8 @@ CSOCitadelParty::CSOCitadelParty(const CSOCitadelParty& from)
     , decltype(_impl_.members_){from._impl_.members_}
     , decltype(_impl_.invites_){from._impl_.invites_}
     , decltype(_impl_.left_members_){from._impl_.left_members_}
+    , decltype(_impl_.candidate_cabals_){from._impl_.candidate_cabals_}
+    , /*decltype(_impl_._candidate_cabals_cached_byte_size_)*/{0}
     , decltype(_impl_.dev_server_command_){}
     , decltype(_impl_.server_search_key_){}
     , decltype(_impl_.hideout_search_key_){}
@@ -10120,7 +11749,12 @@ CSOCitadelParty::CSOCitadelParty(const CSOCitadelParty& from)
     , decltype(_impl_.is_high_skill_range_party_){}
     , decltype(_impl_.is_private_lobby_){}
     , decltype(_impl_.desires_laning_together_){}
-    , decltype(_impl_.mm_preference_){}};
+    , decltype(_impl_.mm_preference_){}
+    , decltype(_impl_.active_cabal_){}
+    , decltype(_impl_.party_min_cabal_tier_){}
+    , decltype(_impl_.party_active_cabal_tier_){}
+    , decltype(_impl_.ranked_type_){}
+    , decltype(_impl_.rank_interval_){}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   _impl_.dev_server_command_.InitDefault();
@@ -10151,8 +11785,8 @@ CSOCitadelParty::CSOCitadelParty(const CSOCitadelParty& from)
     _this->_impl_.private_lobby_settings_ = new ::CSOCitadelParty_PrivateLobbySettings(*from._impl_.private_lobby_settings_);
   }
   ::memcpy(&_impl_.party_id_, &from._impl_.party_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.mm_preference_) -
-    reinterpret_cast<char*>(&_impl_.party_id_)) + sizeof(_impl_.mm_preference_));
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.rank_interval_) -
+    reinterpret_cast<char*>(&_impl_.party_id_)) + sizeof(_impl_.rank_interval_));
   // @@protoc_insertion_point(copy_constructor:CSOCitadelParty)
 }
 
@@ -10166,6 +11800,8 @@ inline void CSOCitadelParty::SharedCtor(
     , decltype(_impl_.members_){arena}
     , decltype(_impl_.invites_){arena}
     , decltype(_impl_.left_members_){arena}
+    , decltype(_impl_.candidate_cabals_){arena}
+    , /*decltype(_impl_._candidate_cabals_cached_byte_size_)*/{0}
     , decltype(_impl_.dev_server_command_){}
     , decltype(_impl_.server_search_key_){}
     , decltype(_impl_.hideout_search_key_){}
@@ -10182,6 +11818,11 @@ inline void CSOCitadelParty::SharedCtor(
     , decltype(_impl_.is_private_lobby_){false}
     , decltype(_impl_.desires_laning_together_){false}
     , decltype(_impl_.mm_preference_){0}
+    , decltype(_impl_.active_cabal_){uint64_t{0u}}
+    , decltype(_impl_.party_min_cabal_tier_){0}
+    , decltype(_impl_.party_active_cabal_tier_){0}
+    , decltype(_impl_.ranked_type_){0}
+    , decltype(_impl_.rank_interval_){0u}
   };
   _impl_.dev_server_command_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
@@ -10211,6 +11852,7 @@ inline void CSOCitadelParty::SharedDtor() {
   _impl_.members_.~RepeatedPtrField();
   _impl_.invites_.~RepeatedPtrField();
   _impl_.left_members_.~RepeatedPtrField();
+  _impl_.candidate_cabals_.~RepeatedField();
   _impl_.dev_server_command_.Destroy();
   _impl_.server_search_key_.Destroy();
   _impl_.hideout_search_key_.Destroy();
@@ -10230,6 +11872,7 @@ void CSOCitadelParty::Clear() {
   _impl_.members_.Clear();
   _impl_.invites_.Clear();
   _impl_.left_members_.Clear();
+  _impl_.candidate_cabals_.Clear();
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
@@ -10255,6 +11898,11 @@ void CSOCitadelParty::Clear() {
     ::memset(&_impl_.game_mode_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&_impl_.mm_preference_) -
         reinterpret_cast<char*>(&_impl_.game_mode_)) + sizeof(_impl_.mm_preference_));
+  }
+  if (cached_has_bits & 0x001f0000u) {
+    ::memset(&_impl_.active_cabal_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.rank_interval_) -
+        reinterpret_cast<char*>(&_impl_.active_cabal_)) + sizeof(_impl_.rank_interval_));
   }
   _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -10482,6 +12130,74 @@ const char* CSOCitadelParty::_InternalParse(const char* ptr, ::_pbi::ParseContex
         } else
           goto handle_unusual;
         continue;
+      // repeated uint64 candidate_cabals = 22 [packed = true];
+      case 22:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 178)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt64Parser(_internal_mutable_candidate_cabals(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<uint8_t>(tag) == 176) {
+          _internal_add_candidate_cabals(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint64 active_cabal = 23;
+      case 23:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 184)) {
+          _Internal::set_has_active_cabal(&has_bits);
+          _impl_.active_cabal_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .ECitadelCabalMMTier party_min_cabal_tier = 24 [default = k_eCabalMMTier_Invalid];
+      case 24:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ECitadelCabalMMTier_IsValid(val))) {
+            _internal_set_party_min_cabal_tier(static_cast<::ECitadelCabalMMTier>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(24, val, mutable_unknown_fields());
+          }
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .ECitadelCabalMMTier party_active_cabal_tier = 25 [default = k_eCabalMMTier_Invalid];
+      case 25:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 200)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ECitadelCabalMMTier_IsValid(val))) {
+            _internal_set_party_active_cabal_tier(static_cast<::ECitadelCabalMMTier>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(25, val, mutable_unknown_fields());
+          }
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .ECitadelRankedType ranked_type = 26 [default = k_eCitadelRankedType_Invalid];
+      case 26:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 208)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ECitadelRankedType_IsValid(val))) {
+            _internal_set_ranked_type(static_cast<::ECitadelRankedType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(26, val, mutable_unknown_fields());
+          }
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 rank_interval = 27;
+      case 27:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 216)) {
+          _Internal::set_has_rank_interval(&has_bits);
+          _impl_.rank_interval_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
       default:
         goto handle_unusual;
     }  // switch
@@ -10652,6 +12368,48 @@ uint8_t* CSOCitadelParty::_InternalSerialize(
         21, this->_internal_hideout_search_key(), target);
   }
 
+  // repeated uint64 candidate_cabals = 22 [packed = true];
+  {
+    int byte_size = _impl_._candidate_cabals_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteUInt64Packed(
+          22, _internal_candidate_cabals(), byte_size, target);
+    }
+  }
+
+  // optional uint64 active_cabal = 23;
+  if (cached_has_bits & 0x00010000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt64ToArray(23, this->_internal_active_cabal(), target);
+  }
+
+  // optional .ECitadelCabalMMTier party_min_cabal_tier = 24 [default = k_eCabalMMTier_Invalid];
+  if (cached_has_bits & 0x00020000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+      24, this->_internal_party_min_cabal_tier(), target);
+  }
+
+  // optional .ECitadelCabalMMTier party_active_cabal_tier = 25 [default = k_eCabalMMTier_Invalid];
+  if (cached_has_bits & 0x00040000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+      25, this->_internal_party_active_cabal_tier(), target);
+  }
+
+  // optional .ECitadelRankedType ranked_type = 26 [default = k_eCitadelRankedType_Invalid];
+  if (cached_has_bits & 0x00080000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+      26, this->_internal_ranked_type(), target);
+  }
+
+  // optional uint32 rank_interval = 27;
+  if (cached_has_bits & 0x00100000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(27, this->_internal_rank_interval(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -10687,6 +12445,20 @@ size_t CSOCitadelParty::ByteSizeLong() const {
   for (const auto& msg : this->_impl_.left_members_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // repeated uint64 candidate_cabals = 22 [packed = true];
+  {
+    size_t data_size = ::_pbi::WireFormatLite::
+      UInt64Size(this->_impl_.candidate_cabals_);
+    if (data_size > 0) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::Int32Size(static_cast<int32_t>(data_size));
+    }
+    int cached_size = ::_pbi::ToCachedSize(data_size);
+    _impl_._candidate_cabals_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
   }
 
   cached_has_bits = _impl_._has_bits_[0];
@@ -10788,6 +12560,40 @@ size_t CSOCitadelParty::ByteSizeLong() const {
     }
 
   }
+  if (cached_has_bits & 0x001f0000u) {
+    // optional uint64 active_cabal = 23;
+    if (cached_has_bits & 0x00010000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt64Size(
+          this->_internal_active_cabal());
+    }
+
+    // optional .ECitadelCabalMMTier party_min_cabal_tier = 24 [default = k_eCabalMMTier_Invalid];
+    if (cached_has_bits & 0x00020000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_party_min_cabal_tier());
+    }
+
+    // optional .ECitadelCabalMMTier party_active_cabal_tier = 25 [default = k_eCabalMMTier_Invalid];
+    if (cached_has_bits & 0x00040000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_party_active_cabal_tier());
+    }
+
+    // optional .ECitadelRankedType ranked_type = 26 [default = k_eCitadelRankedType_Invalid];
+    if (cached_has_bits & 0x00080000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_ranked_type());
+    }
+
+    // optional uint32 rank_interval = 27;
+    if (cached_has_bits & 0x00100000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt32Size(
+          this->_internal_rank_interval());
+    }
+
+  }
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
@@ -10809,6 +12615,7 @@ void CSOCitadelParty::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const 
   _this->_impl_.members_.MergeFrom(from._impl_.members_);
   _this->_impl_.invites_.MergeFrom(from._impl_.invites_);
   _this->_impl_.left_members_.MergeFrom(from._impl_.left_members_);
+  _this->_impl_.candidate_cabals_.MergeFrom(from._impl_.candidate_cabals_);
   cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
@@ -10865,6 +12672,24 @@ void CSOCitadelParty::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const 
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
+  if (cached_has_bits & 0x001f0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      _this->_impl_.active_cabal_ = from._impl_.active_cabal_;
+    }
+    if (cached_has_bits & 0x00020000u) {
+      _this->_impl_.party_min_cabal_tier_ = from._impl_.party_min_cabal_tier_;
+    }
+    if (cached_has_bits & 0x00040000u) {
+      _this->_impl_.party_active_cabal_tier_ = from._impl_.party_active_cabal_tier_;
+    }
+    if (cached_has_bits & 0x00080000u) {
+      _this->_impl_.ranked_type_ = from._impl_.ranked_type_;
+    }
+    if (cached_has_bits & 0x00100000u) {
+      _this->_impl_.rank_interval_ = from._impl_.rank_interval_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -10888,6 +12713,7 @@ void CSOCitadelParty::InternalSwap(CSOCitadelParty* other) {
   _impl_.members_.InternalSwap(&other->_impl_.members_);
   _impl_.invites_.InternalSwap(&other->_impl_.invites_);
   _impl_.left_members_.InternalSwap(&other->_impl_.left_members_);
+  _impl_.candidate_cabals_.InternalSwap(&other->_impl_.candidate_cabals_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
       &_impl_.dev_server_command_, lhs_arena,
       &other->_impl_.dev_server_command_, rhs_arena
@@ -10901,8 +12727,8 @@ void CSOCitadelParty::InternalSwap(CSOCitadelParty* other) {
       &other->_impl_.hideout_search_key_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CSOCitadelParty, _impl_.mm_preference_)
-      + sizeof(CSOCitadelParty::_impl_.mm_preference_)
+      PROTOBUF_FIELD_OFFSET(CSOCitadelParty, _impl_.rank_interval_)
+      + sizeof(CSOCitadelParty::_impl_.rank_interval_)
       - PROTOBUF_FIELD_OFFSET(CSOCitadelParty, _impl_.private_lobby_settings_)>(
           reinterpret_cast<char*>(&_impl_.private_lobby_settings_),
           reinterpret_cast<char*>(&other->_impl_.private_lobby_settings_));
@@ -10911,7 +12737,7 @@ void CSOCitadelParty::InternalSwap(CSOCitadelParty* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CSOCitadelParty::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[20]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[22]);
 }
 
 // ===================================================================
@@ -11458,7 +13284,7 @@ void CMsgMatchPlayerPathsData_Path::InternalSwap(CMsgMatchPlayerPathsData_Path* 
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchPlayerPathsData_Path::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[21]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[23]);
 }
 
 // ===================================================================
@@ -11785,7 +13611,7 @@ void CMsgMatchPlayerPathsData::InternalSwap(CMsgMatchPlayerPathsData* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchPlayerPathsData::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[22]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[24]);
 }
 
 // ===================================================================
@@ -12018,7 +13844,7 @@ void CMsgMatchPlayerDamageMatrix_DamageToPlayer::InternalSwap(CMsgMatchPlayerDam
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchPlayerDamageMatrix_DamageToPlayer::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[23]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[25]);
 }
 
 // ===================================================================
@@ -12243,7 +14069,7 @@ void CMsgMatchPlayerDamageMatrix_DamageSource::InternalSwap(CMsgMatchPlayerDamag
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchPlayerDamageMatrix_DamageSource::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[24]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[26]);
 }
 
 // ===================================================================
@@ -12468,7 +14294,7 @@ void CMsgMatchPlayerDamageMatrix_DamageDealer::InternalSwap(CMsgMatchPlayerDamag
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchPlayerDamageMatrix_DamageDealer::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[25]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[27]);
 }
 
 // ===================================================================
@@ -12710,7 +14536,7 @@ void CMsgMatchPlayerDamageMatrix_SourceDetails::InternalSwap(CMsgMatchPlayerDama
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchPlayerDamageMatrix_SourceDetails::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[26]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[28]);
 }
 
 // ===================================================================
@@ -12992,7 +14818,412 @@ void CMsgMatchPlayerDamageMatrix::InternalSwap(CMsgMatchPlayerDamageMatrix* othe
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchPlayerDamageMatrix::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[27]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[29]);
+}
+
+// ===================================================================
+
+class CMsgMatchPlayerRankData::_Internal {
+ public:
+  using HasBits = decltype(std::declval<CMsgMatchPlayerRankData>()._impl_._has_bits_);
+  static void set_has_initial_display_rank(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_initial_flat_progress(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_final_flat_progress(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static void set_has_desired_progress_change(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
+  }
+  static void set_has_initial_calibration_games(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
+  }
+  static void set_has_initial_demotion_protection_games(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
+  }
+  static void set_has_consumed_demotion_protection(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
+  }
+  static void set_has_initial_win_streak(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
+  }
+};
+
+CMsgMatchPlayerRankData::CMsgMatchPlayerRankData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:CMsgMatchPlayerRankData)
+}
+CMsgMatchPlayerRankData::CMsgMatchPlayerRankData(const CMsgMatchPlayerRankData& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CMsgMatchPlayerRankData* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.initial_display_rank_){}
+    , decltype(_impl_.initial_flat_progress_){}
+    , decltype(_impl_.final_flat_progress_){}
+    , decltype(_impl_.desired_progress_change_){}
+    , decltype(_impl_.initial_calibration_games_){}
+    , decltype(_impl_.initial_demotion_protection_games_){}
+    , decltype(_impl_.consumed_demotion_protection_){}
+    , decltype(_impl_.initial_win_streak_){}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&_impl_.initial_display_rank_, &from._impl_.initial_display_rank_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.initial_win_streak_) -
+    reinterpret_cast<char*>(&_impl_.initial_display_rank_)) + sizeof(_impl_.initial_win_streak_));
+  // @@protoc_insertion_point(copy_constructor:CMsgMatchPlayerRankData)
+}
+
+inline void CMsgMatchPlayerRankData::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.initial_display_rank_){0u}
+    , decltype(_impl_.initial_flat_progress_){0u}
+    , decltype(_impl_.final_flat_progress_){0u}
+    , decltype(_impl_.desired_progress_change_){0}
+    , decltype(_impl_.initial_calibration_games_){0u}
+    , decltype(_impl_.initial_demotion_protection_games_){0u}
+    , decltype(_impl_.consumed_demotion_protection_){false}
+    , decltype(_impl_.initial_win_streak_){0u}
+  };
+}
+
+CMsgMatchPlayerRankData::~CMsgMatchPlayerRankData() {
+  // @@protoc_insertion_point(destructor:CMsgMatchPlayerRankData)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void CMsgMatchPlayerRankData::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void CMsgMatchPlayerRankData::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void CMsgMatchPlayerRankData::Clear() {
+// @@protoc_insertion_point(message_clear_start:CMsgMatchPlayerRankData)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
+    ::memset(&_impl_.initial_display_rank_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.initial_win_streak_) -
+        reinterpret_cast<char*>(&_impl_.initial_display_rank_)) + sizeof(_impl_.initial_win_streak_));
+  }
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CMsgMatchPlayerRankData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // optional uint32 initial_display_rank = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_initial_display_rank(&has_bits);
+          _impl_.initial_display_rank_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 initial_flat_progress = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_initial_flat_progress(&has_bits);
+          _impl_.initial_flat_progress_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 final_flat_progress = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _Internal::set_has_final_flat_progress(&has_bits);
+          _impl_.final_flat_progress_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional int32 desired_progress_change = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_desired_progress_change(&has_bits);
+          _impl_.desired_progress_change_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 initial_calibration_games = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_initial_calibration_games(&has_bits);
+          _impl_.initial_calibration_games_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 initial_demotion_protection_games = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
+          _Internal::set_has_initial_demotion_protection_games(&has_bits);
+          _impl_.initial_demotion_protection_games_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool consumed_demotion_protection = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_consumed_demotion_protection(&has_bits);
+          _impl_.consumed_demotion_protection_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 initial_win_streak = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 72)) {
+          _Internal::set_has_initial_win_streak(&has_bits);
+          _impl_.initial_win_streak_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _impl_._has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CMsgMatchPlayerRankData::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CMsgMatchPlayerRankData)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional uint32 initial_display_rank = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_initial_display_rank(), target);
+  }
+
+  // optional uint32 initial_flat_progress = 2;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_initial_flat_progress(), target);
+  }
+
+  // optional uint32 final_flat_progress = 3;
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(3, this->_internal_final_flat_progress(), target);
+  }
+
+  // optional int32 desired_progress_change = 4;
+  if (cached_has_bits & 0x00000008u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(4, this->_internal_desired_progress_change(), target);
+  }
+
+  // optional uint32 initial_calibration_games = 6;
+  if (cached_has_bits & 0x00000010u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(6, this->_internal_initial_calibration_games(), target);
+  }
+
+  // optional uint32 initial_demotion_protection_games = 7;
+  if (cached_has_bits & 0x00000020u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(7, this->_internal_initial_demotion_protection_games(), target);
+  }
+
+  // optional bool consumed_demotion_protection = 8;
+  if (cached_has_bits & 0x00000040u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(8, this->_internal_consumed_demotion_protection(), target);
+  }
+
+  // optional uint32 initial_win_streak = 9;
+  if (cached_has_bits & 0x00000080u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(9, this->_internal_initial_win_streak(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CMsgMatchPlayerRankData)
+  return target;
+}
+
+size_t CMsgMatchPlayerRankData::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CMsgMatchPlayerRankData)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
+    // optional uint32 initial_display_rank = 1;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_initial_display_rank());
+    }
+
+    // optional uint32 initial_flat_progress = 2;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_initial_flat_progress());
+    }
+
+    // optional uint32 final_flat_progress = 3;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_final_flat_progress());
+    }
+
+    // optional int32 desired_progress_change = 4;
+    if (cached_has_bits & 0x00000008u) {
+      total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_desired_progress_change());
+    }
+
+    // optional uint32 initial_calibration_games = 6;
+    if (cached_has_bits & 0x00000010u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_initial_calibration_games());
+    }
+
+    // optional uint32 initial_demotion_protection_games = 7;
+    if (cached_has_bits & 0x00000020u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_initial_demotion_protection_games());
+    }
+
+    // optional bool consumed_demotion_protection = 8;
+    if (cached_has_bits & 0x00000040u) {
+      total_size += 1 + 1;
+    }
+
+    // optional uint32 initial_win_streak = 9;
+    if (cached_has_bits & 0x00000080u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_initial_win_streak());
+    }
+
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CMsgMatchPlayerRankData::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    CMsgMatchPlayerRankData::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CMsgMatchPlayerRankData::GetClassData() const { return &_class_data_; }
+
+
+void CMsgMatchPlayerRankData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CMsgMatchPlayerRankData*>(&to_msg);
+  auto& from = static_cast<const CMsgMatchPlayerRankData&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CMsgMatchPlayerRankData)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_impl_.initial_display_rank_ = from._impl_.initial_display_rank_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.initial_flat_progress_ = from._impl_.initial_flat_progress_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_impl_.final_flat_progress_ = from._impl_.final_flat_progress_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      _this->_impl_.desired_progress_change_ = from._impl_.desired_progress_change_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      _this->_impl_.initial_calibration_games_ = from._impl_.initial_calibration_games_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      _this->_impl_.initial_demotion_protection_games_ = from._impl_.initial_demotion_protection_games_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      _this->_impl_.consumed_demotion_protection_ = from._impl_.consumed_demotion_protection_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      _this->_impl_.initial_win_streak_ = from._impl_.initial_win_streak_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CMsgMatchPlayerRankData::CopyFrom(const CMsgMatchPlayerRankData& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CMsgMatchPlayerRankData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CMsgMatchPlayerRankData::IsInitialized() const {
+  return true;
+}
+
+void CMsgMatchPlayerRankData::InternalSwap(CMsgMatchPlayerRankData* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(CMsgMatchPlayerRankData, _impl_.initial_win_streak_)
+      + sizeof(CMsgMatchPlayerRankData::_impl_.initial_win_streak_)
+      - PROTOBUF_FIELD_OFFSET(CMsgMatchPlayerRankData, _impl_.initial_display_rank_)>(
+          reinterpret_cast<char*>(&_impl_.initial_display_rank_),
+          reinterpret_cast<char*>(&other->_impl_.initial_display_rank_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchPlayerRankData::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[30]);
 }
 
 // ===================================================================
@@ -13257,7 +15488,7 @@ void CMsgMatchMetaDataContents_Position::InternalSwap(CMsgMatchMetaDataContents_
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_Position::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[28]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[31]);
 }
 
 // ===================================================================
@@ -13640,7 +15871,7 @@ void CMsgMatchMetaDataContents_Deaths::InternalSwap(CMsgMatchMetaDataContents_De
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_Deaths::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[29]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[32]);
 }
 
 // ===================================================================
@@ -14017,7 +16248,7 @@ void CMsgMatchMetaDataContents_Items::InternalSwap(CMsgMatchMetaDataContents_Ite
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_Items::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[30]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[33]);
 }
 
 // ===================================================================
@@ -14282,7 +16513,7 @@ void CMsgMatchMetaDataContents_Ping::InternalSwap(CMsgMatchMetaDataContents_Ping
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_Ping::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[31]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[34]);
 }
 
 // ===================================================================
@@ -14611,7 +16842,7 @@ void CMsgMatchMetaDataContents_GoldSource::InternalSwap(CMsgMatchMetaDataContent
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_GoldSource::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[32]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[35]);
 }
 
 // ===================================================================
@@ -14868,7 +17099,7 @@ void CMsgMatchMetaDataContents_CustomUserStatInfo::InternalSwap(CMsgMatchMetaDat
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_CustomUserStatInfo::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[33]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[36]);
 }
 
 // ===================================================================
@@ -15105,7 +17336,7 @@ void CMsgMatchMetaDataContents_CustomUserStat::InternalSwap(CMsgMatchMetaDataCon
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_CustomUserStat::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[34]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[37]);
 }
 
 // ===================================================================
@@ -15136,6 +17367,9 @@ CMsgMatchMetaDataContents_PowerUpBuff::CMsgMatchMetaDataContents_PowerUpBuff(con
   new (&_impl_) Impl_{
       decltype(_impl_._has_bits_){from._impl_._has_bits_}
     , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.pickup_times_s_){from._impl_.pickup_times_s_}
+    , /*decltype(_impl_._pickup_times_s_cached_byte_size_)*/{0}
+    , decltype(_impl_.pickup_stat_values_){from._impl_.pickup_stat_values_}
     , decltype(_impl_.type_){}
     , decltype(_impl_.value_){}
     , decltype(_impl_.is_permanent_){}};
@@ -15162,6 +17396,9 @@ inline void CMsgMatchMetaDataContents_PowerUpBuff::SharedCtor(
   new (&_impl_) Impl_{
       decltype(_impl_._has_bits_){}
     , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.pickup_times_s_){arena}
+    , /*decltype(_impl_._pickup_times_s_cached_byte_size_)*/{0}
+    , decltype(_impl_.pickup_stat_values_){arena}
     , decltype(_impl_.type_){}
     , decltype(_impl_.value_){0u}
     , decltype(_impl_.is_permanent_){false}
@@ -15183,6 +17420,8 @@ CMsgMatchMetaDataContents_PowerUpBuff::~CMsgMatchMetaDataContents_PowerUpBuff() 
 
 inline void CMsgMatchMetaDataContents_PowerUpBuff::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.pickup_times_s_.~RepeatedField();
+  _impl_.pickup_stat_values_.~RepeatedField();
   _impl_.type_.Destroy();
 }
 
@@ -15196,6 +17435,8 @@ void CMsgMatchMetaDataContents_PowerUpBuff::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  _impl_.pickup_times_s_.Clear();
+  _impl_.pickup_stat_values_.Clear();
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     _impl_.type_.ClearNonDefaultToEmpty();
@@ -15243,6 +17484,28 @@ const char* CMsgMatchMetaDataContents_PowerUpBuff::_InternalParse(const char* pt
           _Internal::set_has_is_permanent(&has_bits);
           _impl_.is_permanent_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // repeated uint32 pickup_times_s = 4 [packed = true];
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt32Parser(_internal_mutable_pickup_times_s(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<uint8_t>(tag) == 32) {
+          _internal_add_pickup_times_s(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // repeated float pickup_stat_values = 5 [packed = true];
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedFloatParser(_internal_mutable_pickup_stat_values(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<uint8_t>(tag) == 45) {
+          _internal_add_pickup_stat_values(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr));
+          ptr += sizeof(float);
         } else
           goto handle_unusual;
         continue;
@@ -15299,6 +17562,20 @@ uint8_t* CMsgMatchMetaDataContents_PowerUpBuff::_InternalSerialize(
     target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_is_permanent(), target);
   }
 
+  // repeated uint32 pickup_times_s = 4 [packed = true];
+  {
+    int byte_size = _impl_._pickup_times_s_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteUInt32Packed(
+          4, _internal_pickup_times_s(), byte_size, target);
+    }
+  }
+
+  // repeated float pickup_stat_values = 5 [packed = true];
+  if (this->_internal_pickup_stat_values_size() > 0) {
+    target = stream->WriteFixedPacked(5, _internal_pickup_stat_values(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -15314,6 +17591,31 @@ size_t CMsgMatchMetaDataContents_PowerUpBuff::ByteSizeLong() const {
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
+
+  // repeated uint32 pickup_times_s = 4 [packed = true];
+  {
+    size_t data_size = ::_pbi::WireFormatLite::
+      UInt32Size(this->_impl_.pickup_times_s_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::_pbi::WireFormatLite::Int32Size(static_cast<int32_t>(data_size));
+    }
+    int cached_size = ::_pbi::ToCachedSize(data_size);
+    _impl_._pickup_times_s_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated float pickup_stat_values = 5 [packed = true];
+  {
+    unsigned int count = static_cast<unsigned int>(this->_internal_pickup_stat_values_size());
+    size_t data_size = 4UL * count;
+    if (data_size > 0) {
+      total_size += 1 +
+        ::_pbi::WireFormatLite::Int32Size(static_cast<int32_t>(data_size));
+    }
+    total_size += data_size;
+  }
 
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
@@ -15353,6 +17655,8 @@ void CMsgMatchMetaDataContents_PowerUpBuff::MergeImpl(::PROTOBUF_NAMESPACE_ID::M
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
+  _this->_impl_.pickup_times_s_.MergeFrom(from._impl_.pickup_times_s_);
+  _this->_impl_.pickup_stat_values_.MergeFrom(from._impl_.pickup_stat_values_);
   cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
@@ -15386,6 +17690,8 @@ void CMsgMatchMetaDataContents_PowerUpBuff::InternalSwap(CMsgMatchMetaDataConten
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.pickup_times_s_.InternalSwap(&other->_impl_.pickup_times_s_);
+  _impl_.pickup_stat_values_.InternalSwap(&other->_impl_.pickup_stat_values_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
       &_impl_.type_, lhs_arena,
       &other->_impl_.type_, rhs_arena
@@ -15401,7 +17707,7 @@ void CMsgMatchMetaDataContents_PowerUpBuff::InternalSwap(CMsgMatchMetaDataConten
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_PowerUpBuff::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[35]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[38]);
 }
 
 // ===================================================================
@@ -17144,7 +19450,7 @@ void CMsgMatchMetaDataContents_PlayerStats::InternalSwap(CMsgMatchMetaDataConten
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_PlayerStats::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[36]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[39]);
 }
 
 // ===================================================================
@@ -17381,7 +19687,7 @@ void CMsgMatchMetaDataContents_AbilityStat::InternalSwap(CMsgMatchMetaDataConten
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_AbilityStat::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[37]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[40]);
 }
 
 // ===================================================================
@@ -17646,7 +19952,213 @@ void CMsgMatchMetaDataContents_BookReward::InternalSwap(CMsgMatchMetaDataContent
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_BookReward::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[38]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[41]);
+}
+
+// ===================================================================
+
+class CMsgMatchMetaDataContents_HeroXPReward::_Internal {
+ public:
+  using HasBits = decltype(std::declval<CMsgMatchMetaDataContents_HeroXPReward>()._impl_._has_bits_);
+  static const ::CMsgHeroXPGrant& xp_grant(const CMsgMatchMetaDataContents_HeroXPReward* msg);
+  static void set_has_xp_grant(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+};
+
+const ::CMsgHeroXPGrant&
+CMsgMatchMetaDataContents_HeroXPReward::_Internal::xp_grant(const CMsgMatchMetaDataContents_HeroXPReward* msg) {
+  return *msg->_impl_.xp_grant_;
+}
+CMsgMatchMetaDataContents_HeroXPReward::CMsgMatchMetaDataContents_HeroXPReward(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:CMsgMatchMetaDataContents.HeroXPReward)
+}
+CMsgMatchMetaDataContents_HeroXPReward::CMsgMatchMetaDataContents_HeroXPReward(const CMsgMatchMetaDataContents_HeroXPReward& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CMsgMatchMetaDataContents_HeroXPReward* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.xp_grant_){nullptr}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_xp_grant()) {
+    _this->_impl_.xp_grant_ = new ::CMsgHeroXPGrant(*from._impl_.xp_grant_);
+  }
+  // @@protoc_insertion_point(copy_constructor:CMsgMatchMetaDataContents.HeroXPReward)
+}
+
+inline void CMsgMatchMetaDataContents_HeroXPReward::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.xp_grant_){nullptr}
+  };
+}
+
+CMsgMatchMetaDataContents_HeroXPReward::~CMsgMatchMetaDataContents_HeroXPReward() {
+  // @@protoc_insertion_point(destructor:CMsgMatchMetaDataContents.HeroXPReward)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void CMsgMatchMetaDataContents_HeroXPReward::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete _impl_.xp_grant_;
+}
+
+void CMsgMatchMetaDataContents_HeroXPReward::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void CMsgMatchMetaDataContents_HeroXPReward::Clear() {
+// @@protoc_insertion_point(message_clear_start:CMsgMatchMetaDataContents.HeroXPReward)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    GOOGLE_DCHECK(_impl_.xp_grant_ != nullptr);
+    _impl_.xp_grant_->Clear();
+  }
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CMsgMatchMetaDataContents_HeroXPReward::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // optional .CMsgHeroXPGrant xp_grant = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_xp_grant(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _impl_._has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CMsgMatchMetaDataContents_HeroXPReward::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CMsgMatchMetaDataContents.HeroXPReward)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .CMsgHeroXPGrant xp_grant = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, _Internal::xp_grant(this),
+        _Internal::xp_grant(this).GetCachedSize(), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CMsgMatchMetaDataContents.HeroXPReward)
+  return target;
+}
+
+size_t CMsgMatchMetaDataContents_HeroXPReward::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CMsgMatchMetaDataContents.HeroXPReward)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // optional .CMsgHeroXPGrant xp_grant = 1;
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *_impl_.xp_grant_);
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CMsgMatchMetaDataContents_HeroXPReward::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    CMsgMatchMetaDataContents_HeroXPReward::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CMsgMatchMetaDataContents_HeroXPReward::GetClassData() const { return &_class_data_; }
+
+
+void CMsgMatchMetaDataContents_HeroXPReward::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CMsgMatchMetaDataContents_HeroXPReward*>(&to_msg);
+  auto& from = static_cast<const CMsgMatchMetaDataContents_HeroXPReward&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CMsgMatchMetaDataContents.HeroXPReward)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_xp_grant()) {
+    _this->_internal_mutable_xp_grant()->::CMsgHeroXPGrant::MergeFrom(
+        from._internal_xp_grant());
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CMsgMatchMetaDataContents_HeroXPReward::CopyFrom(const CMsgMatchMetaDataContents_HeroXPReward& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CMsgMatchMetaDataContents.HeroXPReward)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CMsgMatchMetaDataContents_HeroXPReward::IsInitialized() const {
+  return true;
+}
+
+void CMsgMatchMetaDataContents_HeroXPReward::InternalSwap(CMsgMatchMetaDataContents_HeroXPReward* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.xp_grant_, other->_impl_.xp_grant_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_HeroXPReward::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[42]);
 }
 
 // ===================================================================
@@ -17911,7 +20423,7 @@ void CMsgMatchMetaDataContents_PlayerAccolade::InternalSwap(CMsgMatchMetaDataCon
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_PlayerAccolade::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[39]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[43]);
 }
 
 // ===================================================================
@@ -17920,65 +20432,76 @@ class CMsgMatchMetaDataContents_Players::_Internal {
  public:
   using HasBits = decltype(std::declval<CMsgMatchMetaDataContents_Players>()._impl_._has_bits_);
   static void set_has_account_id(HasBits* has_bits) {
-    (*has_bits)[0] |= 2u;
-  }
-  static void set_has_player_slot(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
   }
-  static void set_has_team(HasBits* has_bits) {
+  static void set_has_player_slot(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static void set_has_kills(HasBits* has_bits) {
+  static void set_has_team(HasBits* has_bits) {
     (*has_bits)[0] |= 16u;
   }
-  static void set_has_deaths(HasBits* has_bits) {
+  static void set_has_kills(HasBits* has_bits) {
     (*has_bits)[0] |= 32u;
   }
-  static void set_has_assists(HasBits* has_bits) {
+  static void set_has_deaths(HasBits* has_bits) {
     (*has_bits)[0] |= 64u;
   }
-  static void set_has_net_worth(HasBits* has_bits) {
+  static void set_has_assists(HasBits* has_bits) {
     (*has_bits)[0] |= 128u;
   }
-  static void set_has_hero_id(HasBits* has_bits) {
+  static void set_has_net_worth(HasBits* has_bits) {
     (*has_bits)[0] |= 256u;
   }
-  static void set_has_last_hits(HasBits* has_bits) {
+  static void set_has_hero_id(HasBits* has_bits) {
     (*has_bits)[0] |= 512u;
   }
-  static void set_has_denies(HasBits* has_bits) {
+  static void set_has_last_hits(HasBits* has_bits) {
     (*has_bits)[0] |= 1024u;
   }
-  static void set_has_ability_points(HasBits* has_bits) {
+  static void set_has_denies(HasBits* has_bits) {
     (*has_bits)[0] |= 2048u;
   }
-  static void set_has_assigned_lane(HasBits* has_bits) {
+  static void set_has_ability_points(HasBits* has_bits) {
     (*has_bits)[0] |= 4096u;
   }
-  static void set_has_level(HasBits* has_bits) {
+  static void set_has_assigned_lane(HasBits* has_bits) {
     (*has_bits)[0] |= 8192u;
   }
-  static void set_has_abandon_match_time_s(HasBits* has_bits) {
+  static void set_has_level(HasBits* has_bits) {
     (*has_bits)[0] |= 16384u;
+  }
+  static void set_has_abandon_match_time_s(HasBits* has_bits) {
+    (*has_bits)[0] |= 32768u;
   }
   static const ::CMsgPlayerHeroData& hero_data(const CMsgMatchMetaDataContents_Players* msg);
   static void set_has_hero_data(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
   static void set_has_rewards_eligible(HasBits* has_bits) {
-    (*has_bits)[0] |= 32768u;
+    (*has_bits)[0] |= 65536u;
   }
   static void set_has_mvp_rank(HasBits* has_bits) {
-    (*has_bits)[0] |= 131072u;
+    (*has_bits)[0] |= 262144u;
   }
   static void set_has_earned_holiday_award_2025(HasBits* has_bits) {
-    (*has_bits)[0] |= 65536u;
+    (*has_bits)[0] |= 131072u;
+  }
+  static const ::CMsgMatchPlayerRankData& player_rank_data(const CMsgMatchMetaDataContents_Players* msg);
+  static void set_has_player_rank_data(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_player_match_outcome(HasBits* has_bits) {
+    (*has_bits)[0] |= 524288u;
   }
 };
 
 const ::CMsgPlayerHeroData&
 CMsgMatchMetaDataContents_Players::_Internal::hero_data(const CMsgMatchMetaDataContents_Players* msg) {
   return *msg->_impl_.hero_data_;
+}
+const ::CMsgMatchPlayerRankData&
+CMsgMatchMetaDataContents_Players::_Internal::player_rank_data(const CMsgMatchMetaDataContents_Players* msg) {
+  return *msg->_impl_.player_rank_data_;
 }
 CMsgMatchMetaDataContents_Players::CMsgMatchMetaDataContents_Players(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
@@ -18001,8 +20524,10 @@ CMsgMatchMetaDataContents_Players::CMsgMatchMetaDataContents_Players(const CMsgM
     , decltype(_impl_.book_rewards_){from._impl_.book_rewards_}
     , decltype(_impl_.accolades_){from._impl_.accolades_}
     , decltype(_impl_.power_up_buffs_){from._impl_.power_up_buffs_}
+    , decltype(_impl_.hero_xp_rewards_){from._impl_.hero_xp_rewards_}
     , decltype(_impl_.player_tracked_stats_){from._impl_.player_tracked_stats_}
     , decltype(_impl_.hero_data_){nullptr}
+    , decltype(_impl_.player_rank_data_){nullptr}
     , decltype(_impl_.account_id_){}
     , decltype(_impl_.player_slot_){}
     , decltype(_impl_.team_){}
@@ -18019,15 +20544,19 @@ CMsgMatchMetaDataContents_Players::CMsgMatchMetaDataContents_Players(const CMsgM
     , decltype(_impl_.abandon_match_time_s_){}
     , decltype(_impl_.rewards_eligible_){}
     , decltype(_impl_.earned_holiday_award_2025_){}
-    , decltype(_impl_.mvp_rank_){}};
+    , decltype(_impl_.mvp_rank_){}
+    , decltype(_impl_.player_match_outcome_){}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_hero_data()) {
     _this->_impl_.hero_data_ = new ::CMsgPlayerHeroData(*from._impl_.hero_data_);
   }
+  if (from._internal_has_player_rank_data()) {
+    _this->_impl_.player_rank_data_ = new ::CMsgMatchPlayerRankData(*from._impl_.player_rank_data_);
+  }
   ::memcpy(&_impl_.account_id_, &from._impl_.account_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.mvp_rank_) -
-    reinterpret_cast<char*>(&_impl_.account_id_)) + sizeof(_impl_.mvp_rank_));
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.player_match_outcome_) -
+    reinterpret_cast<char*>(&_impl_.account_id_)) + sizeof(_impl_.player_match_outcome_));
   // @@protoc_insertion_point(copy_constructor:CMsgMatchMetaDataContents.Players)
 }
 
@@ -18047,8 +20576,10 @@ inline void CMsgMatchMetaDataContents_Players::SharedCtor(
     , decltype(_impl_.book_rewards_){arena}
     , decltype(_impl_.accolades_){arena}
     , decltype(_impl_.power_up_buffs_){arena}
+    , decltype(_impl_.hero_xp_rewards_){arena}
     , decltype(_impl_.player_tracked_stats_){arena}
     , decltype(_impl_.hero_data_){nullptr}
+    , decltype(_impl_.player_rank_data_){nullptr}
     , decltype(_impl_.account_id_){0u}
     , decltype(_impl_.player_slot_){0u}
     , decltype(_impl_.team_){0}
@@ -18066,6 +20597,7 @@ inline void CMsgMatchMetaDataContents_Players::SharedCtor(
     , decltype(_impl_.rewards_eligible_){false}
     , decltype(_impl_.earned_holiday_award_2025_){false}
     , decltype(_impl_.mvp_rank_){0u}
+    , decltype(_impl_.player_match_outcome_){0}
   };
 }
 
@@ -18089,8 +20621,10 @@ inline void CMsgMatchMetaDataContents_Players::SharedDtor() {
   _impl_.book_rewards_.~RepeatedPtrField();
   _impl_.accolades_.~RepeatedPtrField();
   _impl_.power_up_buffs_.~RepeatedPtrField();
+  _impl_.hero_xp_rewards_.~RepeatedPtrField();
   _impl_.player_tracked_stats_.~RepeatedPtrField();
   if (this != internal_default_instance()) delete _impl_.hero_data_;
+  if (this != internal_default_instance()) delete _impl_.player_rank_data_;
 }
 
 void CMsgMatchMetaDataContents_Players::SetCachedSize(int size) const {
@@ -18112,26 +20646,33 @@ void CMsgMatchMetaDataContents_Players::Clear() {
   _impl_.book_rewards_.Clear();
   _impl_.accolades_.Clear();
   _impl_.power_up_buffs_.Clear();
+  _impl_.hero_xp_rewards_.Clear();
   _impl_.player_tracked_stats_.Clear();
   cached_has_bits = _impl_._has_bits_[0];
-  if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(_impl_.hero_data_ != nullptr);
-    _impl_.hero_data_->Clear();
+  if (cached_has_bits & 0x00000003u) {
+    if (cached_has_bits & 0x00000001u) {
+      GOOGLE_DCHECK(_impl_.hero_data_ != nullptr);
+      _impl_.hero_data_->Clear();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      GOOGLE_DCHECK(_impl_.player_rank_data_ != nullptr);
+      _impl_.player_rank_data_->Clear();
+    }
   }
-  if (cached_has_bits & 0x000000feu) {
+  if (cached_has_bits & 0x000000fcu) {
     ::memset(&_impl_.account_id_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&_impl_.net_worth_) -
-        reinterpret_cast<char*>(&_impl_.account_id_)) + sizeof(_impl_.net_worth_));
+        reinterpret_cast<char*>(&_impl_.assists_) -
+        reinterpret_cast<char*>(&_impl_.account_id_)) + sizeof(_impl_.assists_));
   }
   if (cached_has_bits & 0x0000ff00u) {
-    ::memset(&_impl_.hero_id_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&_impl_.rewards_eligible_) -
-        reinterpret_cast<char*>(&_impl_.hero_id_)) + sizeof(_impl_.rewards_eligible_));
+    ::memset(&_impl_.net_worth_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.abandon_match_time_s_) -
+        reinterpret_cast<char*>(&_impl_.net_worth_)) + sizeof(_impl_.abandon_match_time_s_));
   }
-  if (cached_has_bits & 0x00030000u) {
-    ::memset(&_impl_.earned_holiday_award_2025_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&_impl_.mvp_rank_) -
-        reinterpret_cast<char*>(&_impl_.earned_holiday_award_2025_)) + sizeof(_impl_.mvp_rank_));
+  if (cached_has_bits & 0x000f0000u) {
+    ::memset(&_impl_.rewards_eligible_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.player_match_outcome_) -
+        reinterpret_cast<char*>(&_impl_.rewards_eligible_)) + sizeof(_impl_.player_match_outcome_));
   }
   _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -18424,6 +20965,40 @@ const char* CMsgMatchMetaDataContents_Players::_InternalParse(const char* ptr, :
         } else
           goto handle_unusual;
         continue;
+      // repeated .CMsgMatchMetaDataContents.HeroXPReward hero_xp_rewards = 31;
+      case 31:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
+          ptr -= 2;
+          do {
+            ptr += 2;
+            ptr = ctx->ParseMessage(_internal_add_hero_xp_rewards(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<250>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .CMsgMatchPlayerRankData player_rank_data = 32;
+      case 32:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 2)) {
+          ptr = ctx->ParseMessage(_internal_mutable_player_rank_data(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .EPlayerMatchOutcome player_match_outcome = 33 [default = k_EPlayerMatchOutcome_Invalid];
+      case 33:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::EPlayerMatchOutcome_IsValid(val))) {
+            _internal_set_player_match_outcome(static_cast<::EPlayerMatchOutcome>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(33, val, mutable_unknown_fields());
+          }
+        } else
+          goto handle_unusual;
+        continue;
       // repeated .CMsgTrackedStat player_tracked_stats = 48;
       case 48:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 130)) {
@@ -18469,13 +21044,13 @@ uint8_t* CMsgMatchMetaDataContents_Players::_InternalSerialize(
 
   cached_has_bits = _impl_._has_bits_[0];
   // optional uint32 account_id = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_account_id(), target);
   }
 
   // optional uint32 player_slot = 2;
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_player_slot(), target);
   }
@@ -18505,68 +21080,68 @@ uint8_t* CMsgMatchMetaDataContents_Players::_InternalSerialize(
   }
 
   // optional .ECitadelLobbyTeam team = 6 [default = k_ECitadelLobbyTeam_Team0];
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
       6, this->_internal_team(), target);
   }
 
   // optional uint32 kills = 8;
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(8, this->_internal_kills(), target);
   }
 
   // optional uint32 deaths = 9;
-  if (cached_has_bits & 0x00000020u) {
+  if (cached_has_bits & 0x00000040u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(9, this->_internal_deaths(), target);
   }
 
   // optional uint32 assists = 10;
-  if (cached_has_bits & 0x00000040u) {
+  if (cached_has_bits & 0x00000080u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(10, this->_internal_assists(), target);
   }
 
   // optional uint32 net_worth = 11;
-  if (cached_has_bits & 0x00000080u) {
+  if (cached_has_bits & 0x00000100u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(11, this->_internal_net_worth(), target);
   }
 
   // optional uint32 hero_id = 12;
-  if (cached_has_bits & 0x00000100u) {
+  if (cached_has_bits & 0x00000200u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(12, this->_internal_hero_id(), target);
   }
 
   // optional uint32 last_hits = 13;
-  if (cached_has_bits & 0x00000200u) {
+  if (cached_has_bits & 0x00000400u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(13, this->_internal_last_hits(), target);
   }
 
   // optional uint32 denies = 14;
-  if (cached_has_bits & 0x00000400u) {
+  if (cached_has_bits & 0x00000800u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(14, this->_internal_denies(), target);
   }
 
   // optional uint32 ability_points = 15;
-  if (cached_has_bits & 0x00000800u) {
+  if (cached_has_bits & 0x00001000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(15, this->_internal_ability_points(), target);
   }
 
   // optional uint32 assigned_lane = 17;
-  if (cached_has_bits & 0x00001000u) {
+  if (cached_has_bits & 0x00002000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(17, this->_internal_assigned_lane(), target);
   }
 
   // optional uint32 level = 18;
-  if (cached_has_bits & 0x00002000u) {
+  if (cached_has_bits & 0x00004000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(18, this->_internal_level(), target);
   }
@@ -18601,7 +21176,7 @@ uint8_t* CMsgMatchMetaDataContents_Players::_InternalSerialize(
   }
 
   // optional uint32 abandon_match_time_s = 23;
-  if (cached_has_bits & 0x00004000u) {
+  if (cached_has_bits & 0x00008000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(23, this->_internal_abandon_match_time_s(), target);
   }
@@ -18614,7 +21189,7 @@ uint8_t* CMsgMatchMetaDataContents_Players::_InternalSerialize(
   }
 
   // optional bool rewards_eligible = 26;
-  if (cached_has_bits & 0x00008000u) {
+  if (cached_has_bits & 0x00010000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteBoolToArray(26, this->_internal_rewards_eligible(), target);
   }
@@ -18628,13 +21203,13 @@ uint8_t* CMsgMatchMetaDataContents_Players::_InternalSerialize(
   }
 
   // optional uint32 mvp_rank = 28;
-  if (cached_has_bits & 0x00020000u) {
+  if (cached_has_bits & 0x00040000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(28, this->_internal_mvp_rank(), target);
   }
 
   // optional bool earned_holiday_award_2025 = 29;
-  if (cached_has_bits & 0x00010000u) {
+  if (cached_has_bits & 0x00020000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteBoolToArray(29, this->_internal_earned_holiday_award_2025(), target);
   }
@@ -18645,6 +21220,28 @@ uint8_t* CMsgMatchMetaDataContents_Players::_InternalSerialize(
     const auto& repfield = this->_internal_power_up_buffs(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
         InternalWriteMessage(30, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  // repeated .CMsgMatchMetaDataContents.HeroXPReward hero_xp_rewards = 31;
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_hero_xp_rewards_size()); i < n; i++) {
+    const auto& repfield = this->_internal_hero_xp_rewards(i);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        InternalWriteMessage(31, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  // optional .CMsgMatchPlayerRankData player_rank_data = 32;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(32, _Internal::player_rank_data(this),
+        _Internal::player_rank_data(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .EPlayerMatchOutcome player_match_outcome = 33 [default = k_EPlayerMatchOutcome_Invalid];
+  if (cached_has_bits & 0x00080000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+      33, this->_internal_player_match_outcome(), target);
   }
 
   // repeated .CMsgTrackedStat player_tracked_stats = 48;
@@ -18738,6 +21335,13 @@ size_t CMsgMatchMetaDataContents_Players::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
+  // repeated .CMsgMatchMetaDataContents.HeroXPReward hero_xp_rewards = 31;
+  total_size += 2UL * this->_internal_hero_xp_rewards_size();
+  for (const auto& msg : this->_impl_.hero_xp_rewards_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
   // repeated .CMsgTrackedStat player_tracked_stats = 48;
   total_size += 2UL * this->_internal_player_tracked_stats_size();
   for (const auto& msg : this->_impl_.player_tracked_stats_) {
@@ -18754,102 +21358,115 @@ size_t CMsgMatchMetaDataContents_Players::ByteSizeLong() const {
           *_impl_.hero_data_);
     }
 
-    // optional uint32 account_id = 1;
+    // optional .CMsgMatchPlayerRankData player_rank_data = 32;
     if (cached_has_bits & 0x00000002u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.player_rank_data_);
+    }
+
+    // optional uint32 account_id = 1;
+    if (cached_has_bits & 0x00000004u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_account_id());
     }
 
     // optional uint32 player_slot = 2;
-    if (cached_has_bits & 0x00000004u) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_player_slot());
     }
 
     // optional .ECitadelLobbyTeam team = 6 [default = k_ECitadelLobbyTeam_Team0];
-    if (cached_has_bits & 0x00000008u) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::_pbi::WireFormatLite::EnumSize(this->_internal_team());
     }
 
     // optional uint32 kills = 8;
-    if (cached_has_bits & 0x00000010u) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_kills());
     }
 
     // optional uint32 deaths = 9;
-    if (cached_has_bits & 0x00000020u) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_deaths());
     }
 
     // optional uint32 assists = 10;
-    if (cached_has_bits & 0x00000040u) {
-      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_assists());
-    }
-
-    // optional uint32 net_worth = 11;
     if (cached_has_bits & 0x00000080u) {
-      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_net_worth());
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_assists());
     }
 
   }
   if (cached_has_bits & 0x0000ff00u) {
-    // optional uint32 hero_id = 12;
+    // optional uint32 net_worth = 11;
     if (cached_has_bits & 0x00000100u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_net_worth());
+    }
+
+    // optional uint32 hero_id = 12;
+    if (cached_has_bits & 0x00000200u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_hero_id());
     }
 
     // optional uint32 last_hits = 13;
-    if (cached_has_bits & 0x00000200u) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_last_hits());
     }
 
     // optional uint32 denies = 14;
-    if (cached_has_bits & 0x00000400u) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_denies());
     }
 
     // optional uint32 ability_points = 15;
-    if (cached_has_bits & 0x00000800u) {
+    if (cached_has_bits & 0x00001000u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_ability_points());
     }
 
     // optional uint32 assigned_lane = 17;
-    if (cached_has_bits & 0x00001000u) {
+    if (cached_has_bits & 0x00002000u) {
       total_size += 2 +
         ::_pbi::WireFormatLite::UInt32Size(
           this->_internal_assigned_lane());
     }
 
     // optional uint32 level = 18;
-    if (cached_has_bits & 0x00002000u) {
+    if (cached_has_bits & 0x00004000u) {
       total_size += 2 +
         ::_pbi::WireFormatLite::UInt32Size(
           this->_internal_level());
     }
 
     // optional uint32 abandon_match_time_s = 23;
-    if (cached_has_bits & 0x00004000u) {
+    if (cached_has_bits & 0x00008000u) {
       total_size += 2 +
         ::_pbi::WireFormatLite::UInt32Size(
           this->_internal_abandon_match_time_s());
     }
 
-    // optional bool rewards_eligible = 26;
-    if (cached_has_bits & 0x00008000u) {
-      total_size += 2 + 1;
-    }
-
   }
-  if (cached_has_bits & 0x00030000u) {
-    // optional bool earned_holiday_award_2025 = 29;
+  if (cached_has_bits & 0x000f0000u) {
+    // optional bool rewards_eligible = 26;
     if (cached_has_bits & 0x00010000u) {
       total_size += 2 + 1;
     }
 
-    // optional uint32 mvp_rank = 28;
+    // optional bool earned_holiday_award_2025 = 29;
     if (cached_has_bits & 0x00020000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional uint32 mvp_rank = 28;
+    if (cached_has_bits & 0x00040000u) {
       total_size += 2 +
         ::_pbi::WireFormatLite::UInt32Size(
           this->_internal_mvp_rank());
+    }
+
+    // optional .EPlayerMatchOutcome player_match_outcome = 33 [default = k_EPlayerMatchOutcome_Invalid];
+    if (cached_has_bits & 0x00080000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_player_match_outcome());
     }
 
   }
@@ -18880,6 +21497,7 @@ void CMsgMatchMetaDataContents_Players::MergeImpl(::PROTOBUF_NAMESPACE_ID::Messa
   _this->_impl_.book_rewards_.MergeFrom(from._impl_.book_rewards_);
   _this->_impl_.accolades_.MergeFrom(from._impl_.accolades_);
   _this->_impl_.power_up_buffs_.MergeFrom(from._impl_.power_up_buffs_);
+  _this->_impl_.hero_xp_rewards_.MergeFrom(from._impl_.hero_xp_rewards_);
   _this->_impl_.player_tracked_stats_.MergeFrom(from._impl_.player_tracked_stats_);
   cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
@@ -18888,61 +21506,68 @@ void CMsgMatchMetaDataContents_Players::MergeImpl(::PROTOBUF_NAMESPACE_ID::Messa
           from._internal_hero_data());
     }
     if (cached_has_bits & 0x00000002u) {
-      _this->_impl_.account_id_ = from._impl_.account_id_;
+      _this->_internal_mutable_player_rank_data()->::CMsgMatchPlayerRankData::MergeFrom(
+          from._internal_player_rank_data());
     }
     if (cached_has_bits & 0x00000004u) {
-      _this->_impl_.player_slot_ = from._impl_.player_slot_;
+      _this->_impl_.account_id_ = from._impl_.account_id_;
     }
     if (cached_has_bits & 0x00000008u) {
-      _this->_impl_.team_ = from._impl_.team_;
+      _this->_impl_.player_slot_ = from._impl_.player_slot_;
     }
     if (cached_has_bits & 0x00000010u) {
-      _this->_impl_.kills_ = from._impl_.kills_;
+      _this->_impl_.team_ = from._impl_.team_;
     }
     if (cached_has_bits & 0x00000020u) {
-      _this->_impl_.deaths_ = from._impl_.deaths_;
+      _this->_impl_.kills_ = from._impl_.kills_;
     }
     if (cached_has_bits & 0x00000040u) {
-      _this->_impl_.assists_ = from._impl_.assists_;
+      _this->_impl_.deaths_ = from._impl_.deaths_;
     }
     if (cached_has_bits & 0x00000080u) {
-      _this->_impl_.net_worth_ = from._impl_.net_worth_;
+      _this->_impl_.assists_ = from._impl_.assists_;
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
-      _this->_impl_.hero_id_ = from._impl_.hero_id_;
+      _this->_impl_.net_worth_ = from._impl_.net_worth_;
     }
     if (cached_has_bits & 0x00000200u) {
-      _this->_impl_.last_hits_ = from._impl_.last_hits_;
+      _this->_impl_.hero_id_ = from._impl_.hero_id_;
     }
     if (cached_has_bits & 0x00000400u) {
-      _this->_impl_.denies_ = from._impl_.denies_;
+      _this->_impl_.last_hits_ = from._impl_.last_hits_;
     }
     if (cached_has_bits & 0x00000800u) {
-      _this->_impl_.ability_points_ = from._impl_.ability_points_;
+      _this->_impl_.denies_ = from._impl_.denies_;
     }
     if (cached_has_bits & 0x00001000u) {
-      _this->_impl_.assigned_lane_ = from._impl_.assigned_lane_;
+      _this->_impl_.ability_points_ = from._impl_.ability_points_;
     }
     if (cached_has_bits & 0x00002000u) {
-      _this->_impl_.level_ = from._impl_.level_;
+      _this->_impl_.assigned_lane_ = from._impl_.assigned_lane_;
     }
     if (cached_has_bits & 0x00004000u) {
-      _this->_impl_.abandon_match_time_s_ = from._impl_.abandon_match_time_s_;
+      _this->_impl_.level_ = from._impl_.level_;
     }
     if (cached_has_bits & 0x00008000u) {
-      _this->_impl_.rewards_eligible_ = from._impl_.rewards_eligible_;
+      _this->_impl_.abandon_match_time_s_ = from._impl_.abandon_match_time_s_;
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 0x00030000u) {
+  if (cached_has_bits & 0x000f0000u) {
     if (cached_has_bits & 0x00010000u) {
-      _this->_impl_.earned_holiday_award_2025_ = from._impl_.earned_holiday_award_2025_;
+      _this->_impl_.rewards_eligible_ = from._impl_.rewards_eligible_;
     }
     if (cached_has_bits & 0x00020000u) {
+      _this->_impl_.earned_holiday_award_2025_ = from._impl_.earned_holiday_award_2025_;
+    }
+    if (cached_has_bits & 0x00040000u) {
       _this->_impl_.mvp_rank_ = from._impl_.mvp_rank_;
+    }
+    if (cached_has_bits & 0x00080000u) {
+      _this->_impl_.player_match_outcome_ = from._impl_.player_match_outcome_;
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
@@ -18973,10 +21598,11 @@ void CMsgMatchMetaDataContents_Players::InternalSwap(CMsgMatchMetaDataContents_P
   _impl_.book_rewards_.InternalSwap(&other->_impl_.book_rewards_);
   _impl_.accolades_.InternalSwap(&other->_impl_.accolades_);
   _impl_.power_up_buffs_.InternalSwap(&other->_impl_.power_up_buffs_);
+  _impl_.hero_xp_rewards_.InternalSwap(&other->_impl_.hero_xp_rewards_);
   _impl_.player_tracked_stats_.InternalSwap(&other->_impl_.player_tracked_stats_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CMsgMatchMetaDataContents_Players, _impl_.mvp_rank_)
-      + sizeof(CMsgMatchMetaDataContents_Players::_impl_.mvp_rank_)
+      PROTOBUF_FIELD_OFFSET(CMsgMatchMetaDataContents_Players, _impl_.player_match_outcome_)
+      + sizeof(CMsgMatchMetaDataContents_Players::_impl_.player_match_outcome_)
       - PROTOBUF_FIELD_OFFSET(CMsgMatchMetaDataContents_Players, _impl_.hero_data_)>(
           reinterpret_cast<char*>(&_impl_.hero_data_),
           reinterpret_cast<char*>(&other->_impl_.hero_data_));
@@ -18985,7 +21611,7 @@ void CMsgMatchMetaDataContents_Players::InternalSwap(CMsgMatchMetaDataContents_P
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_Players::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[40]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[44]);
 }
 
 // ===================================================================
@@ -19216,7 +21842,7 @@ void CMsgMatchMetaDataContents_Teams::InternalSwap(CMsgMatchMetaDataContents_Tea
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_Teams::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[41]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[45]);
 }
 
 // ===================================================================
@@ -19705,7 +22331,7 @@ void CMsgMatchMetaDataContents_Objective::InternalSwap(CMsgMatchMetaDataContents
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_Objective::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[42]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[46]);
 }
 
 // ===================================================================
@@ -19982,7 +22608,7 @@ void CMsgMatchMetaDataContents_MidBoss::InternalSwap(CMsgMatchMetaDataContents_M
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_MidBoss::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[43]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[47]);
 }
 
 // ===================================================================
@@ -20247,7 +22873,7 @@ void CMsgMatchMetaDataContents_Pause::InternalSwap(CMsgMatchMetaDataContents_Pau
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_Pause::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[44]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[48]);
 }
 
 // ===================================================================
@@ -20484,7 +23110,7 @@ void CMsgMatchMetaDataContents_WatchedDeathReplay::InternalSwap(CMsgMatchMetaDat
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_WatchedDeathReplay::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[45]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[49]);
 }
 
 // ===================================================================
@@ -20727,7 +23353,7 @@ void CMsgMatchMetaDataContents_StreetBrawlRound::InternalSwap(CMsgMatchMetaDataC
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_StreetBrawlRound::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[46]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[50]);
 }
 
 // ===================================================================
@@ -20800,6 +23426,15 @@ class CMsgMatchMetaDataContents_MatchInfo::_Internal {
   static void set_has_bot_difficulty(HasBits* has_bits) {
     (*has_bits)[0] |= 1048576u;
   }
+  static void set_has_ranked_type(HasBits* has_bits) {
+    (*has_bits)[0] |= 2097152u;
+  }
+  static void set_has_rank_interval(HasBits* has_bits) {
+    (*has_bits)[0] |= 4194304u;
+  }
+  static void set_has_corrupted_penalty_seed(HasBits* has_bits) {
+    (*has_bits)[0] |= 8388608u;
+  }
 };
 
 const ::CMsgMatchPlayerPathsData&
@@ -20809,6 +23444,9 @@ CMsgMatchMetaDataContents_MatchInfo::_Internal::match_paths(const CMsgMatchMetaD
 const ::CMsgMatchPlayerDamageMatrix&
 CMsgMatchMetaDataContents_MatchInfo::_Internal::damage_matrix(const CMsgMatchMetaDataContents_MatchInfo* msg) {
   return *msg->_impl_.damage_matrix_;
+}
+void CMsgMatchMetaDataContents_MatchInfo::clear_extra_messages() {
+  _impl_.extra_messages_.Clear();
 }
 CMsgMatchMetaDataContents_MatchInfo::CMsgMatchMetaDataContents_MatchInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
@@ -20832,6 +23470,7 @@ CMsgMatchMetaDataContents_MatchInfo::CMsgMatchMetaDataContents_MatchInfo(const C
     , decltype(_impl_.match_tracked_stats_){from._impl_.match_tracked_stats_}
     , decltype(_impl_.teams_){from._impl_.teams_}
     , decltype(_impl_.street_brawl_rounds_){from._impl_.street_brawl_rounds_}
+    , decltype(_impl_.extra_messages_){from._impl_.extra_messages_}
     , decltype(_impl_.match_paths_){nullptr}
     , decltype(_impl_.damage_matrix_){nullptr}
     , decltype(_impl_.duration_s_){}
@@ -20852,7 +23491,10 @@ CMsgMatchMetaDataContents_MatchInfo::CMsgMatchMetaDataContents_MatchInfo(const C
     , decltype(_impl_.average_badge_team1_){}
     , decltype(_impl_.game_mode_version_){}
     , decltype(_impl_.not_scored_){}
-    , decltype(_impl_.bot_difficulty_){}};
+    , decltype(_impl_.bot_difficulty_){}
+    , decltype(_impl_.ranked_type_){}
+    , decltype(_impl_.rank_interval_){}
+    , decltype(_impl_.corrupted_penalty_seed_){}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_match_paths()) {
@@ -20862,8 +23504,8 @@ CMsgMatchMetaDataContents_MatchInfo::CMsgMatchMetaDataContents_MatchInfo(const C
     _this->_impl_.damage_matrix_ = new ::CMsgMatchPlayerDamageMatrix(*from._impl_.damage_matrix_);
   }
   ::memcpy(&_impl_.duration_s_, &from._impl_.duration_s_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.bot_difficulty_) -
-    reinterpret_cast<char*>(&_impl_.duration_s_)) + sizeof(_impl_.bot_difficulty_));
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.corrupted_penalty_seed_) -
+    reinterpret_cast<char*>(&_impl_.duration_s_)) + sizeof(_impl_.corrupted_penalty_seed_));
   // @@protoc_insertion_point(copy_constructor:CMsgMatchMetaDataContents.MatchInfo)
 }
 
@@ -20884,6 +23526,7 @@ inline void CMsgMatchMetaDataContents_MatchInfo::SharedCtor(
     , decltype(_impl_.match_tracked_stats_){arena}
     , decltype(_impl_.teams_){arena}
     , decltype(_impl_.street_brawl_rounds_){arena}
+    , decltype(_impl_.extra_messages_){arena}
     , decltype(_impl_.match_paths_){nullptr}
     , decltype(_impl_.damage_matrix_){nullptr}
     , decltype(_impl_.duration_s_){0u}
@@ -20905,6 +23548,9 @@ inline void CMsgMatchMetaDataContents_MatchInfo::SharedCtor(
     , decltype(_impl_.game_mode_version_){0u}
     , decltype(_impl_.not_scored_){false}
     , decltype(_impl_.bot_difficulty_){0}
+    , decltype(_impl_.ranked_type_){0}
+    , decltype(_impl_.rank_interval_){0u}
+    , decltype(_impl_.corrupted_penalty_seed_){0u}
   };
 }
 
@@ -20929,6 +23575,7 @@ inline void CMsgMatchMetaDataContents_MatchInfo::SharedDtor() {
   _impl_.match_tracked_stats_.~RepeatedPtrField();
   _impl_.teams_.~RepeatedPtrField();
   _impl_.street_brawl_rounds_.~RepeatedPtrField();
+  _impl_.extra_messages_.~RepeatedPtrField();
   if (this != internal_default_instance()) delete _impl_.match_paths_;
   if (this != internal_default_instance()) delete _impl_.damage_matrix_;
 }
@@ -20953,6 +23600,7 @@ void CMsgMatchMetaDataContents_MatchInfo::Clear() {
   _impl_.match_tracked_stats_.Clear();
   _impl_.teams_.Clear();
   _impl_.street_brawl_rounds_.Clear();
+  _impl_.extra_messages_.Clear();
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
@@ -20974,10 +23622,10 @@ void CMsgMatchMetaDataContents_MatchInfo::Clear() {
         reinterpret_cast<char*>(&_impl_.rewards_eligible_) -
         reinterpret_cast<char*>(&_impl_.game_mode_)) + sizeof(_impl_.rewards_eligible_));
   }
-  if (cached_has_bits & 0x001f0000u) {
+  if (cached_has_bits & 0x00ff0000u) {
     ::memset(&_impl_.average_badge_team0_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&_impl_.bot_difficulty_) -
-        reinterpret_cast<char*>(&_impl_.average_badge_team0_)) + sizeof(_impl_.bot_difficulty_));
+        reinterpret_cast<char*>(&_impl_.corrupted_penalty_seed_) -
+        reinterpret_cast<char*>(&_impl_.average_badge_team0_)) + sizeof(_impl_.corrupted_penalty_seed_));
   }
   _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -21330,6 +23978,50 @@ const char* CMsgMatchMetaDataContents_MatchInfo::_InternalParse(const char* ptr,
         } else
           goto handle_unusual;
         continue;
+      // optional .ECitadelRankedType ranked_type = 34 [default = k_eCitadelRankedType_Invalid];
+      case 34:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ECitadelRankedType_IsValid(val))) {
+            _internal_set_ranked_type(static_cast<::ECitadelRankedType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(34, val, mutable_unknown_fields());
+          }
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 rank_interval = 35;
+      case 35:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _Internal::set_has_rank_interval(&has_bits);
+          _impl_.rank_interval_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 corrupted_penalty_seed = 36;
+      case 36:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_corrupted_penalty_seed(&has_bits);
+          _impl_.corrupted_penalty_seed_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // repeated .CExtraMsgBlock extra_messages = 37;
+      case 37:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+          ptr -= 2;
+          do {
+            ptr += 2;
+            ptr = ctx->ParseMessage(_internal_add_extra_messages(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<298>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
       default:
         goto handle_unusual;
     }  // switch
@@ -21572,6 +24264,33 @@ uint8_t* CMsgMatchMetaDataContents_MatchInfo::_InternalSerialize(
         InternalWriteMessage(33, repfield, repfield.GetCachedSize(), target, stream);
   }
 
+  // optional .ECitadelRankedType ranked_type = 34 [default = k_eCitadelRankedType_Invalid];
+  if (cached_has_bits & 0x00200000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+      34, this->_internal_ranked_type(), target);
+  }
+
+  // optional uint32 rank_interval = 35;
+  if (cached_has_bits & 0x00400000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(35, this->_internal_rank_interval(), target);
+  }
+
+  // optional uint32 corrupted_penalty_seed = 36;
+  if (cached_has_bits & 0x00800000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(36, this->_internal_corrupted_penalty_seed(), target);
+  }
+
+  // repeated .CExtraMsgBlock extra_messages = 37;
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_extra_messages_size()); i < n; i++) {
+    const auto& repfield = this->_internal_extra_messages(i);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        InternalWriteMessage(37, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -21656,6 +24375,13 @@ size_t CMsgMatchMetaDataContents_MatchInfo::ByteSizeLong() const {
   // repeated .CMsgMatchMetaDataContents.StreetBrawlRound street_brawl_rounds = 33;
   total_size += 2UL * this->_internal_street_brawl_rounds_size();
   for (const auto& msg : this->_impl_.street_brawl_rounds_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // repeated .CExtraMsgBlock extra_messages = 37;
+  total_size += 2UL * this->_internal_extra_messages_size();
+  for (const auto& msg : this->_impl_.extra_messages_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
@@ -21757,7 +24483,7 @@ size_t CMsgMatchMetaDataContents_MatchInfo::ByteSizeLong() const {
     }
 
   }
-  if (cached_has_bits & 0x001f0000u) {
+  if (cached_has_bits & 0x00ff0000u) {
     // optional uint32 average_badge_team0 = 23;
     if (cached_has_bits & 0x00010000u) {
       total_size += 2 +
@@ -21790,6 +24516,26 @@ size_t CMsgMatchMetaDataContents_MatchInfo::ByteSizeLong() const {
         ::_pbi::WireFormatLite::EnumSize(this->_internal_bot_difficulty());
     }
 
+    // optional .ECitadelRankedType ranked_type = 34 [default = k_eCitadelRankedType_Invalid];
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_ranked_type());
+    }
+
+    // optional uint32 rank_interval = 35;
+    if (cached_has_bits & 0x00400000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt32Size(
+          this->_internal_rank_interval());
+    }
+
+    // optional uint32 corrupted_penalty_seed = 36;
+    if (cached_has_bits & 0x00800000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt32Size(
+          this->_internal_corrupted_penalty_seed());
+    }
+
   }
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
@@ -21819,6 +24565,7 @@ void CMsgMatchMetaDataContents_MatchInfo::MergeImpl(::PROTOBUF_NAMESPACE_ID::Mes
   _this->_impl_.match_tracked_stats_.MergeFrom(from._impl_.match_tracked_stats_);
   _this->_impl_.teams_.MergeFrom(from._impl_.teams_);
   _this->_impl_.street_brawl_rounds_.MergeFrom(from._impl_.street_brawl_rounds_);
+  _this->_impl_.extra_messages_.MergeFrom(from._impl_.extra_messages_);
   cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
@@ -21876,7 +24623,7 @@ void CMsgMatchMetaDataContents_MatchInfo::MergeImpl(::PROTOBUF_NAMESPACE_ID::Mes
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 0x001f0000u) {
+  if (cached_has_bits & 0x00ff0000u) {
     if (cached_has_bits & 0x00010000u) {
       _this->_impl_.average_badge_team0_ = from._impl_.average_badge_team0_;
     }
@@ -21891,6 +24638,15 @@ void CMsgMatchMetaDataContents_MatchInfo::MergeImpl(::PROTOBUF_NAMESPACE_ID::Mes
     }
     if (cached_has_bits & 0x00100000u) {
       _this->_impl_.bot_difficulty_ = from._impl_.bot_difficulty_;
+    }
+    if (cached_has_bits & 0x00200000u) {
+      _this->_impl_.ranked_type_ = from._impl_.ranked_type_;
+    }
+    if (cached_has_bits & 0x00400000u) {
+      _this->_impl_.rank_interval_ = from._impl_.rank_interval_;
+    }
+    if (cached_has_bits & 0x00800000u) {
+      _this->_impl_.corrupted_penalty_seed_ = from._impl_.corrupted_penalty_seed_;
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
@@ -21922,9 +24678,10 @@ void CMsgMatchMetaDataContents_MatchInfo::InternalSwap(CMsgMatchMetaDataContents
   _impl_.match_tracked_stats_.InternalSwap(&other->_impl_.match_tracked_stats_);
   _impl_.teams_.InternalSwap(&other->_impl_.teams_);
   _impl_.street_brawl_rounds_.InternalSwap(&other->_impl_.street_brawl_rounds_);
+  _impl_.extra_messages_.InternalSwap(&other->_impl_.extra_messages_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CMsgMatchMetaDataContents_MatchInfo, _impl_.bot_difficulty_)
-      + sizeof(CMsgMatchMetaDataContents_MatchInfo::_impl_.bot_difficulty_)
+      PROTOBUF_FIELD_OFFSET(CMsgMatchMetaDataContents_MatchInfo, _impl_.corrupted_penalty_seed_)
+      + sizeof(CMsgMatchMetaDataContents_MatchInfo::_impl_.corrupted_penalty_seed_)
       - PROTOBUF_FIELD_OFFSET(CMsgMatchMetaDataContents_MatchInfo, _impl_.match_paths_)>(
           reinterpret_cast<char*>(&_impl_.match_paths_),
           reinterpret_cast<char*>(&other->_impl_.match_paths_));
@@ -21933,7 +24690,7 @@ void CMsgMatchMetaDataContents_MatchInfo::InternalSwap(CMsgMatchMetaDataContents
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents_MatchInfo::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[47]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[51]);
 }
 
 // ===================================================================
@@ -22139,7 +24896,7 @@ void CMsgMatchMetaDataContents::InternalSwap(CMsgMatchMetaDataContents* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaDataContents::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[48]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[52]);
 }
 
 // ===================================================================
@@ -22428,7 +25185,7 @@ void CMsgMatchMetaData::InternalSwap(CMsgMatchMetaData* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchMetaData::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[49]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[53]);
 }
 
 // ===================================================================
@@ -22693,7 +25450,7 @@ void CMsgMapLine::InternalSwap(CMsgMapLine* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgMapLine::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[50]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[54]);
 }
 
 // ===================================================================
@@ -23069,7 +25826,7 @@ void CMsgAccountHeroStats::InternalSwap(CMsgAccountHeroStats* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgAccountHeroStats::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[51]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[55]);
 }
 
 // ===================================================================
@@ -23334,7 +26091,7 @@ void CMsgAccountBookStats::InternalSwap(CMsgAccountBookStats* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgAccountBookStats::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[52]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[56]);
 }
 
 // ===================================================================
@@ -23559,7 +26316,7 @@ void CMsgAccountStats::InternalSwap(CMsgAccountStats* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgAccountStats::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[53]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[57]);
 }
 
 // ===================================================================
@@ -23796,7 +26553,7 @@ void CMsgTrackedStat::InternalSwap(CMsgTrackedStat* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgTrackedStat::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[54]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[58]);
 }
 
 // ===================================================================
@@ -23809,6 +26566,9 @@ class CMsgGCAccountData::_Internal {
   }
   static void set_has_cheater_report_score(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
+  }
+  static void set_has_num_comms_reports(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
 };
 
@@ -23825,12 +26585,13 @@ CMsgGCAccountData::CMsgGCAccountData(const CMsgGCAccountData& from)
       decltype(_impl_._has_bits_){from._impl_._has_bits_}
     , /*decltype(_impl_._cached_size_)*/{}
     , decltype(_impl_.account_id_){}
-    , decltype(_impl_.cheater_report_score_){}};
+    , decltype(_impl_.cheater_report_score_){}
+    , decltype(_impl_.num_comms_reports_){}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&_impl_.account_id_, &from._impl_.account_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.cheater_report_score_) -
-    reinterpret_cast<char*>(&_impl_.account_id_)) + sizeof(_impl_.cheater_report_score_));
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.num_comms_reports_) -
+    reinterpret_cast<char*>(&_impl_.account_id_)) + sizeof(_impl_.num_comms_reports_));
   // @@protoc_insertion_point(copy_constructor:CMsgGCAccountData)
 }
 
@@ -23843,6 +26604,7 @@ inline void CMsgGCAccountData::SharedCtor(
     , /*decltype(_impl_._cached_size_)*/{}
     , decltype(_impl_.account_id_){0u}
     , decltype(_impl_.cheater_report_score_){0}
+    , decltype(_impl_.num_comms_reports_){0u}
   };
 }
 
@@ -23870,10 +26632,10 @@ void CMsgGCAccountData::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _impl_._has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
+  if (cached_has_bits & 0x00000007u) {
     ::memset(&_impl_.account_id_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&_impl_.cheater_report_score_) -
-        reinterpret_cast<char*>(&_impl_.account_id_)) + sizeof(_impl_.cheater_report_score_));
+        reinterpret_cast<char*>(&_impl_.num_comms_reports_) -
+        reinterpret_cast<char*>(&_impl_.account_id_)) + sizeof(_impl_.num_comms_reports_));
   }
   _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -23901,6 +26663,15 @@ const char* CMsgGCAccountData::_InternalParse(const char* ptr, ::_pbi::ParseCont
           _Internal::set_has_cheater_report_score(&has_bits);
           _impl_.cheater_report_score_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 num_comms_reports = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _Internal::set_has_num_comms_reports(&has_bits);
+          _impl_.num_comms_reports_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
@@ -23947,6 +26718,12 @@ uint8_t* CMsgGCAccountData::_InternalSerialize(
     target = ::_pbi::WireFormatLite::WriteFloatToArray(2, this->_internal_cheater_report_score(), target);
   }
 
+  // optional uint32 num_comms_reports = 3;
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(3, this->_internal_num_comms_reports(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -23964,7 +26741,7 @@ size_t CMsgGCAccountData::ByteSizeLong() const {
   (void) cached_has_bits;
 
   cached_has_bits = _impl_._has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
+  if (cached_has_bits & 0x00000007u) {
     // optional uint32 account_id = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_account_id());
@@ -23973,6 +26750,11 @@ size_t CMsgGCAccountData::ByteSizeLong() const {
     // optional float cheater_report_score = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 4;
+    }
+
+    // optional uint32 num_comms_reports = 3;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_num_comms_reports());
     }
 
   }
@@ -23995,12 +26777,15 @@ void CMsgGCAccountData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, cons
   (void) cached_has_bits;
 
   cached_has_bits = from._impl_._has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       _this->_impl_.account_id_ = from._impl_.account_id_;
     }
     if (cached_has_bits & 0x00000002u) {
       _this->_impl_.cheater_report_score_ = from._impl_.cheater_report_score_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_impl_.num_comms_reports_ = from._impl_.num_comms_reports_;
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
@@ -24023,8 +26808,8 @@ void CMsgGCAccountData::InternalSwap(CMsgGCAccountData* other) {
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CMsgGCAccountData, _impl_.cheater_report_score_)
-      + sizeof(CMsgGCAccountData::_impl_.cheater_report_score_)
+      PROTOBUF_FIELD_OFFSET(CMsgGCAccountData, _impl_.num_comms_reports_)
+      + sizeof(CMsgGCAccountData::_impl_.num_comms_reports_)
       - PROTOBUF_FIELD_OFFSET(CMsgGCAccountData, _impl_.account_id_)>(
           reinterpret_cast<char*>(&_impl_.account_id_),
           reinterpret_cast<char*>(&other->_impl_.account_id_));
@@ -24033,7 +26818,7 @@ void CMsgGCAccountData::InternalSwap(CMsgGCAccountData* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgGCAccountData::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[55]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[59]);
 }
 
 // ===================================================================
@@ -24385,7 +27170,7 @@ void CMsgHeroBuild_BuildModEntry::InternalSwap(CMsgHeroBuild_BuildModEntry* othe
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgHeroBuild_BuildModEntry::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[56]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[60]);
 }
 
 // ===================================================================
@@ -24802,7 +27587,7 @@ void CMsgHeroBuild_BuildModCategory::InternalSwap(CMsgHeroBuild_BuildModCategory
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgHeroBuild_BuildModCategory::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[57]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[61]);
 }
 
 // ===================================================================
@@ -25126,7 +27911,7 @@ void CMsgHeroBuild_CurrencyChange::InternalSwap(CMsgHeroBuild_CurrencyChange* ot
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgHeroBuild_CurrencyChange::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[58]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[62]);
 }
 
 // ===================================================================
@@ -25311,7 +28096,7 @@ void CMsgHeroBuild_AbilityOrder::InternalSwap(CMsgHeroBuild_AbilityOrder* other)
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgHeroBuild_AbilityOrder::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[59]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[63]);
 }
 
 // ===================================================================
@@ -25551,7 +28336,7 @@ void CMsgHeroBuild_Details_V0::InternalSwap(CMsgHeroBuild_Details_V0* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgHeroBuild_Details_V0::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[60]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[64]);
 }
 
 // ===================================================================
@@ -26193,7 +28978,7 @@ void CMsgHeroBuild::InternalSwap(CMsgHeroBuild* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgHeroBuild::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[61]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[65]);
 }
 
 // ===================================================================
@@ -26455,7 +29240,2592 @@ void CMsgHeroBuildPreference::InternalSwap(CMsgHeroBuildPreference* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgHeroBuildPreference::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[62]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[66]);
+}
+
+// ===================================================================
+
+class CMsgCitadelCombatLogEntry::_Internal {
+ public:
+  using HasBits = decltype(std::declval<CMsgCitadelCombatLogEntry>()._impl_._has_bits_);
+  static void set_has_type(HasBits* has_bits) {
+    (*has_bits)[1] |= 4194304u;
+  }
+  static void set_has_target_name(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_target_source_name(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_attacker_name(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static void set_has_damage_source_name(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
+  }
+  static void set_has_inflictor_name(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
+  }
+  static void set_has_is_attacker_hero(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
+  }
+  static void set_has_is_target_hero(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
+  }
+  static void set_has_is_visible_sapphire(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
+  }
+  static void set_has_is_visible_amber(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
+  }
+  static void set_has_value(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
+  }
+  static void set_has_health(HasBits* has_bits) {
+    (*has_bits)[0] |= 1024u;
+  }
+  static void set_has_timestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 2048u;
+  }
+  static void set_has_timestamp_raw(HasBits* has_bits) {
+    (*has_bits)[0] |= 4096u;
+  }
+  static void set_has_attacker_team(HasBits* has_bits) {
+    (*has_bits)[0] |= 8192u;
+  }
+  static void set_has_target_team(HasBits* has_bits) {
+    (*has_bits)[0] |= 16384u;
+  }
+  static void set_has_is_ability_toggle_on(HasBits* has_bits) {
+    (*has_bits)[0] |= 1048576u;
+  }
+  static void set_has_is_ability_toggle_off(HasBits* has_bits) {
+    (*has_bits)[0] |= 2097152u;
+  }
+  static void set_has_damage_type(HasBits* has_bits) {
+    (*has_bits)[0] |= 32768u;
+  }
+  static void set_has_networth(HasBits* has_bits) {
+    (*has_bits)[0] |= 65536u;
+  }
+  static void set_has_currency_type(HasBits* has_bits) {
+    (*has_bits)[0] |= 262144u;
+  }
+  static void set_has_currency_source(HasBits* has_bits) {
+    (*has_bits)[1] |= 64u;
+  }
+  static void set_has_location_x(HasBits* has_bits) {
+    (*has_bits)[0] |= 524288u;
+  }
+  static void set_has_location_y(HasBits* has_bits) {
+    (*has_bits)[0] |= 16777216u;
+  }
+  static void set_has_ability_upgrade_bits(HasBits* has_bits) {
+    (*has_bits)[0] |= 33554432u;
+  }
+  static void set_has_modifier_duration(HasBits* has_bits) {
+    (*has_bits)[0] |= 67108864u;
+  }
+  static void set_has_target_objective_id(HasBits* has_bits) {
+    (*has_bits)[0] |= 131072u;
+  }
+  static void set_has_target_is_self(HasBits* has_bits) {
+    (*has_bits)[0] |= 4194304u;
+  }
+  static void set_has_target_class(HasBits* has_bits) {
+    (*has_bits)[1] |= 32768u;
+  }
+  static void set_has_is_ultimate_ability(HasBits* has_bits) {
+    (*has_bits)[0] |= 8388608u;
+  }
+  static void set_has_uses_charges(HasBits* has_bits) {
+    (*has_bits)[0] |= 134217728u;
+  }
+  static void set_has_inflictor_is_stolen_ability(HasBits* has_bits) {
+    (*has_bits)[0] |= 268435456u;
+  }
+  static void set_has_spell_generated_attack(HasBits* has_bits) {
+    (*has_bits)[0] |= 536870912u;
+  }
+  static void set_has_heal_from_lifesteal(HasBits* has_bits) {
+    (*has_bits)[0] |= 1073741824u;
+  }
+  static void set_has_regenerated_health(HasBits* has_bits) {
+    (*has_bits)[0] |= 2147483648u;
+  }
+  static void set_has_will_reincarnate(HasBits* has_bits) {
+    (*has_bits)[1] |= 2u;
+  }
+  static void set_has_modifier_ability(HasBits* has_bits) {
+    (*has_bits)[1] |= 1u;
+  }
+  static void set_has_modifier_hidden(HasBits* has_bits) {
+    (*has_bits)[1] |= 4u;
+  }
+  static void set_has_modifier_elapsed_duration(HasBits* has_bits) {
+    (*has_bits)[1] |= 32u;
+  }
+  static void set_has_hidden_modifier(HasBits* has_bits) {
+    (*has_bits)[1] |= 8u;
+  }
+  static void set_has_silence_modifier(HasBits* has_bits) {
+    (*has_bits)[1] |= 16u;
+  }
+  static void set_has_modifier_purged(HasBits* has_bits) {
+    (*has_bits)[1] |= 128u;
+  }
+  static void set_has_long_range_kill(HasBits* has_bits) {
+    (*has_bits)[1] |= 256u;
+  }
+  static void set_has_aura_modifier(HasBits* has_bits) {
+    (*has_bits)[1] |= 512u;
+  }
+  static void set_has_immobilize_modifier(HasBits* has_bits) {
+    (*has_bits)[1] |= 1024u;
+  }
+  static void set_has_modifier_purge_npc(HasBits* has_bits) {
+    (*has_bits)[1] |= 2048u;
+  }
+  static void set_has_modifier_purge_ability(HasBits* has_bits) {
+    (*has_bits)[1] |= 4096u;
+  }
+  static void set_has_modifier_purged_duration(HasBits* has_bits) {
+    (*has_bits)[1] |= 8192u;
+  }
+  static void set_has_movement_control_modifier(HasBits* has_bits) {
+    (*has_bits)[1] |= 65536u;
+  }
+  static void set_has_powerup_type(HasBits* has_bits) {
+    (*has_bits)[1] |= 16384u;
+  }
+  static void set_has_is_primary_weapon(HasBits* has_bits) {
+    (*has_bits)[1] |= 131072u;
+  }
+  static void set_has_is_headshot(HasBits* has_bits) {
+    (*has_bits)[1] |= 262144u;
+  }
+  static void set_has_ability_name(HasBits* has_bits) {
+    (*has_bits)[1] |= 524288u;
+  }
+  static void set_has_full_refresh(HasBits* has_bits) {
+    (*has_bits)[1] |= 1048576u;
+  }
+  static void set_has_hits(HasBits* has_bits) {
+    (*has_bits)[1] |= 2097152u;
+  }
+};
+
+CMsgCitadelCombatLogEntry::CMsgCitadelCombatLogEntry(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:CMsgCitadelCombatLogEntry)
+}
+CMsgCitadelCombatLogEntry::CMsgCitadelCombatLogEntry(const CMsgCitadelCombatLogEntry& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CMsgCitadelCombatLogEntry* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.assist_players_){from._impl_.assist_players_}
+    , decltype(_impl_.target_name_){}
+    , decltype(_impl_.target_source_name_){}
+    , decltype(_impl_.attacker_name_){}
+    , decltype(_impl_.damage_source_name_){}
+    , decltype(_impl_.inflictor_name_){}
+    , decltype(_impl_.is_attacker_hero_){}
+    , decltype(_impl_.is_target_hero_){}
+    , decltype(_impl_.is_visible_sapphire_){}
+    , decltype(_impl_.is_visible_amber_){}
+    , decltype(_impl_.value_){}
+    , decltype(_impl_.health_){}
+    , decltype(_impl_.timestamp_){}
+    , decltype(_impl_.timestamp_raw_){}
+    , decltype(_impl_.attacker_team_){}
+    , decltype(_impl_.target_team_){}
+    , decltype(_impl_.damage_type_){}
+    , decltype(_impl_.networth_){}
+    , decltype(_impl_.target_objective_id_){}
+    , decltype(_impl_.currency_type_){}
+    , decltype(_impl_.location_x_){}
+    , decltype(_impl_.is_ability_toggle_on_){}
+    , decltype(_impl_.is_ability_toggle_off_){}
+    , decltype(_impl_.target_is_self_){}
+    , decltype(_impl_.is_ultimate_ability_){}
+    , decltype(_impl_.location_y_){}
+    , decltype(_impl_.ability_upgrade_bits_){}
+    , decltype(_impl_.modifier_duration_){}
+    , decltype(_impl_.uses_charges_){}
+    , decltype(_impl_.inflictor_is_stolen_ability_){}
+    , decltype(_impl_.spell_generated_attack_){}
+    , decltype(_impl_.heal_from_lifesteal_){}
+    , decltype(_impl_.regenerated_health_){}
+    , decltype(_impl_.modifier_ability_){}
+    , decltype(_impl_.will_reincarnate_){}
+    , decltype(_impl_.modifier_hidden_){}
+    , decltype(_impl_.hidden_modifier_){}
+    , decltype(_impl_.silence_modifier_){}
+    , decltype(_impl_.modifier_elapsed_duration_){}
+    , decltype(_impl_.currency_source_){}
+    , decltype(_impl_.modifier_purged_){}
+    , decltype(_impl_.long_range_kill_){}
+    , decltype(_impl_.aura_modifier_){}
+    , decltype(_impl_.immobilize_modifier_){}
+    , decltype(_impl_.modifier_purge_npc_){}
+    , decltype(_impl_.modifier_purge_ability_){}
+    , decltype(_impl_.modifier_purged_duration_){}
+    , decltype(_impl_.powerup_type_){}
+    , decltype(_impl_.target_class_){}
+    , decltype(_impl_.movement_control_modifier_){}
+    , decltype(_impl_.is_primary_weapon_){}
+    , decltype(_impl_.is_headshot_){}
+    , decltype(_impl_.ability_name_){}
+    , decltype(_impl_.full_refresh_){}
+    , decltype(_impl_.hits_){}
+    , decltype(_impl_.type_){}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&_impl_.target_name_, &from._impl_.target_name_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.type_) -
+    reinterpret_cast<char*>(&_impl_.target_name_)) + sizeof(_impl_.type_));
+  // @@protoc_insertion_point(copy_constructor:CMsgCitadelCombatLogEntry)
+}
+
+inline void CMsgCitadelCombatLogEntry::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.assist_players_){arena}
+    , decltype(_impl_.target_name_){0u}
+    , decltype(_impl_.target_source_name_){0u}
+    , decltype(_impl_.attacker_name_){0u}
+    , decltype(_impl_.damage_source_name_){0u}
+    , decltype(_impl_.inflictor_name_){0u}
+    , decltype(_impl_.is_attacker_hero_){false}
+    , decltype(_impl_.is_target_hero_){false}
+    , decltype(_impl_.is_visible_sapphire_){false}
+    , decltype(_impl_.is_visible_amber_){false}
+    , decltype(_impl_.value_){0u}
+    , decltype(_impl_.health_){0}
+    , decltype(_impl_.timestamp_){0}
+    , decltype(_impl_.timestamp_raw_){0}
+    , decltype(_impl_.attacker_team_){0u}
+    , decltype(_impl_.target_team_){0u}
+    , decltype(_impl_.damage_type_){0u}
+    , decltype(_impl_.networth_){0u}
+    , decltype(_impl_.target_objective_id_){0u}
+    , decltype(_impl_.currency_type_){0u}
+    , decltype(_impl_.location_x_){0}
+    , decltype(_impl_.is_ability_toggle_on_){false}
+    , decltype(_impl_.is_ability_toggle_off_){false}
+    , decltype(_impl_.target_is_self_){false}
+    , decltype(_impl_.is_ultimate_ability_){false}
+    , decltype(_impl_.location_y_){0}
+    , decltype(_impl_.ability_upgrade_bits_){0}
+    , decltype(_impl_.modifier_duration_){0}
+    , decltype(_impl_.uses_charges_){false}
+    , decltype(_impl_.inflictor_is_stolen_ability_){false}
+    , decltype(_impl_.spell_generated_attack_){false}
+    , decltype(_impl_.heal_from_lifesteal_){false}
+    , decltype(_impl_.regenerated_health_){0}
+    , decltype(_impl_.modifier_ability_){0u}
+    , decltype(_impl_.will_reincarnate_){false}
+    , decltype(_impl_.modifier_hidden_){false}
+    , decltype(_impl_.hidden_modifier_){false}
+    , decltype(_impl_.silence_modifier_){false}
+    , decltype(_impl_.modifier_elapsed_duration_){0}
+    , decltype(_impl_.currency_source_){0u}
+    , decltype(_impl_.modifier_purged_){false}
+    , decltype(_impl_.long_range_kill_){false}
+    , decltype(_impl_.aura_modifier_){false}
+    , decltype(_impl_.immobilize_modifier_){false}
+    , decltype(_impl_.modifier_purge_npc_){0}
+    , decltype(_impl_.modifier_purge_ability_){0}
+    , decltype(_impl_.modifier_purged_duration_){0}
+    , decltype(_impl_.powerup_type_){0}
+    , decltype(_impl_.target_class_){0}
+    , decltype(_impl_.movement_control_modifier_){false}
+    , decltype(_impl_.is_primary_weapon_){false}
+    , decltype(_impl_.is_headshot_){false}
+    , decltype(_impl_.ability_name_){0}
+    , decltype(_impl_.full_refresh_){0}
+    , decltype(_impl_.hits_){0}
+    , decltype(_impl_.type_){-1}
+  };
+}
+
+CMsgCitadelCombatLogEntry::~CMsgCitadelCombatLogEntry() {
+  // @@protoc_insertion_point(destructor:CMsgCitadelCombatLogEntry)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void CMsgCitadelCombatLogEntry::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.assist_players_.~RepeatedField();
+}
+
+void CMsgCitadelCombatLogEntry::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void CMsgCitadelCombatLogEntry::Clear() {
+// @@protoc_insertion_point(message_clear_start:CMsgCitadelCombatLogEntry)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.assist_players_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
+    ::memset(&_impl_.target_name_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.is_visible_sapphire_) -
+        reinterpret_cast<char*>(&_impl_.target_name_)) + sizeof(_impl_.is_visible_sapphire_));
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    ::memset(&_impl_.is_visible_amber_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.damage_type_) -
+        reinterpret_cast<char*>(&_impl_.is_visible_amber_)) + sizeof(_impl_.damage_type_));
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    ::memset(&_impl_.networth_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.is_ultimate_ability_) -
+        reinterpret_cast<char*>(&_impl_.networth_)) + sizeof(_impl_.is_ultimate_ability_));
+  }
+  if (cached_has_bits & 0xff000000u) {
+    ::memset(&_impl_.location_y_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.regenerated_health_) -
+        reinterpret_cast<char*>(&_impl_.location_y_)) + sizeof(_impl_.regenerated_health_));
+  }
+  cached_has_bits = _impl_._has_bits_[1];
+  if (cached_has_bits & 0x000000ffu) {
+    ::memset(&_impl_.modifier_ability_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.modifier_purged_) -
+        reinterpret_cast<char*>(&_impl_.modifier_ability_)) + sizeof(_impl_.modifier_purged_));
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    ::memset(&_impl_.long_range_kill_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.target_class_) -
+        reinterpret_cast<char*>(&_impl_.long_range_kill_)) + sizeof(_impl_.target_class_));
+  }
+  if (cached_has_bits & 0x007f0000u) {
+    ::memset(&_impl_.movement_control_modifier_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.hits_) -
+        reinterpret_cast<char*>(&_impl_.movement_control_modifier_)) + sizeof(_impl_.hits_));
+    _impl_.type_ = -1;
+  }
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CMsgCitadelCombatLogEntry::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // optional .ECitadelCombatLogTypes type = 1 [default = k_eCitadelCombatLog_Invalid];
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ECitadelCombatLogTypes_IsValid(val))) {
+            _internal_set_type(static_cast<::ECitadelCombatLogTypes>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(1, val, mutable_unknown_fields());
+          }
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 target_name = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_target_name(&_impl_._has_bits_);
+          _impl_.target_name_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 target_source_name = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _Internal::set_has_target_source_name(&_impl_._has_bits_);
+          _impl_.target_source_name_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 attacker_name = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_attacker_name(&_impl_._has_bits_);
+          _impl_.attacker_name_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 damage_source_name = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
+          _Internal::set_has_damage_source_name(&_impl_._has_bits_);
+          _impl_.damage_source_name_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 inflictor_name = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_inflictor_name(&_impl_._has_bits_);
+          _impl_.inflictor_name_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool is_attacker_hero = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
+          _Internal::set_has_is_attacker_hero(&_impl_._has_bits_);
+          _impl_.is_attacker_hero_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool is_target_hero = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_is_target_hero(&_impl_._has_bits_);
+          _impl_.is_target_hero_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool is_visible_sapphire = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 72)) {
+          _Internal::set_has_is_visible_sapphire(&_impl_._has_bits_);
+          _impl_.is_visible_sapphire_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool is_visible_amber = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_is_visible_amber(&_impl_._has_bits_);
+          _impl_.is_visible_amber_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 value = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 88)) {
+          _Internal::set_has_value(&_impl_._has_bits_);
+          _impl_.value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional int32 health = 12;
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_health(&_impl_._has_bits_);
+          _impl_.health_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional float timestamp = 13;
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 109)) {
+          _Internal::set_has_timestamp(&_impl_._has_bits_);
+          _impl_.timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          ptr += sizeof(float);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional float timestamp_raw = 14;
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 117)) {
+          _Internal::set_has_timestamp_raw(&_impl_._has_bits_);
+          _impl_.timestamp_raw_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          ptr += sizeof(float);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 attacker_team = 17;
+      case 17:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 136)) {
+          _Internal::set_has_attacker_team(&_impl_._has_bits_);
+          _impl_.attacker_team_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 target_team = 18;
+      case 18:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_target_team(&_impl_._has_bits_);
+          _impl_.target_team_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool is_ability_toggle_on = 19;
+      case 19:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 152)) {
+          _Internal::set_has_is_ability_toggle_on(&_impl_._has_bits_);
+          _impl_.is_ability_toggle_on_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool is_ability_toggle_off = 20;
+      case 20:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_is_ability_toggle_off(&_impl_._has_bits_);
+          _impl_.is_ability_toggle_off_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 damage_type = 21;
+      case 21:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 168)) {
+          _Internal::set_has_damage_type(&_impl_._has_bits_);
+          _impl_.damage_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 networth = 22;
+      case 22:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_networth(&_impl_._has_bits_);
+          _impl_.networth_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 target_objective_id = 23;
+      case 23:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 184)) {
+          _Internal::set_has_target_objective_id(&_impl_._has_bits_);
+          _impl_.target_objective_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 currency_type = 24;
+      case 24:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          _Internal::set_has_currency_type(&_impl_._has_bits_);
+          _impl_.currency_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional float location_x = 25;
+      case 25:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 205)) {
+          _Internal::set_has_location_x(&_impl_._has_bits_);
+          _impl_.location_x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          ptr += sizeof(float);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional float location_y = 26;
+      case 26:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 213)) {
+          _Internal::set_has_location_y(&_impl_._has_bits_);
+          _impl_.location_y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          ptr += sizeof(float);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional int32 ability_upgrade_bits = 27;
+      case 27:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 216)) {
+          _Internal::set_has_ability_upgrade_bits(&_impl_._has_bits_);
+          _impl_.ability_upgrade_bits_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional float modifier_duration = 28;
+      case 28:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 229)) {
+          _Internal::set_has_modifier_duration(&_impl_._has_bits_);
+          _impl_.modifier_duration_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          ptr += sizeof(float);
+        } else
+          goto handle_unusual;
+        continue;
+      // repeated int32 assist_players = 29;
+      case 29:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 232)) {
+          ptr -= 2;
+          do {
+            ptr += 2;
+            _internal_add_assist_players(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr));
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<232>(ptr));
+        } else if (static_cast<uint8_t>(tag) == 234) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_assist_players(), ptr, ctx);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool target_is_self = 31;
+      case 31:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 248)) {
+          _Internal::set_has_target_is_self(&_impl_._has_bits_);
+          _impl_.target_is_self_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool is_ultimate_ability = 32;
+      case 32:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 0)) {
+          _Internal::set_has_is_ultimate_ability(&_impl_._has_bits_);
+          _impl_.is_ultimate_ability_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool uses_charges = 33;
+      case 33:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_uses_charges(&_impl_._has_bits_);
+          _impl_.uses_charges_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool inflictor_is_stolen_ability = 34;
+      case 34:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_inflictor_is_stolen_ability(&_impl_._has_bits_);
+          _impl_.inflictor_is_stolen_ability_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool spell_generated_attack = 35;
+      case 35:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _Internal::set_has_spell_generated_attack(&_impl_._has_bits_);
+          _impl_.spell_generated_attack_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool heal_from_lifesteal = 36;
+      case 36:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_heal_from_lifesteal(&_impl_._has_bits_);
+          _impl_.heal_from_lifesteal_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional float regenerated_health = 37;
+      case 37:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 45)) {
+          _Internal::set_has_regenerated_health(&_impl_._has_bits_);
+          _impl_.regenerated_health_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          ptr += sizeof(float);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool will_reincarnate = 38;
+      case 38:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_will_reincarnate(&_impl_._has_bits_);
+          _impl_.will_reincarnate_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 modifier_ability = 39;
+      case 39:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
+          _Internal::set_has_modifier_ability(&_impl_._has_bits_);
+          _impl_.modifier_ability_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool modifier_hidden = 40;
+      case 40:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_modifier_hidden(&_impl_._has_bits_);
+          _impl_.modifier_hidden_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional float modifier_elapsed_duration = 41;
+      case 41:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 77)) {
+          _Internal::set_has_modifier_elapsed_duration(&_impl_._has_bits_);
+          _impl_.modifier_elapsed_duration_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          ptr += sizeof(float);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool hidden_modifier = 42;
+      case 42:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_hidden_modifier(&_impl_._has_bits_);
+          _impl_.hidden_modifier_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool silence_modifier = 43;
+      case 43:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 88)) {
+          _Internal::set_has_silence_modifier(&_impl_._has_bits_);
+          _impl_.silence_modifier_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool modifier_purged = 44;
+      case 44:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_modifier_purged(&_impl_._has_bits_);
+          _impl_.modifier_purged_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 currency_source = 45;
+      case 45:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 104)) {
+          _Internal::set_has_currency_source(&_impl_._has_bits_);
+          _impl_.currency_source_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool long_range_kill = 46;
+      case 46:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          _Internal::set_has_long_range_kill(&_impl_._has_bits_);
+          _impl_.long_range_kill_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool aura_modifier = 47;
+      case 47:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 120)) {
+          _Internal::set_has_aura_modifier(&_impl_._has_bits_);
+          _impl_.aura_modifier_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool immobilize_modifier = 48;
+      case 48:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_immobilize_modifier(&_impl_._has_bits_);
+          _impl_.immobilize_modifier_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional int32 modifier_purge_npc = 49;
+      case 49:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 136)) {
+          _Internal::set_has_modifier_purge_npc(&_impl_._has_bits_);
+          _impl_.modifier_purge_npc_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional int32 modifier_purge_ability = 50;
+      case 50:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_modifier_purge_ability(&_impl_._has_bits_);
+          _impl_.modifier_purge_ability_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional float modifier_purged_duration = 51;
+      case 51:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 157)) {
+          _Internal::set_has_modifier_purged_duration(&_impl_._has_bits_);
+          _impl_.modifier_purged_duration_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          ptr += sizeof(float);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool movement_control_modifier = 52;
+      case 52:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_movement_control_modifier(&_impl_._has_bits_);
+          _impl_.movement_control_modifier_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional int32 powerup_type = 53;
+      case 53:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 168)) {
+          _Internal::set_has_powerup_type(&_impl_._has_bits_);
+          _impl_.powerup_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional int32 target_class = 54;
+      case 54:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_target_class(&_impl_._has_bits_);
+          _impl_.target_class_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool is_primary_weapon = 55;
+      case 55:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 184)) {
+          _Internal::set_has_is_primary_weapon(&_impl_._has_bits_);
+          _impl_.is_primary_weapon_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool is_headshot = 56;
+      case 56:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          _Internal::set_has_is_headshot(&_impl_._has_bits_);
+          _impl_.is_headshot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional int32 ability_name = 57;
+      case 57:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 200)) {
+          _Internal::set_has_ability_name(&_impl_._has_bits_);
+          _impl_.ability_name_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional int32 full_refresh = 59;
+      case 59:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 216)) {
+          _Internal::set_has_full_refresh(&_impl_._has_bits_);
+          _impl_.full_refresh_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional int32 hits = 60;
+      case 60:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 224)) {
+          _Internal::set_has_hits(&_impl_._has_bits_);
+          _impl_.hits_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CMsgCitadelCombatLogEntry::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CMsgCitadelCombatLogEntry)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .ECitadelCombatLogTypes type = 1 [default = k_eCitadelCombatLog_Invalid];
+  if (cached_has_bits & 0x00400000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+      1, this->_internal_type(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional uint32 target_name = 2;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_target_name(), target);
+  }
+
+  // optional uint32 target_source_name = 3;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(3, this->_internal_target_source_name(), target);
+  }
+
+  // optional uint32 attacker_name = 4;
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(4, this->_internal_attacker_name(), target);
+  }
+
+  // optional uint32 damage_source_name = 5;
+  if (cached_has_bits & 0x00000008u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(5, this->_internal_damage_source_name(), target);
+  }
+
+  // optional uint32 inflictor_name = 6;
+  if (cached_has_bits & 0x00000010u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(6, this->_internal_inflictor_name(), target);
+  }
+
+  // optional bool is_attacker_hero = 7;
+  if (cached_has_bits & 0x00000020u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(7, this->_internal_is_attacker_hero(), target);
+  }
+
+  // optional bool is_target_hero = 8;
+  if (cached_has_bits & 0x00000040u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(8, this->_internal_is_target_hero(), target);
+  }
+
+  // optional bool is_visible_sapphire = 9;
+  if (cached_has_bits & 0x00000080u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(9, this->_internal_is_visible_sapphire(), target);
+  }
+
+  // optional bool is_visible_amber = 10;
+  if (cached_has_bits & 0x00000100u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(10, this->_internal_is_visible_amber(), target);
+  }
+
+  // optional uint32 value = 11;
+  if (cached_has_bits & 0x00000200u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(11, this->_internal_value(), target);
+  }
+
+  // optional int32 health = 12;
+  if (cached_has_bits & 0x00000400u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(12, this->_internal_health(), target);
+  }
+
+  // optional float timestamp = 13;
+  if (cached_has_bits & 0x00000800u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(13, this->_internal_timestamp(), target);
+  }
+
+  // optional float timestamp_raw = 14;
+  if (cached_has_bits & 0x00001000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(14, this->_internal_timestamp_raw(), target);
+  }
+
+  // optional uint32 attacker_team = 17;
+  if (cached_has_bits & 0x00002000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(17, this->_internal_attacker_team(), target);
+  }
+
+  // optional uint32 target_team = 18;
+  if (cached_has_bits & 0x00004000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(18, this->_internal_target_team(), target);
+  }
+
+  // optional bool is_ability_toggle_on = 19;
+  if (cached_has_bits & 0x00100000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(19, this->_internal_is_ability_toggle_on(), target);
+  }
+
+  // optional bool is_ability_toggle_off = 20;
+  if (cached_has_bits & 0x00200000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(20, this->_internal_is_ability_toggle_off(), target);
+  }
+
+  // optional uint32 damage_type = 21;
+  if (cached_has_bits & 0x00008000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(21, this->_internal_damage_type(), target);
+  }
+
+  // optional uint32 networth = 22;
+  if (cached_has_bits & 0x00010000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(22, this->_internal_networth(), target);
+  }
+
+  // optional uint32 target_objective_id = 23;
+  if (cached_has_bits & 0x00020000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(23, this->_internal_target_objective_id(), target);
+  }
+
+  // optional uint32 currency_type = 24;
+  if (cached_has_bits & 0x00040000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(24, this->_internal_currency_type(), target);
+  }
+
+  // optional float location_x = 25;
+  if (cached_has_bits & 0x00080000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(25, this->_internal_location_x(), target);
+  }
+
+  // optional float location_y = 26;
+  if (cached_has_bits & 0x01000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(26, this->_internal_location_y(), target);
+  }
+
+  // optional int32 ability_upgrade_bits = 27;
+  if (cached_has_bits & 0x02000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(27, this->_internal_ability_upgrade_bits(), target);
+  }
+
+  // optional float modifier_duration = 28;
+  if (cached_has_bits & 0x04000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(28, this->_internal_modifier_duration(), target);
+  }
+
+  // repeated int32 assist_players = 29;
+  for (int i = 0, n = this->_internal_assist_players_size(); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(29, this->_internal_assist_players(i), target);
+  }
+
+  // optional bool target_is_self = 31;
+  if (cached_has_bits & 0x00400000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(31, this->_internal_target_is_self(), target);
+  }
+
+  // optional bool is_ultimate_ability = 32;
+  if (cached_has_bits & 0x00800000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(32, this->_internal_is_ultimate_ability(), target);
+  }
+
+  // optional bool uses_charges = 33;
+  if (cached_has_bits & 0x08000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(33, this->_internal_uses_charges(), target);
+  }
+
+  // optional bool inflictor_is_stolen_ability = 34;
+  if (cached_has_bits & 0x10000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(34, this->_internal_inflictor_is_stolen_ability(), target);
+  }
+
+  // optional bool spell_generated_attack = 35;
+  if (cached_has_bits & 0x20000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(35, this->_internal_spell_generated_attack(), target);
+  }
+
+  // optional bool heal_from_lifesteal = 36;
+  if (cached_has_bits & 0x40000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(36, this->_internal_heal_from_lifesteal(), target);
+  }
+
+  // optional float regenerated_health = 37;
+  if (cached_has_bits & 0x80000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(37, this->_internal_regenerated_health(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional bool will_reincarnate = 38;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(38, this->_internal_will_reincarnate(), target);
+  }
+
+  // optional uint32 modifier_ability = 39;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(39, this->_internal_modifier_ability(), target);
+  }
+
+  // optional bool modifier_hidden = 40;
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(40, this->_internal_modifier_hidden(), target);
+  }
+
+  // optional float modifier_elapsed_duration = 41;
+  if (cached_has_bits & 0x00000020u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(41, this->_internal_modifier_elapsed_duration(), target);
+  }
+
+  // optional bool hidden_modifier = 42;
+  if (cached_has_bits & 0x00000008u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(42, this->_internal_hidden_modifier(), target);
+  }
+
+  // optional bool silence_modifier = 43;
+  if (cached_has_bits & 0x00000010u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(43, this->_internal_silence_modifier(), target);
+  }
+
+  // optional bool modifier_purged = 44;
+  if (cached_has_bits & 0x00000080u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(44, this->_internal_modifier_purged(), target);
+  }
+
+  // optional uint32 currency_source = 45;
+  if (cached_has_bits & 0x00000040u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(45, this->_internal_currency_source(), target);
+  }
+
+  // optional bool long_range_kill = 46;
+  if (cached_has_bits & 0x00000100u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(46, this->_internal_long_range_kill(), target);
+  }
+
+  // optional bool aura_modifier = 47;
+  if (cached_has_bits & 0x00000200u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(47, this->_internal_aura_modifier(), target);
+  }
+
+  // optional bool immobilize_modifier = 48;
+  if (cached_has_bits & 0x00000400u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(48, this->_internal_immobilize_modifier(), target);
+  }
+
+  // optional int32 modifier_purge_npc = 49;
+  if (cached_has_bits & 0x00000800u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(49, this->_internal_modifier_purge_npc(), target);
+  }
+
+  // optional int32 modifier_purge_ability = 50;
+  if (cached_has_bits & 0x00001000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(50, this->_internal_modifier_purge_ability(), target);
+  }
+
+  // optional float modifier_purged_duration = 51;
+  if (cached_has_bits & 0x00002000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(51, this->_internal_modifier_purged_duration(), target);
+  }
+
+  // optional bool movement_control_modifier = 52;
+  if (cached_has_bits & 0x00010000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(52, this->_internal_movement_control_modifier(), target);
+  }
+
+  // optional int32 powerup_type = 53;
+  if (cached_has_bits & 0x00004000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(53, this->_internal_powerup_type(), target);
+  }
+
+  // optional int32 target_class = 54;
+  if (cached_has_bits & 0x00008000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(54, this->_internal_target_class(), target);
+  }
+
+  // optional bool is_primary_weapon = 55;
+  if (cached_has_bits & 0x00020000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(55, this->_internal_is_primary_weapon(), target);
+  }
+
+  // optional bool is_headshot = 56;
+  if (cached_has_bits & 0x00040000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(56, this->_internal_is_headshot(), target);
+  }
+
+  // optional int32 ability_name = 57;
+  if (cached_has_bits & 0x00080000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(57, this->_internal_ability_name(), target);
+  }
+
+  // optional int32 full_refresh = 59;
+  if (cached_has_bits & 0x00100000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(59, this->_internal_full_refresh(), target);
+  }
+
+  // optional int32 hits = 60;
+  if (cached_has_bits & 0x00200000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(60, this->_internal_hits(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CMsgCitadelCombatLogEntry)
+  return target;
+}
+
+size_t CMsgCitadelCombatLogEntry::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CMsgCitadelCombatLogEntry)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated int32 assist_players = 29;
+  {
+    size_t data_size = ::_pbi::WireFormatLite::
+      Int32Size(this->_impl_.assist_players_);
+    total_size += 2 *
+                  ::_pbi::FromIntSize(this->_internal_assist_players_size());
+    total_size += data_size;
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
+    // optional uint32 target_name = 2;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_target_name());
+    }
+
+    // optional uint32 target_source_name = 3;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_target_source_name());
+    }
+
+    // optional uint32 attacker_name = 4;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_attacker_name());
+    }
+
+    // optional uint32 damage_source_name = 5;
+    if (cached_has_bits & 0x00000008u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_damage_source_name());
+    }
+
+    // optional uint32 inflictor_name = 6;
+    if (cached_has_bits & 0x00000010u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_inflictor_name());
+    }
+
+    // optional bool is_attacker_hero = 7;
+    if (cached_has_bits & 0x00000020u) {
+      total_size += 1 + 1;
+    }
+
+    // optional bool is_target_hero = 8;
+    if (cached_has_bits & 0x00000040u) {
+      total_size += 1 + 1;
+    }
+
+    // optional bool is_visible_sapphire = 9;
+    if (cached_has_bits & 0x00000080u) {
+      total_size += 1 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    // optional bool is_visible_amber = 10;
+    if (cached_has_bits & 0x00000100u) {
+      total_size += 1 + 1;
+    }
+
+    // optional uint32 value = 11;
+    if (cached_has_bits & 0x00000200u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_value());
+    }
+
+    // optional int32 health = 12;
+    if (cached_has_bits & 0x00000400u) {
+      total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_health());
+    }
+
+    // optional float timestamp = 13;
+    if (cached_has_bits & 0x00000800u) {
+      total_size += 1 + 4;
+    }
+
+    // optional float timestamp_raw = 14;
+    if (cached_has_bits & 0x00001000u) {
+      total_size += 1 + 4;
+    }
+
+    // optional uint32 attacker_team = 17;
+    if (cached_has_bits & 0x00002000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt32Size(
+          this->_internal_attacker_team());
+    }
+
+    // optional uint32 target_team = 18;
+    if (cached_has_bits & 0x00004000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt32Size(
+          this->_internal_target_team());
+    }
+
+    // optional uint32 damage_type = 21;
+    if (cached_has_bits & 0x00008000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt32Size(
+          this->_internal_damage_type());
+    }
+
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    // optional uint32 networth = 22;
+    if (cached_has_bits & 0x00010000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt32Size(
+          this->_internal_networth());
+    }
+
+    // optional uint32 target_objective_id = 23;
+    if (cached_has_bits & 0x00020000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt32Size(
+          this->_internal_target_objective_id());
+    }
+
+    // optional uint32 currency_type = 24;
+    if (cached_has_bits & 0x00040000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt32Size(
+          this->_internal_currency_type());
+    }
+
+    // optional float location_x = 25;
+    if (cached_has_bits & 0x00080000u) {
+      total_size += 2 + 4;
+    }
+
+    // optional bool is_ability_toggle_on = 19;
+    if (cached_has_bits & 0x00100000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool is_ability_toggle_off = 20;
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool target_is_self = 31;
+    if (cached_has_bits & 0x00400000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool is_ultimate_ability = 32;
+    if (cached_has_bits & 0x00800000u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0xff000000u) {
+    // optional float location_y = 26;
+    if (cached_has_bits & 0x01000000u) {
+      total_size += 2 + 4;
+    }
+
+    // optional int32 ability_upgrade_bits = 27;
+    if (cached_has_bits & 0x02000000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::Int32Size(
+          this->_internal_ability_upgrade_bits());
+    }
+
+    // optional float modifier_duration = 28;
+    if (cached_has_bits & 0x04000000u) {
+      total_size += 2 + 4;
+    }
+
+    // optional bool uses_charges = 33;
+    if (cached_has_bits & 0x08000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool inflictor_is_stolen_ability = 34;
+    if (cached_has_bits & 0x10000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool spell_generated_attack = 35;
+    if (cached_has_bits & 0x20000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool heal_from_lifesteal = 36;
+    if (cached_has_bits & 0x40000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional float regenerated_health = 37;
+    if (cached_has_bits & 0x80000000u) {
+      total_size += 2 + 4;
+    }
+
+  }
+  cached_has_bits = _impl_._has_bits_[1];
+  if (cached_has_bits & 0x000000ffu) {
+    // optional uint32 modifier_ability = 39;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt32Size(
+          this->_internal_modifier_ability());
+    }
+
+    // optional bool will_reincarnate = 38;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool modifier_hidden = 40;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool hidden_modifier = 42;
+    if (cached_has_bits & 0x00000008u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool silence_modifier = 43;
+    if (cached_has_bits & 0x00000010u) {
+      total_size += 2 + 1;
+    }
+
+    // optional float modifier_elapsed_duration = 41;
+    if (cached_has_bits & 0x00000020u) {
+      total_size += 2 + 4;
+    }
+
+    // optional uint32 currency_source = 45;
+    if (cached_has_bits & 0x00000040u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt32Size(
+          this->_internal_currency_source());
+    }
+
+    // optional bool modifier_purged = 44;
+    if (cached_has_bits & 0x00000080u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    // optional bool long_range_kill = 46;
+    if (cached_has_bits & 0x00000100u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool aura_modifier = 47;
+    if (cached_has_bits & 0x00000200u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool immobilize_modifier = 48;
+    if (cached_has_bits & 0x00000400u) {
+      total_size += 2 + 1;
+    }
+
+    // optional int32 modifier_purge_npc = 49;
+    if (cached_has_bits & 0x00000800u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::Int32Size(
+          this->_internal_modifier_purge_npc());
+    }
+
+    // optional int32 modifier_purge_ability = 50;
+    if (cached_has_bits & 0x00001000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::Int32Size(
+          this->_internal_modifier_purge_ability());
+    }
+
+    // optional float modifier_purged_duration = 51;
+    if (cached_has_bits & 0x00002000u) {
+      total_size += 2 + 4;
+    }
+
+    // optional int32 powerup_type = 53;
+    if (cached_has_bits & 0x00004000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::Int32Size(
+          this->_internal_powerup_type());
+    }
+
+    // optional int32 target_class = 54;
+    if (cached_has_bits & 0x00008000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::Int32Size(
+          this->_internal_target_class());
+    }
+
+  }
+  if (cached_has_bits & 0x007f0000u) {
+    // optional bool movement_control_modifier = 52;
+    if (cached_has_bits & 0x00010000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool is_primary_weapon = 55;
+    if (cached_has_bits & 0x00020000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool is_headshot = 56;
+    if (cached_has_bits & 0x00040000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional int32 ability_name = 57;
+    if (cached_has_bits & 0x00080000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::Int32Size(
+          this->_internal_ability_name());
+    }
+
+    // optional int32 full_refresh = 59;
+    if (cached_has_bits & 0x00100000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::Int32Size(
+          this->_internal_full_refresh());
+    }
+
+    // optional int32 hits = 60;
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 +
+        ::_pbi::WireFormatLite::Int32Size(
+          this->_internal_hits());
+    }
+
+    // optional .ECitadelCombatLogTypes type = 1 [default = k_eCitadelCombatLog_Invalid];
+    if (cached_has_bits & 0x00400000u) {
+      total_size += 1 +
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_type());
+    }
+
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CMsgCitadelCombatLogEntry::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    CMsgCitadelCombatLogEntry::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CMsgCitadelCombatLogEntry::GetClassData() const { return &_class_data_; }
+
+
+void CMsgCitadelCombatLogEntry::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CMsgCitadelCombatLogEntry*>(&to_msg);
+  auto& from = static_cast<const CMsgCitadelCombatLogEntry&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CMsgCitadelCombatLogEntry)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_impl_.assist_players_.MergeFrom(from._impl_.assist_players_);
+  cached_has_bits = from._impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_impl_.target_name_ = from._impl_.target_name_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.target_source_name_ = from._impl_.target_source_name_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_impl_.attacker_name_ = from._impl_.attacker_name_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      _this->_impl_.damage_source_name_ = from._impl_.damage_source_name_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      _this->_impl_.inflictor_name_ = from._impl_.inflictor_name_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      _this->_impl_.is_attacker_hero_ = from._impl_.is_attacker_hero_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      _this->_impl_.is_target_hero_ = from._impl_.is_target_hero_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      _this->_impl_.is_visible_sapphire_ = from._impl_.is_visible_sapphire_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_impl_.is_visible_amber_ = from._impl_.is_visible_amber_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_impl_.value_ = from._impl_.value_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_impl_.health_ = from._impl_.health_;
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_impl_.timestamp_ = from._impl_.timestamp_;
+    }
+    if (cached_has_bits & 0x00001000u) {
+      _this->_impl_.timestamp_raw_ = from._impl_.timestamp_raw_;
+    }
+    if (cached_has_bits & 0x00002000u) {
+      _this->_impl_.attacker_team_ = from._impl_.attacker_team_;
+    }
+    if (cached_has_bits & 0x00004000u) {
+      _this->_impl_.target_team_ = from._impl_.target_team_;
+    }
+    if (cached_has_bits & 0x00008000u) {
+      _this->_impl_.damage_type_ = from._impl_.damage_type_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      _this->_impl_.networth_ = from._impl_.networth_;
+    }
+    if (cached_has_bits & 0x00020000u) {
+      _this->_impl_.target_objective_id_ = from._impl_.target_objective_id_;
+    }
+    if (cached_has_bits & 0x00040000u) {
+      _this->_impl_.currency_type_ = from._impl_.currency_type_;
+    }
+    if (cached_has_bits & 0x00080000u) {
+      _this->_impl_.location_x_ = from._impl_.location_x_;
+    }
+    if (cached_has_bits & 0x00100000u) {
+      _this->_impl_.is_ability_toggle_on_ = from._impl_.is_ability_toggle_on_;
+    }
+    if (cached_has_bits & 0x00200000u) {
+      _this->_impl_.is_ability_toggle_off_ = from._impl_.is_ability_toggle_off_;
+    }
+    if (cached_has_bits & 0x00400000u) {
+      _this->_impl_.target_is_self_ = from._impl_.target_is_self_;
+    }
+    if (cached_has_bits & 0x00800000u) {
+      _this->_impl_.is_ultimate_ability_ = from._impl_.is_ultimate_ability_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0xff000000u) {
+    if (cached_has_bits & 0x01000000u) {
+      _this->_impl_.location_y_ = from._impl_.location_y_;
+    }
+    if (cached_has_bits & 0x02000000u) {
+      _this->_impl_.ability_upgrade_bits_ = from._impl_.ability_upgrade_bits_;
+    }
+    if (cached_has_bits & 0x04000000u) {
+      _this->_impl_.modifier_duration_ = from._impl_.modifier_duration_;
+    }
+    if (cached_has_bits & 0x08000000u) {
+      _this->_impl_.uses_charges_ = from._impl_.uses_charges_;
+    }
+    if (cached_has_bits & 0x10000000u) {
+      _this->_impl_.inflictor_is_stolen_ability_ = from._impl_.inflictor_is_stolen_ability_;
+    }
+    if (cached_has_bits & 0x20000000u) {
+      _this->_impl_.spell_generated_attack_ = from._impl_.spell_generated_attack_;
+    }
+    if (cached_has_bits & 0x40000000u) {
+      _this->_impl_.heal_from_lifesteal_ = from._impl_.heal_from_lifesteal_;
+    }
+    if (cached_has_bits & 0x80000000u) {
+      _this->_impl_.regenerated_health_ = from._impl_.regenerated_health_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  cached_has_bits = from._impl_._has_bits_[1];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_impl_.modifier_ability_ = from._impl_.modifier_ability_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.will_reincarnate_ = from._impl_.will_reincarnate_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_impl_.modifier_hidden_ = from._impl_.modifier_hidden_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      _this->_impl_.hidden_modifier_ = from._impl_.hidden_modifier_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      _this->_impl_.silence_modifier_ = from._impl_.silence_modifier_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      _this->_impl_.modifier_elapsed_duration_ = from._impl_.modifier_elapsed_duration_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      _this->_impl_.currency_source_ = from._impl_.currency_source_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      _this->_impl_.modifier_purged_ = from._impl_.modifier_purged_;
+    }
+    _this->_impl_._has_bits_[1] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_impl_.long_range_kill_ = from._impl_.long_range_kill_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_impl_.aura_modifier_ = from._impl_.aura_modifier_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_impl_.immobilize_modifier_ = from._impl_.immobilize_modifier_;
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_impl_.modifier_purge_npc_ = from._impl_.modifier_purge_npc_;
+    }
+    if (cached_has_bits & 0x00001000u) {
+      _this->_impl_.modifier_purge_ability_ = from._impl_.modifier_purge_ability_;
+    }
+    if (cached_has_bits & 0x00002000u) {
+      _this->_impl_.modifier_purged_duration_ = from._impl_.modifier_purged_duration_;
+    }
+    if (cached_has_bits & 0x00004000u) {
+      _this->_impl_.powerup_type_ = from._impl_.powerup_type_;
+    }
+    if (cached_has_bits & 0x00008000u) {
+      _this->_impl_.target_class_ = from._impl_.target_class_;
+    }
+    _this->_impl_._has_bits_[1] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x007f0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      _this->_impl_.movement_control_modifier_ = from._impl_.movement_control_modifier_;
+    }
+    if (cached_has_bits & 0x00020000u) {
+      _this->_impl_.is_primary_weapon_ = from._impl_.is_primary_weapon_;
+    }
+    if (cached_has_bits & 0x00040000u) {
+      _this->_impl_.is_headshot_ = from._impl_.is_headshot_;
+    }
+    if (cached_has_bits & 0x00080000u) {
+      _this->_impl_.ability_name_ = from._impl_.ability_name_;
+    }
+    if (cached_has_bits & 0x00100000u) {
+      _this->_impl_.full_refresh_ = from._impl_.full_refresh_;
+    }
+    if (cached_has_bits & 0x00200000u) {
+      _this->_impl_.hits_ = from._impl_.hits_;
+    }
+    if (cached_has_bits & 0x00400000u) {
+      _this->_impl_.type_ = from._impl_.type_;
+    }
+    _this->_impl_._has_bits_[1] |= cached_has_bits;
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CMsgCitadelCombatLogEntry::CopyFrom(const CMsgCitadelCombatLogEntry& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CMsgCitadelCombatLogEntry)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CMsgCitadelCombatLogEntry::IsInitialized() const {
+  return true;
+}
+
+void CMsgCitadelCombatLogEntry::InternalSwap(CMsgCitadelCombatLogEntry* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_._has_bits_[1], other->_impl_._has_bits_[1]);
+  _impl_.assist_players_.InternalSwap(&other->_impl_.assist_players_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(CMsgCitadelCombatLogEntry, _impl_.hits_)
+      + sizeof(CMsgCitadelCombatLogEntry::_impl_.hits_)
+      - PROTOBUF_FIELD_OFFSET(CMsgCitadelCombatLogEntry, _impl_.target_name_)>(
+          reinterpret_cast<char*>(&_impl_.target_name_),
+          reinterpret_cast<char*>(&other->_impl_.target_name_));
+  swap(_impl_.type_, other->_impl_.type_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CMsgCitadelCombatLogEntry::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[67]);
+}
+
+// ===================================================================
+
+class CSerializedCombatLog_Dictionary_DictString::_Internal {
+ public:
+  using HasBits = decltype(std::declval<CSerializedCombatLog_Dictionary_DictString>()._impl_._has_bits_);
+  static void set_has_id(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_value(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+};
+
+CSerializedCombatLog_Dictionary_DictString::CSerializedCombatLog_Dictionary_DictString(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:CSerializedCombatLog.Dictionary.DictString)
+}
+CSerializedCombatLog_Dictionary_DictString::CSerializedCombatLog_Dictionary_DictString(const CSerializedCombatLog_Dictionary_DictString& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CSerializedCombatLog_Dictionary_DictString* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.value_){}
+    , decltype(_impl_.id_){}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _impl_.value_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.value_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (from._internal_has_value()) {
+    _this->_impl_.value_.Set(from._internal_value(), 
+      _this->GetArenaForAllocation());
+  }
+  _this->_impl_.id_ = from._impl_.id_;
+  // @@protoc_insertion_point(copy_constructor:CSerializedCombatLog.Dictionary.DictString)
+}
+
+inline void CSerializedCombatLog_Dictionary_DictString::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.value_){}
+    , decltype(_impl_.id_){0u}
+  };
+  _impl_.value_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.value_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+}
+
+CSerializedCombatLog_Dictionary_DictString::~CSerializedCombatLog_Dictionary_DictString() {
+  // @@protoc_insertion_point(destructor:CSerializedCombatLog.Dictionary.DictString)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void CSerializedCombatLog_Dictionary_DictString::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.value_.Destroy();
+}
+
+void CSerializedCombatLog_Dictionary_DictString::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void CSerializedCombatLog_Dictionary_DictString::Clear() {
+// @@protoc_insertion_point(message_clear_start:CSerializedCombatLog.Dictionary.DictString)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    _impl_.value_.ClearNonDefaultToEmpty();
+  }
+  _impl_.id_ = 0u;
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CSerializedCombatLog_Dictionary_DictString::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // optional uint32 id = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_id(&has_bits);
+          _impl_.id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional string value = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          auto str = _internal_mutable_value();
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(ptr);
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "CSerializedCombatLog.Dictionary.DictString.value");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _impl_._has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CSerializedCombatLog_Dictionary_DictString::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CSerializedCombatLog.Dictionary.DictString)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional uint32 id = 1;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_id(), target);
+  }
+
+  // optional string value = 2;
+  if (cached_has_bits & 0x00000001u) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->_internal_value().data(), static_cast<int>(this->_internal_value().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
+      "CSerializedCombatLog.Dictionary.DictString.value");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_value(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CSerializedCombatLog.Dictionary.DictString)
+  return target;
+}
+
+size_t CSerializedCombatLog_Dictionary_DictString::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CSerializedCombatLog.Dictionary.DictString)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
+    // optional string value = 2;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+          this->_internal_value());
+    }
+
+    // optional uint32 id = 1;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_id());
+    }
+
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CSerializedCombatLog_Dictionary_DictString::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    CSerializedCombatLog_Dictionary_DictString::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CSerializedCombatLog_Dictionary_DictString::GetClassData() const { return &_class_data_; }
+
+
+void CSerializedCombatLog_Dictionary_DictString::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CSerializedCombatLog_Dictionary_DictString*>(&to_msg);
+  auto& from = static_cast<const CSerializedCombatLog_Dictionary_DictString&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CSerializedCombatLog.Dictionary.DictString)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_internal_set_value(from._internal_value());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.id_ = from._impl_.id_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CSerializedCombatLog_Dictionary_DictString::CopyFrom(const CSerializedCombatLog_Dictionary_DictString& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CSerializedCombatLog.Dictionary.DictString)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CSerializedCombatLog_Dictionary_DictString::IsInitialized() const {
+  return true;
+}
+
+void CSerializedCombatLog_Dictionary_DictString::InternalSwap(CSerializedCombatLog_Dictionary_DictString* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.value_, lhs_arena,
+      &other->_impl_.value_, rhs_arena
+  );
+  swap(_impl_.id_, other->_impl_.id_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CSerializedCombatLog_Dictionary_DictString::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[68]);
+}
+
+// ===================================================================
+
+class CSerializedCombatLog_Dictionary::_Internal {
+ public:
+};
+
+CSerializedCombatLog_Dictionary::CSerializedCombatLog_Dictionary(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:CSerializedCombatLog.Dictionary)
+}
+CSerializedCombatLog_Dictionary::CSerializedCombatLog_Dictionary(const CSerializedCombatLog_Dictionary& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CSerializedCombatLog_Dictionary* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.strings_){from._impl_.strings_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:CSerializedCombatLog.Dictionary)
+}
+
+inline void CSerializedCombatLog_Dictionary::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.strings_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+}
+
+CSerializedCombatLog_Dictionary::~CSerializedCombatLog_Dictionary() {
+  // @@protoc_insertion_point(destructor:CSerializedCombatLog.Dictionary)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void CSerializedCombatLog_Dictionary::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.strings_.~RepeatedPtrField();
+}
+
+void CSerializedCombatLog_Dictionary::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void CSerializedCombatLog_Dictionary::Clear() {
+// @@protoc_insertion_point(message_clear_start:CSerializedCombatLog.Dictionary)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.strings_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CSerializedCombatLog_Dictionary::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // repeated .CSerializedCombatLog.Dictionary.DictString strings = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_strings(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CSerializedCombatLog_Dictionary::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CSerializedCombatLog.Dictionary)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .CSerializedCombatLog.Dictionary.DictString strings = 1;
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_strings_size()); i < n; i++) {
+    const auto& repfield = this->_internal_strings(i);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CSerializedCombatLog.Dictionary)
+  return target;
+}
+
+size_t CSerializedCombatLog_Dictionary::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CSerializedCombatLog.Dictionary)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .CSerializedCombatLog.Dictionary.DictString strings = 1;
+  total_size += 1UL * this->_internal_strings_size();
+  for (const auto& msg : this->_impl_.strings_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CSerializedCombatLog_Dictionary::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    CSerializedCombatLog_Dictionary::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CSerializedCombatLog_Dictionary::GetClassData() const { return &_class_data_; }
+
+
+void CSerializedCombatLog_Dictionary::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CSerializedCombatLog_Dictionary*>(&to_msg);
+  auto& from = static_cast<const CSerializedCombatLog_Dictionary&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CSerializedCombatLog.Dictionary)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_impl_.strings_.MergeFrom(from._impl_.strings_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CSerializedCombatLog_Dictionary::CopyFrom(const CSerializedCombatLog_Dictionary& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CSerializedCombatLog.Dictionary)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CSerializedCombatLog_Dictionary::IsInitialized() const {
+  return true;
+}
+
+void CSerializedCombatLog_Dictionary::InternalSwap(CSerializedCombatLog_Dictionary* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.strings_.InternalSwap(&other->_impl_.strings_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CSerializedCombatLog_Dictionary::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[69]);
+}
+
+// ===================================================================
+
+class CSerializedCombatLog::_Internal {
+ public:
+  using HasBits = decltype(std::declval<CSerializedCombatLog>()._impl_._has_bits_);
+  static void set_has_version(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static const ::CSerializedCombatLog_Dictionary& dictionary(const CSerializedCombatLog* msg);
+  static void set_has_dictionary(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+};
+
+const ::CSerializedCombatLog_Dictionary&
+CSerializedCombatLog::_Internal::dictionary(const CSerializedCombatLog* msg) {
+  return *msg->_impl_.dictionary_;
+}
+CSerializedCombatLog::CSerializedCombatLog(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:CSerializedCombatLog)
+}
+CSerializedCombatLog::CSerializedCombatLog(const CSerializedCombatLog& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CSerializedCombatLog* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.entries_){from._impl_.entries_}
+    , decltype(_impl_.dictionary_){nullptr}
+    , decltype(_impl_.version_){}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_dictionary()) {
+    _this->_impl_.dictionary_ = new ::CSerializedCombatLog_Dictionary(*from._impl_.dictionary_);
+  }
+  _this->_impl_.version_ = from._impl_.version_;
+  // @@protoc_insertion_point(copy_constructor:CSerializedCombatLog)
+}
+
+inline void CSerializedCombatLog::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.entries_){arena}
+    , decltype(_impl_.dictionary_){nullptr}
+    , decltype(_impl_.version_){0u}
+  };
+}
+
+CSerializedCombatLog::~CSerializedCombatLog() {
+  // @@protoc_insertion_point(destructor:CSerializedCombatLog)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void CSerializedCombatLog::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.entries_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.dictionary_;
+}
+
+void CSerializedCombatLog::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void CSerializedCombatLog::Clear() {
+// @@protoc_insertion_point(message_clear_start:CSerializedCombatLog)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.entries_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    GOOGLE_DCHECK(_impl_.dictionary_ != nullptr);
+    _impl_.dictionary_->Clear();
+  }
+  _impl_.version_ = 0u;
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CSerializedCombatLog::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // optional uint32 version = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_version(&has_bits);
+          _impl_.version_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .CSerializedCombatLog.Dictionary dictionary = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          ptr = ctx->ParseMessage(_internal_mutable_dictionary(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // repeated .CMsgCitadelCombatLogEntry entries = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_entries(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _impl_._has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CSerializedCombatLog::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CSerializedCombatLog)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional uint32 version = 1;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_version(), target);
+  }
+
+  // optional .CSerializedCombatLog.Dictionary dictionary = 2;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(2, _Internal::dictionary(this),
+        _Internal::dictionary(this).GetCachedSize(), target, stream);
+  }
+
+  // repeated .CMsgCitadelCombatLogEntry entries = 3;
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_entries_size()); i < n; i++) {
+    const auto& repfield = this->_internal_entries(i);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        InternalWriteMessage(3, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CSerializedCombatLog)
+  return target;
+}
+
+size_t CSerializedCombatLog::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CSerializedCombatLog)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .CMsgCitadelCombatLogEntry entries = 3;
+  total_size += 1UL * this->_internal_entries_size();
+  for (const auto& msg : this->_impl_.entries_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
+    // optional .CSerializedCombatLog.Dictionary dictionary = 2;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.dictionary_);
+    }
+
+    // optional uint32 version = 1;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_version());
+    }
+
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CSerializedCombatLog::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    CSerializedCombatLog::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CSerializedCombatLog::GetClassData() const { return &_class_data_; }
+
+
+void CSerializedCombatLog::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CSerializedCombatLog*>(&to_msg);
+  auto& from = static_cast<const CSerializedCombatLog&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CSerializedCombatLog)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_impl_.entries_.MergeFrom(from._impl_.entries_);
+  cached_has_bits = from._impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_internal_mutable_dictionary()->::CSerializedCombatLog_Dictionary::MergeFrom(
+          from._internal_dictionary());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.version_ = from._impl_.version_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CSerializedCombatLog::CopyFrom(const CSerializedCombatLog& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CSerializedCombatLog)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CSerializedCombatLog::IsInitialized() const {
+  return true;
+}
+
+void CSerializedCombatLog::InternalSwap(CSerializedCombatLog* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.entries_.InternalSwap(&other->_impl_.entries_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(CSerializedCombatLog, _impl_.version_)
+      + sizeof(CSerializedCombatLog::_impl_.version_)
+      - PROTOBUF_FIELD_OFFSET(CSerializedCombatLog, _impl_.dictionary_)>(
+          reinterpret_cast<char*>(&_impl_.dictionary_),
+          reinterpret_cast<char*>(&other->_impl_.dictionary_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CSerializedCombatLog::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[70]);
 }
 
 // ===================================================================
@@ -26734,11 +32104,698 @@ void CMsgHeroReleaseVoteTally::InternalSwap(CMsgHeroReleaseVoteTally* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata CMsgHeroReleaseVoteTally::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
-      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[63]);
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[71]);
+}
+
+// ===================================================================
+
+class CMsgMatchHeroReleaseVotes_HeroVote::_Internal {
+ public:
+  using HasBits = decltype(std::declval<CMsgMatchHeroReleaseVotes_HeroVote>()._impl_._has_bits_);
+  static void set_has_vote_player_slot(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_vote_hero_id(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_vote_count(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+};
+
+CMsgMatchHeroReleaseVotes_HeroVote::CMsgMatchHeroReleaseVotes_HeroVote(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:CMsgMatchHeroReleaseVotes.HeroVote)
+}
+CMsgMatchHeroReleaseVotes_HeroVote::CMsgMatchHeroReleaseVotes_HeroVote(const CMsgMatchHeroReleaseVotes_HeroVote& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CMsgMatchHeroReleaseVotes_HeroVote* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.vote_player_slot_){}
+    , decltype(_impl_.vote_hero_id_){}
+    , decltype(_impl_.vote_count_){}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&_impl_.vote_player_slot_, &from._impl_.vote_player_slot_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.vote_count_) -
+    reinterpret_cast<char*>(&_impl_.vote_player_slot_)) + sizeof(_impl_.vote_count_));
+  // @@protoc_insertion_point(copy_constructor:CMsgMatchHeroReleaseVotes.HeroVote)
+}
+
+inline void CMsgMatchHeroReleaseVotes_HeroVote::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.vote_player_slot_){0u}
+    , decltype(_impl_.vote_hero_id_){0u}
+    , decltype(_impl_.vote_count_){1u}
+  };
+}
+
+CMsgMatchHeroReleaseVotes_HeroVote::~CMsgMatchHeroReleaseVotes_HeroVote() {
+  // @@protoc_insertion_point(destructor:CMsgMatchHeroReleaseVotes.HeroVote)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void CMsgMatchHeroReleaseVotes_HeroVote::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void CMsgMatchHeroReleaseVotes_HeroVote::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void CMsgMatchHeroReleaseVotes_HeroVote::Clear() {
+// @@protoc_insertion_point(message_clear_start:CMsgMatchHeroReleaseVotes.HeroVote)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
+    ::memset(&_impl_.vote_player_slot_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.vote_hero_id_) -
+        reinterpret_cast<char*>(&_impl_.vote_player_slot_)) + sizeof(_impl_.vote_hero_id_));
+    _impl_.vote_count_ = 1u;
+  }
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CMsgMatchHeroReleaseVotes_HeroVote::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // optional uint32 vote_player_slot = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_vote_player_slot(&has_bits);
+          _impl_.vote_player_slot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 vote_hero_id = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_vote_hero_id(&has_bits);
+          _impl_.vote_hero_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 vote_count = 3 [default = 1];
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _Internal::set_has_vote_count(&has_bits);
+          _impl_.vote_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _impl_._has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CMsgMatchHeroReleaseVotes_HeroVote::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CMsgMatchHeroReleaseVotes.HeroVote)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional uint32 vote_player_slot = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_vote_player_slot(), target);
+  }
+
+  // optional uint32 vote_hero_id = 2;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_vote_hero_id(), target);
+  }
+
+  // optional uint32 vote_count = 3 [default = 1];
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(3, this->_internal_vote_count(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CMsgMatchHeroReleaseVotes.HeroVote)
+  return target;
+}
+
+size_t CMsgMatchHeroReleaseVotes_HeroVote::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CMsgMatchHeroReleaseVotes.HeroVote)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
+    // optional uint32 vote_player_slot = 1;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_vote_player_slot());
+    }
+
+    // optional uint32 vote_hero_id = 2;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_vote_hero_id());
+    }
+
+    // optional uint32 vote_count = 3 [default = 1];
+    if (cached_has_bits & 0x00000004u) {
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_vote_count());
+    }
+
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CMsgMatchHeroReleaseVotes_HeroVote::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    CMsgMatchHeroReleaseVotes_HeroVote::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CMsgMatchHeroReleaseVotes_HeroVote::GetClassData() const { return &_class_data_; }
+
+
+void CMsgMatchHeroReleaseVotes_HeroVote::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CMsgMatchHeroReleaseVotes_HeroVote*>(&to_msg);
+  auto& from = static_cast<const CMsgMatchHeroReleaseVotes_HeroVote&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CMsgMatchHeroReleaseVotes.HeroVote)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_impl_.vote_player_slot_ = from._impl_.vote_player_slot_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.vote_hero_id_ = from._impl_.vote_hero_id_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_impl_.vote_count_ = from._impl_.vote_count_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CMsgMatchHeroReleaseVotes_HeroVote::CopyFrom(const CMsgMatchHeroReleaseVotes_HeroVote& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CMsgMatchHeroReleaseVotes.HeroVote)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CMsgMatchHeroReleaseVotes_HeroVote::IsInitialized() const {
+  return true;
+}
+
+void CMsgMatchHeroReleaseVotes_HeroVote::InternalSwap(CMsgMatchHeroReleaseVotes_HeroVote* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(CMsgMatchHeroReleaseVotes_HeroVote, _impl_.vote_hero_id_)
+      + sizeof(CMsgMatchHeroReleaseVotes_HeroVote::_impl_.vote_hero_id_)
+      - PROTOBUF_FIELD_OFFSET(CMsgMatchHeroReleaseVotes_HeroVote, _impl_.vote_player_slot_)>(
+          reinterpret_cast<char*>(&_impl_.vote_player_slot_),
+          reinterpret_cast<char*>(&other->_impl_.vote_player_slot_));
+  swap(_impl_.vote_count_, other->_impl_.vote_count_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchHeroReleaseVotes_HeroVote::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[72]);
+}
+
+// ===================================================================
+
+class CMsgMatchHeroReleaseVotes_Category::_Internal {
+ public:
+  using HasBits = decltype(std::declval<CMsgMatchHeroReleaseVotes_Category>()._impl_._has_bits_);
+  static void set_has_vote_category(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+};
+
+CMsgMatchHeroReleaseVotes_Category::CMsgMatchHeroReleaseVotes_Category(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:CMsgMatchHeroReleaseVotes.Category)
+}
+CMsgMatchHeroReleaseVotes_Category::CMsgMatchHeroReleaseVotes_Category(const CMsgMatchHeroReleaseVotes_Category& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CMsgMatchHeroReleaseVotes_Category* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.hero_votes_){from._impl_.hero_votes_}
+    , decltype(_impl_.vote_category_){}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_.vote_category_ = from._impl_.vote_category_;
+  // @@protoc_insertion_point(copy_constructor:CMsgMatchHeroReleaseVotes.Category)
+}
+
+inline void CMsgMatchHeroReleaseVotes_Category::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.hero_votes_){arena}
+    , decltype(_impl_.vote_category_){0}
+  };
+}
+
+CMsgMatchHeroReleaseVotes_Category::~CMsgMatchHeroReleaseVotes_Category() {
+  // @@protoc_insertion_point(destructor:CMsgMatchHeroReleaseVotes.Category)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void CMsgMatchHeroReleaseVotes_Category::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.hero_votes_.~RepeatedPtrField();
+}
+
+void CMsgMatchHeroReleaseVotes_Category::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void CMsgMatchHeroReleaseVotes_Category::Clear() {
+// @@protoc_insertion_point(message_clear_start:CMsgMatchHeroReleaseVotes.Category)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.hero_votes_.Clear();
+  _impl_.vote_category_ = 0;
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CMsgMatchHeroReleaseVotes_Category::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // optional .CMsgMatchHeroReleaseVotes.EHeroReleaseVoteCategory vote_category = 1 [default = k_eMatchCompleted];
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::CMsgMatchHeroReleaseVotes_EHeroReleaseVoteCategory_IsValid(val))) {
+            _internal_set_vote_category(static_cast<::CMsgMatchHeroReleaseVotes_EHeroReleaseVoteCategory>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(1, val, mutable_unknown_fields());
+          }
+        } else
+          goto handle_unusual;
+        continue;
+      // repeated .CMsgMatchHeroReleaseVotes.HeroVote hero_votes = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_hero_votes(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _impl_._has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CMsgMatchHeroReleaseVotes_Category::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CMsgMatchHeroReleaseVotes.Category)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .CMsgMatchHeroReleaseVotes.EHeroReleaseVoteCategory vote_category = 1 [default = k_eMatchCompleted];
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+      1, this->_internal_vote_category(), target);
+  }
+
+  // repeated .CMsgMatchHeroReleaseVotes.HeroVote hero_votes = 2;
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_hero_votes_size()); i < n; i++) {
+    const auto& repfield = this->_internal_hero_votes(i);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CMsgMatchHeroReleaseVotes.Category)
+  return target;
+}
+
+size_t CMsgMatchHeroReleaseVotes_Category::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CMsgMatchHeroReleaseVotes.Category)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .CMsgMatchHeroReleaseVotes.HeroVote hero_votes = 2;
+  total_size += 1UL * this->_internal_hero_votes_size();
+  for (const auto& msg : this->_impl_.hero_votes_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // optional .CMsgMatchHeroReleaseVotes.EHeroReleaseVoteCategory vote_category = 1 [default = k_eMatchCompleted];
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    total_size += 1 +
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_vote_category());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CMsgMatchHeroReleaseVotes_Category::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    CMsgMatchHeroReleaseVotes_Category::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CMsgMatchHeroReleaseVotes_Category::GetClassData() const { return &_class_data_; }
+
+
+void CMsgMatchHeroReleaseVotes_Category::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CMsgMatchHeroReleaseVotes_Category*>(&to_msg);
+  auto& from = static_cast<const CMsgMatchHeroReleaseVotes_Category&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CMsgMatchHeroReleaseVotes.Category)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_impl_.hero_votes_.MergeFrom(from._impl_.hero_votes_);
+  if (from._internal_has_vote_category()) {
+    _this->_internal_set_vote_category(from._internal_vote_category());
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CMsgMatchHeroReleaseVotes_Category::CopyFrom(const CMsgMatchHeroReleaseVotes_Category& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CMsgMatchHeroReleaseVotes.Category)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CMsgMatchHeroReleaseVotes_Category::IsInitialized() const {
+  return true;
+}
+
+void CMsgMatchHeroReleaseVotes_Category::InternalSwap(CMsgMatchHeroReleaseVotes_Category* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.hero_votes_.InternalSwap(&other->_impl_.hero_votes_);
+  swap(_impl_.vote_category_, other->_impl_.vote_category_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchHeroReleaseVotes_Category::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[73]);
+}
+
+// ===================================================================
+
+class CMsgMatchHeroReleaseVotes::_Internal {
+ public:
+};
+
+CMsgMatchHeroReleaseVotes::CMsgMatchHeroReleaseVotes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:CMsgMatchHeroReleaseVotes)
+}
+CMsgMatchHeroReleaseVotes::CMsgMatchHeroReleaseVotes(const CMsgMatchHeroReleaseVotes& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CMsgMatchHeroReleaseVotes* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.categories_){from._impl_.categories_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:CMsgMatchHeroReleaseVotes)
+}
+
+inline void CMsgMatchHeroReleaseVotes::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.categories_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+}
+
+CMsgMatchHeroReleaseVotes::~CMsgMatchHeroReleaseVotes() {
+  // @@protoc_insertion_point(destructor:CMsgMatchHeroReleaseVotes)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void CMsgMatchHeroReleaseVotes::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.categories_.~RepeatedPtrField();
+}
+
+void CMsgMatchHeroReleaseVotes::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void CMsgMatchHeroReleaseVotes::Clear() {
+// @@protoc_insertion_point(message_clear_start:CMsgMatchHeroReleaseVotes)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.categories_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CMsgMatchHeroReleaseVotes::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // repeated .CMsgMatchHeroReleaseVotes.Category categories = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_categories(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CMsgMatchHeroReleaseVotes::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CMsgMatchHeroReleaseVotes)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .CMsgMatchHeroReleaseVotes.Category categories = 1;
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_categories_size()); i < n; i++) {
+    const auto& repfield = this->_internal_categories(i);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CMsgMatchHeroReleaseVotes)
+  return target;
+}
+
+size_t CMsgMatchHeroReleaseVotes::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CMsgMatchHeroReleaseVotes)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .CMsgMatchHeroReleaseVotes.Category categories = 1;
+  total_size += 1UL * this->_internal_categories_size();
+  for (const auto& msg : this->_impl_.categories_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CMsgMatchHeroReleaseVotes::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    CMsgMatchHeroReleaseVotes::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CMsgMatchHeroReleaseVotes::GetClassData() const { return &_class_data_; }
+
+
+void CMsgMatchHeroReleaseVotes::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CMsgMatchHeroReleaseVotes*>(&to_msg);
+  auto& from = static_cast<const CMsgMatchHeroReleaseVotes&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CMsgMatchHeroReleaseVotes)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_impl_.categories_.MergeFrom(from._impl_.categories_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CMsgMatchHeroReleaseVotes::CopyFrom(const CMsgMatchHeroReleaseVotes& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CMsgMatchHeroReleaseVotes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CMsgMatchHeroReleaseVotes::IsInitialized() const {
+  return true;
+}
+
+void CMsgMatchHeroReleaseVotes::InternalSwap(CMsgMatchHeroReleaseVotes* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.categories_.InternalSwap(&other->_impl_.categories_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CMsgMatchHeroReleaseVotes::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_getter, &descriptor_table_citadel_5fgcmessages_5fcommon_2eproto_once,
+      file_level_metadata_citadel_5fgcmessages_5fcommon_2eproto[74]);
 }
 
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::CMsgHeroXPGrant*
+Arena::CreateMaybeMessage< ::CMsgHeroXPGrant >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CMsgHeroXPGrant >(arena);
+}
 template<> PROTOBUF_NOINLINE ::CSOCitadelLobby*
 Arena::CreateMaybeMessage< ::CSOCitadelLobby >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CSOCitadelLobby >(arena);
@@ -26807,6 +32864,10 @@ template<> PROTOBUF_NOINLINE ::CSOCitadelParty_PrivateLobbySettings*
 Arena::CreateMaybeMessage< ::CSOCitadelParty_PrivateLobbySettings >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CSOCitadelParty_PrivateLobbySettings >(arena);
 }
+template<> PROTOBUF_NOINLINE ::CSOCitadelParty_RankedScores*
+Arena::CreateMaybeMessage< ::CSOCitadelParty_RankedScores >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CSOCitadelParty_RankedScores >(arena);
+}
 template<> PROTOBUF_NOINLINE ::CSOCitadelParty_Member*
 Arena::CreateMaybeMessage< ::CSOCitadelParty_Member >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CSOCitadelParty_Member >(arena);
@@ -26851,6 +32912,10 @@ template<> PROTOBUF_NOINLINE ::CMsgMatchPlayerDamageMatrix*
 Arena::CreateMaybeMessage< ::CMsgMatchPlayerDamageMatrix >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CMsgMatchPlayerDamageMatrix >(arena);
 }
+template<> PROTOBUF_NOINLINE ::CMsgMatchPlayerRankData*
+Arena::CreateMaybeMessage< ::CMsgMatchPlayerRankData >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CMsgMatchPlayerRankData >(arena);
+}
 template<> PROTOBUF_NOINLINE ::CMsgMatchMetaDataContents_Position*
 Arena::CreateMaybeMessage< ::CMsgMatchMetaDataContents_Position >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CMsgMatchMetaDataContents_Position >(arena);
@@ -26894,6 +32959,10 @@ Arena::CreateMaybeMessage< ::CMsgMatchMetaDataContents_AbilityStat >(Arena* aren
 template<> PROTOBUF_NOINLINE ::CMsgMatchMetaDataContents_BookReward*
 Arena::CreateMaybeMessage< ::CMsgMatchMetaDataContents_BookReward >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CMsgMatchMetaDataContents_BookReward >(arena);
+}
+template<> PROTOBUF_NOINLINE ::CMsgMatchMetaDataContents_HeroXPReward*
+Arena::CreateMaybeMessage< ::CMsgMatchMetaDataContents_HeroXPReward >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CMsgMatchMetaDataContents_HeroXPReward >(arena);
 }
 template<> PROTOBUF_NOINLINE ::CMsgMatchMetaDataContents_PlayerAccolade*
 Arena::CreateMaybeMessage< ::CMsgMatchMetaDataContents_PlayerAccolade >(Arena* arena) {
@@ -26991,9 +33060,37 @@ template<> PROTOBUF_NOINLINE ::CMsgHeroBuildPreference*
 Arena::CreateMaybeMessage< ::CMsgHeroBuildPreference >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CMsgHeroBuildPreference >(arena);
 }
+template<> PROTOBUF_NOINLINE ::CMsgCitadelCombatLogEntry*
+Arena::CreateMaybeMessage< ::CMsgCitadelCombatLogEntry >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CMsgCitadelCombatLogEntry >(arena);
+}
+template<> PROTOBUF_NOINLINE ::CSerializedCombatLog_Dictionary_DictString*
+Arena::CreateMaybeMessage< ::CSerializedCombatLog_Dictionary_DictString >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CSerializedCombatLog_Dictionary_DictString >(arena);
+}
+template<> PROTOBUF_NOINLINE ::CSerializedCombatLog_Dictionary*
+Arena::CreateMaybeMessage< ::CSerializedCombatLog_Dictionary >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CSerializedCombatLog_Dictionary >(arena);
+}
+template<> PROTOBUF_NOINLINE ::CSerializedCombatLog*
+Arena::CreateMaybeMessage< ::CSerializedCombatLog >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CSerializedCombatLog >(arena);
+}
 template<> PROTOBUF_NOINLINE ::CMsgHeroReleaseVoteTally*
 Arena::CreateMaybeMessage< ::CMsgHeroReleaseVoteTally >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CMsgHeroReleaseVoteTally >(arena);
+}
+template<> PROTOBUF_NOINLINE ::CMsgMatchHeroReleaseVotes_HeroVote*
+Arena::CreateMaybeMessage< ::CMsgMatchHeroReleaseVotes_HeroVote >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CMsgMatchHeroReleaseVotes_HeroVote >(arena);
+}
+template<> PROTOBUF_NOINLINE ::CMsgMatchHeroReleaseVotes_Category*
+Arena::CreateMaybeMessage< ::CMsgMatchHeroReleaseVotes_Category >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CMsgMatchHeroReleaseVotes_Category >(arena);
+}
+template<> PROTOBUF_NOINLINE ::CMsgMatchHeroReleaseVotes*
+Arena::CreateMaybeMessage< ::CMsgMatchHeroReleaseVotes >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CMsgMatchHeroReleaseVotes >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

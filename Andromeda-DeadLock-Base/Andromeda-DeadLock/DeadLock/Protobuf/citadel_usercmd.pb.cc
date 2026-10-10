@@ -28,7 +28,7 @@ PROTOBUF_CONSTEXPR CCitadelUserCmdPB::CCitadelUserCmdPB(
   , /*decltype(_impl_.view_delta_y_)*/{}
   , /*decltype(_impl_.base_)*/nullptr
   , /*decltype(_impl_.vec_camera_position_)*/nullptr
-  , /*decltype(_impl_.ang_camera_angles_)*/nullptr
+  , /*decltype(_impl_.ang_camera_angles_deprecated_)*/nullptr
   , /*decltype(_impl_.execute_ability_indices_)*/0
   , /*decltype(_impl_.camera_roaming_speed_)*/0
   , /*decltype(_impl_.in_shop_)*/false
@@ -57,7 +57,7 @@ const uint32_t TableStruct_citadel_5fusercmd_2eproto::offsets[] PROTOBUF_SECTION
   ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::CCitadelUserCmdPB, _impl_.base_),
   PROTOBUF_FIELD_OFFSET(::CCitadelUserCmdPB, _impl_.vec_camera_position_),
-  PROTOBUF_FIELD_OFFSET(::CCitadelUserCmdPB, _impl_.ang_camera_angles_),
+  PROTOBUF_FIELD_OFFSET(::CCitadelUserCmdPB, _impl_.ang_camera_angles_deprecated_),
   PROTOBUF_FIELD_OFFSET(::CCitadelUserCmdPB, _impl_.execute_ability_indices_),
   PROTOBUF_FIELD_OFFSET(::CCitadelUserCmdPB, _impl_.in_shop_),
   PROTOBUF_FIELD_OFFSET(::CCitadelUserCmdPB, _impl_.camera_roaming_speed_),
@@ -87,27 +87,29 @@ static const ::_pb::Message* const file_default_instances[] = {
 };
 
 const char descriptor_table_protodef_citadel_5fusercmd_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\025citadel_usercmd.proto\032\026networkbasetype"
-  "s.proto\032\rusercmd.proto\"\335\002\n\021CCitadelUserC"
-  "mdPB\022\035\n\004base\030\001 \001(\0132\017.CBaseUserCmdPB\022(\n\023v"
-  "ec_camera_position\030\002 \001(\0132\013.CMsgVector\022&\n"
-  "\021ang_camera_angles\030\003 \001(\0132\013.CMsgQAngle\022\037\n"
-  "\027execute_ability_indices\030\004 \001(\005\022\017\n\007in_sho"
-  "p\030\005 \001(\010\022\034\n\024camera_roaming_speed\030\006 \001(\002\022\031\n"
-  "\021using_free_cursor\030\010 \001(\010\022\037\n\023enemy_hero_a"
-  "imed_at\030\n \001(\005:\002-1\022\024\n\014view_delta_x\030\013 \003(\005\022"
-  "\024\n\014view_delta_y\030\014 \003(\005\022\037\n\027is_in_third_per"
-  "son_view\030\r \001(\010"
+  "\n\025citadel_usercmd.proto\032\025valveextensions"
+  ".proto\032\026networkbasetypes.proto\032\rusercmd."
+  "proto\"\356\002\n\021CCitadelUserCmdPB\022\035\n\004base\030\001 \001("
+  "\0132\017.CBaseUserCmdPB\022(\n\023vec_camera_positio"
+  "n\030\002 \001(\0132\013.CMsgVector\0221\n\034ang_camera_angle"
+  "s_deprecated\030\003 \001(\0132\013.CMsgQAngle\022\037\n\027execu"
+  "te_ability_indices\030\004 \001(\005\022\017\n\007in_shop\030\005 \001("
+  "\010\022\034\n\024camera_roaming_speed\030\006 \001(\002\022\031\n\021using"
+  "_free_cursor\030\010 \001(\010\022\037\n\023enemy_hero_aimed_a"
+  "t\030\n \001(\005:\002-1\022\024\n\014view_delta_x\030\013 \003(\005\022\024\n\014vie"
+  "w_delta_y\030\014 \003(\005\022\037\n\027is_in_third_person_vi"
+  "ew\030\r \001(\010:\004\300\344\035\001"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_citadel_5fusercmd_2eproto_deps[2] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_citadel_5fusercmd_2eproto_deps[3] = {
   &::descriptor_table_networkbasetypes_2eproto,
   &::descriptor_table_usercmd_2eproto,
+  &::descriptor_table_valveextensions_2eproto,
 };
 static ::_pbi::once_flag descriptor_table_citadel_5fusercmd_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_citadel_5fusercmd_2eproto = {
-    false, false, 414, descriptor_table_protodef_citadel_5fusercmd_2eproto,
+    false, false, 454, descriptor_table_protodef_citadel_5fusercmd_2eproto,
     "citadel_usercmd.proto",
-    &descriptor_table_citadel_5fusercmd_2eproto_once, descriptor_table_citadel_5fusercmd_2eproto_deps, 2, 1,
+    &descriptor_table_citadel_5fusercmd_2eproto_once, descriptor_table_citadel_5fusercmd_2eproto_deps, 3, 1,
     schemas, file_default_instances, TableStruct_citadel_5fusercmd_2eproto::offsets,
     file_level_metadata_citadel_5fusercmd_2eproto, file_level_enum_descriptors_citadel_5fusercmd_2eproto,
     file_level_service_descriptors_citadel_5fusercmd_2eproto,
@@ -132,8 +134,8 @@ class CCitadelUserCmdPB::_Internal {
   static void set_has_vec_camera_position(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static const ::CMsgQAngle& ang_camera_angles(const CCitadelUserCmdPB* msg);
-  static void set_has_ang_camera_angles(HasBits* has_bits) {
+  static const ::CMsgQAngle& ang_camera_angles_deprecated(const CCitadelUserCmdPB* msg);
+  static void set_has_ang_camera_angles_deprecated(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
   }
   static void set_has_execute_ability_indices(HasBits* has_bits) {
@@ -165,8 +167,8 @@ CCitadelUserCmdPB::_Internal::vec_camera_position(const CCitadelUserCmdPB* msg) 
   return *msg->_impl_.vec_camera_position_;
 }
 const ::CMsgQAngle&
-CCitadelUserCmdPB::_Internal::ang_camera_angles(const CCitadelUserCmdPB* msg) {
-  return *msg->_impl_.ang_camera_angles_;
+CCitadelUserCmdPB::_Internal::ang_camera_angles_deprecated(const CCitadelUserCmdPB* msg) {
+  return *msg->_impl_.ang_camera_angles_deprecated_;
 }
 void CCitadelUserCmdPB::clear_base() {
   if (_impl_.base_ != nullptr) _impl_.base_->Clear();
@@ -176,8 +178,8 @@ void CCitadelUserCmdPB::clear_vec_camera_position() {
   if (_impl_.vec_camera_position_ != nullptr) _impl_.vec_camera_position_->Clear();
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
-void CCitadelUserCmdPB::clear_ang_camera_angles() {
-  if (_impl_.ang_camera_angles_ != nullptr) _impl_.ang_camera_angles_->Clear();
+void CCitadelUserCmdPB::clear_ang_camera_angles_deprecated() {
+  if (_impl_.ang_camera_angles_deprecated_ != nullptr) _impl_.ang_camera_angles_deprecated_->Clear();
   _impl_._has_bits_[0] &= ~0x00000004u;
 }
 CCitadelUserCmdPB::CCitadelUserCmdPB(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -196,7 +198,7 @@ CCitadelUserCmdPB::CCitadelUserCmdPB(const CCitadelUserCmdPB& from)
     , decltype(_impl_.view_delta_y_){from._impl_.view_delta_y_}
     , decltype(_impl_.base_){nullptr}
     , decltype(_impl_.vec_camera_position_){nullptr}
-    , decltype(_impl_.ang_camera_angles_){nullptr}
+    , decltype(_impl_.ang_camera_angles_deprecated_){nullptr}
     , decltype(_impl_.execute_ability_indices_){}
     , decltype(_impl_.camera_roaming_speed_){}
     , decltype(_impl_.in_shop_){}
@@ -211,8 +213,8 @@ CCitadelUserCmdPB::CCitadelUserCmdPB(const CCitadelUserCmdPB& from)
   if (from._internal_has_vec_camera_position()) {
     _this->_impl_.vec_camera_position_ = new ::CMsgVector(*from._impl_.vec_camera_position_);
   }
-  if (from._internal_has_ang_camera_angles()) {
-    _this->_impl_.ang_camera_angles_ = new ::CMsgQAngle(*from._impl_.ang_camera_angles_);
+  if (from._internal_has_ang_camera_angles_deprecated()) {
+    _this->_impl_.ang_camera_angles_deprecated_ = new ::CMsgQAngle(*from._impl_.ang_camera_angles_deprecated_);
   }
   ::memcpy(&_impl_.execute_ability_indices_, &from._impl_.execute_ability_indices_,
     static_cast<size_t>(reinterpret_cast<char*>(&_impl_.enemy_hero_aimed_at_) -
@@ -231,7 +233,7 @@ inline void CCitadelUserCmdPB::SharedCtor(
     , decltype(_impl_.view_delta_y_){arena}
     , decltype(_impl_.base_){nullptr}
     , decltype(_impl_.vec_camera_position_){nullptr}
-    , decltype(_impl_.ang_camera_angles_){nullptr}
+    , decltype(_impl_.ang_camera_angles_deprecated_){nullptr}
     , decltype(_impl_.execute_ability_indices_){0}
     , decltype(_impl_.camera_roaming_speed_){0}
     , decltype(_impl_.in_shop_){false}
@@ -256,7 +258,7 @@ inline void CCitadelUserCmdPB::SharedDtor() {
   _impl_.view_delta_y_.~RepeatedField();
   if (this != internal_default_instance()) delete _impl_.base_;
   if (this != internal_default_instance()) delete _impl_.vec_camera_position_;
-  if (this != internal_default_instance()) delete _impl_.ang_camera_angles_;
+  if (this != internal_default_instance()) delete _impl_.ang_camera_angles_deprecated_;
 }
 
 void CCitadelUserCmdPB::SetCachedSize(int size) const {
@@ -282,8 +284,8 @@ void CCitadelUserCmdPB::Clear() {
       _impl_.vec_camera_position_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(_impl_.ang_camera_angles_ != nullptr);
-      _impl_.ang_camera_angles_->Clear();
+      GOOGLE_DCHECK(_impl_.ang_camera_angles_deprecated_ != nullptr);
+      _impl_.ang_camera_angles_deprecated_->Clear();
     }
   }
   if (cached_has_bits & 0x000000f8u) {
@@ -319,10 +321,10 @@ const char* CCitadelUserCmdPB::_InternalParse(const char* ptr, ::_pbi::ParseCont
         } else
           goto handle_unusual;
         continue;
-      // optional .CMsgQAngle ang_camera_angles = 3;
+      // optional .CMsgQAngle ang_camera_angles_deprecated = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_ang_camera_angles(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_ang_camera_angles_deprecated(), ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -458,11 +460,11 @@ uint8_t* CCitadelUserCmdPB::_InternalSerialize(
         _Internal::vec_camera_position(this).GetCachedSize(), target, stream);
   }
 
-  // optional .CMsgQAngle ang_camera_angles = 3;
+  // optional .CMsgQAngle ang_camera_angles_deprecated = 3;
   if (cached_has_bits & 0x00000004u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, _Internal::ang_camera_angles(this),
-        _Internal::ang_camera_angles(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(3, _Internal::ang_camera_angles_deprecated(this),
+        _Internal::ang_camera_angles_deprecated(this).GetCachedSize(), target, stream);
   }
 
   // optional int32 execute_ability_indices = 4;
@@ -563,11 +565,11 @@ size_t CCitadelUserCmdPB::ByteSizeLong() const {
           *_impl_.vec_camera_position_);
     }
 
-    // optional .CMsgQAngle ang_camera_angles = 3;
+    // optional .CMsgQAngle ang_camera_angles_deprecated = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *_impl_.ang_camera_angles_);
+          *_impl_.ang_camera_angles_deprecated_);
     }
 
     // optional int32 execute_ability_indices = 4;
@@ -632,8 +634,8 @@ void CCitadelUserCmdPB::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, cons
           from._internal_vec_camera_position());
     }
     if (cached_has_bits & 0x00000004u) {
-      _this->_internal_mutable_ang_camera_angles()->::CMsgQAngle::MergeFrom(
-          from._internal_ang_camera_angles());
+      _this->_internal_mutable_ang_camera_angles_deprecated()->::CMsgQAngle::MergeFrom(
+          from._internal_ang_camera_angles_deprecated());
     }
     if (cached_has_bits & 0x00000008u) {
       _this->_impl_.execute_ability_indices_ = from._impl_.execute_ability_indices_;

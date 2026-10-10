@@ -523,6 +523,7 @@ class CMsgFireBullets final :
     kAnglesFieldNumber = 2,
     kTracerReplacementFieldNumber = 12,
     kAnglesOriginalFieldNumber = 14,
+    kTargetPosFieldNumber = 30,
     kSeedFieldNumber = 4,
     kPenetrationPercentFieldNumber = 8,
     kSpreadFieldNumber = 9,
@@ -536,6 +537,10 @@ class CMsgFireBullets final :
     kBulletGravityOverrideFieldNumber = 23,
     kMuzzleNumberFieldNumber = 24,
     kAbilityAsBulletFieldNumber = 25,
+    kFriendlyFireFieldNumber = 26,
+    kFriendlyFireDamageTypeFieldNumber = 27,
+    kBulletStateFieldNumber = 28,
+    kWeaponInfoIdFieldNumber = 29,
     kShooterEntityFieldNumber = 5,
     kAbilityFieldNumber = 7,
     kFiredFromGunFieldNumber = 10,
@@ -631,6 +636,24 @@ class CMsgFireBullets final :
   void unsafe_arena_set_allocated_angles_original(
       ::CMsgQAngle* angles_original);
   ::CMsgQAngle* unsafe_arena_release_angles_original();
+
+  // optional .CMsgVector target_pos = 30;
+  bool has_target_pos() const;
+  private:
+  bool _internal_has_target_pos() const;
+  public:
+  void clear_target_pos();
+  const ::CMsgVector& target_pos() const;
+  PROTOBUF_NODISCARD ::CMsgVector* release_target_pos();
+  ::CMsgVector* mutable_target_pos();
+  void set_allocated_target_pos(::CMsgVector* target_pos);
+  private:
+  const ::CMsgVector& _internal_target_pos() const;
+  ::CMsgVector* _internal_mutable_target_pos();
+  public:
+  void unsafe_arena_set_allocated_target_pos(
+      ::CMsgVector* target_pos);
+  ::CMsgVector* unsafe_arena_release_target_pos();
 
   // optional uint32 seed = 4;
   bool has_seed() const;
@@ -801,6 +824,58 @@ class CMsgFireBullets final :
   void _internal_set_ability_as_bullet(bool value);
   public:
 
+  // optional bool friendly_fire = 26;
+  bool has_friendly_fire() const;
+  private:
+  bool _internal_has_friendly_fire() const;
+  public:
+  void clear_friendly_fire();
+  bool friendly_fire() const;
+  void set_friendly_fire(bool value);
+  private:
+  bool _internal_friendly_fire() const;
+  void _internal_set_friendly_fire(bool value);
+  public:
+
+  // optional uint32 friendly_fire_damage_type = 27;
+  bool has_friendly_fire_damage_type() const;
+  private:
+  bool _internal_has_friendly_fire_damage_type() const;
+  public:
+  void clear_friendly_fire_damage_type();
+  uint32_t friendly_fire_damage_type() const;
+  void set_friendly_fire_damage_type(uint32_t value);
+  private:
+  uint32_t _internal_friendly_fire_damage_type() const;
+  void _internal_set_friendly_fire_damage_type(uint32_t value);
+  public:
+
+  // optional uint32 bullet_state = 28;
+  bool has_bullet_state() const;
+  private:
+  bool _internal_has_bullet_state() const;
+  public:
+  void clear_bullet_state();
+  uint32_t bullet_state() const;
+  void set_bullet_state(uint32_t value);
+  private:
+  uint32_t _internal_bullet_state() const;
+  void _internal_set_bullet_state(uint32_t value);
+  public:
+
+  // optional uint32 weapon_info_id = 29;
+  bool has_weapon_info_id() const;
+  private:
+  bool _internal_has_weapon_info_id() const;
+  public:
+  void clear_weapon_info_id();
+  uint32_t weapon_info_id() const;
+  void set_weapon_info_id(uint32_t value);
+  private:
+  uint32_t _internal_weapon_info_id() const;
+  void _internal_set_weapon_info_id(uint32_t value);
+  public:
+
   // optional int32 shooter_entity = 5 [default = -1];
   bool has_shooter_entity() const;
   private:
@@ -881,6 +956,7 @@ class CMsgFireBullets final :
     ::CMsgQAngle* angles_;
     ::CMsgFireBullets_TracerAssignment* tracer_replacement_;
     ::CMsgQAngle* angles_original_;
+    ::CMsgVector* target_pos_;
     uint32_t seed_;
     float penetration_percent_;
     float spread_;
@@ -894,6 +970,10 @@ class CMsgFireBullets final :
     float bullet_gravity_override_;
     int32_t muzzle_number_;
     bool ability_as_bullet_;
+    bool friendly_fire_;
+    uint32_t friendly_fire_damage_type_;
+    uint32_t bullet_state_;
+    uint32_t weapon_info_id_;
     int32_t shooter_entity_;
     int32_t ability_;
     bool fired_from_gun_;
@@ -1041,6 +1121,7 @@ class CMsgBulletImpact final :
     kImpactedBoneIndexFieldNumber = 9,
     kWeaponSubclassIdFieldNumber = 10,
     kBulletRadiusOverrideFieldNumber = 12,
+    kWeaponInfoIdFieldNumber = 13,
     kShooterEhandleFieldNumber = 11,
     kAbilityEhandleFieldNumber = 7,
     kImpactedEhandleFieldNumber = 8,
@@ -1164,6 +1245,19 @@ class CMsgBulletImpact final :
   void _internal_set_bullet_radius_override(float value);
   public:
 
+  // optional uint32 weapon_info_id = 13;
+  bool has_weapon_info_id() const;
+  private:
+  bool _internal_has_weapon_info_id() const;
+  public:
+  void clear_weapon_info_id();
+  uint32_t weapon_info_id() const;
+  void set_weapon_info_id(uint32_t value);
+  private:
+  uint32_t _internal_weapon_info_id() const;
+  void _internal_set_weapon_info_id(uint32_t value);
+  public:
+
   // optional uint32 shooter_ehandle = 11 [default = 16777215];
   bool has_shooter_ehandle() const;
   private:
@@ -1221,6 +1315,7 @@ class CMsgBulletImpact final :
     uint32_t impacted_bone_index_;
     uint32_t weapon_subclass_id_;
     float bullet_radius_override_;
+    uint32_t weapon_info_id_;
     uint32_t shooter_ehandle_;
     uint32_t ability_ehandle_;
     uint32_t impacted_ehandle_;
@@ -4721,6 +4816,7 @@ class CMsgEnableSatVolumesEvent final :
     kSatTintFieldNumber = 3,
     kDesatTintFieldNumber = 4,
     kOutlineColorFieldNumber = 5,
+    kOutlineWidthFieldNumber = 6,
   };
   // optional uint32 mode = 1;
   bool has_mode() const;
@@ -4787,6 +4883,19 @@ class CMsgEnableSatVolumesEvent final :
   void _internal_set_outline_color(uint32_t value);
   public:
 
+  // optional float outline_width = 6;
+  bool has_outline_width() const;
+  private:
+  bool _internal_has_outline_width() const;
+  public:
+  void clear_outline_width();
+  float outline_width() const;
+  void set_outline_width(float value);
+  private:
+  float _internal_outline_width() const;
+  void _internal_set_outline_width(float value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CMsgEnableSatVolumesEvent)
  private:
   class _Internal;
@@ -4802,6 +4911,7 @@ class CMsgEnableSatVolumesEvent final :
     uint32_t sat_tint_;
     uint32_t desat_tint_;
     uint32_t outline_color_;
+    float outline_width_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fgameevents_2eproto;
@@ -5833,7 +5943,7 @@ inline void CMsgFireBullets::set_allocated_angles(::CMsgQAngle* angles) {
 
 // optional uint32 seed = 4;
 inline bool CMsgFireBullets::_internal_has_seed() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_seed() const {
@@ -5841,7 +5951,7 @@ inline bool CMsgFireBullets::has_seed() const {
 }
 inline void CMsgFireBullets::clear_seed() {
   _impl_.seed_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000010u;
+  _impl_._has_bits_[0] &= ~0x00000020u;
 }
 inline uint32_t CMsgFireBullets::_internal_seed() const {
   return _impl_.seed_;
@@ -5851,7 +5961,7 @@ inline uint32_t CMsgFireBullets::seed() const {
   return _internal_seed();
 }
 inline void CMsgFireBullets::_internal_set_seed(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_._has_bits_[0] |= 0x00000020u;
   _impl_.seed_ = value;
 }
 inline void CMsgFireBullets::set_seed(uint32_t value) {
@@ -5861,7 +5971,7 @@ inline void CMsgFireBullets::set_seed(uint32_t value) {
 
 // optional int32 shooter_entity = 5 [default = -1];
 inline bool CMsgFireBullets::_internal_has_shooter_entity() const {
-  bool value = (_impl_._has_bits_[0] & 0x00020000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00400000u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_shooter_entity() const {
@@ -5869,7 +5979,7 @@ inline bool CMsgFireBullets::has_shooter_entity() const {
 }
 inline void CMsgFireBullets::clear_shooter_entity() {
   _impl_.shooter_entity_ = -1;
-  _impl_._has_bits_[0] &= ~0x00020000u;
+  _impl_._has_bits_[0] &= ~0x00400000u;
 }
 inline int32_t CMsgFireBullets::_internal_shooter_entity() const {
   return _impl_.shooter_entity_;
@@ -5879,7 +5989,7 @@ inline int32_t CMsgFireBullets::shooter_entity() const {
   return _internal_shooter_entity();
 }
 inline void CMsgFireBullets::_internal_set_shooter_entity(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00020000u;
+  _impl_._has_bits_[0] |= 0x00400000u;
   _impl_.shooter_entity_ = value;
 }
 inline void CMsgFireBullets::set_shooter_entity(int32_t value) {
@@ -5889,7 +5999,7 @@ inline void CMsgFireBullets::set_shooter_entity(int32_t value) {
 
 // optional int32 ability = 7 [default = -1];
 inline bool CMsgFireBullets::_internal_has_ability() const {
-  bool value = (_impl_._has_bits_[0] & 0x00040000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00800000u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_ability() const {
@@ -5897,7 +6007,7 @@ inline bool CMsgFireBullets::has_ability() const {
 }
 inline void CMsgFireBullets::clear_ability() {
   _impl_.ability_ = -1;
-  _impl_._has_bits_[0] &= ~0x00040000u;
+  _impl_._has_bits_[0] &= ~0x00800000u;
 }
 inline int32_t CMsgFireBullets::_internal_ability() const {
   return _impl_.ability_;
@@ -5907,7 +6017,7 @@ inline int32_t CMsgFireBullets::ability() const {
   return _internal_ability();
 }
 inline void CMsgFireBullets::_internal_set_ability(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00040000u;
+  _impl_._has_bits_[0] |= 0x00800000u;
   _impl_.ability_ = value;
 }
 inline void CMsgFireBullets::set_ability(int32_t value) {
@@ -5917,7 +6027,7 @@ inline void CMsgFireBullets::set_ability(int32_t value) {
 
 // optional float penetration_percent = 8;
 inline bool CMsgFireBullets::_internal_has_penetration_percent() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_penetration_percent() const {
@@ -5925,7 +6035,7 @@ inline bool CMsgFireBullets::has_penetration_percent() const {
 }
 inline void CMsgFireBullets::clear_penetration_percent() {
   _impl_.penetration_percent_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000020u;
+  _impl_._has_bits_[0] &= ~0x00000040u;
 }
 inline float CMsgFireBullets::_internal_penetration_percent() const {
   return _impl_.penetration_percent_;
@@ -5935,7 +6045,7 @@ inline float CMsgFireBullets::penetration_percent() const {
   return _internal_penetration_percent();
 }
 inline void CMsgFireBullets::_internal_set_penetration_percent(float value) {
-  _impl_._has_bits_[0] |= 0x00000020u;
+  _impl_._has_bits_[0] |= 0x00000040u;
   _impl_.penetration_percent_ = value;
 }
 inline void CMsgFireBullets::set_penetration_percent(float value) {
@@ -5945,7 +6055,7 @@ inline void CMsgFireBullets::set_penetration_percent(float value) {
 
 // optional float spread = 9;
 inline bool CMsgFireBullets::_internal_has_spread() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_spread() const {
@@ -5953,7 +6063,7 @@ inline bool CMsgFireBullets::has_spread() const {
 }
 inline void CMsgFireBullets::clear_spread() {
   _impl_.spread_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000040u;
+  _impl_._has_bits_[0] &= ~0x00000080u;
 }
 inline float CMsgFireBullets::_internal_spread() const {
   return _impl_.spread_;
@@ -5963,7 +6073,7 @@ inline float CMsgFireBullets::spread() const {
   return _internal_spread();
 }
 inline void CMsgFireBullets::_internal_set_spread(float value) {
-  _impl_._has_bits_[0] |= 0x00000040u;
+  _impl_._has_bits_[0] |= 0x00000080u;
   _impl_.spread_ = value;
 }
 inline void CMsgFireBullets::set_spread(float value) {
@@ -5973,7 +6083,7 @@ inline void CMsgFireBullets::set_spread(float value) {
 
 // optional bool fired_from_gun = 10 [default = true];
 inline bool CMsgFireBullets::_internal_has_fired_from_gun() const {
-  bool value = (_impl_._has_bits_[0] & 0x00080000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x01000000u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_fired_from_gun() const {
@@ -5981,7 +6091,7 @@ inline bool CMsgFireBullets::has_fired_from_gun() const {
 }
 inline void CMsgFireBullets::clear_fired_from_gun() {
   _impl_.fired_from_gun_ = true;
-  _impl_._has_bits_[0] &= ~0x00080000u;
+  _impl_._has_bits_[0] &= ~0x01000000u;
 }
 inline bool CMsgFireBullets::_internal_fired_from_gun() const {
   return _impl_.fired_from_gun_;
@@ -5991,7 +6101,7 @@ inline bool CMsgFireBullets::fired_from_gun() const {
   return _internal_fired_from_gun();
 }
 inline void CMsgFireBullets::_internal_set_fired_from_gun(bool value) {
-  _impl_._has_bits_[0] |= 0x00080000u;
+  _impl_._has_bits_[0] |= 0x01000000u;
   _impl_.fired_from_gun_ = value;
 }
 inline void CMsgFireBullets::set_fired_from_gun(bool value) {
@@ -6001,7 +6111,7 @@ inline void CMsgFireBullets::set_fired_from_gun(bool value) {
 
 // optional uint32 bullets_override = 11;
 inline bool CMsgFireBullets::_internal_has_bullets_override() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000100u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_bullets_override() const {
@@ -6009,7 +6119,7 @@ inline bool CMsgFireBullets::has_bullets_override() const {
 }
 inline void CMsgFireBullets::clear_bullets_override() {
   _impl_.bullets_override_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000080u;
+  _impl_._has_bits_[0] &= ~0x00000100u;
 }
 inline uint32_t CMsgFireBullets::_internal_bullets_override() const {
   return _impl_.bullets_override_;
@@ -6019,7 +6129,7 @@ inline uint32_t CMsgFireBullets::bullets_override() const {
   return _internal_bullets_override();
 }
 inline void CMsgFireBullets::_internal_set_bullets_override(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000080u;
+  _impl_._has_bits_[0] |= 0x00000100u;
   _impl_.bullets_override_ = value;
 }
 inline void CMsgFireBullets::set_bullets_override(uint32_t value) {
@@ -6246,7 +6356,7 @@ inline void CMsgFireBullets::set_allocated_angles_original(::CMsgQAngle* angles_
 
 // optional uint32 weapon_subclass_id = 15;
 inline bool CMsgFireBullets::_internal_has_weapon_subclass_id() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000100u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000200u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_weapon_subclass_id() const {
@@ -6254,7 +6364,7 @@ inline bool CMsgFireBullets::has_weapon_subclass_id() const {
 }
 inline void CMsgFireBullets::clear_weapon_subclass_id() {
   _impl_.weapon_subclass_id_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000100u;
+  _impl_._has_bits_[0] &= ~0x00000200u;
 }
 inline uint32_t CMsgFireBullets::_internal_weapon_subclass_id() const {
   return _impl_.weapon_subclass_id_;
@@ -6264,7 +6374,7 @@ inline uint32_t CMsgFireBullets::weapon_subclass_id() const {
   return _internal_weapon_subclass_id();
 }
 inline void CMsgFireBullets::_internal_set_weapon_subclass_id(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000100u;
+  _impl_._has_bits_[0] |= 0x00000200u;
   _impl_.weapon_subclass_id_ = value;
 }
 inline void CMsgFireBullets::set_weapon_subclass_id(uint32_t value) {
@@ -6274,7 +6384,7 @@ inline void CMsgFireBullets::set_weapon_subclass_id(uint32_t value) {
 
 // optional uint32 shot_number = 16;
 inline bool CMsgFireBullets::_internal_has_shot_number() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000200u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000400u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_shot_number() const {
@@ -6282,7 +6392,7 @@ inline bool CMsgFireBullets::has_shot_number() const {
 }
 inline void CMsgFireBullets::clear_shot_number() {
   _impl_.shot_number_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000200u;
+  _impl_._has_bits_[0] &= ~0x00000400u;
 }
 inline uint32_t CMsgFireBullets::_internal_shot_number() const {
   return _impl_.shot_number_;
@@ -6292,7 +6402,7 @@ inline uint32_t CMsgFireBullets::shot_number() const {
   return _internal_shot_number();
 }
 inline void CMsgFireBullets::_internal_set_shot_number(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000200u;
+  _impl_._has_bits_[0] |= 0x00000400u;
   _impl_.shot_number_ = value;
 }
 inline void CMsgFireBullets::set_shot_number(uint32_t value) {
@@ -6302,7 +6412,7 @@ inline void CMsgFireBullets::set_shot_number(uint32_t value) {
 
 // optional int32 ignore_entity = 17 [default = -1];
 inline bool CMsgFireBullets::_internal_has_ignore_entity() const {
-  bool value = (_impl_._has_bits_[0] & 0x00200000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x04000000u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_ignore_entity() const {
@@ -6310,7 +6420,7 @@ inline bool CMsgFireBullets::has_ignore_entity() const {
 }
 inline void CMsgFireBullets::clear_ignore_entity() {
   _impl_.ignore_entity_ = -1;
-  _impl_._has_bits_[0] &= ~0x00200000u;
+  _impl_._has_bits_[0] &= ~0x04000000u;
 }
 inline int32_t CMsgFireBullets::_internal_ignore_entity() const {
   return _impl_.ignore_entity_;
@@ -6320,7 +6430,7 @@ inline int32_t CMsgFireBullets::ignore_entity() const {
   return _internal_ignore_entity();
 }
 inline void CMsgFireBullets::_internal_set_ignore_entity(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00200000u;
+  _impl_._has_bits_[0] |= 0x04000000u;
   _impl_.ignore_entity_ = value;
 }
 inline void CMsgFireBullets::set_ignore_entity(int32_t value) {
@@ -6330,7 +6440,7 @@ inline void CMsgFireBullets::set_ignore_entity(int32_t value) {
 
 // optional float max_range = 18;
 inline bool CMsgFireBullets::_internal_has_max_range() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000400u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000800u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_max_range() const {
@@ -6338,7 +6448,7 @@ inline bool CMsgFireBullets::has_max_range() const {
 }
 inline void CMsgFireBullets::clear_max_range() {
   _impl_.max_range_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000400u;
+  _impl_._has_bits_[0] &= ~0x00000800u;
 }
 inline float CMsgFireBullets::_internal_max_range() const {
   return _impl_.max_range_;
@@ -6348,7 +6458,7 @@ inline float CMsgFireBullets::max_range() const {
   return _internal_max_range();
 }
 inline void CMsgFireBullets::_internal_set_max_range(float value) {
-  _impl_._has_bits_[0] |= 0x00000400u;
+  _impl_._has_bits_[0] |= 0x00000800u;
   _impl_.max_range_ = value;
 }
 inline void CMsgFireBullets::set_max_range(float value) {
@@ -6358,7 +6468,7 @@ inline void CMsgFireBullets::set_max_range(float value) {
 
 // optional uint32 shot_id = 19;
 inline bool CMsgFireBullets::_internal_has_shot_id() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000800u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00001000u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_shot_id() const {
@@ -6366,7 +6476,7 @@ inline bool CMsgFireBullets::has_shot_id() const {
 }
 inline void CMsgFireBullets::clear_shot_id() {
   _impl_.shot_id_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000800u;
+  _impl_._has_bits_[0] &= ~0x00001000u;
 }
 inline uint32_t CMsgFireBullets::_internal_shot_id() const {
   return _impl_.shot_id_;
@@ -6376,7 +6486,7 @@ inline uint32_t CMsgFireBullets::shot_id() const {
   return _internal_shot_id();
 }
 inline void CMsgFireBullets::_internal_set_shot_id(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000800u;
+  _impl_._has_bits_[0] |= 0x00001000u;
   _impl_.shot_id_ = value;
 }
 inline void CMsgFireBullets::set_shot_id(uint32_t value) {
@@ -6386,7 +6496,7 @@ inline void CMsgFireBullets::set_shot_id(uint32_t value) {
 
 // optional bool predict_hits_against_units = 20 [default = true];
 inline bool CMsgFireBullets::_internal_has_predict_hits_against_units() const {
-  bool value = (_impl_._has_bits_[0] & 0x00100000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x02000000u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_predict_hits_against_units() const {
@@ -6394,7 +6504,7 @@ inline bool CMsgFireBullets::has_predict_hits_against_units() const {
 }
 inline void CMsgFireBullets::clear_predict_hits_against_units() {
   _impl_.predict_hits_against_units_ = true;
-  _impl_._has_bits_[0] &= ~0x00100000u;
+  _impl_._has_bits_[0] &= ~0x02000000u;
 }
 inline bool CMsgFireBullets::_internal_predict_hits_against_units() const {
   return _impl_.predict_hits_against_units_;
@@ -6404,7 +6514,7 @@ inline bool CMsgFireBullets::predict_hits_against_units() const {
   return _internal_predict_hits_against_units();
 }
 inline void CMsgFireBullets::_internal_set_predict_hits_against_units(bool value) {
-  _impl_._has_bits_[0] |= 0x00100000u;
+  _impl_._has_bits_[0] |= 0x02000000u;
   _impl_.predict_hits_against_units_ = value;
 }
 inline void CMsgFireBullets::set_predict_hits_against_units(bool value) {
@@ -6414,7 +6524,7 @@ inline void CMsgFireBullets::set_predict_hits_against_units(bool value) {
 
 // optional float bullet_radius_override = 21 [default = 0];
 inline bool CMsgFireBullets::_internal_has_bullet_radius_override() const {
-  bool value = (_impl_._has_bits_[0] & 0x00001000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00002000u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_bullet_radius_override() const {
@@ -6422,7 +6532,7 @@ inline bool CMsgFireBullets::has_bullet_radius_override() const {
 }
 inline void CMsgFireBullets::clear_bullet_radius_override() {
   _impl_.bullet_radius_override_ = 0;
-  _impl_._has_bits_[0] &= ~0x00001000u;
+  _impl_._has_bits_[0] &= ~0x00002000u;
 }
 inline float CMsgFireBullets::_internal_bullet_radius_override() const {
   return _impl_.bullet_radius_override_;
@@ -6432,7 +6542,7 @@ inline float CMsgFireBullets::bullet_radius_override() const {
   return _internal_bullet_radius_override();
 }
 inline void CMsgFireBullets::_internal_set_bullet_radius_override(float value) {
-  _impl_._has_bits_[0] |= 0x00001000u;
+  _impl_._has_bits_[0] |= 0x00002000u;
   _impl_.bullet_radius_override_ = value;
 }
 inline void CMsgFireBullets::set_bullet_radius_override(float value) {
@@ -6442,7 +6552,7 @@ inline void CMsgFireBullets::set_bullet_radius_override(float value) {
 
 // optional float bullet_speed_override = 22 [default = 0];
 inline bool CMsgFireBullets::_internal_has_bullet_speed_override() const {
-  bool value = (_impl_._has_bits_[0] & 0x00002000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00004000u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_bullet_speed_override() const {
@@ -6450,7 +6560,7 @@ inline bool CMsgFireBullets::has_bullet_speed_override() const {
 }
 inline void CMsgFireBullets::clear_bullet_speed_override() {
   _impl_.bullet_speed_override_ = 0;
-  _impl_._has_bits_[0] &= ~0x00002000u;
+  _impl_._has_bits_[0] &= ~0x00004000u;
 }
 inline float CMsgFireBullets::_internal_bullet_speed_override() const {
   return _impl_.bullet_speed_override_;
@@ -6460,7 +6570,7 @@ inline float CMsgFireBullets::bullet_speed_override() const {
   return _internal_bullet_speed_override();
 }
 inline void CMsgFireBullets::_internal_set_bullet_speed_override(float value) {
-  _impl_._has_bits_[0] |= 0x00002000u;
+  _impl_._has_bits_[0] |= 0x00004000u;
   _impl_.bullet_speed_override_ = value;
 }
 inline void CMsgFireBullets::set_bullet_speed_override(float value) {
@@ -6470,7 +6580,7 @@ inline void CMsgFireBullets::set_bullet_speed_override(float value) {
 
 // optional float bullet_gravity_override = 23 [default = 0];
 inline bool CMsgFireBullets::_internal_has_bullet_gravity_override() const {
-  bool value = (_impl_._has_bits_[0] & 0x00004000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00008000u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_bullet_gravity_override() const {
@@ -6478,7 +6588,7 @@ inline bool CMsgFireBullets::has_bullet_gravity_override() const {
 }
 inline void CMsgFireBullets::clear_bullet_gravity_override() {
   _impl_.bullet_gravity_override_ = 0;
-  _impl_._has_bits_[0] &= ~0x00004000u;
+  _impl_._has_bits_[0] &= ~0x00008000u;
 }
 inline float CMsgFireBullets::_internal_bullet_gravity_override() const {
   return _impl_.bullet_gravity_override_;
@@ -6488,7 +6598,7 @@ inline float CMsgFireBullets::bullet_gravity_override() const {
   return _internal_bullet_gravity_override();
 }
 inline void CMsgFireBullets::_internal_set_bullet_gravity_override(float value) {
-  _impl_._has_bits_[0] |= 0x00004000u;
+  _impl_._has_bits_[0] |= 0x00008000u;
   _impl_.bullet_gravity_override_ = value;
 }
 inline void CMsgFireBullets::set_bullet_gravity_override(float value) {
@@ -6498,7 +6608,7 @@ inline void CMsgFireBullets::set_bullet_gravity_override(float value) {
 
 // optional int32 muzzle_number = 24;
 inline bool CMsgFireBullets::_internal_has_muzzle_number() const {
-  bool value = (_impl_._has_bits_[0] & 0x00008000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00010000u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_muzzle_number() const {
@@ -6506,7 +6616,7 @@ inline bool CMsgFireBullets::has_muzzle_number() const {
 }
 inline void CMsgFireBullets::clear_muzzle_number() {
   _impl_.muzzle_number_ = 0;
-  _impl_._has_bits_[0] &= ~0x00008000u;
+  _impl_._has_bits_[0] &= ~0x00010000u;
 }
 inline int32_t CMsgFireBullets::_internal_muzzle_number() const {
   return _impl_.muzzle_number_;
@@ -6516,7 +6626,7 @@ inline int32_t CMsgFireBullets::muzzle_number() const {
   return _internal_muzzle_number();
 }
 inline void CMsgFireBullets::_internal_set_muzzle_number(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00008000u;
+  _impl_._has_bits_[0] |= 0x00010000u;
   _impl_.muzzle_number_ = value;
 }
 inline void CMsgFireBullets::set_muzzle_number(int32_t value) {
@@ -6526,7 +6636,7 @@ inline void CMsgFireBullets::set_muzzle_number(int32_t value) {
 
 // optional bool ability_as_bullet = 25;
 inline bool CMsgFireBullets::_internal_has_ability_as_bullet() const {
-  bool value = (_impl_._has_bits_[0] & 0x00010000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00020000u) != 0;
   return value;
 }
 inline bool CMsgFireBullets::has_ability_as_bullet() const {
@@ -6534,7 +6644,7 @@ inline bool CMsgFireBullets::has_ability_as_bullet() const {
 }
 inline void CMsgFireBullets::clear_ability_as_bullet() {
   _impl_.ability_as_bullet_ = false;
-  _impl_._has_bits_[0] &= ~0x00010000u;
+  _impl_._has_bits_[0] &= ~0x00020000u;
 }
 inline bool CMsgFireBullets::_internal_ability_as_bullet() const {
   return _impl_.ability_as_bullet_;
@@ -6544,12 +6654,211 @@ inline bool CMsgFireBullets::ability_as_bullet() const {
   return _internal_ability_as_bullet();
 }
 inline void CMsgFireBullets::_internal_set_ability_as_bullet(bool value) {
-  _impl_._has_bits_[0] |= 0x00010000u;
+  _impl_._has_bits_[0] |= 0x00020000u;
   _impl_.ability_as_bullet_ = value;
 }
 inline void CMsgFireBullets::set_ability_as_bullet(bool value) {
   _internal_set_ability_as_bullet(value);
   // @@protoc_insertion_point(field_set:CMsgFireBullets.ability_as_bullet)
+}
+
+// optional bool friendly_fire = 26;
+inline bool CMsgFireBullets::_internal_has_friendly_fire() const {
+  bool value = (_impl_._has_bits_[0] & 0x00040000u) != 0;
+  return value;
+}
+inline bool CMsgFireBullets::has_friendly_fire() const {
+  return _internal_has_friendly_fire();
+}
+inline void CMsgFireBullets::clear_friendly_fire() {
+  _impl_.friendly_fire_ = false;
+  _impl_._has_bits_[0] &= ~0x00040000u;
+}
+inline bool CMsgFireBullets::_internal_friendly_fire() const {
+  return _impl_.friendly_fire_;
+}
+inline bool CMsgFireBullets::friendly_fire() const {
+  // @@protoc_insertion_point(field_get:CMsgFireBullets.friendly_fire)
+  return _internal_friendly_fire();
+}
+inline void CMsgFireBullets::_internal_set_friendly_fire(bool value) {
+  _impl_._has_bits_[0] |= 0x00040000u;
+  _impl_.friendly_fire_ = value;
+}
+inline void CMsgFireBullets::set_friendly_fire(bool value) {
+  _internal_set_friendly_fire(value);
+  // @@protoc_insertion_point(field_set:CMsgFireBullets.friendly_fire)
+}
+
+// optional uint32 friendly_fire_damage_type = 27;
+inline bool CMsgFireBullets::_internal_has_friendly_fire_damage_type() const {
+  bool value = (_impl_._has_bits_[0] & 0x00080000u) != 0;
+  return value;
+}
+inline bool CMsgFireBullets::has_friendly_fire_damage_type() const {
+  return _internal_has_friendly_fire_damage_type();
+}
+inline void CMsgFireBullets::clear_friendly_fire_damage_type() {
+  _impl_.friendly_fire_damage_type_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00080000u;
+}
+inline uint32_t CMsgFireBullets::_internal_friendly_fire_damage_type() const {
+  return _impl_.friendly_fire_damage_type_;
+}
+inline uint32_t CMsgFireBullets::friendly_fire_damage_type() const {
+  // @@protoc_insertion_point(field_get:CMsgFireBullets.friendly_fire_damage_type)
+  return _internal_friendly_fire_damage_type();
+}
+inline void CMsgFireBullets::_internal_set_friendly_fire_damage_type(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00080000u;
+  _impl_.friendly_fire_damage_type_ = value;
+}
+inline void CMsgFireBullets::set_friendly_fire_damage_type(uint32_t value) {
+  _internal_set_friendly_fire_damage_type(value);
+  // @@protoc_insertion_point(field_set:CMsgFireBullets.friendly_fire_damage_type)
+}
+
+// optional uint32 bullet_state = 28;
+inline bool CMsgFireBullets::_internal_has_bullet_state() const {
+  bool value = (_impl_._has_bits_[0] & 0x00100000u) != 0;
+  return value;
+}
+inline bool CMsgFireBullets::has_bullet_state() const {
+  return _internal_has_bullet_state();
+}
+inline void CMsgFireBullets::clear_bullet_state() {
+  _impl_.bullet_state_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00100000u;
+}
+inline uint32_t CMsgFireBullets::_internal_bullet_state() const {
+  return _impl_.bullet_state_;
+}
+inline uint32_t CMsgFireBullets::bullet_state() const {
+  // @@protoc_insertion_point(field_get:CMsgFireBullets.bullet_state)
+  return _internal_bullet_state();
+}
+inline void CMsgFireBullets::_internal_set_bullet_state(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00100000u;
+  _impl_.bullet_state_ = value;
+}
+inline void CMsgFireBullets::set_bullet_state(uint32_t value) {
+  _internal_set_bullet_state(value);
+  // @@protoc_insertion_point(field_set:CMsgFireBullets.bullet_state)
+}
+
+// optional uint32 weapon_info_id = 29;
+inline bool CMsgFireBullets::_internal_has_weapon_info_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00200000u) != 0;
+  return value;
+}
+inline bool CMsgFireBullets::has_weapon_info_id() const {
+  return _internal_has_weapon_info_id();
+}
+inline void CMsgFireBullets::clear_weapon_info_id() {
+  _impl_.weapon_info_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00200000u;
+}
+inline uint32_t CMsgFireBullets::_internal_weapon_info_id() const {
+  return _impl_.weapon_info_id_;
+}
+inline uint32_t CMsgFireBullets::weapon_info_id() const {
+  // @@protoc_insertion_point(field_get:CMsgFireBullets.weapon_info_id)
+  return _internal_weapon_info_id();
+}
+inline void CMsgFireBullets::_internal_set_weapon_info_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00200000u;
+  _impl_.weapon_info_id_ = value;
+}
+inline void CMsgFireBullets::set_weapon_info_id(uint32_t value) {
+  _internal_set_weapon_info_id(value);
+  // @@protoc_insertion_point(field_set:CMsgFireBullets.weapon_info_id)
+}
+
+// optional .CMsgVector target_pos = 30;
+inline bool CMsgFireBullets::_internal_has_target_pos() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.target_pos_ != nullptr);
+  return value;
+}
+inline bool CMsgFireBullets::has_target_pos() const {
+  return _internal_has_target_pos();
+}
+inline const ::CMsgVector& CMsgFireBullets::_internal_target_pos() const {
+  const ::CMsgVector* p = _impl_.target_pos_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CMsgVector&>(
+      ::_CMsgVector_default_instance_);
+}
+inline const ::CMsgVector& CMsgFireBullets::target_pos() const {
+  // @@protoc_insertion_point(field_get:CMsgFireBullets.target_pos)
+  return _internal_target_pos();
+}
+inline void CMsgFireBullets::unsafe_arena_set_allocated_target_pos(
+    ::CMsgVector* target_pos) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.target_pos_);
+  }
+  _impl_.target_pos_ = target_pos;
+  if (target_pos) {
+    _impl_._has_bits_[0] |= 0x00000010u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000010u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMsgFireBullets.target_pos)
+}
+inline ::CMsgVector* CMsgFireBullets::release_target_pos() {
+  _impl_._has_bits_[0] &= ~0x00000010u;
+  ::CMsgVector* temp = _impl_.target_pos_;
+  _impl_.target_pos_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::CMsgVector* CMsgFireBullets::unsafe_arena_release_target_pos() {
+  // @@protoc_insertion_point(field_release:CMsgFireBullets.target_pos)
+  _impl_._has_bits_[0] &= ~0x00000010u;
+  ::CMsgVector* temp = _impl_.target_pos_;
+  _impl_.target_pos_ = nullptr;
+  return temp;
+}
+inline ::CMsgVector* CMsgFireBullets::_internal_mutable_target_pos() {
+  _impl_._has_bits_[0] |= 0x00000010u;
+  if (_impl_.target_pos_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CMsgVector>(GetArenaForAllocation());
+    _impl_.target_pos_ = p;
+  }
+  return _impl_.target_pos_;
+}
+inline ::CMsgVector* CMsgFireBullets::mutable_target_pos() {
+  ::CMsgVector* _msg = _internal_mutable_target_pos();
+  // @@protoc_insertion_point(field_mutable:CMsgFireBullets.target_pos)
+  return _msg;
+}
+inline void CMsgFireBullets::set_allocated_target_pos(::CMsgVector* target_pos) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.target_pos_);
+  }
+  if (target_pos) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(
+                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(target_pos));
+    if (message_arena != submessage_arena) {
+      target_pos = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, target_pos, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000010u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000010u;
+  }
+  _impl_.target_pos_ = target_pos;
+  // @@protoc_insertion_point(field_set_allocated:CMsgFireBullets.target_pos)
 }
 
 // -------------------------------------------------------------------
@@ -6875,7 +7184,7 @@ inline void CMsgBulletImpact::set_surface_type(uint32_t value) {
 
 // optional uint32 ability_ehandle = 7 [default = 16777215];
 inline bool CMsgBulletImpact::_internal_has_ability_ehandle() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000200u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000400u) != 0;
   return value;
 }
 inline bool CMsgBulletImpact::has_ability_ehandle() const {
@@ -6883,7 +7192,7 @@ inline bool CMsgBulletImpact::has_ability_ehandle() const {
 }
 inline void CMsgBulletImpact::clear_ability_ehandle() {
   _impl_.ability_ehandle_ = 16777215u;
-  _impl_._has_bits_[0] &= ~0x00000200u;
+  _impl_._has_bits_[0] &= ~0x00000400u;
 }
 inline uint32_t CMsgBulletImpact::_internal_ability_ehandle() const {
   return _impl_.ability_ehandle_;
@@ -6893,7 +7202,7 @@ inline uint32_t CMsgBulletImpact::ability_ehandle() const {
   return _internal_ability_ehandle();
 }
 inline void CMsgBulletImpact::_internal_set_ability_ehandle(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000200u;
+  _impl_._has_bits_[0] |= 0x00000400u;
   _impl_.ability_ehandle_ = value;
 }
 inline void CMsgBulletImpact::set_ability_ehandle(uint32_t value) {
@@ -6903,7 +7212,7 @@ inline void CMsgBulletImpact::set_ability_ehandle(uint32_t value) {
 
 // optional uint32 impacted_ehandle = 8 [default = 16777215];
 inline bool CMsgBulletImpact::_internal_has_impacted_ehandle() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000400u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000800u) != 0;
   return value;
 }
 inline bool CMsgBulletImpact::has_impacted_ehandle() const {
@@ -6911,7 +7220,7 @@ inline bool CMsgBulletImpact::has_impacted_ehandle() const {
 }
 inline void CMsgBulletImpact::clear_impacted_ehandle() {
   _impl_.impacted_ehandle_ = 16777215u;
-  _impl_._has_bits_[0] &= ~0x00000400u;
+  _impl_._has_bits_[0] &= ~0x00000800u;
 }
 inline uint32_t CMsgBulletImpact::_internal_impacted_ehandle() const {
   return _impl_.impacted_ehandle_;
@@ -6921,7 +7230,7 @@ inline uint32_t CMsgBulletImpact::impacted_ehandle() const {
   return _internal_impacted_ehandle();
 }
 inline void CMsgBulletImpact::_internal_set_impacted_ehandle(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000400u;
+  _impl_._has_bits_[0] |= 0x00000800u;
   _impl_.impacted_ehandle_ = value;
 }
 inline void CMsgBulletImpact::set_impacted_ehandle(uint32_t value) {
@@ -6987,7 +7296,7 @@ inline void CMsgBulletImpact::set_weapon_subclass_id(uint32_t value) {
 
 // optional uint32 shooter_ehandle = 11 [default = 16777215];
 inline bool CMsgBulletImpact::_internal_has_shooter_ehandle() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000100u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000200u) != 0;
   return value;
 }
 inline bool CMsgBulletImpact::has_shooter_ehandle() const {
@@ -6995,7 +7304,7 @@ inline bool CMsgBulletImpact::has_shooter_ehandle() const {
 }
 inline void CMsgBulletImpact::clear_shooter_ehandle() {
   _impl_.shooter_ehandle_ = 16777215u;
-  _impl_._has_bits_[0] &= ~0x00000100u;
+  _impl_._has_bits_[0] &= ~0x00000200u;
 }
 inline uint32_t CMsgBulletImpact::_internal_shooter_ehandle() const {
   return _impl_.shooter_ehandle_;
@@ -7005,7 +7314,7 @@ inline uint32_t CMsgBulletImpact::shooter_ehandle() const {
   return _internal_shooter_ehandle();
 }
 inline void CMsgBulletImpact::_internal_set_shooter_ehandle(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000100u;
+  _impl_._has_bits_[0] |= 0x00000200u;
   _impl_.shooter_ehandle_ = value;
 }
 inline void CMsgBulletImpact::set_shooter_ehandle(uint32_t value) {
@@ -7039,6 +7348,34 @@ inline void CMsgBulletImpact::_internal_set_bullet_radius_override(float value) 
 inline void CMsgBulletImpact::set_bullet_radius_override(float value) {
   _internal_set_bullet_radius_override(value);
   // @@protoc_insertion_point(field_set:CMsgBulletImpact.bullet_radius_override)
+}
+
+// optional uint32 weapon_info_id = 13;
+inline bool CMsgBulletImpact::_internal_has_weapon_info_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000100u) != 0;
+  return value;
+}
+inline bool CMsgBulletImpact::has_weapon_info_id() const {
+  return _internal_has_weapon_info_id();
+}
+inline void CMsgBulletImpact::clear_weapon_info_id() {
+  _impl_.weapon_info_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000100u;
+}
+inline uint32_t CMsgBulletImpact::_internal_weapon_info_id() const {
+  return _impl_.weapon_info_id_;
+}
+inline uint32_t CMsgBulletImpact::weapon_info_id() const {
+  // @@protoc_insertion_point(field_get:CMsgBulletImpact.weapon_info_id)
+  return _internal_weapon_info_id();
+}
+inline void CMsgBulletImpact::_internal_set_weapon_info_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000100u;
+  _impl_.weapon_info_id_ = value;
+}
+inline void CMsgBulletImpact::set_weapon_info_id(uint32_t value) {
+  _internal_set_weapon_info_id(value);
+  // @@protoc_insertion_point(field_set:CMsgBulletImpact.weapon_info_id)
 }
 
 // -------------------------------------------------------------------
@@ -10488,6 +10825,34 @@ inline void CMsgEnableSatVolumesEvent::_internal_set_outline_color(uint32_t valu
 inline void CMsgEnableSatVolumesEvent::set_outline_color(uint32_t value) {
   _internal_set_outline_color(value);
   // @@protoc_insertion_point(field_set:CMsgEnableSatVolumesEvent.outline_color)
+}
+
+// optional float outline_width = 6;
+inline bool CMsgEnableSatVolumesEvent::_internal_has_outline_width() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
+  return value;
+}
+inline bool CMsgEnableSatVolumesEvent::has_outline_width() const {
+  return _internal_has_outline_width();
+}
+inline void CMsgEnableSatVolumesEvent::clear_outline_width() {
+  _impl_.outline_width_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000020u;
+}
+inline float CMsgEnableSatVolumesEvent::_internal_outline_width() const {
+  return _impl_.outline_width_;
+}
+inline float CMsgEnableSatVolumesEvent::outline_width() const {
+  // @@protoc_insertion_point(field_get:CMsgEnableSatVolumesEvent.outline_width)
+  return _internal_outline_width();
+}
+inline void CMsgEnableSatVolumesEvent::_internal_set_outline_width(float value) {
+  _impl_._has_bits_[0] |= 0x00000020u;
+  _impl_.outline_width_ = value;
+}
+inline void CMsgEnableSatVolumesEvent::set_outline_width(float value) {
+  _internal_set_outline_width(value);
+  // @@protoc_insertion_point(field_set:CMsgEnableSatVolumesEvent.outline_width)
 }
 
 // -------------------------------------------------------------------

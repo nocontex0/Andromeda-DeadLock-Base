@@ -21,4 +21,4 @@ static constexpr auto g_OFFSET_CMsgSosStartSoundEvent_SoundPos = 0x12;
 static constexpr auto g_CCollisionProperty_UnknownMask = 0x38;
 
 // client.dll -> FF 89 ? ? ? ? EB ? 48 85 F6
-static constexpr auto g_OFFSET_CGameEntitySystem_GetHighestEntityIndex = 0x20A0;
+static constexpr auto g_OFFSET_CGameEntitySystem_GetHighestEntityIndex = 0x20C0;

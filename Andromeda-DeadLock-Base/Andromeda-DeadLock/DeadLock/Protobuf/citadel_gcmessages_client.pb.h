@@ -55,6 +55,15 @@ extern CMsgAccountBookDefaultTypeInternal _CMsgAccountBook_default_instance_;
 class CMsgAccountBook_Unlock;
 struct CMsgAccountBook_UnlockDefaultTypeInternal;
 extern CMsgAccountBook_UnlockDefaultTypeInternal _CMsgAccountBook_Unlock_default_instance_;
+class CMsgCitadelCabal;
+struct CMsgCitadelCabalDefaultTypeInternal;
+extern CMsgCitadelCabalDefaultTypeInternal _CMsgCitadelCabal_default_instance_;
+class CMsgCitadelCabal_MMStats;
+struct CMsgCitadelCabal_MMStatsDefaultTypeInternal;
+extern CMsgCitadelCabal_MMStatsDefaultTypeInternal _CMsgCitadelCabal_MMStats_default_instance_;
+class CMsgCitadelCabal_Member;
+struct CMsgCitadelCabal_MemberDefaultTypeInternal;
+extern CMsgCitadelCabal_MemberDefaultTypeInternal _CMsgCitadelCabal_Member_default_instance_;
 class CMsgCitadelClientHello;
 struct CMsgCitadelClientHelloDefaultTypeInternal;
 extern CMsgCitadelClientHelloDefaultTypeInternal _CMsgCitadelClientHello_default_instance_;
@@ -70,12 +79,57 @@ extern CMsgCitadelProfileCard_Slot_HeroDefaultTypeInternal _CMsgCitadelProfileCa
 class CMsgCitadelProfileCard_Slot_Stat;
 struct CMsgCitadelProfileCard_Slot_StatDefaultTypeInternal;
 extern CMsgCitadelProfileCard_Slot_StatDefaultTypeInternal _CMsgCitadelProfileCard_Slot_Stat_default_instance_;
+class CMsgClientToGCAcknowledgeReporterUpdates;
+struct CMsgClientToGCAcknowledgeReporterUpdatesDefaultTypeInternal;
+extern CMsgClientToGCAcknowledgeReporterUpdatesDefaultTypeInternal _CMsgClientToGCAcknowledgeReporterUpdates_default_instance_;
 class CMsgClientToGCBookUnlock;
 struct CMsgClientToGCBookUnlockDefaultTypeInternal;
 extern CMsgClientToGCBookUnlockDefaultTypeInternal _CMsgClientToGCBookUnlock_default_instance_;
 class CMsgClientToGCBookUnlockResponse;
 struct CMsgClientToGCBookUnlockResponseDefaultTypeInternal;
 extern CMsgClientToGCBookUnlockResponseDefaultTypeInternal _CMsgClientToGCBookUnlockResponse_default_instance_;
+class CMsgClientToGCCabalAnswerInvite;
+struct CMsgClientToGCCabalAnswerInviteDefaultTypeInternal;
+extern CMsgClientToGCCabalAnswerInviteDefaultTypeInternal _CMsgClientToGCCabalAnswerInvite_default_instance_;
+class CMsgClientToGCCabalAnswerInviteResponse;
+struct CMsgClientToGCCabalAnswerInviteResponseDefaultTypeInternal;
+extern CMsgClientToGCCabalAnswerInviteResponseDefaultTypeInternal _CMsgClientToGCCabalAnswerInviteResponse_default_instance_;
+class CMsgClientToGCCabalCreate;
+struct CMsgClientToGCCabalCreateDefaultTypeInternal;
+extern CMsgClientToGCCabalCreateDefaultTypeInternal _CMsgClientToGCCabalCreate_default_instance_;
+class CMsgClientToGCCabalCreateResponse;
+struct CMsgClientToGCCabalCreateResponseDefaultTypeInternal;
+extern CMsgClientToGCCabalCreateResponseDefaultTypeInternal _CMsgClientToGCCabalCreateResponse_default_instance_;
+class CMsgClientToGCCabalGetDetails;
+struct CMsgClientToGCCabalGetDetailsDefaultTypeInternal;
+extern CMsgClientToGCCabalGetDetailsDefaultTypeInternal _CMsgClientToGCCabalGetDetails_default_instance_;
+class CMsgClientToGCCabalGetDetailsResponse;
+struct CMsgClientToGCCabalGetDetailsResponseDefaultTypeInternal;
+extern CMsgClientToGCCabalGetDetailsResponseDefaultTypeInternal _CMsgClientToGCCabalGetDetailsResponse_default_instance_;
+class CMsgClientToGCCabalGetMatchHistory;
+struct CMsgClientToGCCabalGetMatchHistoryDefaultTypeInternal;
+extern CMsgClientToGCCabalGetMatchHistoryDefaultTypeInternal _CMsgClientToGCCabalGetMatchHistory_default_instance_;
+class CMsgClientToGCCabalGetMatchHistoryResponse;
+struct CMsgClientToGCCabalGetMatchHistoryResponseDefaultTypeInternal;
+extern CMsgClientToGCCabalGetMatchHistoryResponseDefaultTypeInternal _CMsgClientToGCCabalGetMatchHistoryResponse_default_instance_;
+class CMsgClientToGCCabalInviteAccount;
+struct CMsgClientToGCCabalInviteAccountDefaultTypeInternal;
+extern CMsgClientToGCCabalInviteAccountDefaultTypeInternal _CMsgClientToGCCabalInviteAccount_default_instance_;
+class CMsgClientToGCCabalInviteAccountResponse;
+struct CMsgClientToGCCabalInviteAccountResponseDefaultTypeInternal;
+extern CMsgClientToGCCabalInviteAccountResponseDefaultTypeInternal _CMsgClientToGCCabalInviteAccountResponse_default_instance_;
+class CMsgClientToGCCabalKickPlayer;
+struct CMsgClientToGCCabalKickPlayerDefaultTypeInternal;
+extern CMsgClientToGCCabalKickPlayerDefaultTypeInternal _CMsgClientToGCCabalKickPlayer_default_instance_;
+class CMsgClientToGCCabalKickPlayerResponse;
+struct CMsgClientToGCCabalKickPlayerResponseDefaultTypeInternal;
+extern CMsgClientToGCCabalKickPlayerResponseDefaultTypeInternal _CMsgClientToGCCabalKickPlayerResponse_default_instance_;
+class CMsgClientToGCCabalLeave;
+struct CMsgClientToGCCabalLeaveDefaultTypeInternal;
+extern CMsgClientToGCCabalLeaveDefaultTypeInternal _CMsgClientToGCCabalLeave_default_instance_;
+class CMsgClientToGCCabalLeaveResponse;
+struct CMsgClientToGCCabalLeaveResponseDefaultTypeInternal;
+extern CMsgClientToGCCabalLeaveResponseDefaultTypeInternal _CMsgClientToGCCabalLeaveResponse_default_instance_;
 class CMsgClientToGCChallengeActivate;
 struct CMsgClientToGCChallengeActivateDefaultTypeInternal;
 extern CMsgClientToGCChallengeActivateDefaultTypeInternal _CMsgClientToGCChallengeActivate_default_instance_;
@@ -205,6 +259,15 @@ extern CMsgClientToGCGetHideoutSDRTicketDefaultTypeInternal _CMsgClientToGCGetHi
 class CMsgClientToGCGetHideoutSDRTicketResponse;
 struct CMsgClientToGCGetHideoutSDRTicketResponseDefaultTypeInternal;
 extern CMsgClientToGCGetHideoutSDRTicketResponseDefaultTypeInternal _CMsgClientToGCGetHideoutSDRTicketResponse_default_instance_;
+class CMsgClientToGCGetInternalLeaderboards;
+struct CMsgClientToGCGetInternalLeaderboardsDefaultTypeInternal;
+extern CMsgClientToGCGetInternalLeaderboardsDefaultTypeInternal _CMsgClientToGCGetInternalLeaderboards_default_instance_;
+class CMsgClientToGCGetInternalLeaderboardsResponse;
+struct CMsgClientToGCGetInternalLeaderboardsResponseDefaultTypeInternal;
+extern CMsgClientToGCGetInternalLeaderboardsResponseDefaultTypeInternal _CMsgClientToGCGetInternalLeaderboardsResponse_default_instance_;
+class CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch;
+struct CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatchDefaultTypeInternal;
+extern CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatchDefaultTypeInternal _CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch_default_instance_;
 class CMsgClientToGCGetLeaderboard;
 struct CMsgClientToGCGetLeaderboardDefaultTypeInternal;
 extern CMsgClientToGCGetLeaderboardDefaultTypeInternal _CMsgClientToGCGetLeaderboard_default_instance_;
@@ -214,6 +277,15 @@ extern CMsgClientToGCGetLeaderboardResponseDefaultTypeInternal _CMsgClientToGCGe
 class CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry;
 struct CMsgClientToGCGetLeaderboardResponse_LeaderboardEntryDefaultTypeInternal;
 extern CMsgClientToGCGetLeaderboardResponse_LeaderboardEntryDefaultTypeInternal _CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry_default_instance_;
+class CMsgClientToGCGetLeaderboardStatus;
+struct CMsgClientToGCGetLeaderboardStatusDefaultTypeInternal;
+extern CMsgClientToGCGetLeaderboardStatusDefaultTypeInternal _CMsgClientToGCGetLeaderboardStatus_default_instance_;
+class CMsgClientToGCGetLeaderboardStatusResponse;
+struct CMsgClientToGCGetLeaderboardStatusResponseDefaultTypeInternal;
+extern CMsgClientToGCGetLeaderboardStatusResponseDefaultTypeInternal _CMsgClientToGCGetLeaderboardStatusResponse_default_instance_;
+class CMsgClientToGCGetLeaderboardStatusResponse_Hero;
+struct CMsgClientToGCGetLeaderboardStatusResponse_HeroDefaultTypeInternal;
+extern CMsgClientToGCGetLeaderboardStatusResponse_HeroDefaultTypeInternal _CMsgClientToGCGetLeaderboardStatusResponse_Hero_default_instance_;
 class CMsgClientToGCGetMatchHistory;
 struct CMsgClientToGCGetMatchHistoryDefaultTypeInternal;
 extern CMsgClientToGCGetMatchHistoryDefaultTypeInternal _CMsgClientToGCGetMatchHistory_default_instance_;
@@ -265,12 +337,6 @@ extern CMsgClientToGCModeratorRequestDefaultTypeInternal _CMsgClientToGCModerato
 class CMsgClientToGCModeratorRequestResponse;
 struct CMsgClientToGCModeratorRequestResponseDefaultTypeInternal;
 extern CMsgClientToGCModeratorRequestResponseDefaultTypeInternal _CMsgClientToGCModeratorRequestResponse_default_instance_;
-class CMsgClientToGCModifyDevAnnouncements;
-struct CMsgClientToGCModifyDevAnnouncementsDefaultTypeInternal;
-extern CMsgClientToGCModifyDevAnnouncementsDefaultTypeInternal _CMsgClientToGCModifyDevAnnouncements_default_instance_;
-class CMsgClientToGCModifyDevAnnouncementsResponse;
-struct CMsgClientToGCModifyDevAnnouncementsResponseDefaultTypeInternal;
-extern CMsgClientToGCModifyDevAnnouncementsResponseDefaultTypeInternal _CMsgClientToGCModifyDevAnnouncementsResponse_default_instance_;
 class CMsgClientToGCPartyAction;
 struct CMsgClientToGCPartyActionDefaultTypeInternal;
 extern CMsgClientToGCPartyActionDefaultTypeInternal _CMsgClientToGCPartyAction_default_instance_;
@@ -370,6 +436,12 @@ extern CMsgClientToGCRequestCheatReportsResponse_RecentCheatReportDefaultTypeInt
 class CMsgClientToGCRequestHeroReleaseVoteTally;
 struct CMsgClientToGCRequestHeroReleaseVoteTallyDefaultTypeInternal;
 extern CMsgClientToGCRequestHeroReleaseVoteTallyDefaultTypeInternal _CMsgClientToGCRequestHeroReleaseVoteTally_default_instance_;
+class CMsgClientToGCRequestReporterUpdates;
+struct CMsgClientToGCRequestReporterUpdatesDefaultTypeInternal;
+extern CMsgClientToGCRequestReporterUpdatesDefaultTypeInternal _CMsgClientToGCRequestReporterUpdates_default_instance_;
+class CMsgClientToGCRequestReporterUpdatesResponse;
+struct CMsgClientToGCRequestReporterUpdatesResponseDefaultTypeInternal;
+extern CMsgClientToGCRequestReporterUpdatesResponseDefaultTypeInternal _CMsgClientToGCRequestReporterUpdatesResponse_default_instance_;
 class CMsgClientToGCSetAccountPrivacySetting;
 struct CMsgClientToGCSetAccountPrivacySettingDefaultTypeInternal;
 extern CMsgClientToGCSetAccountPrivacySettingDefaultTypeInternal _CMsgClientToGCSetAccountPrivacySetting_default_instance_;
@@ -406,6 +478,12 @@ extern CMsgClientToGCStartMatchmakingDefaultTypeInternal _CMsgClientToGCStartMat
 class CMsgClientToGCStartMatchmakingResponse;
 struct CMsgClientToGCStartMatchmakingResponseDefaultTypeInternal;
 extern CMsgClientToGCStartMatchmakingResponseDefaultTypeInternal _CMsgClientToGCStartMatchmakingResponse_default_instance_;
+class CMsgClientToGCStartRankedInterval;
+struct CMsgClientToGCStartRankedIntervalDefaultTypeInternal;
+extern CMsgClientToGCStartRankedIntervalDefaultTypeInternal _CMsgClientToGCStartRankedInterval_default_instance_;
+class CMsgClientToGCStartRankedIntervalResponse;
+struct CMsgClientToGCStartRankedIntervalResponseDefaultTypeInternal;
+extern CMsgClientToGCStartRankedIntervalResponseDefaultTypeInternal _CMsgClientToGCStartRankedIntervalResponse_default_instance_;
 class CMsgClientToGCStopMatchmaking;
 struct CMsgClientToGCStopMatchmakingDefaultTypeInternal;
 extern CMsgClientToGCStopMatchmakingDefaultTypeInternal _CMsgClientToGCStopMatchmaking_default_instance_;
@@ -460,6 +538,15 @@ extern CMsgClientToGCUpdateRosterResponseDefaultTypeInternal _CMsgClientToGCUpda
 class CMsgClientToGCUpdateSpectatorStatus;
 struct CMsgClientToGCUpdateSpectatorStatusDefaultTypeInternal;
 extern CMsgClientToGCUpdateSpectatorStatusDefaultTypeInternal _CMsgClientToGCUpdateSpectatorStatus_default_instance_;
+class CMsgClientToGCVariantItemChangeSlotStyles;
+struct CMsgClientToGCVariantItemChangeSlotStylesDefaultTypeInternal;
+extern CMsgClientToGCVariantItemChangeSlotStylesDefaultTypeInternal _CMsgClientToGCVariantItemChangeSlotStyles_default_instance_;
+class CMsgClientToGCVariantItemChangeSlotStylesResponse;
+struct CMsgClientToGCVariantItemChangeSlotStylesResponseDefaultTypeInternal;
+extern CMsgClientToGCVariantItemChangeSlotStylesResponseDefaultTypeInternal _CMsgClientToGCVariantItemChangeSlotStylesResponse_default_instance_;
+class CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction;
+struct CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleActionDefaultTypeInternal;
+extern CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleActionDefaultTypeInternal _CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction_default_instance_;
 class CMsgClientWelcomeCitadel;
 struct CMsgClientWelcomeCitadelDefaultTypeInternal;
 extern CMsgClientWelcomeCitadelDefaultTypeInternal _CMsgClientWelcomeCitadel_default_instance_;
@@ -475,27 +562,30 @@ extern CMsgDevMatchInfo_TeamDefaultTypeInternal _CMsgDevMatchInfo_Team_default_i
 class CMsgGCToClientBookUpdated;
 struct CMsgGCToClientBookUpdatedDefaultTypeInternal;
 extern CMsgGCToClientBookUpdatedDefaultTypeInternal _CMsgGCToClientBookUpdated_default_instance_;
+class CMsgGCToClientCabalUpdated;
+struct CMsgGCToClientCabalUpdatedDefaultTypeInternal;
+extern CMsgGCToClientCabalUpdatedDefaultTypeInternal _CMsgGCToClientCabalUpdated_default_instance_;
 class CMsgGCToClientCanRejoinParty;
 struct CMsgGCToClientCanRejoinPartyDefaultTypeInternal;
 extern CMsgGCToClientCanRejoinPartyDefaultTypeInternal _CMsgGCToClientCanRejoinParty_default_instance_;
 class CMsgGCToClientCommendNotification;
 struct CMsgGCToClientCommendNotificationDefaultTypeInternal;
 extern CMsgGCToClientCommendNotificationDefaultTypeInternal _CMsgGCToClientCommendNotification_default_instance_;
-class CMsgGCToClientDevAnnouncements;
-struct CMsgGCToClientDevAnnouncementsDefaultTypeInternal;
-extern CMsgGCToClientDevAnnouncementsDefaultTypeInternal _CMsgGCToClientDevAnnouncements_default_instance_;
-class CMsgGCToClientDevAnnouncements_Announcement;
-struct CMsgGCToClientDevAnnouncements_AnnouncementDefaultTypeInternal;
-extern CMsgGCToClientDevAnnouncements_AnnouncementDefaultTypeInternal _CMsgGCToClientDevAnnouncements_Announcement_default_instance_;
 class CMsgGCToClientDevPlaytestStatus;
 struct CMsgGCToClientDevPlaytestStatusDefaultTypeInternal;
 extern CMsgGCToClientDevPlaytestStatusDefaultTypeInternal _CMsgGCToClientDevPlaytestStatus_default_instance_;
+class CMsgGCToClientDevPlaytestStatus_ActiveRankedMode;
+struct CMsgGCToClientDevPlaytestStatus_ActiveRankedModeDefaultTypeInternal;
+extern CMsgGCToClientDevPlaytestStatus_ActiveRankedModeDefaultTypeInternal _CMsgGCToClientDevPlaytestStatus_ActiveRankedMode_default_instance_;
 class CMsgGCToClientDevPlaytestStatus_DevQueueSize;
 struct CMsgGCToClientDevPlaytestStatus_DevQueueSizeDefaultTypeInternal;
 extern CMsgGCToClientDevPlaytestStatus_DevQueueSizeDefaultTypeInternal _CMsgGCToClientDevPlaytestStatus_DevQueueSize_default_instance_;
 class CMsgGCToClientDevPlaytestStatus_HeroWhitelist;
 struct CMsgGCToClientDevPlaytestStatus_HeroWhitelistDefaultTypeInternal;
 extern CMsgGCToClientDevPlaytestStatus_HeroWhitelistDefaultTypeInternal _CMsgGCToClientDevPlaytestStatus_HeroWhitelist_default_instance_;
+class CMsgGCToClientDevPlaytestStatus_LeaderboardTier;
+struct CMsgGCToClientDevPlaytestStatus_LeaderboardTierDefaultTypeInternal;
+extern CMsgGCToClientDevPlaytestStatus_LeaderboardTierDefaultTypeInternal _CMsgGCToClientDevPlaytestStatus_LeaderboardTier_default_instance_;
 class CMsgGCToClientGetRankDataResponse;
 struct CMsgGCToClientGetRankDataResponseDefaultTypeInternal;
 extern CMsgGCToClientGetRankDataResponseDefaultTypeInternal _CMsgGCToClientGetRankDataResponse_default_instance_;
@@ -511,6 +601,9 @@ extern CMsgGCToClientPartyChatMsg_ChatLineDefaultTypeInternal _CMsgGCToClientPar
 class CMsgGCToClientPartyEvent;
 struct CMsgGCToClientPartyEventDefaultTypeInternal;
 extern CMsgGCToClientPartyEventDefaultTypeInternal _CMsgGCToClientPartyEvent_default_instance_;
+class CMsgGCToClientPartyPlayerTyping;
+struct CMsgGCToClientPartyPlayerTypingDefaultTypeInternal;
+extern CMsgGCToClientPartyPlayerTypingDefaultTypeInternal _CMsgGCToClientPartyPlayerTyping_default_instance_;
 class CMsgGCToClientRankDataUpdate;
 struct CMsgGCToClientRankDataUpdateDefaultTypeInternal;
 extern CMsgGCToClientRankDataUpdateDefaultTypeInternal _CMsgGCToClientRankDataUpdate_default_instance_;
@@ -529,6 +622,9 @@ extern CMsgPartyMMInfoDefaultTypeInternal _CMsgPartyMMInfo_default_instance_;
 class CMsgPostGameProgressData;
 struct CMsgPostGameProgressDataDefaultTypeInternal;
 extern CMsgPostGameProgressDataDefaultTypeInternal _CMsgPostGameProgressData_default_instance_;
+class CMsgPostGameProgressData_HeroXPReward;
+struct CMsgPostGameProgressData_HeroXPRewardDefaultTypeInternal;
+extern CMsgPostGameProgressData_HeroXPRewardDefaultTypeInternal _CMsgPostGameProgressData_HeroXPReward_default_instance_;
 class CMsgPostGameProgressData_PlayerAccolade;
 struct CMsgPostGameProgressData_PlayerAccoladeDefaultTypeInternal;
 extern CMsgPostGameProgressData_PlayerAccoladeDefaultTypeInternal _CMsgPostGameProgressData_PlayerAccolade_default_instance_;
@@ -541,6 +637,9 @@ extern CMsgPostGameProgressData_PlayerDataDefaultTypeInternal _CMsgPostGameProgr
 class CMsgSurveyQuestion;
 struct CMsgSurveyQuestionDefaultTypeInternal;
 extern CMsgSurveyQuestionDefaultTypeInternal _CMsgSurveyQuestion_default_instance_;
+class CSOAccountCabalMembership;
+struct CSOAccountCabalMembershipDefaultTypeInternal;
+extern CSOAccountCabalMembershipDefaultTypeInternal _CSOAccountCabalMembership_default_instance_;
 class CSOAccountChallenge;
 struct CSOAccountChallengeDefaultTypeInternal;
 extern CSOAccountChallengeDefaultTypeInternal _CSOAccountChallenge_default_instance_;
@@ -553,16 +652,37 @@ extern CSOAccountSyncStorageDefaultTypeInternal _CSOAccountSyncStorage_default_i
 class CSOGameAccountClient;
 struct CSOGameAccountClientDefaultTypeInternal;
 extern CSOGameAccountClientDefaultTypeInternal _CSOGameAccountClient_default_instance_;
+class CSORankedProgress;
+struct CSORankedProgressDefaultTypeInternal;
+extern CSORankedProgressDefaultTypeInternal _CSORankedProgress_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::CMsgAccountBook* Arena::CreateMaybeMessage<::CMsgAccountBook>(Arena*);
 template<> ::CMsgAccountBook_Unlock* Arena::CreateMaybeMessage<::CMsgAccountBook_Unlock>(Arena*);
+template<> ::CMsgCitadelCabal* Arena::CreateMaybeMessage<::CMsgCitadelCabal>(Arena*);
+template<> ::CMsgCitadelCabal_MMStats* Arena::CreateMaybeMessage<::CMsgCitadelCabal_MMStats>(Arena*);
+template<> ::CMsgCitadelCabal_Member* Arena::CreateMaybeMessage<::CMsgCitadelCabal_Member>(Arena*);
 template<> ::CMsgCitadelClientHello* Arena::CreateMaybeMessage<::CMsgCitadelClientHello>(Arena*);
 template<> ::CMsgCitadelProfileCard* Arena::CreateMaybeMessage<::CMsgCitadelProfileCard>(Arena*);
 template<> ::CMsgCitadelProfileCard_Slot* Arena::CreateMaybeMessage<::CMsgCitadelProfileCard_Slot>(Arena*);
 template<> ::CMsgCitadelProfileCard_Slot_Hero* Arena::CreateMaybeMessage<::CMsgCitadelProfileCard_Slot_Hero>(Arena*);
 template<> ::CMsgCitadelProfileCard_Slot_Stat* Arena::CreateMaybeMessage<::CMsgCitadelProfileCard_Slot_Stat>(Arena*);
+template<> ::CMsgClientToGCAcknowledgeReporterUpdates* Arena::CreateMaybeMessage<::CMsgClientToGCAcknowledgeReporterUpdates>(Arena*);
 template<> ::CMsgClientToGCBookUnlock* Arena::CreateMaybeMessage<::CMsgClientToGCBookUnlock>(Arena*);
 template<> ::CMsgClientToGCBookUnlockResponse* Arena::CreateMaybeMessage<::CMsgClientToGCBookUnlockResponse>(Arena*);
+template<> ::CMsgClientToGCCabalAnswerInvite* Arena::CreateMaybeMessage<::CMsgClientToGCCabalAnswerInvite>(Arena*);
+template<> ::CMsgClientToGCCabalAnswerInviteResponse* Arena::CreateMaybeMessage<::CMsgClientToGCCabalAnswerInviteResponse>(Arena*);
+template<> ::CMsgClientToGCCabalCreate* Arena::CreateMaybeMessage<::CMsgClientToGCCabalCreate>(Arena*);
+template<> ::CMsgClientToGCCabalCreateResponse* Arena::CreateMaybeMessage<::CMsgClientToGCCabalCreateResponse>(Arena*);
+template<> ::CMsgClientToGCCabalGetDetails* Arena::CreateMaybeMessage<::CMsgClientToGCCabalGetDetails>(Arena*);
+template<> ::CMsgClientToGCCabalGetDetailsResponse* Arena::CreateMaybeMessage<::CMsgClientToGCCabalGetDetailsResponse>(Arena*);
+template<> ::CMsgClientToGCCabalGetMatchHistory* Arena::CreateMaybeMessage<::CMsgClientToGCCabalGetMatchHistory>(Arena*);
+template<> ::CMsgClientToGCCabalGetMatchHistoryResponse* Arena::CreateMaybeMessage<::CMsgClientToGCCabalGetMatchHistoryResponse>(Arena*);
+template<> ::CMsgClientToGCCabalInviteAccount* Arena::CreateMaybeMessage<::CMsgClientToGCCabalInviteAccount>(Arena*);
+template<> ::CMsgClientToGCCabalInviteAccountResponse* Arena::CreateMaybeMessage<::CMsgClientToGCCabalInviteAccountResponse>(Arena*);
+template<> ::CMsgClientToGCCabalKickPlayer* Arena::CreateMaybeMessage<::CMsgClientToGCCabalKickPlayer>(Arena*);
+template<> ::CMsgClientToGCCabalKickPlayerResponse* Arena::CreateMaybeMessage<::CMsgClientToGCCabalKickPlayerResponse>(Arena*);
+template<> ::CMsgClientToGCCabalLeave* Arena::CreateMaybeMessage<::CMsgClientToGCCabalLeave>(Arena*);
+template<> ::CMsgClientToGCCabalLeaveResponse* Arena::CreateMaybeMessage<::CMsgClientToGCCabalLeaveResponse>(Arena*);
 template<> ::CMsgClientToGCChallengeActivate* Arena::CreateMaybeMessage<::CMsgClientToGCChallengeActivate>(Arena*);
 template<> ::CMsgClientToGCChallengeActivateResponse* Arena::CreateMaybeMessage<::CMsgClientToGCChallengeActivateResponse>(Arena*);
 template<> ::CMsgClientToGCChallengeCancel* Arena::CreateMaybeMessage<::CMsgClientToGCChallengeCancel>(Arena*);
@@ -606,9 +726,15 @@ template<> ::CMsgClientToGCGetHeroMMRRankingsResponse* Arena::CreateMaybeMessage
 template<> ::CMsgClientToGCGetHeroMMRRankingsResponse_Hero* Arena::CreateMaybeMessage<::CMsgClientToGCGetHeroMMRRankingsResponse_Hero>(Arena*);
 template<> ::CMsgClientToGCGetHideoutSDRTicket* Arena::CreateMaybeMessage<::CMsgClientToGCGetHideoutSDRTicket>(Arena*);
 template<> ::CMsgClientToGCGetHideoutSDRTicketResponse* Arena::CreateMaybeMessage<::CMsgClientToGCGetHideoutSDRTicketResponse>(Arena*);
+template<> ::CMsgClientToGCGetInternalLeaderboards* Arena::CreateMaybeMessage<::CMsgClientToGCGetInternalLeaderboards>(Arena*);
+template<> ::CMsgClientToGCGetInternalLeaderboardsResponse* Arena::CreateMaybeMessage<::CMsgClientToGCGetInternalLeaderboardsResponse>(Arena*);
+template<> ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* Arena::CreateMaybeMessage<::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch>(Arena*);
 template<> ::CMsgClientToGCGetLeaderboard* Arena::CreateMaybeMessage<::CMsgClientToGCGetLeaderboard>(Arena*);
 template<> ::CMsgClientToGCGetLeaderboardResponse* Arena::CreateMaybeMessage<::CMsgClientToGCGetLeaderboardResponse>(Arena*);
 template<> ::CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry* Arena::CreateMaybeMessage<::CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry>(Arena*);
+template<> ::CMsgClientToGCGetLeaderboardStatus* Arena::CreateMaybeMessage<::CMsgClientToGCGetLeaderboardStatus>(Arena*);
+template<> ::CMsgClientToGCGetLeaderboardStatusResponse* Arena::CreateMaybeMessage<::CMsgClientToGCGetLeaderboardStatusResponse>(Arena*);
+template<> ::CMsgClientToGCGetLeaderboardStatusResponse_Hero* Arena::CreateMaybeMessage<::CMsgClientToGCGetLeaderboardStatusResponse_Hero>(Arena*);
 template<> ::CMsgClientToGCGetMatchHistory* Arena::CreateMaybeMessage<::CMsgClientToGCGetMatchHistory>(Arena*);
 template<> ::CMsgClientToGCGetMatchHistoryResponse* Arena::CreateMaybeMessage<::CMsgClientToGCGetMatchHistoryResponse>(Arena*);
 template<> ::CMsgClientToGCGetMatchHistoryResponse_Match* Arena::CreateMaybeMessage<::CMsgClientToGCGetMatchHistoryResponse_Match>(Arena*);
@@ -626,8 +752,6 @@ template<> ::CMsgClientToGCLeaveLobby* Arena::CreateMaybeMessage<::CMsgClientToG
 template<> ::CMsgClientToGCLeaveLobbyResponse* Arena::CreateMaybeMessage<::CMsgClientToGCLeaveLobbyResponse>(Arena*);
 template<> ::CMsgClientToGCModeratorRequest* Arena::CreateMaybeMessage<::CMsgClientToGCModeratorRequest>(Arena*);
 template<> ::CMsgClientToGCModeratorRequestResponse* Arena::CreateMaybeMessage<::CMsgClientToGCModeratorRequestResponse>(Arena*);
-template<> ::CMsgClientToGCModifyDevAnnouncements* Arena::CreateMaybeMessage<::CMsgClientToGCModifyDevAnnouncements>(Arena*);
-template<> ::CMsgClientToGCModifyDevAnnouncementsResponse* Arena::CreateMaybeMessage<::CMsgClientToGCModifyDevAnnouncementsResponse>(Arena*);
 template<> ::CMsgClientToGCPartyAction* Arena::CreateMaybeMessage<::CMsgClientToGCPartyAction>(Arena*);
 template<> ::CMsgClientToGCPartyActionResponse* Arena::CreateMaybeMessage<::CMsgClientToGCPartyActionResponse>(Arena*);
 template<> ::CMsgClientToGCPartyCreate* Arena::CreateMaybeMessage<::CMsgClientToGCPartyCreate>(Arena*);
@@ -661,6 +785,8 @@ template<> ::CMsgClientToGCRequestCheatReports* Arena::CreateMaybeMessage<::CMsg
 template<> ::CMsgClientToGCRequestCheatReportsResponse* Arena::CreateMaybeMessage<::CMsgClientToGCRequestCheatReportsResponse>(Arena*);
 template<> ::CMsgClientToGCRequestCheatReportsResponse_RecentCheatReport* Arena::CreateMaybeMessage<::CMsgClientToGCRequestCheatReportsResponse_RecentCheatReport>(Arena*);
 template<> ::CMsgClientToGCRequestHeroReleaseVoteTally* Arena::CreateMaybeMessage<::CMsgClientToGCRequestHeroReleaseVoteTally>(Arena*);
+template<> ::CMsgClientToGCRequestReporterUpdates* Arena::CreateMaybeMessage<::CMsgClientToGCRequestReporterUpdates>(Arena*);
+template<> ::CMsgClientToGCRequestReporterUpdatesResponse* Arena::CreateMaybeMessage<::CMsgClientToGCRequestReporterUpdatesResponse>(Arena*);
 template<> ::CMsgClientToGCSetAccountPrivacySetting* Arena::CreateMaybeMessage<::CMsgClientToGCSetAccountPrivacySetting>(Arena*);
 template<> ::CMsgClientToGCSetAccountPrivacySettingResponse* Arena::CreateMaybeMessage<::CMsgClientToGCSetAccountPrivacySettingResponse>(Arena*);
 template<> ::CMsgClientToGCSetNewPlayerProgress* Arena::CreateMaybeMessage<::CMsgClientToGCSetNewPlayerProgress>(Arena*);
@@ -673,6 +799,8 @@ template<> ::CMsgClientToGCSpectateUser* Arena::CreateMaybeMessage<::CMsgClientT
 template<> ::CMsgClientToGCSpectateUserResponse* Arena::CreateMaybeMessage<::CMsgClientToGCSpectateUserResponse>(Arena*);
 template<> ::CMsgClientToGCStartMatchmaking* Arena::CreateMaybeMessage<::CMsgClientToGCStartMatchmaking>(Arena*);
 template<> ::CMsgClientToGCStartMatchmakingResponse* Arena::CreateMaybeMessage<::CMsgClientToGCStartMatchmakingResponse>(Arena*);
+template<> ::CMsgClientToGCStartRankedInterval* Arena::CreateMaybeMessage<::CMsgClientToGCStartRankedInterval>(Arena*);
+template<> ::CMsgClientToGCStartRankedIntervalResponse* Arena::CreateMaybeMessage<::CMsgClientToGCStartRankedIntervalResponse>(Arena*);
 template<> ::CMsgClientToGCStopMatchmaking* Arena::CreateMaybeMessage<::CMsgClientToGCStopMatchmaking>(Arena*);
 template<> ::CMsgClientToGCStopMatchmakingResponse* Arena::CreateMaybeMessage<::CMsgClientToGCStopMatchmakingResponse>(Arena*);
 template<> ::CMsgClientToGCSubmitHeroReleaseVote* Arena::CreateMaybeMessage<::CMsgClientToGCSubmitHeroReleaseVote>(Arena*);
@@ -691,39 +819,71 @@ template<> ::CMsgClientToGCUpdateHeroBuildResponse* Arena::CreateMaybeMessage<::
 template<> ::CMsgClientToGCUpdateRoster* Arena::CreateMaybeMessage<::CMsgClientToGCUpdateRoster>(Arena*);
 template<> ::CMsgClientToGCUpdateRosterResponse* Arena::CreateMaybeMessage<::CMsgClientToGCUpdateRosterResponse>(Arena*);
 template<> ::CMsgClientToGCUpdateSpectatorStatus* Arena::CreateMaybeMessage<::CMsgClientToGCUpdateSpectatorStatus>(Arena*);
+template<> ::CMsgClientToGCVariantItemChangeSlotStyles* Arena::CreateMaybeMessage<::CMsgClientToGCVariantItemChangeSlotStyles>(Arena*);
+template<> ::CMsgClientToGCVariantItemChangeSlotStylesResponse* Arena::CreateMaybeMessage<::CMsgClientToGCVariantItemChangeSlotStylesResponse>(Arena*);
+template<> ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* Arena::CreateMaybeMessage<::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction>(Arena*);
 template<> ::CMsgClientWelcomeCitadel* Arena::CreateMaybeMessage<::CMsgClientWelcomeCitadel>(Arena*);
 template<> ::CMsgDevMatchInfo* Arena::CreateMaybeMessage<::CMsgDevMatchInfo>(Arena*);
 template<> ::CMsgDevMatchInfo_MatchPlayer* Arena::CreateMaybeMessage<::CMsgDevMatchInfo_MatchPlayer>(Arena*);
 template<> ::CMsgDevMatchInfo_Team* Arena::CreateMaybeMessage<::CMsgDevMatchInfo_Team>(Arena*);
 template<> ::CMsgGCToClientBookUpdated* Arena::CreateMaybeMessage<::CMsgGCToClientBookUpdated>(Arena*);
+template<> ::CMsgGCToClientCabalUpdated* Arena::CreateMaybeMessage<::CMsgGCToClientCabalUpdated>(Arena*);
 template<> ::CMsgGCToClientCanRejoinParty* Arena::CreateMaybeMessage<::CMsgGCToClientCanRejoinParty>(Arena*);
 template<> ::CMsgGCToClientCommendNotification* Arena::CreateMaybeMessage<::CMsgGCToClientCommendNotification>(Arena*);
-template<> ::CMsgGCToClientDevAnnouncements* Arena::CreateMaybeMessage<::CMsgGCToClientDevAnnouncements>(Arena*);
-template<> ::CMsgGCToClientDevAnnouncements_Announcement* Arena::CreateMaybeMessage<::CMsgGCToClientDevAnnouncements_Announcement>(Arena*);
 template<> ::CMsgGCToClientDevPlaytestStatus* Arena::CreateMaybeMessage<::CMsgGCToClientDevPlaytestStatus>(Arena*);
+template<> ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* Arena::CreateMaybeMessage<::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode>(Arena*);
 template<> ::CMsgGCToClientDevPlaytestStatus_DevQueueSize* Arena::CreateMaybeMessage<::CMsgGCToClientDevPlaytestStatus_DevQueueSize>(Arena*);
 template<> ::CMsgGCToClientDevPlaytestStatus_HeroWhitelist* Arena::CreateMaybeMessage<::CMsgGCToClientDevPlaytestStatus_HeroWhitelist>(Arena*);
+template<> ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier* Arena::CreateMaybeMessage<::CMsgGCToClientDevPlaytestStatus_LeaderboardTier>(Arena*);
 template<> ::CMsgGCToClientGetRankDataResponse* Arena::CreateMaybeMessage<::CMsgGCToClientGetRankDataResponse>(Arena*);
 template<> ::CMsgGCToClientMatchmakingStopped* Arena::CreateMaybeMessage<::CMsgGCToClientMatchmakingStopped>(Arena*);
 template<> ::CMsgGCToClientPartyChatMsg* Arena::CreateMaybeMessage<::CMsgGCToClientPartyChatMsg>(Arena*);
 template<> ::CMsgGCToClientPartyChatMsg_ChatLine* Arena::CreateMaybeMessage<::CMsgGCToClientPartyChatMsg_ChatLine>(Arena*);
 template<> ::CMsgGCToClientPartyEvent* Arena::CreateMaybeMessage<::CMsgGCToClientPartyEvent>(Arena*);
+template<> ::CMsgGCToClientPartyPlayerTyping* Arena::CreateMaybeMessage<::CMsgGCToClientPartyPlayerTyping>(Arena*);
 template<> ::CMsgGCToClientRankDataUpdate* Arena::CreateMaybeMessage<::CMsgGCToClientRankDataUpdate>(Arena*);
 template<> ::CMsgGCToClientSDRTicket* Arena::CreateMaybeMessage<::CMsgGCToClientSDRTicket>(Arena*);
 template<> ::CMsgGCToClientUpdateHeroReleaseVoteTally* Arena::CreateMaybeMessage<::CMsgGCToClientUpdateHeroReleaseVoteTally>(Arena*);
 template<> ::CMsgGCToClientUpdateHeroReleaseVoteTally_VoteRoundToTallyEntry* Arena::CreateMaybeMessage<::CMsgGCToClientUpdateHeroReleaseVoteTally_VoteRoundToTallyEntry>(Arena*);
 template<> ::CMsgPartyMMInfo* Arena::CreateMaybeMessage<::CMsgPartyMMInfo>(Arena*);
 template<> ::CMsgPostGameProgressData* Arena::CreateMaybeMessage<::CMsgPostGameProgressData>(Arena*);
+template<> ::CMsgPostGameProgressData_HeroXPReward* Arena::CreateMaybeMessage<::CMsgPostGameProgressData_HeroXPReward>(Arena*);
 template<> ::CMsgPostGameProgressData_PlayerAccolade* Arena::CreateMaybeMessage<::CMsgPostGameProgressData_PlayerAccolade>(Arena*);
 template<> ::CMsgPostGameProgressData_PlayerAward* Arena::CreateMaybeMessage<::CMsgPostGameProgressData_PlayerAward>(Arena*);
 template<> ::CMsgPostGameProgressData_PlayerData* Arena::CreateMaybeMessage<::CMsgPostGameProgressData_PlayerData>(Arena*);
 template<> ::CMsgSurveyQuestion* Arena::CreateMaybeMessage<::CMsgSurveyQuestion>(Arena*);
+template<> ::CSOAccountCabalMembership* Arena::CreateMaybeMessage<::CSOAccountCabalMembership>(Arena*);
 template<> ::CSOAccountChallenge* Arena::CreateMaybeMessage<::CSOAccountChallenge>(Arena*);
 template<> ::CSOAccountHeroInfo* Arena::CreateMaybeMessage<::CSOAccountHeroInfo>(Arena*);
 template<> ::CSOAccountSyncStorage* Arena::CreateMaybeMessage<::CSOAccountSyncStorage>(Arena*);
 template<> ::CSOGameAccountClient* Arena::CreateMaybeMessage<::CSOGameAccountClient>(Arena*);
+template<> ::CSORankedProgress* Arena::CreateMaybeMessage<::CSORankedProgress>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
+enum CMsgCitadelCabal_EMemberState : int {
+  CMsgCitadelCabal_EMemberState_k_eMemberState_Left = 0,
+  CMsgCitadelCabal_EMemberState_k_eMemberState_Active = 1,
+  CMsgCitadelCabal_EMemberState_k_eMemberState_Invited = 2
+};
+bool CMsgCitadelCabal_EMemberState_IsValid(int value);
+constexpr CMsgCitadelCabal_EMemberState CMsgCitadelCabal_EMemberState_EMemberState_MIN = CMsgCitadelCabal_EMemberState_k_eMemberState_Left;
+constexpr CMsgCitadelCabal_EMemberState CMsgCitadelCabal_EMemberState_EMemberState_MAX = CMsgCitadelCabal_EMemberState_k_eMemberState_Invited;
+constexpr int CMsgCitadelCabal_EMemberState_EMemberState_ARRAYSIZE = CMsgCitadelCabal_EMemberState_EMemberState_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgCitadelCabal_EMemberState_descriptor();
+template<typename T>
+inline const std::string& CMsgCitadelCabal_EMemberState_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgCitadelCabal_EMemberState>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgCitadelCabal_EMemberState_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgCitadelCabal_EMemberState_descriptor(), enum_t_value);
+}
+inline bool CMsgCitadelCabal_EMemberState_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgCitadelCabal_EMemberState* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgCitadelCabal_EMemberState>(
+    CMsgCitadelCabal_EMemberState_descriptor(), name, value);
+}
 enum CSOGameAccountClient_EFlags : int {
   CSOGameAccountClient_EFlags_k_eDeveloper = 1,
   CSOGameAccountClient_EFlags_k_eExternalModerator = 2,
@@ -875,11 +1035,13 @@ enum CMsgClientToGCStartMatchmakingResponse_EResultCode : int {
   CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_NoHeroLabsWhileInLowPri = 23,
   CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_AccountLocked = 24,
   CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_TooManyLimitedHeroes = 25,
-  CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_UnverifiedPGI = 26
+  CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_UnverifiedPGI = 26,
+  CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_RankedInvalidPartySize = 27,
+  CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_NoBrawlWhileInLowPri = 28
 };
 bool CMsgClientToGCStartMatchmakingResponse_EResultCode_IsValid(int value);
 constexpr CMsgClientToGCStartMatchmakingResponse_EResultCode CMsgClientToGCStartMatchmakingResponse_EResultCode_EResultCode_MIN = CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_OK;
-constexpr CMsgClientToGCStartMatchmakingResponse_EResultCode CMsgClientToGCStartMatchmakingResponse_EResultCode_EResultCode_MAX = CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_UnverifiedPGI;
+constexpr CMsgClientToGCStartMatchmakingResponse_EResultCode CMsgClientToGCStartMatchmakingResponse_EResultCode_EResultCode_MAX = CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_NoBrawlWhileInLowPri;
 constexpr int CMsgClientToGCStartMatchmakingResponse_EResultCode_EResultCode_ARRAYSIZE = CMsgClientToGCStartMatchmakingResponse_EResultCode_EResultCode_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCStartMatchmakingResponse_EResultCode_descriptor();
@@ -1038,11 +1200,14 @@ enum CMsgClientToGCPartyAction_EAction : int {
   CMsgClientToGCPartyAction_EAction_k_eSetDuplicateHeroesEnabled = 21,
   CMsgClientToGCPartyAction_EAction_k_eSetDesiresLaningTogether = 23,
   CMsgClientToGCPartyAction_EAction_k_eSetMMPreference = 24,
-  CMsgClientToGCPartyAction_EAction_k_eSetPrivateLobbyGameMode = 25
+  CMsgClientToGCPartyAction_EAction_k_eSetPrivateLobbyGameMode = 25,
+  CMsgClientToGCPartyAction_EAction_k_eSetCorruptedItemShopSpawnTime = 26,
+  CMsgClientToGCPartyAction_EAction_k_eSetActiveCabal = 27,
+  CMsgClientToGCPartyAction_EAction_k_eSetCabalMMTier = 28
 };
 bool CMsgClientToGCPartyAction_EAction_IsValid(int value);
 constexpr CMsgClientToGCPartyAction_EAction CMsgClientToGCPartyAction_EAction_EAction_MIN = CMsgClientToGCPartyAction_EAction_k_eKickUser;
-constexpr CMsgClientToGCPartyAction_EAction CMsgClientToGCPartyAction_EAction_EAction_MAX = CMsgClientToGCPartyAction_EAction_k_eSetPrivateLobbyGameMode;
+constexpr CMsgClientToGCPartyAction_EAction CMsgClientToGCPartyAction_EAction_EAction_MAX = CMsgClientToGCPartyAction_EAction_k_eSetCabalMMTier;
 constexpr int CMsgClientToGCPartyAction_EAction_EAction_ARRAYSIZE = CMsgClientToGCPartyAction_EAction_EAction_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCPartyAction_EAction_descriptor();
@@ -1118,11 +1283,17 @@ enum CMsgClientToGCPartySetModeResponse_EResponse : int {
   CMsgClientToGCPartySetModeResponse_EResponse_k_eHeroLabsNotUnlocked = 22,
   CMsgClientToGCPartySetModeResponse_EResponse_k_eNoHeroLabsWhileInLowPri = 23,
   CMsgClientToGCPartySetModeResponse_EResponse_k_eNoHighRangeFiveStack = 24,
-  CMsgClientToGCPartySetModeResponse_EResponse_k_eAccountLocked = 25
+  CMsgClientToGCPartySetModeResponse_EResponse_k_eAccountLocked = 25,
+  CMsgClientToGCPartySetModeResponse_EResponse_k_eRankedInCalibration = 26,
+  CMsgClientToGCPartySetModeResponse_EResponse_k_eRankedInvalidPartySize = 27,
+  CMsgClientToGCPartySetModeResponse_EResponse_k_eRankedPartySkillRangeInvalid = 28,
+  CMsgClientToGCPartySetModeResponse_EResponse_k_eRankedMemberInLowPri = 29,
+  CMsgClientToGCPartySetModeResponse_EResponse_k_eRankedMemberCurrentlyBanned = 30,
+  CMsgClientToGCPartySetModeResponse_EResponse_k_eBrawlMemberInLowPri = 31
 };
 bool CMsgClientToGCPartySetModeResponse_EResponse_IsValid(int value);
 constexpr CMsgClientToGCPartySetModeResponse_EResponse CMsgClientToGCPartySetModeResponse_EResponse_EResponse_MIN = CMsgClientToGCPartySetModeResponse_EResponse_k_eInternalError;
-constexpr CMsgClientToGCPartySetModeResponse_EResponse CMsgClientToGCPartySetModeResponse_EResponse_EResponse_MAX = CMsgClientToGCPartySetModeResponse_EResponse_k_eAccountLocked;
+constexpr CMsgClientToGCPartySetModeResponse_EResponse CMsgClientToGCPartySetModeResponse_EResponse_EResponse_MAX = CMsgClientToGCPartySetModeResponse_EResponse_k_eBrawlMemberInLowPri;
 constexpr int CMsgClientToGCPartySetModeResponse_EResponse_EResponse_ARRAYSIZE = CMsgClientToGCPartySetModeResponse_EResponse_EResponse_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCPartySetModeResponse_EResponse_descriptor();
@@ -1224,38 +1395,38 @@ inline bool CMsgClientToGCPartyInviteUserResponse_EResponse_Parse(
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCPartyInviteUserResponse_EResponse>(
     CMsgClientToGCPartyInviteUserResponse_EResponse_descriptor(), name, value);
 }
-enum CMsgGCToClientPartyEvent_EEvent : int {
-  CMsgGCToClientPartyEvent_EEvent_k_ePlayerKicked = 1,
-  CMsgGCToClientPartyEvent_EEvent_k_eJoinedParty = 3,
-  CMsgGCToClientPartyEvent_EEvent_k_eMatchCompleted = 4,
-  CMsgGCToClientPartyEvent_EEvent_k_eMatchMakingStopped_User = 5,
-  CMsgGCToClientPartyEvent_EEvent_k_eMatchMakingStopped_Version = 6,
-  CMsgGCToClientPartyEvent_EEvent_k_eMatchMakingStopped_NoServerRegion = 7,
-  CMsgGCToClientPartyEvent_EEvent_k_eLeftParty = 8,
-  CMsgGCToClientPartyEvent_EEvent_k_eDeclinedInvite = 9,
-  CMsgGCToClientPartyEvent_EEvent_k_eMatchMakingStopped_FailedOther = 10,
-  CMsgGCToClientPartyEvent_EEvent_k_eDraftEnded_User = 11,
-  CMsgGCToClientPartyEvent_EEvent_k_eStartDraftMMFailed = 12,
-  CMsgGCToClientPartyEvent_EEvent_k_eMatchMakingStopped_Cancelled = 13
+enum CMsgGCToClientPartyEvent_EPartyEvent : int {
+  CMsgGCToClientPartyEvent_EPartyEvent_k_ePlayerKicked = 1,
+  CMsgGCToClientPartyEvent_EPartyEvent_k_eJoinedParty = 3,
+  CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchCompleted = 4,
+  CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchMakingStopped_User = 5,
+  CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchMakingStopped_Version = 6,
+  CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchMakingStopped_NoServerRegion = 7,
+  CMsgGCToClientPartyEvent_EPartyEvent_k_eLeftParty = 8,
+  CMsgGCToClientPartyEvent_EPartyEvent_k_eDeclinedInvite = 9,
+  CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchMakingStopped_FailedOther = 10,
+  CMsgGCToClientPartyEvent_EPartyEvent_k_eDraftEnded_User = 11,
+  CMsgGCToClientPartyEvent_EPartyEvent_k_eStartDraftMMFailed = 12,
+  CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchMakingStopped_Cancelled = 13
 };
-bool CMsgGCToClientPartyEvent_EEvent_IsValid(int value);
-constexpr CMsgGCToClientPartyEvent_EEvent CMsgGCToClientPartyEvent_EEvent_EEvent_MIN = CMsgGCToClientPartyEvent_EEvent_k_ePlayerKicked;
-constexpr CMsgGCToClientPartyEvent_EEvent CMsgGCToClientPartyEvent_EEvent_EEvent_MAX = CMsgGCToClientPartyEvent_EEvent_k_eMatchMakingStopped_Cancelled;
-constexpr int CMsgGCToClientPartyEvent_EEvent_EEvent_ARRAYSIZE = CMsgGCToClientPartyEvent_EEvent_EEvent_MAX + 1;
+bool CMsgGCToClientPartyEvent_EPartyEvent_IsValid(int value);
+constexpr CMsgGCToClientPartyEvent_EPartyEvent CMsgGCToClientPartyEvent_EPartyEvent_EPartyEvent_MIN = CMsgGCToClientPartyEvent_EPartyEvent_k_ePlayerKicked;
+constexpr CMsgGCToClientPartyEvent_EPartyEvent CMsgGCToClientPartyEvent_EPartyEvent_EPartyEvent_MAX = CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchMakingStopped_Cancelled;
+constexpr int CMsgGCToClientPartyEvent_EPartyEvent_EPartyEvent_ARRAYSIZE = CMsgGCToClientPartyEvent_EPartyEvent_EPartyEvent_MAX + 1;
 
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgGCToClientPartyEvent_EEvent_descriptor();
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgGCToClientPartyEvent_EPartyEvent_descriptor();
 template<typename T>
-inline const std::string& CMsgGCToClientPartyEvent_EEvent_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, CMsgGCToClientPartyEvent_EEvent>::value ||
+inline const std::string& CMsgGCToClientPartyEvent_EPartyEvent_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgGCToClientPartyEvent_EPartyEvent>::value ||
     ::std::is_integral<T>::value,
-    "Incorrect type passed to function CMsgGCToClientPartyEvent_EEvent_Name.");
+    "Incorrect type passed to function CMsgGCToClientPartyEvent_EPartyEvent_Name.");
   return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    CMsgGCToClientPartyEvent_EEvent_descriptor(), enum_t_value);
+    CMsgGCToClientPartyEvent_EPartyEvent_descriptor(), enum_t_value);
 }
-inline bool CMsgGCToClientPartyEvent_EEvent_Parse(
-    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgGCToClientPartyEvent_EEvent* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgGCToClientPartyEvent_EEvent>(
-    CMsgGCToClientPartyEvent_EEvent_descriptor(), name, value);
+inline bool CMsgGCToClientPartyEvent_EPartyEvent_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgGCToClientPartyEvent_EPartyEvent* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgGCToClientPartyEvent_EPartyEvent>(
+    CMsgGCToClientPartyEvent_EPartyEvent_descriptor(), name, value);
 }
 enum CMsgClientToGCPartySetReadyStateResponse_EResponse : int {
   CMsgClientToGCPartySetReadyStateResponse_EResponse_k_eInternalError = 0,
@@ -1466,55 +1637,6 @@ inline bool CMsgClientToGCGetMatchMetaDataResponse_EResult_Parse(
     ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCGetMatchMetaDataResponse_EResult* value) {
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCGetMatchMetaDataResponse_EResult>(
     CMsgClientToGCGetMatchMetaDataResponse_EResult_descriptor(), name, value);
-}
-enum CMsgClientToGCModifyDevAnnouncements_EOperation : int {
-  CMsgClientToGCModifyDevAnnouncements_EOperation_k_eCreate = 0,
-  CMsgClientToGCModifyDevAnnouncements_EOperation_k_eUpdate = 1,
-  CMsgClientToGCModifyDevAnnouncements_EOperation_k_eDelete = 2
-};
-bool CMsgClientToGCModifyDevAnnouncements_EOperation_IsValid(int value);
-constexpr CMsgClientToGCModifyDevAnnouncements_EOperation CMsgClientToGCModifyDevAnnouncements_EOperation_EOperation_MIN = CMsgClientToGCModifyDevAnnouncements_EOperation_k_eCreate;
-constexpr CMsgClientToGCModifyDevAnnouncements_EOperation CMsgClientToGCModifyDevAnnouncements_EOperation_EOperation_MAX = CMsgClientToGCModifyDevAnnouncements_EOperation_k_eDelete;
-constexpr int CMsgClientToGCModifyDevAnnouncements_EOperation_EOperation_ARRAYSIZE = CMsgClientToGCModifyDevAnnouncements_EOperation_EOperation_MAX + 1;
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCModifyDevAnnouncements_EOperation_descriptor();
-template<typename T>
-inline const std::string& CMsgClientToGCModifyDevAnnouncements_EOperation_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, CMsgClientToGCModifyDevAnnouncements_EOperation>::value ||
-    ::std::is_integral<T>::value,
-    "Incorrect type passed to function CMsgClientToGCModifyDevAnnouncements_EOperation_Name.");
-  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    CMsgClientToGCModifyDevAnnouncements_EOperation_descriptor(), enum_t_value);
-}
-inline bool CMsgClientToGCModifyDevAnnouncements_EOperation_Parse(
-    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCModifyDevAnnouncements_EOperation* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCModifyDevAnnouncements_EOperation>(
-    CMsgClientToGCModifyDevAnnouncements_EOperation_descriptor(), name, value);
-}
-enum CMsgClientToGCModifyDevAnnouncementsResponse_EResult : int {
-  CMsgClientToGCModifyDevAnnouncementsResponse_EResult_k_eSuccess = 0,
-  CMsgClientToGCModifyDevAnnouncementsResponse_EResult_k_eInvalidPermission = 1,
-  CMsgClientToGCModifyDevAnnouncementsResponse_EResult_k_eInvalidTarget = 2,
-  CMsgClientToGCModifyDevAnnouncementsResponse_EResult_k_eInternalError = 3
-};
-bool CMsgClientToGCModifyDevAnnouncementsResponse_EResult_IsValid(int value);
-constexpr CMsgClientToGCModifyDevAnnouncementsResponse_EResult CMsgClientToGCModifyDevAnnouncementsResponse_EResult_EResult_MIN = CMsgClientToGCModifyDevAnnouncementsResponse_EResult_k_eSuccess;
-constexpr CMsgClientToGCModifyDevAnnouncementsResponse_EResult CMsgClientToGCModifyDevAnnouncementsResponse_EResult_EResult_MAX = CMsgClientToGCModifyDevAnnouncementsResponse_EResult_k_eInternalError;
-constexpr int CMsgClientToGCModifyDevAnnouncementsResponse_EResult_EResult_ARRAYSIZE = CMsgClientToGCModifyDevAnnouncementsResponse_EResult_EResult_MAX + 1;
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCModifyDevAnnouncementsResponse_EResult_descriptor();
-template<typename T>
-inline const std::string& CMsgClientToGCModifyDevAnnouncementsResponse_EResult_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, CMsgClientToGCModifyDevAnnouncementsResponse_EResult>::value ||
-    ::std::is_integral<T>::value,
-    "Incorrect type passed to function CMsgClientToGCModifyDevAnnouncementsResponse_EResult_Name.");
-  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    CMsgClientToGCModifyDevAnnouncementsResponse_EResult_descriptor(), enum_t_value);
-}
-inline bool CMsgClientToGCModifyDevAnnouncementsResponse_EResult_Parse(
-    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCModifyDevAnnouncementsResponse_EResult* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCModifyDevAnnouncementsResponse_EResult>(
-    CMsgClientToGCModifyDevAnnouncementsResponse_EResult_descriptor(), name, value);
 }
 enum CMsgClientToGCDevAction_EAction : int {
   CMsgClientToGCDevAction_EAction_k_eSetDeveloper = 1,
@@ -1740,11 +1862,19 @@ inline bool CMsgClientToGCSubmitPlaytestUserResponse_EResponse_Parse(
 }
 enum CMsgClientToGCUpdateHeroBuildResponse_EResponse : int {
   CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eInternalError = 0,
-  CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eSuccess = 1
+  CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eSuccess = 1,
+  CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eNotAuthor = 2,
+  CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eInvalidBuildID = 3,
+  CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eInvalidName = 4,
+  CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eNameTooLong = 5,
+  CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eDescriptionTooLong = 6,
+  CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eInvalidDetails = 7,
+  CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eStaleVersion = 8,
+  CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eBuildTooLarge = 9
 };
 bool CMsgClientToGCUpdateHeroBuildResponse_EResponse_IsValid(int value);
 constexpr CMsgClientToGCUpdateHeroBuildResponse_EResponse CMsgClientToGCUpdateHeroBuildResponse_EResponse_EResponse_MIN = CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eInternalError;
-constexpr CMsgClientToGCUpdateHeroBuildResponse_EResponse CMsgClientToGCUpdateHeroBuildResponse_EResponse_EResponse_MAX = CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eSuccess;
+constexpr CMsgClientToGCUpdateHeroBuildResponse_EResponse CMsgClientToGCUpdateHeroBuildResponse_EResponse_EResponse_MAX = CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eBuildTooLarge;
 constexpr int CMsgClientToGCUpdateHeroBuildResponse_EResponse_EResponse_ARRAYSIZE = CMsgClientToGCUpdateHeroBuildResponse_EResponse_EResponse_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCUpdateHeroBuildResponse_EResponse_descriptor();
@@ -1764,11 +1894,13 @@ inline bool CMsgClientToGCUpdateHeroBuildResponse_EResponse_Parse(
 enum CMsgClientToGCFindHeroBuildsResponse_EResponse : int {
   CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eInternalError = 0,
   CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eSuccess = 1,
-  CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eTooBusy = 2
+  CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eTooBusy = 2,
+  CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eMissingHeroID = 3,
+  CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eInvalidLanguages = 4
 };
 bool CMsgClientToGCFindHeroBuildsResponse_EResponse_IsValid(int value);
 constexpr CMsgClientToGCFindHeroBuildsResponse_EResponse CMsgClientToGCFindHeroBuildsResponse_EResponse_EResponse_MIN = CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eInternalError;
-constexpr CMsgClientToGCFindHeroBuildsResponse_EResponse CMsgClientToGCFindHeroBuildsResponse_EResponse_EResponse_MAX = CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eTooBusy;
+constexpr CMsgClientToGCFindHeroBuildsResponse_EResponse CMsgClientToGCFindHeroBuildsResponse_EResponse_EResponse_MAX = CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eInvalidLanguages;
 constexpr int CMsgClientToGCFindHeroBuildsResponse_EResponse_EResponse_ARRAYSIZE = CMsgClientToGCFindHeroBuildsResponse_EResponse_EResponse_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCFindHeroBuildsResponse_EResponse_descriptor();
@@ -1787,11 +1919,12 @@ inline bool CMsgClientToGCFindHeroBuildsResponse_EResponse_Parse(
 }
 enum CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse : int {
   CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_k_eInternalError = 0,
-  CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_k_eSuccess = 1
+  CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_k_eSuccess = 1,
+  CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_k_eTooBusy = 2
 };
 bool CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_IsValid(int value);
 constexpr CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_EResponse_MIN = CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_k_eInternalError;
-constexpr CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_EResponse_MAX = CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_k_eSuccess;
+constexpr CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_EResponse_MAX = CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_k_eTooBusy;
 constexpr int CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_EResponse_ARRAYSIZE = CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_EResponse_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_descriptor();
@@ -1891,6 +2024,32 @@ inline bool CMsgClientToGCGetAccountMatchReportsResponse_EResponse_Parse(
     ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCGetAccountMatchReportsResponse_EResponse* value) {
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCGetAccountMatchReportsResponse_EResponse>(
     CMsgClientToGCGetAccountMatchReportsResponse_EResponse_descriptor(), name, value);
+}
+enum CMsgClientToGCRequestReporterUpdatesResponse_EResponse : int {
+  CMsgClientToGCRequestReporterUpdatesResponse_EResponse_k_eInternalError = 0,
+  CMsgClientToGCRequestReporterUpdatesResponse_EResponse_k_eSuccess = 1,
+  CMsgClientToGCRequestReporterUpdatesResponse_EResponse_k_eRateLimited = 2,
+  CMsgClientToGCRequestReporterUpdatesResponse_EResponse_k_eDisabled = 4,
+  CMsgClientToGCRequestReporterUpdatesResponse_EResponse_k_eTooBusy = 7
+};
+bool CMsgClientToGCRequestReporterUpdatesResponse_EResponse_IsValid(int value);
+constexpr CMsgClientToGCRequestReporterUpdatesResponse_EResponse CMsgClientToGCRequestReporterUpdatesResponse_EResponse_EResponse_MIN = CMsgClientToGCRequestReporterUpdatesResponse_EResponse_k_eInternalError;
+constexpr CMsgClientToGCRequestReporterUpdatesResponse_EResponse CMsgClientToGCRequestReporterUpdatesResponse_EResponse_EResponse_MAX = CMsgClientToGCRequestReporterUpdatesResponse_EResponse_k_eTooBusy;
+constexpr int CMsgClientToGCRequestReporterUpdatesResponse_EResponse_EResponse_ARRAYSIZE = CMsgClientToGCRequestReporterUpdatesResponse_EResponse_EResponse_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCRequestReporterUpdatesResponse_EResponse_descriptor();
+template<typename T>
+inline const std::string& CMsgClientToGCRequestReporterUpdatesResponse_EResponse_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgClientToGCRequestReporterUpdatesResponse_EResponse>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgClientToGCRequestReporterUpdatesResponse_EResponse_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgClientToGCRequestReporterUpdatesResponse_EResponse_descriptor(), enum_t_value);
+}
+inline bool CMsgClientToGCRequestReporterUpdatesResponse_EResponse_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCRequestReporterUpdatesResponse_EResponse* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCRequestReporterUpdatesResponse_EResponse>(
+    CMsgClientToGCRequestReporterUpdatesResponse_EResponse_descriptor(), name, value);
 }
 enum CMsgClientToGCDeleteHeroBuildResponse_EResponse : int {
   CMsgClientToGCDeleteHeroBuildResponse_EResponse_k_eInternalError = 0,
@@ -1998,11 +2157,13 @@ enum CMsgClientToGCCommendPlayerFromMatchResponse_EResponse : int {
   CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eDisabled = 2,
   CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eTooBusy = 3,
   CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eRateLimited = 4,
-  CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eTimeout = 5
+  CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eTimeout = 5,
+  CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eEnemyCommendsDisabled = 6,
+  CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eTooLate = 7
 };
 bool CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_IsValid(int value);
 constexpr CMsgClientToGCCommendPlayerFromMatchResponse_EResponse CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_EResponse_MIN = CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eInternalError;
-constexpr CMsgClientToGCCommendPlayerFromMatchResponse_EResponse CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_EResponse_MAX = CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eTimeout;
+constexpr CMsgClientToGCCommendPlayerFromMatchResponse_EResponse CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_EResponse_MAX = CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eTooLate;
 constexpr int CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_EResponse_ARRAYSIZE = CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_EResponse_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_descriptor();
@@ -2370,6 +2531,304 @@ inline bool CMsgClientToGCSetAccountPrivacySettingResponse_EResultCode_Parse(
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCSetAccountPrivacySettingResponse_EResultCode>(
     CMsgClientToGCSetAccountPrivacySettingResponse_EResultCode_descriptor(), name, value);
 }
+enum CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction : int {
+  CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_k_eUnlockStyle = 0,
+  CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_k_eEquipStyle = 1,
+  CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_k_eDevUnlockStyle = 2,
+  CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_k_eDevLockStyle = 3
+};
+bool CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_IsValid(int value);
+constexpr CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_EStyleAction_MIN = CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_k_eUnlockStyle;
+constexpr CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_EStyleAction_MAX = CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_k_eDevLockStyle;
+constexpr int CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_EStyleAction_ARRAYSIZE = CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_EStyleAction_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_descriptor();
+template<typename T>
+inline const std::string& CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_descriptor(), enum_t_value);
+}
+inline bool CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction>(
+    CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_descriptor(), name, value);
+}
+enum CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse : int {
+  CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eInternalError = 0,
+  CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eSuccess = 1,
+  CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eTooBusy = 2,
+  CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eDisabled = 3,
+  CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eTimeout = 4,
+  CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eNoItem = 5,
+  CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eNoActions = 6,
+  CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eUnknownAction = 8,
+  CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eCantEquipNotOwned = 9,
+  CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eNoPermission = 10,
+  CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eInvalidSlot = 11
+};
+bool CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_IsValid(int value);
+constexpr CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_EResponse_MIN = CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eInternalError;
+constexpr CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_EResponse_MAX = CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eInvalidSlot;
+constexpr int CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_EResponse_ARRAYSIZE = CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_EResponse_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_descriptor();
+template<typename T>
+inline const std::string& CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_descriptor(), enum_t_value);
+}
+inline bool CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse>(
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_descriptor(), name, value);
+}
+enum CMsgClientToGCStartRankedIntervalResponse_EResponse : int {
+  CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eInternalError = 0,
+  CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eSuccess = 1,
+  CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eIntervalInactive = 2,
+  CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eAlreadyStarted = 3,
+  CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eNotEnoughMatchesPlayed = 4,
+  CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eNotEnoughHeroesUnlocked = 5
+};
+bool CMsgClientToGCStartRankedIntervalResponse_EResponse_IsValid(int value);
+constexpr CMsgClientToGCStartRankedIntervalResponse_EResponse CMsgClientToGCStartRankedIntervalResponse_EResponse_EResponse_MIN = CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eInternalError;
+constexpr CMsgClientToGCStartRankedIntervalResponse_EResponse CMsgClientToGCStartRankedIntervalResponse_EResponse_EResponse_MAX = CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eNotEnoughHeroesUnlocked;
+constexpr int CMsgClientToGCStartRankedIntervalResponse_EResponse_EResponse_ARRAYSIZE = CMsgClientToGCStartRankedIntervalResponse_EResponse_EResponse_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCStartRankedIntervalResponse_EResponse_descriptor();
+template<typename T>
+inline const std::string& CMsgClientToGCStartRankedIntervalResponse_EResponse_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgClientToGCStartRankedIntervalResponse_EResponse>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgClientToGCStartRankedIntervalResponse_EResponse_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgClientToGCStartRankedIntervalResponse_EResponse_descriptor(), enum_t_value);
+}
+inline bool CMsgClientToGCStartRankedIntervalResponse_EResponse_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCStartRankedIntervalResponse_EResponse* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCStartRankedIntervalResponse_EResponse>(
+    CMsgClientToGCStartRankedIntervalResponse_EResponse_descriptor(), name, value);
+}
+enum CMsgClientToGCGetInternalLeaderboardsResponse_EResponse : int {
+  CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_k_eInternalError = 0,
+  CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_k_eSuccess = 1,
+  CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_k_eAccessDenied = 2
+};
+bool CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_IsValid(int value);
+constexpr CMsgClientToGCGetInternalLeaderboardsResponse_EResponse CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_EResponse_MIN = CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_k_eInternalError;
+constexpr CMsgClientToGCGetInternalLeaderboardsResponse_EResponse CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_EResponse_MAX = CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_k_eAccessDenied;
+constexpr int CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_EResponse_ARRAYSIZE = CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_EResponse_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_descriptor();
+template<typename T>
+inline const std::string& CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgClientToGCGetInternalLeaderboardsResponse_EResponse>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_descriptor(), enum_t_value);
+}
+inline bool CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCGetInternalLeaderboardsResponse_EResponse* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCGetInternalLeaderboardsResponse_EResponse>(
+    CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_descriptor(), name, value);
+}
+enum CMsgClientToGCGetLeaderboardStatusResponse_EResult : int {
+  CMsgClientToGCGetLeaderboardStatusResponse_EResult_k_eInternalError = 0,
+  CMsgClientToGCGetLeaderboardStatusResponse_EResult_k_eSuccess = 1,
+  CMsgClientToGCGetLeaderboardStatusResponse_EResult_k_eTooBusy = 2,
+  CMsgClientToGCGetLeaderboardStatusResponse_EResult_k_eRateLimited = 3,
+  CMsgClientToGCGetLeaderboardStatusResponse_EResult_k_eInvalidLeaderboard = 4
+};
+bool CMsgClientToGCGetLeaderboardStatusResponse_EResult_IsValid(int value);
+constexpr CMsgClientToGCGetLeaderboardStatusResponse_EResult CMsgClientToGCGetLeaderboardStatusResponse_EResult_EResult_MIN = CMsgClientToGCGetLeaderboardStatusResponse_EResult_k_eInternalError;
+constexpr CMsgClientToGCGetLeaderboardStatusResponse_EResult CMsgClientToGCGetLeaderboardStatusResponse_EResult_EResult_MAX = CMsgClientToGCGetLeaderboardStatusResponse_EResult_k_eInvalidLeaderboard;
+constexpr int CMsgClientToGCGetLeaderboardStatusResponse_EResult_EResult_ARRAYSIZE = CMsgClientToGCGetLeaderboardStatusResponse_EResult_EResult_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCGetLeaderboardStatusResponse_EResult_descriptor();
+template<typename T>
+inline const std::string& CMsgClientToGCGetLeaderboardStatusResponse_EResult_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgClientToGCGetLeaderboardStatusResponse_EResult>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgClientToGCGetLeaderboardStatusResponse_EResult_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgClientToGCGetLeaderboardStatusResponse_EResult_descriptor(), enum_t_value);
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_EResult_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCGetLeaderboardStatusResponse_EResult* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCGetLeaderboardStatusResponse_EResult>(
+    CMsgClientToGCGetLeaderboardStatusResponse_EResult_descriptor(), name, value);
+}
+enum CMsgClientToGCCabalCreateResponse_EResult : int {
+  CMsgClientToGCCabalCreateResponse_EResult_k_eInternalError = 0,
+  CMsgClientToGCCabalCreateResponse_EResult_k_eSuccess = 1,
+  CMsgClientToGCCabalCreateResponse_EResult_k_eTooBusy = 2,
+  CMsgClientToGCCabalCreateResponse_EResult_k_eRateLimited = 3,
+  CMsgClientToGCCabalCreateResponse_EResult_k_eAlreadyInMaxCabals = 4
+};
+bool CMsgClientToGCCabalCreateResponse_EResult_IsValid(int value);
+constexpr CMsgClientToGCCabalCreateResponse_EResult CMsgClientToGCCabalCreateResponse_EResult_EResult_MIN = CMsgClientToGCCabalCreateResponse_EResult_k_eInternalError;
+constexpr CMsgClientToGCCabalCreateResponse_EResult CMsgClientToGCCabalCreateResponse_EResult_EResult_MAX = CMsgClientToGCCabalCreateResponse_EResult_k_eAlreadyInMaxCabals;
+constexpr int CMsgClientToGCCabalCreateResponse_EResult_EResult_ARRAYSIZE = CMsgClientToGCCabalCreateResponse_EResult_EResult_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCCabalCreateResponse_EResult_descriptor();
+template<typename T>
+inline const std::string& CMsgClientToGCCabalCreateResponse_EResult_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgClientToGCCabalCreateResponse_EResult>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgClientToGCCabalCreateResponse_EResult_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgClientToGCCabalCreateResponse_EResult_descriptor(), enum_t_value);
+}
+inline bool CMsgClientToGCCabalCreateResponse_EResult_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCCabalCreateResponse_EResult* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCCabalCreateResponse_EResult>(
+    CMsgClientToGCCabalCreateResponse_EResult_descriptor(), name, value);
+}
+enum CMsgClientToGCCabalInviteAccountResponse_EResult : int {
+  CMsgClientToGCCabalInviteAccountResponse_EResult_k_eInternalError = 0,
+  CMsgClientToGCCabalInviteAccountResponse_EResult_k_eSuccess = 1,
+  CMsgClientToGCCabalInviteAccountResponse_EResult_k_eTooBusy = 2,
+  CMsgClientToGCCabalInviteAccountResponse_EResult_k_eRateLimited = 3,
+  CMsgClientToGCCabalInviteAccountResponse_EResult_k_eInvalidPermission = 4,
+  CMsgClientToGCCabalInviteAccountResponse_EResult_k_eTargetInMaxCabals = 5,
+  CMsgClientToGCCabalInviteAccountResponse_EResult_k_eTargetAtMaxInvites = 6,
+  CMsgClientToGCCabalInviteAccountResponse_EResult_k_eTargetAlreadyInvited = 7,
+  CMsgClientToGCCabalInviteAccountResponse_EResult_k_eCabalAtMaxInvites = 8,
+  CMsgClientToGCCabalInviteAccountResponse_EResult_k_eCabalAtMaxMembers = 9,
+  CMsgClientToGCCabalInviteAccountResponse_EResult_k_eInvalidTargetAccount = 10,
+  CMsgClientToGCCabalInviteAccountResponse_EResult_k_eTargetNotInvited = 11
+};
+bool CMsgClientToGCCabalInviteAccountResponse_EResult_IsValid(int value);
+constexpr CMsgClientToGCCabalInviteAccountResponse_EResult CMsgClientToGCCabalInviteAccountResponse_EResult_EResult_MIN = CMsgClientToGCCabalInviteAccountResponse_EResult_k_eInternalError;
+constexpr CMsgClientToGCCabalInviteAccountResponse_EResult CMsgClientToGCCabalInviteAccountResponse_EResult_EResult_MAX = CMsgClientToGCCabalInviteAccountResponse_EResult_k_eTargetNotInvited;
+constexpr int CMsgClientToGCCabalInviteAccountResponse_EResult_EResult_ARRAYSIZE = CMsgClientToGCCabalInviteAccountResponse_EResult_EResult_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCCabalInviteAccountResponse_EResult_descriptor();
+template<typename T>
+inline const std::string& CMsgClientToGCCabalInviteAccountResponse_EResult_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgClientToGCCabalInviteAccountResponse_EResult>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgClientToGCCabalInviteAccountResponse_EResult_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgClientToGCCabalInviteAccountResponse_EResult_descriptor(), enum_t_value);
+}
+inline bool CMsgClientToGCCabalInviteAccountResponse_EResult_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCCabalInviteAccountResponse_EResult* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCCabalInviteAccountResponse_EResult>(
+    CMsgClientToGCCabalInviteAccountResponse_EResult_descriptor(), name, value);
+}
+enum CMsgClientToGCCabalAnswerInviteResponse_EResult : int {
+  CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eInternalError = 0,
+  CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eSuccess = 1,
+  CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eTooBusy = 2,
+  CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eRateLimited = 3,
+  CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eInvalidPermission = 4,
+  CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eAlreadyInMaxCabals = 5,
+  CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eCabalAtMaxMembers = 6
+};
+bool CMsgClientToGCCabalAnswerInviteResponse_EResult_IsValid(int value);
+constexpr CMsgClientToGCCabalAnswerInviteResponse_EResult CMsgClientToGCCabalAnswerInviteResponse_EResult_EResult_MIN = CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eInternalError;
+constexpr CMsgClientToGCCabalAnswerInviteResponse_EResult CMsgClientToGCCabalAnswerInviteResponse_EResult_EResult_MAX = CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eCabalAtMaxMembers;
+constexpr int CMsgClientToGCCabalAnswerInviteResponse_EResult_EResult_ARRAYSIZE = CMsgClientToGCCabalAnswerInviteResponse_EResult_EResult_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCCabalAnswerInviteResponse_EResult_descriptor();
+template<typename T>
+inline const std::string& CMsgClientToGCCabalAnswerInviteResponse_EResult_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgClientToGCCabalAnswerInviteResponse_EResult>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgClientToGCCabalAnswerInviteResponse_EResult_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgClientToGCCabalAnswerInviteResponse_EResult_descriptor(), enum_t_value);
+}
+inline bool CMsgClientToGCCabalAnswerInviteResponse_EResult_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCCabalAnswerInviteResponse_EResult* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCCabalAnswerInviteResponse_EResult>(
+    CMsgClientToGCCabalAnswerInviteResponse_EResult_descriptor(), name, value);
+}
+enum CMsgClientToGCCabalLeaveResponse_EResult : int {
+  CMsgClientToGCCabalLeaveResponse_EResult_k_eInternalError = 0,
+  CMsgClientToGCCabalLeaveResponse_EResult_k_eSuccess = 1,
+  CMsgClientToGCCabalLeaveResponse_EResult_k_eTooBusy = 2,
+  CMsgClientToGCCabalLeaveResponse_EResult_k_eWasLastMember = 3,
+  CMsgClientToGCCabalLeaveResponse_EResult_k_eNotMember = 4
+};
+bool CMsgClientToGCCabalLeaveResponse_EResult_IsValid(int value);
+constexpr CMsgClientToGCCabalLeaveResponse_EResult CMsgClientToGCCabalLeaveResponse_EResult_EResult_MIN = CMsgClientToGCCabalLeaveResponse_EResult_k_eInternalError;
+constexpr CMsgClientToGCCabalLeaveResponse_EResult CMsgClientToGCCabalLeaveResponse_EResult_EResult_MAX = CMsgClientToGCCabalLeaveResponse_EResult_k_eNotMember;
+constexpr int CMsgClientToGCCabalLeaveResponse_EResult_EResult_ARRAYSIZE = CMsgClientToGCCabalLeaveResponse_EResult_EResult_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCCabalLeaveResponse_EResult_descriptor();
+template<typename T>
+inline const std::string& CMsgClientToGCCabalLeaveResponse_EResult_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgClientToGCCabalLeaveResponse_EResult>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgClientToGCCabalLeaveResponse_EResult_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgClientToGCCabalLeaveResponse_EResult_descriptor(), enum_t_value);
+}
+inline bool CMsgClientToGCCabalLeaveResponse_EResult_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCCabalLeaveResponse_EResult* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCCabalLeaveResponse_EResult>(
+    CMsgClientToGCCabalLeaveResponse_EResult_descriptor(), name, value);
+}
+enum CMsgClientToGCCabalGetDetailsResponse_EResult : int {
+  CMsgClientToGCCabalGetDetailsResponse_EResult_k_eInternalError = 0,
+  CMsgClientToGCCabalGetDetailsResponse_EResult_k_eSuccess = 1,
+  CMsgClientToGCCabalGetDetailsResponse_EResult_k_eTooBusy = 2,
+  CMsgClientToGCCabalGetDetailsResponse_EResult_k_eRateLimited = 3,
+  CMsgClientToGCCabalGetDetailsResponse_EResult_k_eInvalidPermission = 4
+};
+bool CMsgClientToGCCabalGetDetailsResponse_EResult_IsValid(int value);
+constexpr CMsgClientToGCCabalGetDetailsResponse_EResult CMsgClientToGCCabalGetDetailsResponse_EResult_EResult_MIN = CMsgClientToGCCabalGetDetailsResponse_EResult_k_eInternalError;
+constexpr CMsgClientToGCCabalGetDetailsResponse_EResult CMsgClientToGCCabalGetDetailsResponse_EResult_EResult_MAX = CMsgClientToGCCabalGetDetailsResponse_EResult_k_eInvalidPermission;
+constexpr int CMsgClientToGCCabalGetDetailsResponse_EResult_EResult_ARRAYSIZE = CMsgClientToGCCabalGetDetailsResponse_EResult_EResult_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCCabalGetDetailsResponse_EResult_descriptor();
+template<typename T>
+inline const std::string& CMsgClientToGCCabalGetDetailsResponse_EResult_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgClientToGCCabalGetDetailsResponse_EResult>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgClientToGCCabalGetDetailsResponse_EResult_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgClientToGCCabalGetDetailsResponse_EResult_descriptor(), enum_t_value);
+}
+inline bool CMsgClientToGCCabalGetDetailsResponse_EResult_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCCabalGetDetailsResponse_EResult* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCCabalGetDetailsResponse_EResult>(
+    CMsgClientToGCCabalGetDetailsResponse_EResult_descriptor(), name, value);
+}
+enum CMsgClientToGCCabalKickPlayerResponse_EResult : int {
+  CMsgClientToGCCabalKickPlayerResponse_EResult_k_eInternalError = 0,
+  CMsgClientToGCCabalKickPlayerResponse_EResult_k_eSuccess = 1,
+  CMsgClientToGCCabalKickPlayerResponse_EResult_k_eInvalidPermission = 4,
+  CMsgClientToGCCabalKickPlayerResponse_EResult_k_eInvalidTarget = 5
+};
+bool CMsgClientToGCCabalKickPlayerResponse_EResult_IsValid(int value);
+constexpr CMsgClientToGCCabalKickPlayerResponse_EResult CMsgClientToGCCabalKickPlayerResponse_EResult_EResult_MIN = CMsgClientToGCCabalKickPlayerResponse_EResult_k_eInternalError;
+constexpr CMsgClientToGCCabalKickPlayerResponse_EResult CMsgClientToGCCabalKickPlayerResponse_EResult_EResult_MAX = CMsgClientToGCCabalKickPlayerResponse_EResult_k_eInvalidTarget;
+constexpr int CMsgClientToGCCabalKickPlayerResponse_EResult_EResult_ARRAYSIZE = CMsgClientToGCCabalKickPlayerResponse_EResult_EResult_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgClientToGCCabalKickPlayerResponse_EResult_descriptor();
+template<typename T>
+inline const std::string& CMsgClientToGCCabalKickPlayerResponse_EResult_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgClientToGCCabalKickPlayerResponse_EResult>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgClientToGCCabalKickPlayerResponse_EResult_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgClientToGCCabalKickPlayerResponse_EResult_descriptor(), enum_t_value);
+}
+inline bool CMsgClientToGCCabalKickPlayerResponse_EResult_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgClientToGCCabalKickPlayerResponse_EResult* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgClientToGCCabalKickPlayerResponse_EResult>(
+    CMsgClientToGCCabalKickPlayerResponse_EResult_descriptor(), name, value);
+}
 enum EGCCitadelClientMessages : int {
   k_EMsgClientToGCStartMatchmaking = 9010,
   k_EMsgClientToGCStartMatchmakingResponse = 9011,
@@ -2387,9 +2846,6 @@ enum EGCCitadelClientMessages : int {
   k_EMsgClientToGCUpdateRoster = 9026,
   k_EMsgClientToGCUpdateRosterResponse = 9027,
   k_EMsgGCToClientProfileCardUpdated = 9028,
-  k_EMsgGCToClientDevAnnouncements = 9029,
-  k_EMsgClientToGCModifyDevAnnouncements = 9030,
-  k_EMsgClientToGCModifyDevAnnouncementsResponse = 9031,
   k_EMsgGCToClientSDRTicket = 9100,
   k_EMsgClientToGCReplacementSDRTicket = 9101,
   k_EMsgClientToGCReplacementSDRTicketResponse = 9102,
@@ -2524,11 +2980,40 @@ enum EGCCitadelClientMessages : int {
   k_EMsgClientToGCRequestHeroReleaseVoteTally = 9280,
   k_EMsgGCToClientUpdateHeroReleaseVoteTally = 9281,
   k_EMsgClientToGCSetAccountPrivacySetting = 9282,
-  k_EMsgClientToGCSetAccountPrivacySettingResponse = 9283
+  k_EMsgClientToGCSetAccountPrivacySettingResponse = 9283,
+  k_EMsgClientToGCVariantItemChangeSlotStyles = 9284,
+  k_EMsgClientToGCVariantItemChangeSlotStylesResponse = 9285,
+  k_EMsgClientToGCPartyPlayerTyping = 9286,
+  k_EMsgClientToGCPartyPlayerTypingResponse = 9287,
+  k_EMsgGCToClientPartyPlayerTyping = 9288,
+  k_EMsgClientToGCStartRankedInterval = 9289,
+  k_EMsgClientToGCStartRankedIntervalResponse = 9290,
+  k_EMsgClientToGCGetInternalLeaderboards = 9291,
+  k_EMsgClientToGCGetInternalLeaderboardsResponse = 9292,
+  k_EMsgClientToGCGetLeaderboardStatus = 9293,
+  k_EMsgClientToGCGetLeaderboardStatusResponse = 9294,
+  k_EMsgClientToGCRequestReporterUpdates = 9295,
+  k_EMsgClientToGCRequestReporterUpdatesResponse = 9296,
+  k_EMsgClientToGCAcknowledgeReporterUpdates = 9297,
+  k_EMsgClientToGCCabalCreate = 9298,
+  k_EMsgClientToGCCabalCreateResponse = 9299,
+  k_EMsgClientToGCCabalInviteAccount = 9300,
+  k_EMsgClientToGCCabalInviteAccountResponse = 9301,
+  k_EMsgClientToGCCabalAnswerInvite = 9302,
+  k_EMsgClientToGCCabalAnswerInviteResponse = 9303,
+  k_EMsgClientToGCCabalLeave = 9304,
+  k_EMsgClientToGCCabalLeaveResponse = 9305,
+  k_EMsgClientToGCCabalGetDetails = 9306,
+  k_EMsgClientToGCCabalGetDetailsResponse = 9307,
+  k_EMsgGCToClientCabalUpdated = 9308,
+  k_EMsgClientToGCCabalKickPlayer = 9309,
+  k_EMsgClientToGCCabalKickPlayerResponse = 9310,
+  k_EMsgClientToGCCabalGetMatchHistory = 9311,
+  k_EMsgClientToGCCabalGetMatchHistoryResponse = 9312
 };
 bool EGCCitadelClientMessages_IsValid(int value);
 constexpr EGCCitadelClientMessages EGCCitadelClientMessages_MIN = k_EMsgClientToGCStartMatchmaking;
-constexpr EGCCitadelClientMessages EGCCitadelClientMessages_MAX = k_EMsgClientToGCSetAccountPrivacySettingResponse;
+constexpr EGCCitadelClientMessages EGCCitadelClientMessages_MAX = k_EMsgClientToGCCabalGetMatchHistoryResponse;
 constexpr int EGCCitadelClientMessages_ARRAYSIZE = EGCCitadelClientMessages_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EGCCitadelClientMessages_descriptor();
@@ -2698,7 +3183,7 @@ enum ECitadelClientAccountEvent : int {
   k_eSandboxViaHeroPage = 55,
   k_eViewedSettings_SteamInput = 56,
   k_eViewedSettings_Social = 57,
-  k_eCalibrationMatch = 58,
+  k_eNewPlayerPlacementMatch = 58,
   k_eSandboxViaPlayMenu = 59,
   k_eBotMatch_Medium = 60,
   k_eSandboxViaHideoutTeleport = 61,
@@ -2750,6 +3235,1326 @@ inline bool ECommendType_Parse(
     ECommendType_descriptor(), name, value);
 }
 // ===================================================================
+
+class CSORankedProgress final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CSORankedProgress) */ {
+ public:
+  inline CSORankedProgress() : CSORankedProgress(nullptr) {}
+  ~CSORankedProgress() override;
+  explicit PROTOBUF_CONSTEXPR CSORankedProgress(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CSORankedProgress(const CSORankedProgress& from);
+  CSORankedProgress(CSORankedProgress&& from) noexcept
+    : CSORankedProgress() {
+    *this = ::std::move(from);
+  }
+
+  inline CSORankedProgress& operator=(const CSORankedProgress& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CSORankedProgress& operator=(CSORankedProgress&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CSORankedProgress& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CSORankedProgress* internal_default_instance() {
+    return reinterpret_cast<const CSORankedProgress*>(
+               &_CSORankedProgress_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    0;
+
+  friend void swap(CSORankedProgress& a, CSORankedProgress& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CSORankedProgress* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CSORankedProgress* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CSORankedProgress* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CSORankedProgress>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CSORankedProgress& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CSORankedProgress& from) {
+    CSORankedProgress::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CSORankedProgress* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CSORankedProgress";
+  }
+  protected:
+  explicit CSORankedProgress(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountIdFieldNumber = 1,
+    kRankTypeFieldNumber = 2,
+    kRankIntervalFieldNumber = 3,
+    kProgressFieldNumber = 4,
+    kMaxProgressFieldNumber = 5,
+    kRankFieldNumber = 6,
+    kMaxRankFieldNumber = 7,
+    kLeaderboardRankFieldNumber = 8,
+    kMaxLeaderboardRankFieldNumber = 9,
+    kDemoteProtectGamesFieldNumber = 10,
+    kCalibrateGamesFieldNumber = 11,
+    kWinBitMaskFieldNumber = 12,
+    kMatchCountFieldNumber = 13,
+    kLastMatchHeroIdFieldNumber = 14,
+    kLastMatchOutcomeFieldNumber = 15,
+    kLastMatchKillsFieldNumber = 16,
+    kLastMatchDeathsFieldNumber = 17,
+    kLastMatchAssistsFieldNumber = 18,
+  };
+  // optional uint32 account_id = 1 [(.key_field) = true];
+  bool has_account_id() const;
+  private:
+  bool _internal_has_account_id() const;
+  public:
+  void clear_account_id();
+  uint32_t account_id() const;
+  void set_account_id(uint32_t value);
+  private:
+  uint32_t _internal_account_id() const;
+  void _internal_set_account_id(uint32_t value);
+  public:
+
+  // optional .ECitadelRankedType rank_type = 2 [default = k_eCitadelRankedType_Invalid, (.key_field) = true];
+  bool has_rank_type() const;
+  private:
+  bool _internal_has_rank_type() const;
+  public:
+  void clear_rank_type();
+  ::ECitadelRankedType rank_type() const;
+  void set_rank_type(::ECitadelRankedType value);
+  private:
+  ::ECitadelRankedType _internal_rank_type() const;
+  void _internal_set_rank_type(::ECitadelRankedType value);
+  public:
+
+  // optional uint32 rank_interval = 3 [(.key_field) = true];
+  bool has_rank_interval() const;
+  private:
+  bool _internal_has_rank_interval() const;
+  public:
+  void clear_rank_interval();
+  uint32_t rank_interval() const;
+  void set_rank_interval(uint32_t value);
+  private:
+  uint32_t _internal_rank_interval() const;
+  void _internal_set_rank_interval(uint32_t value);
+  public:
+
+  // optional uint32 progress = 4;
+  bool has_progress() const;
+  private:
+  bool _internal_has_progress() const;
+  public:
+  void clear_progress();
+  uint32_t progress() const;
+  void set_progress(uint32_t value);
+  private:
+  uint32_t _internal_progress() const;
+  void _internal_set_progress(uint32_t value);
+  public:
+
+  // optional uint32 max_progress = 5;
+  bool has_max_progress() const;
+  private:
+  bool _internal_has_max_progress() const;
+  public:
+  void clear_max_progress();
+  uint32_t max_progress() const;
+  void set_max_progress(uint32_t value);
+  private:
+  uint32_t _internal_max_progress() const;
+  void _internal_set_max_progress(uint32_t value);
+  public:
+
+  // optional uint32 rank = 6;
+  bool has_rank() const;
+  private:
+  bool _internal_has_rank() const;
+  public:
+  void clear_rank();
+  uint32_t rank() const;
+  void set_rank(uint32_t value);
+  private:
+  uint32_t _internal_rank() const;
+  void _internal_set_rank(uint32_t value);
+  public:
+
+  // optional uint32 max_rank = 7;
+  bool has_max_rank() const;
+  private:
+  bool _internal_has_max_rank() const;
+  public:
+  void clear_max_rank();
+  uint32_t max_rank() const;
+  void set_max_rank(uint32_t value);
+  private:
+  uint32_t _internal_max_rank() const;
+  void _internal_set_max_rank(uint32_t value);
+  public:
+
+  // optional uint32 leaderboard_rank = 8;
+  bool has_leaderboard_rank() const;
+  private:
+  bool _internal_has_leaderboard_rank() const;
+  public:
+  void clear_leaderboard_rank();
+  uint32_t leaderboard_rank() const;
+  void set_leaderboard_rank(uint32_t value);
+  private:
+  uint32_t _internal_leaderboard_rank() const;
+  void _internal_set_leaderboard_rank(uint32_t value);
+  public:
+
+  // optional uint32 max_leaderboard_rank = 9;
+  bool has_max_leaderboard_rank() const;
+  private:
+  bool _internal_has_max_leaderboard_rank() const;
+  public:
+  void clear_max_leaderboard_rank();
+  uint32_t max_leaderboard_rank() const;
+  void set_max_leaderboard_rank(uint32_t value);
+  private:
+  uint32_t _internal_max_leaderboard_rank() const;
+  void _internal_set_max_leaderboard_rank(uint32_t value);
+  public:
+
+  // optional uint32 demote_protect_games = 10;
+  bool has_demote_protect_games() const;
+  private:
+  bool _internal_has_demote_protect_games() const;
+  public:
+  void clear_demote_protect_games();
+  uint32_t demote_protect_games() const;
+  void set_demote_protect_games(uint32_t value);
+  private:
+  uint32_t _internal_demote_protect_games() const;
+  void _internal_set_demote_protect_games(uint32_t value);
+  public:
+
+  // optional uint32 calibrate_games = 11;
+  bool has_calibrate_games() const;
+  private:
+  bool _internal_has_calibrate_games() const;
+  public:
+  void clear_calibrate_games();
+  uint32_t calibrate_games() const;
+  void set_calibrate_games(uint32_t value);
+  private:
+  uint32_t _internal_calibrate_games() const;
+  void _internal_set_calibrate_games(uint32_t value);
+  public:
+
+  // optional uint32 win_bit_mask = 12;
+  bool has_win_bit_mask() const;
+  private:
+  bool _internal_has_win_bit_mask() const;
+  public:
+  void clear_win_bit_mask();
+  uint32_t win_bit_mask() const;
+  void set_win_bit_mask(uint32_t value);
+  private:
+  uint32_t _internal_win_bit_mask() const;
+  void _internal_set_win_bit_mask(uint32_t value);
+  public:
+
+  // optional uint32 match_count = 13;
+  bool has_match_count() const;
+  private:
+  bool _internal_has_match_count() const;
+  public:
+  void clear_match_count();
+  uint32_t match_count() const;
+  void set_match_count(uint32_t value);
+  private:
+  uint32_t _internal_match_count() const;
+  void _internal_set_match_count(uint32_t value);
+  public:
+
+  // optional uint32 last_match_hero_id = 14;
+  bool has_last_match_hero_id() const;
+  private:
+  bool _internal_has_last_match_hero_id() const;
+  public:
+  void clear_last_match_hero_id();
+  uint32_t last_match_hero_id() const;
+  void set_last_match_hero_id(uint32_t value);
+  private:
+  uint32_t _internal_last_match_hero_id() const;
+  void _internal_set_last_match_hero_id(uint32_t value);
+  public:
+
+  // optional .EPlayerMatchOutcome last_match_outcome = 15 [default = k_EPlayerMatchOutcome_Invalid];
+  bool has_last_match_outcome() const;
+  private:
+  bool _internal_has_last_match_outcome() const;
+  public:
+  void clear_last_match_outcome();
+  ::EPlayerMatchOutcome last_match_outcome() const;
+  void set_last_match_outcome(::EPlayerMatchOutcome value);
+  private:
+  ::EPlayerMatchOutcome _internal_last_match_outcome() const;
+  void _internal_set_last_match_outcome(::EPlayerMatchOutcome value);
+  public:
+
+  // optional uint32 last_match_kills = 16;
+  bool has_last_match_kills() const;
+  private:
+  bool _internal_has_last_match_kills() const;
+  public:
+  void clear_last_match_kills();
+  uint32_t last_match_kills() const;
+  void set_last_match_kills(uint32_t value);
+  private:
+  uint32_t _internal_last_match_kills() const;
+  void _internal_set_last_match_kills(uint32_t value);
+  public:
+
+  // optional uint32 last_match_deaths = 17;
+  bool has_last_match_deaths() const;
+  private:
+  bool _internal_has_last_match_deaths() const;
+  public:
+  void clear_last_match_deaths();
+  uint32_t last_match_deaths() const;
+  void set_last_match_deaths(uint32_t value);
+  private:
+  uint32_t _internal_last_match_deaths() const;
+  void _internal_set_last_match_deaths(uint32_t value);
+  public:
+
+  // optional uint32 last_match_assists = 18;
+  bool has_last_match_assists() const;
+  private:
+  bool _internal_has_last_match_assists() const;
+  public:
+  void clear_last_match_assists();
+  uint32_t last_match_assists() const;
+  void set_last_match_assists(uint32_t value);
+  private:
+  uint32_t _internal_last_match_assists() const;
+  void _internal_set_last_match_assists(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CSORankedProgress)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint32_t account_id_;
+    int rank_type_;
+    uint32_t rank_interval_;
+    uint32_t progress_;
+    uint32_t max_progress_;
+    uint32_t rank_;
+    uint32_t max_rank_;
+    uint32_t leaderboard_rank_;
+    uint32_t max_leaderboard_rank_;
+    uint32_t demote_protect_games_;
+    uint32_t calibrate_games_;
+    uint32_t win_bit_mask_;
+    uint32_t match_count_;
+    uint32_t last_match_hero_id_;
+    int last_match_outcome_;
+    uint32_t last_match_kills_;
+    uint32_t last_match_deaths_;
+    uint32_t last_match_assists_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CSOAccountCabalMembership final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CSOAccountCabalMembership) */ {
+ public:
+  inline CSOAccountCabalMembership() : CSOAccountCabalMembership(nullptr) {}
+  ~CSOAccountCabalMembership() override;
+  explicit PROTOBUF_CONSTEXPR CSOAccountCabalMembership(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CSOAccountCabalMembership(const CSOAccountCabalMembership& from);
+  CSOAccountCabalMembership(CSOAccountCabalMembership&& from) noexcept
+    : CSOAccountCabalMembership() {
+    *this = ::std::move(from);
+  }
+
+  inline CSOAccountCabalMembership& operator=(const CSOAccountCabalMembership& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CSOAccountCabalMembership& operator=(CSOAccountCabalMembership&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CSOAccountCabalMembership& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CSOAccountCabalMembership* internal_default_instance() {
+    return reinterpret_cast<const CSOAccountCabalMembership*>(
+               &_CSOAccountCabalMembership_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    1;
+
+  friend void swap(CSOAccountCabalMembership& a, CSOAccountCabalMembership& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CSOAccountCabalMembership* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CSOAccountCabalMembership* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CSOAccountCabalMembership* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CSOAccountCabalMembership>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CSOAccountCabalMembership& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CSOAccountCabalMembership& from) {
+    CSOAccountCabalMembership::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CSOAccountCabalMembership* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CSOAccountCabalMembership";
+  }
+  protected:
+  explicit CSOAccountCabalMembership(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCabalIdFieldNumber = 2,
+    kAccountIdFieldNumber = 1,
+    kStateFieldNumber = 3,
+  };
+  // optional uint64 cabal_id = 2 [(.key_field) = true];
+  bool has_cabal_id() const;
+  private:
+  bool _internal_has_cabal_id() const;
+  public:
+  void clear_cabal_id();
+  uint64_t cabal_id() const;
+  void set_cabal_id(uint64_t value);
+  private:
+  uint64_t _internal_cabal_id() const;
+  void _internal_set_cabal_id(uint64_t value);
+  public:
+
+  // optional uint32 account_id = 1 [(.key_field) = true];
+  bool has_account_id() const;
+  private:
+  bool _internal_has_account_id() const;
+  public:
+  void clear_account_id();
+  uint32_t account_id() const;
+  void set_account_id(uint32_t value);
+  private:
+  uint32_t _internal_account_id() const;
+  void _internal_set_account_id(uint32_t value);
+  public:
+
+  // optional uint32 state = 3;
+  bool has_state() const;
+  private:
+  bool _internal_has_state() const;
+  public:
+  void clear_state();
+  uint32_t state() const;
+  void set_state(uint32_t value);
+  private:
+  uint32_t _internal_state() const;
+  void _internal_set_state(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CSOAccountCabalMembership)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint64_t cabal_id_;
+    uint32_t account_id_;
+    uint32_t state_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgCitadelCabal_MMStats final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgCitadelCabal.MMStats) */ {
+ public:
+  inline CMsgCitadelCabal_MMStats() : CMsgCitadelCabal_MMStats(nullptr) {}
+  ~CMsgCitadelCabal_MMStats() override;
+  explicit PROTOBUF_CONSTEXPR CMsgCitadelCabal_MMStats(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgCitadelCabal_MMStats(const CMsgCitadelCabal_MMStats& from);
+  CMsgCitadelCabal_MMStats(CMsgCitadelCabal_MMStats&& from) noexcept
+    : CMsgCitadelCabal_MMStats() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgCitadelCabal_MMStats& operator=(const CMsgCitadelCabal_MMStats& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgCitadelCabal_MMStats& operator=(CMsgCitadelCabal_MMStats&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgCitadelCabal_MMStats& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgCitadelCabal_MMStats* internal_default_instance() {
+    return reinterpret_cast<const CMsgCitadelCabal_MMStats*>(
+               &_CMsgCitadelCabal_MMStats_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    2;
+
+  friend void swap(CMsgCitadelCabal_MMStats& a, CMsgCitadelCabal_MMStats& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgCitadelCabal_MMStats* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgCitadelCabal_MMStats* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgCitadelCabal_MMStats* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgCitadelCabal_MMStats>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgCitadelCabal_MMStats& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgCitadelCabal_MMStats& from) {
+    CMsgCitadelCabal_MMStats::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgCitadelCabal_MMStats* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgCitadelCabal.MMStats";
+  }
+  protected:
+  explicit CMsgCitadelCabal_MMStats(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kMmTierFieldNumber = 1,
+    kWinsFieldNumber = 2,
+    kMatchesFieldNumber = 3,
+  };
+  // optional .ECitadelCabalMMTier mm_tier = 1 [default = k_eCabalMMTier_Invalid];
+  bool has_mm_tier() const;
+  private:
+  bool _internal_has_mm_tier() const;
+  public:
+  void clear_mm_tier();
+  ::ECitadelCabalMMTier mm_tier() const;
+  void set_mm_tier(::ECitadelCabalMMTier value);
+  private:
+  ::ECitadelCabalMMTier _internal_mm_tier() const;
+  void _internal_set_mm_tier(::ECitadelCabalMMTier value);
+  public:
+
+  // optional uint32 wins = 2;
+  bool has_wins() const;
+  private:
+  bool _internal_has_wins() const;
+  public:
+  void clear_wins();
+  uint32_t wins() const;
+  void set_wins(uint32_t value);
+  private:
+  uint32_t _internal_wins() const;
+  void _internal_set_wins(uint32_t value);
+  public:
+
+  // optional uint32 matches = 3;
+  bool has_matches() const;
+  private:
+  bool _internal_has_matches() const;
+  public:
+  void clear_matches();
+  uint32_t matches() const;
+  void set_matches(uint32_t value);
+  private:
+  uint32_t _internal_matches() const;
+  void _internal_set_matches(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgCitadelCabal.MMStats)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    int mm_tier_;
+    uint32_t wins_;
+    uint32_t matches_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgCitadelCabal_Member final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgCitadelCabal.Member) */ {
+ public:
+  inline CMsgCitadelCabal_Member() : CMsgCitadelCabal_Member(nullptr) {}
+  ~CMsgCitadelCabal_Member() override;
+  explicit PROTOBUF_CONSTEXPR CMsgCitadelCabal_Member(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgCitadelCabal_Member(const CMsgCitadelCabal_Member& from);
+  CMsgCitadelCabal_Member(CMsgCitadelCabal_Member&& from) noexcept
+    : CMsgCitadelCabal_Member() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgCitadelCabal_Member& operator=(const CMsgCitadelCabal_Member& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgCitadelCabal_Member& operator=(CMsgCitadelCabal_Member&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgCitadelCabal_Member& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgCitadelCabal_Member* internal_default_instance() {
+    return reinterpret_cast<const CMsgCitadelCabal_Member*>(
+               &_CMsgCitadelCabal_Member_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    3;
+
+  friend void swap(CMsgCitadelCabal_Member& a, CMsgCitadelCabal_Member& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgCitadelCabal_Member* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgCitadelCabal_Member* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgCitadelCabal_Member* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgCitadelCabal_Member>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgCitadelCabal_Member& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgCitadelCabal_Member& from) {
+    CMsgCitadelCabal_Member::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgCitadelCabal_Member* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgCitadelCabal.Member";
+  }
+  protected:
+  explicit CMsgCitadelCabal_Member(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kMmStatsFieldNumber = 6,
+    kAccountIdFieldNumber = 1,
+    kMemberStateFieldNumber = 2,
+    kTimeStampFieldNumber = 3,
+    kWinsFieldNumber = 4,
+    kMatchesFieldNumber = 5,
+  };
+  // repeated .CMsgCitadelCabal.MMStats mm_stats = 6;
+  int mm_stats_size() const;
+  private:
+  int _internal_mm_stats_size() const;
+  public:
+  void clear_mm_stats();
+  ::CMsgCitadelCabal_MMStats* mutable_mm_stats(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_MMStats >*
+      mutable_mm_stats();
+  private:
+  const ::CMsgCitadelCabal_MMStats& _internal_mm_stats(int index) const;
+  ::CMsgCitadelCabal_MMStats* _internal_add_mm_stats();
+  public:
+  const ::CMsgCitadelCabal_MMStats& mm_stats(int index) const;
+  ::CMsgCitadelCabal_MMStats* add_mm_stats();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_MMStats >&
+      mm_stats() const;
+
+  // optional uint32 account_id = 1;
+  bool has_account_id() const;
+  private:
+  bool _internal_has_account_id() const;
+  public:
+  void clear_account_id();
+  uint32_t account_id() const;
+  void set_account_id(uint32_t value);
+  private:
+  uint32_t _internal_account_id() const;
+  void _internal_set_account_id(uint32_t value);
+  public:
+
+  // optional .CMsgCitadelCabal.EMemberState member_state = 2 [default = k_eMemberState_Left];
+  bool has_member_state() const;
+  private:
+  bool _internal_has_member_state() const;
+  public:
+  void clear_member_state();
+  ::CMsgCitadelCabal_EMemberState member_state() const;
+  void set_member_state(::CMsgCitadelCabal_EMemberState value);
+  private:
+  ::CMsgCitadelCabal_EMemberState _internal_member_state() const;
+  void _internal_set_member_state(::CMsgCitadelCabal_EMemberState value);
+  public:
+
+  // optional uint32 time_stamp = 3;
+  bool has_time_stamp() const;
+  private:
+  bool _internal_has_time_stamp() const;
+  public:
+  void clear_time_stamp();
+  uint32_t time_stamp() const;
+  void set_time_stamp(uint32_t value);
+  private:
+  uint32_t _internal_time_stamp() const;
+  void _internal_set_time_stamp(uint32_t value);
+  public:
+
+  // optional uint32 wins = 4;
+  bool has_wins() const;
+  private:
+  bool _internal_has_wins() const;
+  public:
+  void clear_wins();
+  uint32_t wins() const;
+  void set_wins(uint32_t value);
+  private:
+  uint32_t _internal_wins() const;
+  void _internal_set_wins(uint32_t value);
+  public:
+
+  // optional uint32 matches = 5;
+  bool has_matches() const;
+  private:
+  bool _internal_has_matches() const;
+  public:
+  void clear_matches();
+  uint32_t matches() const;
+  void set_matches(uint32_t value);
+  private:
+  uint32_t _internal_matches() const;
+  void _internal_set_matches(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgCitadelCabal.Member)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_MMStats > mm_stats_;
+    uint32_t account_id_;
+    int member_state_;
+    uint32_t time_stamp_;
+    uint32_t wins_;
+    uint32_t matches_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgCitadelCabal final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgCitadelCabal) */ {
+ public:
+  inline CMsgCitadelCabal() : CMsgCitadelCabal(nullptr) {}
+  ~CMsgCitadelCabal() override;
+  explicit PROTOBUF_CONSTEXPR CMsgCitadelCabal(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgCitadelCabal(const CMsgCitadelCabal& from);
+  CMsgCitadelCabal(CMsgCitadelCabal&& from) noexcept
+    : CMsgCitadelCabal() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgCitadelCabal& operator=(const CMsgCitadelCabal& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgCitadelCabal& operator=(CMsgCitadelCabal&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgCitadelCabal& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgCitadelCabal* internal_default_instance() {
+    return reinterpret_cast<const CMsgCitadelCabal*>(
+               &_CMsgCitadelCabal_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    4;
+
+  friend void swap(CMsgCitadelCabal& a, CMsgCitadelCabal& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgCitadelCabal* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgCitadelCabal* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgCitadelCabal* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgCitadelCabal>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgCitadelCabal& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgCitadelCabal& from) {
+    CMsgCitadelCabal::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgCitadelCabal* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgCitadelCabal";
+  }
+  protected:
+  explicit CMsgCitadelCabal(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgCitadelCabal_MMStats MMStats;
+  typedef CMsgCitadelCabal_Member Member;
+
+  typedef CMsgCitadelCabal_EMemberState EMemberState;
+  static constexpr EMemberState k_eMemberState_Left =
+    CMsgCitadelCabal_EMemberState_k_eMemberState_Left;
+  static constexpr EMemberState k_eMemberState_Active =
+    CMsgCitadelCabal_EMemberState_k_eMemberState_Active;
+  static constexpr EMemberState k_eMemberState_Invited =
+    CMsgCitadelCabal_EMemberState_k_eMemberState_Invited;
+  static inline bool EMemberState_IsValid(int value) {
+    return CMsgCitadelCabal_EMemberState_IsValid(value);
+  }
+  static constexpr EMemberState EMemberState_MIN =
+    CMsgCitadelCabal_EMemberState_EMemberState_MIN;
+  static constexpr EMemberState EMemberState_MAX =
+    CMsgCitadelCabal_EMemberState_EMemberState_MAX;
+  static constexpr int EMemberState_ARRAYSIZE =
+    CMsgCitadelCabal_EMemberState_EMemberState_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EMemberState_descriptor() {
+    return CMsgCitadelCabal_EMemberState_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EMemberState_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EMemberState>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EMemberState_Name.");
+    return CMsgCitadelCabal_EMemberState_Name(enum_t_value);
+  }
+  static inline bool EMemberState_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EMemberState* value) {
+    return CMsgCitadelCabal_EMemberState_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kMembersFieldNumber = 5,
+    kMmStatsFieldNumber = 6,
+    kCabalNameFieldNumber = 2,
+    kCabalIdFieldNumber = 1,
+    kCreatedTimeFieldNumber = 3,
+    kCreatedByFieldNumber = 4,
+  };
+  // repeated .CMsgCitadelCabal.Member members = 5;
+  int members_size() const;
+  private:
+  int _internal_members_size() const;
+  public:
+  void clear_members();
+  ::CMsgCitadelCabal_Member* mutable_members(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_Member >*
+      mutable_members();
+  private:
+  const ::CMsgCitadelCabal_Member& _internal_members(int index) const;
+  ::CMsgCitadelCabal_Member* _internal_add_members();
+  public:
+  const ::CMsgCitadelCabal_Member& members(int index) const;
+  ::CMsgCitadelCabal_Member* add_members();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_Member >&
+      members() const;
+
+  // repeated .CMsgCitadelCabal.MMStats mm_stats = 6;
+  int mm_stats_size() const;
+  private:
+  int _internal_mm_stats_size() const;
+  public:
+  void clear_mm_stats();
+  ::CMsgCitadelCabal_MMStats* mutable_mm_stats(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_MMStats >*
+      mutable_mm_stats();
+  private:
+  const ::CMsgCitadelCabal_MMStats& _internal_mm_stats(int index) const;
+  ::CMsgCitadelCabal_MMStats* _internal_add_mm_stats();
+  public:
+  const ::CMsgCitadelCabal_MMStats& mm_stats(int index) const;
+  ::CMsgCitadelCabal_MMStats* add_mm_stats();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_MMStats >&
+      mm_stats() const;
+
+  // optional string cabal_name = 2;
+  bool has_cabal_name() const;
+  private:
+  bool _internal_has_cabal_name() const;
+  public:
+  void clear_cabal_name();
+  const std::string& cabal_name() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_cabal_name(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_cabal_name();
+  PROTOBUF_NODISCARD std::string* release_cabal_name();
+  void set_allocated_cabal_name(std::string* cabal_name);
+  private:
+  const std::string& _internal_cabal_name() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_cabal_name(const std::string& value);
+  std::string* _internal_mutable_cabal_name();
+  public:
+
+  // optional uint64 cabal_id = 1;
+  bool has_cabal_id() const;
+  private:
+  bool _internal_has_cabal_id() const;
+  public:
+  void clear_cabal_id();
+  uint64_t cabal_id() const;
+  void set_cabal_id(uint64_t value);
+  private:
+  uint64_t _internal_cabal_id() const;
+  void _internal_set_cabal_id(uint64_t value);
+  public:
+
+  // optional uint32 created_time = 3;
+  bool has_created_time() const;
+  private:
+  bool _internal_has_created_time() const;
+  public:
+  void clear_created_time();
+  uint32_t created_time() const;
+  void set_created_time(uint32_t value);
+  private:
+  uint32_t _internal_created_time() const;
+  void _internal_set_created_time(uint32_t value);
+  public:
+
+  // optional uint32 created_by = 4;
+  bool has_created_by() const;
+  private:
+  bool _internal_has_created_by() const;
+  public:
+  void clear_created_by();
+  uint32_t created_by() const;
+  void set_created_by(uint32_t value);
+  private:
+  uint32_t _internal_created_by() const;
+  void _internal_set_created_by(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgCitadelCabal)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_Member > members_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_MMStats > mm_stats_;
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr cabal_name_;
+    uint64_t cabal_id_;
+    uint32_t created_time_;
+    uint32_t created_by_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
 
 class CSOGameAccountClient final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CSOGameAccountClient) */ {
@@ -2806,7 +4611,7 @@ class CSOGameAccountClient final :
                &_CSOGameAccountClient_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    0;
+    5;
 
   friend void swap(CSOGameAccountClient& a, CSOGameAccountClient& b) {
     a.Swap(&b);
@@ -2964,7 +4769,6 @@ class CSOGameAccountClient final :
     kCommsBanUntilFieldNumber = 11,
     kLowPriorityGamesRemainingFieldNumber = 12,
     kReportBanUntilFieldNumber = 13,
-    kRankedBadgeLevelFieldNumber = 14,
     kPriorityTokensFieldNumber = 15,
     kPriorityTokenProgressFieldNumber = 16,
     kPriorityTokensEarnedFieldNumber = 17,
@@ -3143,19 +4947,6 @@ class CSOGameAccountClient final :
   void _internal_set_report_ban_until(uint32_t value);
   public:
 
-  // optional uint32 ranked_badge_level = 14;
-  bool has_ranked_badge_level() const;
-  private:
-  bool _internal_has_ranked_badge_level() const;
-  public:
-  void clear_ranked_badge_level();
-  uint32_t ranked_badge_level() const;
-  void set_ranked_badge_level(uint32_t value);
-  private:
-  uint32_t _internal_ranked_badge_level() const;
-  void _internal_set_ranked_badge_level(uint32_t value);
-  public:
-
   // optional uint32 priority_tokens = 15;
   bool has_priority_tokens() const;
   private:
@@ -3283,7 +5074,6 @@ class CSOGameAccountClient final :
     uint32_t comms_ban_until_;
     uint32_t low_priority_games_remaining_;
     uint32_t report_ban_until_;
-    uint32_t ranked_badge_level_;
     uint32_t priority_tokens_;
     uint32_t priority_token_progress_;
     uint32_t priority_tokens_earned_;
@@ -3353,7 +5143,7 @@ class CSOAccountSyncStorage final :
                &_CSOAccountSyncStorage_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    6;
 
   friend void swap(CSOAccountSyncStorage& a, CSOAccountSyncStorage& b) {
     a.Swap(&b);
@@ -3543,7 +5333,7 @@ class CSOAccountHeroInfo final :
                &_CSOAccountHeroInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    7;
 
   friend void swap(CSOAccountHeroInfo& a, CSOAccountHeroInfo& b) {
     a.Swap(&b);
@@ -3808,7 +5598,7 @@ class CSOAccountChallenge final :
                &_CSOAccountChallenge_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    8;
 
   friend void swap(CSOAccountChallenge& a, CSOAccountChallenge& b) {
     a.Swap(&b);
@@ -4154,7 +5944,7 @@ class CMsgCitadelClientHello final :
                &_CMsgCitadelClientHello_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    9;
 
   friend void swap(CMsgCitadelClientHello& a, CMsgCitadelClientHello& b) {
     a.Swap(&b);
@@ -4339,7 +6129,7 @@ class CMsgClientToGCStartMatchmaking final :
                &_CMsgClientToGCStartMatchmaking_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    10;
 
   friend void swap(CMsgClientToGCStartMatchmaking& a, CMsgClientToGCStartMatchmaking& b) {
     a.Swap(&b);
@@ -4589,7 +6379,7 @@ class CMsgClientToGCStartMatchmakingResponse final :
                &_CMsgClientToGCStartMatchmakingResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    11;
 
   friend void swap(CMsgClientToGCStartMatchmakingResponse& a, CMsgClientToGCStartMatchmakingResponse& b) {
     a.Swap(&b);
@@ -4714,6 +6504,10 @@ class CMsgClientToGCStartMatchmakingResponse final :
     CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_TooManyLimitedHeroes;
   static constexpr EResultCode k_EResult_UnverifiedPGI =
     CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_UnverifiedPGI;
+  static constexpr EResultCode k_EResult_RankedInvalidPartySize =
+    CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_RankedInvalidPartySize;
+  static constexpr EResultCode k_EResult_NoBrawlWhileInLowPri =
+    CMsgClientToGCStartMatchmakingResponse_EResultCode_k_EResult_NoBrawlWhileInLowPri;
   static inline bool EResultCode_IsValid(int value) {
     return CMsgClientToGCStartMatchmakingResponse_EResultCode_IsValid(value);
   }
@@ -4863,7 +6657,7 @@ class CMsgClientToGCStopMatchmaking final :
                &_CMsgClientToGCStopMatchmaking_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    12;
 
   friend void swap(CMsgClientToGCStopMatchmaking& a, CMsgClientToGCStopMatchmaking& b) {
     a.Swap(&b);
@@ -4989,7 +6783,7 @@ class CMsgClientToGCStopMatchmakingResponse final :
                &_CMsgClientToGCStopMatchmakingResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    13;
 
   friend void swap(CMsgClientToGCStopMatchmakingResponse& a, CMsgClientToGCStopMatchmakingResponse& b) {
     a.Swap(&b);
@@ -5149,7 +6943,7 @@ class CMsgGCToClientMatchmakingStopped final :
                &_CMsgGCToClientMatchmakingStopped_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    14;
 
   friend void swap(CMsgGCToClientMatchmakingStopped& a, CMsgGCToClientMatchmakingStopped& b) {
     a.Swap(&b);
@@ -5343,7 +7137,7 @@ class CMsgClientToGCLeaveLobby final :
                &_CMsgClientToGCLeaveLobby_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    15;
 
   friend void swap(CMsgClientToGCLeaveLobby& a, CMsgClientToGCLeaveLobby& b) {
     a.Swap(&b);
@@ -5502,7 +7296,7 @@ class CMsgClientToGCLeaveLobbyResponse final :
                &_CMsgClientToGCLeaveLobbyResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    16;
 
   friend void swap(CMsgClientToGCLeaveLobbyResponse& a, CMsgClientToGCLeaveLobbyResponse& b) {
     a.Swap(&b);
@@ -5628,7 +7422,7 @@ class CMsgClientWelcomeCitadel final :
                &_CMsgClientWelcomeCitadel_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    17;
 
   friend void swap(CMsgClientWelcomeCitadel& a, CMsgClientWelcomeCitadel& b) {
     a.Swap(&b);
@@ -5852,7 +7646,7 @@ class CMsgClientToGCIsInMatchmaking final :
                &_CMsgClientToGCIsInMatchmaking_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    18;
 
   friend void swap(CMsgClientToGCIsInMatchmaking& a, CMsgClientToGCIsInMatchmaking& b) {
     a.Swap(&b);
@@ -5978,7 +7772,7 @@ class CMsgClientToGCIsInMatchmakingResponse final :
                &_CMsgClientToGCIsInMatchmakingResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    19;
 
   friend void swap(CMsgClientToGCIsInMatchmakingResponse& a, CMsgClientToGCIsInMatchmakingResponse& b) {
     a.Swap(&b);
@@ -6138,7 +7932,7 @@ class CMsgDevMatchInfo_MatchPlayer final :
                &_CMsgDevMatchInfo_MatchPlayer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    20;
 
   friend void swap(CMsgDevMatchInfo_MatchPlayer& a, CMsgDevMatchInfo_MatchPlayer& b) {
     a.Swap(&b);
@@ -6343,7 +8137,7 @@ class CMsgDevMatchInfo_Team final :
                &_CMsgDevMatchInfo_Team_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    21;
 
   friend void swap(CMsgDevMatchInfo_Team& a, CMsgDevMatchInfo_Team& b) {
     a.Swap(&b);
@@ -6548,7 +8342,7 @@ class CMsgDevMatchInfo final :
                &_CMsgDevMatchInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    22;
 
   friend void swap(CMsgDevMatchInfo& a, CMsgDevMatchInfo& b) {
     a.Swap(&b);
@@ -6643,6 +8437,7 @@ class CMsgDevMatchInfo final :
     kMatchScoreFieldNumber = 18,
     kRegionModeFieldNumber = 19,
     kCompatVersionFieldNumber = 20,
+    kLowPriPoolFieldNumber = 21,
   };
   // repeated .CMsgDevMatchInfo.MatchPlayer players = 4;
   int players_size() const;
@@ -6901,6 +8696,19 @@ class CMsgDevMatchInfo final :
   void _internal_set_compat_version(uint32_t value);
   public:
 
+  // optional bool low_pri_pool = 21;
+  bool has_low_pri_pool() const;
+  private:
+  bool _internal_has_low_pri_pool() const;
+  public:
+  void clear_low_pri_pool();
+  bool low_pri_pool() const;
+  void set_low_pri_pool(bool value);
+  private:
+  bool _internal_low_pri_pool() const;
+  void _internal_set_low_pri_pool(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CMsgDevMatchInfo)
  private:
   class _Internal;
@@ -6930,6 +8738,7 @@ class CMsgDevMatchInfo final :
     uint32_t match_score_;
     int region_mode_;
     uint32_t compat_version_;
+    bool low_pri_pool_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
@@ -6991,7 +8800,7 @@ class CMsgGCToClientDevPlaytestStatus_HeroWhitelist final :
                &_CMsgGCToClientDevPlaytestStatus_HeroWhitelist_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    23;
 
   friend void swap(CMsgGCToClientDevPlaytestStatus_HeroWhitelist& a, CMsgGCToClientDevPlaytestStatus_HeroWhitelist& b) {
     a.Swap(&b);
@@ -7175,7 +8984,7 @@ class CMsgGCToClientDevPlaytestStatus_DevQueueSize final :
                &_CMsgGCToClientDevPlaytestStatus_DevQueueSize_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    24;
 
   friend void swap(CMsgGCToClientDevPlaytestStatus_DevQueueSize& a, CMsgGCToClientDevPlaytestStatus_DevQueueSize& b) {
     a.Swap(&b);
@@ -7310,6 +9119,376 @@ class CMsgGCToClientDevPlaytestStatus_DevQueueSize final :
 };
 // -------------------------------------------------------------------
 
+class CMsgGCToClientDevPlaytestStatus_LeaderboardTier final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgGCToClientDevPlaytestStatus.LeaderboardTier) */ {
+ public:
+  inline CMsgGCToClientDevPlaytestStatus_LeaderboardTier() : CMsgGCToClientDevPlaytestStatus_LeaderboardTier(nullptr) {}
+  ~CMsgGCToClientDevPlaytestStatus_LeaderboardTier() override;
+  explicit PROTOBUF_CONSTEXPR CMsgGCToClientDevPlaytestStatus_LeaderboardTier(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgGCToClientDevPlaytestStatus_LeaderboardTier(const CMsgGCToClientDevPlaytestStatus_LeaderboardTier& from);
+  CMsgGCToClientDevPlaytestStatus_LeaderboardTier(CMsgGCToClientDevPlaytestStatus_LeaderboardTier&& from) noexcept
+    : CMsgGCToClientDevPlaytestStatus_LeaderboardTier() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgGCToClientDevPlaytestStatus_LeaderboardTier& operator=(const CMsgGCToClientDevPlaytestStatus_LeaderboardTier& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgGCToClientDevPlaytestStatus_LeaderboardTier& operator=(CMsgGCToClientDevPlaytestStatus_LeaderboardTier&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgGCToClientDevPlaytestStatus_LeaderboardTier& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgGCToClientDevPlaytestStatus_LeaderboardTier* internal_default_instance() {
+    return reinterpret_cast<const CMsgGCToClientDevPlaytestStatus_LeaderboardTier*>(
+               &_CMsgGCToClientDevPlaytestStatus_LeaderboardTier_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    25;
+
+  friend void swap(CMsgGCToClientDevPlaytestStatus_LeaderboardTier& a, CMsgGCToClientDevPlaytestStatus_LeaderboardTier& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgGCToClientDevPlaytestStatus_LeaderboardTier* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgGCToClientDevPlaytestStatus_LeaderboardTier* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgGCToClientDevPlaytestStatus_LeaderboardTier* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgGCToClientDevPlaytestStatus_LeaderboardTier>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgGCToClientDevPlaytestStatus_LeaderboardTier& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgGCToClientDevPlaytestStatus_LeaderboardTier& from) {
+    CMsgGCToClientDevPlaytestStatus_LeaderboardTier::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgGCToClientDevPlaytestStatus_LeaderboardTier* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgGCToClientDevPlaytestStatus.LeaderboardTier";
+  }
+  protected:
+  explicit CMsgGCToClientDevPlaytestStatus_LeaderboardTier(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kLeaderboardRankFieldNumber = 1,
+    kRequiredProgressFieldNumber = 2,
+  };
+  // optional uint32 leaderboard_rank = 1;
+  bool has_leaderboard_rank() const;
+  private:
+  bool _internal_has_leaderboard_rank() const;
+  public:
+  void clear_leaderboard_rank();
+  uint32_t leaderboard_rank() const;
+  void set_leaderboard_rank(uint32_t value);
+  private:
+  uint32_t _internal_leaderboard_rank() const;
+  void _internal_set_leaderboard_rank(uint32_t value);
+  public:
+
+  // optional uint32 required_progress = 2;
+  bool has_required_progress() const;
+  private:
+  bool _internal_has_required_progress() const;
+  public:
+  void clear_required_progress();
+  uint32_t required_progress() const;
+  void set_required_progress(uint32_t value);
+  private:
+  uint32_t _internal_required_progress() const;
+  void _internal_set_required_progress(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgGCToClientDevPlaytestStatus.LeaderboardTier)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint32_t leaderboard_rank_;
+    uint32_t required_progress_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgGCToClientDevPlaytestStatus_ActiveRankedMode final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgGCToClientDevPlaytestStatus.ActiveRankedMode) */ {
+ public:
+  inline CMsgGCToClientDevPlaytestStatus_ActiveRankedMode() : CMsgGCToClientDevPlaytestStatus_ActiveRankedMode(nullptr) {}
+  ~CMsgGCToClientDevPlaytestStatus_ActiveRankedMode() override;
+  explicit PROTOBUF_CONSTEXPR CMsgGCToClientDevPlaytestStatus_ActiveRankedMode(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgGCToClientDevPlaytestStatus_ActiveRankedMode(const CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& from);
+  CMsgGCToClientDevPlaytestStatus_ActiveRankedMode(CMsgGCToClientDevPlaytestStatus_ActiveRankedMode&& from) noexcept
+    : CMsgGCToClientDevPlaytestStatus_ActiveRankedMode() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& operator=(const CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& operator=(CMsgGCToClientDevPlaytestStatus_ActiveRankedMode&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* internal_default_instance() {
+    return reinterpret_cast<const CMsgGCToClientDevPlaytestStatus_ActiveRankedMode*>(
+               &_CMsgGCToClientDevPlaytestStatus_ActiveRankedMode_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    26;
+
+  friend void swap(CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& a, CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgGCToClientDevPlaytestStatus_ActiveRankedMode>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& from) {
+    CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgGCToClientDevPlaytestStatus.ActiveRankedMode";
+  }
+  protected:
+  explicit CMsgGCToClientDevPlaytestStatus_ActiveRankedMode(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kLeaderboardTiersFieldNumber = 3,
+    kRankTypeFieldNumber = 1,
+    kRankIntervalFieldNumber = 2,
+  };
+  // repeated .CMsgGCToClientDevPlaytestStatus.LeaderboardTier leaderboard_tiers = 3;
+  int leaderboard_tiers_size() const;
+  private:
+  int _internal_leaderboard_tiers_size() const;
+  public:
+  void clear_leaderboard_tiers();
+  ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier* mutable_leaderboard_tiers(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier >*
+      mutable_leaderboard_tiers();
+  private:
+  const ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier& _internal_leaderboard_tiers(int index) const;
+  ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier* _internal_add_leaderboard_tiers();
+  public:
+  const ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier& leaderboard_tiers(int index) const;
+  ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier* add_leaderboard_tiers();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier >&
+      leaderboard_tiers() const;
+
+  // optional .ECitadelRankedType rank_type = 1 [default = k_eCitadelRankedType_Invalid];
+  bool has_rank_type() const;
+  private:
+  bool _internal_has_rank_type() const;
+  public:
+  void clear_rank_type();
+  ::ECitadelRankedType rank_type() const;
+  void set_rank_type(::ECitadelRankedType value);
+  private:
+  ::ECitadelRankedType _internal_rank_type() const;
+  void _internal_set_rank_type(::ECitadelRankedType value);
+  public:
+
+  // optional uint32 rank_interval = 2;
+  bool has_rank_interval() const;
+  private:
+  bool _internal_has_rank_interval() const;
+  public:
+  void clear_rank_interval();
+  uint32_t rank_interval() const;
+  void set_rank_interval(uint32_t value);
+  private:
+  uint32_t _internal_rank_interval() const;
+  void _internal_set_rank_interval(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgGCToClientDevPlaytestStatus.ActiveRankedMode)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier > leaderboard_tiers_;
+    int rank_type_;
+    uint32_t rank_interval_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
 class CMsgGCToClientDevPlaytestStatus final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgGCToClientDevPlaytestStatus) */ {
  public:
@@ -7365,7 +9544,7 @@ class CMsgGCToClientDevPlaytestStatus final :
                &_CMsgGCToClientDevPlaytestStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    27;
 
   friend void swap(CMsgGCToClientDevPlaytestStatus& a, CMsgGCToClientDevPlaytestStatus& b) {
     a.Swap(&b);
@@ -7437,6 +9616,8 @@ class CMsgGCToClientDevPlaytestStatus final :
 
   typedef CMsgGCToClientDevPlaytestStatus_HeroWhitelist HeroWhitelist;
   typedef CMsgGCToClientDevPlaytestStatus_DevQueueSize DevQueueSize;
+  typedef CMsgGCToClientDevPlaytestStatus_LeaderboardTier LeaderboardTier;
+  typedef CMsgGCToClientDevPlaytestStatus_ActiveRankedMode ActiveRankedMode;
 
   // accessors -------------------------------------------------------
 
@@ -7444,6 +9625,7 @@ class CMsgGCToClientDevPlaytestStatus final :
     kDevQueueSizeFieldNumber = 1,
     kHeroWhitelistsFieldNumber = 10,
     kValidClientVersionsFieldNumber = 15,
+    kActiveRankedModesFieldNumber = 24,
     kDevAvailableServersFieldNumber = 2,
     kCoopBotMaxWaitSFieldNumber = 3,
     kIsMmEnabledFieldNumber = 4,
@@ -7511,6 +9693,24 @@ class CMsgGCToClientDevPlaytestStatus final :
       valid_client_versions() const;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
       mutable_valid_client_versions();
+
+  // repeated .CMsgGCToClientDevPlaytestStatus.ActiveRankedMode active_ranked_modes = 24;
+  int active_ranked_modes_size() const;
+  private:
+  int _internal_active_ranked_modes_size() const;
+  public:
+  void clear_active_ranked_modes();
+  ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* mutable_active_ranked_modes(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode >*
+      mutable_active_ranked_modes();
+  private:
+  const ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& _internal_active_ranked_modes(int index) const;
+  ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* _internal_add_active_ranked_modes();
+  public:
+  const ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& active_ranked_modes(int index) const;
+  ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* add_active_ranked_modes();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode >&
+      active_ranked_modes() const;
 
   // optional uint32 dev_available_servers = 2;
   bool has_dev_available_servers() const;
@@ -7642,6 +9842,7 @@ class CMsgGCToClientDevPlaytestStatus final :
     ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevPlaytestStatus_DevQueueSize > dev_queue_size_;
     ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevPlaytestStatus_HeroWhitelist > hero_whitelists_;
     ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t > valid_client_versions_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode > active_ranked_modes_;
     uint32_t dev_available_servers_;
     uint32_t coop_bot_max_wait_s_;
     bool is_mm_enabled_;
@@ -7712,7 +9913,7 @@ class CMsgGCToClientSDRTicket final :
                &_CMsgGCToClientSDRTicket_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    28;
 
   friend void swap(CMsgGCToClientSDRTicket& a, CMsgGCToClientSDRTicket& b) {
     a.Swap(&b);
@@ -7877,7 +10078,7 @@ class CMsgClientToGCReplacementSDRTicket final :
                &_CMsgClientToGCReplacementSDRTicket_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    22;
+    29;
 
   friend void swap(CMsgClientToGCReplacementSDRTicket& a, CMsgClientToGCReplacementSDRTicket& b) {
     a.Swap(&b);
@@ -8037,7 +10238,7 @@ class CMsgClientToGCReplacementSDRTicketResponse final :
                &_CMsgClientToGCReplacementSDRTicketResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    23;
+    30;
 
   friend void swap(CMsgClientToGCReplacementSDRTicketResponse& a, CMsgClientToGCReplacementSDRTicketResponse& b) {
     a.Swap(&b);
@@ -8222,7 +10423,7 @@ class CMsgClientToGCGetHideoutSDRTicket final :
                &_CMsgClientToGCGetHideoutSDRTicket_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    24;
+    31;
 
   friend void swap(CMsgClientToGCGetHideoutSDRTicket& a, CMsgClientToGCGetHideoutSDRTicket& b) {
     a.Swap(&b);
@@ -8382,7 +10583,7 @@ class CMsgClientToGCGetHideoutSDRTicketResponse final :
                &_CMsgClientToGCGetHideoutSDRTicketResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    25;
+    32;
 
   friend void swap(CMsgClientToGCGetHideoutSDRTicketResponse& a, CMsgClientToGCGetHideoutSDRTicketResponse& b) {
     a.Swap(&b);
@@ -8567,7 +10768,7 @@ class CMsgClientToGCSetServerConVar final :
                &_CMsgClientToGCSetServerConVar_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    26;
+    33;
 
   friend void swap(CMsgClientToGCSetServerConVar& a, CMsgClientToGCSetServerConVar& b) {
     a.Swap(&b);
@@ -8767,7 +10968,7 @@ class CMsgClientToGCSetServerConVarResponse final :
                &_CMsgClientToGCSetServerConVarResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    27;
+    34;
 
   friend void swap(CMsgClientToGCSetServerConVarResponse& a, CMsgClientToGCSetServerConVarResponse& b) {
     a.Swap(&b);
@@ -8932,7 +11133,7 @@ class CMsgClientToGCPostMatchSurveyResponse_PostMatchSurvey final :
                &_CMsgClientToGCPostMatchSurveyResponse_PostMatchSurvey_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    28;
+    35;
 
   friend void swap(CMsgClientToGCPostMatchSurveyResponse_PostMatchSurvey& a, CMsgClientToGCPostMatchSurveyResponse_PostMatchSurvey& b) {
     a.Swap(&b);
@@ -9127,7 +11328,7 @@ class CMsgClientToGCPostMatchSurveyResponse final :
                &_CMsgClientToGCPostMatchSurveyResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    29;
+    36;
 
   friend void swap(CMsgClientToGCPostMatchSurveyResponse& a, CMsgClientToGCPostMatchSurveyResponse& b) {
     a.Swap(&b);
@@ -9309,7 +11510,7 @@ class CMsgPartyMMInfo final :
                &_CMsgPartyMMInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    30;
+    37;
 
   friend void swap(CMsgPartyMMInfo& a, CMsgPartyMMInfo& b) {
     a.Swap(&b);
@@ -9534,7 +11735,7 @@ class CMsgClientToGCPartyCreate final :
                &_CMsgClientToGCPartyCreate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    31;
+    38;
 
   friend void swap(CMsgClientToGCPartyCreate& a, CMsgClientToGCPartyCreate& b) {
     a.Swap(&b);
@@ -9879,7 +12080,7 @@ class CMsgClientToGCPartyCreateResponse final :
                &_CMsgClientToGCPartyCreateResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    32;
+    39;
 
   friend void swap(CMsgClientToGCPartyCreateResponse& a, CMsgClientToGCPartyCreateResponse& b) {
     a.Swap(&b);
@@ -10106,7 +12307,7 @@ class CMsgClientToGCPartyLeave final :
                &_CMsgClientToGCPartyLeave_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    33;
+    40;
 
   friend void swap(CMsgClientToGCPartyLeave& a, CMsgClientToGCPartyLeave& b) {
     a.Swap(&b);
@@ -10266,7 +12467,7 @@ class CMsgClientToGCPartyLeaveResponse final :
                &_CMsgClientToGCPartyLeaveResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    34;
+    41;
 
   friend void swap(CMsgClientToGCPartyLeaveResponse& a, CMsgClientToGCPartyLeaveResponse& b) {
     a.Swap(&b);
@@ -10460,7 +12661,7 @@ class CMsgClientToGCPartyJoin final :
                &_CMsgClientToGCPartyJoin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    35;
+    42;
 
   friend void swap(CMsgClientToGCPartyJoin& a, CMsgClientToGCPartyJoin& b) {
     a.Swap(&b);
@@ -10655,7 +12856,7 @@ class CMsgClientToGCPartyJoinResponse final :
                &_CMsgClientToGCPartyJoinResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    36;
+    43;
 
   friend void swap(CMsgClientToGCPartyJoinResponse& a, CMsgClientToGCPartyJoinResponse& b) {
     a.Swap(&b);
@@ -10873,7 +13074,7 @@ class CMsgClientToGCPartyAction final :
                &_CMsgClientToGCPartyAction_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    37;
+    44;
 
   friend void swap(CMsgClientToGCPartyAction& a, CMsgClientToGCPartyAction& b) {
     a.Swap(&b);
@@ -10986,6 +13187,12 @@ class CMsgClientToGCPartyAction final :
     CMsgClientToGCPartyAction_EAction_k_eSetMMPreference;
   static constexpr EAction k_eSetPrivateLobbyGameMode =
     CMsgClientToGCPartyAction_EAction_k_eSetPrivateLobbyGameMode;
+  static constexpr EAction k_eSetCorruptedItemShopSpawnTime =
+    CMsgClientToGCPartyAction_EAction_k_eSetCorruptedItemShopSpawnTime;
+  static constexpr EAction k_eSetActiveCabal =
+    CMsgClientToGCPartyAction_EAction_k_eSetActiveCabal;
+  static constexpr EAction k_eSetCabalMMTier =
+    CMsgClientToGCPartyAction_EAction_k_eSetCabalMMTier;
   static inline bool EAction_IsValid(int value) {
     return CMsgClientToGCPartyAction_EAction_IsValid(value);
   }
@@ -11181,7 +13388,7 @@ class CMsgClientToGCPartyActionResponse final :
                &_CMsgClientToGCPartyActionResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    38;
+    45;
 
   friend void swap(CMsgClientToGCPartyActionResponse& a, CMsgClientToGCPartyActionResponse& b) {
     a.Swap(&b);
@@ -11393,7 +13600,7 @@ class CMsgClientToGCPartySetMode final :
                &_CMsgClientToGCPartySetMode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    39;
+    46;
 
   friend void swap(CMsgClientToGCPartySetMode& a, CMsgClientToGCPartySetMode& b) {
     a.Swap(&b);
@@ -11633,7 +13840,7 @@ class CMsgClientToGCPartySetModeResponse final :
                &_CMsgClientToGCPartySetModeResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    40;
+    47;
 
   friend void swap(CMsgClientToGCPartySetModeResponse& a, CMsgClientToGCPartySetModeResponse& b) {
     a.Swap(&b);
@@ -11754,6 +13961,18 @@ class CMsgClientToGCPartySetModeResponse final :
     CMsgClientToGCPartySetModeResponse_EResponse_k_eNoHighRangeFiveStack;
   static constexpr EResponse k_eAccountLocked =
     CMsgClientToGCPartySetModeResponse_EResponse_k_eAccountLocked;
+  static constexpr EResponse k_eRankedInCalibration =
+    CMsgClientToGCPartySetModeResponse_EResponse_k_eRankedInCalibration;
+  static constexpr EResponse k_eRankedInvalidPartySize =
+    CMsgClientToGCPartySetModeResponse_EResponse_k_eRankedInvalidPartySize;
+  static constexpr EResponse k_eRankedPartySkillRangeInvalid =
+    CMsgClientToGCPartySetModeResponse_EResponse_k_eRankedPartySkillRangeInvalid;
+  static constexpr EResponse k_eRankedMemberInLowPri =
+    CMsgClientToGCPartySetModeResponse_EResponse_k_eRankedMemberInLowPri;
+  static constexpr EResponse k_eRankedMemberCurrentlyBanned =
+    CMsgClientToGCPartySetModeResponse_EResponse_k_eRankedMemberCurrentlyBanned;
+  static constexpr EResponse k_eBrawlMemberInLowPri =
+    CMsgClientToGCPartySetModeResponse_EResponse_k_eBrawlMemberInLowPri;
   static inline bool EResponse_IsValid(int value) {
     return CMsgClientToGCPartySetModeResponse_EResponse_IsValid(value);
   }
@@ -11899,7 +14118,7 @@ class CMsgClientToGCPartyStartMatch final :
                &_CMsgClientToGCPartyStartMatch_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    41;
+    48;
 
   friend void swap(CMsgClientToGCPartyStartMatch& a, CMsgClientToGCPartyStartMatch& b) {
     a.Swap(&b);
@@ -12059,7 +14278,7 @@ class CMsgClientToGCPartyStartMatchResponse final :
                &_CMsgClientToGCPartyStartMatchResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    42;
+    49;
 
   friend void swap(CMsgClientToGCPartyStartMatchResponse& a, CMsgClientToGCPartyStartMatchResponse& b) {
     a.Swap(&b);
@@ -12322,7 +14541,7 @@ class CMsgClientToGCPartyInviteUser final :
                &_CMsgClientToGCPartyInviteUser_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    43;
+    50;
 
   friend void swap(CMsgClientToGCPartyInviteUser& a, CMsgClientToGCPartyInviteUser& b) {
     a.Swap(&b);
@@ -12497,7 +14716,7 @@ class CMsgClientToGCPartyInviteUserResponse final :
                &_CMsgClientToGCPartyInviteUserResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    44;
+    51;
 
   friend void swap(CMsgClientToGCPartyInviteUserResponse& a, CMsgClientToGCPartyInviteUserResponse& b) {
     a.Swap(&b);
@@ -12722,7 +14941,7 @@ class CMsgGCToClientPartyEvent final :
                &_CMsgGCToClientPartyEvent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    45;
+    52;
 
   friend void swap(CMsgGCToClientPartyEvent& a, CMsgGCToClientPartyEvent& b) {
     a.Swap(&b);
@@ -12792,54 +15011,54 @@ class CMsgGCToClientPartyEvent final :
 
   // nested types ----------------------------------------------------
 
-  typedef CMsgGCToClientPartyEvent_EEvent EEvent;
-  static constexpr EEvent k_ePlayerKicked =
-    CMsgGCToClientPartyEvent_EEvent_k_ePlayerKicked;
-  static constexpr EEvent k_eJoinedParty =
-    CMsgGCToClientPartyEvent_EEvent_k_eJoinedParty;
-  static constexpr EEvent k_eMatchCompleted =
-    CMsgGCToClientPartyEvent_EEvent_k_eMatchCompleted;
-  static constexpr EEvent k_eMatchMakingStopped_User =
-    CMsgGCToClientPartyEvent_EEvent_k_eMatchMakingStopped_User;
-  static constexpr EEvent k_eMatchMakingStopped_Version =
-    CMsgGCToClientPartyEvent_EEvent_k_eMatchMakingStopped_Version;
-  static constexpr EEvent k_eMatchMakingStopped_NoServerRegion =
-    CMsgGCToClientPartyEvent_EEvent_k_eMatchMakingStopped_NoServerRegion;
-  static constexpr EEvent k_eLeftParty =
-    CMsgGCToClientPartyEvent_EEvent_k_eLeftParty;
-  static constexpr EEvent k_eDeclinedInvite =
-    CMsgGCToClientPartyEvent_EEvent_k_eDeclinedInvite;
-  static constexpr EEvent k_eMatchMakingStopped_FailedOther =
-    CMsgGCToClientPartyEvent_EEvent_k_eMatchMakingStopped_FailedOther;
-  static constexpr EEvent k_eDraftEnded_User =
-    CMsgGCToClientPartyEvent_EEvent_k_eDraftEnded_User;
-  static constexpr EEvent k_eStartDraftMMFailed =
-    CMsgGCToClientPartyEvent_EEvent_k_eStartDraftMMFailed;
-  static constexpr EEvent k_eMatchMakingStopped_Cancelled =
-    CMsgGCToClientPartyEvent_EEvent_k_eMatchMakingStopped_Cancelled;
-  static inline bool EEvent_IsValid(int value) {
-    return CMsgGCToClientPartyEvent_EEvent_IsValid(value);
+  typedef CMsgGCToClientPartyEvent_EPartyEvent EPartyEvent;
+  static constexpr EPartyEvent k_ePlayerKicked =
+    CMsgGCToClientPartyEvent_EPartyEvent_k_ePlayerKicked;
+  static constexpr EPartyEvent k_eJoinedParty =
+    CMsgGCToClientPartyEvent_EPartyEvent_k_eJoinedParty;
+  static constexpr EPartyEvent k_eMatchCompleted =
+    CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchCompleted;
+  static constexpr EPartyEvent k_eMatchMakingStopped_User =
+    CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchMakingStopped_User;
+  static constexpr EPartyEvent k_eMatchMakingStopped_Version =
+    CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchMakingStopped_Version;
+  static constexpr EPartyEvent k_eMatchMakingStopped_NoServerRegion =
+    CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchMakingStopped_NoServerRegion;
+  static constexpr EPartyEvent k_eLeftParty =
+    CMsgGCToClientPartyEvent_EPartyEvent_k_eLeftParty;
+  static constexpr EPartyEvent k_eDeclinedInvite =
+    CMsgGCToClientPartyEvent_EPartyEvent_k_eDeclinedInvite;
+  static constexpr EPartyEvent k_eMatchMakingStopped_FailedOther =
+    CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchMakingStopped_FailedOther;
+  static constexpr EPartyEvent k_eDraftEnded_User =
+    CMsgGCToClientPartyEvent_EPartyEvent_k_eDraftEnded_User;
+  static constexpr EPartyEvent k_eStartDraftMMFailed =
+    CMsgGCToClientPartyEvent_EPartyEvent_k_eStartDraftMMFailed;
+  static constexpr EPartyEvent k_eMatchMakingStopped_Cancelled =
+    CMsgGCToClientPartyEvent_EPartyEvent_k_eMatchMakingStopped_Cancelled;
+  static inline bool EPartyEvent_IsValid(int value) {
+    return CMsgGCToClientPartyEvent_EPartyEvent_IsValid(value);
   }
-  static constexpr EEvent EEvent_MIN =
-    CMsgGCToClientPartyEvent_EEvent_EEvent_MIN;
-  static constexpr EEvent EEvent_MAX =
-    CMsgGCToClientPartyEvent_EEvent_EEvent_MAX;
-  static constexpr int EEvent_ARRAYSIZE =
-    CMsgGCToClientPartyEvent_EEvent_EEvent_ARRAYSIZE;
+  static constexpr EPartyEvent EPartyEvent_MIN =
+    CMsgGCToClientPartyEvent_EPartyEvent_EPartyEvent_MIN;
+  static constexpr EPartyEvent EPartyEvent_MAX =
+    CMsgGCToClientPartyEvent_EPartyEvent_EPartyEvent_MAX;
+  static constexpr int EPartyEvent_ARRAYSIZE =
+    CMsgGCToClientPartyEvent_EPartyEvent_EPartyEvent_ARRAYSIZE;
   static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
-  EEvent_descriptor() {
-    return CMsgGCToClientPartyEvent_EEvent_descriptor();
+  EPartyEvent_descriptor() {
+    return CMsgGCToClientPartyEvent_EPartyEvent_descriptor();
   }
   template<typename T>
-  static inline const std::string& EEvent_Name(T enum_t_value) {
-    static_assert(::std::is_same<T, EEvent>::value ||
+  static inline const std::string& EPartyEvent_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EPartyEvent>::value ||
       ::std::is_integral<T>::value,
-      "Incorrect type passed to function EEvent_Name.");
-    return CMsgGCToClientPartyEvent_EEvent_Name(enum_t_value);
+      "Incorrect type passed to function EPartyEvent_Name.");
+    return CMsgGCToClientPartyEvent_EPartyEvent_Name(enum_t_value);
   }
-  static inline bool EEvent_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
-      EEvent* value) {
-    return CMsgGCToClientPartyEvent_EEvent_Parse(name, value);
+  static inline bool EPartyEvent_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EPartyEvent* value) {
+    return CMsgGCToClientPartyEvent_EPartyEvent_Parse(name, value);
   }
 
   // accessors -------------------------------------------------------
@@ -12941,17 +15160,17 @@ class CMsgGCToClientPartyEvent final :
   void _internal_set_uint_data(uint64_t value);
   public:
 
-  // optional .CMsgGCToClientPartyEvent.EEvent event = 2 [default = k_ePlayerKicked];
+  // optional .CMsgGCToClientPartyEvent.EPartyEvent event = 2 [default = k_ePlayerKicked];
   bool has_event() const;
   private:
   bool _internal_has_event() const;
   public:
   void clear_event();
-  ::CMsgGCToClientPartyEvent_EEvent event() const;
-  void set_event(::CMsgGCToClientPartyEvent_EEvent value);
+  ::CMsgGCToClientPartyEvent_EPartyEvent event() const;
+  void set_event(::CMsgGCToClientPartyEvent_EPartyEvent value);
   private:
-  ::CMsgGCToClientPartyEvent_EEvent _internal_event() const;
-  void _internal_set_event(::CMsgGCToClientPartyEvent_EEvent value);
+  ::CMsgGCToClientPartyEvent_EPartyEvent _internal_event() const;
+  void _internal_set_event(::CMsgGCToClientPartyEvent_EPartyEvent value);
   public:
 
   // @@protoc_insertion_point(class_scope:CMsgGCToClientPartyEvent)
@@ -13032,7 +15251,7 @@ class CMsgGCToClientCanRejoinParty final :
                &_CMsgGCToClientCanRejoinParty_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    46;
+    53;
 
   friend void swap(CMsgGCToClientCanRejoinParty& a, CMsgGCToClientCanRejoinParty& b) {
     a.Swap(&b);
@@ -13192,7 +15411,7 @@ class CMsgClientToGCPartyJoinViaCode final :
                &_CMsgClientToGCPartyJoinViaCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    47;
+    54;
 
   friend void swap(CMsgClientToGCPartyJoinViaCode& a, CMsgClientToGCPartyJoinViaCode& b) {
     a.Swap(&b);
@@ -13372,7 +15591,7 @@ class CMsgClientToGCPartyJoinViaCodeResponse final :
                &_CMsgClientToGCPartyJoinViaCodeResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    48;
+    55;
 
   friend void swap(CMsgClientToGCPartyJoinViaCodeResponse& a, CMsgClientToGCPartyJoinViaCodeResponse& b) {
     a.Swap(&b);
@@ -13547,7 +15766,7 @@ class CMsgClientToGCPartySetReadyState final :
                &_CMsgClientToGCPartySetReadyState_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    49;
+    56;
 
   friend void swap(CMsgClientToGCPartySetReadyState& a, CMsgClientToGCPartySetReadyState& b) {
     a.Swap(&b);
@@ -13742,7 +15961,7 @@ class CMsgClientToGCPartySetReadyStateResponse final :
                &_CMsgClientToGCPartySetReadyStateResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    50;
+    57;
 
   friend void swap(CMsgClientToGCPartySetReadyStateResponse& a, CMsgClientToGCPartySetReadyStateResponse& b) {
     a.Swap(&b);
@@ -13956,7 +16175,7 @@ class CMsgClientToGCDevSetMMBias final :
                &_CMsgClientToGCDevSetMMBias_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    51;
+    58;
 
   friend void swap(CMsgClientToGCDevSetMMBias& a, CMsgClientToGCDevSetMMBias& b) {
     a.Swap(&b);
@@ -14131,7 +16350,7 @@ class CMsgClientToGCGetMatchHistory final :
                &_CMsgClientToGCGetMatchHistory_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    52;
+    59;
 
   friend void swap(CMsgClientToGCGetMatchHistory& a, CMsgClientToGCGetMatchHistory& b) {
     a.Swap(&b);
@@ -14208,6 +16427,9 @@ class CMsgClientToGCGetMatchHistory final :
     kAccountIdFieldNumber = 1,
     kGameModeFieldNumber = 4,
     kMatchModeFieldNumber = 5,
+    kRankedTypeFieldNumber = 6,
+    kCabalIdFieldNumber = 8,
+    kRankIntervalFieldNumber = 7,
   };
   // optional uint64 continue_cursor = 2;
   bool has_continue_cursor() const;
@@ -14261,6 +16483,45 @@ class CMsgClientToGCGetMatchHistory final :
   void _internal_set_match_mode(::ECitadelMatchMode value);
   public:
 
+  // optional .ECitadelRankedType ranked_type = 6 [default = k_eCitadelRankedType_Invalid];
+  bool has_ranked_type() const;
+  private:
+  bool _internal_has_ranked_type() const;
+  public:
+  void clear_ranked_type();
+  ::ECitadelRankedType ranked_type() const;
+  void set_ranked_type(::ECitadelRankedType value);
+  private:
+  ::ECitadelRankedType _internal_ranked_type() const;
+  void _internal_set_ranked_type(::ECitadelRankedType value);
+  public:
+
+  // optional uint64 cabal_id = 8;
+  bool has_cabal_id() const;
+  private:
+  bool _internal_has_cabal_id() const;
+  public:
+  void clear_cabal_id();
+  uint64_t cabal_id() const;
+  void set_cabal_id(uint64_t value);
+  private:
+  uint64_t _internal_cabal_id() const;
+  void _internal_set_cabal_id(uint64_t value);
+  public:
+
+  // optional uint32 rank_interval = 7;
+  bool has_rank_interval() const;
+  private:
+  bool _internal_has_rank_interval() const;
+  public:
+  void clear_rank_interval();
+  uint32_t rank_interval() const;
+  void set_rank_interval(uint32_t value);
+  private:
+  uint32_t _internal_rank_interval() const;
+  void _internal_set_rank_interval(uint32_t value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CMsgClientToGCGetMatchHistory)
  private:
   class _Internal;
@@ -14275,6 +16536,9 @@ class CMsgClientToGCGetMatchHistory final :
     uint32_t account_id_;
     int game_mode_;
     int match_mode_;
+    int ranked_type_;
+    uint64_t cabal_id_;
+    uint32_t rank_interval_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
@@ -14336,7 +16600,7 @@ class CMsgClientToGCGetMatchHistoryResponse_Match final :
                &_CMsgClientToGCGetMatchHistoryResponse_Match_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    53;
+    60;
 
   friend void swap(CMsgClientToGCGetMatchHistoryResponse_Match& a, CMsgClientToGCGetMatchHistoryResponse_Match& b) {
     a.Swap(&b);
@@ -14426,13 +16690,18 @@ class CMsgClientToGCGetMatchHistoryResponse_Match final :
     kObjectivesMaskTeam1FieldNumber = 16,
     kAbandonedTimeSFieldNumber = 18,
     kMatchModeFieldNumber = 19,
-    kTeamAbandonedFieldNumber = 17,
-    kNotScoredFieldNumber = 21,
     kGameModeFieldNumber = 20,
     kGameModeVersionFieldNumber = 22,
     kBrawlScoreTeam0FieldNumber = 23,
     kBrawlScoreTeam1FieldNumber = 24,
     kBrawlAvgRoundTimeSFieldNumber = 25,
+    kPlayerMatchOutcomeFieldNumber = 26,
+    kTeamAbandonedFieldNumber = 17,
+    kRankedUsedDemotionProtectionFieldNumber = 30,
+    kLowPriPoolFieldNumber = 31,
+    kRankedDisplayBadgeFieldNumber = 27,
+    kRankedDeltaFieldNumber = 28,
+    kRankedCalibrationMatchFieldNumber = 29,
   };
   // optional uint64 match_id = 1;
   bool has_match_id() const;
@@ -14655,32 +16924,6 @@ class CMsgClientToGCGetMatchHistoryResponse_Match final :
   void _internal_set_match_mode(::ECitadelMatchMode value);
   public:
 
-  // optional bool team_abandoned = 17;
-  bool has_team_abandoned() const;
-  private:
-  bool _internal_has_team_abandoned() const;
-  public:
-  void clear_team_abandoned();
-  bool team_abandoned() const;
-  void set_team_abandoned(bool value);
-  private:
-  bool _internal_team_abandoned() const;
-  void _internal_set_team_abandoned(bool value);
-  public:
-
-  // optional bool not_scored = 21;
-  bool has_not_scored() const;
-  private:
-  bool _internal_has_not_scored() const;
-  public:
-  void clear_not_scored();
-  bool not_scored() const;
-  void set_not_scored(bool value);
-  private:
-  bool _internal_not_scored() const;
-  void _internal_set_not_scored(bool value);
-  public:
-
   // optional .ECitadelGameMode game_mode = 20 [default = k_ECitadelGameMode_Invalid];
   bool has_game_mode() const;
   private:
@@ -14746,6 +16989,97 @@ class CMsgClientToGCGetMatchHistoryResponse_Match final :
   void _internal_set_brawl_avg_round_time_s(uint32_t value);
   public:
 
+  // optional .EPlayerMatchOutcome player_match_outcome = 26 [default = k_EPlayerMatchOutcome_Invalid];
+  bool has_player_match_outcome() const;
+  private:
+  bool _internal_has_player_match_outcome() const;
+  public:
+  void clear_player_match_outcome();
+  ::EPlayerMatchOutcome player_match_outcome() const;
+  void set_player_match_outcome(::EPlayerMatchOutcome value);
+  private:
+  ::EPlayerMatchOutcome _internal_player_match_outcome() const;
+  void _internal_set_player_match_outcome(::EPlayerMatchOutcome value);
+  public:
+
+  // optional bool team_abandoned = 17;
+  bool has_team_abandoned() const;
+  private:
+  bool _internal_has_team_abandoned() const;
+  public:
+  void clear_team_abandoned();
+  bool team_abandoned() const;
+  void set_team_abandoned(bool value);
+  private:
+  bool _internal_team_abandoned() const;
+  void _internal_set_team_abandoned(bool value);
+  public:
+
+  // optional bool ranked_used_demotion_protection = 30;
+  bool has_ranked_used_demotion_protection() const;
+  private:
+  bool _internal_has_ranked_used_demotion_protection() const;
+  public:
+  void clear_ranked_used_demotion_protection();
+  bool ranked_used_demotion_protection() const;
+  void set_ranked_used_demotion_protection(bool value);
+  private:
+  bool _internal_ranked_used_demotion_protection() const;
+  void _internal_set_ranked_used_demotion_protection(bool value);
+  public:
+
+  // optional bool low_pri_pool = 31;
+  bool has_low_pri_pool() const;
+  private:
+  bool _internal_has_low_pri_pool() const;
+  public:
+  void clear_low_pri_pool();
+  bool low_pri_pool() const;
+  void set_low_pri_pool(bool value);
+  private:
+  bool _internal_low_pri_pool() const;
+  void _internal_set_low_pri_pool(bool value);
+  public:
+
+  // optional uint32 ranked_display_badge = 27;
+  bool has_ranked_display_badge() const;
+  private:
+  bool _internal_has_ranked_display_badge() const;
+  public:
+  void clear_ranked_display_badge();
+  uint32_t ranked_display_badge() const;
+  void set_ranked_display_badge(uint32_t value);
+  private:
+  uint32_t _internal_ranked_display_badge() const;
+  void _internal_set_ranked_display_badge(uint32_t value);
+  public:
+
+  // optional int32 ranked_delta = 28;
+  bool has_ranked_delta() const;
+  private:
+  bool _internal_has_ranked_delta() const;
+  public:
+  void clear_ranked_delta();
+  int32_t ranked_delta() const;
+  void set_ranked_delta(int32_t value);
+  private:
+  int32_t _internal_ranked_delta() const;
+  void _internal_set_ranked_delta(int32_t value);
+  public:
+
+  // optional uint32 ranked_calibration_match = 29;
+  bool has_ranked_calibration_match() const;
+  private:
+  bool _internal_has_ranked_calibration_match() const;
+  public:
+  void clear_ranked_calibration_match();
+  uint32_t ranked_calibration_match() const;
+  void set_ranked_calibration_match(uint32_t value);
+  private:
+  uint32_t _internal_ranked_calibration_match() const;
+  void _internal_set_ranked_calibration_match(uint32_t value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CMsgClientToGCGetMatchHistoryResponse.Match)
  private:
   class _Internal;
@@ -14773,13 +17107,18 @@ class CMsgClientToGCGetMatchHistoryResponse_Match final :
     uint64_t objectives_mask_team1_;
     uint32_t abandoned_time_s_;
     int match_mode_;
-    bool team_abandoned_;
-    bool not_scored_;
     int game_mode_;
     uint32_t game_mode_version_;
     uint32_t brawl_score_team0_;
     uint32_t brawl_score_team1_;
     uint32_t brawl_avg_round_time_s_;
+    int player_match_outcome_;
+    bool team_abandoned_;
+    bool ranked_used_demotion_protection_;
+    bool low_pri_pool_;
+    uint32_t ranked_display_badge_;
+    int32_t ranked_delta_;
+    uint32_t ranked_calibration_match_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
@@ -14841,7 +17180,7 @@ class CMsgClientToGCGetMatchHistoryResponse final :
                &_CMsgClientToGCGetMatchHistoryResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    54;
+    61;
 
   friend void swap(CMsgClientToGCGetMatchHistoryResponse& a, CMsgClientToGCGetMatchHistoryResponse& b) {
     a.Swap(&b);
@@ -15076,7 +17415,7 @@ class CMsgClientToGCSpectateUser final :
                &_CMsgClientToGCSpectateUser_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    55;
+    62;
 
   friend void swap(CMsgClientToGCSpectateUser& a, CMsgClientToGCSpectateUser& b) {
     a.Swap(&b);
@@ -15266,7 +17605,7 @@ class CMsgClientToGCSpectateUserResponse final :
                &_CMsgClientToGCSpectateUserResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    56;
+    63;
 
   friend void swap(CMsgClientToGCSpectateUserResponse& a, CMsgClientToGCSpectateUserResponse& b) {
     a.Swap(&b);
@@ -15578,7 +17917,7 @@ class CMsgClientToGCSpectateLobby final :
                &_CMsgClientToGCSpectateLobby_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    57;
+    64;
 
   friend void swap(CMsgClientToGCSpectateLobby& a, CMsgClientToGCSpectateLobby& b) {
     a.Swap(&b);
@@ -15783,7 +18122,7 @@ class CMsgClientToGCSpectateLobbyResponse final :
                &_CMsgClientToGCSpectateLobbyResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    58;
+    65;
 
   friend void swap(CMsgClientToGCSpectateLobbyResponse& a, CMsgClientToGCSpectateLobbyResponse& b) {
     a.Swap(&b);
@@ -15948,7 +18287,7 @@ class CMsgClientToGCGetProfileCard final :
                &_CMsgClientToGCGetProfileCard_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    59;
+    66;
 
   friend void swap(CMsgClientToGCGetProfileCard& a, CMsgClientToGCGetProfileCard& b) {
     a.Swap(&b);
@@ -16138,7 +18477,7 @@ class CMsgCitadelProfileCard_Slot_Stat final :
                &_CMsgCitadelProfileCard_Slot_Stat_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    60;
+    67;
 
   friend void swap(CMsgCitadelProfileCard_Slot_Stat& a, CMsgCitadelProfileCard_Slot_Stat& b) {
     a.Swap(&b);
@@ -16313,7 +18652,7 @@ class CMsgCitadelProfileCard_Slot_Hero final :
                &_CMsgCitadelProfileCard_Slot_Hero_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    61;
+    68;
 
   friend void swap(CMsgCitadelProfileCard_Slot_Hero& a, CMsgCitadelProfileCard_Slot_Hero& b) {
     a.Swap(&b);
@@ -16503,7 +18842,7 @@ class CMsgCitadelProfileCard_Slot final :
                &_CMsgCitadelProfileCard_Slot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    62;
+    69;
 
   friend void swap(CMsgCitadelProfileCard_Slot& a, CMsgCitadelProfileCard_Slot& b) {
     a.Swap(&b);
@@ -16706,7 +19045,7 @@ class CMsgCitadelProfileCard final :
                &_CMsgCitadelProfileCard_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    63;
+    70;
 
   friend void swap(CMsgCitadelProfileCard& a, CMsgCitadelProfileCard& b) {
     a.Swap(&b);
@@ -16937,7 +19276,7 @@ class CMsgClientToGCUpdateRoster final :
                &_CMsgClientToGCUpdateRoster_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    64;
+    71;
 
   friend void swap(CMsgClientToGCUpdateRoster& a, CMsgClientToGCUpdateRoster& b) {
     a.Swap(&b);
@@ -17132,7 +19471,7 @@ class CMsgClientToGCUpdateRosterResponse final :
                &_CMsgClientToGCUpdateRosterResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    65;
+    72;
 
   friend void swap(CMsgClientToGCUpdateRosterResponse& a, CMsgClientToGCUpdateRosterResponse& b) {
     a.Swap(&b);
@@ -17340,7 +19679,7 @@ class CMsgClientToGCGetAccountStats final :
                &_CMsgClientToGCGetAccountStats_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    66;
+    73;
 
   friend void swap(CMsgClientToGCGetAccountStats& a, CMsgClientToGCGetAccountStats& b) {
     a.Swap(&b);
@@ -17530,7 +19869,7 @@ class CMsgClientToGCGetAccountStatsResponse final :
                &_CMsgClientToGCGetAccountStatsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    67;
+    74;
 
   friend void swap(CMsgClientToGCGetAccountStatsResponse& a, CMsgClientToGCGetAccountStatsResponse& b) {
     a.Swap(&b);
@@ -17748,7 +20087,7 @@ class CMsgClientToGCGetMatchMetaData final :
                &_CMsgClientToGCGetMatchMetaData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    68;
+    75;
 
   friend void swap(CMsgClientToGCGetMatchMetaData& a, CMsgClientToGCGetMatchMetaData& b) {
     a.Swap(&b);
@@ -17938,7 +20277,7 @@ class CMsgClientToGCGetMatchMetaDataResponse final :
                &_CMsgClientToGCGetMatchMetaDataResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    69;
+    76;
 
   friend void swap(CMsgClientToGCGetMatchMetaDataResponse& a, CMsgClientToGCGetMatchMetaDataResponse& b) {
     a.Swap(&b);
@@ -18162,938 +20501,6 @@ class CMsgClientToGCGetMatchMetaDataResponse final :
 };
 // -------------------------------------------------------------------
 
-class CMsgGCToClientDevAnnouncements_Announcement final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgGCToClientDevAnnouncements.Announcement) */ {
- public:
-  inline CMsgGCToClientDevAnnouncements_Announcement() : CMsgGCToClientDevAnnouncements_Announcement(nullptr) {}
-  ~CMsgGCToClientDevAnnouncements_Announcement() override;
-  explicit PROTOBUF_CONSTEXPR CMsgGCToClientDevAnnouncements_Announcement(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
-
-  CMsgGCToClientDevAnnouncements_Announcement(const CMsgGCToClientDevAnnouncements_Announcement& from);
-  CMsgGCToClientDevAnnouncements_Announcement(CMsgGCToClientDevAnnouncements_Announcement&& from) noexcept
-    : CMsgGCToClientDevAnnouncements_Announcement() {
-    *this = ::std::move(from);
-  }
-
-  inline CMsgGCToClientDevAnnouncements_Announcement& operator=(const CMsgGCToClientDevAnnouncements_Announcement& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline CMsgGCToClientDevAnnouncements_Announcement& operator=(CMsgGCToClientDevAnnouncements_Announcement&& from) noexcept {
-    if (this == &from) return *this;
-    if (GetOwningArena() == from.GetOwningArena()
-  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
-        && GetOwningArena() != nullptr
-  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
-    ) {
-      InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
-  }
-  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return default_instance().GetMetadata().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return default_instance().GetMetadata().reflection;
-  }
-  static const CMsgGCToClientDevAnnouncements_Announcement& default_instance() {
-    return *internal_default_instance();
-  }
-  static inline const CMsgGCToClientDevAnnouncements_Announcement* internal_default_instance() {
-    return reinterpret_cast<const CMsgGCToClientDevAnnouncements_Announcement*>(
-               &_CMsgGCToClientDevAnnouncements_Announcement_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    70;
-
-  friend void swap(CMsgGCToClientDevAnnouncements_Announcement& a, CMsgGCToClientDevAnnouncements_Announcement& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(CMsgGCToClientDevAnnouncements_Announcement* other) {
-    if (other == this) return;
-  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() != nullptr &&
-        GetOwningArena() == other->GetOwningArena()) {
-   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() == other->GetOwningArena()) {
-  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(CMsgGCToClientDevAnnouncements_Announcement* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  CMsgGCToClientDevAnnouncements_Announcement* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<CMsgGCToClientDevAnnouncements_Announcement>(arena);
-  }
-  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const CMsgGCToClientDevAnnouncements_Announcement& from);
-  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const CMsgGCToClientDevAnnouncements_Announcement& from) {
-    CMsgGCToClientDevAnnouncements_Announcement::MergeImpl(*this, from);
-  }
-  private:
-  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
-  public:
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  uint8_t* _InternalSerialize(
-      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
-
-  private:
-  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(CMsgGCToClientDevAnnouncements_Announcement* other);
-
-  private:
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMsgGCToClientDevAnnouncements.Announcement";
-  }
-  protected:
-  explicit CMsgGCToClientDevAnnouncements_Announcement(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                       bool is_message_owned = false);
-  public:
-
-  static const ClassData _class_data_;
-  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kTitleFieldNumber = 2,
-    kMessageFieldNumber = 3,
-    kUrlFieldNumber = 4,
-    kPatchVersionFieldNumber = 7,
-    kPriorityFieldNumber = 1,
-    kUniqueIdFieldNumber = 5,
-    kPostedTimeFieldNumber = 6,
-  };
-  // optional string title = 2;
-  bool has_title() const;
-  private:
-  bool _internal_has_title() const;
-  public:
-  void clear_title();
-  const std::string& title() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_title(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_title();
-  PROTOBUF_NODISCARD std::string* release_title();
-  void set_allocated_title(std::string* title);
-  private:
-  const std::string& _internal_title() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_title(const std::string& value);
-  std::string* _internal_mutable_title();
-  public:
-
-  // optional string message = 3;
-  bool has_message() const;
-  private:
-  bool _internal_has_message() const;
-  public:
-  void clear_message();
-  const std::string& message() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_message(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_message();
-  PROTOBUF_NODISCARD std::string* release_message();
-  void set_allocated_message(std::string* message);
-  private:
-  const std::string& _internal_message() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_message(const std::string& value);
-  std::string* _internal_mutable_message();
-  public:
-
-  // optional string url = 4;
-  bool has_url() const;
-  private:
-  bool _internal_has_url() const;
-  public:
-  void clear_url();
-  const std::string& url() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_url(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_url();
-  PROTOBUF_NODISCARD std::string* release_url();
-  void set_allocated_url(std::string* url);
-  private:
-  const std::string& _internal_url() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_url(const std::string& value);
-  std::string* _internal_mutable_url();
-  public:
-
-  // optional string patch_version = 7;
-  bool has_patch_version() const;
-  private:
-  bool _internal_has_patch_version() const;
-  public:
-  void clear_patch_version();
-  const std::string& patch_version() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_patch_version(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_patch_version();
-  PROTOBUF_NODISCARD std::string* release_patch_version();
-  void set_allocated_patch_version(std::string* patch_version);
-  private:
-  const std::string& _internal_patch_version() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_patch_version(const std::string& value);
-  std::string* _internal_mutable_patch_version();
-  public:
-
-  // optional uint32 priority = 1;
-  bool has_priority() const;
-  private:
-  bool _internal_has_priority() const;
-  public:
-  void clear_priority();
-  uint32_t priority() const;
-  void set_priority(uint32_t value);
-  private:
-  uint32_t _internal_priority() const;
-  void _internal_set_priority(uint32_t value);
-  public:
-
-  // optional uint32 unique_id = 5;
-  bool has_unique_id() const;
-  private:
-  bool _internal_has_unique_id() const;
-  public:
-  void clear_unique_id();
-  uint32_t unique_id() const;
-  void set_unique_id(uint32_t value);
-  private:
-  uint32_t _internal_unique_id() const;
-  void _internal_set_unique_id(uint32_t value);
-  public:
-
-  // optional uint32 posted_time = 6;
-  bool has_posted_time() const;
-  private:
-  bool _internal_has_posted_time() const;
-  public:
-  void clear_posted_time();
-  uint32_t posted_time() const;
-  void set_posted_time(uint32_t value);
-  private:
-  uint32_t _internal_posted_time() const;
-  void _internal_set_posted_time(uint32_t value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:CMsgGCToClientDevAnnouncements.Announcement)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
-    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr title_;
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr message_;
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr url_;
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr patch_version_;
-    uint32_t priority_;
-    uint32_t unique_id_;
-    uint32_t posted_time_;
-  };
-  union { Impl_ _impl_; };
-  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
-};
-// -------------------------------------------------------------------
-
-class CMsgGCToClientDevAnnouncements final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgGCToClientDevAnnouncements) */ {
- public:
-  inline CMsgGCToClientDevAnnouncements() : CMsgGCToClientDevAnnouncements(nullptr) {}
-  ~CMsgGCToClientDevAnnouncements() override;
-  explicit PROTOBUF_CONSTEXPR CMsgGCToClientDevAnnouncements(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
-
-  CMsgGCToClientDevAnnouncements(const CMsgGCToClientDevAnnouncements& from);
-  CMsgGCToClientDevAnnouncements(CMsgGCToClientDevAnnouncements&& from) noexcept
-    : CMsgGCToClientDevAnnouncements() {
-    *this = ::std::move(from);
-  }
-
-  inline CMsgGCToClientDevAnnouncements& operator=(const CMsgGCToClientDevAnnouncements& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline CMsgGCToClientDevAnnouncements& operator=(CMsgGCToClientDevAnnouncements&& from) noexcept {
-    if (this == &from) return *this;
-    if (GetOwningArena() == from.GetOwningArena()
-  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
-        && GetOwningArena() != nullptr
-  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
-    ) {
-      InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
-  }
-  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return default_instance().GetMetadata().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return default_instance().GetMetadata().reflection;
-  }
-  static const CMsgGCToClientDevAnnouncements& default_instance() {
-    return *internal_default_instance();
-  }
-  static inline const CMsgGCToClientDevAnnouncements* internal_default_instance() {
-    return reinterpret_cast<const CMsgGCToClientDevAnnouncements*>(
-               &_CMsgGCToClientDevAnnouncements_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    71;
-
-  friend void swap(CMsgGCToClientDevAnnouncements& a, CMsgGCToClientDevAnnouncements& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(CMsgGCToClientDevAnnouncements* other) {
-    if (other == this) return;
-  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() != nullptr &&
-        GetOwningArena() == other->GetOwningArena()) {
-   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() == other->GetOwningArena()) {
-  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(CMsgGCToClientDevAnnouncements* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  CMsgGCToClientDevAnnouncements* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<CMsgGCToClientDevAnnouncements>(arena);
-  }
-  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const CMsgGCToClientDevAnnouncements& from);
-  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const CMsgGCToClientDevAnnouncements& from) {
-    CMsgGCToClientDevAnnouncements::MergeImpl(*this, from);
-  }
-  private:
-  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
-  public:
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  uint8_t* _InternalSerialize(
-      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
-
-  private:
-  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(CMsgGCToClientDevAnnouncements* other);
-
-  private:
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMsgGCToClientDevAnnouncements";
-  }
-  protected:
-  explicit CMsgGCToClientDevAnnouncements(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                       bool is_message_owned = false);
-  public:
-
-  static const ClassData _class_data_;
-  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  typedef CMsgGCToClientDevAnnouncements_Announcement Announcement;
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kAnnouncementsFieldNumber = 1,
-  };
-  // repeated .CMsgGCToClientDevAnnouncements.Announcement announcements = 1;
-  int announcements_size() const;
-  private:
-  int _internal_announcements_size() const;
-  public:
-  void clear_announcements();
-  ::CMsgGCToClientDevAnnouncements_Announcement* mutable_announcements(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevAnnouncements_Announcement >*
-      mutable_announcements();
-  private:
-  const ::CMsgGCToClientDevAnnouncements_Announcement& _internal_announcements(int index) const;
-  ::CMsgGCToClientDevAnnouncements_Announcement* _internal_add_announcements();
-  public:
-  const ::CMsgGCToClientDevAnnouncements_Announcement& announcements(int index) const;
-  ::CMsgGCToClientDevAnnouncements_Announcement* add_announcements();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevAnnouncements_Announcement >&
-      announcements() const;
-
-  // @@protoc_insertion_point(class_scope:CMsgGCToClientDevAnnouncements)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevAnnouncements_Announcement > announcements_;
-    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  };
-  union { Impl_ _impl_; };
-  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
-};
-// -------------------------------------------------------------------
-
-class CMsgClientToGCModifyDevAnnouncements final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCModifyDevAnnouncements) */ {
- public:
-  inline CMsgClientToGCModifyDevAnnouncements() : CMsgClientToGCModifyDevAnnouncements(nullptr) {}
-  ~CMsgClientToGCModifyDevAnnouncements() override;
-  explicit PROTOBUF_CONSTEXPR CMsgClientToGCModifyDevAnnouncements(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
-
-  CMsgClientToGCModifyDevAnnouncements(const CMsgClientToGCModifyDevAnnouncements& from);
-  CMsgClientToGCModifyDevAnnouncements(CMsgClientToGCModifyDevAnnouncements&& from) noexcept
-    : CMsgClientToGCModifyDevAnnouncements() {
-    *this = ::std::move(from);
-  }
-
-  inline CMsgClientToGCModifyDevAnnouncements& operator=(const CMsgClientToGCModifyDevAnnouncements& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline CMsgClientToGCModifyDevAnnouncements& operator=(CMsgClientToGCModifyDevAnnouncements&& from) noexcept {
-    if (this == &from) return *this;
-    if (GetOwningArena() == from.GetOwningArena()
-  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
-        && GetOwningArena() != nullptr
-  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
-    ) {
-      InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
-  }
-  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return default_instance().GetMetadata().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return default_instance().GetMetadata().reflection;
-  }
-  static const CMsgClientToGCModifyDevAnnouncements& default_instance() {
-    return *internal_default_instance();
-  }
-  static inline const CMsgClientToGCModifyDevAnnouncements* internal_default_instance() {
-    return reinterpret_cast<const CMsgClientToGCModifyDevAnnouncements*>(
-               &_CMsgClientToGCModifyDevAnnouncements_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    72;
-
-  friend void swap(CMsgClientToGCModifyDevAnnouncements& a, CMsgClientToGCModifyDevAnnouncements& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(CMsgClientToGCModifyDevAnnouncements* other) {
-    if (other == this) return;
-  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() != nullptr &&
-        GetOwningArena() == other->GetOwningArena()) {
-   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() == other->GetOwningArena()) {
-  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(CMsgClientToGCModifyDevAnnouncements* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  CMsgClientToGCModifyDevAnnouncements* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<CMsgClientToGCModifyDevAnnouncements>(arena);
-  }
-  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const CMsgClientToGCModifyDevAnnouncements& from);
-  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const CMsgClientToGCModifyDevAnnouncements& from) {
-    CMsgClientToGCModifyDevAnnouncements::MergeImpl(*this, from);
-  }
-  private:
-  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
-  public:
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  uint8_t* _InternalSerialize(
-      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
-
-  private:
-  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(CMsgClientToGCModifyDevAnnouncements* other);
-
-  private:
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMsgClientToGCModifyDevAnnouncements";
-  }
-  protected:
-  explicit CMsgClientToGCModifyDevAnnouncements(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                       bool is_message_owned = false);
-  public:
-
-  static const ClassData _class_data_;
-  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  typedef CMsgClientToGCModifyDevAnnouncements_EOperation EOperation;
-  static constexpr EOperation k_eCreate =
-    CMsgClientToGCModifyDevAnnouncements_EOperation_k_eCreate;
-  static constexpr EOperation k_eUpdate =
-    CMsgClientToGCModifyDevAnnouncements_EOperation_k_eUpdate;
-  static constexpr EOperation k_eDelete =
-    CMsgClientToGCModifyDevAnnouncements_EOperation_k_eDelete;
-  static inline bool EOperation_IsValid(int value) {
-    return CMsgClientToGCModifyDevAnnouncements_EOperation_IsValid(value);
-  }
-  static constexpr EOperation EOperation_MIN =
-    CMsgClientToGCModifyDevAnnouncements_EOperation_EOperation_MIN;
-  static constexpr EOperation EOperation_MAX =
-    CMsgClientToGCModifyDevAnnouncements_EOperation_EOperation_MAX;
-  static constexpr int EOperation_ARRAYSIZE =
-    CMsgClientToGCModifyDevAnnouncements_EOperation_EOperation_ARRAYSIZE;
-  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
-  EOperation_descriptor() {
-    return CMsgClientToGCModifyDevAnnouncements_EOperation_descriptor();
-  }
-  template<typename T>
-  static inline const std::string& EOperation_Name(T enum_t_value) {
-    static_assert(::std::is_same<T, EOperation>::value ||
-      ::std::is_integral<T>::value,
-      "Incorrect type passed to function EOperation_Name.");
-    return CMsgClientToGCModifyDevAnnouncements_EOperation_Name(enum_t_value);
-  }
-  static inline bool EOperation_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
-      EOperation* value) {
-    return CMsgClientToGCModifyDevAnnouncements_EOperation_Parse(name, value);
-  }
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kTitleFieldNumber = 4,
-    kMessageFieldNumber = 5,
-    kUrlFieldNumber = 6,
-    kPatchVersionFieldNumber = 7,
-    kOperationFieldNumber = 1,
-    kTargetIdFieldNumber = 2,
-    kPriorityFieldNumber = 3,
-  };
-  // optional string title = 4;
-  bool has_title() const;
-  private:
-  bool _internal_has_title() const;
-  public:
-  void clear_title();
-  const std::string& title() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_title(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_title();
-  PROTOBUF_NODISCARD std::string* release_title();
-  void set_allocated_title(std::string* title);
-  private:
-  const std::string& _internal_title() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_title(const std::string& value);
-  std::string* _internal_mutable_title();
-  public:
-
-  // optional string message = 5;
-  bool has_message() const;
-  private:
-  bool _internal_has_message() const;
-  public:
-  void clear_message();
-  const std::string& message() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_message(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_message();
-  PROTOBUF_NODISCARD std::string* release_message();
-  void set_allocated_message(std::string* message);
-  private:
-  const std::string& _internal_message() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_message(const std::string& value);
-  std::string* _internal_mutable_message();
-  public:
-
-  // optional string url = 6;
-  bool has_url() const;
-  private:
-  bool _internal_has_url() const;
-  public:
-  void clear_url();
-  const std::string& url() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_url(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_url();
-  PROTOBUF_NODISCARD std::string* release_url();
-  void set_allocated_url(std::string* url);
-  private:
-  const std::string& _internal_url() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_url(const std::string& value);
-  std::string* _internal_mutable_url();
-  public:
-
-  // optional string patch_version = 7;
-  bool has_patch_version() const;
-  private:
-  bool _internal_has_patch_version() const;
-  public:
-  void clear_patch_version();
-  const std::string& patch_version() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_patch_version(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_patch_version();
-  PROTOBUF_NODISCARD std::string* release_patch_version();
-  void set_allocated_patch_version(std::string* patch_version);
-  private:
-  const std::string& _internal_patch_version() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_patch_version(const std::string& value);
-  std::string* _internal_mutable_patch_version();
-  public:
-
-  // optional .CMsgClientToGCModifyDevAnnouncements.EOperation operation = 1 [default = k_eCreate];
-  bool has_operation() const;
-  private:
-  bool _internal_has_operation() const;
-  public:
-  void clear_operation();
-  ::CMsgClientToGCModifyDevAnnouncements_EOperation operation() const;
-  void set_operation(::CMsgClientToGCModifyDevAnnouncements_EOperation value);
-  private:
-  ::CMsgClientToGCModifyDevAnnouncements_EOperation _internal_operation() const;
-  void _internal_set_operation(::CMsgClientToGCModifyDevAnnouncements_EOperation value);
-  public:
-
-  // optional uint32 target_id = 2;
-  bool has_target_id() const;
-  private:
-  bool _internal_has_target_id() const;
-  public:
-  void clear_target_id();
-  uint32_t target_id() const;
-  void set_target_id(uint32_t value);
-  private:
-  uint32_t _internal_target_id() const;
-  void _internal_set_target_id(uint32_t value);
-  public:
-
-  // optional uint32 priority = 3;
-  bool has_priority() const;
-  private:
-  bool _internal_has_priority() const;
-  public:
-  void clear_priority();
-  uint32_t priority() const;
-  void set_priority(uint32_t value);
-  private:
-  uint32_t _internal_priority() const;
-  void _internal_set_priority(uint32_t value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:CMsgClientToGCModifyDevAnnouncements)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
-    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr title_;
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr message_;
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr url_;
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr patch_version_;
-    int operation_;
-    uint32_t target_id_;
-    uint32_t priority_;
-  };
-  union { Impl_ _impl_; };
-  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
-};
-// -------------------------------------------------------------------
-
-class CMsgClientToGCModifyDevAnnouncementsResponse final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCModifyDevAnnouncementsResponse) */ {
- public:
-  inline CMsgClientToGCModifyDevAnnouncementsResponse() : CMsgClientToGCModifyDevAnnouncementsResponse(nullptr) {}
-  ~CMsgClientToGCModifyDevAnnouncementsResponse() override;
-  explicit PROTOBUF_CONSTEXPR CMsgClientToGCModifyDevAnnouncementsResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
-
-  CMsgClientToGCModifyDevAnnouncementsResponse(const CMsgClientToGCModifyDevAnnouncementsResponse& from);
-  CMsgClientToGCModifyDevAnnouncementsResponse(CMsgClientToGCModifyDevAnnouncementsResponse&& from) noexcept
-    : CMsgClientToGCModifyDevAnnouncementsResponse() {
-    *this = ::std::move(from);
-  }
-
-  inline CMsgClientToGCModifyDevAnnouncementsResponse& operator=(const CMsgClientToGCModifyDevAnnouncementsResponse& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline CMsgClientToGCModifyDevAnnouncementsResponse& operator=(CMsgClientToGCModifyDevAnnouncementsResponse&& from) noexcept {
-    if (this == &from) return *this;
-    if (GetOwningArena() == from.GetOwningArena()
-  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
-        && GetOwningArena() != nullptr
-  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
-    ) {
-      InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
-  }
-  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return default_instance().GetMetadata().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return default_instance().GetMetadata().reflection;
-  }
-  static const CMsgClientToGCModifyDevAnnouncementsResponse& default_instance() {
-    return *internal_default_instance();
-  }
-  static inline const CMsgClientToGCModifyDevAnnouncementsResponse* internal_default_instance() {
-    return reinterpret_cast<const CMsgClientToGCModifyDevAnnouncementsResponse*>(
-               &_CMsgClientToGCModifyDevAnnouncementsResponse_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    73;
-
-  friend void swap(CMsgClientToGCModifyDevAnnouncementsResponse& a, CMsgClientToGCModifyDevAnnouncementsResponse& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(CMsgClientToGCModifyDevAnnouncementsResponse* other) {
-    if (other == this) return;
-  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() != nullptr &&
-        GetOwningArena() == other->GetOwningArena()) {
-   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() == other->GetOwningArena()) {
-  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(CMsgClientToGCModifyDevAnnouncementsResponse* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  CMsgClientToGCModifyDevAnnouncementsResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<CMsgClientToGCModifyDevAnnouncementsResponse>(arena);
-  }
-  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const CMsgClientToGCModifyDevAnnouncementsResponse& from);
-  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const CMsgClientToGCModifyDevAnnouncementsResponse& from) {
-    CMsgClientToGCModifyDevAnnouncementsResponse::MergeImpl(*this, from);
-  }
-  private:
-  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
-  public:
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  uint8_t* _InternalSerialize(
-      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
-
-  private:
-  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(CMsgClientToGCModifyDevAnnouncementsResponse* other);
-
-  private:
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMsgClientToGCModifyDevAnnouncementsResponse";
-  }
-  protected:
-  explicit CMsgClientToGCModifyDevAnnouncementsResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                       bool is_message_owned = false);
-  public:
-
-  static const ClassData _class_data_;
-  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  typedef CMsgClientToGCModifyDevAnnouncementsResponse_EResult EResult;
-  static constexpr EResult k_eSuccess =
-    CMsgClientToGCModifyDevAnnouncementsResponse_EResult_k_eSuccess;
-  static constexpr EResult k_eInvalidPermission =
-    CMsgClientToGCModifyDevAnnouncementsResponse_EResult_k_eInvalidPermission;
-  static constexpr EResult k_eInvalidTarget =
-    CMsgClientToGCModifyDevAnnouncementsResponse_EResult_k_eInvalidTarget;
-  static constexpr EResult k_eInternalError =
-    CMsgClientToGCModifyDevAnnouncementsResponse_EResult_k_eInternalError;
-  static inline bool EResult_IsValid(int value) {
-    return CMsgClientToGCModifyDevAnnouncementsResponse_EResult_IsValid(value);
-  }
-  static constexpr EResult EResult_MIN =
-    CMsgClientToGCModifyDevAnnouncementsResponse_EResult_EResult_MIN;
-  static constexpr EResult EResult_MAX =
-    CMsgClientToGCModifyDevAnnouncementsResponse_EResult_EResult_MAX;
-  static constexpr int EResult_ARRAYSIZE =
-    CMsgClientToGCModifyDevAnnouncementsResponse_EResult_EResult_ARRAYSIZE;
-  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
-  EResult_descriptor() {
-    return CMsgClientToGCModifyDevAnnouncementsResponse_EResult_descriptor();
-  }
-  template<typename T>
-  static inline const std::string& EResult_Name(T enum_t_value) {
-    static_assert(::std::is_same<T, EResult>::value ||
-      ::std::is_integral<T>::value,
-      "Incorrect type passed to function EResult_Name.");
-    return CMsgClientToGCModifyDevAnnouncementsResponse_EResult_Name(enum_t_value);
-  }
-  static inline bool EResult_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
-      EResult* value) {
-    return CMsgClientToGCModifyDevAnnouncementsResponse_EResult_Parse(name, value);
-  }
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kResultFieldNumber = 1,
-  };
-  // optional .CMsgClientToGCModifyDevAnnouncementsResponse.EResult result = 1 [default = k_eSuccess];
-  bool has_result() const;
-  private:
-  bool _internal_has_result() const;
-  public:
-  void clear_result();
-  ::CMsgClientToGCModifyDevAnnouncementsResponse_EResult result() const;
-  void set_result(::CMsgClientToGCModifyDevAnnouncementsResponse_EResult value);
-  private:
-  ::CMsgClientToGCModifyDevAnnouncementsResponse_EResult _internal_result() const;
-  void _internal_set_result(::CMsgClientToGCModifyDevAnnouncementsResponse_EResult value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:CMsgClientToGCModifyDevAnnouncementsResponse)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
-    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-    int result_;
-  };
-  union { Impl_ _impl_; };
-  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
-};
-// -------------------------------------------------------------------
-
 class CMsgClientToGCDevAction final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCDevAction) */ {
  public:
@@ -19149,7 +20556,7 @@ class CMsgClientToGCDevAction final :
                &_CMsgClientToGCDevAction_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    74;
+    77;
 
   friend void swap(CMsgClientToGCDevAction& a, CMsgClientToGCDevAction& b) {
     a.Swap(&b);
@@ -19456,7 +20863,7 @@ class CMsgClientToGCDevActionResponse final :
                &_CMsgClientToGCDevActionResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    75;
+    78;
 
   friend void swap(CMsgClientToGCDevActionResponse& a, CMsgClientToGCDevActionResponse& b) {
     a.Swap(&b);
@@ -19650,7 +21057,7 @@ class CMsgClientToGCRecordClientEvents_Event final :
                &_CMsgClientToGCRecordClientEvents_Event_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    76;
+    79;
 
   friend void swap(CMsgClientToGCRecordClientEvents_Event& a, CMsgClientToGCRecordClientEvents_Event& b) {
     a.Swap(&b);
@@ -19855,7 +21262,7 @@ class CMsgClientToGCRecordClientEvents final :
                &_CMsgClientToGCRecordClientEvents_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    77;
+    80;
 
   friend void swap(CMsgClientToGCRecordClientEvents& a, CMsgClientToGCRecordClientEvents& b) {
     a.Swap(&b);
@@ -20037,7 +21444,7 @@ class CMsgClientToGCRecordClientEventsResponse final :
                &_CMsgClientToGCRecordClientEventsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    78;
+    81;
 
   friend void swap(CMsgClientToGCRecordClientEventsResponse& a, CMsgClientToGCRecordClientEventsResponse& b) {
     a.Swap(&b);
@@ -20197,7 +21604,7 @@ class CMsgClientToGCSetNewPlayerProgress final :
                &_CMsgClientToGCSetNewPlayerProgress_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    79;
+    82;
 
   friend void swap(CMsgClientToGCSetNewPlayerProgress& a, CMsgClientToGCSetNewPlayerProgress& b) {
     a.Swap(&b);
@@ -20357,7 +21764,7 @@ class CMsgClientToGCSetNewPlayerProgressResponse final :
                &_CMsgClientToGCSetNewPlayerProgressResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    80;
+    83;
 
   friend void swap(CMsgClientToGCSetNewPlayerProgressResponse& a, CMsgClientToGCSetNewPlayerProgressResponse& b) {
     a.Swap(&b);
@@ -20517,7 +21924,7 @@ class CMsgClientToGCUpdateAccountSync final :
                &_CMsgClientToGCUpdateAccountSync_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    81;
+    84;
 
   friend void swap(CMsgClientToGCUpdateAccountSync& a, CMsgClientToGCUpdateAccountSync& b) {
     a.Swap(&b);
@@ -20709,7 +22116,7 @@ class CMsgClientToGCUpdateAccountSyncResponse final :
                &_CMsgClientToGCUpdateAccountSyncResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    82;
+    85;
 
   friend void swap(CMsgClientToGCUpdateAccountSyncResponse& a, CMsgClientToGCUpdateAccountSyncResponse& b) {
     a.Swap(&b);
@@ -20904,7 +22311,7 @@ class CMsgClientToGCGetHeroChoice final :
                &_CMsgClientToGCGetHeroChoice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    83;
+    86;
 
   friend void swap(CMsgClientToGCGetHeroChoice& a, CMsgClientToGCGetHeroChoice& b) {
     a.Swap(&b);
@@ -21030,7 +22437,7 @@ class CMsgClientToGCGetHeroChoiceResponse_Hero final :
                &_CMsgClientToGCGetHeroChoiceResponse_Hero_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    84;
+    87;
 
   friend void swap(CMsgClientToGCGetHeroChoiceResponse_Hero& a, CMsgClientToGCGetHeroChoiceResponse_Hero& b) {
     a.Swap(&b);
@@ -21190,7 +22597,7 @@ class CMsgClientToGCGetHeroChoiceResponse final :
                &_CMsgClientToGCGetHeroChoiceResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    85;
+    88;
 
   friend void swap(CMsgClientToGCGetHeroChoiceResponse& a, CMsgClientToGCGetHeroChoiceResponse& b) {
     a.Swap(&b);
@@ -21442,7 +22849,7 @@ class CMsgClientToGCUnlockHero final :
                &_CMsgClientToGCUnlockHero_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    86;
+    89;
 
   friend void swap(CMsgClientToGCUnlockHero& a, CMsgClientToGCUnlockHero& b) {
     a.Swap(&b);
@@ -21626,7 +23033,7 @@ class CMsgClientToGCUnlockHeroResponse final :
                &_CMsgClientToGCUnlockHeroResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    87;
+    90;
 
   friend void swap(CMsgClientToGCUnlockHeroResponse& a, CMsgClientToGCUnlockHeroResponse& b) {
     a.Swap(&b);
@@ -21824,7 +23231,7 @@ class CMsgAccountBook_Unlock final :
                &_CMsgAccountBook_Unlock_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    88;
+    91;
 
   friend void swap(CMsgAccountBook_Unlock& a, CMsgAccountBook_Unlock& b) {
     a.Swap(&b);
@@ -21999,7 +23406,7 @@ class CMsgAccountBook final :
                &_CMsgAccountBook_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    89;
+    92;
 
   friend void swap(CMsgAccountBook& a, CMsgAccountBook& b) {
     a.Swap(&b);
@@ -22211,7 +23618,7 @@ class CMsgClientToGCBookUnlock final :
                &_CMsgClientToGCBookUnlock_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    90;
+    93;
 
   friend void swap(CMsgClientToGCBookUnlock& a, CMsgClientToGCBookUnlock& b) {
     a.Swap(&b);
@@ -22416,7 +23823,7 @@ class CMsgClientToGCBookUnlockResponse final :
                &_CMsgClientToGCBookUnlockResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    91;
+    94;
 
   friend void swap(CMsgClientToGCBookUnlockResponse& a, CMsgClientToGCBookUnlockResponse& b) {
     a.Swap(&b);
@@ -22636,7 +24043,7 @@ class CMsgClientToGCGetBook final :
                &_CMsgClientToGCGetBook_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    92;
+    95;
 
   friend void swap(CMsgClientToGCGetBook& a, CMsgClientToGCGetBook& b) {
     a.Swap(&b);
@@ -22796,7 +24203,7 @@ class CMsgClientToGCGetBookResponse final :
                &_CMsgClientToGCGetBookResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    93;
+    96;
 
   friend void swap(CMsgClientToGCGetBookResponse& a, CMsgClientToGCGetBookResponse& b) {
     a.Swap(&b);
@@ -23012,7 +24419,7 @@ class CMsgGCToClientBookUpdated final :
                &_CMsgGCToClientBookUpdated_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    94;
+    97;
 
   friend void swap(CMsgGCToClientBookUpdated& a, CMsgGCToClientBookUpdated& b) {
     a.Swap(&b);
@@ -23177,7 +24584,7 @@ class CMsgClientToGCSubmitPlaytestUser final :
                &_CMsgClientToGCSubmitPlaytestUser_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    95;
+    98;
 
   friend void swap(CMsgClientToGCSubmitPlaytestUser& a, CMsgClientToGCSubmitPlaytestUser& b) {
     a.Swap(&b);
@@ -23357,7 +24764,7 @@ class CMsgClientToGCSubmitPlaytestUserResponse final :
                &_CMsgClientToGCSubmitPlaytestUserResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    96;
+    99;
 
   friend void swap(CMsgClientToGCSubmitPlaytestUserResponse& a, CMsgClientToGCSubmitPlaytestUserResponse& b) {
     a.Swap(&b);
@@ -23557,7 +24964,7 @@ class CMsgClientToGCUpdateHeroBuild final :
                &_CMsgClientToGCUpdateHeroBuild_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    97;
+    100;
 
   friend void swap(CMsgClientToGCUpdateHeroBuild& a, CMsgClientToGCUpdateHeroBuild& b) {
     a.Swap(&b);
@@ -23722,7 +25129,7 @@ class CMsgClientToGCUpdateHeroBuildResponse final :
                &_CMsgClientToGCUpdateHeroBuildResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    98;
+    101;
 
   friend void swap(CMsgClientToGCUpdateHeroBuildResponse& a, CMsgClientToGCUpdateHeroBuildResponse& b) {
     a.Swap(&b);
@@ -23797,6 +25204,22 @@ class CMsgClientToGCUpdateHeroBuildResponse final :
     CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eInternalError;
   static constexpr EResponse k_eSuccess =
     CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eSuccess;
+  static constexpr EResponse k_eNotAuthor =
+    CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eNotAuthor;
+  static constexpr EResponse k_eInvalidBuildID =
+    CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eInvalidBuildID;
+  static constexpr EResponse k_eInvalidName =
+    CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eInvalidName;
+  static constexpr EResponse k_eNameTooLong =
+    CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eNameTooLong;
+  static constexpr EResponse k_eDescriptionTooLong =
+    CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eDescriptionTooLong;
+  static constexpr EResponse k_eInvalidDetails =
+    CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eInvalidDetails;
+  static constexpr EResponse k_eStaleVersion =
+    CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eStaleVersion;
+  static constexpr EResponse k_eBuildTooLarge =
+    CMsgClientToGCUpdateHeroBuildResponse_EResponse_k_eBuildTooLarge;
   static inline bool EResponse_IsValid(int value) {
     return CMsgClientToGCUpdateHeroBuildResponse_EResponse_IsValid(value);
   }
@@ -23942,7 +25365,7 @@ class CMsgClientToGCFindHeroBuilds final :
                &_CMsgClientToGCFindHeroBuilds_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    99;
+    102;
 
   friend void swap(CMsgClientToGCFindHeroBuilds& a, CMsgClientToGCFindHeroBuilds& b) {
     a.Swap(&b);
@@ -24200,7 +25623,7 @@ class CMsgClientToGCFindHeroBuildsResponse_HeroBuildResult final :
                &_CMsgClientToGCFindHeroBuildsResponse_HeroBuildResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    100;
+    103;
 
   friend void swap(CMsgClientToGCFindHeroBuildsResponse_HeroBuildResult& a, CMsgClientToGCFindHeroBuildsResponse_HeroBuildResult& b) {
     a.Swap(&b);
@@ -24475,7 +25898,7 @@ class CMsgClientToGCFindHeroBuildsResponse final :
                &_CMsgClientToGCFindHeroBuildsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    101;
+    104;
 
   friend void swap(CMsgClientToGCFindHeroBuildsResponse& a, CMsgClientToGCFindHeroBuildsResponse& b) {
     a.Swap(&b);
@@ -24554,6 +25977,10 @@ class CMsgClientToGCFindHeroBuildsResponse final :
     CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eSuccess;
   static constexpr EResponse k_eTooBusy =
     CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eTooBusy;
+  static constexpr EResponse k_eMissingHeroID =
+    CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eMissingHeroID;
+  static constexpr EResponse k_eInvalidLanguages =
+    CMsgClientToGCFindHeroBuildsResponse_EResponse_k_eInvalidLanguages;
   static inline bool EResponse_IsValid(int value) {
     return CMsgClientToGCFindHeroBuildsResponse_EResponse_IsValid(value);
   }
@@ -24689,7 +26116,7 @@ class CMsgClientToGCUpdateHeroBuildPreference final :
                &_CMsgClientToGCUpdateHeroBuildPreference_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    102;
+    105;
 
   friend void swap(CMsgClientToGCUpdateHeroBuildPreference& a, CMsgClientToGCUpdateHeroBuildPreference& b) {
     a.Swap(&b);
@@ -24869,7 +26296,7 @@ class CMsgClientToGCUpdateHeroBuildPreferenceResponse final :
                &_CMsgClientToGCUpdateHeroBuildPreferenceResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    103;
+    106;
 
   friend void swap(CMsgClientToGCUpdateHeroBuildPreferenceResponse& a, CMsgClientToGCUpdateHeroBuildPreferenceResponse& b) {
     a.Swap(&b);
@@ -24944,6 +26371,8 @@ class CMsgClientToGCUpdateHeroBuildPreferenceResponse final :
     CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_k_eInternalError;
   static constexpr EResponse k_eSuccess =
     CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_k_eSuccess;
+  static constexpr EResponse k_eTooBusy =
+    CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_k_eTooBusy;
   static inline bool EResponse_IsValid(int value) {
     return CMsgClientToGCUpdateHeroBuildPreferenceResponse_EResponse_IsValid(value);
   }
@@ -25059,7 +26488,7 @@ class CMsgClientToGCReportPlayerFromMatch final :
                &_CMsgClientToGCReportPlayerFromMatch_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    104;
+    107;
 
   friend void swap(CMsgClientToGCReportPlayerFromMatch& a, CMsgClientToGCReportPlayerFromMatch& b) {
     a.Swap(&b);
@@ -25309,7 +26738,7 @@ class CMsgClientToGCReportPlayerFromMatchResponse final :
                &_CMsgClientToGCReportPlayerFromMatchResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    105;
+    108;
 
   friend void swap(CMsgClientToGCReportPlayerFromMatchResponse& a, CMsgClientToGCReportPlayerFromMatchResponse& b) {
     a.Swap(&b);
@@ -25515,7 +26944,7 @@ class CMsgClientToGCGetAccountMatchReports final :
                &_CMsgClientToGCGetAccountMatchReports_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    106;
+    109;
 
   friend void swap(CMsgClientToGCGetAccountMatchReports& a, CMsgClientToGCGetAccountMatchReports& b) {
     a.Swap(&b);
@@ -25675,7 +27104,7 @@ class CMsgClientToGCGetAccountMatchReportsResponse_Report final :
                &_CMsgClientToGCGetAccountMatchReportsResponse_Report_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    107;
+    110;
 
   friend void swap(CMsgClientToGCGetAccountMatchReportsResponse_Report& a, CMsgClientToGCGetAccountMatchReportsResponse_Report& b) {
     a.Swap(&b);
@@ -25835,7 +27264,7 @@ class CMsgClientToGCGetAccountMatchReportsResponse_Commend final :
                &_CMsgClientToGCGetAccountMatchReportsResponse_Commend_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    108;
+    111;
 
   friend void swap(CMsgClientToGCGetAccountMatchReportsResponse_Commend& a, CMsgClientToGCGetAccountMatchReportsResponse_Commend& b) {
     a.Swap(&b);
@@ -25995,7 +27424,7 @@ class CMsgClientToGCGetAccountMatchReportsResponse final :
                &_CMsgClientToGCGetAccountMatchReportsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    109;
+    112;
 
   friend void swap(CMsgClientToGCGetAccountMatchReportsResponse& a, CMsgClientToGCGetAccountMatchReportsResponse& b) {
     a.Swap(&b);
@@ -26177,6 +27606,467 @@ class CMsgClientToGCGetAccountMatchReportsResponse final :
 };
 // -------------------------------------------------------------------
 
+class CMsgClientToGCRequestReporterUpdates final :
+    public ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase /* @@protoc_insertion_point(class_definition:CMsgClientToGCRequestReporterUpdates) */ {
+ public:
+  inline CMsgClientToGCRequestReporterUpdates() : CMsgClientToGCRequestReporterUpdates(nullptr) {}
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCRequestReporterUpdates(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCRequestReporterUpdates(const CMsgClientToGCRequestReporterUpdates& from);
+  CMsgClientToGCRequestReporterUpdates(CMsgClientToGCRequestReporterUpdates&& from) noexcept
+    : CMsgClientToGCRequestReporterUpdates() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCRequestReporterUpdates& operator=(const CMsgClientToGCRequestReporterUpdates& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCRequestReporterUpdates& operator=(CMsgClientToGCRequestReporterUpdates&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCRequestReporterUpdates& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCRequestReporterUpdates* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCRequestReporterUpdates*>(
+               &_CMsgClientToGCRequestReporterUpdates_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    113;
+
+  friend void swap(CMsgClientToGCRequestReporterUpdates& a, CMsgClientToGCRequestReporterUpdates& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCRequestReporterUpdates* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCRequestReporterUpdates* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCRequestReporterUpdates* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCRequestReporterUpdates>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::CopyFrom;
+  inline void CopyFrom(const CMsgClientToGCRequestReporterUpdates& from) {
+    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::CopyImpl(*this, from);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::MergeFrom;
+  void MergeFrom(const CMsgClientToGCRequestReporterUpdates& from) {
+    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::MergeImpl(*this, from);
+  }
+  public:
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCRequestReporterUpdates";
+  }
+  protected:
+  explicit CMsgClientToGCRequestReporterUpdates(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCRequestReporterUpdates)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+  };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCRequestReporterUpdatesResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCRequestReporterUpdatesResponse) */ {
+ public:
+  inline CMsgClientToGCRequestReporterUpdatesResponse() : CMsgClientToGCRequestReporterUpdatesResponse(nullptr) {}
+  ~CMsgClientToGCRequestReporterUpdatesResponse() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCRequestReporterUpdatesResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCRequestReporterUpdatesResponse(const CMsgClientToGCRequestReporterUpdatesResponse& from);
+  CMsgClientToGCRequestReporterUpdatesResponse(CMsgClientToGCRequestReporterUpdatesResponse&& from) noexcept
+    : CMsgClientToGCRequestReporterUpdatesResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCRequestReporterUpdatesResponse& operator=(const CMsgClientToGCRequestReporterUpdatesResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCRequestReporterUpdatesResponse& operator=(CMsgClientToGCRequestReporterUpdatesResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCRequestReporterUpdatesResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCRequestReporterUpdatesResponse* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCRequestReporterUpdatesResponse*>(
+               &_CMsgClientToGCRequestReporterUpdatesResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    114;
+
+  friend void swap(CMsgClientToGCRequestReporterUpdatesResponse& a, CMsgClientToGCRequestReporterUpdatesResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCRequestReporterUpdatesResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCRequestReporterUpdatesResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCRequestReporterUpdatesResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCRequestReporterUpdatesResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCRequestReporterUpdatesResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCRequestReporterUpdatesResponse& from) {
+    CMsgClientToGCRequestReporterUpdatesResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCRequestReporterUpdatesResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCRequestReporterUpdatesResponse";
+  }
+  protected:
+  explicit CMsgClientToGCRequestReporterUpdatesResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgClientToGCRequestReporterUpdatesResponse_EResponse EResponse;
+  static constexpr EResponse k_eInternalError =
+    CMsgClientToGCRequestReporterUpdatesResponse_EResponse_k_eInternalError;
+  static constexpr EResponse k_eSuccess =
+    CMsgClientToGCRequestReporterUpdatesResponse_EResponse_k_eSuccess;
+  static constexpr EResponse k_eRateLimited =
+    CMsgClientToGCRequestReporterUpdatesResponse_EResponse_k_eRateLimited;
+  static constexpr EResponse k_eDisabled =
+    CMsgClientToGCRequestReporterUpdatesResponse_EResponse_k_eDisabled;
+  static constexpr EResponse k_eTooBusy =
+    CMsgClientToGCRequestReporterUpdatesResponse_EResponse_k_eTooBusy;
+  static inline bool EResponse_IsValid(int value) {
+    return CMsgClientToGCRequestReporterUpdatesResponse_EResponse_IsValid(value);
+  }
+  static constexpr EResponse EResponse_MIN =
+    CMsgClientToGCRequestReporterUpdatesResponse_EResponse_EResponse_MIN;
+  static constexpr EResponse EResponse_MAX =
+    CMsgClientToGCRequestReporterUpdatesResponse_EResponse_EResponse_MAX;
+  static constexpr int EResponse_ARRAYSIZE =
+    CMsgClientToGCRequestReporterUpdatesResponse_EResponse_EResponse_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EResponse_descriptor() {
+    return CMsgClientToGCRequestReporterUpdatesResponse_EResponse_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EResponse_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EResponse>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EResponse_Name.");
+    return CMsgClientToGCRequestReporterUpdatesResponse_EResponse_Name(enum_t_value);
+  }
+  static inline bool EResponse_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EResponse* value) {
+    return CMsgClientToGCRequestReporterUpdatesResponse_EResponse_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kResponseFieldNumber = 1,
+    kReportTypeFieldNumber = 5,
+  };
+  // optional .CMsgClientToGCRequestReporterUpdatesResponse.EResponse response = 1 [default = k_eInternalError];
+  bool has_response() const;
+  private:
+  bool _internal_has_response() const;
+  public:
+  void clear_response();
+  ::CMsgClientToGCRequestReporterUpdatesResponse_EResponse response() const;
+  void set_response(::CMsgClientToGCRequestReporterUpdatesResponse_EResponse value);
+  private:
+  ::CMsgClientToGCRequestReporterUpdatesResponse_EResponse _internal_response() const;
+  void _internal_set_response(::CMsgClientToGCRequestReporterUpdatesResponse_EResponse value);
+  public:
+
+  // optional .CMsgClientToGCReportPlayerFromMatch.EReportType report_type = 5 [default = k_eReport_None];
+  bool has_report_type() const;
+  private:
+  bool _internal_has_report_type() const;
+  public:
+  void clear_report_type();
+  ::CMsgClientToGCReportPlayerFromMatch_EReportType report_type() const;
+  void set_report_type(::CMsgClientToGCReportPlayerFromMatch_EReportType value);
+  private:
+  ::CMsgClientToGCReportPlayerFromMatch_EReportType _internal_report_type() const;
+  void _internal_set_report_type(::CMsgClientToGCReportPlayerFromMatch_EReportType value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCRequestReporterUpdatesResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    int response_;
+    int report_type_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCAcknowledgeReporterUpdates final :
+    public ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase /* @@protoc_insertion_point(class_definition:CMsgClientToGCAcknowledgeReporterUpdates) */ {
+ public:
+  inline CMsgClientToGCAcknowledgeReporterUpdates() : CMsgClientToGCAcknowledgeReporterUpdates(nullptr) {}
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCAcknowledgeReporterUpdates(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCAcknowledgeReporterUpdates(const CMsgClientToGCAcknowledgeReporterUpdates& from);
+  CMsgClientToGCAcknowledgeReporterUpdates(CMsgClientToGCAcknowledgeReporterUpdates&& from) noexcept
+    : CMsgClientToGCAcknowledgeReporterUpdates() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCAcknowledgeReporterUpdates& operator=(const CMsgClientToGCAcknowledgeReporterUpdates& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCAcknowledgeReporterUpdates& operator=(CMsgClientToGCAcknowledgeReporterUpdates&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCAcknowledgeReporterUpdates& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCAcknowledgeReporterUpdates* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCAcknowledgeReporterUpdates*>(
+               &_CMsgClientToGCAcknowledgeReporterUpdates_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    115;
+
+  friend void swap(CMsgClientToGCAcknowledgeReporterUpdates& a, CMsgClientToGCAcknowledgeReporterUpdates& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCAcknowledgeReporterUpdates* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCAcknowledgeReporterUpdates* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCAcknowledgeReporterUpdates* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCAcknowledgeReporterUpdates>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::CopyFrom;
+  inline void CopyFrom(const CMsgClientToGCAcknowledgeReporterUpdates& from) {
+    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::CopyImpl(*this, from);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::MergeFrom;
+  void MergeFrom(const CMsgClientToGCAcknowledgeReporterUpdates& from) {
+    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::MergeImpl(*this, from);
+  }
+  public:
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCAcknowledgeReporterUpdates";
+  }
+  protected:
+  explicit CMsgClientToGCAcknowledgeReporterUpdates(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCAcknowledgeReporterUpdates)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+  };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
 class CMsgClientToGCDeleteHeroBuild final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCDeleteHeroBuild) */ {
  public:
@@ -26232,7 +28122,7 @@ class CMsgClientToGCDeleteHeroBuild final :
                &_CMsgClientToGCDeleteHeroBuild_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    110;
+    116;
 
   friend void swap(CMsgClientToGCDeleteHeroBuild& a, CMsgClientToGCDeleteHeroBuild& b) {
     a.Swap(&b);
@@ -26407,7 +28297,7 @@ class CMsgClientToGCDeleteHeroBuildResponse final :
                &_CMsgClientToGCDeleteHeroBuildResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    111;
+    117;
 
   friend void swap(CMsgClientToGCDeleteHeroBuildResponse& a, CMsgClientToGCDeleteHeroBuildResponse& b) {
     a.Swap(&b);
@@ -26611,7 +28501,7 @@ class CMsgClientToGCGetActiveMatches final :
                &_CMsgClientToGCGetActiveMatches_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    112;
+    118;
 
   friend void swap(CMsgClientToGCGetActiveMatches& a, CMsgClientToGCGetActiveMatches& b) {
     a.Swap(&b);
@@ -26737,7 +28627,7 @@ class CMsgClientToGCGetActiveMatchesResponse final :
                &_CMsgClientToGCGetActiveMatchesResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    113;
+    119;
 
   friend void swap(CMsgClientToGCGetActiveMatchesResponse& a, CMsgClientToGCGetActiveMatchesResponse& b) {
     a.Swap(&b);
@@ -26900,7 +28790,7 @@ class CMsgClientToGCGetDiscordLink final :
                &_CMsgClientToGCGetDiscordLink_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    114;
+    120;
 
   friend void swap(CMsgClientToGCGetDiscordLink& a, CMsgClientToGCGetDiscordLink& b) {
     a.Swap(&b);
@@ -27026,7 +28916,7 @@ class CMsgClientToGCGetDiscordLinkResponse final :
                &_CMsgClientToGCGetDiscordLinkResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    115;
+    121;
 
   friend void swap(CMsgClientToGCGetDiscordLinkResponse& a, CMsgClientToGCGetDiscordLinkResponse& b) {
     a.Swap(&b);
@@ -27257,7 +29147,7 @@ class CMsgClientToGCGrantForumAccess final :
                &_CMsgClientToGCGrantForumAccess_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    116;
+    122;
 
   friend void swap(CMsgClientToGCGrantForumAccess& a, CMsgClientToGCGrantForumAccess& b) {
     a.Swap(&b);
@@ -27422,7 +29312,7 @@ class CMsgClientToGCGrantForumAccessResponse final :
                &_CMsgClientToGCGrantForumAccessResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    117;
+    123;
 
   friend void swap(CMsgClientToGCGrantForumAccessResponse& a, CMsgClientToGCGrantForumAccessResponse& b) {
     a.Swap(&b);
@@ -27678,7 +29568,7 @@ class CMsgClientToGCModeratorRequest final :
                &_CMsgClientToGCModeratorRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    118;
+    124;
 
   friend void swap(CMsgClientToGCModeratorRequest& a, CMsgClientToGCModeratorRequest& b) {
     a.Swap(&b);
@@ -27838,7 +29728,7 @@ class CMsgClientToGCModeratorRequestResponse final :
                &_CMsgClientToGCModeratorRequestResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    119;
+    125;
 
   friend void swap(CMsgClientToGCModeratorRequestResponse& a, CMsgClientToGCModeratorRequestResponse& b) {
     a.Swap(&b);
@@ -28024,7 +29914,7 @@ class CMsgClientToGCGetFriendGameStatus final :
                &_CMsgClientToGCGetFriendGameStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    120;
+    126;
 
   friend void swap(CMsgClientToGCGetFriendGameStatus& a, CMsgClientToGCGetFriendGameStatus& b) {
     a.Swap(&b);
@@ -28184,7 +30074,7 @@ class CMsgClientToGCGetFriendGameStatusResponse final :
                &_CMsgClientToGCGetFriendGameStatusResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    121;
+    127;
 
   friend void swap(CMsgClientToGCGetFriendGameStatusResponse& a, CMsgClientToGCGetFriendGameStatusResponse& b) {
     a.Swap(&b);
@@ -28453,7 +30343,7 @@ class CMsgClientToGCUpdateSpectatorStatus final :
                &_CMsgClientToGCUpdateSpectatorStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    122;
+    128;
 
   friend void swap(CMsgClientToGCUpdateSpectatorStatus& a, CMsgClientToGCUpdateSpectatorStatus& b) {
     a.Swap(&b);
@@ -28628,7 +30518,7 @@ class CMsgClientToGCCommendPlayerFromMatch final :
                &_CMsgClientToGCCommendPlayerFromMatch_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    123;
+    129;
 
   friend void swap(CMsgClientToGCCommendPlayerFromMatch& a, CMsgClientToGCCommendPlayerFromMatch& b) {
     a.Swap(&b);
@@ -28833,7 +30723,7 @@ class CMsgClientToGCCommendPlayerFromMatchResponse final :
                &_CMsgClientToGCCommendPlayerFromMatchResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    124;
+    130;
 
   friend void swap(CMsgClientToGCCommendPlayerFromMatchResponse& a, CMsgClientToGCCommendPlayerFromMatchResponse& b) {
     a.Swap(&b);
@@ -28916,6 +30806,10 @@ class CMsgClientToGCCommendPlayerFromMatchResponse final :
     CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eRateLimited;
   static constexpr EResponse k_eTimeout =
     CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eTimeout;
+  static constexpr EResponse k_eEnemyCommendsDisabled =
+    CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eEnemyCommendsDisabled;
+  static constexpr EResponse k_eTooLate =
+    CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_k_eTooLate;
   static inline bool EResponse_IsValid(int value) {
     return CMsgClientToGCCommendPlayerFromMatchResponse_EResponse_IsValid(value);
   }
@@ -29031,7 +30925,7 @@ class CMsgGCToClientCommendNotification final :
                &_CMsgGCToClientCommendNotification_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    125;
+    131;
 
   friend void swap(CMsgGCToClientCommendNotification& a, CMsgGCToClientCommendNotification& b) {
     a.Swap(&b);
@@ -29270,7 +31164,7 @@ class CMsgClientToGCRequestCheatReports final :
                &_CMsgClientToGCRequestCheatReports_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    126;
+    132;
 
   friend void swap(CMsgClientToGCRequestCheatReports& a, CMsgClientToGCRequestCheatReports& b) {
     a.Swap(&b);
@@ -29396,7 +31290,7 @@ class CMsgClientToGCRequestCheatReportsResponse_RecentCheatReport final :
                &_CMsgClientToGCRequestCheatReportsResponse_RecentCheatReport_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    127;
+    133;
 
   friend void swap(CMsgClientToGCRequestCheatReportsResponse_RecentCheatReport& a, CMsgClientToGCRequestCheatReportsResponse_RecentCheatReport& b) {
     a.Swap(&b);
@@ -29586,7 +31480,7 @@ class CMsgClientToGCRequestCheatReportsResponse final :
                &_CMsgClientToGCRequestCheatReportsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    128;
+    134;
 
   friend void swap(CMsgClientToGCRequestCheatReportsResponse& a, CMsgClientToGCRequestCheatReportsResponse& b) {
     a.Swap(&b);
@@ -29800,7 +31694,7 @@ class CMsgClientToGCGetHeroMMRRankings final :
                &_CMsgClientToGCGetHeroMMRRankings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    129;
+    135;
 
   friend void swap(CMsgClientToGCGetHeroMMRRankings& a, CMsgClientToGCGetHeroMMRRankings& b) {
     a.Swap(&b);
@@ -29960,7 +31854,7 @@ class CMsgClientToGCGetHeroMMRRankingsResponse_Hero final :
                &_CMsgClientToGCGetHeroMMRRankingsResponse_Hero_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    130;
+    136;
 
   friend void swap(CMsgClientToGCGetHeroMMRRankingsResponse_Hero& a, CMsgClientToGCGetHeroMMRRankingsResponse_Hero& b) {
     a.Swap(&b);
@@ -30135,7 +32029,7 @@ class CMsgClientToGCGetHeroMMRRankingsResponse final :
                &_CMsgClientToGCGetHeroMMRRankingsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    131;
+    137;
 
   friend void swap(CMsgClientToGCGetHeroMMRRankingsResponse& a, CMsgClientToGCGetHeroMMRRankingsResponse& b) {
     a.Swap(&b);
@@ -30351,7 +32245,7 @@ class CMsgClientToGCGetLeaderboard final :
                &_CMsgClientToGCGetLeaderboard_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    132;
+    138;
 
   friend void swap(CMsgClientToGCGetLeaderboard& a, CMsgClientToGCGetLeaderboard& b) {
     a.Swap(&b);
@@ -30426,6 +32320,7 @@ class CMsgClientToGCGetLeaderboard final :
   enum : int {
     kLeaderboardRegionFieldNumber = 1,
     kHeroIdFieldNumber = 2,
+    kLeaderboardIdFieldNumber = 3,
   };
   // optional .ECitadelLeaderboardRegion leaderboard_region = 1 [default = k_ECitadelLeaderboardRegion_None];
   bool has_leaderboard_region() const;
@@ -30453,6 +32348,19 @@ class CMsgClientToGCGetLeaderboard final :
   void _internal_set_hero_id(uint32_t value);
   public:
 
+  // optional uint32 leaderboard_id = 3;
+  bool has_leaderboard_id() const;
+  private:
+  bool _internal_has_leaderboard_id() const;
+  public:
+  void clear_leaderboard_id();
+  uint32_t leaderboard_id() const;
+  void set_leaderboard_id(uint32_t value);
+  private:
+  uint32_t _internal_leaderboard_id() const;
+  void _internal_set_leaderboard_id(uint32_t value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CMsgClientToGCGetLeaderboard)
  private:
   class _Internal;
@@ -30465,6 +32373,7 @@ class CMsgClientToGCGetLeaderboard final :
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
     int leaderboard_region_;
     uint32_t hero_id_;
+    uint32_t leaderboard_id_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
@@ -30526,7 +32435,7 @@ class CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry final :
                &_CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    133;
+    139;
 
   friend void swap(CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry& a, CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry& b) {
     a.Swap(&b);
@@ -30602,7 +32511,6 @@ class CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry final :
     kTopHeroIdsFieldNumber = 3,
     kAccountNameFieldNumber = 1,
     kRankFieldNumber = 2,
-    kBadgeLevelFieldNumber = 4,
   };
   // repeated uint32 top_hero_ids = 3;
   int top_hero_ids_size() const;
@@ -30657,19 +32565,6 @@ class CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry final :
   void _internal_set_rank(uint32_t value);
   public:
 
-  // optional uint32 badge_level = 4;
-  bool has_badge_level() const;
-  private:
-  bool _internal_has_badge_level() const;
-  public:
-  void clear_badge_level();
-  uint32_t badge_level() const;
-  void set_badge_level(uint32_t value);
-  private:
-  uint32_t _internal_badge_level() const;
-  void _internal_set_badge_level(uint32_t value);
-  public:
-
   // @@protoc_insertion_point(class_scope:CMsgClientToGCGetLeaderboardResponse.LeaderboardEntry)
  private:
   class _Internal;
@@ -30683,7 +32578,6 @@ class CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry final :
     ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t > top_hero_ids_;
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr account_name_;
     uint32_t rank_;
-    uint32_t badge_level_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
@@ -30745,7 +32639,7 @@ class CMsgClientToGCGetLeaderboardResponse final :
                &_CMsgClientToGCGetLeaderboardResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    134;
+    140;
 
   friend void swap(CMsgClientToGCGetLeaderboardResponse& a, CMsgClientToGCGetLeaderboardResponse& b) {
     a.Swap(&b);
@@ -30976,7 +32870,7 @@ class CMsgClientToGCGetAccountLeaderboards final :
                &_CMsgClientToGCGetAccountLeaderboards_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    135;
+    141;
 
   friend void swap(CMsgClientToGCGetAccountLeaderboards& a, CMsgClientToGCGetAccountLeaderboards& b) {
     a.Swap(&b);
@@ -31050,6 +32944,7 @@ class CMsgClientToGCGetAccountLeaderboards final :
 
   enum : int {
     kAccountIdFieldNumber = 1,
+    kLeaderboardIdFieldNumber = 2,
   };
   // optional uint32 account_id = 1;
   bool has_account_id() const;
@@ -31064,6 +32959,19 @@ class CMsgClientToGCGetAccountLeaderboards final :
   void _internal_set_account_id(uint32_t value);
   public:
 
+  // optional uint32 leaderboard_id = 2;
+  bool has_leaderboard_id() const;
+  private:
+  bool _internal_has_leaderboard_id() const;
+  public:
+  void clear_leaderboard_id();
+  uint32_t leaderboard_id() const;
+  void set_leaderboard_id(uint32_t value);
+  private:
+  uint32_t _internal_leaderboard_id() const;
+  void _internal_set_leaderboard_id(uint32_t value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CMsgClientToGCGetAccountLeaderboards)
  private:
   class _Internal;
@@ -31075,6 +32983,7 @@ class CMsgClientToGCGetAccountLeaderboards final :
     ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
     uint32_t account_id_;
+    uint32_t leaderboard_id_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
@@ -31136,7 +33045,7 @@ class CMsgClientToGCGetAccountLeaderboardsResponse_LeaderboardEntry final :
                &_CMsgClientToGCGetAccountLeaderboardsResponse_LeaderboardEntry_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    136;
+    142;
 
   friend void swap(CMsgClientToGCGetAccountLeaderboardsResponse_LeaderboardEntry& a, CMsgClientToGCGetAccountLeaderboardsResponse_LeaderboardEntry& b) {
     a.Swap(&b);
@@ -31326,7 +33235,7 @@ class CMsgClientToGCGetAccountLeaderboardsResponse final :
                &_CMsgClientToGCGetAccountLeaderboardsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    137;
+    143;
 
   friend void swap(CMsgClientToGCGetAccountLeaderboardsResponse& a, CMsgClientToGCGetAccountLeaderboardsResponse& b) {
     a.Swap(&b);
@@ -31561,7 +33470,7 @@ class CMsgClientToGCGenerateChallengeSet final :
                &_CMsgClientToGCGenerateChallengeSet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    138;
+    144;
 
   friend void swap(CMsgClientToGCGenerateChallengeSet& a, CMsgClientToGCGenerateChallengeSet& b) {
     a.Swap(&b);
@@ -31687,7 +33596,7 @@ class CMsgClientToGCGenerateChallengeSetResponse final :
                &_CMsgClientToGCGenerateChallengeSetResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    139;
+    145;
 
   friend void swap(CMsgClientToGCGenerateChallengeSetResponse& a, CMsgClientToGCGenerateChallengeSetResponse& b) {
     a.Swap(&b);
@@ -31881,7 +33790,7 @@ class CMsgClientToGCChallengeActivate final :
                &_CMsgClientToGCChallengeActivate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    140;
+    146;
 
   friend void swap(CMsgClientToGCChallengeActivate& a, CMsgClientToGCChallengeActivate& b) {
     a.Swap(&b);
@@ -32041,7 +33950,7 @@ class CMsgClientToGCChallengeActivateResponse final :
                &_CMsgClientToGCChallengeActivateResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    141;
+    147;
 
   friend void swap(CMsgClientToGCChallengeActivateResponse& a, CMsgClientToGCChallengeActivateResponse& b) {
     a.Swap(&b);
@@ -32233,7 +34142,7 @@ class CMsgClientToGCChallengeClaim final :
                &_CMsgClientToGCChallengeClaim_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    142;
+    148;
 
   friend void swap(CMsgClientToGCChallengeClaim& a, CMsgClientToGCChallengeClaim& b) {
     a.Swap(&b);
@@ -32393,7 +34302,7 @@ class CMsgClientToGCChallengeClaimResponse final :
                &_CMsgClientToGCChallengeClaimResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    143;
+    149;
 
   friend void swap(CMsgClientToGCChallengeClaimResponse& a, CMsgClientToGCChallengeClaimResponse& b) {
     a.Swap(&b);
@@ -32587,7 +34496,7 @@ class CMsgClientToGCChallengeCancel final :
                &_CMsgClientToGCChallengeCancel_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    144;
+    150;
 
   friend void swap(CMsgClientToGCChallengeCancel& a, CMsgClientToGCChallengeCancel& b) {
     a.Swap(&b);
@@ -32747,7 +34656,7 @@ class CMsgClientToGCChallengeCancelResponse final :
                &_CMsgClientToGCChallengeCancelResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    145;
+    151;
 
   friend void swap(CMsgClientToGCChallengeCancelResponse& a, CMsgClientToGCChallengeCancelResponse& b) {
     a.Swap(&b);
@@ -32941,7 +34850,7 @@ class CMsgSurveyQuestion final :
                &_CMsgSurveyQuestion_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    146;
+    152;
 
   friend void swap(CMsgSurveyQuestion& a, CMsgSurveyQuestion& b) {
     a.Swap(&b);
@@ -33218,7 +35127,7 @@ class CMsgClientToGCGetSurveyQuestion final :
                &_CMsgClientToGCGetSurveyQuestion_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    147;
+    153;
 
   friend void swap(CMsgClientToGCGetSurveyQuestion& a, CMsgClientToGCGetSurveyQuestion& b) {
     a.Swap(&b);
@@ -33378,7 +35287,7 @@ class CMsgClientToGCGetSurveyQuestionResponse final :
                &_CMsgClientToGCGetSurveyQuestionResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    148;
+    154;
 
   friend void swap(CMsgClientToGCGetSurveyQuestionResponse& a, CMsgClientToGCGetSurveyQuestionResponse& b) {
     a.Swap(&b);
@@ -33590,7 +35499,7 @@ class CMsgClientToGCSubmitSurvey final :
                &_CMsgClientToGCSubmitSurvey_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    149;
+    155;
 
   friend void swap(CMsgClientToGCSubmitSurvey& a, CMsgClientToGCSubmitSurvey& b) {
     a.Swap(&b);
@@ -33795,7 +35704,7 @@ class CMsgClientToGCSubmitSurveyResponse final :
                &_CMsgClientToGCSubmitSurveyResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    150;
+    156;
 
   friend void swap(CMsgClientToGCSubmitSurveyResponse& a, CMsgClientToGCSubmitSurveyResponse& b) {
     a.Swap(&b);
@@ -34006,7 +35915,7 @@ class CMsgClientToGCGetRankData final :
                &_CMsgClientToGCGetRankData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    151;
+    157;
 
   friend void swap(CMsgClientToGCGetRankData& a, CMsgClientToGCGetRankData& b) {
     a.Swap(&b);
@@ -34132,7 +36041,7 @@ class CMsgGCToClientGetRankDataResponse final :
                &_CMsgGCToClientGetRankDataResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    152;
+    158;
 
   friend void swap(CMsgGCToClientGetRankDataResponse& a, CMsgGCToClientGetRankDataResponse& b) {
     a.Swap(&b);
@@ -34367,7 +36276,7 @@ class CMsgGCToClientRankDataUpdate final :
                &_CMsgGCToClientRankDataUpdate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    153;
+    159;
 
   friend void swap(CMsgGCToClientRankDataUpdate& a, CMsgGCToClientRankDataUpdate& b) {
     a.Swap(&b);
@@ -34532,7 +36441,7 @@ class CMsgClientToGCRequestHeroReleaseVoteTally final :
                &_CMsgClientToGCRequestHeroReleaseVoteTally_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    154;
+    160;
 
   friend void swap(CMsgClientToGCRequestHeroReleaseVoteTally& a, CMsgClientToGCRequestHeroReleaseVoteTally& b) {
     a.Swap(&b);
@@ -34606,6 +36515,7 @@ class CMsgClientToGCRequestHeroReleaseVoteTally final :
 
   enum : int {
     kVoteRoundsFieldNumber = 1,
+    kIsInitialRequestFieldNumber = 2,
   };
   // repeated uint32 vote_rounds = 1 [packed = true];
   int vote_rounds_size() const;
@@ -34629,6 +36539,19 @@ class CMsgClientToGCRequestHeroReleaseVoteTally final :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
       mutable_vote_rounds();
 
+  // optional bool is_initial_request = 2;
+  bool has_is_initial_request() const;
+  private:
+  bool _internal_has_is_initial_request() const;
+  public:
+  void clear_is_initial_request();
+  bool is_initial_request() const;
+  void set_is_initial_request(bool value);
+  private:
+  bool _internal_is_initial_request() const;
+  void _internal_set_is_initial_request(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CMsgClientToGCRequestHeroReleaseVoteTally)
  private:
   class _Internal;
@@ -34637,9 +36560,11 @@ class CMsgClientToGCRequestHeroReleaseVoteTally final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
     ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t > vote_rounds_;
     mutable std::atomic<int> _vote_rounds_cached_byte_size_;
-    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    bool is_initial_request_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
@@ -34701,7 +36626,7 @@ class CMsgGCToClientUpdateHeroReleaseVoteTally_VoteRoundToTallyEntry final :
                &_CMsgGCToClientUpdateHeroReleaseVoteTally_VoteRoundToTallyEntry_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    155;
+    161;
 
   friend void swap(CMsgGCToClientUpdateHeroReleaseVoteTally_VoteRoundToTallyEntry& a, CMsgGCToClientUpdateHeroReleaseVoteTally_VoteRoundToTallyEntry& b) {
     a.Swap(&b);
@@ -34881,7 +36806,7 @@ class CMsgGCToClientUpdateHeroReleaseVoteTally final :
                &_CMsgGCToClientUpdateHeroReleaseVoteTally_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    156;
+    162;
 
   friend void swap(CMsgGCToClientUpdateHeroReleaseVoteTally& a, CMsgGCToClientUpdateHeroReleaseVoteTally& b) {
     a.Swap(&b);
@@ -35047,7 +36972,7 @@ class CMsgClientToGCSubmitHeroReleaseVote final :
                &_CMsgClientToGCSubmitHeroReleaseVote_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    157;
+    163;
 
   friend void swap(CMsgClientToGCSubmitHeroReleaseVote& a, CMsgClientToGCSubmitHeroReleaseVote& b) {
     a.Swap(&b);
@@ -35222,7 +37147,7 @@ class CMsgClientToGCPartySendChatMsg final :
                &_CMsgClientToGCPartySendChatMsg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    158;
+    164;
 
   friend void swap(CMsgClientToGCPartySendChatMsg& a, CMsgClientToGCPartySendChatMsg& b) {
     a.Swap(&b);
@@ -35402,7 +37327,7 @@ class CMsgClientToGCPartySendChatMsgResponse final :
                &_CMsgClientToGCPartySendChatMsgResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    159;
+    165;
 
   friend void swap(CMsgClientToGCPartySendChatMsgResponse& a, CMsgClientToGCPartySendChatMsgResponse& b) {
     a.Swap(&b);
@@ -35600,7 +37525,7 @@ class CMsgGCToClientPartyChatMsg_ChatLine final :
                &_CMsgGCToClientPartyChatMsg_ChatLine_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    160;
+    166;
 
   friend void swap(CMsgGCToClientPartyChatMsg_ChatLine& a, CMsgGCToClientPartyChatMsg_ChatLine& b) {
     a.Swap(&b);
@@ -35795,7 +37720,7 @@ class CMsgGCToClientPartyChatMsg final :
                &_CMsgGCToClientPartyChatMsg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    161;
+    167;
 
   friend void swap(CMsgGCToClientPartyChatMsg& a, CMsgGCToClientPartyChatMsg& b) {
     a.Swap(&b);
@@ -35922,6 +37847,181 @@ class CMsgGCToClientPartyChatMsg final :
 };
 // -------------------------------------------------------------------
 
+class CMsgGCToClientPartyPlayerTyping final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgGCToClientPartyPlayerTyping) */ {
+ public:
+  inline CMsgGCToClientPartyPlayerTyping() : CMsgGCToClientPartyPlayerTyping(nullptr) {}
+  ~CMsgGCToClientPartyPlayerTyping() override;
+  explicit PROTOBUF_CONSTEXPR CMsgGCToClientPartyPlayerTyping(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgGCToClientPartyPlayerTyping(const CMsgGCToClientPartyPlayerTyping& from);
+  CMsgGCToClientPartyPlayerTyping(CMsgGCToClientPartyPlayerTyping&& from) noexcept
+    : CMsgGCToClientPartyPlayerTyping() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgGCToClientPartyPlayerTyping& operator=(const CMsgGCToClientPartyPlayerTyping& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgGCToClientPartyPlayerTyping& operator=(CMsgGCToClientPartyPlayerTyping&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgGCToClientPartyPlayerTyping& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgGCToClientPartyPlayerTyping* internal_default_instance() {
+    return reinterpret_cast<const CMsgGCToClientPartyPlayerTyping*>(
+               &_CMsgGCToClientPartyPlayerTyping_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    168;
+
+  friend void swap(CMsgGCToClientPartyPlayerTyping& a, CMsgGCToClientPartyPlayerTyping& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgGCToClientPartyPlayerTyping* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgGCToClientPartyPlayerTyping* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgGCToClientPartyPlayerTyping* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgGCToClientPartyPlayerTyping>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgGCToClientPartyPlayerTyping& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgGCToClientPartyPlayerTyping& from) {
+    CMsgGCToClientPartyPlayerTyping::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgGCToClientPartyPlayerTyping* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgGCToClientPartyPlayerTyping";
+  }
+  protected:
+  explicit CMsgGCToClientPartyPlayerTyping(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kPartyIdFieldNumber = 1,
+    kAccountIdFieldNumber = 2,
+  };
+  // optional fixed64 party_id = 1;
+  bool has_party_id() const;
+  private:
+  bool _internal_has_party_id() const;
+  public:
+  void clear_party_id();
+  uint64_t party_id() const;
+  void set_party_id(uint64_t value);
+  private:
+  uint64_t _internal_party_id() const;
+  void _internal_set_party_id(uint64_t value);
+  public:
+
+  // optional uint32 account_id = 2;
+  bool has_account_id() const;
+  private:
+  bool _internal_has_account_id() const;
+  public:
+  void clear_account_id();
+  uint32_t account_id() const;
+  void set_account_id(uint32_t value);
+  private:
+  uint32_t _internal_account_id() const;
+  void _internal_set_account_id(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgGCToClientPartyPlayerTyping)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint64_t party_id_;
+    uint32_t account_id_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
 class CMsgPostGameProgressData_PlayerAccolade final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgPostGameProgressData.PlayerAccolade) */ {
  public:
@@ -35977,7 +38077,7 @@ class CMsgPostGameProgressData_PlayerAccolade final :
                &_CMsgPostGameProgressData_PlayerAccolade_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    162;
+    169;
 
   friend void swap(CMsgPostGameProgressData_PlayerAccolade& a, CMsgPostGameProgressData_PlayerAccolade& b) {
     a.Swap(&b);
@@ -36207,7 +38307,7 @@ class CMsgPostGameProgressData_PlayerAward final :
                &_CMsgPostGameProgressData_PlayerAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    163;
+    170;
 
   friend void swap(CMsgPostGameProgressData_PlayerAward& a, CMsgPostGameProgressData_PlayerAward& b) {
     a.Swap(&b);
@@ -36382,6 +38482,171 @@ class CMsgPostGameProgressData_PlayerAward final :
 };
 // -------------------------------------------------------------------
 
+class CMsgPostGameProgressData_HeroXPReward final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgPostGameProgressData.HeroXPReward) */ {
+ public:
+  inline CMsgPostGameProgressData_HeroXPReward() : CMsgPostGameProgressData_HeroXPReward(nullptr) {}
+  ~CMsgPostGameProgressData_HeroXPReward() override;
+  explicit PROTOBUF_CONSTEXPR CMsgPostGameProgressData_HeroXPReward(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgPostGameProgressData_HeroXPReward(const CMsgPostGameProgressData_HeroXPReward& from);
+  CMsgPostGameProgressData_HeroXPReward(CMsgPostGameProgressData_HeroXPReward&& from) noexcept
+    : CMsgPostGameProgressData_HeroXPReward() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgPostGameProgressData_HeroXPReward& operator=(const CMsgPostGameProgressData_HeroXPReward& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgPostGameProgressData_HeroXPReward& operator=(CMsgPostGameProgressData_HeroXPReward&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgPostGameProgressData_HeroXPReward& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgPostGameProgressData_HeroXPReward* internal_default_instance() {
+    return reinterpret_cast<const CMsgPostGameProgressData_HeroXPReward*>(
+               &_CMsgPostGameProgressData_HeroXPReward_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    171;
+
+  friend void swap(CMsgPostGameProgressData_HeroXPReward& a, CMsgPostGameProgressData_HeroXPReward& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgPostGameProgressData_HeroXPReward* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgPostGameProgressData_HeroXPReward* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgPostGameProgressData_HeroXPReward* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgPostGameProgressData_HeroXPReward>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgPostGameProgressData_HeroXPReward& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgPostGameProgressData_HeroXPReward& from) {
+    CMsgPostGameProgressData_HeroXPReward::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgPostGameProgressData_HeroXPReward* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgPostGameProgressData.HeroXPReward";
+  }
+  protected:
+  explicit CMsgPostGameProgressData_HeroXPReward(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kXpGrantFieldNumber = 1,
+  };
+  // optional .CMsgHeroXPGrant xp_grant = 1;
+  bool has_xp_grant() const;
+  private:
+  bool _internal_has_xp_grant() const;
+  public:
+  void clear_xp_grant();
+  const ::CMsgHeroXPGrant& xp_grant() const;
+  PROTOBUF_NODISCARD ::CMsgHeroXPGrant* release_xp_grant();
+  ::CMsgHeroXPGrant* mutable_xp_grant();
+  void set_allocated_xp_grant(::CMsgHeroXPGrant* xp_grant);
+  private:
+  const ::CMsgHeroXPGrant& _internal_xp_grant() const;
+  ::CMsgHeroXPGrant* _internal_mutable_xp_grant();
+  public:
+  void unsafe_arena_set_allocated_xp_grant(
+      ::CMsgHeroXPGrant* xp_grant);
+  ::CMsgHeroXPGrant* unsafe_arena_release_xp_grant();
+
+  // @@protoc_insertion_point(class_scope:CMsgPostGameProgressData.HeroXPReward)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::CMsgHeroXPGrant* xp_grant_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
 class CMsgPostGameProgressData_PlayerData final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgPostGameProgressData.PlayerData) */ {
  public:
@@ -36437,7 +38702,7 @@ class CMsgPostGameProgressData_PlayerData final :
                &_CMsgPostGameProgressData_PlayerData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    164;
+    172;
 
   friend void swap(CMsgPostGameProgressData_PlayerData& a, CMsgPostGameProgressData_PlayerData& b) {
     a.Swap(&b);
@@ -36512,11 +38777,15 @@ class CMsgPostGameProgressData_PlayerData final :
   enum : int {
     kAccoladesFieldNumber = 6,
     kAwardsFieldNumber = 7,
+    kHeroXpRewardsFieldNumber = 9,
+    kHeroDataFieldNumber = 8,
+    kPlayerRankDataFieldNumber = 10,
     kPlayerSlotFieldNumber = 1,
     kAccountIdFieldNumber = 2,
     kHeroIdFieldNumber = 3,
     kTeamFieldNumber = 4,
     kMvpRankFieldNumber = 5,
+    kPlayerMatchOutcomeFieldNumber = 11,
   };
   // repeated .CMsgPostGameProgressData.PlayerAccolade accolades = 6;
   int accolades_size() const;
@@ -36553,6 +38822,60 @@ class CMsgPostGameProgressData_PlayerData final :
   ::CMsgPostGameProgressData_PlayerAward* add_awards();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_PlayerAward >&
       awards() const;
+
+  // repeated .CMsgPostGameProgressData.HeroXPReward hero_xp_rewards = 9;
+  int hero_xp_rewards_size() const;
+  private:
+  int _internal_hero_xp_rewards_size() const;
+  public:
+  void clear_hero_xp_rewards();
+  ::CMsgPostGameProgressData_HeroXPReward* mutable_hero_xp_rewards(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_HeroXPReward >*
+      mutable_hero_xp_rewards();
+  private:
+  const ::CMsgPostGameProgressData_HeroXPReward& _internal_hero_xp_rewards(int index) const;
+  ::CMsgPostGameProgressData_HeroXPReward* _internal_add_hero_xp_rewards();
+  public:
+  const ::CMsgPostGameProgressData_HeroXPReward& hero_xp_rewards(int index) const;
+  ::CMsgPostGameProgressData_HeroXPReward* add_hero_xp_rewards();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_HeroXPReward >&
+      hero_xp_rewards() const;
+
+  // optional .CMsgPlayerHeroData hero_data = 8;
+  bool has_hero_data() const;
+  private:
+  bool _internal_has_hero_data() const;
+  public:
+  void clear_hero_data();
+  const ::CMsgPlayerHeroData& hero_data() const;
+  PROTOBUF_NODISCARD ::CMsgPlayerHeroData* release_hero_data();
+  ::CMsgPlayerHeroData* mutable_hero_data();
+  void set_allocated_hero_data(::CMsgPlayerHeroData* hero_data);
+  private:
+  const ::CMsgPlayerHeroData& _internal_hero_data() const;
+  ::CMsgPlayerHeroData* _internal_mutable_hero_data();
+  public:
+  void unsafe_arena_set_allocated_hero_data(
+      ::CMsgPlayerHeroData* hero_data);
+  ::CMsgPlayerHeroData* unsafe_arena_release_hero_data();
+
+  // optional .CMsgMatchPlayerRankData player_rank_data = 10;
+  bool has_player_rank_data() const;
+  private:
+  bool _internal_has_player_rank_data() const;
+  public:
+  void clear_player_rank_data();
+  const ::CMsgMatchPlayerRankData& player_rank_data() const;
+  PROTOBUF_NODISCARD ::CMsgMatchPlayerRankData* release_player_rank_data();
+  ::CMsgMatchPlayerRankData* mutable_player_rank_data();
+  void set_allocated_player_rank_data(::CMsgMatchPlayerRankData* player_rank_data);
+  private:
+  const ::CMsgMatchPlayerRankData& _internal_player_rank_data() const;
+  ::CMsgMatchPlayerRankData* _internal_mutable_player_rank_data();
+  public:
+  void unsafe_arena_set_allocated_player_rank_data(
+      ::CMsgMatchPlayerRankData* player_rank_data);
+  ::CMsgMatchPlayerRankData* unsafe_arena_release_player_rank_data();
 
   // optional uint32 player_slot = 1;
   bool has_player_slot() const;
@@ -36619,6 +38942,19 @@ class CMsgPostGameProgressData_PlayerData final :
   void _internal_set_mvp_rank(uint32_t value);
   public:
 
+  // optional .EPlayerMatchOutcome player_match_outcome = 11 [default = k_EPlayerMatchOutcome_Invalid];
+  bool has_player_match_outcome() const;
+  private:
+  bool _internal_has_player_match_outcome() const;
+  public:
+  void clear_player_match_outcome();
+  ::EPlayerMatchOutcome player_match_outcome() const;
+  void set_player_match_outcome(::EPlayerMatchOutcome value);
+  private:
+  ::EPlayerMatchOutcome _internal_player_match_outcome() const;
+  void _internal_set_player_match_outcome(::EPlayerMatchOutcome value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CMsgPostGameProgressData.PlayerData)
  private:
   class _Internal;
@@ -36631,11 +38967,15 @@ class CMsgPostGameProgressData_PlayerData final :
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
     ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_PlayerAccolade > accolades_;
     ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_PlayerAward > awards_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_HeroXPReward > hero_xp_rewards_;
+    ::CMsgPlayerHeroData* hero_data_;
+    ::CMsgMatchPlayerRankData* player_rank_data_;
     uint32_t player_slot_;
     uint32_t account_id_;
     uint32_t hero_id_;
     int team_;
     uint32_t mvp_rank_;
+    int player_match_outcome_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
@@ -36697,7 +39037,7 @@ class CMsgPostGameProgressData final :
                &_CMsgPostGameProgressData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    165;
+    173;
 
   friend void swap(CMsgPostGameProgressData& a, CMsgPostGameProgressData& b) {
     a.Swap(&b);
@@ -36769,17 +39109,24 @@ class CMsgPostGameProgressData final :
 
   typedef CMsgPostGameProgressData_PlayerAccolade PlayerAccolade;
   typedef CMsgPostGameProgressData_PlayerAward PlayerAward;
+  typedef CMsgPostGameProgressData_HeroXPReward HeroXPReward;
   typedef CMsgPostGameProgressData_PlayerData PlayerData;
 
   // accessors -------------------------------------------------------
 
   enum : int {
-    kMvpPlayersFieldNumber = 4,
-    kLocalPlayerFieldNumber = 3,
+    kMvpPlayersFieldNumber = 8,
+    kAllPlayersFieldNumber = 10,
+    kLocalPlayerFieldNumber = 7,
+    kHeroReleaseVotesFieldNumber = 9,
     kMatchIdFieldNumber = 1,
     kWinningTeamFieldNumber = 2,
+    kMatchModeFieldNumber = 3,
+    kGameModeFieldNumber = 4,
+    kRankedTypeFieldNumber = 5,
+    kRankIntervalFieldNumber = 6,
   };
-  // repeated .CMsgPostGameProgressData.PlayerData mvp_players = 4;
+  // repeated .CMsgPostGameProgressData.PlayerData mvp_players = 8;
   int mvp_players_size() const;
   private:
   int _internal_mvp_players_size() const;
@@ -36797,7 +39144,25 @@ class CMsgPostGameProgressData final :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_PlayerData >&
       mvp_players() const;
 
-  // optional .CMsgPostGameProgressData.PlayerData local_player = 3;
+  // repeated .CMsgPostGameProgressData.PlayerData all_players = 10;
+  int all_players_size() const;
+  private:
+  int _internal_all_players_size() const;
+  public:
+  void clear_all_players();
+  ::CMsgPostGameProgressData_PlayerData* mutable_all_players(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_PlayerData >*
+      mutable_all_players();
+  private:
+  const ::CMsgPostGameProgressData_PlayerData& _internal_all_players(int index) const;
+  ::CMsgPostGameProgressData_PlayerData* _internal_add_all_players();
+  public:
+  const ::CMsgPostGameProgressData_PlayerData& all_players(int index) const;
+  ::CMsgPostGameProgressData_PlayerData* add_all_players();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_PlayerData >&
+      all_players() const;
+
+  // optional .CMsgPostGameProgressData.PlayerData local_player = 7;
   bool has_local_player() const;
   private:
   bool _internal_has_local_player() const;
@@ -36814,6 +39179,24 @@ class CMsgPostGameProgressData final :
   void unsafe_arena_set_allocated_local_player(
       ::CMsgPostGameProgressData_PlayerData* local_player);
   ::CMsgPostGameProgressData_PlayerData* unsafe_arena_release_local_player();
+
+  // optional .CMsgMatchHeroReleaseVotes hero_release_votes = 9;
+  bool has_hero_release_votes() const;
+  private:
+  bool _internal_has_hero_release_votes() const;
+  public:
+  void clear_hero_release_votes();
+  const ::CMsgMatchHeroReleaseVotes& hero_release_votes() const;
+  PROTOBUF_NODISCARD ::CMsgMatchHeroReleaseVotes* release_hero_release_votes();
+  ::CMsgMatchHeroReleaseVotes* mutable_hero_release_votes();
+  void set_allocated_hero_release_votes(::CMsgMatchHeroReleaseVotes* hero_release_votes);
+  private:
+  const ::CMsgMatchHeroReleaseVotes& _internal_hero_release_votes() const;
+  ::CMsgMatchHeroReleaseVotes* _internal_mutable_hero_release_votes();
+  public:
+  void unsafe_arena_set_allocated_hero_release_votes(
+      ::CMsgMatchHeroReleaseVotes* hero_release_votes);
+  ::CMsgMatchHeroReleaseVotes* unsafe_arena_release_hero_release_votes();
 
   // optional uint64 match_id = 1;
   bool has_match_id() const;
@@ -36841,6 +39224,58 @@ class CMsgPostGameProgressData final :
   void _internal_set_winning_team(::ECitadelLobbyTeam value);
   public:
 
+  // optional .ECitadelMatchMode match_mode = 3 [default = k_ECitadelMatchMode_Invalid];
+  bool has_match_mode() const;
+  private:
+  bool _internal_has_match_mode() const;
+  public:
+  void clear_match_mode();
+  ::ECitadelMatchMode match_mode() const;
+  void set_match_mode(::ECitadelMatchMode value);
+  private:
+  ::ECitadelMatchMode _internal_match_mode() const;
+  void _internal_set_match_mode(::ECitadelMatchMode value);
+  public:
+
+  // optional .ECitadelGameMode game_mode = 4 [default = k_ECitadelGameMode_Invalid];
+  bool has_game_mode() const;
+  private:
+  bool _internal_has_game_mode() const;
+  public:
+  void clear_game_mode();
+  ::ECitadelGameMode game_mode() const;
+  void set_game_mode(::ECitadelGameMode value);
+  private:
+  ::ECitadelGameMode _internal_game_mode() const;
+  void _internal_set_game_mode(::ECitadelGameMode value);
+  public:
+
+  // optional .ECitadelRankedType ranked_type = 5 [default = k_eCitadelRankedType_Invalid];
+  bool has_ranked_type() const;
+  private:
+  bool _internal_has_ranked_type() const;
+  public:
+  void clear_ranked_type();
+  ::ECitadelRankedType ranked_type() const;
+  void set_ranked_type(::ECitadelRankedType value);
+  private:
+  ::ECitadelRankedType _internal_ranked_type() const;
+  void _internal_set_ranked_type(::ECitadelRankedType value);
+  public:
+
+  // optional uint32 rank_interval = 6;
+  bool has_rank_interval() const;
+  private:
+  bool _internal_has_rank_interval() const;
+  public:
+  void clear_rank_interval();
+  uint32_t rank_interval() const;
+  void set_rank_interval(uint32_t value);
+  private:
+  uint32_t _internal_rank_interval() const;
+  void _internal_set_rank_interval(uint32_t value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CMsgPostGameProgressData)
  private:
   class _Internal;
@@ -36852,9 +39287,15 @@ class CMsgPostGameProgressData final :
     ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
     ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_PlayerData > mvp_players_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_PlayerData > all_players_;
     ::CMsgPostGameProgressData_PlayerData* local_player_;
+    ::CMsgMatchHeroReleaseVotes* hero_release_votes_;
     uint64_t match_id_;
     int winning_team_;
+    int match_mode_;
+    int game_mode_;
+    int ranked_type_;
+    uint32_t rank_interval_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
@@ -36916,7 +39357,7 @@ class CMsgClientToGCSetAccountPrivacySetting final :
                &_CMsgClientToGCSetAccountPrivacySetting_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    166;
+    174;
 
   friend void swap(CMsgClientToGCSetAccountPrivacySetting& a, CMsgClientToGCSetAccountPrivacySetting& b) {
     a.Swap(&b);
@@ -37076,7 +39517,7 @@ class CMsgClientToGCSetAccountPrivacySettingResponse final :
                &_CMsgClientToGCSetAccountPrivacySettingResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    167;
+    175;
 
   friend void swap(CMsgClientToGCSetAccountPrivacySettingResponse& a, CMsgClientToGCSetAccountPrivacySettingResponse& b) {
     a.Swap(&b);
@@ -37209,6 +39650,5115 @@ class CMsgClientToGCSetAccountPrivacySettingResponse final :
   union { Impl_ _impl_; };
   friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
 };
+// -------------------------------------------------------------------
+
+class CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCVariantItemChangeSlotStyles.SlotStyleAction) */ {
+ public:
+  inline CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction() : CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction(nullptr) {}
+  ~CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction(const CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& from);
+  CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction(CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction&& from) noexcept
+    : CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& operator=(const CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& operator=(CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction*>(
+               &_CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    176;
+
+  friend void swap(CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& a, CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& from) {
+    CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCVariantItemChangeSlotStyles.SlotStyleAction";
+  }
+  protected:
+  explicit CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kSlotIdFieldNumber = 1,
+    kStyleIdFieldNumber = 2,
+    kStyleActionFieldNumber = 3,
+  };
+  // optional uint32 slot_id = 1;
+  bool has_slot_id() const;
+  private:
+  bool _internal_has_slot_id() const;
+  public:
+  void clear_slot_id();
+  uint32_t slot_id() const;
+  void set_slot_id(uint32_t value);
+  private:
+  uint32_t _internal_slot_id() const;
+  void _internal_set_slot_id(uint32_t value);
+  public:
+
+  // optional uint32 style_id = 2;
+  bool has_style_id() const;
+  private:
+  bool _internal_has_style_id() const;
+  public:
+  void clear_style_id();
+  uint32_t style_id() const;
+  void set_style_id(uint32_t value);
+  private:
+  uint32_t _internal_style_id() const;
+  void _internal_set_style_id(uint32_t value);
+  public:
+
+  // optional .CMsgClientToGCVariantItemChangeSlotStyles.EStyleAction style_action = 3 [default = k_eUnlockStyle];
+  bool has_style_action() const;
+  private:
+  bool _internal_has_style_action() const;
+  public:
+  void clear_style_action();
+  ::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction style_action() const;
+  void set_style_action(::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction value);
+  private:
+  ::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction _internal_style_action() const;
+  void _internal_set_style_action(::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCVariantItemChangeSlotStyles.SlotStyleAction)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint32_t slot_id_;
+    uint32_t style_id_;
+    int style_action_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCVariantItemChangeSlotStyles final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCVariantItemChangeSlotStyles) */ {
+ public:
+  inline CMsgClientToGCVariantItemChangeSlotStyles() : CMsgClientToGCVariantItemChangeSlotStyles(nullptr) {}
+  ~CMsgClientToGCVariantItemChangeSlotStyles() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCVariantItemChangeSlotStyles(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCVariantItemChangeSlotStyles(const CMsgClientToGCVariantItemChangeSlotStyles& from);
+  CMsgClientToGCVariantItemChangeSlotStyles(CMsgClientToGCVariantItemChangeSlotStyles&& from) noexcept
+    : CMsgClientToGCVariantItemChangeSlotStyles() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCVariantItemChangeSlotStyles& operator=(const CMsgClientToGCVariantItemChangeSlotStyles& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCVariantItemChangeSlotStyles& operator=(CMsgClientToGCVariantItemChangeSlotStyles&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCVariantItemChangeSlotStyles& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCVariantItemChangeSlotStyles* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCVariantItemChangeSlotStyles*>(
+               &_CMsgClientToGCVariantItemChangeSlotStyles_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    177;
+
+  friend void swap(CMsgClientToGCVariantItemChangeSlotStyles& a, CMsgClientToGCVariantItemChangeSlotStyles& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCVariantItemChangeSlotStyles* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCVariantItemChangeSlotStyles* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCVariantItemChangeSlotStyles* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCVariantItemChangeSlotStyles>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCVariantItemChangeSlotStyles& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCVariantItemChangeSlotStyles& from) {
+    CMsgClientToGCVariantItemChangeSlotStyles::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCVariantItemChangeSlotStyles* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCVariantItemChangeSlotStyles";
+  }
+  protected:
+  explicit CMsgClientToGCVariantItemChangeSlotStyles(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction SlotStyleAction;
+
+  typedef CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction EStyleAction;
+  static constexpr EStyleAction k_eUnlockStyle =
+    CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_k_eUnlockStyle;
+  static constexpr EStyleAction k_eEquipStyle =
+    CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_k_eEquipStyle;
+  static constexpr EStyleAction k_eDevUnlockStyle =
+    CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_k_eDevUnlockStyle;
+  static constexpr EStyleAction k_eDevLockStyle =
+    CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_k_eDevLockStyle;
+  static inline bool EStyleAction_IsValid(int value) {
+    return CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_IsValid(value);
+  }
+  static constexpr EStyleAction EStyleAction_MIN =
+    CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_EStyleAction_MIN;
+  static constexpr EStyleAction EStyleAction_MAX =
+    CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_EStyleAction_MAX;
+  static constexpr int EStyleAction_ARRAYSIZE =
+    CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_EStyleAction_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EStyleAction_descriptor() {
+    return CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EStyleAction_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EStyleAction>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EStyleAction_Name.");
+    return CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_Name(enum_t_value);
+  }
+  static inline bool EStyleAction_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EStyleAction* value) {
+    return CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kSlotStyleActionsFieldNumber = 2,
+    kItemIdFieldNumber = 1,
+  };
+  // repeated .CMsgClientToGCVariantItemChangeSlotStyles.SlotStyleAction slot_style_actions = 2;
+  int slot_style_actions_size() const;
+  private:
+  int _internal_slot_style_actions_size() const;
+  public:
+  void clear_slot_style_actions();
+  ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* mutable_slot_style_actions(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction >*
+      mutable_slot_style_actions();
+  private:
+  const ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& _internal_slot_style_actions(int index) const;
+  ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* _internal_add_slot_style_actions();
+  public:
+  const ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& slot_style_actions(int index) const;
+  ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* add_slot_style_actions();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction >&
+      slot_style_actions() const;
+
+  // optional uint64 item_id = 1;
+  bool has_item_id() const;
+  private:
+  bool _internal_has_item_id() const;
+  public:
+  void clear_item_id();
+  uint64_t item_id() const;
+  void set_item_id(uint64_t value);
+  private:
+  uint64_t _internal_item_id() const;
+  void _internal_set_item_id(uint64_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCVariantItemChangeSlotStyles)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction > slot_style_actions_;
+    uint64_t item_id_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCVariantItemChangeSlotStylesResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCVariantItemChangeSlotStylesResponse) */ {
+ public:
+  inline CMsgClientToGCVariantItemChangeSlotStylesResponse() : CMsgClientToGCVariantItemChangeSlotStylesResponse(nullptr) {}
+  ~CMsgClientToGCVariantItemChangeSlotStylesResponse() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCVariantItemChangeSlotStylesResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCVariantItemChangeSlotStylesResponse(const CMsgClientToGCVariantItemChangeSlotStylesResponse& from);
+  CMsgClientToGCVariantItemChangeSlotStylesResponse(CMsgClientToGCVariantItemChangeSlotStylesResponse&& from) noexcept
+    : CMsgClientToGCVariantItemChangeSlotStylesResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCVariantItemChangeSlotStylesResponse& operator=(const CMsgClientToGCVariantItemChangeSlotStylesResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCVariantItemChangeSlotStylesResponse& operator=(CMsgClientToGCVariantItemChangeSlotStylesResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCVariantItemChangeSlotStylesResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCVariantItemChangeSlotStylesResponse* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCVariantItemChangeSlotStylesResponse*>(
+               &_CMsgClientToGCVariantItemChangeSlotStylesResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    178;
+
+  friend void swap(CMsgClientToGCVariantItemChangeSlotStylesResponse& a, CMsgClientToGCVariantItemChangeSlotStylesResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCVariantItemChangeSlotStylesResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCVariantItemChangeSlotStylesResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCVariantItemChangeSlotStylesResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCVariantItemChangeSlotStylesResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCVariantItemChangeSlotStylesResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCVariantItemChangeSlotStylesResponse& from) {
+    CMsgClientToGCVariantItemChangeSlotStylesResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCVariantItemChangeSlotStylesResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCVariantItemChangeSlotStylesResponse";
+  }
+  protected:
+  explicit CMsgClientToGCVariantItemChangeSlotStylesResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse EResponse;
+  static constexpr EResponse k_eInternalError =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eInternalError;
+  static constexpr EResponse k_eSuccess =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eSuccess;
+  static constexpr EResponse k_eTooBusy =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eTooBusy;
+  static constexpr EResponse k_eDisabled =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eDisabled;
+  static constexpr EResponse k_eTimeout =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eTimeout;
+  static constexpr EResponse k_eNoItem =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eNoItem;
+  static constexpr EResponse k_eNoActions =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eNoActions;
+  static constexpr EResponse k_eUnknownAction =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eUnknownAction;
+  static constexpr EResponse k_eCantEquipNotOwned =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eCantEquipNotOwned;
+  static constexpr EResponse k_eNoPermission =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eNoPermission;
+  static constexpr EResponse k_eInvalidSlot =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_k_eInvalidSlot;
+  static inline bool EResponse_IsValid(int value) {
+    return CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_IsValid(value);
+  }
+  static constexpr EResponse EResponse_MIN =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_EResponse_MIN;
+  static constexpr EResponse EResponse_MAX =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_EResponse_MAX;
+  static constexpr int EResponse_ARRAYSIZE =
+    CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_EResponse_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EResponse_descriptor() {
+    return CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EResponse_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EResponse>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EResponse_Name.");
+    return CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_Name(enum_t_value);
+  }
+  static inline bool EResponse_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EResponse* value) {
+    return CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kResponseFieldNumber = 1,
+  };
+  // optional .CMsgClientToGCVariantItemChangeSlotStylesResponse.EResponse response = 1 [default = k_eInternalError];
+  bool has_response() const;
+  private:
+  bool _internal_has_response() const;
+  public:
+  void clear_response();
+  ::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse response() const;
+  void set_response(::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse value);
+  private:
+  ::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse _internal_response() const;
+  void _internal_set_response(::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCVariantItemChangeSlotStylesResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    int response_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCStartRankedInterval final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCStartRankedInterval) */ {
+ public:
+  inline CMsgClientToGCStartRankedInterval() : CMsgClientToGCStartRankedInterval(nullptr) {}
+  ~CMsgClientToGCStartRankedInterval() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCStartRankedInterval(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCStartRankedInterval(const CMsgClientToGCStartRankedInterval& from);
+  CMsgClientToGCStartRankedInterval(CMsgClientToGCStartRankedInterval&& from) noexcept
+    : CMsgClientToGCStartRankedInterval() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCStartRankedInterval& operator=(const CMsgClientToGCStartRankedInterval& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCStartRankedInterval& operator=(CMsgClientToGCStartRankedInterval&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCStartRankedInterval& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCStartRankedInterval* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCStartRankedInterval*>(
+               &_CMsgClientToGCStartRankedInterval_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    179;
+
+  friend void swap(CMsgClientToGCStartRankedInterval& a, CMsgClientToGCStartRankedInterval& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCStartRankedInterval* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCStartRankedInterval* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCStartRankedInterval* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCStartRankedInterval>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCStartRankedInterval& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCStartRankedInterval& from) {
+    CMsgClientToGCStartRankedInterval::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCStartRankedInterval* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCStartRankedInterval";
+  }
+  protected:
+  explicit CMsgClientToGCStartRankedInterval(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kRankTypeFieldNumber = 1,
+    kIntervalFieldNumber = 2,
+  };
+  // optional .ECitadelRankedType rank_type = 1 [default = k_eCitadelRankedType_Invalid];
+  bool has_rank_type() const;
+  private:
+  bool _internal_has_rank_type() const;
+  public:
+  void clear_rank_type();
+  ::ECitadelRankedType rank_type() const;
+  void set_rank_type(::ECitadelRankedType value);
+  private:
+  ::ECitadelRankedType _internal_rank_type() const;
+  void _internal_set_rank_type(::ECitadelRankedType value);
+  public:
+
+  // optional uint32 interval = 2;
+  bool has_interval() const;
+  private:
+  bool _internal_has_interval() const;
+  public:
+  void clear_interval();
+  uint32_t interval() const;
+  void set_interval(uint32_t value);
+  private:
+  uint32_t _internal_interval() const;
+  void _internal_set_interval(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCStartRankedInterval)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    int rank_type_;
+    uint32_t interval_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCStartRankedIntervalResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCStartRankedIntervalResponse) */ {
+ public:
+  inline CMsgClientToGCStartRankedIntervalResponse() : CMsgClientToGCStartRankedIntervalResponse(nullptr) {}
+  ~CMsgClientToGCStartRankedIntervalResponse() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCStartRankedIntervalResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCStartRankedIntervalResponse(const CMsgClientToGCStartRankedIntervalResponse& from);
+  CMsgClientToGCStartRankedIntervalResponse(CMsgClientToGCStartRankedIntervalResponse&& from) noexcept
+    : CMsgClientToGCStartRankedIntervalResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCStartRankedIntervalResponse& operator=(const CMsgClientToGCStartRankedIntervalResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCStartRankedIntervalResponse& operator=(CMsgClientToGCStartRankedIntervalResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCStartRankedIntervalResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCStartRankedIntervalResponse* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCStartRankedIntervalResponse*>(
+               &_CMsgClientToGCStartRankedIntervalResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    180;
+
+  friend void swap(CMsgClientToGCStartRankedIntervalResponse& a, CMsgClientToGCStartRankedIntervalResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCStartRankedIntervalResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCStartRankedIntervalResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCStartRankedIntervalResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCStartRankedIntervalResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCStartRankedIntervalResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCStartRankedIntervalResponse& from) {
+    CMsgClientToGCStartRankedIntervalResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCStartRankedIntervalResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCStartRankedIntervalResponse";
+  }
+  protected:
+  explicit CMsgClientToGCStartRankedIntervalResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgClientToGCStartRankedIntervalResponse_EResponse EResponse;
+  static constexpr EResponse k_eInternalError =
+    CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eInternalError;
+  static constexpr EResponse k_eSuccess =
+    CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eSuccess;
+  static constexpr EResponse k_eIntervalInactive =
+    CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eIntervalInactive;
+  static constexpr EResponse k_eAlreadyStarted =
+    CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eAlreadyStarted;
+  static constexpr EResponse k_eNotEnoughMatchesPlayed =
+    CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eNotEnoughMatchesPlayed;
+  static constexpr EResponse k_eNotEnoughHeroesUnlocked =
+    CMsgClientToGCStartRankedIntervalResponse_EResponse_k_eNotEnoughHeroesUnlocked;
+  static inline bool EResponse_IsValid(int value) {
+    return CMsgClientToGCStartRankedIntervalResponse_EResponse_IsValid(value);
+  }
+  static constexpr EResponse EResponse_MIN =
+    CMsgClientToGCStartRankedIntervalResponse_EResponse_EResponse_MIN;
+  static constexpr EResponse EResponse_MAX =
+    CMsgClientToGCStartRankedIntervalResponse_EResponse_EResponse_MAX;
+  static constexpr int EResponse_ARRAYSIZE =
+    CMsgClientToGCStartRankedIntervalResponse_EResponse_EResponse_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EResponse_descriptor() {
+    return CMsgClientToGCStartRankedIntervalResponse_EResponse_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EResponse_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EResponse>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EResponse_Name.");
+    return CMsgClientToGCStartRankedIntervalResponse_EResponse_Name(enum_t_value);
+  }
+  static inline bool EResponse_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EResponse* value) {
+    return CMsgClientToGCStartRankedIntervalResponse_EResponse_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kResponseFieldNumber = 1,
+  };
+  // optional .CMsgClientToGCStartRankedIntervalResponse.EResponse response = 1 [default = k_eInternalError];
+  bool has_response() const;
+  private:
+  bool _internal_has_response() const;
+  public:
+  void clear_response();
+  ::CMsgClientToGCStartRankedIntervalResponse_EResponse response() const;
+  void set_response(::CMsgClientToGCStartRankedIntervalResponse_EResponse value);
+  private:
+  ::CMsgClientToGCStartRankedIntervalResponse_EResponse _internal_response() const;
+  void _internal_set_response(::CMsgClientToGCStartRankedIntervalResponse_EResponse value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCStartRankedIntervalResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    int response_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCGetInternalLeaderboards final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCGetInternalLeaderboards) */ {
+ public:
+  inline CMsgClientToGCGetInternalLeaderboards() : CMsgClientToGCGetInternalLeaderboards(nullptr) {}
+  ~CMsgClientToGCGetInternalLeaderboards() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCGetInternalLeaderboards(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCGetInternalLeaderboards(const CMsgClientToGCGetInternalLeaderboards& from);
+  CMsgClientToGCGetInternalLeaderboards(CMsgClientToGCGetInternalLeaderboards&& from) noexcept
+    : CMsgClientToGCGetInternalLeaderboards() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCGetInternalLeaderboards& operator=(const CMsgClientToGCGetInternalLeaderboards& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCGetInternalLeaderboards& operator=(CMsgClientToGCGetInternalLeaderboards&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCGetInternalLeaderboards& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCGetInternalLeaderboards* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCGetInternalLeaderboards*>(
+               &_CMsgClientToGCGetInternalLeaderboards_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    181;
+
+  friend void swap(CMsgClientToGCGetInternalLeaderboards& a, CMsgClientToGCGetInternalLeaderboards& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCGetInternalLeaderboards* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCGetInternalLeaderboards* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCGetInternalLeaderboards* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCGetInternalLeaderboards>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCGetInternalLeaderboards& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCGetInternalLeaderboards& from) {
+    CMsgClientToGCGetInternalLeaderboards::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCGetInternalLeaderboards* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCGetInternalLeaderboards";
+  }
+  protected:
+  explicit CMsgClientToGCGetInternalLeaderboards(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountIdFieldNumber = 1,
+  };
+  // optional uint32 account_id = 1;
+  bool has_account_id() const;
+  private:
+  bool _internal_has_account_id() const;
+  public:
+  void clear_account_id();
+  uint32_t account_id() const;
+  void set_account_id(uint32_t value);
+  private:
+  uint32_t _internal_account_id() const;
+  void _internal_set_account_id(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCGetInternalLeaderboards)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint32_t account_id_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch) */ {
+ public:
+  inline CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch() : CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch(nullptr) {}
+  ~CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch(const CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& from);
+  CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch(CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch&& from) noexcept
+    : CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& operator=(const CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& operator=(CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch*>(
+               &_CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    182;
+
+  friend void swap(CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& a, CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& from) {
+    CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch";
+  }
+  protected:
+  explicit CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountIdsFieldNumber = 5,
+    kHeroIdsFieldNumber = 6,
+    kMatchIdFieldNumber = 1,
+    kRoundFieldNumber = 2,
+    kDurationFieldNumber = 3,
+    kTimestampFieldNumber = 4,
+  };
+  // repeated uint32 account_ids = 5;
+  int account_ids_size() const;
+  private:
+  int _internal_account_ids_size() const;
+  public:
+  void clear_account_ids();
+  private:
+  uint32_t _internal_account_ids(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+      _internal_account_ids() const;
+  void _internal_add_account_ids(uint32_t value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+      _internal_mutable_account_ids();
+  public:
+  uint32_t account_ids(int index) const;
+  void set_account_ids(int index, uint32_t value);
+  void add_account_ids(uint32_t value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+      account_ids() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+      mutable_account_ids();
+
+  // repeated uint32 hero_ids = 6;
+  int hero_ids_size() const;
+  private:
+  int _internal_hero_ids_size() const;
+  public:
+  void clear_hero_ids();
+  private:
+  uint32_t _internal_hero_ids(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+      _internal_hero_ids() const;
+  void _internal_add_hero_ids(uint32_t value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+      _internal_mutable_hero_ids();
+  public:
+  uint32_t hero_ids(int index) const;
+  void set_hero_ids(int index, uint32_t value);
+  void add_hero_ids(uint32_t value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+      hero_ids() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+      mutable_hero_ids();
+
+  // optional uint64 match_id = 1;
+  bool has_match_id() const;
+  private:
+  bool _internal_has_match_id() const;
+  public:
+  void clear_match_id();
+  uint64_t match_id() const;
+  void set_match_id(uint64_t value);
+  private:
+  uint64_t _internal_match_id() const;
+  void _internal_set_match_id(uint64_t value);
+  public:
+
+  // optional uint32 round = 2;
+  bool has_round() const;
+  private:
+  bool _internal_has_round() const;
+  public:
+  void clear_round();
+  uint32_t round() const;
+  void set_round(uint32_t value);
+  private:
+  uint32_t _internal_round() const;
+  void _internal_set_round(uint32_t value);
+  public:
+
+  // optional uint32 duration = 3;
+  bool has_duration() const;
+  private:
+  bool _internal_has_duration() const;
+  public:
+  void clear_duration();
+  uint32_t duration() const;
+  void set_duration(uint32_t value);
+  private:
+  uint32_t _internal_duration() const;
+  void _internal_set_duration(uint32_t value);
+  public:
+
+  // optional uint32 timestamp = 4;
+  bool has_timestamp() const;
+  private:
+  bool _internal_has_timestamp() const;
+  public:
+  void clear_timestamp();
+  uint32_t timestamp() const;
+  void set_timestamp(uint32_t value);
+  private:
+  uint32_t _internal_timestamp() const;
+  void _internal_set_timestamp(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t > account_ids_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t > hero_ids_;
+    uint64_t match_id_;
+    uint32_t round_;
+    uint32_t duration_;
+    uint32_t timestamp_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCGetInternalLeaderboardsResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCGetInternalLeaderboardsResponse) */ {
+ public:
+  inline CMsgClientToGCGetInternalLeaderboardsResponse() : CMsgClientToGCGetInternalLeaderboardsResponse(nullptr) {}
+  ~CMsgClientToGCGetInternalLeaderboardsResponse() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCGetInternalLeaderboardsResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCGetInternalLeaderboardsResponse(const CMsgClientToGCGetInternalLeaderboardsResponse& from);
+  CMsgClientToGCGetInternalLeaderboardsResponse(CMsgClientToGCGetInternalLeaderboardsResponse&& from) noexcept
+    : CMsgClientToGCGetInternalLeaderboardsResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCGetInternalLeaderboardsResponse& operator=(const CMsgClientToGCGetInternalLeaderboardsResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCGetInternalLeaderboardsResponse& operator=(CMsgClientToGCGetInternalLeaderboardsResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCGetInternalLeaderboardsResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCGetInternalLeaderboardsResponse* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCGetInternalLeaderboardsResponse*>(
+               &_CMsgClientToGCGetInternalLeaderboardsResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    183;
+
+  friend void swap(CMsgClientToGCGetInternalLeaderboardsResponse& a, CMsgClientToGCGetInternalLeaderboardsResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCGetInternalLeaderboardsResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCGetInternalLeaderboardsResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCGetInternalLeaderboardsResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCGetInternalLeaderboardsResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCGetInternalLeaderboardsResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCGetInternalLeaderboardsResponse& from) {
+    CMsgClientToGCGetInternalLeaderboardsResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCGetInternalLeaderboardsResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCGetInternalLeaderboardsResponse";
+  }
+  protected:
+  explicit CMsgClientToGCGetInternalLeaderboardsResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch LeaderboardMatch;
+
+  typedef CMsgClientToGCGetInternalLeaderboardsResponse_EResponse EResponse;
+  static constexpr EResponse k_eInternalError =
+    CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_k_eInternalError;
+  static constexpr EResponse k_eSuccess =
+    CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_k_eSuccess;
+  static constexpr EResponse k_eAccessDenied =
+    CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_k_eAccessDenied;
+  static inline bool EResponse_IsValid(int value) {
+    return CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_IsValid(value);
+  }
+  static constexpr EResponse EResponse_MIN =
+    CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_EResponse_MIN;
+  static constexpr EResponse EResponse_MAX =
+    CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_EResponse_MAX;
+  static constexpr int EResponse_ARRAYSIZE =
+    CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_EResponse_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EResponse_descriptor() {
+    return CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EResponse_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EResponse>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EResponse_Name.");
+    return CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_Name(enum_t_value);
+  }
+  static inline bool EResponse_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EResponse* value) {
+    return CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kMatchesFieldNumber = 2,
+    kResponseFieldNumber = 1,
+  };
+  // repeated .CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch matches = 2;
+  int matches_size() const;
+  private:
+  int _internal_matches_size() const;
+  public:
+  void clear_matches();
+  ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* mutable_matches(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch >*
+      mutable_matches();
+  private:
+  const ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& _internal_matches(int index) const;
+  ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* _internal_add_matches();
+  public:
+  const ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& matches(int index) const;
+  ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* add_matches();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch >&
+      matches() const;
+
+  // optional .CMsgClientToGCGetInternalLeaderboardsResponse.EResponse response = 1 [default = k_eInternalError];
+  bool has_response() const;
+  private:
+  bool _internal_has_response() const;
+  public:
+  void clear_response();
+  ::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse response() const;
+  void set_response(::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse value);
+  private:
+  ::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse _internal_response() const;
+  void _internal_set_response(::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCGetInternalLeaderboardsResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch > matches_;
+    int response_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCGetLeaderboardStatus final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCGetLeaderboardStatus) */ {
+ public:
+  inline CMsgClientToGCGetLeaderboardStatus() : CMsgClientToGCGetLeaderboardStatus(nullptr) {}
+  ~CMsgClientToGCGetLeaderboardStatus() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCGetLeaderboardStatus(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCGetLeaderboardStatus(const CMsgClientToGCGetLeaderboardStatus& from);
+  CMsgClientToGCGetLeaderboardStatus(CMsgClientToGCGetLeaderboardStatus&& from) noexcept
+    : CMsgClientToGCGetLeaderboardStatus() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCGetLeaderboardStatus& operator=(const CMsgClientToGCGetLeaderboardStatus& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCGetLeaderboardStatus& operator=(CMsgClientToGCGetLeaderboardStatus&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCGetLeaderboardStatus& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCGetLeaderboardStatus* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCGetLeaderboardStatus*>(
+               &_CMsgClientToGCGetLeaderboardStatus_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    184;
+
+  friend void swap(CMsgClientToGCGetLeaderboardStatus& a, CMsgClientToGCGetLeaderboardStatus& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCGetLeaderboardStatus* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCGetLeaderboardStatus* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCGetLeaderboardStatus* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCGetLeaderboardStatus>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCGetLeaderboardStatus& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCGetLeaderboardStatus& from) {
+    CMsgClientToGCGetLeaderboardStatus::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCGetLeaderboardStatus* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCGetLeaderboardStatus";
+  }
+  protected:
+  explicit CMsgClientToGCGetLeaderboardStatus(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kLeaderboardIdFieldNumber = 1,
+  };
+  // optional uint32 leaderboard_id = 1;
+  bool has_leaderboard_id() const;
+  private:
+  bool _internal_has_leaderboard_id() const;
+  public:
+  void clear_leaderboard_id();
+  uint32_t leaderboard_id() const;
+  void set_leaderboard_id(uint32_t value);
+  private:
+  uint32_t _internal_leaderboard_id() const;
+  void _internal_set_leaderboard_id(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCGetLeaderboardStatus)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint32_t leaderboard_id_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCGetLeaderboardStatusResponse_Hero final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCGetLeaderboardStatusResponse.Hero) */ {
+ public:
+  inline CMsgClientToGCGetLeaderboardStatusResponse_Hero() : CMsgClientToGCGetLeaderboardStatusResponse_Hero(nullptr) {}
+  ~CMsgClientToGCGetLeaderboardStatusResponse_Hero() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCGetLeaderboardStatusResponse_Hero(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCGetLeaderboardStatusResponse_Hero(const CMsgClientToGCGetLeaderboardStatusResponse_Hero& from);
+  CMsgClientToGCGetLeaderboardStatusResponse_Hero(CMsgClientToGCGetLeaderboardStatusResponse_Hero&& from) noexcept
+    : CMsgClientToGCGetLeaderboardStatusResponse_Hero() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCGetLeaderboardStatusResponse_Hero& operator=(const CMsgClientToGCGetLeaderboardStatusResponse_Hero& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCGetLeaderboardStatusResponse_Hero& operator=(CMsgClientToGCGetLeaderboardStatusResponse_Hero&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCGetLeaderboardStatusResponse_Hero& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCGetLeaderboardStatusResponse_Hero* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCGetLeaderboardStatusResponse_Hero*>(
+               &_CMsgClientToGCGetLeaderboardStatusResponse_Hero_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    185;
+
+  friend void swap(CMsgClientToGCGetLeaderboardStatusResponse_Hero& a, CMsgClientToGCGetLeaderboardStatusResponse_Hero& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCGetLeaderboardStatusResponse_Hero* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCGetLeaderboardStatusResponse_Hero* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCGetLeaderboardStatusResponse_Hero* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCGetLeaderboardStatusResponse_Hero>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCGetLeaderboardStatusResponse_Hero& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCGetLeaderboardStatusResponse_Hero& from) {
+    CMsgClientToGCGetLeaderboardStatusResponse_Hero::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCGetLeaderboardStatusResponse_Hero* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCGetLeaderboardStatusResponse.Hero";
+  }
+  protected:
+  explicit CMsgClientToGCGetLeaderboardStatusResponse_Hero(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kHeroIdFieldNumber = 1,
+    kRecentMatchesFieldNumber = 2,
+    kRegionFieldNumber = 3,
+    kLifetimeWinsFieldNumber = 4,
+    kIsEligibleFieldNumber = 5,
+  };
+  // optional uint32 hero_id = 1;
+  bool has_hero_id() const;
+  private:
+  bool _internal_has_hero_id() const;
+  public:
+  void clear_hero_id();
+  uint32_t hero_id() const;
+  void set_hero_id(uint32_t value);
+  private:
+  uint32_t _internal_hero_id() const;
+  void _internal_set_hero_id(uint32_t value);
+  public:
+
+  // optional uint32 recent_matches = 2;
+  bool has_recent_matches() const;
+  private:
+  bool _internal_has_recent_matches() const;
+  public:
+  void clear_recent_matches();
+  uint32_t recent_matches() const;
+  void set_recent_matches(uint32_t value);
+  private:
+  uint32_t _internal_recent_matches() const;
+  void _internal_set_recent_matches(uint32_t value);
+  public:
+
+  // optional .ECitadelLeaderboardRegion region = 3 [default = k_ECitadelLeaderboardRegion_None];
+  bool has_region() const;
+  private:
+  bool _internal_has_region() const;
+  public:
+  void clear_region();
+  ::ECitadelLeaderboardRegion region() const;
+  void set_region(::ECitadelLeaderboardRegion value);
+  private:
+  ::ECitadelLeaderboardRegion _internal_region() const;
+  void _internal_set_region(::ECitadelLeaderboardRegion value);
+  public:
+
+  // optional uint32 lifetime_wins = 4;
+  bool has_lifetime_wins() const;
+  private:
+  bool _internal_has_lifetime_wins() const;
+  public:
+  void clear_lifetime_wins();
+  uint32_t lifetime_wins() const;
+  void set_lifetime_wins(uint32_t value);
+  private:
+  uint32_t _internal_lifetime_wins() const;
+  void _internal_set_lifetime_wins(uint32_t value);
+  public:
+
+  // optional bool is_eligible = 5;
+  bool has_is_eligible() const;
+  private:
+  bool _internal_has_is_eligible() const;
+  public:
+  void clear_is_eligible();
+  bool is_eligible() const;
+  void set_is_eligible(bool value);
+  private:
+  bool _internal_is_eligible() const;
+  void _internal_set_is_eligible(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCGetLeaderboardStatusResponse.Hero)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint32_t hero_id_;
+    uint32_t recent_matches_;
+    int region_;
+    uint32_t lifetime_wins_;
+    bool is_eligible_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCGetLeaderboardStatusResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCGetLeaderboardStatusResponse) */ {
+ public:
+  inline CMsgClientToGCGetLeaderboardStatusResponse() : CMsgClientToGCGetLeaderboardStatusResponse(nullptr) {}
+  ~CMsgClientToGCGetLeaderboardStatusResponse() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCGetLeaderboardStatusResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCGetLeaderboardStatusResponse(const CMsgClientToGCGetLeaderboardStatusResponse& from);
+  CMsgClientToGCGetLeaderboardStatusResponse(CMsgClientToGCGetLeaderboardStatusResponse&& from) noexcept
+    : CMsgClientToGCGetLeaderboardStatusResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCGetLeaderboardStatusResponse& operator=(const CMsgClientToGCGetLeaderboardStatusResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCGetLeaderboardStatusResponse& operator=(CMsgClientToGCGetLeaderboardStatusResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCGetLeaderboardStatusResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCGetLeaderboardStatusResponse* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCGetLeaderboardStatusResponse*>(
+               &_CMsgClientToGCGetLeaderboardStatusResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    186;
+
+  friend void swap(CMsgClientToGCGetLeaderboardStatusResponse& a, CMsgClientToGCGetLeaderboardStatusResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCGetLeaderboardStatusResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCGetLeaderboardStatusResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCGetLeaderboardStatusResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCGetLeaderboardStatusResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCGetLeaderboardStatusResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCGetLeaderboardStatusResponse& from) {
+    CMsgClientToGCGetLeaderboardStatusResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCGetLeaderboardStatusResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCGetLeaderboardStatusResponse";
+  }
+  protected:
+  explicit CMsgClientToGCGetLeaderboardStatusResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgClientToGCGetLeaderboardStatusResponse_Hero Hero;
+
+  typedef CMsgClientToGCGetLeaderboardStatusResponse_EResult EResult;
+  static constexpr EResult k_eInternalError =
+    CMsgClientToGCGetLeaderboardStatusResponse_EResult_k_eInternalError;
+  static constexpr EResult k_eSuccess =
+    CMsgClientToGCGetLeaderboardStatusResponse_EResult_k_eSuccess;
+  static constexpr EResult k_eTooBusy =
+    CMsgClientToGCGetLeaderboardStatusResponse_EResult_k_eTooBusy;
+  static constexpr EResult k_eRateLimited =
+    CMsgClientToGCGetLeaderboardStatusResponse_EResult_k_eRateLimited;
+  static constexpr EResult k_eInvalidLeaderboard =
+    CMsgClientToGCGetLeaderboardStatusResponse_EResult_k_eInvalidLeaderboard;
+  static inline bool EResult_IsValid(int value) {
+    return CMsgClientToGCGetLeaderboardStatusResponse_EResult_IsValid(value);
+  }
+  static constexpr EResult EResult_MIN =
+    CMsgClientToGCGetLeaderboardStatusResponse_EResult_EResult_MIN;
+  static constexpr EResult EResult_MAX =
+    CMsgClientToGCGetLeaderboardStatusResponse_EResult_EResult_MAX;
+  static constexpr int EResult_ARRAYSIZE =
+    CMsgClientToGCGetLeaderboardStatusResponse_EResult_EResult_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EResult_descriptor() {
+    return CMsgClientToGCGetLeaderboardStatusResponse_EResult_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EResult_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EResult>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EResult_Name.");
+    return CMsgClientToGCGetLeaderboardStatusResponse_EResult_Name(enum_t_value);
+  }
+  static inline bool EResult_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EResult* value) {
+    return CMsgClientToGCGetLeaderboardStatusResponse_EResult_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kHeroInfoFieldNumber = 11,
+    kResultFieldNumber = 1,
+    kRecentMatchesFieldNumber = 3,
+    kRequiredRecentMatchesFieldNumber = 4,
+    kIsEligibleFieldNumber = 2,
+    kIsRankHighEnoughFieldNumber = 7,
+    kRequiredRecentHeroMatchesFieldNumber = 5,
+    kRegionFieldNumber = 6,
+    kLifetimeMatchesFieldNumber = 8,
+    kRequiredLifetimeMatchesFieldNumber = 9,
+    kRequiredLifetimeHeroWinsFieldNumber = 10,
+    kMatchHistoryDaysFieldNumber = 12,
+  };
+  // repeated .CMsgClientToGCGetLeaderboardStatusResponse.Hero hero_info = 11;
+  int hero_info_size() const;
+  private:
+  int _internal_hero_info_size() const;
+  public:
+  void clear_hero_info();
+  ::CMsgClientToGCGetLeaderboardStatusResponse_Hero* mutable_hero_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCGetLeaderboardStatusResponse_Hero >*
+      mutable_hero_info();
+  private:
+  const ::CMsgClientToGCGetLeaderboardStatusResponse_Hero& _internal_hero_info(int index) const;
+  ::CMsgClientToGCGetLeaderboardStatusResponse_Hero* _internal_add_hero_info();
+  public:
+  const ::CMsgClientToGCGetLeaderboardStatusResponse_Hero& hero_info(int index) const;
+  ::CMsgClientToGCGetLeaderboardStatusResponse_Hero* add_hero_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCGetLeaderboardStatusResponse_Hero >&
+      hero_info() const;
+
+  // optional .CMsgClientToGCGetLeaderboardStatusResponse.EResult result = 1 [default = k_eInternalError];
+  bool has_result() const;
+  private:
+  bool _internal_has_result() const;
+  public:
+  void clear_result();
+  ::CMsgClientToGCGetLeaderboardStatusResponse_EResult result() const;
+  void set_result(::CMsgClientToGCGetLeaderboardStatusResponse_EResult value);
+  private:
+  ::CMsgClientToGCGetLeaderboardStatusResponse_EResult _internal_result() const;
+  void _internal_set_result(::CMsgClientToGCGetLeaderboardStatusResponse_EResult value);
+  public:
+
+  // optional uint32 recent_matches = 3;
+  bool has_recent_matches() const;
+  private:
+  bool _internal_has_recent_matches() const;
+  public:
+  void clear_recent_matches();
+  uint32_t recent_matches() const;
+  void set_recent_matches(uint32_t value);
+  private:
+  uint32_t _internal_recent_matches() const;
+  void _internal_set_recent_matches(uint32_t value);
+  public:
+
+  // optional uint32 required_recent_matches = 4;
+  bool has_required_recent_matches() const;
+  private:
+  bool _internal_has_required_recent_matches() const;
+  public:
+  void clear_required_recent_matches();
+  uint32_t required_recent_matches() const;
+  void set_required_recent_matches(uint32_t value);
+  private:
+  uint32_t _internal_required_recent_matches() const;
+  void _internal_set_required_recent_matches(uint32_t value);
+  public:
+
+  // optional bool is_eligible = 2;
+  bool has_is_eligible() const;
+  private:
+  bool _internal_has_is_eligible() const;
+  public:
+  void clear_is_eligible();
+  bool is_eligible() const;
+  void set_is_eligible(bool value);
+  private:
+  bool _internal_is_eligible() const;
+  void _internal_set_is_eligible(bool value);
+  public:
+
+  // optional bool is_rank_high_enough = 7;
+  bool has_is_rank_high_enough() const;
+  private:
+  bool _internal_has_is_rank_high_enough() const;
+  public:
+  void clear_is_rank_high_enough();
+  bool is_rank_high_enough() const;
+  void set_is_rank_high_enough(bool value);
+  private:
+  bool _internal_is_rank_high_enough() const;
+  void _internal_set_is_rank_high_enough(bool value);
+  public:
+
+  // optional uint32 required_recent_hero_matches = 5;
+  bool has_required_recent_hero_matches() const;
+  private:
+  bool _internal_has_required_recent_hero_matches() const;
+  public:
+  void clear_required_recent_hero_matches();
+  uint32_t required_recent_hero_matches() const;
+  void set_required_recent_hero_matches(uint32_t value);
+  private:
+  uint32_t _internal_required_recent_hero_matches() const;
+  void _internal_set_required_recent_hero_matches(uint32_t value);
+  public:
+
+  // optional .ECitadelLeaderboardRegion region = 6 [default = k_ECitadelLeaderboardRegion_None];
+  bool has_region() const;
+  private:
+  bool _internal_has_region() const;
+  public:
+  void clear_region();
+  ::ECitadelLeaderboardRegion region() const;
+  void set_region(::ECitadelLeaderboardRegion value);
+  private:
+  ::ECitadelLeaderboardRegion _internal_region() const;
+  void _internal_set_region(::ECitadelLeaderboardRegion value);
+  public:
+
+  // optional uint32 lifetime_matches = 8;
+  bool has_lifetime_matches() const;
+  private:
+  bool _internal_has_lifetime_matches() const;
+  public:
+  void clear_lifetime_matches();
+  uint32_t lifetime_matches() const;
+  void set_lifetime_matches(uint32_t value);
+  private:
+  uint32_t _internal_lifetime_matches() const;
+  void _internal_set_lifetime_matches(uint32_t value);
+  public:
+
+  // optional uint32 required_lifetime_matches = 9;
+  bool has_required_lifetime_matches() const;
+  private:
+  bool _internal_has_required_lifetime_matches() const;
+  public:
+  void clear_required_lifetime_matches();
+  uint32_t required_lifetime_matches() const;
+  void set_required_lifetime_matches(uint32_t value);
+  private:
+  uint32_t _internal_required_lifetime_matches() const;
+  void _internal_set_required_lifetime_matches(uint32_t value);
+  public:
+
+  // optional uint32 required_lifetime_hero_wins = 10;
+  bool has_required_lifetime_hero_wins() const;
+  private:
+  bool _internal_has_required_lifetime_hero_wins() const;
+  public:
+  void clear_required_lifetime_hero_wins();
+  uint32_t required_lifetime_hero_wins() const;
+  void set_required_lifetime_hero_wins(uint32_t value);
+  private:
+  uint32_t _internal_required_lifetime_hero_wins() const;
+  void _internal_set_required_lifetime_hero_wins(uint32_t value);
+  public:
+
+  // optional uint32 match_history_days = 12;
+  bool has_match_history_days() const;
+  private:
+  bool _internal_has_match_history_days() const;
+  public:
+  void clear_match_history_days();
+  uint32_t match_history_days() const;
+  void set_match_history_days(uint32_t value);
+  private:
+  uint32_t _internal_match_history_days() const;
+  void _internal_set_match_history_days(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCGetLeaderboardStatusResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCGetLeaderboardStatusResponse_Hero > hero_info_;
+    int result_;
+    uint32_t recent_matches_;
+    uint32_t required_recent_matches_;
+    bool is_eligible_;
+    bool is_rank_high_enough_;
+    uint32_t required_recent_hero_matches_;
+    int region_;
+    uint32_t lifetime_matches_;
+    uint32_t required_lifetime_matches_;
+    uint32_t required_lifetime_hero_wins_;
+    uint32_t match_history_days_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalCreate final :
+    public ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalCreate) */ {
+ public:
+  inline CMsgClientToGCCabalCreate() : CMsgClientToGCCabalCreate(nullptr) {}
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalCreate(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalCreate(const CMsgClientToGCCabalCreate& from);
+  CMsgClientToGCCabalCreate(CMsgClientToGCCabalCreate&& from) noexcept
+    : CMsgClientToGCCabalCreate() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalCreate& operator=(const CMsgClientToGCCabalCreate& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalCreate& operator=(CMsgClientToGCCabalCreate&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalCreate& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalCreate* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalCreate*>(
+               &_CMsgClientToGCCabalCreate_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    187;
+
+  friend void swap(CMsgClientToGCCabalCreate& a, CMsgClientToGCCabalCreate& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalCreate* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalCreate* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalCreate* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalCreate>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::CopyFrom;
+  inline void CopyFrom(const CMsgClientToGCCabalCreate& from) {
+    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::CopyImpl(*this, from);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::MergeFrom;
+  void MergeFrom(const CMsgClientToGCCabalCreate& from) {
+    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::MergeImpl(*this, from);
+  }
+  public:
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalCreate";
+  }
+  protected:
+  explicit CMsgClientToGCCabalCreate(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalCreate)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+  };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalCreateResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalCreateResponse) */ {
+ public:
+  inline CMsgClientToGCCabalCreateResponse() : CMsgClientToGCCabalCreateResponse(nullptr) {}
+  ~CMsgClientToGCCabalCreateResponse() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalCreateResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalCreateResponse(const CMsgClientToGCCabalCreateResponse& from);
+  CMsgClientToGCCabalCreateResponse(CMsgClientToGCCabalCreateResponse&& from) noexcept
+    : CMsgClientToGCCabalCreateResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalCreateResponse& operator=(const CMsgClientToGCCabalCreateResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalCreateResponse& operator=(CMsgClientToGCCabalCreateResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalCreateResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalCreateResponse* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalCreateResponse*>(
+               &_CMsgClientToGCCabalCreateResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    188;
+
+  friend void swap(CMsgClientToGCCabalCreateResponse& a, CMsgClientToGCCabalCreateResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalCreateResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalCreateResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalCreateResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalCreateResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalCreateResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalCreateResponse& from) {
+    CMsgClientToGCCabalCreateResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalCreateResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalCreateResponse";
+  }
+  protected:
+  explicit CMsgClientToGCCabalCreateResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgClientToGCCabalCreateResponse_EResult EResult;
+  static constexpr EResult k_eInternalError =
+    CMsgClientToGCCabalCreateResponse_EResult_k_eInternalError;
+  static constexpr EResult k_eSuccess =
+    CMsgClientToGCCabalCreateResponse_EResult_k_eSuccess;
+  static constexpr EResult k_eTooBusy =
+    CMsgClientToGCCabalCreateResponse_EResult_k_eTooBusy;
+  static constexpr EResult k_eRateLimited =
+    CMsgClientToGCCabalCreateResponse_EResult_k_eRateLimited;
+  static constexpr EResult k_eAlreadyInMaxCabals =
+    CMsgClientToGCCabalCreateResponse_EResult_k_eAlreadyInMaxCabals;
+  static inline bool EResult_IsValid(int value) {
+    return CMsgClientToGCCabalCreateResponse_EResult_IsValid(value);
+  }
+  static constexpr EResult EResult_MIN =
+    CMsgClientToGCCabalCreateResponse_EResult_EResult_MIN;
+  static constexpr EResult EResult_MAX =
+    CMsgClientToGCCabalCreateResponse_EResult_EResult_MAX;
+  static constexpr int EResult_ARRAYSIZE =
+    CMsgClientToGCCabalCreateResponse_EResult_EResult_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EResult_descriptor() {
+    return CMsgClientToGCCabalCreateResponse_EResult_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EResult_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EResult>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EResult_Name.");
+    return CMsgClientToGCCabalCreateResponse_EResult_Name(enum_t_value);
+  }
+  static inline bool EResult_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EResult* value) {
+    return CMsgClientToGCCabalCreateResponse_EResult_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCabalIdFieldNumber = 2,
+    kResultFieldNumber = 1,
+  };
+  // optional uint64 cabal_id = 2;
+  bool has_cabal_id() const;
+  private:
+  bool _internal_has_cabal_id() const;
+  public:
+  void clear_cabal_id();
+  uint64_t cabal_id() const;
+  void set_cabal_id(uint64_t value);
+  private:
+  uint64_t _internal_cabal_id() const;
+  void _internal_set_cabal_id(uint64_t value);
+  public:
+
+  // optional .CMsgClientToGCCabalCreateResponse.EResult result = 1 [default = k_eInternalError];
+  bool has_result() const;
+  private:
+  bool _internal_has_result() const;
+  public:
+  void clear_result();
+  ::CMsgClientToGCCabalCreateResponse_EResult result() const;
+  void set_result(::CMsgClientToGCCabalCreateResponse_EResult value);
+  private:
+  ::CMsgClientToGCCabalCreateResponse_EResult _internal_result() const;
+  void _internal_set_result(::CMsgClientToGCCabalCreateResponse_EResult value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalCreateResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint64_t cabal_id_;
+    int result_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalInviteAccount final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalInviteAccount) */ {
+ public:
+  inline CMsgClientToGCCabalInviteAccount() : CMsgClientToGCCabalInviteAccount(nullptr) {}
+  ~CMsgClientToGCCabalInviteAccount() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalInviteAccount(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalInviteAccount(const CMsgClientToGCCabalInviteAccount& from);
+  CMsgClientToGCCabalInviteAccount(CMsgClientToGCCabalInviteAccount&& from) noexcept
+    : CMsgClientToGCCabalInviteAccount() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalInviteAccount& operator=(const CMsgClientToGCCabalInviteAccount& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalInviteAccount& operator=(CMsgClientToGCCabalInviteAccount&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalInviteAccount& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalInviteAccount* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalInviteAccount*>(
+               &_CMsgClientToGCCabalInviteAccount_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    189;
+
+  friend void swap(CMsgClientToGCCabalInviteAccount& a, CMsgClientToGCCabalInviteAccount& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalInviteAccount* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalInviteAccount* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalInviteAccount* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalInviteAccount>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalInviteAccount& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalInviteAccount& from) {
+    CMsgClientToGCCabalInviteAccount::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalInviteAccount* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalInviteAccount";
+  }
+  protected:
+  explicit CMsgClientToGCCabalInviteAccount(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCabalIdFieldNumber = 1,
+    kAccountIdFieldNumber = 2,
+    kCancelInviteFieldNumber = 3,
+  };
+  // optional uint64 cabal_id = 1;
+  bool has_cabal_id() const;
+  private:
+  bool _internal_has_cabal_id() const;
+  public:
+  void clear_cabal_id();
+  uint64_t cabal_id() const;
+  void set_cabal_id(uint64_t value);
+  private:
+  uint64_t _internal_cabal_id() const;
+  void _internal_set_cabal_id(uint64_t value);
+  public:
+
+  // optional uint32 account_id = 2;
+  bool has_account_id() const;
+  private:
+  bool _internal_has_account_id() const;
+  public:
+  void clear_account_id();
+  uint32_t account_id() const;
+  void set_account_id(uint32_t value);
+  private:
+  uint32_t _internal_account_id() const;
+  void _internal_set_account_id(uint32_t value);
+  public:
+
+  // optional bool cancel_invite = 3;
+  bool has_cancel_invite() const;
+  private:
+  bool _internal_has_cancel_invite() const;
+  public:
+  void clear_cancel_invite();
+  bool cancel_invite() const;
+  void set_cancel_invite(bool value);
+  private:
+  bool _internal_cancel_invite() const;
+  void _internal_set_cancel_invite(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalInviteAccount)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint64_t cabal_id_;
+    uint32_t account_id_;
+    bool cancel_invite_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalInviteAccountResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalInviteAccountResponse) */ {
+ public:
+  inline CMsgClientToGCCabalInviteAccountResponse() : CMsgClientToGCCabalInviteAccountResponse(nullptr) {}
+  ~CMsgClientToGCCabalInviteAccountResponse() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalInviteAccountResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalInviteAccountResponse(const CMsgClientToGCCabalInviteAccountResponse& from);
+  CMsgClientToGCCabalInviteAccountResponse(CMsgClientToGCCabalInviteAccountResponse&& from) noexcept
+    : CMsgClientToGCCabalInviteAccountResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalInviteAccountResponse& operator=(const CMsgClientToGCCabalInviteAccountResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalInviteAccountResponse& operator=(CMsgClientToGCCabalInviteAccountResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalInviteAccountResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalInviteAccountResponse* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalInviteAccountResponse*>(
+               &_CMsgClientToGCCabalInviteAccountResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    190;
+
+  friend void swap(CMsgClientToGCCabalInviteAccountResponse& a, CMsgClientToGCCabalInviteAccountResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalInviteAccountResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalInviteAccountResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalInviteAccountResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalInviteAccountResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalInviteAccountResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalInviteAccountResponse& from) {
+    CMsgClientToGCCabalInviteAccountResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalInviteAccountResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalInviteAccountResponse";
+  }
+  protected:
+  explicit CMsgClientToGCCabalInviteAccountResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgClientToGCCabalInviteAccountResponse_EResult EResult;
+  static constexpr EResult k_eInternalError =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_k_eInternalError;
+  static constexpr EResult k_eSuccess =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_k_eSuccess;
+  static constexpr EResult k_eTooBusy =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_k_eTooBusy;
+  static constexpr EResult k_eRateLimited =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_k_eRateLimited;
+  static constexpr EResult k_eInvalidPermission =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_k_eInvalidPermission;
+  static constexpr EResult k_eTargetInMaxCabals =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_k_eTargetInMaxCabals;
+  static constexpr EResult k_eTargetAtMaxInvites =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_k_eTargetAtMaxInvites;
+  static constexpr EResult k_eTargetAlreadyInvited =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_k_eTargetAlreadyInvited;
+  static constexpr EResult k_eCabalAtMaxInvites =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_k_eCabalAtMaxInvites;
+  static constexpr EResult k_eCabalAtMaxMembers =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_k_eCabalAtMaxMembers;
+  static constexpr EResult k_eInvalidTargetAccount =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_k_eInvalidTargetAccount;
+  static constexpr EResult k_eTargetNotInvited =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_k_eTargetNotInvited;
+  static inline bool EResult_IsValid(int value) {
+    return CMsgClientToGCCabalInviteAccountResponse_EResult_IsValid(value);
+  }
+  static constexpr EResult EResult_MIN =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_EResult_MIN;
+  static constexpr EResult EResult_MAX =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_EResult_MAX;
+  static constexpr int EResult_ARRAYSIZE =
+    CMsgClientToGCCabalInviteAccountResponse_EResult_EResult_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EResult_descriptor() {
+    return CMsgClientToGCCabalInviteAccountResponse_EResult_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EResult_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EResult>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EResult_Name.");
+    return CMsgClientToGCCabalInviteAccountResponse_EResult_Name(enum_t_value);
+  }
+  static inline bool EResult_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EResult* value) {
+    return CMsgClientToGCCabalInviteAccountResponse_EResult_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kResultFieldNumber = 1,
+  };
+  // optional .CMsgClientToGCCabalInviteAccountResponse.EResult result = 1 [default = k_eInternalError];
+  bool has_result() const;
+  private:
+  bool _internal_has_result() const;
+  public:
+  void clear_result();
+  ::CMsgClientToGCCabalInviteAccountResponse_EResult result() const;
+  void set_result(::CMsgClientToGCCabalInviteAccountResponse_EResult value);
+  private:
+  ::CMsgClientToGCCabalInviteAccountResponse_EResult _internal_result() const;
+  void _internal_set_result(::CMsgClientToGCCabalInviteAccountResponse_EResult value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalInviteAccountResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    int result_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalAnswerInvite final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalAnswerInvite) */ {
+ public:
+  inline CMsgClientToGCCabalAnswerInvite() : CMsgClientToGCCabalAnswerInvite(nullptr) {}
+  ~CMsgClientToGCCabalAnswerInvite() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalAnswerInvite(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalAnswerInvite(const CMsgClientToGCCabalAnswerInvite& from);
+  CMsgClientToGCCabalAnswerInvite(CMsgClientToGCCabalAnswerInvite&& from) noexcept
+    : CMsgClientToGCCabalAnswerInvite() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalAnswerInvite& operator=(const CMsgClientToGCCabalAnswerInvite& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalAnswerInvite& operator=(CMsgClientToGCCabalAnswerInvite&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalAnswerInvite& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalAnswerInvite* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalAnswerInvite*>(
+               &_CMsgClientToGCCabalAnswerInvite_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    191;
+
+  friend void swap(CMsgClientToGCCabalAnswerInvite& a, CMsgClientToGCCabalAnswerInvite& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalAnswerInvite* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalAnswerInvite* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalAnswerInvite* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalAnswerInvite>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalAnswerInvite& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalAnswerInvite& from) {
+    CMsgClientToGCCabalAnswerInvite::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalAnswerInvite* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalAnswerInvite";
+  }
+  protected:
+  explicit CMsgClientToGCCabalAnswerInvite(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCabalIdFieldNumber = 1,
+    kAcceptedFieldNumber = 2,
+  };
+  // optional uint64 cabal_id = 1;
+  bool has_cabal_id() const;
+  private:
+  bool _internal_has_cabal_id() const;
+  public:
+  void clear_cabal_id();
+  uint64_t cabal_id() const;
+  void set_cabal_id(uint64_t value);
+  private:
+  uint64_t _internal_cabal_id() const;
+  void _internal_set_cabal_id(uint64_t value);
+  public:
+
+  // optional bool accepted = 2;
+  bool has_accepted() const;
+  private:
+  bool _internal_has_accepted() const;
+  public:
+  void clear_accepted();
+  bool accepted() const;
+  void set_accepted(bool value);
+  private:
+  bool _internal_accepted() const;
+  void _internal_set_accepted(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalAnswerInvite)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint64_t cabal_id_;
+    bool accepted_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalAnswerInviteResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalAnswerInviteResponse) */ {
+ public:
+  inline CMsgClientToGCCabalAnswerInviteResponse() : CMsgClientToGCCabalAnswerInviteResponse(nullptr) {}
+  ~CMsgClientToGCCabalAnswerInviteResponse() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalAnswerInviteResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalAnswerInviteResponse(const CMsgClientToGCCabalAnswerInviteResponse& from);
+  CMsgClientToGCCabalAnswerInviteResponse(CMsgClientToGCCabalAnswerInviteResponse&& from) noexcept
+    : CMsgClientToGCCabalAnswerInviteResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalAnswerInviteResponse& operator=(const CMsgClientToGCCabalAnswerInviteResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalAnswerInviteResponse& operator=(CMsgClientToGCCabalAnswerInviteResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalAnswerInviteResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalAnswerInviteResponse* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalAnswerInviteResponse*>(
+               &_CMsgClientToGCCabalAnswerInviteResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    192;
+
+  friend void swap(CMsgClientToGCCabalAnswerInviteResponse& a, CMsgClientToGCCabalAnswerInviteResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalAnswerInviteResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalAnswerInviteResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalAnswerInviteResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalAnswerInviteResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalAnswerInviteResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalAnswerInviteResponse& from) {
+    CMsgClientToGCCabalAnswerInviteResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalAnswerInviteResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalAnswerInviteResponse";
+  }
+  protected:
+  explicit CMsgClientToGCCabalAnswerInviteResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgClientToGCCabalAnswerInviteResponse_EResult EResult;
+  static constexpr EResult k_eInternalError =
+    CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eInternalError;
+  static constexpr EResult k_eSuccess =
+    CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eSuccess;
+  static constexpr EResult k_eTooBusy =
+    CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eTooBusy;
+  static constexpr EResult k_eRateLimited =
+    CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eRateLimited;
+  static constexpr EResult k_eInvalidPermission =
+    CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eInvalidPermission;
+  static constexpr EResult k_eAlreadyInMaxCabals =
+    CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eAlreadyInMaxCabals;
+  static constexpr EResult k_eCabalAtMaxMembers =
+    CMsgClientToGCCabalAnswerInviteResponse_EResult_k_eCabalAtMaxMembers;
+  static inline bool EResult_IsValid(int value) {
+    return CMsgClientToGCCabalAnswerInviteResponse_EResult_IsValid(value);
+  }
+  static constexpr EResult EResult_MIN =
+    CMsgClientToGCCabalAnswerInviteResponse_EResult_EResult_MIN;
+  static constexpr EResult EResult_MAX =
+    CMsgClientToGCCabalAnswerInviteResponse_EResult_EResult_MAX;
+  static constexpr int EResult_ARRAYSIZE =
+    CMsgClientToGCCabalAnswerInviteResponse_EResult_EResult_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EResult_descriptor() {
+    return CMsgClientToGCCabalAnswerInviteResponse_EResult_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EResult_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EResult>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EResult_Name.");
+    return CMsgClientToGCCabalAnswerInviteResponse_EResult_Name(enum_t_value);
+  }
+  static inline bool EResult_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EResult* value) {
+    return CMsgClientToGCCabalAnswerInviteResponse_EResult_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kResultFieldNumber = 1,
+  };
+  // optional .CMsgClientToGCCabalAnswerInviteResponse.EResult result = 1 [default = k_eInternalError];
+  bool has_result() const;
+  private:
+  bool _internal_has_result() const;
+  public:
+  void clear_result();
+  ::CMsgClientToGCCabalAnswerInviteResponse_EResult result() const;
+  void set_result(::CMsgClientToGCCabalAnswerInviteResponse_EResult value);
+  private:
+  ::CMsgClientToGCCabalAnswerInviteResponse_EResult _internal_result() const;
+  void _internal_set_result(::CMsgClientToGCCabalAnswerInviteResponse_EResult value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalAnswerInviteResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    int result_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalLeave final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalLeave) */ {
+ public:
+  inline CMsgClientToGCCabalLeave() : CMsgClientToGCCabalLeave(nullptr) {}
+  ~CMsgClientToGCCabalLeave() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalLeave(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalLeave(const CMsgClientToGCCabalLeave& from);
+  CMsgClientToGCCabalLeave(CMsgClientToGCCabalLeave&& from) noexcept
+    : CMsgClientToGCCabalLeave() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalLeave& operator=(const CMsgClientToGCCabalLeave& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalLeave& operator=(CMsgClientToGCCabalLeave&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalLeave& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalLeave* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalLeave*>(
+               &_CMsgClientToGCCabalLeave_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    193;
+
+  friend void swap(CMsgClientToGCCabalLeave& a, CMsgClientToGCCabalLeave& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalLeave* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalLeave* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalLeave* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalLeave>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalLeave& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalLeave& from) {
+    CMsgClientToGCCabalLeave::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalLeave* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalLeave";
+  }
+  protected:
+  explicit CMsgClientToGCCabalLeave(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCabalIdFieldNumber = 1,
+    kAcknowledgedLastMemberFieldNumber = 2,
+  };
+  // optional uint64 cabal_id = 1;
+  bool has_cabal_id() const;
+  private:
+  bool _internal_has_cabal_id() const;
+  public:
+  void clear_cabal_id();
+  uint64_t cabal_id() const;
+  void set_cabal_id(uint64_t value);
+  private:
+  uint64_t _internal_cabal_id() const;
+  void _internal_set_cabal_id(uint64_t value);
+  public:
+
+  // optional bool acknowledged_last_member = 2;
+  bool has_acknowledged_last_member() const;
+  private:
+  bool _internal_has_acknowledged_last_member() const;
+  public:
+  void clear_acknowledged_last_member();
+  bool acknowledged_last_member() const;
+  void set_acknowledged_last_member(bool value);
+  private:
+  bool _internal_acknowledged_last_member() const;
+  void _internal_set_acknowledged_last_member(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalLeave)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint64_t cabal_id_;
+    bool acknowledged_last_member_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalLeaveResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalLeaveResponse) */ {
+ public:
+  inline CMsgClientToGCCabalLeaveResponse() : CMsgClientToGCCabalLeaveResponse(nullptr) {}
+  ~CMsgClientToGCCabalLeaveResponse() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalLeaveResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalLeaveResponse(const CMsgClientToGCCabalLeaveResponse& from);
+  CMsgClientToGCCabalLeaveResponse(CMsgClientToGCCabalLeaveResponse&& from) noexcept
+    : CMsgClientToGCCabalLeaveResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalLeaveResponse& operator=(const CMsgClientToGCCabalLeaveResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalLeaveResponse& operator=(CMsgClientToGCCabalLeaveResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalLeaveResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalLeaveResponse* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalLeaveResponse*>(
+               &_CMsgClientToGCCabalLeaveResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    194;
+
+  friend void swap(CMsgClientToGCCabalLeaveResponse& a, CMsgClientToGCCabalLeaveResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalLeaveResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalLeaveResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalLeaveResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalLeaveResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalLeaveResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalLeaveResponse& from) {
+    CMsgClientToGCCabalLeaveResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalLeaveResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalLeaveResponse";
+  }
+  protected:
+  explicit CMsgClientToGCCabalLeaveResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgClientToGCCabalLeaveResponse_EResult EResult;
+  static constexpr EResult k_eInternalError =
+    CMsgClientToGCCabalLeaveResponse_EResult_k_eInternalError;
+  static constexpr EResult k_eSuccess =
+    CMsgClientToGCCabalLeaveResponse_EResult_k_eSuccess;
+  static constexpr EResult k_eTooBusy =
+    CMsgClientToGCCabalLeaveResponse_EResult_k_eTooBusy;
+  static constexpr EResult k_eWasLastMember =
+    CMsgClientToGCCabalLeaveResponse_EResult_k_eWasLastMember;
+  static constexpr EResult k_eNotMember =
+    CMsgClientToGCCabalLeaveResponse_EResult_k_eNotMember;
+  static inline bool EResult_IsValid(int value) {
+    return CMsgClientToGCCabalLeaveResponse_EResult_IsValid(value);
+  }
+  static constexpr EResult EResult_MIN =
+    CMsgClientToGCCabalLeaveResponse_EResult_EResult_MIN;
+  static constexpr EResult EResult_MAX =
+    CMsgClientToGCCabalLeaveResponse_EResult_EResult_MAX;
+  static constexpr int EResult_ARRAYSIZE =
+    CMsgClientToGCCabalLeaveResponse_EResult_EResult_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EResult_descriptor() {
+    return CMsgClientToGCCabalLeaveResponse_EResult_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EResult_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EResult>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EResult_Name.");
+    return CMsgClientToGCCabalLeaveResponse_EResult_Name(enum_t_value);
+  }
+  static inline bool EResult_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EResult* value) {
+    return CMsgClientToGCCabalLeaveResponse_EResult_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kResultFieldNumber = 1,
+  };
+  // optional .CMsgClientToGCCabalLeaveResponse.EResult result = 1 [default = k_eInternalError];
+  bool has_result() const;
+  private:
+  bool _internal_has_result() const;
+  public:
+  void clear_result();
+  ::CMsgClientToGCCabalLeaveResponse_EResult result() const;
+  void set_result(::CMsgClientToGCCabalLeaveResponse_EResult value);
+  private:
+  ::CMsgClientToGCCabalLeaveResponse_EResult _internal_result() const;
+  void _internal_set_result(::CMsgClientToGCCabalLeaveResponse_EResult value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalLeaveResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    int result_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalGetDetails final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalGetDetails) */ {
+ public:
+  inline CMsgClientToGCCabalGetDetails() : CMsgClientToGCCabalGetDetails(nullptr) {}
+  ~CMsgClientToGCCabalGetDetails() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalGetDetails(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalGetDetails(const CMsgClientToGCCabalGetDetails& from);
+  CMsgClientToGCCabalGetDetails(CMsgClientToGCCabalGetDetails&& from) noexcept
+    : CMsgClientToGCCabalGetDetails() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalGetDetails& operator=(const CMsgClientToGCCabalGetDetails& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalGetDetails& operator=(CMsgClientToGCCabalGetDetails&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalGetDetails& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalGetDetails* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalGetDetails*>(
+               &_CMsgClientToGCCabalGetDetails_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    195;
+
+  friend void swap(CMsgClientToGCCabalGetDetails& a, CMsgClientToGCCabalGetDetails& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalGetDetails* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalGetDetails* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalGetDetails* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalGetDetails>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalGetDetails& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalGetDetails& from) {
+    CMsgClientToGCCabalGetDetails::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalGetDetails* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalGetDetails";
+  }
+  protected:
+  explicit CMsgClientToGCCabalGetDetails(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCabalIdFieldNumber = 1,
+  };
+  // optional uint64 cabal_id = 1;
+  bool has_cabal_id() const;
+  private:
+  bool _internal_has_cabal_id() const;
+  public:
+  void clear_cabal_id();
+  uint64_t cabal_id() const;
+  void set_cabal_id(uint64_t value);
+  private:
+  uint64_t _internal_cabal_id() const;
+  void _internal_set_cabal_id(uint64_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalGetDetails)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint64_t cabal_id_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalGetDetailsResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalGetDetailsResponse) */ {
+ public:
+  inline CMsgClientToGCCabalGetDetailsResponse() : CMsgClientToGCCabalGetDetailsResponse(nullptr) {}
+  ~CMsgClientToGCCabalGetDetailsResponse() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalGetDetailsResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalGetDetailsResponse(const CMsgClientToGCCabalGetDetailsResponse& from);
+  CMsgClientToGCCabalGetDetailsResponse(CMsgClientToGCCabalGetDetailsResponse&& from) noexcept
+    : CMsgClientToGCCabalGetDetailsResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalGetDetailsResponse& operator=(const CMsgClientToGCCabalGetDetailsResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalGetDetailsResponse& operator=(CMsgClientToGCCabalGetDetailsResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalGetDetailsResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalGetDetailsResponse* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalGetDetailsResponse*>(
+               &_CMsgClientToGCCabalGetDetailsResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    196;
+
+  friend void swap(CMsgClientToGCCabalGetDetailsResponse& a, CMsgClientToGCCabalGetDetailsResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalGetDetailsResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalGetDetailsResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalGetDetailsResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalGetDetailsResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalGetDetailsResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalGetDetailsResponse& from) {
+    CMsgClientToGCCabalGetDetailsResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalGetDetailsResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalGetDetailsResponse";
+  }
+  protected:
+  explicit CMsgClientToGCCabalGetDetailsResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgClientToGCCabalGetDetailsResponse_EResult EResult;
+  static constexpr EResult k_eInternalError =
+    CMsgClientToGCCabalGetDetailsResponse_EResult_k_eInternalError;
+  static constexpr EResult k_eSuccess =
+    CMsgClientToGCCabalGetDetailsResponse_EResult_k_eSuccess;
+  static constexpr EResult k_eTooBusy =
+    CMsgClientToGCCabalGetDetailsResponse_EResult_k_eTooBusy;
+  static constexpr EResult k_eRateLimited =
+    CMsgClientToGCCabalGetDetailsResponse_EResult_k_eRateLimited;
+  static constexpr EResult k_eInvalidPermission =
+    CMsgClientToGCCabalGetDetailsResponse_EResult_k_eInvalidPermission;
+  static inline bool EResult_IsValid(int value) {
+    return CMsgClientToGCCabalGetDetailsResponse_EResult_IsValid(value);
+  }
+  static constexpr EResult EResult_MIN =
+    CMsgClientToGCCabalGetDetailsResponse_EResult_EResult_MIN;
+  static constexpr EResult EResult_MAX =
+    CMsgClientToGCCabalGetDetailsResponse_EResult_EResult_MAX;
+  static constexpr int EResult_ARRAYSIZE =
+    CMsgClientToGCCabalGetDetailsResponse_EResult_EResult_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EResult_descriptor() {
+    return CMsgClientToGCCabalGetDetailsResponse_EResult_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EResult_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EResult>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EResult_Name.");
+    return CMsgClientToGCCabalGetDetailsResponse_EResult_Name(enum_t_value);
+  }
+  static inline bool EResult_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EResult* value) {
+    return CMsgClientToGCCabalGetDetailsResponse_EResult_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCabalInfoFieldNumber = 2,
+    kResultFieldNumber = 1,
+  };
+  // optional .CMsgCitadelCabal cabal_info = 2;
+  bool has_cabal_info() const;
+  private:
+  bool _internal_has_cabal_info() const;
+  public:
+  void clear_cabal_info();
+  const ::CMsgCitadelCabal& cabal_info() const;
+  PROTOBUF_NODISCARD ::CMsgCitadelCabal* release_cabal_info();
+  ::CMsgCitadelCabal* mutable_cabal_info();
+  void set_allocated_cabal_info(::CMsgCitadelCabal* cabal_info);
+  private:
+  const ::CMsgCitadelCabal& _internal_cabal_info() const;
+  ::CMsgCitadelCabal* _internal_mutable_cabal_info();
+  public:
+  void unsafe_arena_set_allocated_cabal_info(
+      ::CMsgCitadelCabal* cabal_info);
+  ::CMsgCitadelCabal* unsafe_arena_release_cabal_info();
+
+  // optional .CMsgClientToGCCabalGetDetailsResponse.EResult result = 1 [default = k_eInternalError];
+  bool has_result() const;
+  private:
+  bool _internal_has_result() const;
+  public:
+  void clear_result();
+  ::CMsgClientToGCCabalGetDetailsResponse_EResult result() const;
+  void set_result(::CMsgClientToGCCabalGetDetailsResponse_EResult value);
+  private:
+  ::CMsgClientToGCCabalGetDetailsResponse_EResult _internal_result() const;
+  void _internal_set_result(::CMsgClientToGCCabalGetDetailsResponse_EResult value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalGetDetailsResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::CMsgCitadelCabal* cabal_info_;
+    int result_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgGCToClientCabalUpdated final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgGCToClientCabalUpdated) */ {
+ public:
+  inline CMsgGCToClientCabalUpdated() : CMsgGCToClientCabalUpdated(nullptr) {}
+  ~CMsgGCToClientCabalUpdated() override;
+  explicit PROTOBUF_CONSTEXPR CMsgGCToClientCabalUpdated(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgGCToClientCabalUpdated(const CMsgGCToClientCabalUpdated& from);
+  CMsgGCToClientCabalUpdated(CMsgGCToClientCabalUpdated&& from) noexcept
+    : CMsgGCToClientCabalUpdated() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgGCToClientCabalUpdated& operator=(const CMsgGCToClientCabalUpdated& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgGCToClientCabalUpdated& operator=(CMsgGCToClientCabalUpdated&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgGCToClientCabalUpdated& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgGCToClientCabalUpdated* internal_default_instance() {
+    return reinterpret_cast<const CMsgGCToClientCabalUpdated*>(
+               &_CMsgGCToClientCabalUpdated_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    197;
+
+  friend void swap(CMsgGCToClientCabalUpdated& a, CMsgGCToClientCabalUpdated& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgGCToClientCabalUpdated* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgGCToClientCabalUpdated* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgGCToClientCabalUpdated* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgGCToClientCabalUpdated>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgGCToClientCabalUpdated& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgGCToClientCabalUpdated& from) {
+    CMsgGCToClientCabalUpdated::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgGCToClientCabalUpdated* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgGCToClientCabalUpdated";
+  }
+  protected:
+  explicit CMsgGCToClientCabalUpdated(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCabalInfoFieldNumber = 1,
+  };
+  // optional .CMsgCitadelCabal cabal_info = 1;
+  bool has_cabal_info() const;
+  private:
+  bool _internal_has_cabal_info() const;
+  public:
+  void clear_cabal_info();
+  const ::CMsgCitadelCabal& cabal_info() const;
+  PROTOBUF_NODISCARD ::CMsgCitadelCabal* release_cabal_info();
+  ::CMsgCitadelCabal* mutable_cabal_info();
+  void set_allocated_cabal_info(::CMsgCitadelCabal* cabal_info);
+  private:
+  const ::CMsgCitadelCabal& _internal_cabal_info() const;
+  ::CMsgCitadelCabal* _internal_mutable_cabal_info();
+  public:
+  void unsafe_arena_set_allocated_cabal_info(
+      ::CMsgCitadelCabal* cabal_info);
+  ::CMsgCitadelCabal* unsafe_arena_release_cabal_info();
+
+  // @@protoc_insertion_point(class_scope:CMsgGCToClientCabalUpdated)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::CMsgCitadelCabal* cabal_info_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalKickPlayer final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalKickPlayer) */ {
+ public:
+  inline CMsgClientToGCCabalKickPlayer() : CMsgClientToGCCabalKickPlayer(nullptr) {}
+  ~CMsgClientToGCCabalKickPlayer() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalKickPlayer(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalKickPlayer(const CMsgClientToGCCabalKickPlayer& from);
+  CMsgClientToGCCabalKickPlayer(CMsgClientToGCCabalKickPlayer&& from) noexcept
+    : CMsgClientToGCCabalKickPlayer() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalKickPlayer& operator=(const CMsgClientToGCCabalKickPlayer& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalKickPlayer& operator=(CMsgClientToGCCabalKickPlayer&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalKickPlayer& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalKickPlayer* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalKickPlayer*>(
+               &_CMsgClientToGCCabalKickPlayer_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    198;
+
+  friend void swap(CMsgClientToGCCabalKickPlayer& a, CMsgClientToGCCabalKickPlayer& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalKickPlayer* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalKickPlayer* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalKickPlayer* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalKickPlayer>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalKickPlayer& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalKickPlayer& from) {
+    CMsgClientToGCCabalKickPlayer::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalKickPlayer* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalKickPlayer";
+  }
+  protected:
+  explicit CMsgClientToGCCabalKickPlayer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCabalIdFieldNumber = 1,
+    kKickAccountIdFieldNumber = 2,
+  };
+  // optional uint64 cabal_id = 1;
+  bool has_cabal_id() const;
+  private:
+  bool _internal_has_cabal_id() const;
+  public:
+  void clear_cabal_id();
+  uint64_t cabal_id() const;
+  void set_cabal_id(uint64_t value);
+  private:
+  uint64_t _internal_cabal_id() const;
+  void _internal_set_cabal_id(uint64_t value);
+  public:
+
+  // optional uint32 kick_account_id = 2;
+  bool has_kick_account_id() const;
+  private:
+  bool _internal_has_kick_account_id() const;
+  public:
+  void clear_kick_account_id();
+  uint32_t kick_account_id() const;
+  void set_kick_account_id(uint32_t value);
+  private:
+  uint32_t _internal_kick_account_id() const;
+  void _internal_set_kick_account_id(uint32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalKickPlayer)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint64_t cabal_id_;
+    uint32_t kick_account_id_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalKickPlayerResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalKickPlayerResponse) */ {
+ public:
+  inline CMsgClientToGCCabalKickPlayerResponse() : CMsgClientToGCCabalKickPlayerResponse(nullptr) {}
+  ~CMsgClientToGCCabalKickPlayerResponse() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalKickPlayerResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalKickPlayerResponse(const CMsgClientToGCCabalKickPlayerResponse& from);
+  CMsgClientToGCCabalKickPlayerResponse(CMsgClientToGCCabalKickPlayerResponse&& from) noexcept
+    : CMsgClientToGCCabalKickPlayerResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalKickPlayerResponse& operator=(const CMsgClientToGCCabalKickPlayerResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalKickPlayerResponse& operator=(CMsgClientToGCCabalKickPlayerResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalKickPlayerResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalKickPlayerResponse* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalKickPlayerResponse*>(
+               &_CMsgClientToGCCabalKickPlayerResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    199;
+
+  friend void swap(CMsgClientToGCCabalKickPlayerResponse& a, CMsgClientToGCCabalKickPlayerResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalKickPlayerResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalKickPlayerResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalKickPlayerResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalKickPlayerResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalKickPlayerResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalKickPlayerResponse& from) {
+    CMsgClientToGCCabalKickPlayerResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalKickPlayerResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalKickPlayerResponse";
+  }
+  protected:
+  explicit CMsgClientToGCCabalKickPlayerResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CMsgClientToGCCabalKickPlayerResponse_EResult EResult;
+  static constexpr EResult k_eInternalError =
+    CMsgClientToGCCabalKickPlayerResponse_EResult_k_eInternalError;
+  static constexpr EResult k_eSuccess =
+    CMsgClientToGCCabalKickPlayerResponse_EResult_k_eSuccess;
+  static constexpr EResult k_eInvalidPermission =
+    CMsgClientToGCCabalKickPlayerResponse_EResult_k_eInvalidPermission;
+  static constexpr EResult k_eInvalidTarget =
+    CMsgClientToGCCabalKickPlayerResponse_EResult_k_eInvalidTarget;
+  static inline bool EResult_IsValid(int value) {
+    return CMsgClientToGCCabalKickPlayerResponse_EResult_IsValid(value);
+  }
+  static constexpr EResult EResult_MIN =
+    CMsgClientToGCCabalKickPlayerResponse_EResult_EResult_MIN;
+  static constexpr EResult EResult_MAX =
+    CMsgClientToGCCabalKickPlayerResponse_EResult_EResult_MAX;
+  static constexpr int EResult_ARRAYSIZE =
+    CMsgClientToGCCabalKickPlayerResponse_EResult_EResult_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EResult_descriptor() {
+    return CMsgClientToGCCabalKickPlayerResponse_EResult_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EResult_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EResult>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EResult_Name.");
+    return CMsgClientToGCCabalKickPlayerResponse_EResult_Name(enum_t_value);
+  }
+  static inline bool EResult_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EResult* value) {
+    return CMsgClientToGCCabalKickPlayerResponse_EResult_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kResultFieldNumber = 1,
+  };
+  // optional .CMsgClientToGCCabalKickPlayerResponse.EResult result = 1 [default = k_eInternalError];
+  bool has_result() const;
+  private:
+  bool _internal_has_result() const;
+  public:
+  void clear_result();
+  ::CMsgClientToGCCabalKickPlayerResponse_EResult result() const;
+  void set_result(::CMsgClientToGCCabalKickPlayerResponse_EResult value);
+  private:
+  ::CMsgClientToGCCabalKickPlayerResponse_EResult _internal_result() const;
+  void _internal_set_result(::CMsgClientToGCCabalKickPlayerResponse_EResult value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalKickPlayerResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    int result_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalGetMatchHistory final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalGetMatchHistory) */ {
+ public:
+  inline CMsgClientToGCCabalGetMatchHistory() : CMsgClientToGCCabalGetMatchHistory(nullptr) {}
+  ~CMsgClientToGCCabalGetMatchHistory() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalGetMatchHistory(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalGetMatchHistory(const CMsgClientToGCCabalGetMatchHistory& from);
+  CMsgClientToGCCabalGetMatchHistory(CMsgClientToGCCabalGetMatchHistory&& from) noexcept
+    : CMsgClientToGCCabalGetMatchHistory() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalGetMatchHistory& operator=(const CMsgClientToGCCabalGetMatchHistory& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalGetMatchHistory& operator=(CMsgClientToGCCabalGetMatchHistory&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalGetMatchHistory& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalGetMatchHistory* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalGetMatchHistory*>(
+               &_CMsgClientToGCCabalGetMatchHistory_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    200;
+
+  friend void swap(CMsgClientToGCCabalGetMatchHistory& a, CMsgClientToGCCabalGetMatchHistory& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalGetMatchHistory* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalGetMatchHistory* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalGetMatchHistory* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalGetMatchHistory>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalGetMatchHistory& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalGetMatchHistory& from) {
+    CMsgClientToGCCabalGetMatchHistory::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalGetMatchHistory* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalGetMatchHistory";
+  }
+  protected:
+  explicit CMsgClientToGCCabalGetMatchHistory(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCabalIdFieldNumber = 1,
+    kCursorFieldNumber = 3,
+    kCabalMmTierFieldNumber = 2,
+  };
+  // optional uint64 cabal_id = 1;
+  bool has_cabal_id() const;
+  private:
+  bool _internal_has_cabal_id() const;
+  public:
+  void clear_cabal_id();
+  uint64_t cabal_id() const;
+  void set_cabal_id(uint64_t value);
+  private:
+  uint64_t _internal_cabal_id() const;
+  void _internal_set_cabal_id(uint64_t value);
+  public:
+
+  // optional uint64 cursor = 3;
+  bool has_cursor() const;
+  private:
+  bool _internal_has_cursor() const;
+  public:
+  void clear_cursor();
+  uint64_t cursor() const;
+  void set_cursor(uint64_t value);
+  private:
+  uint64_t _internal_cursor() const;
+  void _internal_set_cursor(uint64_t value);
+  public:
+
+  // optional .ECitadelCabalMMTier cabal_mm_tier = 2 [default = k_eCabalMMTier_Invalid];
+  bool has_cabal_mm_tier() const;
+  private:
+  bool _internal_has_cabal_mm_tier() const;
+  public:
+  void clear_cabal_mm_tier();
+  ::ECitadelCabalMMTier cabal_mm_tier() const;
+  void set_cabal_mm_tier(::ECitadelCabalMMTier value);
+  private:
+  ::ECitadelCabalMMTier _internal_cabal_mm_tier() const;
+  void _internal_set_cabal_mm_tier(::ECitadelCabalMMTier value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalGetMatchHistory)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint64_t cabal_id_;
+    uint64_t cursor_;
+    int cabal_mm_tier_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMsgClientToGCCabalGetMatchHistoryResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMsgClientToGCCabalGetMatchHistoryResponse) */ {
+ public:
+  inline CMsgClientToGCCabalGetMatchHistoryResponse() : CMsgClientToGCCabalGetMatchHistoryResponse(nullptr) {}
+  ~CMsgClientToGCCabalGetMatchHistoryResponse() override;
+  explicit PROTOBUF_CONSTEXPR CMsgClientToGCCabalGetMatchHistoryResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CMsgClientToGCCabalGetMatchHistoryResponse(const CMsgClientToGCCabalGetMatchHistoryResponse& from);
+  CMsgClientToGCCabalGetMatchHistoryResponse(CMsgClientToGCCabalGetMatchHistoryResponse&& from) noexcept
+    : CMsgClientToGCCabalGetMatchHistoryResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CMsgClientToGCCabalGetMatchHistoryResponse& operator=(const CMsgClientToGCCabalGetMatchHistoryResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMsgClientToGCCabalGetMatchHistoryResponse& operator=(CMsgClientToGCCabalGetMatchHistoryResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CMsgClientToGCCabalGetMatchHistoryResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CMsgClientToGCCabalGetMatchHistoryResponse* internal_default_instance() {
+    return reinterpret_cast<const CMsgClientToGCCabalGetMatchHistoryResponse*>(
+               &_CMsgClientToGCCabalGetMatchHistoryResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    201;
+
+  friend void swap(CMsgClientToGCCabalGetMatchHistoryResponse& a, CMsgClientToGCCabalGetMatchHistoryResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMsgClientToGCCabalGetMatchHistoryResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMsgClientToGCCabalGetMatchHistoryResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CMsgClientToGCCabalGetMatchHistoryResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CMsgClientToGCCabalGetMatchHistoryResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CMsgClientToGCCabalGetMatchHistoryResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const CMsgClientToGCCabalGetMatchHistoryResponse& from) {
+    CMsgClientToGCCabalGetMatchHistoryResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMsgClientToGCCabalGetMatchHistoryResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMsgClientToGCCabalGetMatchHistoryResponse";
+  }
+  protected:
+  explicit CMsgClientToGCCabalGetMatchHistoryResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kHistoryResponseFieldNumber = 1,
+  };
+  // optional .CMsgClientToGCGetMatchHistoryResponse history_response = 1;
+  bool has_history_response() const;
+  private:
+  bool _internal_has_history_response() const;
+  public:
+  void clear_history_response();
+  const ::CMsgClientToGCGetMatchHistoryResponse& history_response() const;
+  PROTOBUF_NODISCARD ::CMsgClientToGCGetMatchHistoryResponse* release_history_response();
+  ::CMsgClientToGCGetMatchHistoryResponse* mutable_history_response();
+  void set_allocated_history_response(::CMsgClientToGCGetMatchHistoryResponse* history_response);
+  private:
+  const ::CMsgClientToGCGetMatchHistoryResponse& _internal_history_response() const;
+  ::CMsgClientToGCGetMatchHistoryResponse* _internal_mutable_history_response();
+  public:
+  void unsafe_arena_set_allocated_history_response(
+      ::CMsgClientToGCGetMatchHistoryResponse* history_response);
+  ::CMsgClientToGCGetMatchHistoryResponse* unsafe_arena_release_history_response();
+
+  // @@protoc_insertion_point(class_scope:CMsgClientToGCCabalGetMatchHistoryResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    ::CMsgClientToGCGetMatchHistoryResponse* history_response_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_citadel_5fgcmessages_5fclient_2eproto;
+};
 // ===================================================================
 
 
@@ -37218,6 +44768,1114 @@ class CMsgClientToGCSetAccountPrivacySettingResponse final :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
+// CSORankedProgress
+
+// optional uint32 account_id = 1 [(.key_field) = true];
+inline bool CSORankedProgress::_internal_has_account_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_account_id() const {
+  return _internal_has_account_id();
+}
+inline void CSORankedProgress::clear_account_id() {
+  _impl_.account_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint32_t CSORankedProgress::_internal_account_id() const {
+  return _impl_.account_id_;
+}
+inline uint32_t CSORankedProgress::account_id() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.account_id)
+  return _internal_account_id();
+}
+inline void CSORankedProgress::_internal_set_account_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.account_id_ = value;
+}
+inline void CSORankedProgress::set_account_id(uint32_t value) {
+  _internal_set_account_id(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.account_id)
+}
+
+// optional .ECitadelRankedType rank_type = 2 [default = k_eCitadelRankedType_Invalid, (.key_field) = true];
+inline bool CSORankedProgress::_internal_has_rank_type() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_rank_type() const {
+  return _internal_has_rank_type();
+}
+inline void CSORankedProgress::clear_rank_type() {
+  _impl_.rank_type_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline ::ECitadelRankedType CSORankedProgress::_internal_rank_type() const {
+  return static_cast< ::ECitadelRankedType >(_impl_.rank_type_);
+}
+inline ::ECitadelRankedType CSORankedProgress::rank_type() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.rank_type)
+  return _internal_rank_type();
+}
+inline void CSORankedProgress::_internal_set_rank_type(::ECitadelRankedType value) {
+  assert(::ECitadelRankedType_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.rank_type_ = value;
+}
+inline void CSORankedProgress::set_rank_type(::ECitadelRankedType value) {
+  _internal_set_rank_type(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.rank_type)
+}
+
+// optional uint32 rank_interval = 3 [(.key_field) = true];
+inline bool CSORankedProgress::_internal_has_rank_interval() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_rank_interval() const {
+  return _internal_has_rank_interval();
+}
+inline void CSORankedProgress::clear_rank_interval() {
+  _impl_.rank_interval_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline uint32_t CSORankedProgress::_internal_rank_interval() const {
+  return _impl_.rank_interval_;
+}
+inline uint32_t CSORankedProgress::rank_interval() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.rank_interval)
+  return _internal_rank_interval();
+}
+inline void CSORankedProgress::_internal_set_rank_interval(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.rank_interval_ = value;
+}
+inline void CSORankedProgress::set_rank_interval(uint32_t value) {
+  _internal_set_rank_interval(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.rank_interval)
+}
+
+// optional uint32 progress = 4;
+inline bool CSORankedProgress::_internal_has_progress() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_progress() const {
+  return _internal_has_progress();
+}
+inline void CSORankedProgress::clear_progress() {
+  _impl_.progress_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline uint32_t CSORankedProgress::_internal_progress() const {
+  return _impl_.progress_;
+}
+inline uint32_t CSORankedProgress::progress() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.progress)
+  return _internal_progress();
+}
+inline void CSORankedProgress::_internal_set_progress(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.progress_ = value;
+}
+inline void CSORankedProgress::set_progress(uint32_t value) {
+  _internal_set_progress(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.progress)
+}
+
+// optional uint32 max_progress = 5;
+inline bool CSORankedProgress::_internal_has_max_progress() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_max_progress() const {
+  return _internal_has_max_progress();
+}
+inline void CSORankedProgress::clear_max_progress() {
+  _impl_.max_progress_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000010u;
+}
+inline uint32_t CSORankedProgress::_internal_max_progress() const {
+  return _impl_.max_progress_;
+}
+inline uint32_t CSORankedProgress::max_progress() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.max_progress)
+  return _internal_max_progress();
+}
+inline void CSORankedProgress::_internal_set_max_progress(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_.max_progress_ = value;
+}
+inline void CSORankedProgress::set_max_progress(uint32_t value) {
+  _internal_set_max_progress(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.max_progress)
+}
+
+// optional uint32 rank = 6;
+inline bool CSORankedProgress::_internal_has_rank() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_rank() const {
+  return _internal_has_rank();
+}
+inline void CSORankedProgress::clear_rank() {
+  _impl_.rank_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000020u;
+}
+inline uint32_t CSORankedProgress::_internal_rank() const {
+  return _impl_.rank_;
+}
+inline uint32_t CSORankedProgress::rank() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.rank)
+  return _internal_rank();
+}
+inline void CSORankedProgress::_internal_set_rank(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000020u;
+  _impl_.rank_ = value;
+}
+inline void CSORankedProgress::set_rank(uint32_t value) {
+  _internal_set_rank(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.rank)
+}
+
+// optional uint32 max_rank = 7;
+inline bool CSORankedProgress::_internal_has_max_rank() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_max_rank() const {
+  return _internal_has_max_rank();
+}
+inline void CSORankedProgress::clear_max_rank() {
+  _impl_.max_rank_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000040u;
+}
+inline uint32_t CSORankedProgress::_internal_max_rank() const {
+  return _impl_.max_rank_;
+}
+inline uint32_t CSORankedProgress::max_rank() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.max_rank)
+  return _internal_max_rank();
+}
+inline void CSORankedProgress::_internal_set_max_rank(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000040u;
+  _impl_.max_rank_ = value;
+}
+inline void CSORankedProgress::set_max_rank(uint32_t value) {
+  _internal_set_max_rank(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.max_rank)
+}
+
+// optional uint32 leaderboard_rank = 8;
+inline bool CSORankedProgress::_internal_has_leaderboard_rank() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_leaderboard_rank() const {
+  return _internal_has_leaderboard_rank();
+}
+inline void CSORankedProgress::clear_leaderboard_rank() {
+  _impl_.leaderboard_rank_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000080u;
+}
+inline uint32_t CSORankedProgress::_internal_leaderboard_rank() const {
+  return _impl_.leaderboard_rank_;
+}
+inline uint32_t CSORankedProgress::leaderboard_rank() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.leaderboard_rank)
+  return _internal_leaderboard_rank();
+}
+inline void CSORankedProgress::_internal_set_leaderboard_rank(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000080u;
+  _impl_.leaderboard_rank_ = value;
+}
+inline void CSORankedProgress::set_leaderboard_rank(uint32_t value) {
+  _internal_set_leaderboard_rank(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.leaderboard_rank)
+}
+
+// optional uint32 max_leaderboard_rank = 9;
+inline bool CSORankedProgress::_internal_has_max_leaderboard_rank() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000100u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_max_leaderboard_rank() const {
+  return _internal_has_max_leaderboard_rank();
+}
+inline void CSORankedProgress::clear_max_leaderboard_rank() {
+  _impl_.max_leaderboard_rank_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000100u;
+}
+inline uint32_t CSORankedProgress::_internal_max_leaderboard_rank() const {
+  return _impl_.max_leaderboard_rank_;
+}
+inline uint32_t CSORankedProgress::max_leaderboard_rank() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.max_leaderboard_rank)
+  return _internal_max_leaderboard_rank();
+}
+inline void CSORankedProgress::_internal_set_max_leaderboard_rank(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000100u;
+  _impl_.max_leaderboard_rank_ = value;
+}
+inline void CSORankedProgress::set_max_leaderboard_rank(uint32_t value) {
+  _internal_set_max_leaderboard_rank(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.max_leaderboard_rank)
+}
+
+// optional uint32 demote_protect_games = 10;
+inline bool CSORankedProgress::_internal_has_demote_protect_games() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000200u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_demote_protect_games() const {
+  return _internal_has_demote_protect_games();
+}
+inline void CSORankedProgress::clear_demote_protect_games() {
+  _impl_.demote_protect_games_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000200u;
+}
+inline uint32_t CSORankedProgress::_internal_demote_protect_games() const {
+  return _impl_.demote_protect_games_;
+}
+inline uint32_t CSORankedProgress::demote_protect_games() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.demote_protect_games)
+  return _internal_demote_protect_games();
+}
+inline void CSORankedProgress::_internal_set_demote_protect_games(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000200u;
+  _impl_.demote_protect_games_ = value;
+}
+inline void CSORankedProgress::set_demote_protect_games(uint32_t value) {
+  _internal_set_demote_protect_games(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.demote_protect_games)
+}
+
+// optional uint32 calibrate_games = 11;
+inline bool CSORankedProgress::_internal_has_calibrate_games() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000400u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_calibrate_games() const {
+  return _internal_has_calibrate_games();
+}
+inline void CSORankedProgress::clear_calibrate_games() {
+  _impl_.calibrate_games_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000400u;
+}
+inline uint32_t CSORankedProgress::_internal_calibrate_games() const {
+  return _impl_.calibrate_games_;
+}
+inline uint32_t CSORankedProgress::calibrate_games() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.calibrate_games)
+  return _internal_calibrate_games();
+}
+inline void CSORankedProgress::_internal_set_calibrate_games(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000400u;
+  _impl_.calibrate_games_ = value;
+}
+inline void CSORankedProgress::set_calibrate_games(uint32_t value) {
+  _internal_set_calibrate_games(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.calibrate_games)
+}
+
+// optional uint32 win_bit_mask = 12;
+inline bool CSORankedProgress::_internal_has_win_bit_mask() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000800u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_win_bit_mask() const {
+  return _internal_has_win_bit_mask();
+}
+inline void CSORankedProgress::clear_win_bit_mask() {
+  _impl_.win_bit_mask_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000800u;
+}
+inline uint32_t CSORankedProgress::_internal_win_bit_mask() const {
+  return _impl_.win_bit_mask_;
+}
+inline uint32_t CSORankedProgress::win_bit_mask() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.win_bit_mask)
+  return _internal_win_bit_mask();
+}
+inline void CSORankedProgress::_internal_set_win_bit_mask(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000800u;
+  _impl_.win_bit_mask_ = value;
+}
+inline void CSORankedProgress::set_win_bit_mask(uint32_t value) {
+  _internal_set_win_bit_mask(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.win_bit_mask)
+}
+
+// optional uint32 match_count = 13;
+inline bool CSORankedProgress::_internal_has_match_count() const {
+  bool value = (_impl_._has_bits_[0] & 0x00001000u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_match_count() const {
+  return _internal_has_match_count();
+}
+inline void CSORankedProgress::clear_match_count() {
+  _impl_.match_count_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00001000u;
+}
+inline uint32_t CSORankedProgress::_internal_match_count() const {
+  return _impl_.match_count_;
+}
+inline uint32_t CSORankedProgress::match_count() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.match_count)
+  return _internal_match_count();
+}
+inline void CSORankedProgress::_internal_set_match_count(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00001000u;
+  _impl_.match_count_ = value;
+}
+inline void CSORankedProgress::set_match_count(uint32_t value) {
+  _internal_set_match_count(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.match_count)
+}
+
+// optional uint32 last_match_hero_id = 14;
+inline bool CSORankedProgress::_internal_has_last_match_hero_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00002000u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_last_match_hero_id() const {
+  return _internal_has_last_match_hero_id();
+}
+inline void CSORankedProgress::clear_last_match_hero_id() {
+  _impl_.last_match_hero_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00002000u;
+}
+inline uint32_t CSORankedProgress::_internal_last_match_hero_id() const {
+  return _impl_.last_match_hero_id_;
+}
+inline uint32_t CSORankedProgress::last_match_hero_id() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.last_match_hero_id)
+  return _internal_last_match_hero_id();
+}
+inline void CSORankedProgress::_internal_set_last_match_hero_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00002000u;
+  _impl_.last_match_hero_id_ = value;
+}
+inline void CSORankedProgress::set_last_match_hero_id(uint32_t value) {
+  _internal_set_last_match_hero_id(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.last_match_hero_id)
+}
+
+// optional .EPlayerMatchOutcome last_match_outcome = 15 [default = k_EPlayerMatchOutcome_Invalid];
+inline bool CSORankedProgress::_internal_has_last_match_outcome() const {
+  bool value = (_impl_._has_bits_[0] & 0x00004000u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_last_match_outcome() const {
+  return _internal_has_last_match_outcome();
+}
+inline void CSORankedProgress::clear_last_match_outcome() {
+  _impl_.last_match_outcome_ = 0;
+  _impl_._has_bits_[0] &= ~0x00004000u;
+}
+inline ::EPlayerMatchOutcome CSORankedProgress::_internal_last_match_outcome() const {
+  return static_cast< ::EPlayerMatchOutcome >(_impl_.last_match_outcome_);
+}
+inline ::EPlayerMatchOutcome CSORankedProgress::last_match_outcome() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.last_match_outcome)
+  return _internal_last_match_outcome();
+}
+inline void CSORankedProgress::_internal_set_last_match_outcome(::EPlayerMatchOutcome value) {
+  assert(::EPlayerMatchOutcome_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00004000u;
+  _impl_.last_match_outcome_ = value;
+}
+inline void CSORankedProgress::set_last_match_outcome(::EPlayerMatchOutcome value) {
+  _internal_set_last_match_outcome(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.last_match_outcome)
+}
+
+// optional uint32 last_match_kills = 16;
+inline bool CSORankedProgress::_internal_has_last_match_kills() const {
+  bool value = (_impl_._has_bits_[0] & 0x00008000u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_last_match_kills() const {
+  return _internal_has_last_match_kills();
+}
+inline void CSORankedProgress::clear_last_match_kills() {
+  _impl_.last_match_kills_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00008000u;
+}
+inline uint32_t CSORankedProgress::_internal_last_match_kills() const {
+  return _impl_.last_match_kills_;
+}
+inline uint32_t CSORankedProgress::last_match_kills() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.last_match_kills)
+  return _internal_last_match_kills();
+}
+inline void CSORankedProgress::_internal_set_last_match_kills(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00008000u;
+  _impl_.last_match_kills_ = value;
+}
+inline void CSORankedProgress::set_last_match_kills(uint32_t value) {
+  _internal_set_last_match_kills(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.last_match_kills)
+}
+
+// optional uint32 last_match_deaths = 17;
+inline bool CSORankedProgress::_internal_has_last_match_deaths() const {
+  bool value = (_impl_._has_bits_[0] & 0x00010000u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_last_match_deaths() const {
+  return _internal_has_last_match_deaths();
+}
+inline void CSORankedProgress::clear_last_match_deaths() {
+  _impl_.last_match_deaths_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00010000u;
+}
+inline uint32_t CSORankedProgress::_internal_last_match_deaths() const {
+  return _impl_.last_match_deaths_;
+}
+inline uint32_t CSORankedProgress::last_match_deaths() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.last_match_deaths)
+  return _internal_last_match_deaths();
+}
+inline void CSORankedProgress::_internal_set_last_match_deaths(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00010000u;
+  _impl_.last_match_deaths_ = value;
+}
+inline void CSORankedProgress::set_last_match_deaths(uint32_t value) {
+  _internal_set_last_match_deaths(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.last_match_deaths)
+}
+
+// optional uint32 last_match_assists = 18;
+inline bool CSORankedProgress::_internal_has_last_match_assists() const {
+  bool value = (_impl_._has_bits_[0] & 0x00020000u) != 0;
+  return value;
+}
+inline bool CSORankedProgress::has_last_match_assists() const {
+  return _internal_has_last_match_assists();
+}
+inline void CSORankedProgress::clear_last_match_assists() {
+  _impl_.last_match_assists_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00020000u;
+}
+inline uint32_t CSORankedProgress::_internal_last_match_assists() const {
+  return _impl_.last_match_assists_;
+}
+inline uint32_t CSORankedProgress::last_match_assists() const {
+  // @@protoc_insertion_point(field_get:CSORankedProgress.last_match_assists)
+  return _internal_last_match_assists();
+}
+inline void CSORankedProgress::_internal_set_last_match_assists(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00020000u;
+  _impl_.last_match_assists_ = value;
+}
+inline void CSORankedProgress::set_last_match_assists(uint32_t value) {
+  _internal_set_last_match_assists(value);
+  // @@protoc_insertion_point(field_set:CSORankedProgress.last_match_assists)
+}
+
+// -------------------------------------------------------------------
+
+// CSOAccountCabalMembership
+
+// optional uint32 account_id = 1 [(.key_field) = true];
+inline bool CSOAccountCabalMembership::_internal_has_account_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CSOAccountCabalMembership::has_account_id() const {
+  return _internal_has_account_id();
+}
+inline void CSOAccountCabalMembership::clear_account_id() {
+  _impl_.account_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CSOAccountCabalMembership::_internal_account_id() const {
+  return _impl_.account_id_;
+}
+inline uint32_t CSOAccountCabalMembership::account_id() const {
+  // @@protoc_insertion_point(field_get:CSOAccountCabalMembership.account_id)
+  return _internal_account_id();
+}
+inline void CSOAccountCabalMembership::_internal_set_account_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.account_id_ = value;
+}
+inline void CSOAccountCabalMembership::set_account_id(uint32_t value) {
+  _internal_set_account_id(value);
+  // @@protoc_insertion_point(field_set:CSOAccountCabalMembership.account_id)
+}
+
+// optional uint64 cabal_id = 2 [(.key_field) = true];
+inline bool CSOAccountCabalMembership::_internal_has_cabal_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CSOAccountCabalMembership::has_cabal_id() const {
+  return _internal_has_cabal_id();
+}
+inline void CSOAccountCabalMembership::clear_cabal_id() {
+  _impl_.cabal_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint64_t CSOAccountCabalMembership::_internal_cabal_id() const {
+  return _impl_.cabal_id_;
+}
+inline uint64_t CSOAccountCabalMembership::cabal_id() const {
+  // @@protoc_insertion_point(field_get:CSOAccountCabalMembership.cabal_id)
+  return _internal_cabal_id();
+}
+inline void CSOAccountCabalMembership::_internal_set_cabal_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.cabal_id_ = value;
+}
+inline void CSOAccountCabalMembership::set_cabal_id(uint64_t value) {
+  _internal_set_cabal_id(value);
+  // @@protoc_insertion_point(field_set:CSOAccountCabalMembership.cabal_id)
+}
+
+// optional uint32 state = 3;
+inline bool CSOAccountCabalMembership::_internal_has_state() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CSOAccountCabalMembership::has_state() const {
+  return _internal_has_state();
+}
+inline void CSOAccountCabalMembership::clear_state() {
+  _impl_.state_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline uint32_t CSOAccountCabalMembership::_internal_state() const {
+  return _impl_.state_;
+}
+inline uint32_t CSOAccountCabalMembership::state() const {
+  // @@protoc_insertion_point(field_get:CSOAccountCabalMembership.state)
+  return _internal_state();
+}
+inline void CSOAccountCabalMembership::_internal_set_state(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.state_ = value;
+}
+inline void CSOAccountCabalMembership::set_state(uint32_t value) {
+  _internal_set_state(value);
+  // @@protoc_insertion_point(field_set:CSOAccountCabalMembership.state)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgCitadelCabal_MMStats
+
+// optional .ECitadelCabalMMTier mm_tier = 1 [default = k_eCabalMMTier_Invalid];
+inline bool CMsgCitadelCabal_MMStats::_internal_has_mm_tier() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgCitadelCabal_MMStats::has_mm_tier() const {
+  return _internal_has_mm_tier();
+}
+inline void CMsgCitadelCabal_MMStats::clear_mm_tier() {
+  _impl_.mm_tier_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::ECitadelCabalMMTier CMsgCitadelCabal_MMStats::_internal_mm_tier() const {
+  return static_cast< ::ECitadelCabalMMTier >(_impl_.mm_tier_);
+}
+inline ::ECitadelCabalMMTier CMsgCitadelCabal_MMStats::mm_tier() const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.MMStats.mm_tier)
+  return _internal_mm_tier();
+}
+inline void CMsgCitadelCabal_MMStats::_internal_set_mm_tier(::ECitadelCabalMMTier value) {
+  assert(::ECitadelCabalMMTier_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.mm_tier_ = value;
+}
+inline void CMsgCitadelCabal_MMStats::set_mm_tier(::ECitadelCabalMMTier value) {
+  _internal_set_mm_tier(value);
+  // @@protoc_insertion_point(field_set:CMsgCitadelCabal.MMStats.mm_tier)
+}
+
+// optional uint32 wins = 2;
+inline bool CMsgCitadelCabal_MMStats::_internal_has_wins() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgCitadelCabal_MMStats::has_wins() const {
+  return _internal_has_wins();
+}
+inline void CMsgCitadelCabal_MMStats::clear_wins() {
+  _impl_.wins_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CMsgCitadelCabal_MMStats::_internal_wins() const {
+  return _impl_.wins_;
+}
+inline uint32_t CMsgCitadelCabal_MMStats::wins() const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.MMStats.wins)
+  return _internal_wins();
+}
+inline void CMsgCitadelCabal_MMStats::_internal_set_wins(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.wins_ = value;
+}
+inline void CMsgCitadelCabal_MMStats::set_wins(uint32_t value) {
+  _internal_set_wins(value);
+  // @@protoc_insertion_point(field_set:CMsgCitadelCabal.MMStats.wins)
+}
+
+// optional uint32 matches = 3;
+inline bool CMsgCitadelCabal_MMStats::_internal_has_matches() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CMsgCitadelCabal_MMStats::has_matches() const {
+  return _internal_has_matches();
+}
+inline void CMsgCitadelCabal_MMStats::clear_matches() {
+  _impl_.matches_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline uint32_t CMsgCitadelCabal_MMStats::_internal_matches() const {
+  return _impl_.matches_;
+}
+inline uint32_t CMsgCitadelCabal_MMStats::matches() const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.MMStats.matches)
+  return _internal_matches();
+}
+inline void CMsgCitadelCabal_MMStats::_internal_set_matches(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.matches_ = value;
+}
+inline void CMsgCitadelCabal_MMStats::set_matches(uint32_t value) {
+  _internal_set_matches(value);
+  // @@protoc_insertion_point(field_set:CMsgCitadelCabal.MMStats.matches)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgCitadelCabal_Member
+
+// optional uint32 account_id = 1;
+inline bool CMsgCitadelCabal_Member::_internal_has_account_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgCitadelCabal_Member::has_account_id() const {
+  return _internal_has_account_id();
+}
+inline void CMsgCitadelCabal_Member::clear_account_id() {
+  _impl_.account_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint32_t CMsgCitadelCabal_Member::_internal_account_id() const {
+  return _impl_.account_id_;
+}
+inline uint32_t CMsgCitadelCabal_Member::account_id() const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.Member.account_id)
+  return _internal_account_id();
+}
+inline void CMsgCitadelCabal_Member::_internal_set_account_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.account_id_ = value;
+}
+inline void CMsgCitadelCabal_Member::set_account_id(uint32_t value) {
+  _internal_set_account_id(value);
+  // @@protoc_insertion_point(field_set:CMsgCitadelCabal.Member.account_id)
+}
+
+// optional .CMsgCitadelCabal.EMemberState member_state = 2 [default = k_eMemberState_Left];
+inline bool CMsgCitadelCabal_Member::_internal_has_member_state() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgCitadelCabal_Member::has_member_state() const {
+  return _internal_has_member_state();
+}
+inline void CMsgCitadelCabal_Member::clear_member_state() {
+  _impl_.member_state_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline ::CMsgCitadelCabal_EMemberState CMsgCitadelCabal_Member::_internal_member_state() const {
+  return static_cast< ::CMsgCitadelCabal_EMemberState >(_impl_.member_state_);
+}
+inline ::CMsgCitadelCabal_EMemberState CMsgCitadelCabal_Member::member_state() const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.Member.member_state)
+  return _internal_member_state();
+}
+inline void CMsgCitadelCabal_Member::_internal_set_member_state(::CMsgCitadelCabal_EMemberState value) {
+  assert(::CMsgCitadelCabal_EMemberState_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.member_state_ = value;
+}
+inline void CMsgCitadelCabal_Member::set_member_state(::CMsgCitadelCabal_EMemberState value) {
+  _internal_set_member_state(value);
+  // @@protoc_insertion_point(field_set:CMsgCitadelCabal.Member.member_state)
+}
+
+// optional uint32 time_stamp = 3;
+inline bool CMsgCitadelCabal_Member::_internal_has_time_stamp() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CMsgCitadelCabal_Member::has_time_stamp() const {
+  return _internal_has_time_stamp();
+}
+inline void CMsgCitadelCabal_Member::clear_time_stamp() {
+  _impl_.time_stamp_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline uint32_t CMsgCitadelCabal_Member::_internal_time_stamp() const {
+  return _impl_.time_stamp_;
+}
+inline uint32_t CMsgCitadelCabal_Member::time_stamp() const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.Member.time_stamp)
+  return _internal_time_stamp();
+}
+inline void CMsgCitadelCabal_Member::_internal_set_time_stamp(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.time_stamp_ = value;
+}
+inline void CMsgCitadelCabal_Member::set_time_stamp(uint32_t value) {
+  _internal_set_time_stamp(value);
+  // @@protoc_insertion_point(field_set:CMsgCitadelCabal.Member.time_stamp)
+}
+
+// optional uint32 wins = 4;
+inline bool CMsgCitadelCabal_Member::_internal_has_wins() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CMsgCitadelCabal_Member::has_wins() const {
+  return _internal_has_wins();
+}
+inline void CMsgCitadelCabal_Member::clear_wins() {
+  _impl_.wins_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline uint32_t CMsgCitadelCabal_Member::_internal_wins() const {
+  return _impl_.wins_;
+}
+inline uint32_t CMsgCitadelCabal_Member::wins() const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.Member.wins)
+  return _internal_wins();
+}
+inline void CMsgCitadelCabal_Member::_internal_set_wins(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.wins_ = value;
+}
+inline void CMsgCitadelCabal_Member::set_wins(uint32_t value) {
+  _internal_set_wins(value);
+  // @@protoc_insertion_point(field_set:CMsgCitadelCabal.Member.wins)
+}
+
+// optional uint32 matches = 5;
+inline bool CMsgCitadelCabal_Member::_internal_has_matches() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  return value;
+}
+inline bool CMsgCitadelCabal_Member::has_matches() const {
+  return _internal_has_matches();
+}
+inline void CMsgCitadelCabal_Member::clear_matches() {
+  _impl_.matches_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000010u;
+}
+inline uint32_t CMsgCitadelCabal_Member::_internal_matches() const {
+  return _impl_.matches_;
+}
+inline uint32_t CMsgCitadelCabal_Member::matches() const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.Member.matches)
+  return _internal_matches();
+}
+inline void CMsgCitadelCabal_Member::_internal_set_matches(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_.matches_ = value;
+}
+inline void CMsgCitadelCabal_Member::set_matches(uint32_t value) {
+  _internal_set_matches(value);
+  // @@protoc_insertion_point(field_set:CMsgCitadelCabal.Member.matches)
+}
+
+// repeated .CMsgCitadelCabal.MMStats mm_stats = 6;
+inline int CMsgCitadelCabal_Member::_internal_mm_stats_size() const {
+  return _impl_.mm_stats_.size();
+}
+inline int CMsgCitadelCabal_Member::mm_stats_size() const {
+  return _internal_mm_stats_size();
+}
+inline void CMsgCitadelCabal_Member::clear_mm_stats() {
+  _impl_.mm_stats_.Clear();
+}
+inline ::CMsgCitadelCabal_MMStats* CMsgCitadelCabal_Member::mutable_mm_stats(int index) {
+  // @@protoc_insertion_point(field_mutable:CMsgCitadelCabal.Member.mm_stats)
+  return _impl_.mm_stats_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_MMStats >*
+CMsgCitadelCabal_Member::mutable_mm_stats() {
+  // @@protoc_insertion_point(field_mutable_list:CMsgCitadelCabal.Member.mm_stats)
+  return &_impl_.mm_stats_;
+}
+inline const ::CMsgCitadelCabal_MMStats& CMsgCitadelCabal_Member::_internal_mm_stats(int index) const {
+  return _impl_.mm_stats_.Get(index);
+}
+inline const ::CMsgCitadelCabal_MMStats& CMsgCitadelCabal_Member::mm_stats(int index) const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.Member.mm_stats)
+  return _internal_mm_stats(index);
+}
+inline ::CMsgCitadelCabal_MMStats* CMsgCitadelCabal_Member::_internal_add_mm_stats() {
+  return _impl_.mm_stats_.Add();
+}
+inline ::CMsgCitadelCabal_MMStats* CMsgCitadelCabal_Member::add_mm_stats() {
+  ::CMsgCitadelCabal_MMStats* _add = _internal_add_mm_stats();
+  // @@protoc_insertion_point(field_add:CMsgCitadelCabal.Member.mm_stats)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_MMStats >&
+CMsgCitadelCabal_Member::mm_stats() const {
+  // @@protoc_insertion_point(field_list:CMsgCitadelCabal.Member.mm_stats)
+  return _impl_.mm_stats_;
+}
+
+// -------------------------------------------------------------------
+
+// CMsgCitadelCabal
+
+// optional uint64 cabal_id = 1;
+inline bool CMsgCitadelCabal::_internal_has_cabal_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgCitadelCabal::has_cabal_id() const {
+  return _internal_has_cabal_id();
+}
+inline void CMsgCitadelCabal::clear_cabal_id() {
+  _impl_.cabal_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint64_t CMsgCitadelCabal::_internal_cabal_id() const {
+  return _impl_.cabal_id_;
+}
+inline uint64_t CMsgCitadelCabal::cabal_id() const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.cabal_id)
+  return _internal_cabal_id();
+}
+inline void CMsgCitadelCabal::_internal_set_cabal_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.cabal_id_ = value;
+}
+inline void CMsgCitadelCabal::set_cabal_id(uint64_t value) {
+  _internal_set_cabal_id(value);
+  // @@protoc_insertion_point(field_set:CMsgCitadelCabal.cabal_id)
+}
+
+// optional string cabal_name = 2;
+inline bool CMsgCitadelCabal::_internal_has_cabal_name() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgCitadelCabal::has_cabal_name() const {
+  return _internal_has_cabal_name();
+}
+inline void CMsgCitadelCabal::clear_cabal_name() {
+  _impl_.cabal_name_.ClearToEmpty();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline const std::string& CMsgCitadelCabal::cabal_name() const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.cabal_name)
+  return _internal_cabal_name();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void CMsgCitadelCabal::set_cabal_name(ArgT0&& arg0, ArgT... args) {
+ _impl_._has_bits_[0] |= 0x00000001u;
+ _impl_.cabal_name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:CMsgCitadelCabal.cabal_name)
+}
+inline std::string* CMsgCitadelCabal::mutable_cabal_name() {
+  std::string* _s = _internal_mutable_cabal_name();
+  // @@protoc_insertion_point(field_mutable:CMsgCitadelCabal.cabal_name)
+  return _s;
+}
+inline const std::string& CMsgCitadelCabal::_internal_cabal_name() const {
+  return _impl_.cabal_name_.Get();
+}
+inline void CMsgCitadelCabal::_internal_set_cabal_name(const std::string& value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.cabal_name_.Set(value, GetArenaForAllocation());
+}
+inline std::string* CMsgCitadelCabal::_internal_mutable_cabal_name() {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  return _impl_.cabal_name_.Mutable(GetArenaForAllocation());
+}
+inline std::string* CMsgCitadelCabal::release_cabal_name() {
+  // @@protoc_insertion_point(field_release:CMsgCitadelCabal.cabal_name)
+  if (!_internal_has_cabal_name()) {
+    return nullptr;
+  }
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  auto* p = _impl_.cabal_name_.Release();
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (_impl_.cabal_name_.IsDefault()) {
+    _impl_.cabal_name_.Set("", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  return p;
+}
+inline void CMsgCitadelCabal::set_allocated_cabal_name(std::string* cabal_name) {
+  if (cabal_name != nullptr) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  _impl_.cabal_name_.SetAllocated(cabal_name, GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (_impl_.cabal_name_.IsDefault()) {
+    _impl_.cabal_name_.Set("", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:CMsgCitadelCabal.cabal_name)
+}
+
+// optional uint32 created_time = 3;
+inline bool CMsgCitadelCabal::_internal_has_created_time() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CMsgCitadelCabal::has_created_time() const {
+  return _internal_has_created_time();
+}
+inline void CMsgCitadelCabal::clear_created_time() {
+  _impl_.created_time_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline uint32_t CMsgCitadelCabal::_internal_created_time() const {
+  return _impl_.created_time_;
+}
+inline uint32_t CMsgCitadelCabal::created_time() const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.created_time)
+  return _internal_created_time();
+}
+inline void CMsgCitadelCabal::_internal_set_created_time(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.created_time_ = value;
+}
+inline void CMsgCitadelCabal::set_created_time(uint32_t value) {
+  _internal_set_created_time(value);
+  // @@protoc_insertion_point(field_set:CMsgCitadelCabal.created_time)
+}
+
+// optional uint32 created_by = 4;
+inline bool CMsgCitadelCabal::_internal_has_created_by() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CMsgCitadelCabal::has_created_by() const {
+  return _internal_has_created_by();
+}
+inline void CMsgCitadelCabal::clear_created_by() {
+  _impl_.created_by_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline uint32_t CMsgCitadelCabal::_internal_created_by() const {
+  return _impl_.created_by_;
+}
+inline uint32_t CMsgCitadelCabal::created_by() const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.created_by)
+  return _internal_created_by();
+}
+inline void CMsgCitadelCabal::_internal_set_created_by(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.created_by_ = value;
+}
+inline void CMsgCitadelCabal::set_created_by(uint32_t value) {
+  _internal_set_created_by(value);
+  // @@protoc_insertion_point(field_set:CMsgCitadelCabal.created_by)
+}
+
+// repeated .CMsgCitadelCabal.Member members = 5;
+inline int CMsgCitadelCabal::_internal_members_size() const {
+  return _impl_.members_.size();
+}
+inline int CMsgCitadelCabal::members_size() const {
+  return _internal_members_size();
+}
+inline void CMsgCitadelCabal::clear_members() {
+  _impl_.members_.Clear();
+}
+inline ::CMsgCitadelCabal_Member* CMsgCitadelCabal::mutable_members(int index) {
+  // @@protoc_insertion_point(field_mutable:CMsgCitadelCabal.members)
+  return _impl_.members_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_Member >*
+CMsgCitadelCabal::mutable_members() {
+  // @@protoc_insertion_point(field_mutable_list:CMsgCitadelCabal.members)
+  return &_impl_.members_;
+}
+inline const ::CMsgCitadelCabal_Member& CMsgCitadelCabal::_internal_members(int index) const {
+  return _impl_.members_.Get(index);
+}
+inline const ::CMsgCitadelCabal_Member& CMsgCitadelCabal::members(int index) const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.members)
+  return _internal_members(index);
+}
+inline ::CMsgCitadelCabal_Member* CMsgCitadelCabal::_internal_add_members() {
+  return _impl_.members_.Add();
+}
+inline ::CMsgCitadelCabal_Member* CMsgCitadelCabal::add_members() {
+  ::CMsgCitadelCabal_Member* _add = _internal_add_members();
+  // @@protoc_insertion_point(field_add:CMsgCitadelCabal.members)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_Member >&
+CMsgCitadelCabal::members() const {
+  // @@protoc_insertion_point(field_list:CMsgCitadelCabal.members)
+  return _impl_.members_;
+}
+
+// repeated .CMsgCitadelCabal.MMStats mm_stats = 6;
+inline int CMsgCitadelCabal::_internal_mm_stats_size() const {
+  return _impl_.mm_stats_.size();
+}
+inline int CMsgCitadelCabal::mm_stats_size() const {
+  return _internal_mm_stats_size();
+}
+inline void CMsgCitadelCabal::clear_mm_stats() {
+  _impl_.mm_stats_.Clear();
+}
+inline ::CMsgCitadelCabal_MMStats* CMsgCitadelCabal::mutable_mm_stats(int index) {
+  // @@protoc_insertion_point(field_mutable:CMsgCitadelCabal.mm_stats)
+  return _impl_.mm_stats_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_MMStats >*
+CMsgCitadelCabal::mutable_mm_stats() {
+  // @@protoc_insertion_point(field_mutable_list:CMsgCitadelCabal.mm_stats)
+  return &_impl_.mm_stats_;
+}
+inline const ::CMsgCitadelCabal_MMStats& CMsgCitadelCabal::_internal_mm_stats(int index) const {
+  return _impl_.mm_stats_.Get(index);
+}
+inline const ::CMsgCitadelCabal_MMStats& CMsgCitadelCabal::mm_stats(int index) const {
+  // @@protoc_insertion_point(field_get:CMsgCitadelCabal.mm_stats)
+  return _internal_mm_stats(index);
+}
+inline ::CMsgCitadelCabal_MMStats* CMsgCitadelCabal::_internal_add_mm_stats() {
+  return _impl_.mm_stats_.Add();
+}
+inline ::CMsgCitadelCabal_MMStats* CMsgCitadelCabal::add_mm_stats() {
+  ::CMsgCitadelCabal_MMStats* _add = _internal_add_mm_stats();
+  // @@protoc_insertion_point(field_add:CMsgCitadelCabal.mm_stats)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgCitadelCabal_MMStats >&
+CMsgCitadelCabal::mm_stats() const {
+  // @@protoc_insertion_point(field_list:CMsgCitadelCabal.mm_stats)
+  return _impl_.mm_stats_;
+}
+
+// -------------------------------------------------------------------
+
 // CSOGameAccountClient
 
 // optional uint32 account_id = 1 [(.key_field) = true];
@@ -37584,37 +46242,9 @@ inline void CSOGameAccountClient::set_report_ban_until(uint32_t value) {
   // @@protoc_insertion_point(field_set:CSOGameAccountClient.report_ban_until)
 }
 
-// optional uint32 ranked_badge_level = 14;
-inline bool CSOGameAccountClient::_internal_has_ranked_badge_level() const {
-  bool value = (_impl_._has_bits_[0] & 0x00002000u) != 0;
-  return value;
-}
-inline bool CSOGameAccountClient::has_ranked_badge_level() const {
-  return _internal_has_ranked_badge_level();
-}
-inline void CSOGameAccountClient::clear_ranked_badge_level() {
-  _impl_.ranked_badge_level_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00002000u;
-}
-inline uint32_t CSOGameAccountClient::_internal_ranked_badge_level() const {
-  return _impl_.ranked_badge_level_;
-}
-inline uint32_t CSOGameAccountClient::ranked_badge_level() const {
-  // @@protoc_insertion_point(field_get:CSOGameAccountClient.ranked_badge_level)
-  return _internal_ranked_badge_level();
-}
-inline void CSOGameAccountClient::_internal_set_ranked_badge_level(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00002000u;
-  _impl_.ranked_badge_level_ = value;
-}
-inline void CSOGameAccountClient::set_ranked_badge_level(uint32_t value) {
-  _internal_set_ranked_badge_level(value);
-  // @@protoc_insertion_point(field_set:CSOGameAccountClient.ranked_badge_level)
-}
-
 // optional uint32 priority_tokens = 15;
 inline bool CSOGameAccountClient::_internal_has_priority_tokens() const {
-  bool value = (_impl_._has_bits_[0] & 0x00004000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00002000u) != 0;
   return value;
 }
 inline bool CSOGameAccountClient::has_priority_tokens() const {
@@ -37622,7 +46252,7 @@ inline bool CSOGameAccountClient::has_priority_tokens() const {
 }
 inline void CSOGameAccountClient::clear_priority_tokens() {
   _impl_.priority_tokens_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00004000u;
+  _impl_._has_bits_[0] &= ~0x00002000u;
 }
 inline uint32_t CSOGameAccountClient::_internal_priority_tokens() const {
   return _impl_.priority_tokens_;
@@ -37632,7 +46262,7 @@ inline uint32_t CSOGameAccountClient::priority_tokens() const {
   return _internal_priority_tokens();
 }
 inline void CSOGameAccountClient::_internal_set_priority_tokens(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00004000u;
+  _impl_._has_bits_[0] |= 0x00002000u;
   _impl_.priority_tokens_ = value;
 }
 inline void CSOGameAccountClient::set_priority_tokens(uint32_t value) {
@@ -37642,7 +46272,7 @@ inline void CSOGameAccountClient::set_priority_tokens(uint32_t value) {
 
 // optional uint32 priority_token_progress = 16;
 inline bool CSOGameAccountClient::_internal_has_priority_token_progress() const {
-  bool value = (_impl_._has_bits_[0] & 0x00008000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00004000u) != 0;
   return value;
 }
 inline bool CSOGameAccountClient::has_priority_token_progress() const {
@@ -37650,7 +46280,7 @@ inline bool CSOGameAccountClient::has_priority_token_progress() const {
 }
 inline void CSOGameAccountClient::clear_priority_token_progress() {
   _impl_.priority_token_progress_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00008000u;
+  _impl_._has_bits_[0] &= ~0x00004000u;
 }
 inline uint32_t CSOGameAccountClient::_internal_priority_token_progress() const {
   return _impl_.priority_token_progress_;
@@ -37660,7 +46290,7 @@ inline uint32_t CSOGameAccountClient::priority_token_progress() const {
   return _internal_priority_token_progress();
 }
 inline void CSOGameAccountClient::_internal_set_priority_token_progress(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00008000u;
+  _impl_._has_bits_[0] |= 0x00004000u;
   _impl_.priority_token_progress_ = value;
 }
 inline void CSOGameAccountClient::set_priority_token_progress(uint32_t value) {
@@ -37670,7 +46300,7 @@ inline void CSOGameAccountClient::set_priority_token_progress(uint32_t value) {
 
 // optional uint32 priority_tokens_earned = 17;
 inline bool CSOGameAccountClient::_internal_has_priority_tokens_earned() const {
-  bool value = (_impl_._has_bits_[0] & 0x00010000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00008000u) != 0;
   return value;
 }
 inline bool CSOGameAccountClient::has_priority_tokens_earned() const {
@@ -37678,7 +46308,7 @@ inline bool CSOGameAccountClient::has_priority_tokens_earned() const {
 }
 inline void CSOGameAccountClient::clear_priority_tokens_earned() {
   _impl_.priority_tokens_earned_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00010000u;
+  _impl_._has_bits_[0] &= ~0x00008000u;
 }
 inline uint32_t CSOGameAccountClient::_internal_priority_tokens_earned() const {
   return _impl_.priority_tokens_earned_;
@@ -37688,7 +46318,7 @@ inline uint32_t CSOGameAccountClient::priority_tokens_earned() const {
   return _internal_priority_tokens_earned();
 }
 inline void CSOGameAccountClient::_internal_set_priority_tokens_earned(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00010000u;
+  _impl_._has_bits_[0] |= 0x00008000u;
   _impl_.priority_tokens_earned_ = value;
 }
 inline void CSOGameAccountClient::set_priority_tokens_earned(uint32_t value) {
@@ -37698,7 +46328,7 @@ inline void CSOGameAccountClient::set_priority_tokens_earned(uint32_t value) {
 
 // optional uint32 brawl_wins = 18;
 inline bool CSOGameAccountClient::_internal_has_brawl_wins() const {
-  bool value = (_impl_._has_bits_[0] & 0x00020000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00010000u) != 0;
   return value;
 }
 inline bool CSOGameAccountClient::has_brawl_wins() const {
@@ -37706,7 +46336,7 @@ inline bool CSOGameAccountClient::has_brawl_wins() const {
 }
 inline void CSOGameAccountClient::clear_brawl_wins() {
   _impl_.brawl_wins_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00020000u;
+  _impl_._has_bits_[0] &= ~0x00010000u;
 }
 inline uint32_t CSOGameAccountClient::_internal_brawl_wins() const {
   return _impl_.brawl_wins_;
@@ -37716,7 +46346,7 @@ inline uint32_t CSOGameAccountClient::brawl_wins() const {
   return _internal_brawl_wins();
 }
 inline void CSOGameAccountClient::_internal_set_brawl_wins(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00020000u;
+  _impl_._has_bits_[0] |= 0x00010000u;
   _impl_.brawl_wins_ = value;
 }
 inline void CSOGameAccountClient::set_brawl_wins(uint32_t value) {
@@ -37726,7 +46356,7 @@ inline void CSOGameAccountClient::set_brawl_wins(uint32_t value) {
 
 // optional uint32 brawl_losses = 19;
 inline bool CSOGameAccountClient::_internal_has_brawl_losses() const {
-  bool value = (_impl_._has_bits_[0] & 0x00040000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00020000u) != 0;
   return value;
 }
 inline bool CSOGameAccountClient::has_brawl_losses() const {
@@ -37734,7 +46364,7 @@ inline bool CSOGameAccountClient::has_brawl_losses() const {
 }
 inline void CSOGameAccountClient::clear_brawl_losses() {
   _impl_.brawl_losses_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00040000u;
+  _impl_._has_bits_[0] &= ~0x00020000u;
 }
 inline uint32_t CSOGameAccountClient::_internal_brawl_losses() const {
   return _impl_.brawl_losses_;
@@ -37744,7 +46374,7 @@ inline uint32_t CSOGameAccountClient::brawl_losses() const {
   return _internal_brawl_losses();
 }
 inline void CSOGameAccountClient::_internal_set_brawl_losses(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00040000u;
+  _impl_._has_bits_[0] |= 0x00020000u;
   _impl_.brawl_losses_ = value;
 }
 inline void CSOGameAccountClient::set_brawl_losses(uint32_t value) {
@@ -37754,7 +46384,7 @@ inline void CSOGameAccountClient::set_brawl_losses(uint32_t value) {
 
 // optional uint32 brawl_kills = 20;
 inline bool CSOGameAccountClient::_internal_has_brawl_kills() const {
-  bool value = (_impl_._has_bits_[0] & 0x00080000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00040000u) != 0;
   return value;
 }
 inline bool CSOGameAccountClient::has_brawl_kills() const {
@@ -37762,7 +46392,7 @@ inline bool CSOGameAccountClient::has_brawl_kills() const {
 }
 inline void CSOGameAccountClient::clear_brawl_kills() {
   _impl_.brawl_kills_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00080000u;
+  _impl_._has_bits_[0] &= ~0x00040000u;
 }
 inline uint32_t CSOGameAccountClient::_internal_brawl_kills() const {
   return _impl_.brawl_kills_;
@@ -37772,7 +46402,7 @@ inline uint32_t CSOGameAccountClient::brawl_kills() const {
   return _internal_brawl_kills();
 }
 inline void CSOGameAccountClient::_internal_set_brawl_kills(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00080000u;
+  _impl_._has_bits_[0] |= 0x00040000u;
   _impl_.brawl_kills_ = value;
 }
 inline void CSOGameAccountClient::set_brawl_kills(uint32_t value) {
@@ -37782,7 +46412,7 @@ inline void CSOGameAccountClient::set_brawl_kills(uint32_t value) {
 
 // optional uint32 last_mm_match_time = 21;
 inline bool CSOGameAccountClient::_internal_has_last_mm_match_time() const {
-  bool value = (_impl_._has_bits_[0] & 0x00100000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00080000u) != 0;
   return value;
 }
 inline bool CSOGameAccountClient::has_last_mm_match_time() const {
@@ -37790,7 +46420,7 @@ inline bool CSOGameAccountClient::has_last_mm_match_time() const {
 }
 inline void CSOGameAccountClient::clear_last_mm_match_time() {
   _impl_.last_mm_match_time_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00100000u;
+  _impl_._has_bits_[0] &= ~0x00080000u;
 }
 inline uint32_t CSOGameAccountClient::_internal_last_mm_match_time() const {
   return _impl_.last_mm_match_time_;
@@ -37800,7 +46430,7 @@ inline uint32_t CSOGameAccountClient::last_mm_match_time() const {
   return _internal_last_mm_match_time();
 }
 inline void CSOGameAccountClient::_internal_set_last_mm_match_time(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00100000u;
+  _impl_._has_bits_[0] |= 0x00080000u;
   _impl_.last_mm_match_time_ = value;
 }
 inline void CSOGameAccountClient::set_last_mm_match_time(uint32_t value) {
@@ -37810,7 +46440,7 @@ inline void CSOGameAccountClient::set_last_mm_match_time(uint32_t value) {
 
 // optional .CSOGameAccountClient.EPrivacySetting privacy_setting = 22 [default = k_ePrivacy_FriendsOnly];
 inline bool CSOGameAccountClient::_internal_has_privacy_setting() const {
-  bool value = (_impl_._has_bits_[0] & 0x00200000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00100000u) != 0;
   return value;
 }
 inline bool CSOGameAccountClient::has_privacy_setting() const {
@@ -37818,7 +46448,7 @@ inline bool CSOGameAccountClient::has_privacy_setting() const {
 }
 inline void CSOGameAccountClient::clear_privacy_setting() {
   _impl_.privacy_setting_ = 0;
-  _impl_._has_bits_[0] &= ~0x00200000u;
+  _impl_._has_bits_[0] &= ~0x00100000u;
 }
 inline ::CSOGameAccountClient_EPrivacySetting CSOGameAccountClient::_internal_privacy_setting() const {
   return static_cast< ::CSOGameAccountClient_EPrivacySetting >(_impl_.privacy_setting_);
@@ -37829,7 +46459,7 @@ inline ::CSOGameAccountClient_EPrivacySetting CSOGameAccountClient::privacy_sett
 }
 inline void CSOGameAccountClient::_internal_set_privacy_setting(::CSOGameAccountClient_EPrivacySetting value) {
   assert(::CSOGameAccountClient_EPrivacySetting_IsValid(value));
-  _impl_._has_bits_[0] |= 0x00200000u;
+  _impl_._has_bits_[0] |= 0x00100000u;
   _impl_.privacy_setting_ = value;
 }
 inline void CSOGameAccountClient::set_privacy_setting(::CSOGameAccountClient_EPrivacySetting value) {
@@ -40028,6 +48658,34 @@ inline void CMsgDevMatchInfo::set_compat_version(uint32_t value) {
   // @@protoc_insertion_point(field_set:CMsgDevMatchInfo.compat_version)
 }
 
+// optional bool low_pri_pool = 21;
+inline bool CMsgDevMatchInfo::_internal_has_low_pri_pool() const {
+  bool value = (_impl_._has_bits_[0] & 0x00020000u) != 0;
+  return value;
+}
+inline bool CMsgDevMatchInfo::has_low_pri_pool() const {
+  return _internal_has_low_pri_pool();
+}
+inline void CMsgDevMatchInfo::clear_low_pri_pool() {
+  _impl_.low_pri_pool_ = false;
+  _impl_._has_bits_[0] &= ~0x00020000u;
+}
+inline bool CMsgDevMatchInfo::_internal_low_pri_pool() const {
+  return _impl_.low_pri_pool_;
+}
+inline bool CMsgDevMatchInfo::low_pri_pool() const {
+  // @@protoc_insertion_point(field_get:CMsgDevMatchInfo.low_pri_pool)
+  return _internal_low_pri_pool();
+}
+inline void CMsgDevMatchInfo::_internal_set_low_pri_pool(bool value) {
+  _impl_._has_bits_[0] |= 0x00020000u;
+  _impl_.low_pri_pool_ = value;
+}
+inline void CMsgDevMatchInfo::set_low_pri_pool(bool value) {
+  _internal_set_low_pri_pool(value);
+  // @@protoc_insertion_point(field_set:CMsgDevMatchInfo.low_pri_pool)
+}
+
 // repeated .CMsgDevMatchInfo.Team team_stats = 22;
 inline int CMsgDevMatchInfo::_internal_team_stats_size() const {
   return _impl_.team_stats_.size();
@@ -40235,6 +48893,167 @@ inline void CMsgGCToClientDevPlaytestStatus_DevQueueSize::_internal_set_game_mod
 inline void CMsgGCToClientDevPlaytestStatus_DevQueueSize::set_game_mode(::ECitadelGameMode value) {
   _internal_set_game_mode(value);
   // @@protoc_insertion_point(field_set:CMsgGCToClientDevPlaytestStatus.DevQueueSize.game_mode)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgGCToClientDevPlaytestStatus_LeaderboardTier
+
+// optional uint32 leaderboard_rank = 1;
+inline bool CMsgGCToClientDevPlaytestStatus_LeaderboardTier::_internal_has_leaderboard_rank() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgGCToClientDevPlaytestStatus_LeaderboardTier::has_leaderboard_rank() const {
+  return _internal_has_leaderboard_rank();
+}
+inline void CMsgGCToClientDevPlaytestStatus_LeaderboardTier::clear_leaderboard_rank() {
+  _impl_.leaderboard_rank_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint32_t CMsgGCToClientDevPlaytestStatus_LeaderboardTier::_internal_leaderboard_rank() const {
+  return _impl_.leaderboard_rank_;
+}
+inline uint32_t CMsgGCToClientDevPlaytestStatus_LeaderboardTier::leaderboard_rank() const {
+  // @@protoc_insertion_point(field_get:CMsgGCToClientDevPlaytestStatus.LeaderboardTier.leaderboard_rank)
+  return _internal_leaderboard_rank();
+}
+inline void CMsgGCToClientDevPlaytestStatus_LeaderboardTier::_internal_set_leaderboard_rank(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.leaderboard_rank_ = value;
+}
+inline void CMsgGCToClientDevPlaytestStatus_LeaderboardTier::set_leaderboard_rank(uint32_t value) {
+  _internal_set_leaderboard_rank(value);
+  // @@protoc_insertion_point(field_set:CMsgGCToClientDevPlaytestStatus.LeaderboardTier.leaderboard_rank)
+}
+
+// optional uint32 required_progress = 2;
+inline bool CMsgGCToClientDevPlaytestStatus_LeaderboardTier::_internal_has_required_progress() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgGCToClientDevPlaytestStatus_LeaderboardTier::has_required_progress() const {
+  return _internal_has_required_progress();
+}
+inline void CMsgGCToClientDevPlaytestStatus_LeaderboardTier::clear_required_progress() {
+  _impl_.required_progress_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CMsgGCToClientDevPlaytestStatus_LeaderboardTier::_internal_required_progress() const {
+  return _impl_.required_progress_;
+}
+inline uint32_t CMsgGCToClientDevPlaytestStatus_LeaderboardTier::required_progress() const {
+  // @@protoc_insertion_point(field_get:CMsgGCToClientDevPlaytestStatus.LeaderboardTier.required_progress)
+  return _internal_required_progress();
+}
+inline void CMsgGCToClientDevPlaytestStatus_LeaderboardTier::_internal_set_required_progress(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.required_progress_ = value;
+}
+inline void CMsgGCToClientDevPlaytestStatus_LeaderboardTier::set_required_progress(uint32_t value) {
+  _internal_set_required_progress(value);
+  // @@protoc_insertion_point(field_set:CMsgGCToClientDevPlaytestStatus.LeaderboardTier.required_progress)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgGCToClientDevPlaytestStatus_ActiveRankedMode
+
+// optional .ECitadelRankedType rank_type = 1 [default = k_eCitadelRankedType_Invalid];
+inline bool CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::_internal_has_rank_type() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::has_rank_type() const {
+  return _internal_has_rank_type();
+}
+inline void CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::clear_rank_type() {
+  _impl_.rank_type_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::ECitadelRankedType CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::_internal_rank_type() const {
+  return static_cast< ::ECitadelRankedType >(_impl_.rank_type_);
+}
+inline ::ECitadelRankedType CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::rank_type() const {
+  // @@protoc_insertion_point(field_get:CMsgGCToClientDevPlaytestStatus.ActiveRankedMode.rank_type)
+  return _internal_rank_type();
+}
+inline void CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::_internal_set_rank_type(::ECitadelRankedType value) {
+  assert(::ECitadelRankedType_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.rank_type_ = value;
+}
+inline void CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::set_rank_type(::ECitadelRankedType value) {
+  _internal_set_rank_type(value);
+  // @@protoc_insertion_point(field_set:CMsgGCToClientDevPlaytestStatus.ActiveRankedMode.rank_type)
+}
+
+// optional uint32 rank_interval = 2;
+inline bool CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::_internal_has_rank_interval() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::has_rank_interval() const {
+  return _internal_has_rank_interval();
+}
+inline void CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::clear_rank_interval() {
+  _impl_.rank_interval_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::_internal_rank_interval() const {
+  return _impl_.rank_interval_;
+}
+inline uint32_t CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::rank_interval() const {
+  // @@protoc_insertion_point(field_get:CMsgGCToClientDevPlaytestStatus.ActiveRankedMode.rank_interval)
+  return _internal_rank_interval();
+}
+inline void CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::_internal_set_rank_interval(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.rank_interval_ = value;
+}
+inline void CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::set_rank_interval(uint32_t value) {
+  _internal_set_rank_interval(value);
+  // @@protoc_insertion_point(field_set:CMsgGCToClientDevPlaytestStatus.ActiveRankedMode.rank_interval)
+}
+
+// repeated .CMsgGCToClientDevPlaytestStatus.LeaderboardTier leaderboard_tiers = 3;
+inline int CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::_internal_leaderboard_tiers_size() const {
+  return _impl_.leaderboard_tiers_.size();
+}
+inline int CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::leaderboard_tiers_size() const {
+  return _internal_leaderboard_tiers_size();
+}
+inline void CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::clear_leaderboard_tiers() {
+  _impl_.leaderboard_tiers_.Clear();
+}
+inline ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier* CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::mutable_leaderboard_tiers(int index) {
+  // @@protoc_insertion_point(field_mutable:CMsgGCToClientDevPlaytestStatus.ActiveRankedMode.leaderboard_tiers)
+  return _impl_.leaderboard_tiers_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier >*
+CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::mutable_leaderboard_tiers() {
+  // @@protoc_insertion_point(field_mutable_list:CMsgGCToClientDevPlaytestStatus.ActiveRankedMode.leaderboard_tiers)
+  return &_impl_.leaderboard_tiers_;
+}
+inline const ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier& CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::_internal_leaderboard_tiers(int index) const {
+  return _impl_.leaderboard_tiers_.Get(index);
+}
+inline const ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier& CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::leaderboard_tiers(int index) const {
+  // @@protoc_insertion_point(field_get:CMsgGCToClientDevPlaytestStatus.ActiveRankedMode.leaderboard_tiers)
+  return _internal_leaderboard_tiers(index);
+}
+inline ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier* CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::_internal_add_leaderboard_tiers() {
+  return _impl_.leaderboard_tiers_.Add();
+}
+inline ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier* CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::add_leaderboard_tiers() {
+  ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier* _add = _internal_add_leaderboard_tiers();
+  // @@protoc_insertion_point(field_add:CMsgGCToClientDevPlaytestStatus.ActiveRankedMode.leaderboard_tiers)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevPlaytestStatus_LeaderboardTier >&
+CMsgGCToClientDevPlaytestStatus_ActiveRankedMode::leaderboard_tiers() const {
+  // @@protoc_insertion_point(field_list:CMsgGCToClientDevPlaytestStatus.ActiveRankedMode.leaderboard_tiers)
+  return _impl_.leaderboard_tiers_;
 }
 
 // -------------------------------------------------------------------
@@ -40618,6 +49437,46 @@ inline void CMsgGCToClientDevPlaytestStatus::_internal_set_matches_per_priority_
 inline void CMsgGCToClientDevPlaytestStatus::set_matches_per_priority_token(uint32_t value) {
   _internal_set_matches_per_priority_token(value);
   // @@protoc_insertion_point(field_set:CMsgGCToClientDevPlaytestStatus.matches_per_priority_token)
+}
+
+// repeated .CMsgGCToClientDevPlaytestStatus.ActiveRankedMode active_ranked_modes = 24;
+inline int CMsgGCToClientDevPlaytestStatus::_internal_active_ranked_modes_size() const {
+  return _impl_.active_ranked_modes_.size();
+}
+inline int CMsgGCToClientDevPlaytestStatus::active_ranked_modes_size() const {
+  return _internal_active_ranked_modes_size();
+}
+inline void CMsgGCToClientDevPlaytestStatus::clear_active_ranked_modes() {
+  _impl_.active_ranked_modes_.Clear();
+}
+inline ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* CMsgGCToClientDevPlaytestStatus::mutable_active_ranked_modes(int index) {
+  // @@protoc_insertion_point(field_mutable:CMsgGCToClientDevPlaytestStatus.active_ranked_modes)
+  return _impl_.active_ranked_modes_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode >*
+CMsgGCToClientDevPlaytestStatus::mutable_active_ranked_modes() {
+  // @@protoc_insertion_point(field_mutable_list:CMsgGCToClientDevPlaytestStatus.active_ranked_modes)
+  return &_impl_.active_ranked_modes_;
+}
+inline const ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& CMsgGCToClientDevPlaytestStatus::_internal_active_ranked_modes(int index) const {
+  return _impl_.active_ranked_modes_.Get(index);
+}
+inline const ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode& CMsgGCToClientDevPlaytestStatus::active_ranked_modes(int index) const {
+  // @@protoc_insertion_point(field_get:CMsgGCToClientDevPlaytestStatus.active_ranked_modes)
+  return _internal_active_ranked_modes(index);
+}
+inline ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* CMsgGCToClientDevPlaytestStatus::_internal_add_active_ranked_modes() {
+  return _impl_.active_ranked_modes_.Add();
+}
+inline ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* CMsgGCToClientDevPlaytestStatus::add_active_ranked_modes() {
+  ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode* _add = _internal_add_active_ranked_modes();
+  // @@protoc_insertion_point(field_add:CMsgGCToClientDevPlaytestStatus.active_ranked_modes)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevPlaytestStatus_ActiveRankedMode >&
+CMsgGCToClientDevPlaytestStatus::active_ranked_modes() const {
+  // @@protoc_insertion_point(field_list:CMsgGCToClientDevPlaytestStatus.active_ranked_modes)
+  return _impl_.active_ranked_modes_;
 }
 
 // -------------------------------------------------------------------
@@ -43332,7 +52191,7 @@ inline void CMsgGCToClientPartyEvent::set_party_id(uint64_t value) {
   // @@protoc_insertion_point(field_set:CMsgGCToClientPartyEvent.party_id)
 }
 
-// optional .CMsgGCToClientPartyEvent.EEvent event = 2 [default = k_ePlayerKicked];
+// optional .CMsgGCToClientPartyEvent.EPartyEvent event = 2 [default = k_ePlayerKicked];
 inline bool CMsgGCToClientPartyEvent::_internal_has_event() const {
   bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
   return value;
@@ -43344,19 +52203,19 @@ inline void CMsgGCToClientPartyEvent::clear_event() {
   _impl_.event_ = 1;
   _impl_._has_bits_[0] &= ~0x00000040u;
 }
-inline ::CMsgGCToClientPartyEvent_EEvent CMsgGCToClientPartyEvent::_internal_event() const {
-  return static_cast< ::CMsgGCToClientPartyEvent_EEvent >(_impl_.event_);
+inline ::CMsgGCToClientPartyEvent_EPartyEvent CMsgGCToClientPartyEvent::_internal_event() const {
+  return static_cast< ::CMsgGCToClientPartyEvent_EPartyEvent >(_impl_.event_);
 }
-inline ::CMsgGCToClientPartyEvent_EEvent CMsgGCToClientPartyEvent::event() const {
+inline ::CMsgGCToClientPartyEvent_EPartyEvent CMsgGCToClientPartyEvent::event() const {
   // @@protoc_insertion_point(field_get:CMsgGCToClientPartyEvent.event)
   return _internal_event();
 }
-inline void CMsgGCToClientPartyEvent::_internal_set_event(::CMsgGCToClientPartyEvent_EEvent value) {
-  assert(::CMsgGCToClientPartyEvent_EEvent_IsValid(value));
+inline void CMsgGCToClientPartyEvent::_internal_set_event(::CMsgGCToClientPartyEvent_EPartyEvent value) {
+  assert(::CMsgGCToClientPartyEvent_EPartyEvent_IsValid(value));
   _impl_._has_bits_[0] |= 0x00000040u;
   _impl_.event_ = value;
 }
-inline void CMsgGCToClientPartyEvent::set_event(::CMsgGCToClientPartyEvent_EEvent value) {
+inline void CMsgGCToClientPartyEvent::set_event(::CMsgGCToClientPartyEvent_EPartyEvent value) {
   _internal_set_event(value);
   // @@protoc_insertion_point(field_set:CMsgGCToClientPartyEvent.event)
 }
@@ -44154,6 +53013,91 @@ inline void CMsgClientToGCGetMatchHistory::set_match_mode(::ECitadelMatchMode va
   // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistory.match_mode)
 }
 
+// optional .ECitadelRankedType ranked_type = 6 [default = k_eCitadelRankedType_Invalid];
+inline bool CMsgClientToGCGetMatchHistory::_internal_has_ranked_type() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetMatchHistory::has_ranked_type() const {
+  return _internal_has_ranked_type();
+}
+inline void CMsgClientToGCGetMatchHistory::clear_ranked_type() {
+  _impl_.ranked_type_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000010u;
+}
+inline ::ECitadelRankedType CMsgClientToGCGetMatchHistory::_internal_ranked_type() const {
+  return static_cast< ::ECitadelRankedType >(_impl_.ranked_type_);
+}
+inline ::ECitadelRankedType CMsgClientToGCGetMatchHistory::ranked_type() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetMatchHistory.ranked_type)
+  return _internal_ranked_type();
+}
+inline void CMsgClientToGCGetMatchHistory::_internal_set_ranked_type(::ECitadelRankedType value) {
+  assert(::ECitadelRankedType_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_.ranked_type_ = value;
+}
+inline void CMsgClientToGCGetMatchHistory::set_ranked_type(::ECitadelRankedType value) {
+  _internal_set_ranked_type(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistory.ranked_type)
+}
+
+// optional uint32 rank_interval = 7;
+inline bool CMsgClientToGCGetMatchHistory::_internal_has_rank_interval() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetMatchHistory::has_rank_interval() const {
+  return _internal_has_rank_interval();
+}
+inline void CMsgClientToGCGetMatchHistory::clear_rank_interval() {
+  _impl_.rank_interval_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000040u;
+}
+inline uint32_t CMsgClientToGCGetMatchHistory::_internal_rank_interval() const {
+  return _impl_.rank_interval_;
+}
+inline uint32_t CMsgClientToGCGetMatchHistory::rank_interval() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetMatchHistory.rank_interval)
+  return _internal_rank_interval();
+}
+inline void CMsgClientToGCGetMatchHistory::_internal_set_rank_interval(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000040u;
+  _impl_.rank_interval_ = value;
+}
+inline void CMsgClientToGCGetMatchHistory::set_rank_interval(uint32_t value) {
+  _internal_set_rank_interval(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistory.rank_interval)
+}
+
+// optional uint64 cabal_id = 8;
+inline bool CMsgClientToGCGetMatchHistory::_internal_has_cabal_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetMatchHistory::has_cabal_id() const {
+  return _internal_has_cabal_id();
+}
+inline void CMsgClientToGCGetMatchHistory::clear_cabal_id() {
+  _impl_.cabal_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000020u;
+}
+inline uint64_t CMsgClientToGCGetMatchHistory::_internal_cabal_id() const {
+  return _impl_.cabal_id_;
+}
+inline uint64_t CMsgClientToGCGetMatchHistory::cabal_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetMatchHistory.cabal_id)
+  return _internal_cabal_id();
+}
+inline void CMsgClientToGCGetMatchHistory::_internal_set_cabal_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000020u;
+  _impl_.cabal_id_ = value;
+}
+inline void CMsgClientToGCGetMatchHistory::set_cabal_id(uint64_t value) {
+  _internal_set_cabal_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistory.cabal_id)
+}
+
 // -------------------------------------------------------------------
 
 // CMsgClientToGCGetMatchHistoryResponse_Match
@@ -44581,7 +53525,7 @@ inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_objectives_mask_tea
 
 // optional bool team_abandoned = 17;
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_team_abandoned() const {
-  bool value = (_impl_._has_bits_[0] & 0x00020000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00800000u) != 0;
   return value;
 }
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_team_abandoned() const {
@@ -44589,7 +53533,7 @@ inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_team_abandoned() co
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_team_abandoned() {
   _impl_.team_abandoned_ = false;
-  _impl_._has_bits_[0] &= ~0x00020000u;
+  _impl_._has_bits_[0] &= ~0x00800000u;
 }
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_team_abandoned() const {
   return _impl_.team_abandoned_;
@@ -44599,7 +53543,7 @@ inline bool CMsgClientToGCGetMatchHistoryResponse_Match::team_abandoned() const 
   return _internal_team_abandoned();
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_team_abandoned(bool value) {
-  _impl_._has_bits_[0] |= 0x00020000u;
+  _impl_._has_bits_[0] |= 0x00800000u;
   _impl_.team_abandoned_ = value;
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_team_abandoned(bool value) {
@@ -44666,7 +53610,7 @@ inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_match_mode(::ECitad
 
 // optional .ECitadelGameMode game_mode = 20 [default = k_ECitadelGameMode_Invalid];
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_game_mode() const {
-  bool value = (_impl_._has_bits_[0] & 0x00080000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00020000u) != 0;
   return value;
 }
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_game_mode() const {
@@ -44674,7 +53618,7 @@ inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_game_mode() const {
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_game_mode() {
   _impl_.game_mode_ = 0;
-  _impl_._has_bits_[0] &= ~0x00080000u;
+  _impl_._has_bits_[0] &= ~0x00020000u;
 }
 inline ::ECitadelGameMode CMsgClientToGCGetMatchHistoryResponse_Match::_internal_game_mode() const {
   return static_cast< ::ECitadelGameMode >(_impl_.game_mode_);
@@ -44685,7 +53629,7 @@ inline ::ECitadelGameMode CMsgClientToGCGetMatchHistoryResponse_Match::game_mode
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_game_mode(::ECitadelGameMode value) {
   assert(::ECitadelGameMode_IsValid(value));
-  _impl_._has_bits_[0] |= 0x00080000u;
+  _impl_._has_bits_[0] |= 0x00020000u;
   _impl_.game_mode_ = value;
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_game_mode(::ECitadelGameMode value) {
@@ -44693,37 +53637,9 @@ inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_game_mode(::ECitade
   // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistoryResponse.Match.game_mode)
 }
 
-// optional bool not_scored = 21;
-inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_not_scored() const {
-  bool value = (_impl_._has_bits_[0] & 0x00040000u) != 0;
-  return value;
-}
-inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_not_scored() const {
-  return _internal_has_not_scored();
-}
-inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_not_scored() {
-  _impl_.not_scored_ = false;
-  _impl_._has_bits_[0] &= ~0x00040000u;
-}
-inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_not_scored() const {
-  return _impl_.not_scored_;
-}
-inline bool CMsgClientToGCGetMatchHistoryResponse_Match::not_scored() const {
-  // @@protoc_insertion_point(field_get:CMsgClientToGCGetMatchHistoryResponse.Match.not_scored)
-  return _internal_not_scored();
-}
-inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_not_scored(bool value) {
-  _impl_._has_bits_[0] |= 0x00040000u;
-  _impl_.not_scored_ = value;
-}
-inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_not_scored(bool value) {
-  _internal_set_not_scored(value);
-  // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistoryResponse.Match.not_scored)
-}
-
 // optional uint32 game_mode_version = 22;
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_game_mode_version() const {
-  bool value = (_impl_._has_bits_[0] & 0x00100000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00040000u) != 0;
   return value;
 }
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_game_mode_version() const {
@@ -44731,7 +53647,7 @@ inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_game_mode_version()
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_game_mode_version() {
   _impl_.game_mode_version_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00100000u;
+  _impl_._has_bits_[0] &= ~0x00040000u;
 }
 inline uint32_t CMsgClientToGCGetMatchHistoryResponse_Match::_internal_game_mode_version() const {
   return _impl_.game_mode_version_;
@@ -44741,7 +53657,7 @@ inline uint32_t CMsgClientToGCGetMatchHistoryResponse_Match::game_mode_version()
   return _internal_game_mode_version();
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_game_mode_version(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00100000u;
+  _impl_._has_bits_[0] |= 0x00040000u;
   _impl_.game_mode_version_ = value;
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_game_mode_version(uint32_t value) {
@@ -44751,7 +53667,7 @@ inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_game_mode_version(u
 
 // optional uint32 brawl_score_team0 = 23;
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_brawl_score_team0() const {
-  bool value = (_impl_._has_bits_[0] & 0x00200000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00080000u) != 0;
   return value;
 }
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_brawl_score_team0() const {
@@ -44759,7 +53675,7 @@ inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_brawl_score_team0()
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_brawl_score_team0() {
   _impl_.brawl_score_team0_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00200000u;
+  _impl_._has_bits_[0] &= ~0x00080000u;
 }
 inline uint32_t CMsgClientToGCGetMatchHistoryResponse_Match::_internal_brawl_score_team0() const {
   return _impl_.brawl_score_team0_;
@@ -44769,7 +53685,7 @@ inline uint32_t CMsgClientToGCGetMatchHistoryResponse_Match::brawl_score_team0()
   return _internal_brawl_score_team0();
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_brawl_score_team0(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00200000u;
+  _impl_._has_bits_[0] |= 0x00080000u;
   _impl_.brawl_score_team0_ = value;
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_brawl_score_team0(uint32_t value) {
@@ -44779,7 +53695,7 @@ inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_brawl_score_team0(u
 
 // optional uint32 brawl_score_team1 = 24;
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_brawl_score_team1() const {
-  bool value = (_impl_._has_bits_[0] & 0x00400000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00100000u) != 0;
   return value;
 }
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_brawl_score_team1() const {
@@ -44787,7 +53703,7 @@ inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_brawl_score_team1()
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_brawl_score_team1() {
   _impl_.brawl_score_team1_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00400000u;
+  _impl_._has_bits_[0] &= ~0x00100000u;
 }
 inline uint32_t CMsgClientToGCGetMatchHistoryResponse_Match::_internal_brawl_score_team1() const {
   return _impl_.brawl_score_team1_;
@@ -44797,7 +53713,7 @@ inline uint32_t CMsgClientToGCGetMatchHistoryResponse_Match::brawl_score_team1()
   return _internal_brawl_score_team1();
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_brawl_score_team1(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00400000u;
+  _impl_._has_bits_[0] |= 0x00100000u;
   _impl_.brawl_score_team1_ = value;
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_brawl_score_team1(uint32_t value) {
@@ -44807,7 +53723,7 @@ inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_brawl_score_team1(u
 
 // optional uint32 brawl_avg_round_time_s = 25;
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_brawl_avg_round_time_s() const {
-  bool value = (_impl_._has_bits_[0] & 0x00800000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00200000u) != 0;
   return value;
 }
 inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_brawl_avg_round_time_s() const {
@@ -44815,7 +53731,7 @@ inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_brawl_avg_round_tim
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_brawl_avg_round_time_s() {
   _impl_.brawl_avg_round_time_s_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00800000u;
+  _impl_._has_bits_[0] &= ~0x00200000u;
 }
 inline uint32_t CMsgClientToGCGetMatchHistoryResponse_Match::_internal_brawl_avg_round_time_s() const {
   return _impl_.brawl_avg_round_time_s_;
@@ -44825,12 +53741,181 @@ inline uint32_t CMsgClientToGCGetMatchHistoryResponse_Match::brawl_avg_round_tim
   return _internal_brawl_avg_round_time_s();
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_brawl_avg_round_time_s(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00800000u;
+  _impl_._has_bits_[0] |= 0x00200000u;
   _impl_.brawl_avg_round_time_s_ = value;
 }
 inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_brawl_avg_round_time_s(uint32_t value) {
   _internal_set_brawl_avg_round_time_s(value);
   // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistoryResponse.Match.brawl_avg_round_time_s)
+}
+
+// optional .EPlayerMatchOutcome player_match_outcome = 26 [default = k_EPlayerMatchOutcome_Invalid];
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_player_match_outcome() const {
+  bool value = (_impl_._has_bits_[0] & 0x00400000u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_player_match_outcome() const {
+  return _internal_has_player_match_outcome();
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_player_match_outcome() {
+  _impl_.player_match_outcome_ = 0;
+  _impl_._has_bits_[0] &= ~0x00400000u;
+}
+inline ::EPlayerMatchOutcome CMsgClientToGCGetMatchHistoryResponse_Match::_internal_player_match_outcome() const {
+  return static_cast< ::EPlayerMatchOutcome >(_impl_.player_match_outcome_);
+}
+inline ::EPlayerMatchOutcome CMsgClientToGCGetMatchHistoryResponse_Match::player_match_outcome() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetMatchHistoryResponse.Match.player_match_outcome)
+  return _internal_player_match_outcome();
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_player_match_outcome(::EPlayerMatchOutcome value) {
+  assert(::EPlayerMatchOutcome_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00400000u;
+  _impl_.player_match_outcome_ = value;
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_player_match_outcome(::EPlayerMatchOutcome value) {
+  _internal_set_player_match_outcome(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistoryResponse.Match.player_match_outcome)
+}
+
+// optional uint32 ranked_display_badge = 27;
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_ranked_display_badge() const {
+  bool value = (_impl_._has_bits_[0] & 0x04000000u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_ranked_display_badge() const {
+  return _internal_has_ranked_display_badge();
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_ranked_display_badge() {
+  _impl_.ranked_display_badge_ = 0u;
+  _impl_._has_bits_[0] &= ~0x04000000u;
+}
+inline uint32_t CMsgClientToGCGetMatchHistoryResponse_Match::_internal_ranked_display_badge() const {
+  return _impl_.ranked_display_badge_;
+}
+inline uint32_t CMsgClientToGCGetMatchHistoryResponse_Match::ranked_display_badge() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetMatchHistoryResponse.Match.ranked_display_badge)
+  return _internal_ranked_display_badge();
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_ranked_display_badge(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x04000000u;
+  _impl_.ranked_display_badge_ = value;
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_ranked_display_badge(uint32_t value) {
+  _internal_set_ranked_display_badge(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistoryResponse.Match.ranked_display_badge)
+}
+
+// optional int32 ranked_delta = 28;
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_ranked_delta() const {
+  bool value = (_impl_._has_bits_[0] & 0x08000000u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_ranked_delta() const {
+  return _internal_has_ranked_delta();
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_ranked_delta() {
+  _impl_.ranked_delta_ = 0;
+  _impl_._has_bits_[0] &= ~0x08000000u;
+}
+inline int32_t CMsgClientToGCGetMatchHistoryResponse_Match::_internal_ranked_delta() const {
+  return _impl_.ranked_delta_;
+}
+inline int32_t CMsgClientToGCGetMatchHistoryResponse_Match::ranked_delta() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetMatchHistoryResponse.Match.ranked_delta)
+  return _internal_ranked_delta();
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_ranked_delta(int32_t value) {
+  _impl_._has_bits_[0] |= 0x08000000u;
+  _impl_.ranked_delta_ = value;
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_ranked_delta(int32_t value) {
+  _internal_set_ranked_delta(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistoryResponse.Match.ranked_delta)
+}
+
+// optional uint32 ranked_calibration_match = 29;
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_ranked_calibration_match() const {
+  bool value = (_impl_._has_bits_[0] & 0x10000000u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_ranked_calibration_match() const {
+  return _internal_has_ranked_calibration_match();
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_ranked_calibration_match() {
+  _impl_.ranked_calibration_match_ = 0u;
+  _impl_._has_bits_[0] &= ~0x10000000u;
+}
+inline uint32_t CMsgClientToGCGetMatchHistoryResponse_Match::_internal_ranked_calibration_match() const {
+  return _impl_.ranked_calibration_match_;
+}
+inline uint32_t CMsgClientToGCGetMatchHistoryResponse_Match::ranked_calibration_match() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetMatchHistoryResponse.Match.ranked_calibration_match)
+  return _internal_ranked_calibration_match();
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_ranked_calibration_match(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x10000000u;
+  _impl_.ranked_calibration_match_ = value;
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_ranked_calibration_match(uint32_t value) {
+  _internal_set_ranked_calibration_match(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistoryResponse.Match.ranked_calibration_match)
+}
+
+// optional bool ranked_used_demotion_protection = 30;
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_ranked_used_demotion_protection() const {
+  bool value = (_impl_._has_bits_[0] & 0x01000000u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_ranked_used_demotion_protection() const {
+  return _internal_has_ranked_used_demotion_protection();
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_ranked_used_demotion_protection() {
+  _impl_.ranked_used_demotion_protection_ = false;
+  _impl_._has_bits_[0] &= ~0x01000000u;
+}
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_ranked_used_demotion_protection() const {
+  return _impl_.ranked_used_demotion_protection_;
+}
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::ranked_used_demotion_protection() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetMatchHistoryResponse.Match.ranked_used_demotion_protection)
+  return _internal_ranked_used_demotion_protection();
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_ranked_used_demotion_protection(bool value) {
+  _impl_._has_bits_[0] |= 0x01000000u;
+  _impl_.ranked_used_demotion_protection_ = value;
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_ranked_used_demotion_protection(bool value) {
+  _internal_set_ranked_used_demotion_protection(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistoryResponse.Match.ranked_used_demotion_protection)
+}
+
+// optional bool low_pri_pool = 31;
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_has_low_pri_pool() const {
+  bool value = (_impl_._has_bits_[0] & 0x02000000u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::has_low_pri_pool() const {
+  return _internal_has_low_pri_pool();
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::clear_low_pri_pool() {
+  _impl_.low_pri_pool_ = false;
+  _impl_._has_bits_[0] &= ~0x02000000u;
+}
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::_internal_low_pri_pool() const {
+  return _impl_.low_pri_pool_;
+}
+inline bool CMsgClientToGCGetMatchHistoryResponse_Match::low_pri_pool() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetMatchHistoryResponse.Match.low_pri_pool)
+  return _internal_low_pri_pool();
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::_internal_set_low_pri_pool(bool value) {
+  _impl_._has_bits_[0] |= 0x02000000u;
+  _impl_.low_pri_pool_ = value;
+}
+inline void CMsgClientToGCGetMatchHistoryResponse_Match::set_low_pri_pool(bool value) {
+  _internal_set_low_pri_pool(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchHistoryResponse.Match.low_pri_pool)
 }
 
 // -------------------------------------------------------------------
@@ -46713,804 +55798,6 @@ inline void CMsgClientToGCGetMatchMetaDataResponse::_internal_set_replay_process
 inline void CMsgClientToGCGetMatchMetaDataResponse::set_replay_processing_through(uint32_t value) {
   _internal_set_replay_processing_through(value);
   // @@protoc_insertion_point(field_set:CMsgClientToGCGetMatchMetaDataResponse.replay_processing_through)
-}
-
-// -------------------------------------------------------------------
-
-// CMsgGCToClientDevAnnouncements_Announcement
-
-// optional uint32 priority = 1;
-inline bool CMsgGCToClientDevAnnouncements_Announcement::_internal_has_priority() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
-  return value;
-}
-inline bool CMsgGCToClientDevAnnouncements_Announcement::has_priority() const {
-  return _internal_has_priority();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::clear_priority() {
-  _impl_.priority_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000010u;
-}
-inline uint32_t CMsgGCToClientDevAnnouncements_Announcement::_internal_priority() const {
-  return _impl_.priority_;
-}
-inline uint32_t CMsgGCToClientDevAnnouncements_Announcement::priority() const {
-  // @@protoc_insertion_point(field_get:CMsgGCToClientDevAnnouncements.Announcement.priority)
-  return _internal_priority();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::_internal_set_priority(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000010u;
-  _impl_.priority_ = value;
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::set_priority(uint32_t value) {
-  _internal_set_priority(value);
-  // @@protoc_insertion_point(field_set:CMsgGCToClientDevAnnouncements.Announcement.priority)
-}
-
-// optional string title = 2;
-inline bool CMsgGCToClientDevAnnouncements_Announcement::_internal_has_title() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
-  return value;
-}
-inline bool CMsgGCToClientDevAnnouncements_Announcement::has_title() const {
-  return _internal_has_title();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::clear_title() {
-  _impl_.title_.ClearToEmpty();
-  _impl_._has_bits_[0] &= ~0x00000001u;
-}
-inline const std::string& CMsgGCToClientDevAnnouncements_Announcement::title() const {
-  // @@protoc_insertion_point(field_get:CMsgGCToClientDevAnnouncements.Announcement.title)
-  return _internal_title();
-}
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void CMsgGCToClientDevAnnouncements_Announcement::set_title(ArgT0&& arg0, ArgT... args) {
- _impl_._has_bits_[0] |= 0x00000001u;
- _impl_.title_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:CMsgGCToClientDevAnnouncements.Announcement.title)
-}
-inline std::string* CMsgGCToClientDevAnnouncements_Announcement::mutable_title() {
-  std::string* _s = _internal_mutable_title();
-  // @@protoc_insertion_point(field_mutable:CMsgGCToClientDevAnnouncements.Announcement.title)
-  return _s;
-}
-inline const std::string& CMsgGCToClientDevAnnouncements_Announcement::_internal_title() const {
-  return _impl_.title_.Get();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::_internal_set_title(const std::string& value) {
-  _impl_._has_bits_[0] |= 0x00000001u;
-  _impl_.title_.Set(value, GetArenaForAllocation());
-}
-inline std::string* CMsgGCToClientDevAnnouncements_Announcement::_internal_mutable_title() {
-  _impl_._has_bits_[0] |= 0x00000001u;
-  return _impl_.title_.Mutable(GetArenaForAllocation());
-}
-inline std::string* CMsgGCToClientDevAnnouncements_Announcement::release_title() {
-  // @@protoc_insertion_point(field_release:CMsgGCToClientDevAnnouncements.Announcement.title)
-  if (!_internal_has_title()) {
-    return nullptr;
-  }
-  _impl_._has_bits_[0] &= ~0x00000001u;
-  auto* p = _impl_.title_.Release();
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.title_.IsDefault()) {
-    _impl_.title_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::set_allocated_title(std::string* title) {
-  if (title != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000001u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000001u;
-  }
-  _impl_.title_.SetAllocated(title, GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.title_.IsDefault()) {
-    _impl_.title_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:CMsgGCToClientDevAnnouncements.Announcement.title)
-}
-
-// optional string message = 3;
-inline bool CMsgGCToClientDevAnnouncements_Announcement::_internal_has_message() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
-  return value;
-}
-inline bool CMsgGCToClientDevAnnouncements_Announcement::has_message() const {
-  return _internal_has_message();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::clear_message() {
-  _impl_.message_.ClearToEmpty();
-  _impl_._has_bits_[0] &= ~0x00000002u;
-}
-inline const std::string& CMsgGCToClientDevAnnouncements_Announcement::message() const {
-  // @@protoc_insertion_point(field_get:CMsgGCToClientDevAnnouncements.Announcement.message)
-  return _internal_message();
-}
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void CMsgGCToClientDevAnnouncements_Announcement::set_message(ArgT0&& arg0, ArgT... args) {
- _impl_._has_bits_[0] |= 0x00000002u;
- _impl_.message_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:CMsgGCToClientDevAnnouncements.Announcement.message)
-}
-inline std::string* CMsgGCToClientDevAnnouncements_Announcement::mutable_message() {
-  std::string* _s = _internal_mutable_message();
-  // @@protoc_insertion_point(field_mutable:CMsgGCToClientDevAnnouncements.Announcement.message)
-  return _s;
-}
-inline const std::string& CMsgGCToClientDevAnnouncements_Announcement::_internal_message() const {
-  return _impl_.message_.Get();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::_internal_set_message(const std::string& value) {
-  _impl_._has_bits_[0] |= 0x00000002u;
-  _impl_.message_.Set(value, GetArenaForAllocation());
-}
-inline std::string* CMsgGCToClientDevAnnouncements_Announcement::_internal_mutable_message() {
-  _impl_._has_bits_[0] |= 0x00000002u;
-  return _impl_.message_.Mutable(GetArenaForAllocation());
-}
-inline std::string* CMsgGCToClientDevAnnouncements_Announcement::release_message() {
-  // @@protoc_insertion_point(field_release:CMsgGCToClientDevAnnouncements.Announcement.message)
-  if (!_internal_has_message()) {
-    return nullptr;
-  }
-  _impl_._has_bits_[0] &= ~0x00000002u;
-  auto* p = _impl_.message_.Release();
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.message_.IsDefault()) {
-    _impl_.message_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::set_allocated_message(std::string* message) {
-  if (message != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000002u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000002u;
-  }
-  _impl_.message_.SetAllocated(message, GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.message_.IsDefault()) {
-    _impl_.message_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:CMsgGCToClientDevAnnouncements.Announcement.message)
-}
-
-// optional string url = 4;
-inline bool CMsgGCToClientDevAnnouncements_Announcement::_internal_has_url() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
-  return value;
-}
-inline bool CMsgGCToClientDevAnnouncements_Announcement::has_url() const {
-  return _internal_has_url();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::clear_url() {
-  _impl_.url_.ClearToEmpty();
-  _impl_._has_bits_[0] &= ~0x00000004u;
-}
-inline const std::string& CMsgGCToClientDevAnnouncements_Announcement::url() const {
-  // @@protoc_insertion_point(field_get:CMsgGCToClientDevAnnouncements.Announcement.url)
-  return _internal_url();
-}
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void CMsgGCToClientDevAnnouncements_Announcement::set_url(ArgT0&& arg0, ArgT... args) {
- _impl_._has_bits_[0] |= 0x00000004u;
- _impl_.url_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:CMsgGCToClientDevAnnouncements.Announcement.url)
-}
-inline std::string* CMsgGCToClientDevAnnouncements_Announcement::mutable_url() {
-  std::string* _s = _internal_mutable_url();
-  // @@protoc_insertion_point(field_mutable:CMsgGCToClientDevAnnouncements.Announcement.url)
-  return _s;
-}
-inline const std::string& CMsgGCToClientDevAnnouncements_Announcement::_internal_url() const {
-  return _impl_.url_.Get();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::_internal_set_url(const std::string& value) {
-  _impl_._has_bits_[0] |= 0x00000004u;
-  _impl_.url_.Set(value, GetArenaForAllocation());
-}
-inline std::string* CMsgGCToClientDevAnnouncements_Announcement::_internal_mutable_url() {
-  _impl_._has_bits_[0] |= 0x00000004u;
-  return _impl_.url_.Mutable(GetArenaForAllocation());
-}
-inline std::string* CMsgGCToClientDevAnnouncements_Announcement::release_url() {
-  // @@protoc_insertion_point(field_release:CMsgGCToClientDevAnnouncements.Announcement.url)
-  if (!_internal_has_url()) {
-    return nullptr;
-  }
-  _impl_._has_bits_[0] &= ~0x00000004u;
-  auto* p = _impl_.url_.Release();
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.url_.IsDefault()) {
-    _impl_.url_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::set_allocated_url(std::string* url) {
-  if (url != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000004u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000004u;
-  }
-  _impl_.url_.SetAllocated(url, GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.url_.IsDefault()) {
-    _impl_.url_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:CMsgGCToClientDevAnnouncements.Announcement.url)
-}
-
-// optional uint32 unique_id = 5;
-inline bool CMsgGCToClientDevAnnouncements_Announcement::_internal_has_unique_id() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
-  return value;
-}
-inline bool CMsgGCToClientDevAnnouncements_Announcement::has_unique_id() const {
-  return _internal_has_unique_id();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::clear_unique_id() {
-  _impl_.unique_id_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000020u;
-}
-inline uint32_t CMsgGCToClientDevAnnouncements_Announcement::_internal_unique_id() const {
-  return _impl_.unique_id_;
-}
-inline uint32_t CMsgGCToClientDevAnnouncements_Announcement::unique_id() const {
-  // @@protoc_insertion_point(field_get:CMsgGCToClientDevAnnouncements.Announcement.unique_id)
-  return _internal_unique_id();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::_internal_set_unique_id(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000020u;
-  _impl_.unique_id_ = value;
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::set_unique_id(uint32_t value) {
-  _internal_set_unique_id(value);
-  // @@protoc_insertion_point(field_set:CMsgGCToClientDevAnnouncements.Announcement.unique_id)
-}
-
-// optional uint32 posted_time = 6;
-inline bool CMsgGCToClientDevAnnouncements_Announcement::_internal_has_posted_time() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
-  return value;
-}
-inline bool CMsgGCToClientDevAnnouncements_Announcement::has_posted_time() const {
-  return _internal_has_posted_time();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::clear_posted_time() {
-  _impl_.posted_time_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000040u;
-}
-inline uint32_t CMsgGCToClientDevAnnouncements_Announcement::_internal_posted_time() const {
-  return _impl_.posted_time_;
-}
-inline uint32_t CMsgGCToClientDevAnnouncements_Announcement::posted_time() const {
-  // @@protoc_insertion_point(field_get:CMsgGCToClientDevAnnouncements.Announcement.posted_time)
-  return _internal_posted_time();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::_internal_set_posted_time(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000040u;
-  _impl_.posted_time_ = value;
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::set_posted_time(uint32_t value) {
-  _internal_set_posted_time(value);
-  // @@protoc_insertion_point(field_set:CMsgGCToClientDevAnnouncements.Announcement.posted_time)
-}
-
-// optional string patch_version = 7;
-inline bool CMsgGCToClientDevAnnouncements_Announcement::_internal_has_patch_version() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
-  return value;
-}
-inline bool CMsgGCToClientDevAnnouncements_Announcement::has_patch_version() const {
-  return _internal_has_patch_version();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::clear_patch_version() {
-  _impl_.patch_version_.ClearToEmpty();
-  _impl_._has_bits_[0] &= ~0x00000008u;
-}
-inline const std::string& CMsgGCToClientDevAnnouncements_Announcement::patch_version() const {
-  // @@protoc_insertion_point(field_get:CMsgGCToClientDevAnnouncements.Announcement.patch_version)
-  return _internal_patch_version();
-}
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void CMsgGCToClientDevAnnouncements_Announcement::set_patch_version(ArgT0&& arg0, ArgT... args) {
- _impl_._has_bits_[0] |= 0x00000008u;
- _impl_.patch_version_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:CMsgGCToClientDevAnnouncements.Announcement.patch_version)
-}
-inline std::string* CMsgGCToClientDevAnnouncements_Announcement::mutable_patch_version() {
-  std::string* _s = _internal_mutable_patch_version();
-  // @@protoc_insertion_point(field_mutable:CMsgGCToClientDevAnnouncements.Announcement.patch_version)
-  return _s;
-}
-inline const std::string& CMsgGCToClientDevAnnouncements_Announcement::_internal_patch_version() const {
-  return _impl_.patch_version_.Get();
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::_internal_set_patch_version(const std::string& value) {
-  _impl_._has_bits_[0] |= 0x00000008u;
-  _impl_.patch_version_.Set(value, GetArenaForAllocation());
-}
-inline std::string* CMsgGCToClientDevAnnouncements_Announcement::_internal_mutable_patch_version() {
-  _impl_._has_bits_[0] |= 0x00000008u;
-  return _impl_.patch_version_.Mutable(GetArenaForAllocation());
-}
-inline std::string* CMsgGCToClientDevAnnouncements_Announcement::release_patch_version() {
-  // @@protoc_insertion_point(field_release:CMsgGCToClientDevAnnouncements.Announcement.patch_version)
-  if (!_internal_has_patch_version()) {
-    return nullptr;
-  }
-  _impl_._has_bits_[0] &= ~0x00000008u;
-  auto* p = _impl_.patch_version_.Release();
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.patch_version_.IsDefault()) {
-    _impl_.patch_version_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void CMsgGCToClientDevAnnouncements_Announcement::set_allocated_patch_version(std::string* patch_version) {
-  if (patch_version != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000008u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000008u;
-  }
-  _impl_.patch_version_.SetAllocated(patch_version, GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.patch_version_.IsDefault()) {
-    _impl_.patch_version_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:CMsgGCToClientDevAnnouncements.Announcement.patch_version)
-}
-
-// -------------------------------------------------------------------
-
-// CMsgGCToClientDevAnnouncements
-
-// repeated .CMsgGCToClientDevAnnouncements.Announcement announcements = 1;
-inline int CMsgGCToClientDevAnnouncements::_internal_announcements_size() const {
-  return _impl_.announcements_.size();
-}
-inline int CMsgGCToClientDevAnnouncements::announcements_size() const {
-  return _internal_announcements_size();
-}
-inline void CMsgGCToClientDevAnnouncements::clear_announcements() {
-  _impl_.announcements_.Clear();
-}
-inline ::CMsgGCToClientDevAnnouncements_Announcement* CMsgGCToClientDevAnnouncements::mutable_announcements(int index) {
-  // @@protoc_insertion_point(field_mutable:CMsgGCToClientDevAnnouncements.announcements)
-  return _impl_.announcements_.Mutable(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevAnnouncements_Announcement >*
-CMsgGCToClientDevAnnouncements::mutable_announcements() {
-  // @@protoc_insertion_point(field_mutable_list:CMsgGCToClientDevAnnouncements.announcements)
-  return &_impl_.announcements_;
-}
-inline const ::CMsgGCToClientDevAnnouncements_Announcement& CMsgGCToClientDevAnnouncements::_internal_announcements(int index) const {
-  return _impl_.announcements_.Get(index);
-}
-inline const ::CMsgGCToClientDevAnnouncements_Announcement& CMsgGCToClientDevAnnouncements::announcements(int index) const {
-  // @@protoc_insertion_point(field_get:CMsgGCToClientDevAnnouncements.announcements)
-  return _internal_announcements(index);
-}
-inline ::CMsgGCToClientDevAnnouncements_Announcement* CMsgGCToClientDevAnnouncements::_internal_add_announcements() {
-  return _impl_.announcements_.Add();
-}
-inline ::CMsgGCToClientDevAnnouncements_Announcement* CMsgGCToClientDevAnnouncements::add_announcements() {
-  ::CMsgGCToClientDevAnnouncements_Announcement* _add = _internal_add_announcements();
-  // @@protoc_insertion_point(field_add:CMsgGCToClientDevAnnouncements.announcements)
-  return _add;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgGCToClientDevAnnouncements_Announcement >&
-CMsgGCToClientDevAnnouncements::announcements() const {
-  // @@protoc_insertion_point(field_list:CMsgGCToClientDevAnnouncements.announcements)
-  return _impl_.announcements_;
-}
-
-// -------------------------------------------------------------------
-
-// CMsgClientToGCModifyDevAnnouncements
-
-// optional .CMsgClientToGCModifyDevAnnouncements.EOperation operation = 1 [default = k_eCreate];
-inline bool CMsgClientToGCModifyDevAnnouncements::_internal_has_operation() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
-  return value;
-}
-inline bool CMsgClientToGCModifyDevAnnouncements::has_operation() const {
-  return _internal_has_operation();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::clear_operation() {
-  _impl_.operation_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000010u;
-}
-inline ::CMsgClientToGCModifyDevAnnouncements_EOperation CMsgClientToGCModifyDevAnnouncements::_internal_operation() const {
-  return static_cast< ::CMsgClientToGCModifyDevAnnouncements_EOperation >(_impl_.operation_);
-}
-inline ::CMsgClientToGCModifyDevAnnouncements_EOperation CMsgClientToGCModifyDevAnnouncements::operation() const {
-  // @@protoc_insertion_point(field_get:CMsgClientToGCModifyDevAnnouncements.operation)
-  return _internal_operation();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::_internal_set_operation(::CMsgClientToGCModifyDevAnnouncements_EOperation value) {
-  assert(::CMsgClientToGCModifyDevAnnouncements_EOperation_IsValid(value));
-  _impl_._has_bits_[0] |= 0x00000010u;
-  _impl_.operation_ = value;
-}
-inline void CMsgClientToGCModifyDevAnnouncements::set_operation(::CMsgClientToGCModifyDevAnnouncements_EOperation value) {
-  _internal_set_operation(value);
-  // @@protoc_insertion_point(field_set:CMsgClientToGCModifyDevAnnouncements.operation)
-}
-
-// optional uint32 target_id = 2;
-inline bool CMsgClientToGCModifyDevAnnouncements::_internal_has_target_id() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
-  return value;
-}
-inline bool CMsgClientToGCModifyDevAnnouncements::has_target_id() const {
-  return _internal_has_target_id();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::clear_target_id() {
-  _impl_.target_id_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000020u;
-}
-inline uint32_t CMsgClientToGCModifyDevAnnouncements::_internal_target_id() const {
-  return _impl_.target_id_;
-}
-inline uint32_t CMsgClientToGCModifyDevAnnouncements::target_id() const {
-  // @@protoc_insertion_point(field_get:CMsgClientToGCModifyDevAnnouncements.target_id)
-  return _internal_target_id();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::_internal_set_target_id(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000020u;
-  _impl_.target_id_ = value;
-}
-inline void CMsgClientToGCModifyDevAnnouncements::set_target_id(uint32_t value) {
-  _internal_set_target_id(value);
-  // @@protoc_insertion_point(field_set:CMsgClientToGCModifyDevAnnouncements.target_id)
-}
-
-// optional uint32 priority = 3;
-inline bool CMsgClientToGCModifyDevAnnouncements::_internal_has_priority() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
-  return value;
-}
-inline bool CMsgClientToGCModifyDevAnnouncements::has_priority() const {
-  return _internal_has_priority();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::clear_priority() {
-  _impl_.priority_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000040u;
-}
-inline uint32_t CMsgClientToGCModifyDevAnnouncements::_internal_priority() const {
-  return _impl_.priority_;
-}
-inline uint32_t CMsgClientToGCModifyDevAnnouncements::priority() const {
-  // @@protoc_insertion_point(field_get:CMsgClientToGCModifyDevAnnouncements.priority)
-  return _internal_priority();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::_internal_set_priority(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000040u;
-  _impl_.priority_ = value;
-}
-inline void CMsgClientToGCModifyDevAnnouncements::set_priority(uint32_t value) {
-  _internal_set_priority(value);
-  // @@protoc_insertion_point(field_set:CMsgClientToGCModifyDevAnnouncements.priority)
-}
-
-// optional string title = 4;
-inline bool CMsgClientToGCModifyDevAnnouncements::_internal_has_title() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
-  return value;
-}
-inline bool CMsgClientToGCModifyDevAnnouncements::has_title() const {
-  return _internal_has_title();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::clear_title() {
-  _impl_.title_.ClearToEmpty();
-  _impl_._has_bits_[0] &= ~0x00000001u;
-}
-inline const std::string& CMsgClientToGCModifyDevAnnouncements::title() const {
-  // @@protoc_insertion_point(field_get:CMsgClientToGCModifyDevAnnouncements.title)
-  return _internal_title();
-}
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void CMsgClientToGCModifyDevAnnouncements::set_title(ArgT0&& arg0, ArgT... args) {
- _impl_._has_bits_[0] |= 0x00000001u;
- _impl_.title_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:CMsgClientToGCModifyDevAnnouncements.title)
-}
-inline std::string* CMsgClientToGCModifyDevAnnouncements::mutable_title() {
-  std::string* _s = _internal_mutable_title();
-  // @@protoc_insertion_point(field_mutable:CMsgClientToGCModifyDevAnnouncements.title)
-  return _s;
-}
-inline const std::string& CMsgClientToGCModifyDevAnnouncements::_internal_title() const {
-  return _impl_.title_.Get();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::_internal_set_title(const std::string& value) {
-  _impl_._has_bits_[0] |= 0x00000001u;
-  _impl_.title_.Set(value, GetArenaForAllocation());
-}
-inline std::string* CMsgClientToGCModifyDevAnnouncements::_internal_mutable_title() {
-  _impl_._has_bits_[0] |= 0x00000001u;
-  return _impl_.title_.Mutable(GetArenaForAllocation());
-}
-inline std::string* CMsgClientToGCModifyDevAnnouncements::release_title() {
-  // @@protoc_insertion_point(field_release:CMsgClientToGCModifyDevAnnouncements.title)
-  if (!_internal_has_title()) {
-    return nullptr;
-  }
-  _impl_._has_bits_[0] &= ~0x00000001u;
-  auto* p = _impl_.title_.Release();
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.title_.IsDefault()) {
-    _impl_.title_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void CMsgClientToGCModifyDevAnnouncements::set_allocated_title(std::string* title) {
-  if (title != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000001u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000001u;
-  }
-  _impl_.title_.SetAllocated(title, GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.title_.IsDefault()) {
-    _impl_.title_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:CMsgClientToGCModifyDevAnnouncements.title)
-}
-
-// optional string message = 5;
-inline bool CMsgClientToGCModifyDevAnnouncements::_internal_has_message() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
-  return value;
-}
-inline bool CMsgClientToGCModifyDevAnnouncements::has_message() const {
-  return _internal_has_message();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::clear_message() {
-  _impl_.message_.ClearToEmpty();
-  _impl_._has_bits_[0] &= ~0x00000002u;
-}
-inline const std::string& CMsgClientToGCModifyDevAnnouncements::message() const {
-  // @@protoc_insertion_point(field_get:CMsgClientToGCModifyDevAnnouncements.message)
-  return _internal_message();
-}
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void CMsgClientToGCModifyDevAnnouncements::set_message(ArgT0&& arg0, ArgT... args) {
- _impl_._has_bits_[0] |= 0x00000002u;
- _impl_.message_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:CMsgClientToGCModifyDevAnnouncements.message)
-}
-inline std::string* CMsgClientToGCModifyDevAnnouncements::mutable_message() {
-  std::string* _s = _internal_mutable_message();
-  // @@protoc_insertion_point(field_mutable:CMsgClientToGCModifyDevAnnouncements.message)
-  return _s;
-}
-inline const std::string& CMsgClientToGCModifyDevAnnouncements::_internal_message() const {
-  return _impl_.message_.Get();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::_internal_set_message(const std::string& value) {
-  _impl_._has_bits_[0] |= 0x00000002u;
-  _impl_.message_.Set(value, GetArenaForAllocation());
-}
-inline std::string* CMsgClientToGCModifyDevAnnouncements::_internal_mutable_message() {
-  _impl_._has_bits_[0] |= 0x00000002u;
-  return _impl_.message_.Mutable(GetArenaForAllocation());
-}
-inline std::string* CMsgClientToGCModifyDevAnnouncements::release_message() {
-  // @@protoc_insertion_point(field_release:CMsgClientToGCModifyDevAnnouncements.message)
-  if (!_internal_has_message()) {
-    return nullptr;
-  }
-  _impl_._has_bits_[0] &= ~0x00000002u;
-  auto* p = _impl_.message_.Release();
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.message_.IsDefault()) {
-    _impl_.message_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void CMsgClientToGCModifyDevAnnouncements::set_allocated_message(std::string* message) {
-  if (message != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000002u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000002u;
-  }
-  _impl_.message_.SetAllocated(message, GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.message_.IsDefault()) {
-    _impl_.message_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:CMsgClientToGCModifyDevAnnouncements.message)
-}
-
-// optional string url = 6;
-inline bool CMsgClientToGCModifyDevAnnouncements::_internal_has_url() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
-  return value;
-}
-inline bool CMsgClientToGCModifyDevAnnouncements::has_url() const {
-  return _internal_has_url();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::clear_url() {
-  _impl_.url_.ClearToEmpty();
-  _impl_._has_bits_[0] &= ~0x00000004u;
-}
-inline const std::string& CMsgClientToGCModifyDevAnnouncements::url() const {
-  // @@protoc_insertion_point(field_get:CMsgClientToGCModifyDevAnnouncements.url)
-  return _internal_url();
-}
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void CMsgClientToGCModifyDevAnnouncements::set_url(ArgT0&& arg0, ArgT... args) {
- _impl_._has_bits_[0] |= 0x00000004u;
- _impl_.url_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:CMsgClientToGCModifyDevAnnouncements.url)
-}
-inline std::string* CMsgClientToGCModifyDevAnnouncements::mutable_url() {
-  std::string* _s = _internal_mutable_url();
-  // @@protoc_insertion_point(field_mutable:CMsgClientToGCModifyDevAnnouncements.url)
-  return _s;
-}
-inline const std::string& CMsgClientToGCModifyDevAnnouncements::_internal_url() const {
-  return _impl_.url_.Get();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::_internal_set_url(const std::string& value) {
-  _impl_._has_bits_[0] |= 0x00000004u;
-  _impl_.url_.Set(value, GetArenaForAllocation());
-}
-inline std::string* CMsgClientToGCModifyDevAnnouncements::_internal_mutable_url() {
-  _impl_._has_bits_[0] |= 0x00000004u;
-  return _impl_.url_.Mutable(GetArenaForAllocation());
-}
-inline std::string* CMsgClientToGCModifyDevAnnouncements::release_url() {
-  // @@protoc_insertion_point(field_release:CMsgClientToGCModifyDevAnnouncements.url)
-  if (!_internal_has_url()) {
-    return nullptr;
-  }
-  _impl_._has_bits_[0] &= ~0x00000004u;
-  auto* p = _impl_.url_.Release();
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.url_.IsDefault()) {
-    _impl_.url_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void CMsgClientToGCModifyDevAnnouncements::set_allocated_url(std::string* url) {
-  if (url != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000004u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000004u;
-  }
-  _impl_.url_.SetAllocated(url, GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.url_.IsDefault()) {
-    _impl_.url_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:CMsgClientToGCModifyDevAnnouncements.url)
-}
-
-// optional string patch_version = 7;
-inline bool CMsgClientToGCModifyDevAnnouncements::_internal_has_patch_version() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
-  return value;
-}
-inline bool CMsgClientToGCModifyDevAnnouncements::has_patch_version() const {
-  return _internal_has_patch_version();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::clear_patch_version() {
-  _impl_.patch_version_.ClearToEmpty();
-  _impl_._has_bits_[0] &= ~0x00000008u;
-}
-inline const std::string& CMsgClientToGCModifyDevAnnouncements::patch_version() const {
-  // @@protoc_insertion_point(field_get:CMsgClientToGCModifyDevAnnouncements.patch_version)
-  return _internal_patch_version();
-}
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void CMsgClientToGCModifyDevAnnouncements::set_patch_version(ArgT0&& arg0, ArgT... args) {
- _impl_._has_bits_[0] |= 0x00000008u;
- _impl_.patch_version_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:CMsgClientToGCModifyDevAnnouncements.patch_version)
-}
-inline std::string* CMsgClientToGCModifyDevAnnouncements::mutable_patch_version() {
-  std::string* _s = _internal_mutable_patch_version();
-  // @@protoc_insertion_point(field_mutable:CMsgClientToGCModifyDevAnnouncements.patch_version)
-  return _s;
-}
-inline const std::string& CMsgClientToGCModifyDevAnnouncements::_internal_patch_version() const {
-  return _impl_.patch_version_.Get();
-}
-inline void CMsgClientToGCModifyDevAnnouncements::_internal_set_patch_version(const std::string& value) {
-  _impl_._has_bits_[0] |= 0x00000008u;
-  _impl_.patch_version_.Set(value, GetArenaForAllocation());
-}
-inline std::string* CMsgClientToGCModifyDevAnnouncements::_internal_mutable_patch_version() {
-  _impl_._has_bits_[0] |= 0x00000008u;
-  return _impl_.patch_version_.Mutable(GetArenaForAllocation());
-}
-inline std::string* CMsgClientToGCModifyDevAnnouncements::release_patch_version() {
-  // @@protoc_insertion_point(field_release:CMsgClientToGCModifyDevAnnouncements.patch_version)
-  if (!_internal_has_patch_version()) {
-    return nullptr;
-  }
-  _impl_._has_bits_[0] &= ~0x00000008u;
-  auto* p = _impl_.patch_version_.Release();
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.patch_version_.IsDefault()) {
-    _impl_.patch_version_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void CMsgClientToGCModifyDevAnnouncements::set_allocated_patch_version(std::string* patch_version) {
-  if (patch_version != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000008u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000008u;
-  }
-  _impl_.patch_version_.SetAllocated(patch_version, GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.patch_version_.IsDefault()) {
-    _impl_.patch_version_.Set("", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:CMsgClientToGCModifyDevAnnouncements.patch_version)
-}
-
-// -------------------------------------------------------------------
-
-// CMsgClientToGCModifyDevAnnouncementsResponse
-
-// optional .CMsgClientToGCModifyDevAnnouncementsResponse.EResult result = 1 [default = k_eSuccess];
-inline bool CMsgClientToGCModifyDevAnnouncementsResponse::_internal_has_result() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
-  return value;
-}
-inline bool CMsgClientToGCModifyDevAnnouncementsResponse::has_result() const {
-  return _internal_has_result();
-}
-inline void CMsgClientToGCModifyDevAnnouncementsResponse::clear_result() {
-  _impl_.result_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000001u;
-}
-inline ::CMsgClientToGCModifyDevAnnouncementsResponse_EResult CMsgClientToGCModifyDevAnnouncementsResponse::_internal_result() const {
-  return static_cast< ::CMsgClientToGCModifyDevAnnouncementsResponse_EResult >(_impl_.result_);
-}
-inline ::CMsgClientToGCModifyDevAnnouncementsResponse_EResult CMsgClientToGCModifyDevAnnouncementsResponse::result() const {
-  // @@protoc_insertion_point(field_get:CMsgClientToGCModifyDevAnnouncementsResponse.result)
-  return _internal_result();
-}
-inline void CMsgClientToGCModifyDevAnnouncementsResponse::_internal_set_result(::CMsgClientToGCModifyDevAnnouncementsResponse_EResult value) {
-  assert(::CMsgClientToGCModifyDevAnnouncementsResponse_EResult_IsValid(value));
-  _impl_._has_bits_[0] |= 0x00000001u;
-  _impl_.result_ = value;
-}
-inline void CMsgClientToGCModifyDevAnnouncementsResponse::set_result(::CMsgClientToGCModifyDevAnnouncementsResponse_EResult value) {
-  _internal_set_result(value);
-  // @@protoc_insertion_point(field_set:CMsgClientToGCModifyDevAnnouncementsResponse.result)
 }
 
 // -------------------------------------------------------------------
@@ -50692,6 +58979,76 @@ CMsgClientToGCGetAccountMatchReportsResponse::commends() const {
 
 // -------------------------------------------------------------------
 
+// CMsgClientToGCRequestReporterUpdates
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCRequestReporterUpdatesResponse
+
+// optional .CMsgClientToGCRequestReporterUpdatesResponse.EResponse response = 1 [default = k_eInternalError];
+inline bool CMsgClientToGCRequestReporterUpdatesResponse::_internal_has_response() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCRequestReporterUpdatesResponse::has_response() const {
+  return _internal_has_response();
+}
+inline void CMsgClientToGCRequestReporterUpdatesResponse::clear_response() {
+  _impl_.response_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::CMsgClientToGCRequestReporterUpdatesResponse_EResponse CMsgClientToGCRequestReporterUpdatesResponse::_internal_response() const {
+  return static_cast< ::CMsgClientToGCRequestReporterUpdatesResponse_EResponse >(_impl_.response_);
+}
+inline ::CMsgClientToGCRequestReporterUpdatesResponse_EResponse CMsgClientToGCRequestReporterUpdatesResponse::response() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCRequestReporterUpdatesResponse.response)
+  return _internal_response();
+}
+inline void CMsgClientToGCRequestReporterUpdatesResponse::_internal_set_response(::CMsgClientToGCRequestReporterUpdatesResponse_EResponse value) {
+  assert(::CMsgClientToGCRequestReporterUpdatesResponse_EResponse_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.response_ = value;
+}
+inline void CMsgClientToGCRequestReporterUpdatesResponse::set_response(::CMsgClientToGCRequestReporterUpdatesResponse_EResponse value) {
+  _internal_set_response(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCRequestReporterUpdatesResponse.response)
+}
+
+// optional .CMsgClientToGCReportPlayerFromMatch.EReportType report_type = 5 [default = k_eReport_None];
+inline bool CMsgClientToGCRequestReporterUpdatesResponse::_internal_has_report_type() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCRequestReporterUpdatesResponse::has_report_type() const {
+  return _internal_has_report_type();
+}
+inline void CMsgClientToGCRequestReporterUpdatesResponse::clear_report_type() {
+  _impl_.report_type_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline ::CMsgClientToGCReportPlayerFromMatch_EReportType CMsgClientToGCRequestReporterUpdatesResponse::_internal_report_type() const {
+  return static_cast< ::CMsgClientToGCReportPlayerFromMatch_EReportType >(_impl_.report_type_);
+}
+inline ::CMsgClientToGCReportPlayerFromMatch_EReportType CMsgClientToGCRequestReporterUpdatesResponse::report_type() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCRequestReporterUpdatesResponse.report_type)
+  return _internal_report_type();
+}
+inline void CMsgClientToGCRequestReporterUpdatesResponse::_internal_set_report_type(::CMsgClientToGCReportPlayerFromMatch_EReportType value) {
+  assert(::CMsgClientToGCReportPlayerFromMatch_EReportType_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.report_type_ = value;
+}
+inline void CMsgClientToGCRequestReporterUpdatesResponse::set_report_type(::CMsgClientToGCReportPlayerFromMatch_EReportType value) {
+  _internal_set_report_type(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCRequestReporterUpdatesResponse.report_type)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCAcknowledgeReporterUpdates
+
+// -------------------------------------------------------------------
+
 // CMsgClientToGCDeleteHeroBuild
 
 // optional uint32 author_account_id = 1;
@@ -52460,6 +60817,34 @@ inline void CMsgClientToGCGetLeaderboard::set_hero_id(uint32_t value) {
   // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboard.hero_id)
 }
 
+// optional uint32 leaderboard_id = 3;
+inline bool CMsgClientToGCGetLeaderboard::_internal_has_leaderboard_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboard::has_leaderboard_id() const {
+  return _internal_has_leaderboard_id();
+}
+inline void CMsgClientToGCGetLeaderboard::clear_leaderboard_id() {
+  _impl_.leaderboard_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline uint32_t CMsgClientToGCGetLeaderboard::_internal_leaderboard_id() const {
+  return _impl_.leaderboard_id_;
+}
+inline uint32_t CMsgClientToGCGetLeaderboard::leaderboard_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboard.leaderboard_id)
+  return _internal_leaderboard_id();
+}
+inline void CMsgClientToGCGetLeaderboard::_internal_set_leaderboard_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.leaderboard_id_ = value;
+}
+inline void CMsgClientToGCGetLeaderboard::set_leaderboard_id(uint32_t value) {
+  _internal_set_leaderboard_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboard.leaderboard_id)
+}
+
 // -------------------------------------------------------------------
 
 // CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry
@@ -52607,34 +60992,6 @@ CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry::mutable_top_hero_ids() {
   return _internal_mutable_top_hero_ids();
 }
 
-// optional uint32 badge_level = 4;
-inline bool CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry::_internal_has_badge_level() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
-  return value;
-}
-inline bool CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry::has_badge_level() const {
-  return _internal_has_badge_level();
-}
-inline void CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry::clear_badge_level() {
-  _impl_.badge_level_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000004u;
-}
-inline uint32_t CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry::_internal_badge_level() const {
-  return _impl_.badge_level_;
-}
-inline uint32_t CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry::badge_level() const {
-  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardResponse.LeaderboardEntry.badge_level)
-  return _internal_badge_level();
-}
-inline void CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry::_internal_set_badge_level(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000004u;
-  _impl_.badge_level_ = value;
-}
-inline void CMsgClientToGCGetLeaderboardResponse_LeaderboardEntry::set_badge_level(uint32_t value) {
-  _internal_set_badge_level(value);
-  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardResponse.LeaderboardEntry.badge_level)
-}
-
 // -------------------------------------------------------------------
 
 // CMsgClientToGCGetLeaderboardResponse
@@ -52766,6 +61123,34 @@ inline void CMsgClientToGCGetAccountLeaderboards::_internal_set_account_id(uint3
 inline void CMsgClientToGCGetAccountLeaderboards::set_account_id(uint32_t value) {
   _internal_set_account_id(value);
   // @@protoc_insertion_point(field_set:CMsgClientToGCGetAccountLeaderboards.account_id)
+}
+
+// optional uint32 leaderboard_id = 2;
+inline bool CMsgClientToGCGetAccountLeaderboards::_internal_has_leaderboard_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetAccountLeaderboards::has_leaderboard_id() const {
+  return _internal_has_leaderboard_id();
+}
+inline void CMsgClientToGCGetAccountLeaderboards::clear_leaderboard_id() {
+  _impl_.leaderboard_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CMsgClientToGCGetAccountLeaderboards::_internal_leaderboard_id() const {
+  return _impl_.leaderboard_id_;
+}
+inline uint32_t CMsgClientToGCGetAccountLeaderboards::leaderboard_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetAccountLeaderboards.leaderboard_id)
+  return _internal_leaderboard_id();
+}
+inline void CMsgClientToGCGetAccountLeaderboards::_internal_set_leaderboard_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.leaderboard_id_ = value;
+}
+inline void CMsgClientToGCGetAccountLeaderboards::set_leaderboard_id(uint32_t value) {
+  _internal_set_leaderboard_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetAccountLeaderboards.leaderboard_id)
 }
 
 // -------------------------------------------------------------------
@@ -54056,6 +62441,34 @@ CMsgClientToGCRequestHeroReleaseVoteTally::mutable_vote_rounds() {
   return _internal_mutable_vote_rounds();
 }
 
+// optional bool is_initial_request = 2;
+inline bool CMsgClientToGCRequestHeroReleaseVoteTally::_internal_has_is_initial_request() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCRequestHeroReleaseVoteTally::has_is_initial_request() const {
+  return _internal_has_is_initial_request();
+}
+inline void CMsgClientToGCRequestHeroReleaseVoteTally::clear_is_initial_request() {
+  _impl_.is_initial_request_ = false;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline bool CMsgClientToGCRequestHeroReleaseVoteTally::_internal_is_initial_request() const {
+  return _impl_.is_initial_request_;
+}
+inline bool CMsgClientToGCRequestHeroReleaseVoteTally::is_initial_request() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCRequestHeroReleaseVoteTally.is_initial_request)
+  return _internal_is_initial_request();
+}
+inline void CMsgClientToGCRequestHeroReleaseVoteTally::_internal_set_is_initial_request(bool value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.is_initial_request_ = value;
+}
+inline void CMsgClientToGCRequestHeroReleaseVoteTally::set_is_initial_request(bool value) {
+  _internal_set_is_initial_request(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCRequestHeroReleaseVoteTally.is_initial_request)
+}
+
 // -------------------------------------------------------------------
 
 // CMsgGCToClientUpdateHeroReleaseVoteTally_VoteRoundToTallyEntry
@@ -54614,6 +63027,66 @@ CMsgGCToClientPartyChatMsg::chat_lines() const {
 
 // -------------------------------------------------------------------
 
+// CMsgGCToClientPartyPlayerTyping
+
+// optional fixed64 party_id = 1;
+inline bool CMsgGCToClientPartyPlayerTyping::_internal_has_party_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgGCToClientPartyPlayerTyping::has_party_id() const {
+  return _internal_has_party_id();
+}
+inline void CMsgGCToClientPartyPlayerTyping::clear_party_id() {
+  _impl_.party_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint64_t CMsgGCToClientPartyPlayerTyping::_internal_party_id() const {
+  return _impl_.party_id_;
+}
+inline uint64_t CMsgGCToClientPartyPlayerTyping::party_id() const {
+  // @@protoc_insertion_point(field_get:CMsgGCToClientPartyPlayerTyping.party_id)
+  return _internal_party_id();
+}
+inline void CMsgGCToClientPartyPlayerTyping::_internal_set_party_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.party_id_ = value;
+}
+inline void CMsgGCToClientPartyPlayerTyping::set_party_id(uint64_t value) {
+  _internal_set_party_id(value);
+  // @@protoc_insertion_point(field_set:CMsgGCToClientPartyPlayerTyping.party_id)
+}
+
+// optional uint32 account_id = 2;
+inline bool CMsgGCToClientPartyPlayerTyping::_internal_has_account_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgGCToClientPartyPlayerTyping::has_account_id() const {
+  return _internal_has_account_id();
+}
+inline void CMsgGCToClientPartyPlayerTyping::clear_account_id() {
+  _impl_.account_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CMsgGCToClientPartyPlayerTyping::_internal_account_id() const {
+  return _impl_.account_id_;
+}
+inline uint32_t CMsgGCToClientPartyPlayerTyping::account_id() const {
+  // @@protoc_insertion_point(field_get:CMsgGCToClientPartyPlayerTyping.account_id)
+  return _internal_account_id();
+}
+inline void CMsgGCToClientPartyPlayerTyping::_internal_set_account_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.account_id_ = value;
+}
+inline void CMsgGCToClientPartyPlayerTyping::set_account_id(uint32_t value) {
+  _internal_set_account_id(value);
+  // @@protoc_insertion_point(field_set:CMsgGCToClientPartyPlayerTyping.account_id)
+}
+
+// -------------------------------------------------------------------
+
 // CMsgPostGameProgressData_PlayerAccolade
 
 // optional uint32 accolade_id = 1;
@@ -55062,11 +63535,102 @@ inline void CMsgPostGameProgressData_PlayerAward::set_allocated_award_class(std:
 
 // -------------------------------------------------------------------
 
+// CMsgPostGameProgressData_HeroXPReward
+
+// optional .CMsgHeroXPGrant xp_grant = 1;
+inline bool CMsgPostGameProgressData_HeroXPReward::_internal_has_xp_grant() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.xp_grant_ != nullptr);
+  return value;
+}
+inline bool CMsgPostGameProgressData_HeroXPReward::has_xp_grant() const {
+  return _internal_has_xp_grant();
+}
+inline const ::CMsgHeroXPGrant& CMsgPostGameProgressData_HeroXPReward::_internal_xp_grant() const {
+  const ::CMsgHeroXPGrant* p = _impl_.xp_grant_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CMsgHeroXPGrant&>(
+      ::_CMsgHeroXPGrant_default_instance_);
+}
+inline const ::CMsgHeroXPGrant& CMsgPostGameProgressData_HeroXPReward::xp_grant() const {
+  // @@protoc_insertion_point(field_get:CMsgPostGameProgressData.HeroXPReward.xp_grant)
+  return _internal_xp_grant();
+}
+inline void CMsgPostGameProgressData_HeroXPReward::unsafe_arena_set_allocated_xp_grant(
+    ::CMsgHeroXPGrant* xp_grant) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.xp_grant_);
+  }
+  _impl_.xp_grant_ = xp_grant;
+  if (xp_grant) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMsgPostGameProgressData.HeroXPReward.xp_grant)
+}
+inline ::CMsgHeroXPGrant* CMsgPostGameProgressData_HeroXPReward::release_xp_grant() {
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::CMsgHeroXPGrant* temp = _impl_.xp_grant_;
+  _impl_.xp_grant_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::CMsgHeroXPGrant* CMsgPostGameProgressData_HeroXPReward::unsafe_arena_release_xp_grant() {
+  // @@protoc_insertion_point(field_release:CMsgPostGameProgressData.HeroXPReward.xp_grant)
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::CMsgHeroXPGrant* temp = _impl_.xp_grant_;
+  _impl_.xp_grant_ = nullptr;
+  return temp;
+}
+inline ::CMsgHeroXPGrant* CMsgPostGameProgressData_HeroXPReward::_internal_mutable_xp_grant() {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  if (_impl_.xp_grant_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CMsgHeroXPGrant>(GetArenaForAllocation());
+    _impl_.xp_grant_ = p;
+  }
+  return _impl_.xp_grant_;
+}
+inline ::CMsgHeroXPGrant* CMsgPostGameProgressData_HeroXPReward::mutable_xp_grant() {
+  ::CMsgHeroXPGrant* _msg = _internal_mutable_xp_grant();
+  // @@protoc_insertion_point(field_mutable:CMsgPostGameProgressData.HeroXPReward.xp_grant)
+  return _msg;
+}
+inline void CMsgPostGameProgressData_HeroXPReward::set_allocated_xp_grant(::CMsgHeroXPGrant* xp_grant) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.xp_grant_);
+  }
+  if (xp_grant) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(
+                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(xp_grant));
+    if (message_arena != submessage_arena) {
+      xp_grant = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, xp_grant, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  _impl_.xp_grant_ = xp_grant;
+  // @@protoc_insertion_point(field_set_allocated:CMsgPostGameProgressData.HeroXPReward.xp_grant)
+}
+
+// -------------------------------------------------------------------
+
 // CMsgPostGameProgressData_PlayerData
 
 // optional uint32 player_slot = 1;
 inline bool CMsgPostGameProgressData_PlayerData::_internal_has_player_slot() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
   return value;
 }
 inline bool CMsgPostGameProgressData_PlayerData::has_player_slot() const {
@@ -55074,7 +63638,7 @@ inline bool CMsgPostGameProgressData_PlayerData::has_player_slot() const {
 }
 inline void CMsgPostGameProgressData_PlayerData::clear_player_slot() {
   _impl_.player_slot_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000001u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 inline uint32_t CMsgPostGameProgressData_PlayerData::_internal_player_slot() const {
   return _impl_.player_slot_;
@@ -55084,7 +63648,7 @@ inline uint32_t CMsgPostGameProgressData_PlayerData::player_slot() const {
   return _internal_player_slot();
 }
 inline void CMsgPostGameProgressData_PlayerData::_internal_set_player_slot(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_._has_bits_[0] |= 0x00000004u;
   _impl_.player_slot_ = value;
 }
 inline void CMsgPostGameProgressData_PlayerData::set_player_slot(uint32_t value) {
@@ -55094,7 +63658,7 @@ inline void CMsgPostGameProgressData_PlayerData::set_player_slot(uint32_t value)
 
 // optional uint32 account_id = 2;
 inline bool CMsgPostGameProgressData_PlayerData::_internal_has_account_id() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
   return value;
 }
 inline bool CMsgPostGameProgressData_PlayerData::has_account_id() const {
@@ -55102,7 +63666,7 @@ inline bool CMsgPostGameProgressData_PlayerData::has_account_id() const {
 }
 inline void CMsgPostGameProgressData_PlayerData::clear_account_id() {
   _impl_.account_id_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000002u;
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 inline uint32_t CMsgPostGameProgressData_PlayerData::_internal_account_id() const {
   return _impl_.account_id_;
@@ -55112,7 +63676,7 @@ inline uint32_t CMsgPostGameProgressData_PlayerData::account_id() const {
   return _internal_account_id();
 }
 inline void CMsgPostGameProgressData_PlayerData::_internal_set_account_id(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_._has_bits_[0] |= 0x00000008u;
   _impl_.account_id_ = value;
 }
 inline void CMsgPostGameProgressData_PlayerData::set_account_id(uint32_t value) {
@@ -55122,7 +63686,7 @@ inline void CMsgPostGameProgressData_PlayerData::set_account_id(uint32_t value) 
 
 // optional uint32 hero_id = 3;
 inline bool CMsgPostGameProgressData_PlayerData::_internal_has_hero_id() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
   return value;
 }
 inline bool CMsgPostGameProgressData_PlayerData::has_hero_id() const {
@@ -55130,7 +63694,7 @@ inline bool CMsgPostGameProgressData_PlayerData::has_hero_id() const {
 }
 inline void CMsgPostGameProgressData_PlayerData::clear_hero_id() {
   _impl_.hero_id_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000004u;
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 inline uint32_t CMsgPostGameProgressData_PlayerData::_internal_hero_id() const {
   return _impl_.hero_id_;
@@ -55140,7 +63704,7 @@ inline uint32_t CMsgPostGameProgressData_PlayerData::hero_id() const {
   return _internal_hero_id();
 }
 inline void CMsgPostGameProgressData_PlayerData::_internal_set_hero_id(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_._has_bits_[0] |= 0x00000010u;
   _impl_.hero_id_ = value;
 }
 inline void CMsgPostGameProgressData_PlayerData::set_hero_id(uint32_t value) {
@@ -55150,7 +63714,7 @@ inline void CMsgPostGameProgressData_PlayerData::set_hero_id(uint32_t value) {
 
 // optional .ECitadelLobbyTeam team = 4 [default = k_ECitadelLobbyTeam_Team0];
 inline bool CMsgPostGameProgressData_PlayerData::_internal_has_team() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
   return value;
 }
 inline bool CMsgPostGameProgressData_PlayerData::has_team() const {
@@ -55158,7 +63722,7 @@ inline bool CMsgPostGameProgressData_PlayerData::has_team() const {
 }
 inline void CMsgPostGameProgressData_PlayerData::clear_team() {
   _impl_.team_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000008u;
+  _impl_._has_bits_[0] &= ~0x00000020u;
 }
 inline ::ECitadelLobbyTeam CMsgPostGameProgressData_PlayerData::_internal_team() const {
   return static_cast< ::ECitadelLobbyTeam >(_impl_.team_);
@@ -55169,7 +63733,7 @@ inline ::ECitadelLobbyTeam CMsgPostGameProgressData_PlayerData::team() const {
 }
 inline void CMsgPostGameProgressData_PlayerData::_internal_set_team(::ECitadelLobbyTeam value) {
   assert(::ECitadelLobbyTeam_IsValid(value));
-  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_._has_bits_[0] |= 0x00000020u;
   _impl_.team_ = value;
 }
 inline void CMsgPostGameProgressData_PlayerData::set_team(::ECitadelLobbyTeam value) {
@@ -55179,7 +63743,7 @@ inline void CMsgPostGameProgressData_PlayerData::set_team(::ECitadelLobbyTeam va
 
 // optional uint32 mvp_rank = 5;
 inline bool CMsgPostGameProgressData_PlayerData::_internal_has_mvp_rank() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
   return value;
 }
 inline bool CMsgPostGameProgressData_PlayerData::has_mvp_rank() const {
@@ -55187,7 +63751,7 @@ inline bool CMsgPostGameProgressData_PlayerData::has_mvp_rank() const {
 }
 inline void CMsgPostGameProgressData_PlayerData::clear_mvp_rank() {
   _impl_.mvp_rank_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000010u;
+  _impl_._has_bits_[0] &= ~0x00000040u;
 }
 inline uint32_t CMsgPostGameProgressData_PlayerData::_internal_mvp_rank() const {
   return _impl_.mvp_rank_;
@@ -55197,7 +63761,7 @@ inline uint32_t CMsgPostGameProgressData_PlayerData::mvp_rank() const {
   return _internal_mvp_rank();
 }
 inline void CMsgPostGameProgressData_PlayerData::_internal_set_mvp_rank(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_._has_bits_[0] |= 0x00000040u;
   _impl_.mvp_rank_ = value;
 }
 inline void CMsgPostGameProgressData_PlayerData::set_mvp_rank(uint32_t value) {
@@ -55285,13 +63849,256 @@ CMsgPostGameProgressData_PlayerData::awards() const {
   return _impl_.awards_;
 }
 
+// optional .CMsgPlayerHeroData hero_data = 8;
+inline bool CMsgPostGameProgressData_PlayerData::_internal_has_hero_data() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.hero_data_ != nullptr);
+  return value;
+}
+inline bool CMsgPostGameProgressData_PlayerData::has_hero_data() const {
+  return _internal_has_hero_data();
+}
+inline const ::CMsgPlayerHeroData& CMsgPostGameProgressData_PlayerData::_internal_hero_data() const {
+  const ::CMsgPlayerHeroData* p = _impl_.hero_data_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CMsgPlayerHeroData&>(
+      ::_CMsgPlayerHeroData_default_instance_);
+}
+inline const ::CMsgPlayerHeroData& CMsgPostGameProgressData_PlayerData::hero_data() const {
+  // @@protoc_insertion_point(field_get:CMsgPostGameProgressData.PlayerData.hero_data)
+  return _internal_hero_data();
+}
+inline void CMsgPostGameProgressData_PlayerData::unsafe_arena_set_allocated_hero_data(
+    ::CMsgPlayerHeroData* hero_data) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.hero_data_);
+  }
+  _impl_.hero_data_ = hero_data;
+  if (hero_data) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMsgPostGameProgressData.PlayerData.hero_data)
+}
+inline ::CMsgPlayerHeroData* CMsgPostGameProgressData_PlayerData::release_hero_data() {
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::CMsgPlayerHeroData* temp = _impl_.hero_data_;
+  _impl_.hero_data_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::CMsgPlayerHeroData* CMsgPostGameProgressData_PlayerData::unsafe_arena_release_hero_data() {
+  // @@protoc_insertion_point(field_release:CMsgPostGameProgressData.PlayerData.hero_data)
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::CMsgPlayerHeroData* temp = _impl_.hero_data_;
+  _impl_.hero_data_ = nullptr;
+  return temp;
+}
+inline ::CMsgPlayerHeroData* CMsgPostGameProgressData_PlayerData::_internal_mutable_hero_data() {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  if (_impl_.hero_data_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CMsgPlayerHeroData>(GetArenaForAllocation());
+    _impl_.hero_data_ = p;
+  }
+  return _impl_.hero_data_;
+}
+inline ::CMsgPlayerHeroData* CMsgPostGameProgressData_PlayerData::mutable_hero_data() {
+  ::CMsgPlayerHeroData* _msg = _internal_mutable_hero_data();
+  // @@protoc_insertion_point(field_mutable:CMsgPostGameProgressData.PlayerData.hero_data)
+  return _msg;
+}
+inline void CMsgPostGameProgressData_PlayerData::set_allocated_hero_data(::CMsgPlayerHeroData* hero_data) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.hero_data_);
+  }
+  if (hero_data) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(
+                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(hero_data));
+    if (message_arena != submessage_arena) {
+      hero_data = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, hero_data, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  _impl_.hero_data_ = hero_data;
+  // @@protoc_insertion_point(field_set_allocated:CMsgPostGameProgressData.PlayerData.hero_data)
+}
+
+// repeated .CMsgPostGameProgressData.HeroXPReward hero_xp_rewards = 9;
+inline int CMsgPostGameProgressData_PlayerData::_internal_hero_xp_rewards_size() const {
+  return _impl_.hero_xp_rewards_.size();
+}
+inline int CMsgPostGameProgressData_PlayerData::hero_xp_rewards_size() const {
+  return _internal_hero_xp_rewards_size();
+}
+inline void CMsgPostGameProgressData_PlayerData::clear_hero_xp_rewards() {
+  _impl_.hero_xp_rewards_.Clear();
+}
+inline ::CMsgPostGameProgressData_HeroXPReward* CMsgPostGameProgressData_PlayerData::mutable_hero_xp_rewards(int index) {
+  // @@protoc_insertion_point(field_mutable:CMsgPostGameProgressData.PlayerData.hero_xp_rewards)
+  return _impl_.hero_xp_rewards_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_HeroXPReward >*
+CMsgPostGameProgressData_PlayerData::mutable_hero_xp_rewards() {
+  // @@protoc_insertion_point(field_mutable_list:CMsgPostGameProgressData.PlayerData.hero_xp_rewards)
+  return &_impl_.hero_xp_rewards_;
+}
+inline const ::CMsgPostGameProgressData_HeroXPReward& CMsgPostGameProgressData_PlayerData::_internal_hero_xp_rewards(int index) const {
+  return _impl_.hero_xp_rewards_.Get(index);
+}
+inline const ::CMsgPostGameProgressData_HeroXPReward& CMsgPostGameProgressData_PlayerData::hero_xp_rewards(int index) const {
+  // @@protoc_insertion_point(field_get:CMsgPostGameProgressData.PlayerData.hero_xp_rewards)
+  return _internal_hero_xp_rewards(index);
+}
+inline ::CMsgPostGameProgressData_HeroXPReward* CMsgPostGameProgressData_PlayerData::_internal_add_hero_xp_rewards() {
+  return _impl_.hero_xp_rewards_.Add();
+}
+inline ::CMsgPostGameProgressData_HeroXPReward* CMsgPostGameProgressData_PlayerData::add_hero_xp_rewards() {
+  ::CMsgPostGameProgressData_HeroXPReward* _add = _internal_add_hero_xp_rewards();
+  // @@protoc_insertion_point(field_add:CMsgPostGameProgressData.PlayerData.hero_xp_rewards)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_HeroXPReward >&
+CMsgPostGameProgressData_PlayerData::hero_xp_rewards() const {
+  // @@protoc_insertion_point(field_list:CMsgPostGameProgressData.PlayerData.hero_xp_rewards)
+  return _impl_.hero_xp_rewards_;
+}
+
+// optional .CMsgMatchPlayerRankData player_rank_data = 10;
+inline bool CMsgPostGameProgressData_PlayerData::_internal_has_player_rank_data() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.player_rank_data_ != nullptr);
+  return value;
+}
+inline bool CMsgPostGameProgressData_PlayerData::has_player_rank_data() const {
+  return _internal_has_player_rank_data();
+}
+inline const ::CMsgMatchPlayerRankData& CMsgPostGameProgressData_PlayerData::_internal_player_rank_data() const {
+  const ::CMsgMatchPlayerRankData* p = _impl_.player_rank_data_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CMsgMatchPlayerRankData&>(
+      ::_CMsgMatchPlayerRankData_default_instance_);
+}
+inline const ::CMsgMatchPlayerRankData& CMsgPostGameProgressData_PlayerData::player_rank_data() const {
+  // @@protoc_insertion_point(field_get:CMsgPostGameProgressData.PlayerData.player_rank_data)
+  return _internal_player_rank_data();
+}
+inline void CMsgPostGameProgressData_PlayerData::unsafe_arena_set_allocated_player_rank_data(
+    ::CMsgMatchPlayerRankData* player_rank_data) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.player_rank_data_);
+  }
+  _impl_.player_rank_data_ = player_rank_data;
+  if (player_rank_data) {
+    _impl_._has_bits_[0] |= 0x00000002u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000002u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMsgPostGameProgressData.PlayerData.player_rank_data)
+}
+inline ::CMsgMatchPlayerRankData* CMsgPostGameProgressData_PlayerData::release_player_rank_data() {
+  _impl_._has_bits_[0] &= ~0x00000002u;
+  ::CMsgMatchPlayerRankData* temp = _impl_.player_rank_data_;
+  _impl_.player_rank_data_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::CMsgMatchPlayerRankData* CMsgPostGameProgressData_PlayerData::unsafe_arena_release_player_rank_data() {
+  // @@protoc_insertion_point(field_release:CMsgPostGameProgressData.PlayerData.player_rank_data)
+  _impl_._has_bits_[0] &= ~0x00000002u;
+  ::CMsgMatchPlayerRankData* temp = _impl_.player_rank_data_;
+  _impl_.player_rank_data_ = nullptr;
+  return temp;
+}
+inline ::CMsgMatchPlayerRankData* CMsgPostGameProgressData_PlayerData::_internal_mutable_player_rank_data() {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  if (_impl_.player_rank_data_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CMsgMatchPlayerRankData>(GetArenaForAllocation());
+    _impl_.player_rank_data_ = p;
+  }
+  return _impl_.player_rank_data_;
+}
+inline ::CMsgMatchPlayerRankData* CMsgPostGameProgressData_PlayerData::mutable_player_rank_data() {
+  ::CMsgMatchPlayerRankData* _msg = _internal_mutable_player_rank_data();
+  // @@protoc_insertion_point(field_mutable:CMsgPostGameProgressData.PlayerData.player_rank_data)
+  return _msg;
+}
+inline void CMsgPostGameProgressData_PlayerData::set_allocated_player_rank_data(::CMsgMatchPlayerRankData* player_rank_data) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.player_rank_data_);
+  }
+  if (player_rank_data) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(
+                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(player_rank_data));
+    if (message_arena != submessage_arena) {
+      player_rank_data = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, player_rank_data, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000002u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000002u;
+  }
+  _impl_.player_rank_data_ = player_rank_data;
+  // @@protoc_insertion_point(field_set_allocated:CMsgPostGameProgressData.PlayerData.player_rank_data)
+}
+
+// optional .EPlayerMatchOutcome player_match_outcome = 11 [default = k_EPlayerMatchOutcome_Invalid];
+inline bool CMsgPostGameProgressData_PlayerData::_internal_has_player_match_outcome() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
+  return value;
+}
+inline bool CMsgPostGameProgressData_PlayerData::has_player_match_outcome() const {
+  return _internal_has_player_match_outcome();
+}
+inline void CMsgPostGameProgressData_PlayerData::clear_player_match_outcome() {
+  _impl_.player_match_outcome_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000080u;
+}
+inline ::EPlayerMatchOutcome CMsgPostGameProgressData_PlayerData::_internal_player_match_outcome() const {
+  return static_cast< ::EPlayerMatchOutcome >(_impl_.player_match_outcome_);
+}
+inline ::EPlayerMatchOutcome CMsgPostGameProgressData_PlayerData::player_match_outcome() const {
+  // @@protoc_insertion_point(field_get:CMsgPostGameProgressData.PlayerData.player_match_outcome)
+  return _internal_player_match_outcome();
+}
+inline void CMsgPostGameProgressData_PlayerData::_internal_set_player_match_outcome(::EPlayerMatchOutcome value) {
+  assert(::EPlayerMatchOutcome_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000080u;
+  _impl_.player_match_outcome_ = value;
+}
+inline void CMsgPostGameProgressData_PlayerData::set_player_match_outcome(::EPlayerMatchOutcome value) {
+  _internal_set_player_match_outcome(value);
+  // @@protoc_insertion_point(field_set:CMsgPostGameProgressData.PlayerData.player_match_outcome)
+}
+
 // -------------------------------------------------------------------
 
 // CMsgPostGameProgressData
 
 // optional uint64 match_id = 1;
 inline bool CMsgPostGameProgressData::_internal_has_match_id() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
   return value;
 }
 inline bool CMsgPostGameProgressData::has_match_id() const {
@@ -55299,7 +64106,7 @@ inline bool CMsgPostGameProgressData::has_match_id() const {
 }
 inline void CMsgPostGameProgressData::clear_match_id() {
   _impl_.match_id_ = uint64_t{0u};
-  _impl_._has_bits_[0] &= ~0x00000002u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 inline uint64_t CMsgPostGameProgressData::_internal_match_id() const {
   return _impl_.match_id_;
@@ -55309,7 +64116,7 @@ inline uint64_t CMsgPostGameProgressData::match_id() const {
   return _internal_match_id();
 }
 inline void CMsgPostGameProgressData::_internal_set_match_id(uint64_t value) {
-  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_._has_bits_[0] |= 0x00000004u;
   _impl_.match_id_ = value;
 }
 inline void CMsgPostGameProgressData::set_match_id(uint64_t value) {
@@ -55319,7 +64126,7 @@ inline void CMsgPostGameProgressData::set_match_id(uint64_t value) {
 
 // optional .ECitadelLobbyTeam winning_team = 2 [default = k_ECitadelLobbyTeam_Team0];
 inline bool CMsgPostGameProgressData::_internal_has_winning_team() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
   return value;
 }
 inline bool CMsgPostGameProgressData::has_winning_team() const {
@@ -55327,7 +64134,7 @@ inline bool CMsgPostGameProgressData::has_winning_team() const {
 }
 inline void CMsgPostGameProgressData::clear_winning_team() {
   _impl_.winning_team_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000004u;
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 inline ::ECitadelLobbyTeam CMsgPostGameProgressData::_internal_winning_team() const {
   return static_cast< ::ECitadelLobbyTeam >(_impl_.winning_team_);
@@ -55338,7 +64145,7 @@ inline ::ECitadelLobbyTeam CMsgPostGameProgressData::winning_team() const {
 }
 inline void CMsgPostGameProgressData::_internal_set_winning_team(::ECitadelLobbyTeam value) {
   assert(::ECitadelLobbyTeam_IsValid(value));
-  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_._has_bits_[0] |= 0x00000008u;
   _impl_.winning_team_ = value;
 }
 inline void CMsgPostGameProgressData::set_winning_team(::ECitadelLobbyTeam value) {
@@ -55346,7 +64153,122 @@ inline void CMsgPostGameProgressData::set_winning_team(::ECitadelLobbyTeam value
   // @@protoc_insertion_point(field_set:CMsgPostGameProgressData.winning_team)
 }
 
-// optional .CMsgPostGameProgressData.PlayerData local_player = 3;
+// optional .ECitadelMatchMode match_mode = 3 [default = k_ECitadelMatchMode_Invalid];
+inline bool CMsgPostGameProgressData::_internal_has_match_mode() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  return value;
+}
+inline bool CMsgPostGameProgressData::has_match_mode() const {
+  return _internal_has_match_mode();
+}
+inline void CMsgPostGameProgressData::clear_match_mode() {
+  _impl_.match_mode_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000010u;
+}
+inline ::ECitadelMatchMode CMsgPostGameProgressData::_internal_match_mode() const {
+  return static_cast< ::ECitadelMatchMode >(_impl_.match_mode_);
+}
+inline ::ECitadelMatchMode CMsgPostGameProgressData::match_mode() const {
+  // @@protoc_insertion_point(field_get:CMsgPostGameProgressData.match_mode)
+  return _internal_match_mode();
+}
+inline void CMsgPostGameProgressData::_internal_set_match_mode(::ECitadelMatchMode value) {
+  assert(::ECitadelMatchMode_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_.match_mode_ = value;
+}
+inline void CMsgPostGameProgressData::set_match_mode(::ECitadelMatchMode value) {
+  _internal_set_match_mode(value);
+  // @@protoc_insertion_point(field_set:CMsgPostGameProgressData.match_mode)
+}
+
+// optional .ECitadelGameMode game_mode = 4 [default = k_ECitadelGameMode_Invalid];
+inline bool CMsgPostGameProgressData::_internal_has_game_mode() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
+  return value;
+}
+inline bool CMsgPostGameProgressData::has_game_mode() const {
+  return _internal_has_game_mode();
+}
+inline void CMsgPostGameProgressData::clear_game_mode() {
+  _impl_.game_mode_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000020u;
+}
+inline ::ECitadelGameMode CMsgPostGameProgressData::_internal_game_mode() const {
+  return static_cast< ::ECitadelGameMode >(_impl_.game_mode_);
+}
+inline ::ECitadelGameMode CMsgPostGameProgressData::game_mode() const {
+  // @@protoc_insertion_point(field_get:CMsgPostGameProgressData.game_mode)
+  return _internal_game_mode();
+}
+inline void CMsgPostGameProgressData::_internal_set_game_mode(::ECitadelGameMode value) {
+  assert(::ECitadelGameMode_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000020u;
+  _impl_.game_mode_ = value;
+}
+inline void CMsgPostGameProgressData::set_game_mode(::ECitadelGameMode value) {
+  _internal_set_game_mode(value);
+  // @@protoc_insertion_point(field_set:CMsgPostGameProgressData.game_mode)
+}
+
+// optional .ECitadelRankedType ranked_type = 5 [default = k_eCitadelRankedType_Invalid];
+inline bool CMsgPostGameProgressData::_internal_has_ranked_type() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
+  return value;
+}
+inline bool CMsgPostGameProgressData::has_ranked_type() const {
+  return _internal_has_ranked_type();
+}
+inline void CMsgPostGameProgressData::clear_ranked_type() {
+  _impl_.ranked_type_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000040u;
+}
+inline ::ECitadelRankedType CMsgPostGameProgressData::_internal_ranked_type() const {
+  return static_cast< ::ECitadelRankedType >(_impl_.ranked_type_);
+}
+inline ::ECitadelRankedType CMsgPostGameProgressData::ranked_type() const {
+  // @@protoc_insertion_point(field_get:CMsgPostGameProgressData.ranked_type)
+  return _internal_ranked_type();
+}
+inline void CMsgPostGameProgressData::_internal_set_ranked_type(::ECitadelRankedType value) {
+  assert(::ECitadelRankedType_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000040u;
+  _impl_.ranked_type_ = value;
+}
+inline void CMsgPostGameProgressData::set_ranked_type(::ECitadelRankedType value) {
+  _internal_set_ranked_type(value);
+  // @@protoc_insertion_point(field_set:CMsgPostGameProgressData.ranked_type)
+}
+
+// optional uint32 rank_interval = 6;
+inline bool CMsgPostGameProgressData::_internal_has_rank_interval() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
+  return value;
+}
+inline bool CMsgPostGameProgressData::has_rank_interval() const {
+  return _internal_has_rank_interval();
+}
+inline void CMsgPostGameProgressData::clear_rank_interval() {
+  _impl_.rank_interval_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000080u;
+}
+inline uint32_t CMsgPostGameProgressData::_internal_rank_interval() const {
+  return _impl_.rank_interval_;
+}
+inline uint32_t CMsgPostGameProgressData::rank_interval() const {
+  // @@protoc_insertion_point(field_get:CMsgPostGameProgressData.rank_interval)
+  return _internal_rank_interval();
+}
+inline void CMsgPostGameProgressData::_internal_set_rank_interval(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000080u;
+  _impl_.rank_interval_ = value;
+}
+inline void CMsgPostGameProgressData::set_rank_interval(uint32_t value) {
+  _internal_set_rank_interval(value);
+  // @@protoc_insertion_point(field_set:CMsgPostGameProgressData.rank_interval)
+}
+
+// optional .CMsgPostGameProgressData.PlayerData local_player = 7;
 inline bool CMsgPostGameProgressData::_internal_has_local_player() const {
   bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
   PROTOBUF_ASSUME(!value || _impl_.local_player_ != nullptr);
@@ -55436,7 +64358,7 @@ inline void CMsgPostGameProgressData::set_allocated_local_player(::CMsgPostGameP
   // @@protoc_insertion_point(field_set_allocated:CMsgPostGameProgressData.local_player)
 }
 
-// repeated .CMsgPostGameProgressData.PlayerData mvp_players = 4;
+// repeated .CMsgPostGameProgressData.PlayerData mvp_players = 8;
 inline int CMsgPostGameProgressData::_internal_mvp_players_size() const {
   return _impl_.mvp_players_.size();
 }
@@ -55474,6 +64396,133 @@ inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressDa
 CMsgPostGameProgressData::mvp_players() const {
   // @@protoc_insertion_point(field_list:CMsgPostGameProgressData.mvp_players)
   return _impl_.mvp_players_;
+}
+
+// optional .CMsgMatchHeroReleaseVotes hero_release_votes = 9;
+inline bool CMsgPostGameProgressData::_internal_has_hero_release_votes() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.hero_release_votes_ != nullptr);
+  return value;
+}
+inline bool CMsgPostGameProgressData::has_hero_release_votes() const {
+  return _internal_has_hero_release_votes();
+}
+inline const ::CMsgMatchHeroReleaseVotes& CMsgPostGameProgressData::_internal_hero_release_votes() const {
+  const ::CMsgMatchHeroReleaseVotes* p = _impl_.hero_release_votes_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CMsgMatchHeroReleaseVotes&>(
+      ::_CMsgMatchHeroReleaseVotes_default_instance_);
+}
+inline const ::CMsgMatchHeroReleaseVotes& CMsgPostGameProgressData::hero_release_votes() const {
+  // @@protoc_insertion_point(field_get:CMsgPostGameProgressData.hero_release_votes)
+  return _internal_hero_release_votes();
+}
+inline void CMsgPostGameProgressData::unsafe_arena_set_allocated_hero_release_votes(
+    ::CMsgMatchHeroReleaseVotes* hero_release_votes) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.hero_release_votes_);
+  }
+  _impl_.hero_release_votes_ = hero_release_votes;
+  if (hero_release_votes) {
+    _impl_._has_bits_[0] |= 0x00000002u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000002u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMsgPostGameProgressData.hero_release_votes)
+}
+inline ::CMsgMatchHeroReleaseVotes* CMsgPostGameProgressData::release_hero_release_votes() {
+  _impl_._has_bits_[0] &= ~0x00000002u;
+  ::CMsgMatchHeroReleaseVotes* temp = _impl_.hero_release_votes_;
+  _impl_.hero_release_votes_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::CMsgMatchHeroReleaseVotes* CMsgPostGameProgressData::unsafe_arena_release_hero_release_votes() {
+  // @@protoc_insertion_point(field_release:CMsgPostGameProgressData.hero_release_votes)
+  _impl_._has_bits_[0] &= ~0x00000002u;
+  ::CMsgMatchHeroReleaseVotes* temp = _impl_.hero_release_votes_;
+  _impl_.hero_release_votes_ = nullptr;
+  return temp;
+}
+inline ::CMsgMatchHeroReleaseVotes* CMsgPostGameProgressData::_internal_mutable_hero_release_votes() {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  if (_impl_.hero_release_votes_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CMsgMatchHeroReleaseVotes>(GetArenaForAllocation());
+    _impl_.hero_release_votes_ = p;
+  }
+  return _impl_.hero_release_votes_;
+}
+inline ::CMsgMatchHeroReleaseVotes* CMsgPostGameProgressData::mutable_hero_release_votes() {
+  ::CMsgMatchHeroReleaseVotes* _msg = _internal_mutable_hero_release_votes();
+  // @@protoc_insertion_point(field_mutable:CMsgPostGameProgressData.hero_release_votes)
+  return _msg;
+}
+inline void CMsgPostGameProgressData::set_allocated_hero_release_votes(::CMsgMatchHeroReleaseVotes* hero_release_votes) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.hero_release_votes_);
+  }
+  if (hero_release_votes) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(
+                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(hero_release_votes));
+    if (message_arena != submessage_arena) {
+      hero_release_votes = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, hero_release_votes, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000002u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000002u;
+  }
+  _impl_.hero_release_votes_ = hero_release_votes;
+  // @@protoc_insertion_point(field_set_allocated:CMsgPostGameProgressData.hero_release_votes)
+}
+
+// repeated .CMsgPostGameProgressData.PlayerData all_players = 10;
+inline int CMsgPostGameProgressData::_internal_all_players_size() const {
+  return _impl_.all_players_.size();
+}
+inline int CMsgPostGameProgressData::all_players_size() const {
+  return _internal_all_players_size();
+}
+inline void CMsgPostGameProgressData::clear_all_players() {
+  _impl_.all_players_.Clear();
+}
+inline ::CMsgPostGameProgressData_PlayerData* CMsgPostGameProgressData::mutable_all_players(int index) {
+  // @@protoc_insertion_point(field_mutable:CMsgPostGameProgressData.all_players)
+  return _impl_.all_players_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_PlayerData >*
+CMsgPostGameProgressData::mutable_all_players() {
+  // @@protoc_insertion_point(field_mutable_list:CMsgPostGameProgressData.all_players)
+  return &_impl_.all_players_;
+}
+inline const ::CMsgPostGameProgressData_PlayerData& CMsgPostGameProgressData::_internal_all_players(int index) const {
+  return _impl_.all_players_.Get(index);
+}
+inline const ::CMsgPostGameProgressData_PlayerData& CMsgPostGameProgressData::all_players(int index) const {
+  // @@protoc_insertion_point(field_get:CMsgPostGameProgressData.all_players)
+  return _internal_all_players(index);
+}
+inline ::CMsgPostGameProgressData_PlayerData* CMsgPostGameProgressData::_internal_add_all_players() {
+  return _impl_.all_players_.Add();
+}
+inline ::CMsgPostGameProgressData_PlayerData* CMsgPostGameProgressData::add_all_players() {
+  ::CMsgPostGameProgressData_PlayerData* _add = _internal_add_all_players();
+  // @@protoc_insertion_point(field_add:CMsgPostGameProgressData.all_players)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgPostGameProgressData_PlayerData >&
+CMsgPostGameProgressData::all_players() const {
+  // @@protoc_insertion_point(field_list:CMsgPostGameProgressData.all_players)
+  return _impl_.all_players_;
 }
 
 // -------------------------------------------------------------------
@@ -55542,9 +64591,2108 @@ inline void CMsgClientToGCSetAccountPrivacySettingResponse::set_result(::CMsgCli
   // @@protoc_insertion_point(field_set:CMsgClientToGCSetAccountPrivacySettingResponse.result)
 }
 
+// -------------------------------------------------------------------
+
+// CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction
+
+// optional uint32 slot_id = 1;
+inline bool CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::_internal_has_slot_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::has_slot_id() const {
+  return _internal_has_slot_id();
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::clear_slot_id() {
+  _impl_.slot_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint32_t CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::_internal_slot_id() const {
+  return _impl_.slot_id_;
+}
+inline uint32_t CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::slot_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCVariantItemChangeSlotStyles.SlotStyleAction.slot_id)
+  return _internal_slot_id();
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::_internal_set_slot_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.slot_id_ = value;
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::set_slot_id(uint32_t value) {
+  _internal_set_slot_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCVariantItemChangeSlotStyles.SlotStyleAction.slot_id)
+}
+
+// optional uint32 style_id = 2;
+inline bool CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::_internal_has_style_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::has_style_id() const {
+  return _internal_has_style_id();
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::clear_style_id() {
+  _impl_.style_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::_internal_style_id() const {
+  return _impl_.style_id_;
+}
+inline uint32_t CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::style_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCVariantItemChangeSlotStyles.SlotStyleAction.style_id)
+  return _internal_style_id();
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::_internal_set_style_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.style_id_ = value;
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::set_style_id(uint32_t value) {
+  _internal_set_style_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCVariantItemChangeSlotStyles.SlotStyleAction.style_id)
+}
+
+// optional .CMsgClientToGCVariantItemChangeSlotStyles.EStyleAction style_action = 3 [default = k_eUnlockStyle];
+inline bool CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::_internal_has_style_action() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::has_style_action() const {
+  return _internal_has_style_action();
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::clear_style_action() {
+  _impl_.style_action_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline ::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::_internal_style_action() const {
+  return static_cast< ::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction >(_impl_.style_action_);
+}
+inline ::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::style_action() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCVariantItemChangeSlotStyles.SlotStyleAction.style_action)
+  return _internal_style_action();
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::_internal_set_style_action(::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction value) {
+  assert(::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.style_action_ = value;
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction::set_style_action(::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction value) {
+  _internal_set_style_action(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCVariantItemChangeSlotStyles.SlotStyleAction.style_action)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCVariantItemChangeSlotStyles
+
+// optional uint64 item_id = 1;
+inline bool CMsgClientToGCVariantItemChangeSlotStyles::_internal_has_item_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCVariantItemChangeSlotStyles::has_item_id() const {
+  return _internal_has_item_id();
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles::clear_item_id() {
+  _impl_.item_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint64_t CMsgClientToGCVariantItemChangeSlotStyles::_internal_item_id() const {
+  return _impl_.item_id_;
+}
+inline uint64_t CMsgClientToGCVariantItemChangeSlotStyles::item_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCVariantItemChangeSlotStyles.item_id)
+  return _internal_item_id();
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles::_internal_set_item_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.item_id_ = value;
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles::set_item_id(uint64_t value) {
+  _internal_set_item_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCVariantItemChangeSlotStyles.item_id)
+}
+
+// repeated .CMsgClientToGCVariantItemChangeSlotStyles.SlotStyleAction slot_style_actions = 2;
+inline int CMsgClientToGCVariantItemChangeSlotStyles::_internal_slot_style_actions_size() const {
+  return _impl_.slot_style_actions_.size();
+}
+inline int CMsgClientToGCVariantItemChangeSlotStyles::slot_style_actions_size() const {
+  return _internal_slot_style_actions_size();
+}
+inline void CMsgClientToGCVariantItemChangeSlotStyles::clear_slot_style_actions() {
+  _impl_.slot_style_actions_.Clear();
+}
+inline ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* CMsgClientToGCVariantItemChangeSlotStyles::mutable_slot_style_actions(int index) {
+  // @@protoc_insertion_point(field_mutable:CMsgClientToGCVariantItemChangeSlotStyles.slot_style_actions)
+  return _impl_.slot_style_actions_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction >*
+CMsgClientToGCVariantItemChangeSlotStyles::mutable_slot_style_actions() {
+  // @@protoc_insertion_point(field_mutable_list:CMsgClientToGCVariantItemChangeSlotStyles.slot_style_actions)
+  return &_impl_.slot_style_actions_;
+}
+inline const ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& CMsgClientToGCVariantItemChangeSlotStyles::_internal_slot_style_actions(int index) const {
+  return _impl_.slot_style_actions_.Get(index);
+}
+inline const ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction& CMsgClientToGCVariantItemChangeSlotStyles::slot_style_actions(int index) const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCVariantItemChangeSlotStyles.slot_style_actions)
+  return _internal_slot_style_actions(index);
+}
+inline ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* CMsgClientToGCVariantItemChangeSlotStyles::_internal_add_slot_style_actions() {
+  return _impl_.slot_style_actions_.Add();
+}
+inline ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* CMsgClientToGCVariantItemChangeSlotStyles::add_slot_style_actions() {
+  ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction* _add = _internal_add_slot_style_actions();
+  // @@protoc_insertion_point(field_add:CMsgClientToGCVariantItemChangeSlotStyles.slot_style_actions)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCVariantItemChangeSlotStyles_SlotStyleAction >&
+CMsgClientToGCVariantItemChangeSlotStyles::slot_style_actions() const {
+  // @@protoc_insertion_point(field_list:CMsgClientToGCVariantItemChangeSlotStyles.slot_style_actions)
+  return _impl_.slot_style_actions_;
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCVariantItemChangeSlotStylesResponse
+
+// optional .CMsgClientToGCVariantItemChangeSlotStylesResponse.EResponse response = 1 [default = k_eInternalError];
+inline bool CMsgClientToGCVariantItemChangeSlotStylesResponse::_internal_has_response() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCVariantItemChangeSlotStylesResponse::has_response() const {
+  return _internal_has_response();
+}
+inline void CMsgClientToGCVariantItemChangeSlotStylesResponse::clear_response() {
+  _impl_.response_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse CMsgClientToGCVariantItemChangeSlotStylesResponse::_internal_response() const {
+  return static_cast< ::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse >(_impl_.response_);
+}
+inline ::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse CMsgClientToGCVariantItemChangeSlotStylesResponse::response() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCVariantItemChangeSlotStylesResponse.response)
+  return _internal_response();
+}
+inline void CMsgClientToGCVariantItemChangeSlotStylesResponse::_internal_set_response(::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse value) {
+  assert(::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.response_ = value;
+}
+inline void CMsgClientToGCVariantItemChangeSlotStylesResponse::set_response(::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse value) {
+  _internal_set_response(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCVariantItemChangeSlotStylesResponse.response)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCStartRankedInterval
+
+// optional .ECitadelRankedType rank_type = 1 [default = k_eCitadelRankedType_Invalid];
+inline bool CMsgClientToGCStartRankedInterval::_internal_has_rank_type() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCStartRankedInterval::has_rank_type() const {
+  return _internal_has_rank_type();
+}
+inline void CMsgClientToGCStartRankedInterval::clear_rank_type() {
+  _impl_.rank_type_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::ECitadelRankedType CMsgClientToGCStartRankedInterval::_internal_rank_type() const {
+  return static_cast< ::ECitadelRankedType >(_impl_.rank_type_);
+}
+inline ::ECitadelRankedType CMsgClientToGCStartRankedInterval::rank_type() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCStartRankedInterval.rank_type)
+  return _internal_rank_type();
+}
+inline void CMsgClientToGCStartRankedInterval::_internal_set_rank_type(::ECitadelRankedType value) {
+  assert(::ECitadelRankedType_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.rank_type_ = value;
+}
+inline void CMsgClientToGCStartRankedInterval::set_rank_type(::ECitadelRankedType value) {
+  _internal_set_rank_type(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCStartRankedInterval.rank_type)
+}
+
+// optional uint32 interval = 2;
+inline bool CMsgClientToGCStartRankedInterval::_internal_has_interval() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCStartRankedInterval::has_interval() const {
+  return _internal_has_interval();
+}
+inline void CMsgClientToGCStartRankedInterval::clear_interval() {
+  _impl_.interval_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CMsgClientToGCStartRankedInterval::_internal_interval() const {
+  return _impl_.interval_;
+}
+inline uint32_t CMsgClientToGCStartRankedInterval::interval() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCStartRankedInterval.interval)
+  return _internal_interval();
+}
+inline void CMsgClientToGCStartRankedInterval::_internal_set_interval(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.interval_ = value;
+}
+inline void CMsgClientToGCStartRankedInterval::set_interval(uint32_t value) {
+  _internal_set_interval(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCStartRankedInterval.interval)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCStartRankedIntervalResponse
+
+// optional .CMsgClientToGCStartRankedIntervalResponse.EResponse response = 1 [default = k_eInternalError];
+inline bool CMsgClientToGCStartRankedIntervalResponse::_internal_has_response() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCStartRankedIntervalResponse::has_response() const {
+  return _internal_has_response();
+}
+inline void CMsgClientToGCStartRankedIntervalResponse::clear_response() {
+  _impl_.response_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::CMsgClientToGCStartRankedIntervalResponse_EResponse CMsgClientToGCStartRankedIntervalResponse::_internal_response() const {
+  return static_cast< ::CMsgClientToGCStartRankedIntervalResponse_EResponse >(_impl_.response_);
+}
+inline ::CMsgClientToGCStartRankedIntervalResponse_EResponse CMsgClientToGCStartRankedIntervalResponse::response() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCStartRankedIntervalResponse.response)
+  return _internal_response();
+}
+inline void CMsgClientToGCStartRankedIntervalResponse::_internal_set_response(::CMsgClientToGCStartRankedIntervalResponse_EResponse value) {
+  assert(::CMsgClientToGCStartRankedIntervalResponse_EResponse_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.response_ = value;
+}
+inline void CMsgClientToGCStartRankedIntervalResponse::set_response(::CMsgClientToGCStartRankedIntervalResponse_EResponse value) {
+  _internal_set_response(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCStartRankedIntervalResponse.response)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCGetInternalLeaderboards
+
+// optional uint32 account_id = 1;
+inline bool CMsgClientToGCGetInternalLeaderboards::_internal_has_account_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetInternalLeaderboards::has_account_id() const {
+  return _internal_has_account_id();
+}
+inline void CMsgClientToGCGetInternalLeaderboards::clear_account_id() {
+  _impl_.account_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint32_t CMsgClientToGCGetInternalLeaderboards::_internal_account_id() const {
+  return _impl_.account_id_;
+}
+inline uint32_t CMsgClientToGCGetInternalLeaderboards::account_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetInternalLeaderboards.account_id)
+  return _internal_account_id();
+}
+inline void CMsgClientToGCGetInternalLeaderboards::_internal_set_account_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.account_id_ = value;
+}
+inline void CMsgClientToGCGetInternalLeaderboards::set_account_id(uint32_t value) {
+  _internal_set_account_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetInternalLeaderboards.account_id)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch
+
+// optional uint64 match_id = 1;
+inline bool CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_has_match_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::has_match_id() const {
+  return _internal_has_match_id();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::clear_match_id() {
+  _impl_.match_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint64_t CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_match_id() const {
+  return _impl_.match_id_;
+}
+inline uint64_t CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::match_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.match_id)
+  return _internal_match_id();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_set_match_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.match_id_ = value;
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::set_match_id(uint64_t value) {
+  _internal_set_match_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.match_id)
+}
+
+// optional uint32 round = 2;
+inline bool CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_has_round() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::has_round() const {
+  return _internal_has_round();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::clear_round() {
+  _impl_.round_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_round() const {
+  return _impl_.round_;
+}
+inline uint32_t CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::round() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.round)
+  return _internal_round();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_set_round(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.round_ = value;
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::set_round(uint32_t value) {
+  _internal_set_round(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.round)
+}
+
+// optional uint32 duration = 3;
+inline bool CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_has_duration() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::has_duration() const {
+  return _internal_has_duration();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::clear_duration() {
+  _impl_.duration_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline uint32_t CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_duration() const {
+  return _impl_.duration_;
+}
+inline uint32_t CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::duration() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.duration)
+  return _internal_duration();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_set_duration(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.duration_ = value;
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::set_duration(uint32_t value) {
+  _internal_set_duration(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.duration)
+}
+
+// optional uint32 timestamp = 4;
+inline bool CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_has_timestamp() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::has_timestamp() const {
+  return _internal_has_timestamp();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::clear_timestamp() {
+  _impl_.timestamp_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline uint32_t CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_timestamp() const {
+  return _impl_.timestamp_;
+}
+inline uint32_t CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::timestamp() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.timestamp)
+  return _internal_timestamp();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_set_timestamp(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.timestamp_ = value;
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::set_timestamp(uint32_t value) {
+  _internal_set_timestamp(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.timestamp)
+}
+
+// repeated uint32 account_ids = 5;
+inline int CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_account_ids_size() const {
+  return _impl_.account_ids_.size();
+}
+inline int CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::account_ids_size() const {
+  return _internal_account_ids_size();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::clear_account_ids() {
+  _impl_.account_ids_.Clear();
+}
+inline uint32_t CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_account_ids(int index) const {
+  return _impl_.account_ids_.Get(index);
+}
+inline uint32_t CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::account_ids(int index) const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.account_ids)
+  return _internal_account_ids(index);
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::set_account_ids(int index, uint32_t value) {
+  _impl_.account_ids_.Set(index, value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.account_ids)
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_add_account_ids(uint32_t value) {
+  _impl_.account_ids_.Add(value);
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::add_account_ids(uint32_t value) {
+  _internal_add_account_ids(value);
+  // @@protoc_insertion_point(field_add:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.account_ids)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_account_ids() const {
+  return _impl_.account_ids_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::account_ids() const {
+  // @@protoc_insertion_point(field_list:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.account_ids)
+  return _internal_account_ids();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_mutable_account_ids() {
+  return &_impl_.account_ids_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::mutable_account_ids() {
+  // @@protoc_insertion_point(field_mutable_list:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.account_ids)
+  return _internal_mutable_account_ids();
+}
+
+// repeated uint32 hero_ids = 6;
+inline int CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_hero_ids_size() const {
+  return _impl_.hero_ids_.size();
+}
+inline int CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::hero_ids_size() const {
+  return _internal_hero_ids_size();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::clear_hero_ids() {
+  _impl_.hero_ids_.Clear();
+}
+inline uint32_t CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_hero_ids(int index) const {
+  return _impl_.hero_ids_.Get(index);
+}
+inline uint32_t CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::hero_ids(int index) const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.hero_ids)
+  return _internal_hero_ids(index);
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::set_hero_ids(int index, uint32_t value) {
+  _impl_.hero_ids_.Set(index, value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.hero_ids)
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_add_hero_ids(uint32_t value) {
+  _impl_.hero_ids_.Add(value);
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::add_hero_ids(uint32_t value) {
+  _internal_add_hero_ids(value);
+  // @@protoc_insertion_point(field_add:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.hero_ids)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_hero_ids() const {
+  return _impl_.hero_ids_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >&
+CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::hero_ids() const {
+  // @@protoc_insertion_point(field_list:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.hero_ids)
+  return _internal_hero_ids();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::_internal_mutable_hero_ids() {
+  return &_impl_.hero_ids_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< uint32_t >*
+CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch::mutable_hero_ids() {
+  // @@protoc_insertion_point(field_mutable_list:CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch.hero_ids)
+  return _internal_mutable_hero_ids();
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCGetInternalLeaderboardsResponse
+
+// optional .CMsgClientToGCGetInternalLeaderboardsResponse.EResponse response = 1 [default = k_eInternalError];
+inline bool CMsgClientToGCGetInternalLeaderboardsResponse::_internal_has_response() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetInternalLeaderboardsResponse::has_response() const {
+  return _internal_has_response();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse::clear_response() {
+  _impl_.response_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse CMsgClientToGCGetInternalLeaderboardsResponse::_internal_response() const {
+  return static_cast< ::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse >(_impl_.response_);
+}
+inline ::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse CMsgClientToGCGetInternalLeaderboardsResponse::response() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetInternalLeaderboardsResponse.response)
+  return _internal_response();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse::_internal_set_response(::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse value) {
+  assert(::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.response_ = value;
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse::set_response(::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse value) {
+  _internal_set_response(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetInternalLeaderboardsResponse.response)
+}
+
+// repeated .CMsgClientToGCGetInternalLeaderboardsResponse.LeaderboardMatch matches = 2;
+inline int CMsgClientToGCGetInternalLeaderboardsResponse::_internal_matches_size() const {
+  return _impl_.matches_.size();
+}
+inline int CMsgClientToGCGetInternalLeaderboardsResponse::matches_size() const {
+  return _internal_matches_size();
+}
+inline void CMsgClientToGCGetInternalLeaderboardsResponse::clear_matches() {
+  _impl_.matches_.Clear();
+}
+inline ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* CMsgClientToGCGetInternalLeaderboardsResponse::mutable_matches(int index) {
+  // @@protoc_insertion_point(field_mutable:CMsgClientToGCGetInternalLeaderboardsResponse.matches)
+  return _impl_.matches_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch >*
+CMsgClientToGCGetInternalLeaderboardsResponse::mutable_matches() {
+  // @@protoc_insertion_point(field_mutable_list:CMsgClientToGCGetInternalLeaderboardsResponse.matches)
+  return &_impl_.matches_;
+}
+inline const ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& CMsgClientToGCGetInternalLeaderboardsResponse::_internal_matches(int index) const {
+  return _impl_.matches_.Get(index);
+}
+inline const ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch& CMsgClientToGCGetInternalLeaderboardsResponse::matches(int index) const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetInternalLeaderboardsResponse.matches)
+  return _internal_matches(index);
+}
+inline ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* CMsgClientToGCGetInternalLeaderboardsResponse::_internal_add_matches() {
+  return _impl_.matches_.Add();
+}
+inline ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* CMsgClientToGCGetInternalLeaderboardsResponse::add_matches() {
+  ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch* _add = _internal_add_matches();
+  // @@protoc_insertion_point(field_add:CMsgClientToGCGetInternalLeaderboardsResponse.matches)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCGetInternalLeaderboardsResponse_LeaderboardMatch >&
+CMsgClientToGCGetInternalLeaderboardsResponse::matches() const {
+  // @@protoc_insertion_point(field_list:CMsgClientToGCGetInternalLeaderboardsResponse.matches)
+  return _impl_.matches_;
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCGetLeaderboardStatus
+
+// optional uint32 leaderboard_id = 1;
+inline bool CMsgClientToGCGetLeaderboardStatus::_internal_has_leaderboard_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatus::has_leaderboard_id() const {
+  return _internal_has_leaderboard_id();
+}
+inline void CMsgClientToGCGetLeaderboardStatus::clear_leaderboard_id() {
+  _impl_.leaderboard_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatus::_internal_leaderboard_id() const {
+  return _impl_.leaderboard_id_;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatus::leaderboard_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatus.leaderboard_id)
+  return _internal_leaderboard_id();
+}
+inline void CMsgClientToGCGetLeaderboardStatus::_internal_set_leaderboard_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.leaderboard_id_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatus::set_leaderboard_id(uint32_t value) {
+  _internal_set_leaderboard_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatus.leaderboard_id)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCGetLeaderboardStatusResponse_Hero
+
+// optional uint32 hero_id = 1;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_has_hero_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_Hero::has_hero_id() const {
+  return _internal_has_hero_id();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::clear_hero_id() {
+  _impl_.hero_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_hero_id() const {
+  return _impl_.hero_id_;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse_Hero::hero_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.Hero.hero_id)
+  return _internal_hero_id();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_set_hero_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.hero_id_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::set_hero_id(uint32_t value) {
+  _internal_set_hero_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.Hero.hero_id)
+}
+
+// optional uint32 recent_matches = 2;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_has_recent_matches() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_Hero::has_recent_matches() const {
+  return _internal_has_recent_matches();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::clear_recent_matches() {
+  _impl_.recent_matches_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_recent_matches() const {
+  return _impl_.recent_matches_;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse_Hero::recent_matches() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.Hero.recent_matches)
+  return _internal_recent_matches();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_set_recent_matches(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.recent_matches_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::set_recent_matches(uint32_t value) {
+  _internal_set_recent_matches(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.Hero.recent_matches)
+}
+
+// optional .ECitadelLeaderboardRegion region = 3 [default = k_ECitadelLeaderboardRegion_None];
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_has_region() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_Hero::has_region() const {
+  return _internal_has_region();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::clear_region() {
+  _impl_.region_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline ::ECitadelLeaderboardRegion CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_region() const {
+  return static_cast< ::ECitadelLeaderboardRegion >(_impl_.region_);
+}
+inline ::ECitadelLeaderboardRegion CMsgClientToGCGetLeaderboardStatusResponse_Hero::region() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.Hero.region)
+  return _internal_region();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_set_region(::ECitadelLeaderboardRegion value) {
+  assert(::ECitadelLeaderboardRegion_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.region_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::set_region(::ECitadelLeaderboardRegion value) {
+  _internal_set_region(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.Hero.region)
+}
+
+// optional uint32 lifetime_wins = 4;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_has_lifetime_wins() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_Hero::has_lifetime_wins() const {
+  return _internal_has_lifetime_wins();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::clear_lifetime_wins() {
+  _impl_.lifetime_wins_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_lifetime_wins() const {
+  return _impl_.lifetime_wins_;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse_Hero::lifetime_wins() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.Hero.lifetime_wins)
+  return _internal_lifetime_wins();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_set_lifetime_wins(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.lifetime_wins_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::set_lifetime_wins(uint32_t value) {
+  _internal_set_lifetime_wins(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.Hero.lifetime_wins)
+}
+
+// optional bool is_eligible = 5;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_has_is_eligible() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_Hero::has_is_eligible() const {
+  return _internal_has_is_eligible();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::clear_is_eligible() {
+  _impl_.is_eligible_ = false;
+  _impl_._has_bits_[0] &= ~0x00000010u;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_is_eligible() const {
+  return _impl_.is_eligible_;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse_Hero::is_eligible() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.Hero.is_eligible)
+  return _internal_is_eligible();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::_internal_set_is_eligible(bool value) {
+  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_.is_eligible_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse_Hero::set_is_eligible(bool value) {
+  _internal_set_is_eligible(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.Hero.is_eligible)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCGetLeaderboardStatusResponse
+
+// optional .CMsgClientToGCGetLeaderboardStatusResponse.EResult result = 1 [default = k_eInternalError];
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_has_result() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::has_result() const {
+  return _internal_has_result();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::clear_result() {
+  _impl_.result_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::CMsgClientToGCGetLeaderboardStatusResponse_EResult CMsgClientToGCGetLeaderboardStatusResponse::_internal_result() const {
+  return static_cast< ::CMsgClientToGCGetLeaderboardStatusResponse_EResult >(_impl_.result_);
+}
+inline ::CMsgClientToGCGetLeaderboardStatusResponse_EResult CMsgClientToGCGetLeaderboardStatusResponse::result() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.result)
+  return _internal_result();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::_internal_set_result(::CMsgClientToGCGetLeaderboardStatusResponse_EResult value) {
+  assert(::CMsgClientToGCGetLeaderboardStatusResponse_EResult_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.result_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::set_result(::CMsgClientToGCGetLeaderboardStatusResponse_EResult value) {
+  _internal_set_result(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.result)
+}
+
+// optional bool is_eligible = 2;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_has_is_eligible() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::has_is_eligible() const {
+  return _internal_has_is_eligible();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::clear_is_eligible() {
+  _impl_.is_eligible_ = false;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_is_eligible() const {
+  return _impl_.is_eligible_;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::is_eligible() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.is_eligible)
+  return _internal_is_eligible();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::_internal_set_is_eligible(bool value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.is_eligible_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::set_is_eligible(bool value) {
+  _internal_set_is_eligible(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.is_eligible)
+}
+
+// optional uint32 recent_matches = 3;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_has_recent_matches() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::has_recent_matches() const {
+  return _internal_has_recent_matches();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::clear_recent_matches() {
+  _impl_.recent_matches_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::_internal_recent_matches() const {
+  return _impl_.recent_matches_;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::recent_matches() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.recent_matches)
+  return _internal_recent_matches();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::_internal_set_recent_matches(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.recent_matches_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::set_recent_matches(uint32_t value) {
+  _internal_set_recent_matches(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.recent_matches)
+}
+
+// optional uint32 required_recent_matches = 4;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_has_required_recent_matches() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::has_required_recent_matches() const {
+  return _internal_has_required_recent_matches();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::clear_required_recent_matches() {
+  _impl_.required_recent_matches_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::_internal_required_recent_matches() const {
+  return _impl_.required_recent_matches_;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::required_recent_matches() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.required_recent_matches)
+  return _internal_required_recent_matches();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::_internal_set_required_recent_matches(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.required_recent_matches_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::set_required_recent_matches(uint32_t value) {
+  _internal_set_required_recent_matches(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.required_recent_matches)
+}
+
+// optional uint32 required_recent_hero_matches = 5;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_has_required_recent_hero_matches() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::has_required_recent_hero_matches() const {
+  return _internal_has_required_recent_hero_matches();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::clear_required_recent_hero_matches() {
+  _impl_.required_recent_hero_matches_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000020u;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::_internal_required_recent_hero_matches() const {
+  return _impl_.required_recent_hero_matches_;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::required_recent_hero_matches() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.required_recent_hero_matches)
+  return _internal_required_recent_hero_matches();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::_internal_set_required_recent_hero_matches(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000020u;
+  _impl_.required_recent_hero_matches_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::set_required_recent_hero_matches(uint32_t value) {
+  _internal_set_required_recent_hero_matches(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.required_recent_hero_matches)
+}
+
+// optional .ECitadelLeaderboardRegion region = 6 [default = k_ECitadelLeaderboardRegion_None];
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_has_region() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::has_region() const {
+  return _internal_has_region();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::clear_region() {
+  _impl_.region_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000040u;
+}
+inline ::ECitadelLeaderboardRegion CMsgClientToGCGetLeaderboardStatusResponse::_internal_region() const {
+  return static_cast< ::ECitadelLeaderboardRegion >(_impl_.region_);
+}
+inline ::ECitadelLeaderboardRegion CMsgClientToGCGetLeaderboardStatusResponse::region() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.region)
+  return _internal_region();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::_internal_set_region(::ECitadelLeaderboardRegion value) {
+  assert(::ECitadelLeaderboardRegion_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000040u;
+  _impl_.region_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::set_region(::ECitadelLeaderboardRegion value) {
+  _internal_set_region(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.region)
+}
+
+// optional bool is_rank_high_enough = 7;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_has_is_rank_high_enough() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::has_is_rank_high_enough() const {
+  return _internal_has_is_rank_high_enough();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::clear_is_rank_high_enough() {
+  _impl_.is_rank_high_enough_ = false;
+  _impl_._has_bits_[0] &= ~0x00000010u;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_is_rank_high_enough() const {
+  return _impl_.is_rank_high_enough_;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::is_rank_high_enough() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.is_rank_high_enough)
+  return _internal_is_rank_high_enough();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::_internal_set_is_rank_high_enough(bool value) {
+  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_.is_rank_high_enough_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::set_is_rank_high_enough(bool value) {
+  _internal_set_is_rank_high_enough(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.is_rank_high_enough)
+}
+
+// optional uint32 lifetime_matches = 8;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_has_lifetime_matches() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::has_lifetime_matches() const {
+  return _internal_has_lifetime_matches();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::clear_lifetime_matches() {
+  _impl_.lifetime_matches_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000080u;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::_internal_lifetime_matches() const {
+  return _impl_.lifetime_matches_;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::lifetime_matches() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.lifetime_matches)
+  return _internal_lifetime_matches();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::_internal_set_lifetime_matches(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000080u;
+  _impl_.lifetime_matches_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::set_lifetime_matches(uint32_t value) {
+  _internal_set_lifetime_matches(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.lifetime_matches)
+}
+
+// optional uint32 required_lifetime_matches = 9;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_has_required_lifetime_matches() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000100u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::has_required_lifetime_matches() const {
+  return _internal_has_required_lifetime_matches();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::clear_required_lifetime_matches() {
+  _impl_.required_lifetime_matches_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000100u;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::_internal_required_lifetime_matches() const {
+  return _impl_.required_lifetime_matches_;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::required_lifetime_matches() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.required_lifetime_matches)
+  return _internal_required_lifetime_matches();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::_internal_set_required_lifetime_matches(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000100u;
+  _impl_.required_lifetime_matches_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::set_required_lifetime_matches(uint32_t value) {
+  _internal_set_required_lifetime_matches(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.required_lifetime_matches)
+}
+
+// optional uint32 required_lifetime_hero_wins = 10;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_has_required_lifetime_hero_wins() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000200u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::has_required_lifetime_hero_wins() const {
+  return _internal_has_required_lifetime_hero_wins();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::clear_required_lifetime_hero_wins() {
+  _impl_.required_lifetime_hero_wins_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000200u;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::_internal_required_lifetime_hero_wins() const {
+  return _impl_.required_lifetime_hero_wins_;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::required_lifetime_hero_wins() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.required_lifetime_hero_wins)
+  return _internal_required_lifetime_hero_wins();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::_internal_set_required_lifetime_hero_wins(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000200u;
+  _impl_.required_lifetime_hero_wins_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::set_required_lifetime_hero_wins(uint32_t value) {
+  _internal_set_required_lifetime_hero_wins(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.required_lifetime_hero_wins)
+}
+
+// repeated .CMsgClientToGCGetLeaderboardStatusResponse.Hero hero_info = 11;
+inline int CMsgClientToGCGetLeaderboardStatusResponse::_internal_hero_info_size() const {
+  return _impl_.hero_info_.size();
+}
+inline int CMsgClientToGCGetLeaderboardStatusResponse::hero_info_size() const {
+  return _internal_hero_info_size();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::clear_hero_info() {
+  _impl_.hero_info_.Clear();
+}
+inline ::CMsgClientToGCGetLeaderboardStatusResponse_Hero* CMsgClientToGCGetLeaderboardStatusResponse::mutable_hero_info(int index) {
+  // @@protoc_insertion_point(field_mutable:CMsgClientToGCGetLeaderboardStatusResponse.hero_info)
+  return _impl_.hero_info_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCGetLeaderboardStatusResponse_Hero >*
+CMsgClientToGCGetLeaderboardStatusResponse::mutable_hero_info() {
+  // @@protoc_insertion_point(field_mutable_list:CMsgClientToGCGetLeaderboardStatusResponse.hero_info)
+  return &_impl_.hero_info_;
+}
+inline const ::CMsgClientToGCGetLeaderboardStatusResponse_Hero& CMsgClientToGCGetLeaderboardStatusResponse::_internal_hero_info(int index) const {
+  return _impl_.hero_info_.Get(index);
+}
+inline const ::CMsgClientToGCGetLeaderboardStatusResponse_Hero& CMsgClientToGCGetLeaderboardStatusResponse::hero_info(int index) const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.hero_info)
+  return _internal_hero_info(index);
+}
+inline ::CMsgClientToGCGetLeaderboardStatusResponse_Hero* CMsgClientToGCGetLeaderboardStatusResponse::_internal_add_hero_info() {
+  return _impl_.hero_info_.Add();
+}
+inline ::CMsgClientToGCGetLeaderboardStatusResponse_Hero* CMsgClientToGCGetLeaderboardStatusResponse::add_hero_info() {
+  ::CMsgClientToGCGetLeaderboardStatusResponse_Hero* _add = _internal_add_hero_info();
+  // @@protoc_insertion_point(field_add:CMsgClientToGCGetLeaderboardStatusResponse.hero_info)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgClientToGCGetLeaderboardStatusResponse_Hero >&
+CMsgClientToGCGetLeaderboardStatusResponse::hero_info() const {
+  // @@protoc_insertion_point(field_list:CMsgClientToGCGetLeaderboardStatusResponse.hero_info)
+  return _impl_.hero_info_;
+}
+
+// optional uint32 match_history_days = 12;
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::_internal_has_match_history_days() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000400u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCGetLeaderboardStatusResponse::has_match_history_days() const {
+  return _internal_has_match_history_days();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::clear_match_history_days() {
+  _impl_.match_history_days_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000400u;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::_internal_match_history_days() const {
+  return _impl_.match_history_days_;
+}
+inline uint32_t CMsgClientToGCGetLeaderboardStatusResponse::match_history_days() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCGetLeaderboardStatusResponse.match_history_days)
+  return _internal_match_history_days();
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::_internal_set_match_history_days(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000400u;
+  _impl_.match_history_days_ = value;
+}
+inline void CMsgClientToGCGetLeaderboardStatusResponse::set_match_history_days(uint32_t value) {
+  _internal_set_match_history_days(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCGetLeaderboardStatusResponse.match_history_days)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalCreate
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalCreateResponse
+
+// optional .CMsgClientToGCCabalCreateResponse.EResult result = 1 [default = k_eInternalError];
+inline bool CMsgClientToGCCabalCreateResponse::_internal_has_result() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalCreateResponse::has_result() const {
+  return _internal_has_result();
+}
+inline void CMsgClientToGCCabalCreateResponse::clear_result() {
+  _impl_.result_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline ::CMsgClientToGCCabalCreateResponse_EResult CMsgClientToGCCabalCreateResponse::_internal_result() const {
+  return static_cast< ::CMsgClientToGCCabalCreateResponse_EResult >(_impl_.result_);
+}
+inline ::CMsgClientToGCCabalCreateResponse_EResult CMsgClientToGCCabalCreateResponse::result() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalCreateResponse.result)
+  return _internal_result();
+}
+inline void CMsgClientToGCCabalCreateResponse::_internal_set_result(::CMsgClientToGCCabalCreateResponse_EResult value) {
+  assert(::CMsgClientToGCCabalCreateResponse_EResult_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.result_ = value;
+}
+inline void CMsgClientToGCCabalCreateResponse::set_result(::CMsgClientToGCCabalCreateResponse_EResult value) {
+  _internal_set_result(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalCreateResponse.result)
+}
+
+// optional uint64 cabal_id = 2;
+inline bool CMsgClientToGCCabalCreateResponse::_internal_has_cabal_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalCreateResponse::has_cabal_id() const {
+  return _internal_has_cabal_id();
+}
+inline void CMsgClientToGCCabalCreateResponse::clear_cabal_id() {
+  _impl_.cabal_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint64_t CMsgClientToGCCabalCreateResponse::_internal_cabal_id() const {
+  return _impl_.cabal_id_;
+}
+inline uint64_t CMsgClientToGCCabalCreateResponse::cabal_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalCreateResponse.cabal_id)
+  return _internal_cabal_id();
+}
+inline void CMsgClientToGCCabalCreateResponse::_internal_set_cabal_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.cabal_id_ = value;
+}
+inline void CMsgClientToGCCabalCreateResponse::set_cabal_id(uint64_t value) {
+  _internal_set_cabal_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalCreateResponse.cabal_id)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalInviteAccount
+
+// optional uint64 cabal_id = 1;
+inline bool CMsgClientToGCCabalInviteAccount::_internal_has_cabal_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalInviteAccount::has_cabal_id() const {
+  return _internal_has_cabal_id();
+}
+inline void CMsgClientToGCCabalInviteAccount::clear_cabal_id() {
+  _impl_.cabal_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint64_t CMsgClientToGCCabalInviteAccount::_internal_cabal_id() const {
+  return _impl_.cabal_id_;
+}
+inline uint64_t CMsgClientToGCCabalInviteAccount::cabal_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalInviteAccount.cabal_id)
+  return _internal_cabal_id();
+}
+inline void CMsgClientToGCCabalInviteAccount::_internal_set_cabal_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.cabal_id_ = value;
+}
+inline void CMsgClientToGCCabalInviteAccount::set_cabal_id(uint64_t value) {
+  _internal_set_cabal_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalInviteAccount.cabal_id)
+}
+
+// optional uint32 account_id = 2;
+inline bool CMsgClientToGCCabalInviteAccount::_internal_has_account_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalInviteAccount::has_account_id() const {
+  return _internal_has_account_id();
+}
+inline void CMsgClientToGCCabalInviteAccount::clear_account_id() {
+  _impl_.account_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CMsgClientToGCCabalInviteAccount::_internal_account_id() const {
+  return _impl_.account_id_;
+}
+inline uint32_t CMsgClientToGCCabalInviteAccount::account_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalInviteAccount.account_id)
+  return _internal_account_id();
+}
+inline void CMsgClientToGCCabalInviteAccount::_internal_set_account_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.account_id_ = value;
+}
+inline void CMsgClientToGCCabalInviteAccount::set_account_id(uint32_t value) {
+  _internal_set_account_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalInviteAccount.account_id)
+}
+
+// optional bool cancel_invite = 3;
+inline bool CMsgClientToGCCabalInviteAccount::_internal_has_cancel_invite() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalInviteAccount::has_cancel_invite() const {
+  return _internal_has_cancel_invite();
+}
+inline void CMsgClientToGCCabalInviteAccount::clear_cancel_invite() {
+  _impl_.cancel_invite_ = false;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline bool CMsgClientToGCCabalInviteAccount::_internal_cancel_invite() const {
+  return _impl_.cancel_invite_;
+}
+inline bool CMsgClientToGCCabalInviteAccount::cancel_invite() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalInviteAccount.cancel_invite)
+  return _internal_cancel_invite();
+}
+inline void CMsgClientToGCCabalInviteAccount::_internal_set_cancel_invite(bool value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.cancel_invite_ = value;
+}
+inline void CMsgClientToGCCabalInviteAccount::set_cancel_invite(bool value) {
+  _internal_set_cancel_invite(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalInviteAccount.cancel_invite)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalInviteAccountResponse
+
+// optional .CMsgClientToGCCabalInviteAccountResponse.EResult result = 1 [default = k_eInternalError];
+inline bool CMsgClientToGCCabalInviteAccountResponse::_internal_has_result() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalInviteAccountResponse::has_result() const {
+  return _internal_has_result();
+}
+inline void CMsgClientToGCCabalInviteAccountResponse::clear_result() {
+  _impl_.result_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::CMsgClientToGCCabalInviteAccountResponse_EResult CMsgClientToGCCabalInviteAccountResponse::_internal_result() const {
+  return static_cast< ::CMsgClientToGCCabalInviteAccountResponse_EResult >(_impl_.result_);
+}
+inline ::CMsgClientToGCCabalInviteAccountResponse_EResult CMsgClientToGCCabalInviteAccountResponse::result() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalInviteAccountResponse.result)
+  return _internal_result();
+}
+inline void CMsgClientToGCCabalInviteAccountResponse::_internal_set_result(::CMsgClientToGCCabalInviteAccountResponse_EResult value) {
+  assert(::CMsgClientToGCCabalInviteAccountResponse_EResult_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.result_ = value;
+}
+inline void CMsgClientToGCCabalInviteAccountResponse::set_result(::CMsgClientToGCCabalInviteAccountResponse_EResult value) {
+  _internal_set_result(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalInviteAccountResponse.result)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalAnswerInvite
+
+// optional uint64 cabal_id = 1;
+inline bool CMsgClientToGCCabalAnswerInvite::_internal_has_cabal_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalAnswerInvite::has_cabal_id() const {
+  return _internal_has_cabal_id();
+}
+inline void CMsgClientToGCCabalAnswerInvite::clear_cabal_id() {
+  _impl_.cabal_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint64_t CMsgClientToGCCabalAnswerInvite::_internal_cabal_id() const {
+  return _impl_.cabal_id_;
+}
+inline uint64_t CMsgClientToGCCabalAnswerInvite::cabal_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalAnswerInvite.cabal_id)
+  return _internal_cabal_id();
+}
+inline void CMsgClientToGCCabalAnswerInvite::_internal_set_cabal_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.cabal_id_ = value;
+}
+inline void CMsgClientToGCCabalAnswerInvite::set_cabal_id(uint64_t value) {
+  _internal_set_cabal_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalAnswerInvite.cabal_id)
+}
+
+// optional bool accepted = 2;
+inline bool CMsgClientToGCCabalAnswerInvite::_internal_has_accepted() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalAnswerInvite::has_accepted() const {
+  return _internal_has_accepted();
+}
+inline void CMsgClientToGCCabalAnswerInvite::clear_accepted() {
+  _impl_.accepted_ = false;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline bool CMsgClientToGCCabalAnswerInvite::_internal_accepted() const {
+  return _impl_.accepted_;
+}
+inline bool CMsgClientToGCCabalAnswerInvite::accepted() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalAnswerInvite.accepted)
+  return _internal_accepted();
+}
+inline void CMsgClientToGCCabalAnswerInvite::_internal_set_accepted(bool value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.accepted_ = value;
+}
+inline void CMsgClientToGCCabalAnswerInvite::set_accepted(bool value) {
+  _internal_set_accepted(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalAnswerInvite.accepted)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalAnswerInviteResponse
+
+// optional .CMsgClientToGCCabalAnswerInviteResponse.EResult result = 1 [default = k_eInternalError];
+inline bool CMsgClientToGCCabalAnswerInviteResponse::_internal_has_result() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalAnswerInviteResponse::has_result() const {
+  return _internal_has_result();
+}
+inline void CMsgClientToGCCabalAnswerInviteResponse::clear_result() {
+  _impl_.result_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::CMsgClientToGCCabalAnswerInviteResponse_EResult CMsgClientToGCCabalAnswerInviteResponse::_internal_result() const {
+  return static_cast< ::CMsgClientToGCCabalAnswerInviteResponse_EResult >(_impl_.result_);
+}
+inline ::CMsgClientToGCCabalAnswerInviteResponse_EResult CMsgClientToGCCabalAnswerInviteResponse::result() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalAnswerInviteResponse.result)
+  return _internal_result();
+}
+inline void CMsgClientToGCCabalAnswerInviteResponse::_internal_set_result(::CMsgClientToGCCabalAnswerInviteResponse_EResult value) {
+  assert(::CMsgClientToGCCabalAnswerInviteResponse_EResult_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.result_ = value;
+}
+inline void CMsgClientToGCCabalAnswerInviteResponse::set_result(::CMsgClientToGCCabalAnswerInviteResponse_EResult value) {
+  _internal_set_result(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalAnswerInviteResponse.result)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalLeave
+
+// optional uint64 cabal_id = 1;
+inline bool CMsgClientToGCCabalLeave::_internal_has_cabal_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalLeave::has_cabal_id() const {
+  return _internal_has_cabal_id();
+}
+inline void CMsgClientToGCCabalLeave::clear_cabal_id() {
+  _impl_.cabal_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint64_t CMsgClientToGCCabalLeave::_internal_cabal_id() const {
+  return _impl_.cabal_id_;
+}
+inline uint64_t CMsgClientToGCCabalLeave::cabal_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalLeave.cabal_id)
+  return _internal_cabal_id();
+}
+inline void CMsgClientToGCCabalLeave::_internal_set_cabal_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.cabal_id_ = value;
+}
+inline void CMsgClientToGCCabalLeave::set_cabal_id(uint64_t value) {
+  _internal_set_cabal_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalLeave.cabal_id)
+}
+
+// optional bool acknowledged_last_member = 2;
+inline bool CMsgClientToGCCabalLeave::_internal_has_acknowledged_last_member() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalLeave::has_acknowledged_last_member() const {
+  return _internal_has_acknowledged_last_member();
+}
+inline void CMsgClientToGCCabalLeave::clear_acknowledged_last_member() {
+  _impl_.acknowledged_last_member_ = false;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline bool CMsgClientToGCCabalLeave::_internal_acknowledged_last_member() const {
+  return _impl_.acknowledged_last_member_;
+}
+inline bool CMsgClientToGCCabalLeave::acknowledged_last_member() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalLeave.acknowledged_last_member)
+  return _internal_acknowledged_last_member();
+}
+inline void CMsgClientToGCCabalLeave::_internal_set_acknowledged_last_member(bool value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.acknowledged_last_member_ = value;
+}
+inline void CMsgClientToGCCabalLeave::set_acknowledged_last_member(bool value) {
+  _internal_set_acknowledged_last_member(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalLeave.acknowledged_last_member)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalLeaveResponse
+
+// optional .CMsgClientToGCCabalLeaveResponse.EResult result = 1 [default = k_eInternalError];
+inline bool CMsgClientToGCCabalLeaveResponse::_internal_has_result() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalLeaveResponse::has_result() const {
+  return _internal_has_result();
+}
+inline void CMsgClientToGCCabalLeaveResponse::clear_result() {
+  _impl_.result_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::CMsgClientToGCCabalLeaveResponse_EResult CMsgClientToGCCabalLeaveResponse::_internal_result() const {
+  return static_cast< ::CMsgClientToGCCabalLeaveResponse_EResult >(_impl_.result_);
+}
+inline ::CMsgClientToGCCabalLeaveResponse_EResult CMsgClientToGCCabalLeaveResponse::result() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalLeaveResponse.result)
+  return _internal_result();
+}
+inline void CMsgClientToGCCabalLeaveResponse::_internal_set_result(::CMsgClientToGCCabalLeaveResponse_EResult value) {
+  assert(::CMsgClientToGCCabalLeaveResponse_EResult_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.result_ = value;
+}
+inline void CMsgClientToGCCabalLeaveResponse::set_result(::CMsgClientToGCCabalLeaveResponse_EResult value) {
+  _internal_set_result(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalLeaveResponse.result)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalGetDetails
+
+// optional uint64 cabal_id = 1;
+inline bool CMsgClientToGCCabalGetDetails::_internal_has_cabal_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalGetDetails::has_cabal_id() const {
+  return _internal_has_cabal_id();
+}
+inline void CMsgClientToGCCabalGetDetails::clear_cabal_id() {
+  _impl_.cabal_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint64_t CMsgClientToGCCabalGetDetails::_internal_cabal_id() const {
+  return _impl_.cabal_id_;
+}
+inline uint64_t CMsgClientToGCCabalGetDetails::cabal_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalGetDetails.cabal_id)
+  return _internal_cabal_id();
+}
+inline void CMsgClientToGCCabalGetDetails::_internal_set_cabal_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.cabal_id_ = value;
+}
+inline void CMsgClientToGCCabalGetDetails::set_cabal_id(uint64_t value) {
+  _internal_set_cabal_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalGetDetails.cabal_id)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalGetDetailsResponse
+
+// optional .CMsgClientToGCCabalGetDetailsResponse.EResult result = 1 [default = k_eInternalError];
+inline bool CMsgClientToGCCabalGetDetailsResponse::_internal_has_result() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalGetDetailsResponse::has_result() const {
+  return _internal_has_result();
+}
+inline void CMsgClientToGCCabalGetDetailsResponse::clear_result() {
+  _impl_.result_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline ::CMsgClientToGCCabalGetDetailsResponse_EResult CMsgClientToGCCabalGetDetailsResponse::_internal_result() const {
+  return static_cast< ::CMsgClientToGCCabalGetDetailsResponse_EResult >(_impl_.result_);
+}
+inline ::CMsgClientToGCCabalGetDetailsResponse_EResult CMsgClientToGCCabalGetDetailsResponse::result() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalGetDetailsResponse.result)
+  return _internal_result();
+}
+inline void CMsgClientToGCCabalGetDetailsResponse::_internal_set_result(::CMsgClientToGCCabalGetDetailsResponse_EResult value) {
+  assert(::CMsgClientToGCCabalGetDetailsResponse_EResult_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.result_ = value;
+}
+inline void CMsgClientToGCCabalGetDetailsResponse::set_result(::CMsgClientToGCCabalGetDetailsResponse_EResult value) {
+  _internal_set_result(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalGetDetailsResponse.result)
+}
+
+// optional .CMsgCitadelCabal cabal_info = 2;
+inline bool CMsgClientToGCCabalGetDetailsResponse::_internal_has_cabal_info() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.cabal_info_ != nullptr);
+  return value;
+}
+inline bool CMsgClientToGCCabalGetDetailsResponse::has_cabal_info() const {
+  return _internal_has_cabal_info();
+}
+inline void CMsgClientToGCCabalGetDetailsResponse::clear_cabal_info() {
+  if (_impl_.cabal_info_ != nullptr) _impl_.cabal_info_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline const ::CMsgCitadelCabal& CMsgClientToGCCabalGetDetailsResponse::_internal_cabal_info() const {
+  const ::CMsgCitadelCabal* p = _impl_.cabal_info_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CMsgCitadelCabal&>(
+      ::_CMsgCitadelCabal_default_instance_);
+}
+inline const ::CMsgCitadelCabal& CMsgClientToGCCabalGetDetailsResponse::cabal_info() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalGetDetailsResponse.cabal_info)
+  return _internal_cabal_info();
+}
+inline void CMsgClientToGCCabalGetDetailsResponse::unsafe_arena_set_allocated_cabal_info(
+    ::CMsgCitadelCabal* cabal_info) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.cabal_info_);
+  }
+  _impl_.cabal_info_ = cabal_info;
+  if (cabal_info) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMsgClientToGCCabalGetDetailsResponse.cabal_info)
+}
+inline ::CMsgCitadelCabal* CMsgClientToGCCabalGetDetailsResponse::release_cabal_info() {
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::CMsgCitadelCabal* temp = _impl_.cabal_info_;
+  _impl_.cabal_info_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::CMsgCitadelCabal* CMsgClientToGCCabalGetDetailsResponse::unsafe_arena_release_cabal_info() {
+  // @@protoc_insertion_point(field_release:CMsgClientToGCCabalGetDetailsResponse.cabal_info)
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::CMsgCitadelCabal* temp = _impl_.cabal_info_;
+  _impl_.cabal_info_ = nullptr;
+  return temp;
+}
+inline ::CMsgCitadelCabal* CMsgClientToGCCabalGetDetailsResponse::_internal_mutable_cabal_info() {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  if (_impl_.cabal_info_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CMsgCitadelCabal>(GetArenaForAllocation());
+    _impl_.cabal_info_ = p;
+  }
+  return _impl_.cabal_info_;
+}
+inline ::CMsgCitadelCabal* CMsgClientToGCCabalGetDetailsResponse::mutable_cabal_info() {
+  ::CMsgCitadelCabal* _msg = _internal_mutable_cabal_info();
+  // @@protoc_insertion_point(field_mutable:CMsgClientToGCCabalGetDetailsResponse.cabal_info)
+  return _msg;
+}
+inline void CMsgClientToGCCabalGetDetailsResponse::set_allocated_cabal_info(::CMsgCitadelCabal* cabal_info) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete _impl_.cabal_info_;
+  }
+  if (cabal_info) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(cabal_info);
+    if (message_arena != submessage_arena) {
+      cabal_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, cabal_info, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  _impl_.cabal_info_ = cabal_info;
+  // @@protoc_insertion_point(field_set_allocated:CMsgClientToGCCabalGetDetailsResponse.cabal_info)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgGCToClientCabalUpdated
+
+// optional .CMsgCitadelCabal cabal_info = 1;
+inline bool CMsgGCToClientCabalUpdated::_internal_has_cabal_info() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.cabal_info_ != nullptr);
+  return value;
+}
+inline bool CMsgGCToClientCabalUpdated::has_cabal_info() const {
+  return _internal_has_cabal_info();
+}
+inline void CMsgGCToClientCabalUpdated::clear_cabal_info() {
+  if (_impl_.cabal_info_ != nullptr) _impl_.cabal_info_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline const ::CMsgCitadelCabal& CMsgGCToClientCabalUpdated::_internal_cabal_info() const {
+  const ::CMsgCitadelCabal* p = _impl_.cabal_info_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CMsgCitadelCabal&>(
+      ::_CMsgCitadelCabal_default_instance_);
+}
+inline const ::CMsgCitadelCabal& CMsgGCToClientCabalUpdated::cabal_info() const {
+  // @@protoc_insertion_point(field_get:CMsgGCToClientCabalUpdated.cabal_info)
+  return _internal_cabal_info();
+}
+inline void CMsgGCToClientCabalUpdated::unsafe_arena_set_allocated_cabal_info(
+    ::CMsgCitadelCabal* cabal_info) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.cabal_info_);
+  }
+  _impl_.cabal_info_ = cabal_info;
+  if (cabal_info) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMsgGCToClientCabalUpdated.cabal_info)
+}
+inline ::CMsgCitadelCabal* CMsgGCToClientCabalUpdated::release_cabal_info() {
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::CMsgCitadelCabal* temp = _impl_.cabal_info_;
+  _impl_.cabal_info_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::CMsgCitadelCabal* CMsgGCToClientCabalUpdated::unsafe_arena_release_cabal_info() {
+  // @@protoc_insertion_point(field_release:CMsgGCToClientCabalUpdated.cabal_info)
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::CMsgCitadelCabal* temp = _impl_.cabal_info_;
+  _impl_.cabal_info_ = nullptr;
+  return temp;
+}
+inline ::CMsgCitadelCabal* CMsgGCToClientCabalUpdated::_internal_mutable_cabal_info() {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  if (_impl_.cabal_info_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CMsgCitadelCabal>(GetArenaForAllocation());
+    _impl_.cabal_info_ = p;
+  }
+  return _impl_.cabal_info_;
+}
+inline ::CMsgCitadelCabal* CMsgGCToClientCabalUpdated::mutable_cabal_info() {
+  ::CMsgCitadelCabal* _msg = _internal_mutable_cabal_info();
+  // @@protoc_insertion_point(field_mutable:CMsgGCToClientCabalUpdated.cabal_info)
+  return _msg;
+}
+inline void CMsgGCToClientCabalUpdated::set_allocated_cabal_info(::CMsgCitadelCabal* cabal_info) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete _impl_.cabal_info_;
+  }
+  if (cabal_info) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(cabal_info);
+    if (message_arena != submessage_arena) {
+      cabal_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, cabal_info, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  _impl_.cabal_info_ = cabal_info;
+  // @@protoc_insertion_point(field_set_allocated:CMsgGCToClientCabalUpdated.cabal_info)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalKickPlayer
+
+// optional uint64 cabal_id = 1;
+inline bool CMsgClientToGCCabalKickPlayer::_internal_has_cabal_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalKickPlayer::has_cabal_id() const {
+  return _internal_has_cabal_id();
+}
+inline void CMsgClientToGCCabalKickPlayer::clear_cabal_id() {
+  _impl_.cabal_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint64_t CMsgClientToGCCabalKickPlayer::_internal_cabal_id() const {
+  return _impl_.cabal_id_;
+}
+inline uint64_t CMsgClientToGCCabalKickPlayer::cabal_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalKickPlayer.cabal_id)
+  return _internal_cabal_id();
+}
+inline void CMsgClientToGCCabalKickPlayer::_internal_set_cabal_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.cabal_id_ = value;
+}
+inline void CMsgClientToGCCabalKickPlayer::set_cabal_id(uint64_t value) {
+  _internal_set_cabal_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalKickPlayer.cabal_id)
+}
+
+// optional uint32 kick_account_id = 2;
+inline bool CMsgClientToGCCabalKickPlayer::_internal_has_kick_account_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalKickPlayer::has_kick_account_id() const {
+  return _internal_has_kick_account_id();
+}
+inline void CMsgClientToGCCabalKickPlayer::clear_kick_account_id() {
+  _impl_.kick_account_id_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint32_t CMsgClientToGCCabalKickPlayer::_internal_kick_account_id() const {
+  return _impl_.kick_account_id_;
+}
+inline uint32_t CMsgClientToGCCabalKickPlayer::kick_account_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalKickPlayer.kick_account_id)
+  return _internal_kick_account_id();
+}
+inline void CMsgClientToGCCabalKickPlayer::_internal_set_kick_account_id(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.kick_account_id_ = value;
+}
+inline void CMsgClientToGCCabalKickPlayer::set_kick_account_id(uint32_t value) {
+  _internal_set_kick_account_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalKickPlayer.kick_account_id)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalKickPlayerResponse
+
+// optional .CMsgClientToGCCabalKickPlayerResponse.EResult result = 1 [default = k_eInternalError];
+inline bool CMsgClientToGCCabalKickPlayerResponse::_internal_has_result() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalKickPlayerResponse::has_result() const {
+  return _internal_has_result();
+}
+inline void CMsgClientToGCCabalKickPlayerResponse::clear_result() {
+  _impl_.result_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline ::CMsgClientToGCCabalKickPlayerResponse_EResult CMsgClientToGCCabalKickPlayerResponse::_internal_result() const {
+  return static_cast< ::CMsgClientToGCCabalKickPlayerResponse_EResult >(_impl_.result_);
+}
+inline ::CMsgClientToGCCabalKickPlayerResponse_EResult CMsgClientToGCCabalKickPlayerResponse::result() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalKickPlayerResponse.result)
+  return _internal_result();
+}
+inline void CMsgClientToGCCabalKickPlayerResponse::_internal_set_result(::CMsgClientToGCCabalKickPlayerResponse_EResult value) {
+  assert(::CMsgClientToGCCabalKickPlayerResponse_EResult_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.result_ = value;
+}
+inline void CMsgClientToGCCabalKickPlayerResponse::set_result(::CMsgClientToGCCabalKickPlayerResponse_EResult value) {
+  _internal_set_result(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalKickPlayerResponse.result)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalGetMatchHistory
+
+// optional uint64 cabal_id = 1;
+inline bool CMsgClientToGCCabalGetMatchHistory::_internal_has_cabal_id() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalGetMatchHistory::has_cabal_id() const {
+  return _internal_has_cabal_id();
+}
+inline void CMsgClientToGCCabalGetMatchHistory::clear_cabal_id() {
+  _impl_.cabal_id_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline uint64_t CMsgClientToGCCabalGetMatchHistory::_internal_cabal_id() const {
+  return _impl_.cabal_id_;
+}
+inline uint64_t CMsgClientToGCCabalGetMatchHistory::cabal_id() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalGetMatchHistory.cabal_id)
+  return _internal_cabal_id();
+}
+inline void CMsgClientToGCCabalGetMatchHistory::_internal_set_cabal_id(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.cabal_id_ = value;
+}
+inline void CMsgClientToGCCabalGetMatchHistory::set_cabal_id(uint64_t value) {
+  _internal_set_cabal_id(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalGetMatchHistory.cabal_id)
+}
+
+// optional .ECitadelCabalMMTier cabal_mm_tier = 2 [default = k_eCabalMMTier_Invalid];
+inline bool CMsgClientToGCCabalGetMatchHistory::_internal_has_cabal_mm_tier() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalGetMatchHistory::has_cabal_mm_tier() const {
+  return _internal_has_cabal_mm_tier();
+}
+inline void CMsgClientToGCCabalGetMatchHistory::clear_cabal_mm_tier() {
+  _impl_.cabal_mm_tier_ = 0;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline ::ECitadelCabalMMTier CMsgClientToGCCabalGetMatchHistory::_internal_cabal_mm_tier() const {
+  return static_cast< ::ECitadelCabalMMTier >(_impl_.cabal_mm_tier_);
+}
+inline ::ECitadelCabalMMTier CMsgClientToGCCabalGetMatchHistory::cabal_mm_tier() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalGetMatchHistory.cabal_mm_tier)
+  return _internal_cabal_mm_tier();
+}
+inline void CMsgClientToGCCabalGetMatchHistory::_internal_set_cabal_mm_tier(::ECitadelCabalMMTier value) {
+  assert(::ECitadelCabalMMTier_IsValid(value));
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.cabal_mm_tier_ = value;
+}
+inline void CMsgClientToGCCabalGetMatchHistory::set_cabal_mm_tier(::ECitadelCabalMMTier value) {
+  _internal_set_cabal_mm_tier(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalGetMatchHistory.cabal_mm_tier)
+}
+
+// optional uint64 cursor = 3;
+inline bool CMsgClientToGCCabalGetMatchHistory::_internal_has_cursor() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool CMsgClientToGCCabalGetMatchHistory::has_cursor() const {
+  return _internal_has_cursor();
+}
+inline void CMsgClientToGCCabalGetMatchHistory::clear_cursor() {
+  _impl_.cursor_ = uint64_t{0u};
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline uint64_t CMsgClientToGCCabalGetMatchHistory::_internal_cursor() const {
+  return _impl_.cursor_;
+}
+inline uint64_t CMsgClientToGCCabalGetMatchHistory::cursor() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalGetMatchHistory.cursor)
+  return _internal_cursor();
+}
+inline void CMsgClientToGCCabalGetMatchHistory::_internal_set_cursor(uint64_t value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.cursor_ = value;
+}
+inline void CMsgClientToGCCabalGetMatchHistory::set_cursor(uint64_t value) {
+  _internal_set_cursor(value);
+  // @@protoc_insertion_point(field_set:CMsgClientToGCCabalGetMatchHistory.cursor)
+}
+
+// -------------------------------------------------------------------
+
+// CMsgClientToGCCabalGetMatchHistoryResponse
+
+// optional .CMsgClientToGCGetMatchHistoryResponse history_response = 1;
+inline bool CMsgClientToGCCabalGetMatchHistoryResponse::_internal_has_history_response() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.history_response_ != nullptr);
+  return value;
+}
+inline bool CMsgClientToGCCabalGetMatchHistoryResponse::has_history_response() const {
+  return _internal_has_history_response();
+}
+inline void CMsgClientToGCCabalGetMatchHistoryResponse::clear_history_response() {
+  if (_impl_.history_response_ != nullptr) _impl_.history_response_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline const ::CMsgClientToGCGetMatchHistoryResponse& CMsgClientToGCCabalGetMatchHistoryResponse::_internal_history_response() const {
+  const ::CMsgClientToGCGetMatchHistoryResponse* p = _impl_.history_response_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CMsgClientToGCGetMatchHistoryResponse&>(
+      ::_CMsgClientToGCGetMatchHistoryResponse_default_instance_);
+}
+inline const ::CMsgClientToGCGetMatchHistoryResponse& CMsgClientToGCCabalGetMatchHistoryResponse::history_response() const {
+  // @@protoc_insertion_point(field_get:CMsgClientToGCCabalGetMatchHistoryResponse.history_response)
+  return _internal_history_response();
+}
+inline void CMsgClientToGCCabalGetMatchHistoryResponse::unsafe_arena_set_allocated_history_response(
+    ::CMsgClientToGCGetMatchHistoryResponse* history_response) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.history_response_);
+  }
+  _impl_.history_response_ = history_response;
+  if (history_response) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMsgClientToGCCabalGetMatchHistoryResponse.history_response)
+}
+inline ::CMsgClientToGCGetMatchHistoryResponse* CMsgClientToGCCabalGetMatchHistoryResponse::release_history_response() {
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::CMsgClientToGCGetMatchHistoryResponse* temp = _impl_.history_response_;
+  _impl_.history_response_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::CMsgClientToGCGetMatchHistoryResponse* CMsgClientToGCCabalGetMatchHistoryResponse::unsafe_arena_release_history_response() {
+  // @@protoc_insertion_point(field_release:CMsgClientToGCCabalGetMatchHistoryResponse.history_response)
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::CMsgClientToGCGetMatchHistoryResponse* temp = _impl_.history_response_;
+  _impl_.history_response_ = nullptr;
+  return temp;
+}
+inline ::CMsgClientToGCGetMatchHistoryResponse* CMsgClientToGCCabalGetMatchHistoryResponse::_internal_mutable_history_response() {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  if (_impl_.history_response_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CMsgClientToGCGetMatchHistoryResponse>(GetArenaForAllocation());
+    _impl_.history_response_ = p;
+  }
+  return _impl_.history_response_;
+}
+inline ::CMsgClientToGCGetMatchHistoryResponse* CMsgClientToGCCabalGetMatchHistoryResponse::mutable_history_response() {
+  ::CMsgClientToGCGetMatchHistoryResponse* _msg = _internal_mutable_history_response();
+  // @@protoc_insertion_point(field_mutable:CMsgClientToGCCabalGetMatchHistoryResponse.history_response)
+  return _msg;
+}
+inline void CMsgClientToGCCabalGetMatchHistoryResponse::set_allocated_history_response(::CMsgClientToGCGetMatchHistoryResponse* history_response) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete _impl_.history_response_;
+  }
+  if (history_response) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(history_response);
+    if (message_arena != submessage_arena) {
+      history_response = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, history_response, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  _impl_.history_response_ = history_response;
+  // @@protoc_insertion_point(field_set_allocated:CMsgClientToGCCabalGetMatchHistoryResponse.history_response)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -55885,6 +67033,11 @@ inline void CMsgClientToGCSetAccountPrivacySettingResponse::set_result(::CMsgCli
 
 PROTOBUF_NAMESPACE_OPEN
 
+template <> struct is_proto_enum< ::CMsgCitadelCabal_EMemberState> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgCitadelCabal_EMemberState>() {
+  return ::CMsgCitadelCabal_EMemberState_descriptor();
+}
 template <> struct is_proto_enum< ::CSOGameAccountClient_EFlags> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::CSOGameAccountClient_EFlags>() {
@@ -55960,10 +67113,10 @@ template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCPartyInviteUserResponse_EResponse>() {
   return ::CMsgClientToGCPartyInviteUserResponse_EResponse_descriptor();
 }
-template <> struct is_proto_enum< ::CMsgGCToClientPartyEvent_EEvent> : ::std::true_type {};
+template <> struct is_proto_enum< ::CMsgGCToClientPartyEvent_EPartyEvent> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::CMsgGCToClientPartyEvent_EEvent>() {
-  return ::CMsgGCToClientPartyEvent_EEvent_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgGCToClientPartyEvent_EPartyEvent>() {
+  return ::CMsgGCToClientPartyEvent_EPartyEvent_descriptor();
 }
 template <> struct is_proto_enum< ::CMsgClientToGCPartySetReadyStateResponse_EResponse> : ::std::true_type {};
 template <>
@@ -55999,16 +67152,6 @@ template <> struct is_proto_enum< ::CMsgClientToGCGetMatchMetaDataResponse_EResu
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCGetMatchMetaDataResponse_EResult>() {
   return ::CMsgClientToGCGetMatchMetaDataResponse_EResult_descriptor();
-}
-template <> struct is_proto_enum< ::CMsgClientToGCModifyDevAnnouncements_EOperation> : ::std::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCModifyDevAnnouncements_EOperation>() {
-  return ::CMsgClientToGCModifyDevAnnouncements_EOperation_descriptor();
-}
-template <> struct is_proto_enum< ::CMsgClientToGCModifyDevAnnouncementsResponse_EResult> : ::std::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCModifyDevAnnouncementsResponse_EResult>() {
-  return ::CMsgClientToGCModifyDevAnnouncementsResponse_EResult_descriptor();
 }
 template <> struct is_proto_enum< ::CMsgClientToGCDevAction_EAction> : ::std::true_type {};
 template <>
@@ -56079,6 +67222,11 @@ template <> struct is_proto_enum< ::CMsgClientToGCGetAccountMatchReportsResponse
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCGetAccountMatchReportsResponse_EResponse>() {
   return ::CMsgClientToGCGetAccountMatchReportsResponse_EResponse_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgClientToGCRequestReporterUpdatesResponse_EResponse> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCRequestReporterUpdatesResponse_EResponse>() {
+  return ::CMsgClientToGCRequestReporterUpdatesResponse_EResponse_descriptor();
 }
 template <> struct is_proto_enum< ::CMsgClientToGCDeleteHeroBuildResponse_EResponse> : ::std::true_type {};
 template <>
@@ -56174,6 +67322,61 @@ template <> struct is_proto_enum< ::CMsgClientToGCSetAccountPrivacySettingRespon
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCSetAccountPrivacySettingResponse_EResultCode>() {
   return ::CMsgClientToGCSetAccountPrivacySettingResponse_EResultCode_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction>() {
+  return ::CMsgClientToGCVariantItemChangeSlotStyles_EStyleAction_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse>() {
+  return ::CMsgClientToGCVariantItemChangeSlotStylesResponse_EResponse_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgClientToGCStartRankedIntervalResponse_EResponse> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCStartRankedIntervalResponse_EResponse>() {
+  return ::CMsgClientToGCStartRankedIntervalResponse_EResponse_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse>() {
+  return ::CMsgClientToGCGetInternalLeaderboardsResponse_EResponse_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgClientToGCGetLeaderboardStatusResponse_EResult> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCGetLeaderboardStatusResponse_EResult>() {
+  return ::CMsgClientToGCGetLeaderboardStatusResponse_EResult_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgClientToGCCabalCreateResponse_EResult> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCCabalCreateResponse_EResult>() {
+  return ::CMsgClientToGCCabalCreateResponse_EResult_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgClientToGCCabalInviteAccountResponse_EResult> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCCabalInviteAccountResponse_EResult>() {
+  return ::CMsgClientToGCCabalInviteAccountResponse_EResult_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgClientToGCCabalAnswerInviteResponse_EResult> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCCabalAnswerInviteResponse_EResult>() {
+  return ::CMsgClientToGCCabalAnswerInviteResponse_EResult_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgClientToGCCabalLeaveResponse_EResult> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCCabalLeaveResponse_EResult>() {
+  return ::CMsgClientToGCCabalLeaveResponse_EResult_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgClientToGCCabalGetDetailsResponse_EResult> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCCabalGetDetailsResponse_EResult>() {
+  return ::CMsgClientToGCCabalGetDetailsResponse_EResult_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgClientToGCCabalKickPlayerResponse_EResult> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgClientToGCCabalKickPlayerResponse_EResult>() {
+  return ::CMsgClientToGCCabalKickPlayerResponse_EResult_descriptor();
 }
 template <> struct is_proto_enum< ::EGCCitadelClientMessages> : ::std::true_type {};
 template <>

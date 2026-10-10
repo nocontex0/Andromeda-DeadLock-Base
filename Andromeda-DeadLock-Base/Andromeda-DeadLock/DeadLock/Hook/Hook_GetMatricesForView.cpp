@@ -6,9 +6,11 @@ auto Hook_GetMatricesForView( void* rcx , void* view ,
                               VMatrix* pWorldToView ,
                               VMatrix* pViewToProjection ,
                               VMatrix* pWorldToProjection ,
-                              VMatrix* pWorldToPixels ) -> void
+                              VMatrix* pWorldToPixels ) -> void*
 {
-    GetMatricesForView_o( rcx , view , pWorldToView , pViewToProjection , pWorldToProjection , pWorldToPixels );
+    auto* pResult = GetMatricesForView_o( rcx , view , pWorldToView , pViewToProjection , pWorldToProjection , pWorldToPixels );
 
     GetVisual()->CalculateBoundingBoxes();
+
+    return pResult;
 }

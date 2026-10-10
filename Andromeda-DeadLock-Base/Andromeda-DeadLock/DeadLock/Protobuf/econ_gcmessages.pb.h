@@ -696,6 +696,35 @@ inline bool CMsgRedeemCodeResponse_EResultCode_Parse(
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgRedeemCodeResponse_EResultCode>(
     CMsgRedeemCodeResponse_EResultCode_descriptor(), name, value);
 }
+enum CMsgDevNewItemRequestResponse_EResponse : int {
+  CMsgDevNewItemRequestResponse_EResponse_k_eInternalError = 0,
+  CMsgDevNewItemRequestResponse_EResponse_k_eSuccess = 1,
+  CMsgDevNewItemRequestResponse_EResponse_k_eTooBusy = 2,
+  CMsgDevNewItemRequestResponse_EResponse_k_eDisabled = 3,
+  CMsgDevNewItemRequestResponse_EResponse_k_eTimeout = 4,
+  CMsgDevNewItemRequestResponse_EResponse_k_eNotAllowed = 5,
+  CMsgDevNewItemRequestResponse_EResponse_k_eUnknownItemDef = 6,
+  CMsgDevNewItemRequestResponse_EResponse_k_eItemDefNotAllowed = 7
+};
+bool CMsgDevNewItemRequestResponse_EResponse_IsValid(int value);
+constexpr CMsgDevNewItemRequestResponse_EResponse CMsgDevNewItemRequestResponse_EResponse_EResponse_MIN = CMsgDevNewItemRequestResponse_EResponse_k_eInternalError;
+constexpr CMsgDevNewItemRequestResponse_EResponse CMsgDevNewItemRequestResponse_EResponse_EResponse_MAX = CMsgDevNewItemRequestResponse_EResponse_k_eItemDefNotAllowed;
+constexpr int CMsgDevNewItemRequestResponse_EResponse_EResponse_ARRAYSIZE = CMsgDevNewItemRequestResponse_EResponse_EResponse_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CMsgDevNewItemRequestResponse_EResponse_descriptor();
+template<typename T>
+inline const std::string& CMsgDevNewItemRequestResponse_EResponse_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CMsgDevNewItemRequestResponse_EResponse>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CMsgDevNewItemRequestResponse_EResponse_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CMsgDevNewItemRequestResponse_EResponse_descriptor(), enum_t_value);
+}
+inline bool CMsgDevNewItemRequestResponse_EResponse_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CMsgDevNewItemRequestResponse_EResponse* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CMsgDevNewItemRequestResponse_EResponse>(
+    CMsgDevNewItemRequestResponse_EResponse_descriptor(), name, value);
+}
 enum CMsgClientToGCUnpackBundleResponse_EUnpackBundle : int {
   CMsgClientToGCUnpackBundleResponse_EUnpackBundle_k_UnpackBundle_Succeeded = 0,
   CMsgClientToGCUnpackBundleResponse_EUnpackBundle_k_UnpackBundle_Failed_ItemIsNotBundle = 1,
@@ -9625,22 +9654,64 @@ class CMsgDevNewItemRequestResponse final :
 
   // nested types ----------------------------------------------------
 
+  typedef CMsgDevNewItemRequestResponse_EResponse EResponse;
+  static constexpr EResponse k_eInternalError =
+    CMsgDevNewItemRequestResponse_EResponse_k_eInternalError;
+  static constexpr EResponse k_eSuccess =
+    CMsgDevNewItemRequestResponse_EResponse_k_eSuccess;
+  static constexpr EResponse k_eTooBusy =
+    CMsgDevNewItemRequestResponse_EResponse_k_eTooBusy;
+  static constexpr EResponse k_eDisabled =
+    CMsgDevNewItemRequestResponse_EResponse_k_eDisabled;
+  static constexpr EResponse k_eTimeout =
+    CMsgDevNewItemRequestResponse_EResponse_k_eTimeout;
+  static constexpr EResponse k_eNotAllowed =
+    CMsgDevNewItemRequestResponse_EResponse_k_eNotAllowed;
+  static constexpr EResponse k_eUnknownItemDef =
+    CMsgDevNewItemRequestResponse_EResponse_k_eUnknownItemDef;
+  static constexpr EResponse k_eItemDefNotAllowed =
+    CMsgDevNewItemRequestResponse_EResponse_k_eItemDefNotAllowed;
+  static inline bool EResponse_IsValid(int value) {
+    return CMsgDevNewItemRequestResponse_EResponse_IsValid(value);
+  }
+  static constexpr EResponse EResponse_MIN =
+    CMsgDevNewItemRequestResponse_EResponse_EResponse_MIN;
+  static constexpr EResponse EResponse_MAX =
+    CMsgDevNewItemRequestResponse_EResponse_EResponse_MAX;
+  static constexpr int EResponse_ARRAYSIZE =
+    CMsgDevNewItemRequestResponse_EResponse_EResponse_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  EResponse_descriptor() {
+    return CMsgDevNewItemRequestResponse_EResponse_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& EResponse_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, EResponse>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function EResponse_Name.");
+    return CMsgDevNewItemRequestResponse_EResponse_Name(enum_t_value);
+  }
+  static inline bool EResponse_Parse(::PROTOBUF_NAMESPACE_ID::ConstStringParam name,
+      EResponse* value) {
+    return CMsgDevNewItemRequestResponse_EResponse_Parse(name, value);
+  }
+
   // accessors -------------------------------------------------------
 
   enum : int {
-    kSuccessFieldNumber = 1,
+    kResultFieldNumber = 1,
   };
-  // optional bool success = 1;
-  bool has_success() const;
+  // optional .CMsgDevNewItemRequestResponse.EResponse result = 1 [default = k_eInternalError];
+  bool has_result() const;
   private:
-  bool _internal_has_success() const;
+  bool _internal_has_result() const;
   public:
-  void clear_success();
-  bool success() const;
-  void set_success(bool value);
+  void clear_result();
+  ::CMsgDevNewItemRequestResponse_EResponse result() const;
+  void set_result(::CMsgDevNewItemRequestResponse_EResponse value);
   private:
-  bool _internal_success() const;
-  void _internal_set_success(bool value);
+  ::CMsgDevNewItemRequestResponse_EResponse _internal_result() const;
+  void _internal_set_result(::CMsgDevNewItemRequestResponse_EResponse value);
   public:
 
   // @@protoc_insertion_point(class_scope:CMsgDevNewItemRequestResponse)
@@ -9653,7 +9724,7 @@ class CMsgDevNewItemRequestResponse final :
   struct Impl_ {
     ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-    bool success_;
+    int result_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_econ_5fgcmessages_2eproto;
@@ -21641,7 +21712,6 @@ class CMsgProcessTransactionOrder final :
     kItemsFieldNumber = 9,
     kTxnIdFieldNumber = 1,
     kSteamTxnIdFieldNumber = 2,
-    kPartnerTxnIdFieldNumber = 3,
     kSteamIdFieldNumber = 4,
     kWatermarkFieldNumber = 6,
     kTimeStampFieldNumber = 5,
@@ -21690,19 +21760,6 @@ class CMsgProcessTransactionOrder final :
   private:
   uint64_t _internal_steam_txn_id() const;
   void _internal_set_steam_txn_id(uint64_t value);
-  public:
-
-  // optional uint64 partner_txn_id = 3;
-  bool has_partner_txn_id() const;
-  private:
-  bool _internal_has_partner_txn_id() const;
-  public:
-  void clear_partner_txn_id();
-  uint64_t partner_txn_id() const;
-  void set_partner_txn_id(uint64_t value);
-  private:
-  uint64_t _internal_partner_txn_id() const;
-  void _internal_set_partner_txn_id(uint64_t value);
   public:
 
   // optional fixed64 steam_id = 4;
@@ -21783,7 +21840,6 @@ class CMsgProcessTransactionOrder final :
     ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CMsgProcessTransactionOrder_Item > items_;
     uint64_t txn_id_;
     uint64_t steam_txn_id_;
-    uint64_t partner_txn_id_;
     uint64_t steam_id_;
     uint64_t watermark_;
     uint32_t time_stamp_;
@@ -33003,32 +33059,33 @@ inline void CMsgDevNewItemRequest::set_item_quality(uint32_t value) {
 
 // CMsgDevNewItemRequestResponse
 
-// optional bool success = 1;
-inline bool CMsgDevNewItemRequestResponse::_internal_has_success() const {
+// optional .CMsgDevNewItemRequestResponse.EResponse result = 1 [default = k_eInternalError];
+inline bool CMsgDevNewItemRequestResponse::_internal_has_result() const {
   bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
   return value;
 }
-inline bool CMsgDevNewItemRequestResponse::has_success() const {
-  return _internal_has_success();
+inline bool CMsgDevNewItemRequestResponse::has_result() const {
+  return _internal_has_result();
 }
-inline void CMsgDevNewItemRequestResponse::clear_success() {
-  _impl_.success_ = false;
+inline void CMsgDevNewItemRequestResponse::clear_result() {
+  _impl_.result_ = 0;
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
-inline bool CMsgDevNewItemRequestResponse::_internal_success() const {
-  return _impl_.success_;
+inline ::CMsgDevNewItemRequestResponse_EResponse CMsgDevNewItemRequestResponse::_internal_result() const {
+  return static_cast< ::CMsgDevNewItemRequestResponse_EResponse >(_impl_.result_);
 }
-inline bool CMsgDevNewItemRequestResponse::success() const {
-  // @@protoc_insertion_point(field_get:CMsgDevNewItemRequestResponse.success)
-  return _internal_success();
+inline ::CMsgDevNewItemRequestResponse_EResponse CMsgDevNewItemRequestResponse::result() const {
+  // @@protoc_insertion_point(field_get:CMsgDevNewItemRequestResponse.result)
+  return _internal_result();
 }
-inline void CMsgDevNewItemRequestResponse::_internal_set_success(bool value) {
+inline void CMsgDevNewItemRequestResponse::_internal_set_result(::CMsgDevNewItemRequestResponse_EResponse value) {
+  assert(::CMsgDevNewItemRequestResponse_EResponse_IsValid(value));
   _impl_._has_bits_[0] |= 0x00000001u;
-  _impl_.success_ = value;
+  _impl_.result_ = value;
 }
-inline void CMsgDevNewItemRequestResponse::set_success(bool value) {
-  _internal_set_success(value);
-  // @@protoc_insertion_point(field_set:CMsgDevNewItemRequestResponse.success)
+inline void CMsgDevNewItemRequestResponse::set_result(::CMsgDevNewItemRequestResponse_EResponse value) {
+  _internal_set_result(value);
+  // @@protoc_insertion_point(field_set:CMsgDevNewItemRequestResponse.result)
 }
 
 // -------------------------------------------------------------------
@@ -39445,37 +39502,9 @@ inline void CMsgProcessTransactionOrder::set_steam_txn_id(uint64_t value) {
   // @@protoc_insertion_point(field_set:CMsgProcessTransactionOrder.steam_txn_id)
 }
 
-// optional uint64 partner_txn_id = 3;
-inline bool CMsgProcessTransactionOrder::_internal_has_partner_txn_id() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
-  return value;
-}
-inline bool CMsgProcessTransactionOrder::has_partner_txn_id() const {
-  return _internal_has_partner_txn_id();
-}
-inline void CMsgProcessTransactionOrder::clear_partner_txn_id() {
-  _impl_.partner_txn_id_ = uint64_t{0u};
-  _impl_._has_bits_[0] &= ~0x00000004u;
-}
-inline uint64_t CMsgProcessTransactionOrder::_internal_partner_txn_id() const {
-  return _impl_.partner_txn_id_;
-}
-inline uint64_t CMsgProcessTransactionOrder::partner_txn_id() const {
-  // @@protoc_insertion_point(field_get:CMsgProcessTransactionOrder.partner_txn_id)
-  return _internal_partner_txn_id();
-}
-inline void CMsgProcessTransactionOrder::_internal_set_partner_txn_id(uint64_t value) {
-  _impl_._has_bits_[0] |= 0x00000004u;
-  _impl_.partner_txn_id_ = value;
-}
-inline void CMsgProcessTransactionOrder::set_partner_txn_id(uint64_t value) {
-  _internal_set_partner_txn_id(value);
-  // @@protoc_insertion_point(field_set:CMsgProcessTransactionOrder.partner_txn_id)
-}
-
 // optional fixed64 steam_id = 4;
 inline bool CMsgProcessTransactionOrder::_internal_has_steam_id() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
   return value;
 }
 inline bool CMsgProcessTransactionOrder::has_steam_id() const {
@@ -39483,7 +39512,7 @@ inline bool CMsgProcessTransactionOrder::has_steam_id() const {
 }
 inline void CMsgProcessTransactionOrder::clear_steam_id() {
   _impl_.steam_id_ = uint64_t{0u};
-  _impl_._has_bits_[0] &= ~0x00000008u;
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 inline uint64_t CMsgProcessTransactionOrder::_internal_steam_id() const {
   return _impl_.steam_id_;
@@ -39493,7 +39522,7 @@ inline uint64_t CMsgProcessTransactionOrder::steam_id() const {
   return _internal_steam_id();
 }
 inline void CMsgProcessTransactionOrder::_internal_set_steam_id(uint64_t value) {
-  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_._has_bits_[0] |= 0x00000004u;
   _impl_.steam_id_ = value;
 }
 inline void CMsgProcessTransactionOrder::set_steam_id(uint64_t value) {
@@ -39503,7 +39532,7 @@ inline void CMsgProcessTransactionOrder::set_steam_id(uint64_t value) {
 
 // optional uint32 time_stamp = 5;
 inline bool CMsgProcessTransactionOrder::_internal_has_time_stamp() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
   return value;
 }
 inline bool CMsgProcessTransactionOrder::has_time_stamp() const {
@@ -39511,7 +39540,7 @@ inline bool CMsgProcessTransactionOrder::has_time_stamp() const {
 }
 inline void CMsgProcessTransactionOrder::clear_time_stamp() {
   _impl_.time_stamp_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000020u;
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 inline uint32_t CMsgProcessTransactionOrder::_internal_time_stamp() const {
   return _impl_.time_stamp_;
@@ -39521,7 +39550,7 @@ inline uint32_t CMsgProcessTransactionOrder::time_stamp() const {
   return _internal_time_stamp();
 }
 inline void CMsgProcessTransactionOrder::_internal_set_time_stamp(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000020u;
+  _impl_._has_bits_[0] |= 0x00000010u;
   _impl_.time_stamp_ = value;
 }
 inline void CMsgProcessTransactionOrder::set_time_stamp(uint32_t value) {
@@ -39531,7 +39560,7 @@ inline void CMsgProcessTransactionOrder::set_time_stamp(uint32_t value) {
 
 // optional uint64 watermark = 6;
 inline bool CMsgProcessTransactionOrder::_internal_has_watermark() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
   return value;
 }
 inline bool CMsgProcessTransactionOrder::has_watermark() const {
@@ -39539,7 +39568,7 @@ inline bool CMsgProcessTransactionOrder::has_watermark() const {
 }
 inline void CMsgProcessTransactionOrder::clear_watermark() {
   _impl_.watermark_ = uint64_t{0u};
-  _impl_._has_bits_[0] &= ~0x00000010u;
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 inline uint64_t CMsgProcessTransactionOrder::_internal_watermark() const {
   return _impl_.watermark_;
@@ -39549,7 +39578,7 @@ inline uint64_t CMsgProcessTransactionOrder::watermark() const {
   return _internal_watermark();
 }
 inline void CMsgProcessTransactionOrder::_internal_set_watermark(uint64_t value) {
-  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_._has_bits_[0] |= 0x00000008u;
   _impl_.watermark_ = value;
 }
 inline void CMsgProcessTransactionOrder::set_watermark(uint64_t value) {
@@ -39559,7 +39588,7 @@ inline void CMsgProcessTransactionOrder::set_watermark(uint64_t value) {
 
 // optional int32 purchase_report_status = 7;
 inline bool CMsgProcessTransactionOrder::_internal_has_purchase_report_status() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
   return value;
 }
 inline bool CMsgProcessTransactionOrder::has_purchase_report_status() const {
@@ -39567,7 +39596,7 @@ inline bool CMsgProcessTransactionOrder::has_purchase_report_status() const {
 }
 inline void CMsgProcessTransactionOrder::clear_purchase_report_status() {
   _impl_.purchase_report_status_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000040u;
+  _impl_._has_bits_[0] &= ~0x00000020u;
 }
 inline int32_t CMsgProcessTransactionOrder::_internal_purchase_report_status() const {
   return _impl_.purchase_report_status_;
@@ -39577,7 +39606,7 @@ inline int32_t CMsgProcessTransactionOrder::purchase_report_status() const {
   return _internal_purchase_report_status();
 }
 inline void CMsgProcessTransactionOrder::_internal_set_purchase_report_status(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00000040u;
+  _impl_._has_bits_[0] |= 0x00000020u;
   _impl_.purchase_report_status_ = value;
 }
 inline void CMsgProcessTransactionOrder::set_purchase_report_status(int32_t value) {
@@ -39587,7 +39616,7 @@ inline void CMsgProcessTransactionOrder::set_purchase_report_status(int32_t valu
 
 // optional uint32 currency = 8;
 inline bool CMsgProcessTransactionOrder::_internal_has_currency() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
   return value;
 }
 inline bool CMsgProcessTransactionOrder::has_currency() const {
@@ -39595,7 +39624,7 @@ inline bool CMsgProcessTransactionOrder::has_currency() const {
 }
 inline void CMsgProcessTransactionOrder::clear_currency() {
   _impl_.currency_ = 0u;
-  _impl_._has_bits_[0] &= ~0x00000080u;
+  _impl_._has_bits_[0] &= ~0x00000040u;
 }
 inline uint32_t CMsgProcessTransactionOrder::_internal_currency() const {
   return _impl_.currency_;
@@ -39605,7 +39634,7 @@ inline uint32_t CMsgProcessTransactionOrder::currency() const {
   return _internal_currency();
 }
 inline void CMsgProcessTransactionOrder::_internal_set_currency(uint32_t value) {
-  _impl_._has_bits_[0] |= 0x00000080u;
+  _impl_._has_bits_[0] |= 0x00000040u;
   _impl_.currency_ = value;
 }
 inline void CMsgProcessTransactionOrder::set_currency(uint32_t value) {
@@ -43128,6 +43157,11 @@ template <> struct is_proto_enum< ::CMsgRedeemCodeResponse_EResultCode> : ::std:
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::CMsgRedeemCodeResponse_EResultCode>() {
   return ::CMsgRedeemCodeResponse_EResultCode_descriptor();
+}
+template <> struct is_proto_enum< ::CMsgDevNewItemRequestResponse_EResponse> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::CMsgDevNewItemRequestResponse_EResponse>() {
+  return ::CMsgDevNewItemRequestResponse_EResponse_descriptor();
 }
 template <> struct is_proto_enum< ::CMsgClientToGCUnpackBundleResponse_EUnpackBundle> : ::std::true_type {};
 template <>

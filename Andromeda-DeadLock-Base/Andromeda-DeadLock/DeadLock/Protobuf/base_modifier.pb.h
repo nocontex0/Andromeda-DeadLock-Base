@@ -221,6 +221,8 @@ class CModifierTableEntry final :
     kLastAppliedTimeFieldNumber = 7,
     kAuraProviderSerialNumberFieldNumber = 11,
     kAbilitySubclassFieldNumber = 13,
+    kCreationTimeFieldNumber = 15,
+    kAttributesFieldNumber = 16,
     kInAuraRangeFieldNumber = 14,
     kBool1FieldNumber = 20,
     kBool2FieldNumber = 21,
@@ -490,6 +492,32 @@ class CModifierTableEntry final :
   private:
   uint32_t _internal_ability_subclass() const;
   void _internal_set_ability_subclass(uint32_t value);
+  public:
+
+  // optional float creation_time = 15;
+  bool has_creation_time() const;
+  private:
+  bool _internal_has_creation_time() const;
+  public:
+  void clear_creation_time();
+  float creation_time() const;
+  void set_creation_time(float value);
+  private:
+  float _internal_creation_time() const;
+  void _internal_set_creation_time(float value);
+  public:
+
+  // optional uint32 attributes = 16;
+  bool has_attributes() const;
+  private:
+  bool _internal_has_attributes() const;
+  public:
+  void clear_attributes();
+  uint32_t attributes() const;
+  void set_attributes(uint32_t value);
+  private:
+  uint32_t _internal_attributes() const;
+  void _internal_set_attributes(uint32_t value);
   public:
 
   // optional bool in_aura_range = 14;
@@ -972,6 +1000,8 @@ class CModifierTableEntry final :
     float last_applied_time_;
     int32_t aura_provider_serial_number_;
     uint32_t ability_subclass_;
+    float creation_time_;
+    uint32_t attributes_;
     bool in_aura_range_;
     bool bool1__;
     bool bool2__;
@@ -1024,7 +1054,7 @@ class CModifierTableEntry final :
 
 // optional .MODIFIER_ENTRY_TYPE entry_type = 1 [default = MODIFIER_ENTRY_TYPE_ACTIVE];
 inline bool CModifierTableEntry::_internal_has_entry_type() const {
-  bool value = (_impl_._has_bits_[1] & 0x00001000u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00004000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_entry_type() const {
@@ -1032,7 +1062,7 @@ inline bool CModifierTableEntry::has_entry_type() const {
 }
 inline void CModifierTableEntry::clear_entry_type() {
   _impl_.entry_type_ = 1;
-  _impl_._has_bits_[1] &= ~0x00001000u;
+  _impl_._has_bits_[1] &= ~0x00004000u;
 }
 inline ::MODIFIER_ENTRY_TYPE CModifierTableEntry::_internal_entry_type() const {
   return static_cast< ::MODIFIER_ENTRY_TYPE >(_impl_.entry_type_);
@@ -1043,7 +1073,7 @@ inline ::MODIFIER_ENTRY_TYPE CModifierTableEntry::entry_type() const {
 }
 inline void CModifierTableEntry::_internal_set_entry_type(::MODIFIER_ENTRY_TYPE value) {
   assert(::MODIFIER_ENTRY_TYPE_IsValid(value));
-  _impl_._has_bits_[1] |= 0x00001000u;
+  _impl_._has_bits_[1] |= 0x00004000u;
   _impl_.entry_type_ = value;
 }
 inline void CModifierTableEntry::set_entry_type(::MODIFIER_ENTRY_TYPE value) {
@@ -1053,7 +1083,7 @@ inline void CModifierTableEntry::set_entry_type(::MODIFIER_ENTRY_TYPE value) {
 
 // optional uint32 parent = 2 [default = 16777215];
 inline bool CModifierTableEntry::_internal_has_parent() const {
-  bool value = (_impl_._has_bits_[1] & 0x00002000u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00008000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_parent() const {
@@ -1061,7 +1091,7 @@ inline bool CModifierTableEntry::has_parent() const {
 }
 inline void CModifierTableEntry::clear_parent() {
   _impl_.parent_ = 16777215u;
-  _impl_._has_bits_[1] &= ~0x00002000u;
+  _impl_._has_bits_[1] &= ~0x00008000u;
 }
 inline uint32_t CModifierTableEntry::_internal_parent() const {
   return _impl_.parent_;
@@ -1071,7 +1101,7 @@ inline uint32_t CModifierTableEntry::parent() const {
   return _internal_parent();
 }
 inline void CModifierTableEntry::_internal_set_parent(uint32_t value) {
-  _impl_._has_bits_[1] |= 0x00002000u;
+  _impl_._has_bits_[1] |= 0x00008000u;
   _impl_.parent_ = value;
 }
 inline void CModifierTableEntry::set_parent(uint32_t value) {
@@ -1221,7 +1251,7 @@ inline void CModifierTableEntry::set_last_applied_time(float value) {
 
 // optional float duration = 8 [default = -1];
 inline bool CModifierTableEntry::_internal_has_duration() const {
-  bool value = (_impl_._has_bits_[1] & 0x00004000u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00010000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_duration() const {
@@ -1229,7 +1259,7 @@ inline bool CModifierTableEntry::has_duration() const {
 }
 inline void CModifierTableEntry::clear_duration() {
   _impl_.duration_ = -1;
-  _impl_._has_bits_[1] &= ~0x00004000u;
+  _impl_._has_bits_[1] &= ~0x00010000u;
 }
 inline float CModifierTableEntry::_internal_duration() const {
   return _impl_.duration_;
@@ -1239,7 +1269,7 @@ inline float CModifierTableEntry::duration() const {
   return _internal_duration();
 }
 inline void CModifierTableEntry::_internal_set_duration(float value) {
-  _impl_._has_bits_[1] |= 0x00004000u;
+  _impl_._has_bits_[1] |= 0x00010000u;
   _impl_.duration_ = value;
 }
 inline void CModifierTableEntry::set_duration(float value) {
@@ -1249,7 +1279,7 @@ inline void CModifierTableEntry::set_duration(float value) {
 
 // optional uint32 caster = 9 [default = 16777215];
 inline bool CModifierTableEntry::_internal_has_caster() const {
-  bool value = (_impl_._has_bits_[1] & 0x00008000u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00020000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_caster() const {
@@ -1257,7 +1287,7 @@ inline bool CModifierTableEntry::has_caster() const {
 }
 inline void CModifierTableEntry::clear_caster() {
   _impl_.caster_ = 16777215u;
-  _impl_._has_bits_[1] &= ~0x00008000u;
+  _impl_._has_bits_[1] &= ~0x00020000u;
 }
 inline uint32_t CModifierTableEntry::_internal_caster() const {
   return _impl_.caster_;
@@ -1267,7 +1297,7 @@ inline uint32_t CModifierTableEntry::caster() const {
   return _internal_caster();
 }
 inline void CModifierTableEntry::_internal_set_caster(uint32_t value) {
-  _impl_._has_bits_[1] |= 0x00008000u;
+  _impl_._has_bits_[1] |= 0x00020000u;
   _impl_.caster_ = value;
 }
 inline void CModifierTableEntry::set_caster(uint32_t value) {
@@ -1277,7 +1307,7 @@ inline void CModifierTableEntry::set_caster(uint32_t value) {
 
 // optional uint32 ability = 10 [default = 16777215];
 inline bool CModifierTableEntry::_internal_has_ability() const {
-  bool value = (_impl_._has_bits_[1] & 0x00010000u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00040000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_ability() const {
@@ -1285,7 +1315,7 @@ inline bool CModifierTableEntry::has_ability() const {
 }
 inline void CModifierTableEntry::clear_ability() {
   _impl_.ability_ = 16777215u;
-  _impl_._has_bits_[1] &= ~0x00010000u;
+  _impl_._has_bits_[1] &= ~0x00040000u;
 }
 inline uint32_t CModifierTableEntry::_internal_ability() const {
   return _impl_.ability_;
@@ -1295,7 +1325,7 @@ inline uint32_t CModifierTableEntry::ability() const {
   return _internal_ability();
 }
 inline void CModifierTableEntry::_internal_set_ability(uint32_t value) {
-  _impl_._has_bits_[1] |= 0x00010000u;
+  _impl_._has_bits_[1] |= 0x00040000u;
   _impl_.ability_ = value;
 }
 inline void CModifierTableEntry::set_ability(uint32_t value) {
@@ -1333,7 +1363,7 @@ inline void CModifierTableEntry::set_aura_provider_serial_number(int32_t value) 
 
 // optional uint32 aura_provider_ehandle = 12 [default = 16777215];
 inline bool CModifierTableEntry::_internal_has_aura_provider_ehandle() const {
-  bool value = (_impl_._has_bits_[1] & 0x00020000u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00080000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_aura_provider_ehandle() const {
@@ -1341,7 +1371,7 @@ inline bool CModifierTableEntry::has_aura_provider_ehandle() const {
 }
 inline void CModifierTableEntry::clear_aura_provider_ehandle() {
   _impl_.aura_provider_ehandle_ = 16777215u;
-  _impl_._has_bits_[1] &= ~0x00020000u;
+  _impl_._has_bits_[1] &= ~0x00080000u;
 }
 inline uint32_t CModifierTableEntry::_internal_aura_provider_ehandle() const {
   return _impl_.aura_provider_ehandle_;
@@ -1351,7 +1381,7 @@ inline uint32_t CModifierTableEntry::aura_provider_ehandle() const {
   return _internal_aura_provider_ehandle();
 }
 inline void CModifierTableEntry::_internal_set_aura_provider_ehandle(uint32_t value) {
-  _impl_._has_bits_[1] |= 0x00020000u;
+  _impl_._has_bits_[1] |= 0x00080000u;
   _impl_.aura_provider_ehandle_ = value;
 }
 inline void CModifierTableEntry::set_aura_provider_ehandle(uint32_t value) {
@@ -1389,7 +1419,7 @@ inline void CModifierTableEntry::set_ability_subclass(uint32_t value) {
 
 // optional bool in_aura_range = 14;
 inline bool CModifierTableEntry::_internal_has_in_aura_range() const {
-  bool value = (_impl_._has_bits_[0] & 0x00008000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00020000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_in_aura_range() const {
@@ -1397,7 +1427,7 @@ inline bool CModifierTableEntry::has_in_aura_range() const {
 }
 inline void CModifierTableEntry::clear_in_aura_range() {
   _impl_.in_aura_range_ = false;
-  _impl_._has_bits_[0] &= ~0x00008000u;
+  _impl_._has_bits_[0] &= ~0x00020000u;
 }
 inline bool CModifierTableEntry::_internal_in_aura_range() const {
   return _impl_.in_aura_range_;
@@ -1407,7 +1437,7 @@ inline bool CModifierTableEntry::in_aura_range() const {
   return _internal_in_aura_range();
 }
 inline void CModifierTableEntry::_internal_set_in_aura_range(bool value) {
-  _impl_._has_bits_[0] |= 0x00008000u;
+  _impl_._has_bits_[0] |= 0x00020000u;
   _impl_.in_aura_range_ = value;
 }
 inline void CModifierTableEntry::set_in_aura_range(bool value) {
@@ -1415,9 +1445,65 @@ inline void CModifierTableEntry::set_in_aura_range(bool value) {
   // @@protoc_insertion_point(field_set:CModifierTableEntry.in_aura_range)
 }
 
+// optional float creation_time = 15;
+inline bool CModifierTableEntry::_internal_has_creation_time() const {
+  bool value = (_impl_._has_bits_[0] & 0x00008000u) != 0;
+  return value;
+}
+inline bool CModifierTableEntry::has_creation_time() const {
+  return _internal_has_creation_time();
+}
+inline void CModifierTableEntry::clear_creation_time() {
+  _impl_.creation_time_ = 0;
+  _impl_._has_bits_[0] &= ~0x00008000u;
+}
+inline float CModifierTableEntry::_internal_creation_time() const {
+  return _impl_.creation_time_;
+}
+inline float CModifierTableEntry::creation_time() const {
+  // @@protoc_insertion_point(field_get:CModifierTableEntry.creation_time)
+  return _internal_creation_time();
+}
+inline void CModifierTableEntry::_internal_set_creation_time(float value) {
+  _impl_._has_bits_[0] |= 0x00008000u;
+  _impl_.creation_time_ = value;
+}
+inline void CModifierTableEntry::set_creation_time(float value) {
+  _internal_set_creation_time(value);
+  // @@protoc_insertion_point(field_set:CModifierTableEntry.creation_time)
+}
+
+// optional uint32 attributes = 16;
+inline bool CModifierTableEntry::_internal_has_attributes() const {
+  bool value = (_impl_._has_bits_[0] & 0x00010000u) != 0;
+  return value;
+}
+inline bool CModifierTableEntry::has_attributes() const {
+  return _internal_has_attributes();
+}
+inline void CModifierTableEntry::clear_attributes() {
+  _impl_.attributes_ = 0u;
+  _impl_._has_bits_[0] &= ~0x00010000u;
+}
+inline uint32_t CModifierTableEntry::_internal_attributes() const {
+  return _impl_.attributes_;
+}
+inline uint32_t CModifierTableEntry::attributes() const {
+  // @@protoc_insertion_point(field_get:CModifierTableEntry.attributes)
+  return _internal_attributes();
+}
+inline void CModifierTableEntry::_internal_set_attributes(uint32_t value) {
+  _impl_._has_bits_[0] |= 0x00010000u;
+  _impl_.attributes_ = value;
+}
+inline void CModifierTableEntry::set_attributes(uint32_t value) {
+  _internal_set_attributes(value);
+  // @@protoc_insertion_point(field_set:CModifierTableEntry.attributes)
+}
+
 // optional bool bool1_ = 20;
 inline bool CModifierTableEntry::_internal_has_bool1_() const {
-  bool value = (_impl_._has_bits_[0] & 0x00010000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00040000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_bool1_() const {
@@ -1425,7 +1511,7 @@ inline bool CModifierTableEntry::has_bool1_() const {
 }
 inline void CModifierTableEntry::clear_bool1_() {
   _impl_.bool1__ = false;
-  _impl_._has_bits_[0] &= ~0x00010000u;
+  _impl_._has_bits_[0] &= ~0x00040000u;
 }
 inline bool CModifierTableEntry::_internal_bool1_() const {
   return _impl_.bool1__;
@@ -1435,7 +1521,7 @@ inline bool CModifierTableEntry::bool1_() const {
   return _internal_bool1_();
 }
 inline void CModifierTableEntry::_internal_set_bool1_(bool value) {
-  _impl_._has_bits_[0] |= 0x00010000u;
+  _impl_._has_bits_[0] |= 0x00040000u;
   _impl_.bool1__ = value;
 }
 inline void CModifierTableEntry::set_bool1_(bool value) {
@@ -1445,7 +1531,7 @@ inline void CModifierTableEntry::set_bool1_(bool value) {
 
 // optional bool bool2_ = 21;
 inline bool CModifierTableEntry::_internal_has_bool2_() const {
-  bool value = (_impl_._has_bits_[0] & 0x00020000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00080000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_bool2_() const {
@@ -1453,7 +1539,7 @@ inline bool CModifierTableEntry::has_bool2_() const {
 }
 inline void CModifierTableEntry::clear_bool2_() {
   _impl_.bool2__ = false;
-  _impl_._has_bits_[0] &= ~0x00020000u;
+  _impl_._has_bits_[0] &= ~0x00080000u;
 }
 inline bool CModifierTableEntry::_internal_bool2_() const {
   return _impl_.bool2__;
@@ -1463,7 +1549,7 @@ inline bool CModifierTableEntry::bool2_() const {
   return _internal_bool2_();
 }
 inline void CModifierTableEntry::_internal_set_bool2_(bool value) {
-  _impl_._has_bits_[0] |= 0x00020000u;
+  _impl_._has_bits_[0] |= 0x00080000u;
   _impl_.bool2__ = value;
 }
 inline void CModifierTableEntry::set_bool2_(bool value) {
@@ -1473,7 +1559,7 @@ inline void CModifierTableEntry::set_bool2_(bool value) {
 
 // optional bool bool3_ = 22;
 inline bool CModifierTableEntry::_internal_has_bool3_() const {
-  bool value = (_impl_._has_bits_[0] & 0x00040000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00100000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_bool3_() const {
@@ -1481,7 +1567,7 @@ inline bool CModifierTableEntry::has_bool3_() const {
 }
 inline void CModifierTableEntry::clear_bool3_() {
   _impl_.bool3__ = false;
-  _impl_._has_bits_[0] &= ~0x00040000u;
+  _impl_._has_bits_[0] &= ~0x00100000u;
 }
 inline bool CModifierTableEntry::_internal_bool3_() const {
   return _impl_.bool3__;
@@ -1491,7 +1577,7 @@ inline bool CModifierTableEntry::bool3_() const {
   return _internal_bool3_();
 }
 inline void CModifierTableEntry::_internal_set_bool3_(bool value) {
-  _impl_._has_bits_[0] |= 0x00040000u;
+  _impl_._has_bits_[0] |= 0x00100000u;
   _impl_.bool3__ = value;
 }
 inline void CModifierTableEntry::set_bool3_(bool value) {
@@ -1501,7 +1587,7 @@ inline void CModifierTableEntry::set_bool3_(bool value) {
 
 // optional bool bool4_ = 23;
 inline bool CModifierTableEntry::_internal_has_bool4_() const {
-  bool value = (_impl_._has_bits_[0] & 0x00080000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00200000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_bool4_() const {
@@ -1509,7 +1595,7 @@ inline bool CModifierTableEntry::has_bool4_() const {
 }
 inline void CModifierTableEntry::clear_bool4_() {
   _impl_.bool4__ = false;
-  _impl_._has_bits_[0] &= ~0x00080000u;
+  _impl_._has_bits_[0] &= ~0x00200000u;
 }
 inline bool CModifierTableEntry::_internal_bool4_() const {
   return _impl_.bool4__;
@@ -1519,7 +1605,7 @@ inline bool CModifierTableEntry::bool4_() const {
   return _internal_bool4_();
 }
 inline void CModifierTableEntry::_internal_set_bool4_(bool value) {
-  _impl_._has_bits_[0] |= 0x00080000u;
+  _impl_._has_bits_[0] |= 0x00200000u;
   _impl_.bool4__ = value;
 }
 inline void CModifierTableEntry::set_bool4_(bool value) {
@@ -1529,7 +1615,7 @@ inline void CModifierTableEntry::set_bool4_(bool value) {
 
 // optional int32 int1_ = 25;
 inline bool CModifierTableEntry::_internal_has_int1_() const {
-  bool value = (_impl_._has_bits_[0] & 0x00100000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00400000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_int1_() const {
@@ -1537,7 +1623,7 @@ inline bool CModifierTableEntry::has_int1_() const {
 }
 inline void CModifierTableEntry::clear_int1_() {
   _impl_.int1__ = 0;
-  _impl_._has_bits_[0] &= ~0x00100000u;
+  _impl_._has_bits_[0] &= ~0x00400000u;
 }
 inline int32_t CModifierTableEntry::_internal_int1_() const {
   return _impl_.int1__;
@@ -1547,7 +1633,7 @@ inline int32_t CModifierTableEntry::int1_() const {
   return _internal_int1_();
 }
 inline void CModifierTableEntry::_internal_set_int1_(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00100000u;
+  _impl_._has_bits_[0] |= 0x00400000u;
   _impl_.int1__ = value;
 }
 inline void CModifierTableEntry::set_int1_(int32_t value) {
@@ -1557,7 +1643,7 @@ inline void CModifierTableEntry::set_int1_(int32_t value) {
 
 // optional int32 int2_ = 26;
 inline bool CModifierTableEntry::_internal_has_int2_() const {
-  bool value = (_impl_._has_bits_[0] & 0x00200000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00800000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_int2_() const {
@@ -1565,7 +1651,7 @@ inline bool CModifierTableEntry::has_int2_() const {
 }
 inline void CModifierTableEntry::clear_int2_() {
   _impl_.int2__ = 0;
-  _impl_._has_bits_[0] &= ~0x00200000u;
+  _impl_._has_bits_[0] &= ~0x00800000u;
 }
 inline int32_t CModifierTableEntry::_internal_int2_() const {
   return _impl_.int2__;
@@ -1575,7 +1661,7 @@ inline int32_t CModifierTableEntry::int2_() const {
   return _internal_int2_();
 }
 inline void CModifierTableEntry::_internal_set_int2_(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00200000u;
+  _impl_._has_bits_[0] |= 0x00800000u;
   _impl_.int2__ = value;
 }
 inline void CModifierTableEntry::set_int2_(int32_t value) {
@@ -1585,7 +1671,7 @@ inline void CModifierTableEntry::set_int2_(int32_t value) {
 
 // optional int32 int3_ = 27;
 inline bool CModifierTableEntry::_internal_has_int3_() const {
-  bool value = (_impl_._has_bits_[0] & 0x00400000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x01000000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_int3_() const {
@@ -1593,7 +1679,7 @@ inline bool CModifierTableEntry::has_int3_() const {
 }
 inline void CModifierTableEntry::clear_int3_() {
   _impl_.int3__ = 0;
-  _impl_._has_bits_[0] &= ~0x00400000u;
+  _impl_._has_bits_[0] &= ~0x01000000u;
 }
 inline int32_t CModifierTableEntry::_internal_int3_() const {
   return _impl_.int3__;
@@ -1603,7 +1689,7 @@ inline int32_t CModifierTableEntry::int3_() const {
   return _internal_int3_();
 }
 inline void CModifierTableEntry::_internal_set_int3_(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00400000u;
+  _impl_._has_bits_[0] |= 0x01000000u;
   _impl_.int3__ = value;
 }
 inline void CModifierTableEntry::set_int3_(int32_t value) {
@@ -1613,7 +1699,7 @@ inline void CModifierTableEntry::set_int3_(int32_t value) {
 
 // optional int32 int4_ = 28;
 inline bool CModifierTableEntry::_internal_has_int4_() const {
-  bool value = (_impl_._has_bits_[0] & 0x00800000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x02000000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_int4_() const {
@@ -1621,7 +1707,7 @@ inline bool CModifierTableEntry::has_int4_() const {
 }
 inline void CModifierTableEntry::clear_int4_() {
   _impl_.int4__ = 0;
-  _impl_._has_bits_[0] &= ~0x00800000u;
+  _impl_._has_bits_[0] &= ~0x02000000u;
 }
 inline int32_t CModifierTableEntry::_internal_int4_() const {
   return _impl_.int4__;
@@ -1631,7 +1717,7 @@ inline int32_t CModifierTableEntry::int4_() const {
   return _internal_int4_();
 }
 inline void CModifierTableEntry::_internal_set_int4_(int32_t value) {
-  _impl_._has_bits_[0] |= 0x00800000u;
+  _impl_._has_bits_[0] |= 0x02000000u;
   _impl_.int4__ = value;
 }
 inline void CModifierTableEntry::set_int4_(int32_t value) {
@@ -1641,7 +1727,7 @@ inline void CModifierTableEntry::set_int4_(int32_t value) {
 
 // optional float float1_ = 30;
 inline bool CModifierTableEntry::_internal_has_float1_() const {
-  bool value = (_impl_._has_bits_[0] & 0x01000000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x04000000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float1_() const {
@@ -1649,7 +1735,7 @@ inline bool CModifierTableEntry::has_float1_() const {
 }
 inline void CModifierTableEntry::clear_float1_() {
   _impl_.float1__ = 0;
-  _impl_._has_bits_[0] &= ~0x01000000u;
+  _impl_._has_bits_[0] &= ~0x04000000u;
 }
 inline float CModifierTableEntry::_internal_float1_() const {
   return _impl_.float1__;
@@ -1659,7 +1745,7 @@ inline float CModifierTableEntry::float1_() const {
   return _internal_float1_();
 }
 inline void CModifierTableEntry::_internal_set_float1_(float value) {
-  _impl_._has_bits_[0] |= 0x01000000u;
+  _impl_._has_bits_[0] |= 0x04000000u;
   _impl_.float1__ = value;
 }
 inline void CModifierTableEntry::set_float1_(float value) {
@@ -1669,7 +1755,7 @@ inline void CModifierTableEntry::set_float1_(float value) {
 
 // optional float float2_ = 31;
 inline bool CModifierTableEntry::_internal_has_float2_() const {
-  bool value = (_impl_._has_bits_[0] & 0x02000000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x08000000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float2_() const {
@@ -1677,7 +1763,7 @@ inline bool CModifierTableEntry::has_float2_() const {
 }
 inline void CModifierTableEntry::clear_float2_() {
   _impl_.float2__ = 0;
-  _impl_._has_bits_[0] &= ~0x02000000u;
+  _impl_._has_bits_[0] &= ~0x08000000u;
 }
 inline float CModifierTableEntry::_internal_float2_() const {
   return _impl_.float2__;
@@ -1687,7 +1773,7 @@ inline float CModifierTableEntry::float2_() const {
   return _internal_float2_();
 }
 inline void CModifierTableEntry::_internal_set_float2_(float value) {
-  _impl_._has_bits_[0] |= 0x02000000u;
+  _impl_._has_bits_[0] |= 0x08000000u;
   _impl_.float2__ = value;
 }
 inline void CModifierTableEntry::set_float2_(float value) {
@@ -1697,7 +1783,7 @@ inline void CModifierTableEntry::set_float2_(float value) {
 
 // optional float float3_ = 32;
 inline bool CModifierTableEntry::_internal_has_float3_() const {
-  bool value = (_impl_._has_bits_[0] & 0x04000000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x10000000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float3_() const {
@@ -1705,7 +1791,7 @@ inline bool CModifierTableEntry::has_float3_() const {
 }
 inline void CModifierTableEntry::clear_float3_() {
   _impl_.float3__ = 0;
-  _impl_._has_bits_[0] &= ~0x04000000u;
+  _impl_._has_bits_[0] &= ~0x10000000u;
 }
 inline float CModifierTableEntry::_internal_float3_() const {
   return _impl_.float3__;
@@ -1715,7 +1801,7 @@ inline float CModifierTableEntry::float3_() const {
   return _internal_float3_();
 }
 inline void CModifierTableEntry::_internal_set_float3_(float value) {
-  _impl_._has_bits_[0] |= 0x04000000u;
+  _impl_._has_bits_[0] |= 0x10000000u;
   _impl_.float3__ = value;
 }
 inline void CModifierTableEntry::set_float3_(float value) {
@@ -1725,7 +1811,7 @@ inline void CModifierTableEntry::set_float3_(float value) {
 
 // optional float float4_ = 33;
 inline bool CModifierTableEntry::_internal_has_float4_() const {
-  bool value = (_impl_._has_bits_[0] & 0x80000000u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00000002u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float4_() const {
@@ -1733,7 +1819,7 @@ inline bool CModifierTableEntry::has_float4_() const {
 }
 inline void CModifierTableEntry::clear_float4_() {
   _impl_.float4__ = 0;
-  _impl_._has_bits_[0] &= ~0x80000000u;
+  _impl_._has_bits_[1] &= ~0x00000002u;
 }
 inline float CModifierTableEntry::_internal_float4_() const {
   return _impl_.float4__;
@@ -1743,7 +1829,7 @@ inline float CModifierTableEntry::float4_() const {
   return _internal_float4_();
 }
 inline void CModifierTableEntry::_internal_set_float4_(float value) {
-  _impl_._has_bits_[0] |= 0x80000000u;
+  _impl_._has_bits_[1] |= 0x00000002u;
   _impl_.float4__ = value;
 }
 inline void CModifierTableEntry::set_float4_(float value) {
@@ -1753,7 +1839,7 @@ inline void CModifierTableEntry::set_float4_(float value) {
 
 // optional float float5_ = 49;
 inline bool CModifierTableEntry::_internal_has_float5_() const {
-  bool value = (_impl_._has_bits_[1] & 0x00000001u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00000004u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float5_() const {
@@ -1761,7 +1847,7 @@ inline bool CModifierTableEntry::has_float5_() const {
 }
 inline void CModifierTableEntry::clear_float5_() {
   _impl_.float5__ = 0;
-  _impl_._has_bits_[1] &= ~0x00000001u;
+  _impl_._has_bits_[1] &= ~0x00000004u;
 }
 inline float CModifierTableEntry::_internal_float5_() const {
   return _impl_.float5__;
@@ -1771,7 +1857,7 @@ inline float CModifierTableEntry::float5_() const {
   return _internal_float5_();
 }
 inline void CModifierTableEntry::_internal_set_float5_(float value) {
-  _impl_._has_bits_[1] |= 0x00000001u;
+  _impl_._has_bits_[1] |= 0x00000004u;
   _impl_.float5__ = value;
 }
 inline void CModifierTableEntry::set_float5_(float value) {
@@ -1781,7 +1867,7 @@ inline void CModifierTableEntry::set_float5_(float value) {
 
 // optional float float6_ = 50;
 inline bool CModifierTableEntry::_internal_has_float6_() const {
-  bool value = (_impl_._has_bits_[1] & 0x00000002u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00000008u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float6_() const {
@@ -1789,7 +1875,7 @@ inline bool CModifierTableEntry::has_float6_() const {
 }
 inline void CModifierTableEntry::clear_float6_() {
   _impl_.float6__ = 0;
-  _impl_._has_bits_[1] &= ~0x00000002u;
+  _impl_._has_bits_[1] &= ~0x00000008u;
 }
 inline float CModifierTableEntry::_internal_float6_() const {
   return _impl_.float6__;
@@ -1799,7 +1885,7 @@ inline float CModifierTableEntry::float6_() const {
   return _internal_float6_();
 }
 inline void CModifierTableEntry::_internal_set_float6_(float value) {
-  _impl_._has_bits_[1] |= 0x00000002u;
+  _impl_._has_bits_[1] |= 0x00000008u;
   _impl_.float6__ = value;
 }
 inline void CModifierTableEntry::set_float6_(float value) {
@@ -1809,7 +1895,7 @@ inline void CModifierTableEntry::set_float6_(float value) {
 
 // optional float float7_ = 51;
 inline bool CModifierTableEntry::_internal_has_float7_() const {
-  bool value = (_impl_._has_bits_[1] & 0x00000004u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00000010u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float7_() const {
@@ -1817,7 +1903,7 @@ inline bool CModifierTableEntry::has_float7_() const {
 }
 inline void CModifierTableEntry::clear_float7_() {
   _impl_.float7__ = 0;
-  _impl_._has_bits_[1] &= ~0x00000004u;
+  _impl_._has_bits_[1] &= ~0x00000010u;
 }
 inline float CModifierTableEntry::_internal_float7_() const {
   return _impl_.float7__;
@@ -1827,7 +1913,7 @@ inline float CModifierTableEntry::float7_() const {
   return _internal_float7_();
 }
 inline void CModifierTableEntry::_internal_set_float7_(float value) {
-  _impl_._has_bits_[1] |= 0x00000004u;
+  _impl_._has_bits_[1] |= 0x00000010u;
   _impl_.float7__ = value;
 }
 inline void CModifierTableEntry::set_float7_(float value) {
@@ -1837,7 +1923,7 @@ inline void CModifierTableEntry::set_float7_(float value) {
 
 // optional float float8_ = 52;
 inline bool CModifierTableEntry::_internal_has_float8_() const {
-  bool value = (_impl_._has_bits_[1] & 0x00000008u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00000020u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float8_() const {
@@ -1845,7 +1931,7 @@ inline bool CModifierTableEntry::has_float8_() const {
 }
 inline void CModifierTableEntry::clear_float8_() {
   _impl_.float8__ = 0;
-  _impl_._has_bits_[1] &= ~0x00000008u;
+  _impl_._has_bits_[1] &= ~0x00000020u;
 }
 inline float CModifierTableEntry::_internal_float8_() const {
   return _impl_.float8__;
@@ -1855,7 +1941,7 @@ inline float CModifierTableEntry::float8_() const {
   return _internal_float8_();
 }
 inline void CModifierTableEntry::_internal_set_float8_(float value) {
-  _impl_._has_bits_[1] |= 0x00000008u;
+  _impl_._has_bits_[1] |= 0x00000020u;
   _impl_.float8__ = value;
 }
 inline void CModifierTableEntry::set_float8_(float value) {
@@ -1865,7 +1951,7 @@ inline void CModifierTableEntry::set_float8_(float value) {
 
 // optional float float9_ = 53;
 inline bool CModifierTableEntry::_internal_has_float9_() const {
-  bool value = (_impl_._has_bits_[1] & 0x00000010u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00000040u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float9_() const {
@@ -1873,7 +1959,7 @@ inline bool CModifierTableEntry::has_float9_() const {
 }
 inline void CModifierTableEntry::clear_float9_() {
   _impl_.float9__ = 0;
-  _impl_._has_bits_[1] &= ~0x00000010u;
+  _impl_._has_bits_[1] &= ~0x00000040u;
 }
 inline float CModifierTableEntry::_internal_float9_() const {
   return _impl_.float9__;
@@ -1883,7 +1969,7 @@ inline float CModifierTableEntry::float9_() const {
   return _internal_float9_();
 }
 inline void CModifierTableEntry::_internal_set_float9_(float value) {
-  _impl_._has_bits_[1] |= 0x00000010u;
+  _impl_._has_bits_[1] |= 0x00000040u;
   _impl_.float9__ = value;
 }
 inline void CModifierTableEntry::set_float9_(float value) {
@@ -1893,7 +1979,7 @@ inline void CModifierTableEntry::set_float9_(float value) {
 
 // optional float float10_ = 54;
 inline bool CModifierTableEntry::_internal_has_float10_() const {
-  bool value = (_impl_._has_bits_[1] & 0x00000020u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00000080u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float10_() const {
@@ -1901,7 +1987,7 @@ inline bool CModifierTableEntry::has_float10_() const {
 }
 inline void CModifierTableEntry::clear_float10_() {
   _impl_.float10__ = 0;
-  _impl_._has_bits_[1] &= ~0x00000020u;
+  _impl_._has_bits_[1] &= ~0x00000080u;
 }
 inline float CModifierTableEntry::_internal_float10_() const {
   return _impl_.float10__;
@@ -1911,7 +1997,7 @@ inline float CModifierTableEntry::float10_() const {
   return _internal_float10_();
 }
 inline void CModifierTableEntry::_internal_set_float10_(float value) {
-  _impl_._has_bits_[1] |= 0x00000020u;
+  _impl_._has_bits_[1] |= 0x00000080u;
   _impl_.float10__ = value;
 }
 inline void CModifierTableEntry::set_float10_(float value) {
@@ -1921,7 +2007,7 @@ inline void CModifierTableEntry::set_float10_(float value) {
 
 // optional float float11_ = 55;
 inline bool CModifierTableEntry::_internal_has_float11_() const {
-  bool value = (_impl_._has_bits_[1] & 0x00000040u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00000100u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float11_() const {
@@ -1929,7 +2015,7 @@ inline bool CModifierTableEntry::has_float11_() const {
 }
 inline void CModifierTableEntry::clear_float11_() {
   _impl_.float11__ = 0;
-  _impl_._has_bits_[1] &= ~0x00000040u;
+  _impl_._has_bits_[1] &= ~0x00000100u;
 }
 inline float CModifierTableEntry::_internal_float11_() const {
   return _impl_.float11__;
@@ -1939,7 +2025,7 @@ inline float CModifierTableEntry::float11_() const {
   return _internal_float11_();
 }
 inline void CModifierTableEntry::_internal_set_float11_(float value) {
-  _impl_._has_bits_[1] |= 0x00000040u;
+  _impl_._has_bits_[1] |= 0x00000100u;
   _impl_.float11__ = value;
 }
 inline void CModifierTableEntry::set_float11_(float value) {
@@ -1949,7 +2035,7 @@ inline void CModifierTableEntry::set_float11_(float value) {
 
 // optional float float12_ = 56;
 inline bool CModifierTableEntry::_internal_has_float12_() const {
-  bool value = (_impl_._has_bits_[1] & 0x00000080u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00000200u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float12_() const {
@@ -1957,7 +2043,7 @@ inline bool CModifierTableEntry::has_float12_() const {
 }
 inline void CModifierTableEntry::clear_float12_() {
   _impl_.float12__ = 0;
-  _impl_._has_bits_[1] &= ~0x00000080u;
+  _impl_._has_bits_[1] &= ~0x00000200u;
 }
 inline float CModifierTableEntry::_internal_float12_() const {
   return _impl_.float12__;
@@ -1967,7 +2053,7 @@ inline float CModifierTableEntry::float12_() const {
   return _internal_float12_();
 }
 inline void CModifierTableEntry::_internal_set_float12_(float value) {
-  _impl_._has_bits_[1] |= 0x00000080u;
+  _impl_._has_bits_[1] |= 0x00000200u;
   _impl_.float12__ = value;
 }
 inline void CModifierTableEntry::set_float12_(float value) {
@@ -1977,7 +2063,7 @@ inline void CModifierTableEntry::set_float12_(float value) {
 
 // optional float float13_ = 57;
 inline bool CModifierTableEntry::_internal_has_float13_() const {
-  bool value = (_impl_._has_bits_[1] & 0x00000100u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00000400u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float13_() const {
@@ -1985,7 +2071,7 @@ inline bool CModifierTableEntry::has_float13_() const {
 }
 inline void CModifierTableEntry::clear_float13_() {
   _impl_.float13__ = 0;
-  _impl_._has_bits_[1] &= ~0x00000100u;
+  _impl_._has_bits_[1] &= ~0x00000400u;
 }
 inline float CModifierTableEntry::_internal_float13_() const {
   return _impl_.float13__;
@@ -1995,7 +2081,7 @@ inline float CModifierTableEntry::float13_() const {
   return _internal_float13_();
 }
 inline void CModifierTableEntry::_internal_set_float13_(float value) {
-  _impl_._has_bits_[1] |= 0x00000100u;
+  _impl_._has_bits_[1] |= 0x00000400u;
   _impl_.float13__ = value;
 }
 inline void CModifierTableEntry::set_float13_(float value) {
@@ -2005,7 +2091,7 @@ inline void CModifierTableEntry::set_float13_(float value) {
 
 // optional float float14_ = 58;
 inline bool CModifierTableEntry::_internal_has_float14_() const {
-  bool value = (_impl_._has_bits_[1] & 0x00000200u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00000800u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float14_() const {
@@ -2013,7 +2099,7 @@ inline bool CModifierTableEntry::has_float14_() const {
 }
 inline void CModifierTableEntry::clear_float14_() {
   _impl_.float14__ = 0;
-  _impl_._has_bits_[1] &= ~0x00000200u;
+  _impl_._has_bits_[1] &= ~0x00000800u;
 }
 inline float CModifierTableEntry::_internal_float14_() const {
   return _impl_.float14__;
@@ -2023,7 +2109,7 @@ inline float CModifierTableEntry::float14_() const {
   return _internal_float14_();
 }
 inline void CModifierTableEntry::_internal_set_float14_(float value) {
-  _impl_._has_bits_[1] |= 0x00000200u;
+  _impl_._has_bits_[1] |= 0x00000800u;
   _impl_.float14__ = value;
 }
 inline void CModifierTableEntry::set_float14_(float value) {
@@ -2033,7 +2119,7 @@ inline void CModifierTableEntry::set_float14_(float value) {
 
 // optional float float15_ = 59;
 inline bool CModifierTableEntry::_internal_has_float15_() const {
-  bool value = (_impl_._has_bits_[1] & 0x00000400u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00001000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float15_() const {
@@ -2041,7 +2127,7 @@ inline bool CModifierTableEntry::has_float15_() const {
 }
 inline void CModifierTableEntry::clear_float15_() {
   _impl_.float15__ = 0;
-  _impl_._has_bits_[1] &= ~0x00000400u;
+  _impl_._has_bits_[1] &= ~0x00001000u;
 }
 inline float CModifierTableEntry::_internal_float15_() const {
   return _impl_.float15__;
@@ -2051,7 +2137,7 @@ inline float CModifierTableEntry::float15_() const {
   return _internal_float15_();
 }
 inline void CModifierTableEntry::_internal_set_float15_(float value) {
-  _impl_._has_bits_[1] |= 0x00000400u;
+  _impl_._has_bits_[1] |= 0x00001000u;
   _impl_.float15__ = value;
 }
 inline void CModifierTableEntry::set_float15_(float value) {
@@ -2061,7 +2147,7 @@ inline void CModifierTableEntry::set_float15_(float value) {
 
 // optional float float16_ = 60;
 inline bool CModifierTableEntry::_internal_has_float16_() const {
-  bool value = (_impl_._has_bits_[1] & 0x00000800u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00002000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_float16_() const {
@@ -2069,7 +2155,7 @@ inline bool CModifierTableEntry::has_float16_() const {
 }
 inline void CModifierTableEntry::clear_float16_() {
   _impl_.float16__ = 0;
-  _impl_._has_bits_[1] &= ~0x00000800u;
+  _impl_._has_bits_[1] &= ~0x00002000u;
 }
 inline float CModifierTableEntry::_internal_float16_() const {
   return _impl_.float16__;
@@ -2079,7 +2165,7 @@ inline float CModifierTableEntry::float16_() const {
   return _internal_float16_();
 }
 inline void CModifierTableEntry::_internal_set_float16_(float value) {
-  _impl_._has_bits_[1] |= 0x00000800u;
+  _impl_._has_bits_[1] |= 0x00002000u;
   _impl_.float16__ = value;
 }
 inline void CModifierTableEntry::set_float16_(float value) {
@@ -2089,7 +2175,7 @@ inline void CModifierTableEntry::set_float16_(float value) {
 
 // optional uint64 uint1_ = 35;
 inline bool CModifierTableEntry::_internal_has_uint1_() const {
-  bool value = (_impl_._has_bits_[0] & 0x08000000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x20000000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_uint1_() const {
@@ -2097,7 +2183,7 @@ inline bool CModifierTableEntry::has_uint1_() const {
 }
 inline void CModifierTableEntry::clear_uint1_() {
   _impl_.uint1__ = uint64_t{0u};
-  _impl_._has_bits_[0] &= ~0x08000000u;
+  _impl_._has_bits_[0] &= ~0x20000000u;
 }
 inline uint64_t CModifierTableEntry::_internal_uint1_() const {
   return _impl_.uint1__;
@@ -2107,7 +2193,7 @@ inline uint64_t CModifierTableEntry::uint1_() const {
   return _internal_uint1_();
 }
 inline void CModifierTableEntry::_internal_set_uint1_(uint64_t value) {
-  _impl_._has_bits_[0] |= 0x08000000u;
+  _impl_._has_bits_[0] |= 0x20000000u;
   _impl_.uint1__ = value;
 }
 inline void CModifierTableEntry::set_uint1_(uint64_t value) {
@@ -2117,7 +2203,7 @@ inline void CModifierTableEntry::set_uint1_(uint64_t value) {
 
 // optional uint64 uint2_ = 36;
 inline bool CModifierTableEntry::_internal_has_uint2_() const {
-  bool value = (_impl_._has_bits_[0] & 0x10000000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x40000000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_uint2_() const {
@@ -2125,7 +2211,7 @@ inline bool CModifierTableEntry::has_uint2_() const {
 }
 inline void CModifierTableEntry::clear_uint2_() {
   _impl_.uint2__ = uint64_t{0u};
-  _impl_._has_bits_[0] &= ~0x10000000u;
+  _impl_._has_bits_[0] &= ~0x40000000u;
 }
 inline uint64_t CModifierTableEntry::_internal_uint2_() const {
   return _impl_.uint2__;
@@ -2135,7 +2221,7 @@ inline uint64_t CModifierTableEntry::uint2_() const {
   return _internal_uint2_();
 }
 inline void CModifierTableEntry::_internal_set_uint2_(uint64_t value) {
-  _impl_._has_bits_[0] |= 0x10000000u;
+  _impl_._has_bits_[0] |= 0x40000000u;
   _impl_.uint2__ = value;
 }
 inline void CModifierTableEntry::set_uint2_(uint64_t value) {
@@ -2145,7 +2231,7 @@ inline void CModifierTableEntry::set_uint2_(uint64_t value) {
 
 // optional uint64 uint3_ = 37;
 inline bool CModifierTableEntry::_internal_has_uint3_() const {
-  bool value = (_impl_._has_bits_[0] & 0x20000000u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x80000000u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_uint3_() const {
@@ -2153,7 +2239,7 @@ inline bool CModifierTableEntry::has_uint3_() const {
 }
 inline void CModifierTableEntry::clear_uint3_() {
   _impl_.uint3__ = uint64_t{0u};
-  _impl_._has_bits_[0] &= ~0x20000000u;
+  _impl_._has_bits_[0] &= ~0x80000000u;
 }
 inline uint64_t CModifierTableEntry::_internal_uint3_() const {
   return _impl_.uint3__;
@@ -2163,7 +2249,7 @@ inline uint64_t CModifierTableEntry::uint3_() const {
   return _internal_uint3_();
 }
 inline void CModifierTableEntry::_internal_set_uint3_(uint64_t value) {
-  _impl_._has_bits_[0] |= 0x20000000u;
+  _impl_._has_bits_[0] |= 0x80000000u;
   _impl_.uint3__ = value;
 }
 inline void CModifierTableEntry::set_uint3_(uint64_t value) {
@@ -2173,7 +2259,7 @@ inline void CModifierTableEntry::set_uint3_(uint64_t value) {
 
 // optional uint64 uint4_ = 38;
 inline bool CModifierTableEntry::_internal_has_uint4_() const {
-  bool value = (_impl_._has_bits_[0] & 0x40000000u) != 0;
+  bool value = (_impl_._has_bits_[1] & 0x00000001u) != 0;
   return value;
 }
 inline bool CModifierTableEntry::has_uint4_() const {
@@ -2181,7 +2267,7 @@ inline bool CModifierTableEntry::has_uint4_() const {
 }
 inline void CModifierTableEntry::clear_uint4_() {
   _impl_.uint4__ = uint64_t{0u};
-  _impl_._has_bits_[0] &= ~0x40000000u;
+  _impl_._has_bits_[1] &= ~0x00000001u;
 }
 inline uint64_t CModifierTableEntry::_internal_uint4_() const {
   return _impl_.uint4__;
@@ -2191,7 +2277,7 @@ inline uint64_t CModifierTableEntry::uint4_() const {
   return _internal_uint4_();
 }
 inline void CModifierTableEntry::_internal_set_uint4_(uint64_t value) {
-  _impl_._has_bits_[0] |= 0x40000000u;
+  _impl_._has_bits_[1] |= 0x00000001u;
   _impl_.uint4__ = value;
 }
 inline void CModifierTableEntry::set_uint4_(uint64_t value) {

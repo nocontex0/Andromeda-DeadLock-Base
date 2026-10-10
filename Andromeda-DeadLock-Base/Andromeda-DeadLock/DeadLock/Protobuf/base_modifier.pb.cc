@@ -39,6 +39,8 @@ PROTOBUF_CONSTEXPR CModifierTableEntry::CModifierTableEntry(
   , /*decltype(_impl_.last_applied_time_)*/0
   , /*decltype(_impl_.aura_provider_serial_number_)*/0
   , /*decltype(_impl_.ability_subclass_)*/0u
+  , /*decltype(_impl_.creation_time_)*/0
+  , /*decltype(_impl_.attributes_)*/0u
   , /*decltype(_impl_.in_aura_range_)*/false
   , /*decltype(_impl_.bool1__)*/false
   , /*decltype(_impl_.bool2__)*/false
@@ -108,6 +110,8 @@ const uint32_t TableStruct_base_5fmodifier_2eproto::offsets[] PROTOBUF_SECTION_V
   PROTOBUF_FIELD_OFFSET(::CModifierTableEntry, _impl_.aura_provider_ehandle_),
   PROTOBUF_FIELD_OFFSET(::CModifierTableEntry, _impl_.ability_subclass_),
   PROTOBUF_FIELD_OFFSET(::CModifierTableEntry, _impl_.in_aura_range_),
+  PROTOBUF_FIELD_OFFSET(::CModifierTableEntry, _impl_.creation_time_),
+  PROTOBUF_FIELD_OFFSET(::CModifierTableEntry, _impl_.attributes_),
   PROTOBUF_FIELD_OFFSET(::CModifierTableEntry, _impl_.bool1__),
   PROTOBUF_FIELD_OFFSET(::CModifierTableEntry, _impl_.bool2__),
   PROTOBUF_FIELD_OFFSET(::CModifierTableEntry, _impl_.bool3__),
@@ -144,22 +148,22 @@ const uint32_t TableStruct_base_5fmodifier_2eproto::offsets[] PROTOBUF_SECTION_V
   PROTOBUF_FIELD_OFFSET(::CModifierTableEntry, _impl_.string2__),
   PROTOBUF_FIELD_OFFSET(::CModifierTableEntry, _impl_.string3__),
   PROTOBUF_FIELD_OFFSET(::CModifierTableEntry, _impl_.string4__),
-  44,
-  45,
+  46,
+  47,
   8,
   9,
   10,
   11,
   12,
-  46,
-  47,
   48,
-  13,
   49,
+  50,
+  13,
+  51,
   14,
+  17,
   15,
   16,
-  17,
   18,
   19,
   20,
@@ -169,8 +173,8 @@ const uint32_t TableStruct_base_5fmodifier_2eproto::offsets[] PROTOBUF_SECTION_V
   24,
   25,
   26,
-  31,
-  32,
+  27,
+  28,
   33,
   34,
   35,
@@ -182,10 +186,12 @@ const uint32_t TableStruct_base_5fmodifier_2eproto::offsets[] PROTOBUF_SECTION_V
   41,
   42,
   43,
-  27,
-  28,
+  44,
+  45,
   29,
   30,
+  31,
+  32,
   4,
   5,
   6,
@@ -196,7 +202,7 @@ const uint32_t TableStruct_base_5fmodifier_2eproto::offsets[] PROTOBUF_SECTION_V
   3,
 };
 static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 56, -1, sizeof(::CModifierTableEntry)},
+  { 0, 58, -1, sizeof(::CModifierTableEntry)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
@@ -205,7 +211,7 @@ static const ::_pb::Message* const file_default_instances[] = {
 
 const char descriptor_table_protodef_base_5fmodifier_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\023base_modifier.proto\032\026networkbasetypes."
-  "proto\"\313\010\n\023CModifierTableEntry\022D\n\nentry_t"
+  "proto\"\366\010\n\023CModifierTableEntry\022D\n\nentry_t"
   "ype\030\001 \001(\0162\024.MODIFIER_ENTRY_TYPE:\032MODIFIE"
   "R_ENTRY_TYPE_ACTIVE\022\030\n\006parent\030\002 \001(\r:\010167"
   "77215\022\025\n\rserial_number\030\003 \001(\r\022\034\n\021modifier"
@@ -216,32 +222,33 @@ const char descriptor_table_protodef_base_5fmodifier_2eproto[] PROTOBUF_SECTION_
   "777215\022#\n\033aura_provider_serial_number\030\013 "
   "\001(\005\022\'\n\025aura_provider_ehandle\030\014 \001(\r:\0101677"
   "7215\022\033\n\020ability_subclass\030\r \001(\r:\0010\022\025\n\rin_"
-  "aura_range\030\016 \001(\010\022\016\n\006bool1_\030\024 \001(\010\022\016\n\006bool"
-  "2_\030\025 \001(\010\022\016\n\006bool3_\030\026 \001(\010\022\016\n\006bool4_\030\027 \001(\010"
-  "\022\r\n\005int1_\030\031 \001(\005\022\r\n\005int2_\030\032 \001(\005\022\r\n\005int3_\030"
-  "\033 \001(\005\022\r\n\005int4_\030\034 \001(\005\022\017\n\007float1_\030\036 \001(\002\022\017\n"
-  "\007float2_\030\037 \001(\002\022\017\n\007float3_\030  \001(\002\022\017\n\007float"
-  "4_\030! \001(\002\022\017\n\007float5_\0301 \001(\002\022\017\n\007float6_\0302 \001"
-  "(\002\022\017\n\007float7_\0303 \001(\002\022\017\n\007float8_\0304 \001(\002\022\017\n\007"
-  "float9_\0305 \001(\002\022\020\n\010float10_\0306 \001(\002\022\020\n\010float"
-  "11_\0307 \001(\002\022\020\n\010float12_\0308 \001(\002\022\020\n\010float13_\030"
-  "9 \001(\002\022\020\n\010float14_\030: \001(\002\022\020\n\010float15_\030; \001("
-  "\002\022\020\n\010float16_\030< \001(\002\022\016\n\006uint1_\030# \001(\004\022\016\n\006u"
-  "int2_\030$ \001(\004\022\016\n\006uint3_\030% \001(\004\022\016\n\006uint4_\030& "
-  "\001(\004\022\032\n\005vec1_\030( \001(\0132\013.CMsgVector\022\032\n\005vec2_"
-  "\030) \001(\0132\013.CMsgVector\022\032\n\005vec3_\030* \001(\0132\013.CMs"
-  "gVector\022\032\n\005vec4_\030+ \001(\0132\013.CMsgVector\022\020\n\010s"
-  "tring1_\030- \001(\t\022\020\n\010string2_\030. \001(\t\022\020\n\010strin"
-  "g3_\030/ \001(\t\022\020\n\010string4_\0300 \001(\t*V\n\023MODIFIER_"
-  "ENTRY_TYPE\022\036\n\032MODIFIER_ENTRY_TYPE_ACTIVE"
-  "\020\001\022\037\n\033MODIFIER_ENTRY_TYPE_REMOVED\020\002"
+  "aura_range\030\016 \001(\010\022\025\n\rcreation_time\030\017 \001(\002\022"
+  "\022\n\nattributes\030\020 \001(\r\022\016\n\006bool1_\030\024 \001(\010\022\016\n\006b"
+  "ool2_\030\025 \001(\010\022\016\n\006bool3_\030\026 \001(\010\022\016\n\006bool4_\030\027 "
+  "\001(\010\022\r\n\005int1_\030\031 \001(\005\022\r\n\005int2_\030\032 \001(\005\022\r\n\005int"
+  "3_\030\033 \001(\005\022\r\n\005int4_\030\034 \001(\005\022\017\n\007float1_\030\036 \001(\002"
+  "\022\017\n\007float2_\030\037 \001(\002\022\017\n\007float3_\030  \001(\002\022\017\n\007fl"
+  "oat4_\030! \001(\002\022\017\n\007float5_\0301 \001(\002\022\017\n\007float6_\030"
+  "2 \001(\002\022\017\n\007float7_\0303 \001(\002\022\017\n\007float8_\0304 \001(\002\022"
+  "\017\n\007float9_\0305 \001(\002\022\020\n\010float10_\0306 \001(\002\022\020\n\010fl"
+  "oat11_\0307 \001(\002\022\020\n\010float12_\0308 \001(\002\022\020\n\010float1"
+  "3_\0309 \001(\002\022\020\n\010float14_\030: \001(\002\022\020\n\010float15_\030;"
+  " \001(\002\022\020\n\010float16_\030< \001(\002\022\016\n\006uint1_\030# \001(\004\022\016"
+  "\n\006uint2_\030$ \001(\004\022\016\n\006uint3_\030% \001(\004\022\016\n\006uint4_"
+  "\030& \001(\004\022\032\n\005vec1_\030( \001(\0132\013.CMsgVector\022\032\n\005ve"
+  "c2_\030) \001(\0132\013.CMsgVector\022\032\n\005vec3_\030* \001(\0132\013."
+  "CMsgVector\022\032\n\005vec4_\030+ \001(\0132\013.CMsgVector\022\020"
+  "\n\010string1_\030- \001(\t\022\020\n\010string2_\030. \001(\t\022\020\n\010st"
+  "ring3_\030/ \001(\t\022\020\n\010string4_\0300 \001(\t*V\n\023MODIFI"
+  "ER_ENTRY_TYPE\022\036\n\032MODIFIER_ENTRY_TYPE_ACT"
+  "IVE\020\001\022\037\n\033MODIFIER_ENTRY_TYPE_REMOVED\020\002"
   ;
 static const ::_pbi::DescriptorTable* const descriptor_table_base_5fmodifier_2eproto_deps[1] = {
   &::descriptor_table_networkbasetypes_2eproto,
 };
 static ::_pbi::once_flag descriptor_table_base_5fmodifier_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_base_5fmodifier_2eproto = {
-    false, false, 1235, descriptor_table_protodef_base_5fmodifier_2eproto,
+    false, false, 1278, descriptor_table_protodef_base_5fmodifier_2eproto,
     "base_modifier.proto",
     &descriptor_table_base_5fmodifier_2eproto_once, descriptor_table_base_5fmodifier_2eproto_deps, 1, 1,
     schemas, file_default_instances, TableStruct_base_5fmodifier_2eproto::offsets,
@@ -275,10 +282,10 @@ class CModifierTableEntry::_Internal {
  public:
   using HasBits = decltype(std::declval<CModifierTableEntry>()._impl_._has_bits_);
   static void set_has_entry_type(HasBits* has_bits) {
-    (*has_bits)[1] |= 4096u;
+    (*has_bits)[1] |= 16384u;
   }
   static void set_has_parent(HasBits* has_bits) {
-    (*has_bits)[1] |= 8192u;
+    (*has_bits)[1] |= 32768u;
   }
   static void set_has_serial_number(HasBits* has_bits) {
     (*has_bits)[0] |= 256u;
@@ -296,109 +303,115 @@ class CModifierTableEntry::_Internal {
     (*has_bits)[0] |= 4096u;
   }
   static void set_has_duration(HasBits* has_bits) {
-    (*has_bits)[1] |= 16384u;
+    (*has_bits)[1] |= 65536u;
   }
   static void set_has_caster(HasBits* has_bits) {
-    (*has_bits)[1] |= 32768u;
+    (*has_bits)[1] |= 131072u;
   }
   static void set_has_ability(HasBits* has_bits) {
-    (*has_bits)[1] |= 65536u;
+    (*has_bits)[1] |= 262144u;
   }
   static void set_has_aura_provider_serial_number(HasBits* has_bits) {
     (*has_bits)[0] |= 8192u;
   }
   static void set_has_aura_provider_ehandle(HasBits* has_bits) {
-    (*has_bits)[1] |= 131072u;
+    (*has_bits)[1] |= 524288u;
   }
   static void set_has_ability_subclass(HasBits* has_bits) {
     (*has_bits)[0] |= 16384u;
   }
   static void set_has_in_aura_range(HasBits* has_bits) {
-    (*has_bits)[0] |= 32768u;
-  }
-  static void set_has_bool1_(HasBits* has_bits) {
-    (*has_bits)[0] |= 65536u;
-  }
-  static void set_has_bool2_(HasBits* has_bits) {
     (*has_bits)[0] |= 131072u;
   }
-  static void set_has_bool3_(HasBits* has_bits) {
+  static void set_has_creation_time(HasBits* has_bits) {
+    (*has_bits)[0] |= 32768u;
+  }
+  static void set_has_attributes(HasBits* has_bits) {
+    (*has_bits)[0] |= 65536u;
+  }
+  static void set_has_bool1_(HasBits* has_bits) {
     (*has_bits)[0] |= 262144u;
   }
-  static void set_has_bool4_(HasBits* has_bits) {
+  static void set_has_bool2_(HasBits* has_bits) {
     (*has_bits)[0] |= 524288u;
   }
-  static void set_has_int1_(HasBits* has_bits) {
+  static void set_has_bool3_(HasBits* has_bits) {
     (*has_bits)[0] |= 1048576u;
   }
-  static void set_has_int2_(HasBits* has_bits) {
+  static void set_has_bool4_(HasBits* has_bits) {
     (*has_bits)[0] |= 2097152u;
   }
-  static void set_has_int3_(HasBits* has_bits) {
+  static void set_has_int1_(HasBits* has_bits) {
     (*has_bits)[0] |= 4194304u;
   }
-  static void set_has_int4_(HasBits* has_bits) {
+  static void set_has_int2_(HasBits* has_bits) {
     (*has_bits)[0] |= 8388608u;
   }
-  static void set_has_float1_(HasBits* has_bits) {
+  static void set_has_int3_(HasBits* has_bits) {
     (*has_bits)[0] |= 16777216u;
   }
-  static void set_has_float2_(HasBits* has_bits) {
+  static void set_has_int4_(HasBits* has_bits) {
     (*has_bits)[0] |= 33554432u;
   }
-  static void set_has_float3_(HasBits* has_bits) {
+  static void set_has_float1_(HasBits* has_bits) {
     (*has_bits)[0] |= 67108864u;
   }
-  static void set_has_float4_(HasBits* has_bits) {
-    (*has_bits)[0] |= 2147483648u;
-  }
-  static void set_has_float5_(HasBits* has_bits) {
-    (*has_bits)[1] |= 1u;
-  }
-  static void set_has_float6_(HasBits* has_bits) {
-    (*has_bits)[1] |= 2u;
-  }
-  static void set_has_float7_(HasBits* has_bits) {
-    (*has_bits)[1] |= 4u;
-  }
-  static void set_has_float8_(HasBits* has_bits) {
-    (*has_bits)[1] |= 8u;
-  }
-  static void set_has_float9_(HasBits* has_bits) {
-    (*has_bits)[1] |= 16u;
-  }
-  static void set_has_float10_(HasBits* has_bits) {
-    (*has_bits)[1] |= 32u;
-  }
-  static void set_has_float11_(HasBits* has_bits) {
-    (*has_bits)[1] |= 64u;
-  }
-  static void set_has_float12_(HasBits* has_bits) {
-    (*has_bits)[1] |= 128u;
-  }
-  static void set_has_float13_(HasBits* has_bits) {
-    (*has_bits)[1] |= 256u;
-  }
-  static void set_has_float14_(HasBits* has_bits) {
-    (*has_bits)[1] |= 512u;
-  }
-  static void set_has_float15_(HasBits* has_bits) {
-    (*has_bits)[1] |= 1024u;
-  }
-  static void set_has_float16_(HasBits* has_bits) {
-    (*has_bits)[1] |= 2048u;
-  }
-  static void set_has_uint1_(HasBits* has_bits) {
+  static void set_has_float2_(HasBits* has_bits) {
     (*has_bits)[0] |= 134217728u;
   }
-  static void set_has_uint2_(HasBits* has_bits) {
+  static void set_has_float3_(HasBits* has_bits) {
     (*has_bits)[0] |= 268435456u;
   }
-  static void set_has_uint3_(HasBits* has_bits) {
+  static void set_has_float4_(HasBits* has_bits) {
+    (*has_bits)[1] |= 2u;
+  }
+  static void set_has_float5_(HasBits* has_bits) {
+    (*has_bits)[1] |= 4u;
+  }
+  static void set_has_float6_(HasBits* has_bits) {
+    (*has_bits)[1] |= 8u;
+  }
+  static void set_has_float7_(HasBits* has_bits) {
+    (*has_bits)[1] |= 16u;
+  }
+  static void set_has_float8_(HasBits* has_bits) {
+    (*has_bits)[1] |= 32u;
+  }
+  static void set_has_float9_(HasBits* has_bits) {
+    (*has_bits)[1] |= 64u;
+  }
+  static void set_has_float10_(HasBits* has_bits) {
+    (*has_bits)[1] |= 128u;
+  }
+  static void set_has_float11_(HasBits* has_bits) {
+    (*has_bits)[1] |= 256u;
+  }
+  static void set_has_float12_(HasBits* has_bits) {
+    (*has_bits)[1] |= 512u;
+  }
+  static void set_has_float13_(HasBits* has_bits) {
+    (*has_bits)[1] |= 1024u;
+  }
+  static void set_has_float14_(HasBits* has_bits) {
+    (*has_bits)[1] |= 2048u;
+  }
+  static void set_has_float15_(HasBits* has_bits) {
+    (*has_bits)[1] |= 4096u;
+  }
+  static void set_has_float16_(HasBits* has_bits) {
+    (*has_bits)[1] |= 8192u;
+  }
+  static void set_has_uint1_(HasBits* has_bits) {
     (*has_bits)[0] |= 536870912u;
   }
-  static void set_has_uint4_(HasBits* has_bits) {
+  static void set_has_uint2_(HasBits* has_bits) {
     (*has_bits)[0] |= 1073741824u;
+  }
+  static void set_has_uint3_(HasBits* has_bits) {
+    (*has_bits)[0] |= 2147483648u;
+  }
+  static void set_has_uint4_(HasBits* has_bits) {
+    (*has_bits)[1] |= 1u;
   }
   static const ::CMsgVector& vec1_(const CModifierTableEntry* msg);
   static void set_has_vec1_(HasBits* has_bits) {
@@ -489,6 +502,8 @@ CModifierTableEntry::CModifierTableEntry(const CModifierTableEntry& from)
     , decltype(_impl_.last_applied_time_){}
     , decltype(_impl_.aura_provider_serial_number_){}
     , decltype(_impl_.ability_subclass_){}
+    , decltype(_impl_.creation_time_){}
+    , decltype(_impl_.attributes_){}
     , decltype(_impl_.in_aura_range_){}
     , decltype(_impl_.bool1__){}
     , decltype(_impl_.bool2__){}
@@ -598,6 +613,8 @@ inline void CModifierTableEntry::SharedCtor(
     , decltype(_impl_.last_applied_time_){0}
     , decltype(_impl_.aura_provider_serial_number_){0}
     , decltype(_impl_.ability_subclass_){0u}
+    , decltype(_impl_.creation_time_){0}
+    , decltype(_impl_.attributes_){0u}
     , decltype(_impl_.in_aura_range_){false}
     , decltype(_impl_.bool1__){false}
     , decltype(_impl_.bool2__){false}
@@ -716,35 +733,35 @@ void CModifierTableEntry::Clear() {
   }
   if (cached_has_bits & 0x0000ff00u) {
     ::memset(&_impl_.serial_number_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&_impl_.in_aura_range_) -
-        reinterpret_cast<char*>(&_impl_.serial_number_)) + sizeof(_impl_.in_aura_range_));
+        reinterpret_cast<char*>(&_impl_.creation_time_) -
+        reinterpret_cast<char*>(&_impl_.serial_number_)) + sizeof(_impl_.creation_time_));
   }
   if (cached_has_bits & 0x00ff0000u) {
-    ::memset(&_impl_.bool1__, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&_impl_.int4__) -
-        reinterpret_cast<char*>(&_impl_.bool1__)) + sizeof(_impl_.int4__));
+    ::memset(&_impl_.attributes_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.int2__) -
+        reinterpret_cast<char*>(&_impl_.attributes_)) + sizeof(_impl_.int2__));
   }
   if (cached_has_bits & 0xff000000u) {
-    ::memset(&_impl_.float1__, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&_impl_.float4__) -
-        reinterpret_cast<char*>(&_impl_.float1__)) + sizeof(_impl_.float4__));
+    ::memset(&_impl_.int3__, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.uint3__) -
+        reinterpret_cast<char*>(&_impl_.int3__)) + sizeof(_impl_.uint3__));
   }
   cached_has_bits = _impl_._has_bits_[1];
   if (cached_has_bits & 0x000000ffu) {
-    ::memset(&_impl_.float5__, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&_impl_.float12__) -
-        reinterpret_cast<char*>(&_impl_.float5__)) + sizeof(_impl_.float12__));
+    ::memset(&_impl_.uint4__, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.float10__) -
+        reinterpret_cast<char*>(&_impl_.uint4__)) + sizeof(_impl_.float10__));
   }
   if (cached_has_bits & 0x0000ff00u) {
-    ::memset(&_impl_.float13__, 0, static_cast<size_t>(
+    ::memset(&_impl_.float11__, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&_impl_.float16__) -
-        reinterpret_cast<char*>(&_impl_.float13__)) + sizeof(_impl_.float16__));
+        reinterpret_cast<char*>(&_impl_.float11__)) + sizeof(_impl_.float16__));
     _impl_.entry_type_ = 1;
     _impl_.parent_ = 16777215u;
+  }
+  if (cached_has_bits & 0x000f0000u) {
     _impl_.duration_ = -1;
     _impl_.caster_ = 16777215u;
-  }
-  if (cached_has_bits & 0x00030000u) {
     _impl_.ability_ = 16777215u;
     _impl_.aura_provider_ehandle_ = 16777215u;
   }
@@ -884,6 +901,24 @@ const char* CModifierTableEntry::_InternalParse(const char* ptr, ::_pbi::ParseCo
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
           _Internal::set_has_in_aura_range(&_impl_._has_bits_);
           _impl_.in_aura_range_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional float creation_time = 15;
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 125)) {
+          _Internal::set_has_creation_time(&_impl_._has_bits_);
+          _impl_.creation_time_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          ptr += sizeof(float);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional uint32 attributes = 16;
+      case 16:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_attributes(&_impl_._has_bits_);
+          _impl_.attributes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -1251,14 +1286,14 @@ uint8_t* CModifierTableEntry::_InternalSerialize(
 
   cached_has_bits = _impl_._has_bits_[1];
   // optional .MODIFIER_ENTRY_TYPE entry_type = 1 [default = MODIFIER_ENTRY_TYPE_ACTIVE];
-  if (cached_has_bits & 0x00001000u) {
+  if (cached_has_bits & 0x00004000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
       1, this->_internal_entry_type(), target);
   }
 
   // optional uint32 parent = 2 [default = 16777215];
-  if (cached_has_bits & 0x00002000u) {
+  if (cached_has_bits & 0x00008000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_parent(), target);
   }
@@ -1296,19 +1331,19 @@ uint8_t* CModifierTableEntry::_InternalSerialize(
 
   cached_has_bits = _impl_._has_bits_[1];
   // optional float duration = 8 [default = -1];
-  if (cached_has_bits & 0x00004000u) {
+  if (cached_has_bits & 0x00010000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(8, this->_internal_duration(), target);
   }
 
   // optional uint32 caster = 9 [default = 16777215];
-  if (cached_has_bits & 0x00008000u) {
+  if (cached_has_bits & 0x00020000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(9, this->_internal_caster(), target);
   }
 
   // optional uint32 ability = 10 [default = 16777215];
-  if (cached_has_bits & 0x00010000u) {
+  if (cached_has_bits & 0x00040000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(10, this->_internal_ability(), target);
   }
@@ -1322,7 +1357,7 @@ uint8_t* CModifierTableEntry::_InternalSerialize(
 
   cached_has_bits = _impl_._has_bits_[1];
   // optional uint32 aura_provider_ehandle = 12 [default = 16777215];
-  if (cached_has_bits & 0x00020000u) {
+  if (cached_has_bits & 0x00080000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt32ToArray(12, this->_internal_aura_provider_ehandle(), target);
   }
@@ -1335,107 +1370,123 @@ uint8_t* CModifierTableEntry::_InternalSerialize(
   }
 
   // optional bool in_aura_range = 14;
-  if (cached_has_bits & 0x00008000u) {
+  if (cached_has_bits & 0x00020000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteBoolToArray(14, this->_internal_in_aura_range(), target);
   }
 
-  // optional bool bool1_ = 20;
+  // optional float creation_time = 15;
+  if (cached_has_bits & 0x00008000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(15, this->_internal_creation_time(), target);
+  }
+
+  // optional uint32 attributes = 16;
   if (cached_has_bits & 0x00010000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(16, this->_internal_attributes(), target);
+  }
+
+  // optional bool bool1_ = 20;
+  if (cached_has_bits & 0x00040000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteBoolToArray(20, this->_internal_bool1_(), target);
   }
 
   // optional bool bool2_ = 21;
-  if (cached_has_bits & 0x00020000u) {
+  if (cached_has_bits & 0x00080000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteBoolToArray(21, this->_internal_bool2_(), target);
   }
 
   // optional bool bool3_ = 22;
-  if (cached_has_bits & 0x00040000u) {
+  if (cached_has_bits & 0x00100000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteBoolToArray(22, this->_internal_bool3_(), target);
   }
 
   // optional bool bool4_ = 23;
-  if (cached_has_bits & 0x00080000u) {
+  if (cached_has_bits & 0x00200000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteBoolToArray(23, this->_internal_bool4_(), target);
   }
 
   // optional int32 int1_ = 25;
-  if (cached_has_bits & 0x00100000u) {
+  if (cached_has_bits & 0x00400000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteInt32ToArray(25, this->_internal_int1_(), target);
   }
 
   // optional int32 int2_ = 26;
-  if (cached_has_bits & 0x00200000u) {
+  if (cached_has_bits & 0x00800000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteInt32ToArray(26, this->_internal_int2_(), target);
   }
 
   // optional int32 int3_ = 27;
-  if (cached_has_bits & 0x00400000u) {
+  if (cached_has_bits & 0x01000000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteInt32ToArray(27, this->_internal_int3_(), target);
   }
 
   // optional int32 int4_ = 28;
-  if (cached_has_bits & 0x00800000u) {
+  if (cached_has_bits & 0x02000000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteInt32ToArray(28, this->_internal_int4_(), target);
   }
 
   // optional float float1_ = 30;
-  if (cached_has_bits & 0x01000000u) {
+  if (cached_has_bits & 0x04000000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(30, this->_internal_float1_(), target);
   }
 
   // optional float float2_ = 31;
-  if (cached_has_bits & 0x02000000u) {
+  if (cached_has_bits & 0x08000000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(31, this->_internal_float2_(), target);
   }
 
   // optional float float3_ = 32;
-  if (cached_has_bits & 0x04000000u) {
+  if (cached_has_bits & 0x10000000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(32, this->_internal_float3_(), target);
   }
 
+  cached_has_bits = _impl_._has_bits_[1];
   // optional float float4_ = 33;
-  if (cached_has_bits & 0x80000000u) {
+  if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(33, this->_internal_float4_(), target);
   }
 
+  cached_has_bits = _impl_._has_bits_[0];
   // optional uint64 uint1_ = 35;
-  if (cached_has_bits & 0x08000000u) {
+  if (cached_has_bits & 0x20000000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt64ToArray(35, this->_internal_uint1_(), target);
   }
 
   // optional uint64 uint2_ = 36;
-  if (cached_has_bits & 0x10000000u) {
+  if (cached_has_bits & 0x40000000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt64ToArray(36, this->_internal_uint2_(), target);
   }
 
   // optional uint64 uint3_ = 37;
-  if (cached_has_bits & 0x20000000u) {
+  if (cached_has_bits & 0x80000000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt64ToArray(37, this->_internal_uint3_(), target);
   }
 
+  cached_has_bits = _impl_._has_bits_[1];
   // optional uint64 uint4_ = 38;
-  if (cached_has_bits & 0x40000000u) {
+  if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteUInt64ToArray(38, this->_internal_uint4_(), target);
   }
 
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .CMsgVector vec1_ = 40;
   if (cached_has_bits & 0x00000010u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -1506,73 +1557,73 @@ uint8_t* CModifierTableEntry::_InternalSerialize(
 
   cached_has_bits = _impl_._has_bits_[1];
   // optional float float5_ = 49;
-  if (cached_has_bits & 0x00000001u) {
+  if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(49, this->_internal_float5_(), target);
   }
 
   // optional float float6_ = 50;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(50, this->_internal_float6_(), target);
   }
 
   // optional float float7_ = 51;
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(51, this->_internal_float7_(), target);
   }
 
   // optional float float8_ = 52;
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(52, this->_internal_float8_(), target);
   }
 
   // optional float float9_ = 53;
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000040u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(53, this->_internal_float9_(), target);
   }
 
   // optional float float10_ = 54;
-  if (cached_has_bits & 0x00000020u) {
+  if (cached_has_bits & 0x00000080u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(54, this->_internal_float10_(), target);
   }
 
   // optional float float11_ = 55;
-  if (cached_has_bits & 0x00000040u) {
+  if (cached_has_bits & 0x00000100u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(55, this->_internal_float11_(), target);
   }
 
   // optional float float12_ = 56;
-  if (cached_has_bits & 0x00000080u) {
+  if (cached_has_bits & 0x00000200u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(56, this->_internal_float12_(), target);
   }
 
   // optional float float13_ = 57;
-  if (cached_has_bits & 0x00000100u) {
+  if (cached_has_bits & 0x00000400u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(57, this->_internal_float13_(), target);
   }
 
   // optional float float14_ = 58;
-  if (cached_has_bits & 0x00000200u) {
+  if (cached_has_bits & 0x00000800u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(58, this->_internal_float14_(), target);
   }
 
   // optional float float15_ = 59;
-  if (cached_has_bits & 0x00000400u) {
+  if (cached_has_bits & 0x00001000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(59, this->_internal_float15_(), target);
   }
 
   // optional float float16_ = 60;
-  if (cached_has_bits & 0x00000800u) {
+  if (cached_has_bits & 0x00002000u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteFloatToArray(60, this->_internal_float16_(), target);
   }
@@ -1688,206 +1739,218 @@ size_t CModifierTableEntry::ByteSizeLong() const {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_ability_subclass());
     }
 
-    // optional bool in_aura_range = 14;
+    // optional float creation_time = 15;
     if (cached_has_bits & 0x00008000u) {
-      total_size += 1 + 1;
+      total_size += 1 + 4;
     }
 
   }
   if (cached_has_bits & 0x00ff0000u) {
-    // optional bool bool1_ = 20;
+    // optional uint32 attributes = 16;
     if (cached_has_bits & 0x00010000u) {
-      total_size += 2 + 1;
+      total_size += 2 +
+        ::_pbi::WireFormatLite::UInt32Size(
+          this->_internal_attributes());
     }
 
-    // optional bool bool2_ = 21;
+    // optional bool in_aura_range = 14;
     if (cached_has_bits & 0x00020000u) {
-      total_size += 2 + 1;
+      total_size += 1 + 1;
     }
 
-    // optional bool bool3_ = 22;
+    // optional bool bool1_ = 20;
     if (cached_has_bits & 0x00040000u) {
       total_size += 2 + 1;
     }
 
-    // optional bool bool4_ = 23;
+    // optional bool bool2_ = 21;
     if (cached_has_bits & 0x00080000u) {
       total_size += 2 + 1;
     }
 
-    // optional int32 int1_ = 25;
+    // optional bool bool3_ = 22;
     if (cached_has_bits & 0x00100000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool bool4_ = 23;
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional int32 int1_ = 25;
+    if (cached_has_bits & 0x00400000u) {
       total_size += 2 +
         ::_pbi::WireFormatLite::Int32Size(
           this->_internal_int1_());
     }
 
     // optional int32 int2_ = 26;
-    if (cached_has_bits & 0x00200000u) {
+    if (cached_has_bits & 0x00800000u) {
       total_size += 2 +
         ::_pbi::WireFormatLite::Int32Size(
           this->_internal_int2_());
     }
 
+  }
+  if (cached_has_bits & 0xff000000u) {
     // optional int32 int3_ = 27;
-    if (cached_has_bits & 0x00400000u) {
+    if (cached_has_bits & 0x01000000u) {
       total_size += 2 +
         ::_pbi::WireFormatLite::Int32Size(
           this->_internal_int3_());
     }
 
     // optional int32 int4_ = 28;
-    if (cached_has_bits & 0x00800000u) {
+    if (cached_has_bits & 0x02000000u) {
       total_size += 2 +
         ::_pbi::WireFormatLite::Int32Size(
           this->_internal_int4_());
     }
 
-  }
-  if (cached_has_bits & 0xff000000u) {
     // optional float float1_ = 30;
-    if (cached_has_bits & 0x01000000u) {
-      total_size += 2 + 4;
-    }
-
-    // optional float float2_ = 31;
-    if (cached_has_bits & 0x02000000u) {
-      total_size += 2 + 4;
-    }
-
-    // optional float float3_ = 32;
     if (cached_has_bits & 0x04000000u) {
       total_size += 2 + 4;
     }
 
-    // optional uint64 uint1_ = 35;
+    // optional float float2_ = 31;
     if (cached_has_bits & 0x08000000u) {
+      total_size += 2 + 4;
+    }
+
+    // optional float float3_ = 32;
+    if (cached_has_bits & 0x10000000u) {
+      total_size += 2 + 4;
+    }
+
+    // optional uint64 uint1_ = 35;
+    if (cached_has_bits & 0x20000000u) {
       total_size += 2 +
         ::_pbi::WireFormatLite::UInt64Size(
           this->_internal_uint1_());
     }
 
     // optional uint64 uint2_ = 36;
-    if (cached_has_bits & 0x10000000u) {
+    if (cached_has_bits & 0x40000000u) {
       total_size += 2 +
         ::_pbi::WireFormatLite::UInt64Size(
           this->_internal_uint2_());
     }
 
     // optional uint64 uint3_ = 37;
-    if (cached_has_bits & 0x20000000u) {
+    if (cached_has_bits & 0x80000000u) {
       total_size += 2 +
         ::_pbi::WireFormatLite::UInt64Size(
           this->_internal_uint3_());
     }
 
+  }
+  cached_has_bits = _impl_._has_bits_[1];
+  if (cached_has_bits & 0x000000ffu) {
     // optional uint64 uint4_ = 38;
-    if (cached_has_bits & 0x40000000u) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 2 +
         ::_pbi::WireFormatLite::UInt64Size(
           this->_internal_uint4_());
     }
 
     // optional float float4_ = 33;
-    if (cached_has_bits & 0x80000000u) {
-      total_size += 2 + 4;
-    }
-
-  }
-  cached_has_bits = _impl_._has_bits_[1];
-  if (cached_has_bits & 0x000000ffu) {
-    // optional float float5_ = 49;
-    if (cached_has_bits & 0x00000001u) {
-      total_size += 2 + 4;
-    }
-
-    // optional float float6_ = 50;
     if (cached_has_bits & 0x00000002u) {
       total_size += 2 + 4;
     }
 
-    // optional float float7_ = 51;
+    // optional float float5_ = 49;
     if (cached_has_bits & 0x00000004u) {
       total_size += 2 + 4;
     }
 
-    // optional float float8_ = 52;
+    // optional float float6_ = 50;
     if (cached_has_bits & 0x00000008u) {
       total_size += 2 + 4;
     }
 
-    // optional float float9_ = 53;
+    // optional float float7_ = 51;
     if (cached_has_bits & 0x00000010u) {
       total_size += 2 + 4;
     }
 
-    // optional float float10_ = 54;
+    // optional float float8_ = 52;
     if (cached_has_bits & 0x00000020u) {
       total_size += 2 + 4;
     }
 
-    // optional float float11_ = 55;
+    // optional float float9_ = 53;
     if (cached_has_bits & 0x00000040u) {
       total_size += 2 + 4;
     }
 
-    // optional float float12_ = 56;
+    // optional float float10_ = 54;
     if (cached_has_bits & 0x00000080u) {
       total_size += 2 + 4;
     }
 
   }
   if (cached_has_bits & 0x0000ff00u) {
-    // optional float float13_ = 57;
+    // optional float float11_ = 55;
     if (cached_has_bits & 0x00000100u) {
       total_size += 2 + 4;
     }
 
-    // optional float float14_ = 58;
+    // optional float float12_ = 56;
     if (cached_has_bits & 0x00000200u) {
       total_size += 2 + 4;
     }
 
-    // optional float float15_ = 59;
+    // optional float float13_ = 57;
     if (cached_has_bits & 0x00000400u) {
       total_size += 2 + 4;
     }
 
-    // optional float float16_ = 60;
+    // optional float float14_ = 58;
     if (cached_has_bits & 0x00000800u) {
       total_size += 2 + 4;
     }
 
-    // optional .MODIFIER_ENTRY_TYPE entry_type = 1 [default = MODIFIER_ENTRY_TYPE_ACTIVE];
+    // optional float float15_ = 59;
     if (cached_has_bits & 0x00001000u) {
+      total_size += 2 + 4;
+    }
+
+    // optional float float16_ = 60;
+    if (cached_has_bits & 0x00002000u) {
+      total_size += 2 + 4;
+    }
+
+    // optional .MODIFIER_ENTRY_TYPE entry_type = 1 [default = MODIFIER_ENTRY_TYPE_ACTIVE];
+    if (cached_has_bits & 0x00004000u) {
       total_size += 1 +
         ::_pbi::WireFormatLite::EnumSize(this->_internal_entry_type());
     }
 
     // optional uint32 parent = 2 [default = 16777215];
-    if (cached_has_bits & 0x00002000u) {
+    if (cached_has_bits & 0x00008000u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_parent());
     }
 
+  }
+  if (cached_has_bits & 0x000f0000u) {
     // optional float duration = 8 [default = -1];
-    if (cached_has_bits & 0x00004000u) {
+    if (cached_has_bits & 0x00010000u) {
       total_size += 1 + 4;
     }
 
     // optional uint32 caster = 9 [default = 16777215];
-    if (cached_has_bits & 0x00008000u) {
+    if (cached_has_bits & 0x00020000u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_caster());
     }
 
-  }
-  if (cached_has_bits & 0x00030000u) {
     // optional uint32 ability = 10 [default = 16777215];
-    if (cached_has_bits & 0x00010000u) {
+    if (cached_has_bits & 0x00040000u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_ability());
     }
 
     // optional uint32 aura_provider_ehandle = 12 [default = 16777215];
-    if (cached_has_bits & 0x00020000u) {
+    if (cached_has_bits & 0x00080000u) {
       total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_aura_provider_ehandle());
     }
 
@@ -1964,124 +2027,130 @@ void CModifierTableEntry::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, co
       _this->_impl_.ability_subclass_ = from._impl_.ability_subclass_;
     }
     if (cached_has_bits & 0x00008000u) {
-      _this->_impl_.in_aura_range_ = from._impl_.in_aura_range_;
+      _this->_impl_.creation_time_ = from._impl_.creation_time_;
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 0x00ff0000u) {
     if (cached_has_bits & 0x00010000u) {
-      _this->_impl_.bool1__ = from._impl_.bool1__;
+      _this->_impl_.attributes_ = from._impl_.attributes_;
     }
     if (cached_has_bits & 0x00020000u) {
-      _this->_impl_.bool2__ = from._impl_.bool2__;
+      _this->_impl_.in_aura_range_ = from._impl_.in_aura_range_;
     }
     if (cached_has_bits & 0x00040000u) {
-      _this->_impl_.bool3__ = from._impl_.bool3__;
+      _this->_impl_.bool1__ = from._impl_.bool1__;
     }
     if (cached_has_bits & 0x00080000u) {
-      _this->_impl_.bool4__ = from._impl_.bool4__;
+      _this->_impl_.bool2__ = from._impl_.bool2__;
     }
     if (cached_has_bits & 0x00100000u) {
-      _this->_impl_.int1__ = from._impl_.int1__;
+      _this->_impl_.bool3__ = from._impl_.bool3__;
     }
     if (cached_has_bits & 0x00200000u) {
-      _this->_impl_.int2__ = from._impl_.int2__;
+      _this->_impl_.bool4__ = from._impl_.bool4__;
     }
     if (cached_has_bits & 0x00400000u) {
-      _this->_impl_.int3__ = from._impl_.int3__;
+      _this->_impl_.int1__ = from._impl_.int1__;
     }
     if (cached_has_bits & 0x00800000u) {
-      _this->_impl_.int4__ = from._impl_.int4__;
+      _this->_impl_.int2__ = from._impl_.int2__;
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 0xff000000u) {
     if (cached_has_bits & 0x01000000u) {
-      _this->_impl_.float1__ = from._impl_.float1__;
+      _this->_impl_.int3__ = from._impl_.int3__;
     }
     if (cached_has_bits & 0x02000000u) {
-      _this->_impl_.float2__ = from._impl_.float2__;
+      _this->_impl_.int4__ = from._impl_.int4__;
     }
     if (cached_has_bits & 0x04000000u) {
-      _this->_impl_.float3__ = from._impl_.float3__;
+      _this->_impl_.float1__ = from._impl_.float1__;
     }
     if (cached_has_bits & 0x08000000u) {
-      _this->_impl_.uint1__ = from._impl_.uint1__;
+      _this->_impl_.float2__ = from._impl_.float2__;
     }
     if (cached_has_bits & 0x10000000u) {
-      _this->_impl_.uint2__ = from._impl_.uint2__;
+      _this->_impl_.float3__ = from._impl_.float3__;
     }
     if (cached_has_bits & 0x20000000u) {
-      _this->_impl_.uint3__ = from._impl_.uint3__;
+      _this->_impl_.uint1__ = from._impl_.uint1__;
     }
     if (cached_has_bits & 0x40000000u) {
-      _this->_impl_.uint4__ = from._impl_.uint4__;
+      _this->_impl_.uint2__ = from._impl_.uint2__;
     }
     if (cached_has_bits & 0x80000000u) {
-      _this->_impl_.float4__ = from._impl_.float4__;
+      _this->_impl_.uint3__ = from._impl_.uint3__;
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
   cached_has_bits = from._impl_._has_bits_[1];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _this->_impl_.float5__ = from._impl_.float5__;
+      _this->_impl_.uint4__ = from._impl_.uint4__;
     }
     if (cached_has_bits & 0x00000002u) {
-      _this->_impl_.float6__ = from._impl_.float6__;
+      _this->_impl_.float4__ = from._impl_.float4__;
     }
     if (cached_has_bits & 0x00000004u) {
-      _this->_impl_.float7__ = from._impl_.float7__;
+      _this->_impl_.float5__ = from._impl_.float5__;
     }
     if (cached_has_bits & 0x00000008u) {
-      _this->_impl_.float8__ = from._impl_.float8__;
+      _this->_impl_.float6__ = from._impl_.float6__;
     }
     if (cached_has_bits & 0x00000010u) {
-      _this->_impl_.float9__ = from._impl_.float9__;
+      _this->_impl_.float7__ = from._impl_.float7__;
     }
     if (cached_has_bits & 0x00000020u) {
-      _this->_impl_.float10__ = from._impl_.float10__;
+      _this->_impl_.float8__ = from._impl_.float8__;
     }
     if (cached_has_bits & 0x00000040u) {
-      _this->_impl_.float11__ = from._impl_.float11__;
+      _this->_impl_.float9__ = from._impl_.float9__;
     }
     if (cached_has_bits & 0x00000080u) {
-      _this->_impl_.float12__ = from._impl_.float12__;
+      _this->_impl_.float10__ = from._impl_.float10__;
     }
     _this->_impl_._has_bits_[1] |= cached_has_bits;
   }
   if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
-      _this->_impl_.float13__ = from._impl_.float13__;
+      _this->_impl_.float11__ = from._impl_.float11__;
     }
     if (cached_has_bits & 0x00000200u) {
-      _this->_impl_.float14__ = from._impl_.float14__;
+      _this->_impl_.float12__ = from._impl_.float12__;
     }
     if (cached_has_bits & 0x00000400u) {
-      _this->_impl_.float15__ = from._impl_.float15__;
+      _this->_impl_.float13__ = from._impl_.float13__;
     }
     if (cached_has_bits & 0x00000800u) {
-      _this->_impl_.float16__ = from._impl_.float16__;
+      _this->_impl_.float14__ = from._impl_.float14__;
     }
     if (cached_has_bits & 0x00001000u) {
-      _this->_impl_.entry_type_ = from._impl_.entry_type_;
+      _this->_impl_.float15__ = from._impl_.float15__;
     }
     if (cached_has_bits & 0x00002000u) {
-      _this->_impl_.parent_ = from._impl_.parent_;
+      _this->_impl_.float16__ = from._impl_.float16__;
     }
     if (cached_has_bits & 0x00004000u) {
-      _this->_impl_.duration_ = from._impl_.duration_;
+      _this->_impl_.entry_type_ = from._impl_.entry_type_;
     }
     if (cached_has_bits & 0x00008000u) {
-      _this->_impl_.caster_ = from._impl_.caster_;
+      _this->_impl_.parent_ = from._impl_.parent_;
     }
     _this->_impl_._has_bits_[1] |= cached_has_bits;
   }
-  if (cached_has_bits & 0x00030000u) {
+  if (cached_has_bits & 0x000f0000u) {
     if (cached_has_bits & 0x00010000u) {
-      _this->_impl_.ability_ = from._impl_.ability_;
+      _this->_impl_.duration_ = from._impl_.duration_;
     }
     if (cached_has_bits & 0x00020000u) {
+      _this->_impl_.caster_ = from._impl_.caster_;
+    }
+    if (cached_has_bits & 0x00040000u) {
+      _this->_impl_.ability_ = from._impl_.ability_;
+    }
+    if (cached_has_bits & 0x00080000u) {
       _this->_impl_.aura_provider_ehandle_ = from._impl_.aura_provider_ehandle_;
     }
     _this->_impl_._has_bits_[1] |= cached_has_bits;
